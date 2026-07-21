@@ -23,9 +23,11 @@ API_KEY = os.environ.get("LLM_API_KEY", "ollama")
 def chat(messages: list[dict], model: str | None = None, base_url: str | None = None,
          temperature: float = 0.0, timeout: float = 300.0) -> str:
     """Send a chat completion request and return the assistant message text."""
-    url = (base_url or DEFAULT_BASE_URL).rstrip("/") + "/chat/completions"
+    # Read env at call time, not import time: callers load .env after importing
+    # this module, so import-time snapshots would miss it.
+    url = (base_url or os.environ.get("LLM_BASE_URL", DEFAULT_BASE_URL)).rstrip("/") + "/chat/completions"
     payload = {
-        "model": model or DEFAULT_MODEL,
+        "model": model or os.environ.get("LLM_MODEL", DEFAULT_MODEL),
         "messages": messages,
         "temperature": temperature,
         "stream": False,
