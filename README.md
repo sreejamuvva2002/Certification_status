@@ -100,6 +100,60 @@ Re-running **resumes** where it left off; use `--fresh` to start over.
 | `--fetch-pages N` | top result pages to open per query (default 2; 0 = snippets only) |
 | `--use-location` | include the sheet's location in queries — **off by default because sheet locations may be wrong**; locations are only ever passed to the LLM as unverified hints |
 
+## Location research (`scripts/collect_locations.py`)
+
+A second, independent pipeline that answers *"where actually is each company?"*.
+
+The `location` / `address` columns in `data/companies.csv` come straight from the
+GNEM spreadsheet and were **never verified** — that is why the certification pipeline
+only ever passes them to the model as unverified hints. This pipeline researches each
+company's Georgia presence from scratch:
+
+```bash
+python3 scripts/build_county_lookup.py             # once: builds data/ga_city_county.json
+python3 scripts/collect_locations.py --limit 1     # smoke test
+python3 scripts/collect_locations.py               # full 205-record run (~3 h)
+```
+
+**Clean-room by design:** the only inputs to the searches and to the model are the
+**company name** and the state **"Georgia"**. Nothing from the spreadsheet is shown to
+the model, so the result is an independent finding rather than a paraphrase of the
+sheet. The sheet's values are compared against the findings afterwards, *in code*.
+
+**One row per verified facility.** A company with several Georgia plants gets one row
+each — never a single "best" address. The model must first enumerate every candidate
+Georgia site (`georgia_site_candidates`) and only then emit rows, and a code check
+flags any Georgia place in the evidence that no row covers.
+
+Output is the 15-column table below, plus one page per company in `outputs/locations/`:
+
+| Record No. | Company | Verified facility name | Street address | City | County | State | ZIP | Facility type | Operational status | Georgia facility? | Source URL | Evidence quote | Confidence | Notes |
+
+- **Facility type**: manufacturing plant, headquarters, sales office, distribution
+  center, warehouse, r&d center, cancelled project, planned facility, closed facility,
+  dealer/service location only, unclear.
+- **Operational status**: operating, planned, under construction, cancelled, closed,
+  unclear, no georgia facility found, plus `search_failed` / `source_unavailable`.
+  A failed search can never be recorded as "no georgia facility found" — absence of
+  evidence is kept distinct from evidence of absence.
+- **Partial locations are kept**: a site verified by city/county but with no published
+  street address still gets a row, with `street_address` blank and the limitation
+  stated in Notes.
+- **County** is filled from `data/ga_city_county.json` (539 Georgia municipalities,
+  built by `scripts/build_county_lookup.py`) when no source states it, and Notes record
+  that provenance. The same reference validates the *sheet's* own city/county pairs —
+  it already caught the sheet placing Pendergrass in Hall County (it is Jackson) and
+  Lavonia in Rabun (it is Franklin/Hart).
+
+Guards that keep the file trustworthy: the prompt requires every address to appear
+verbatim in the evidence; `_grounded()` strips any address the evidence does not
+support while **keeping** the facility row; fetched pages are placed ahead of search
+snippets in the evidence so the strongest sources are never truncated away.
+
+Outputs: `outputs/locations_table.md`, `outputs/locations.csv` (resumable, keyed on
+`record_no`), `outputs/locations/<rec>_<slug>.md`, `outputs/location_evidence.jsonl`.
+Re-running resumes; `--fresh` starts over.
+
 ## Which local model is best?
 
 The task is **reading search results and emitting strict JSON** — no vision, no long

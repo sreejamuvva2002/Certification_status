@@ -34,6 +34,9 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--xlsx", type=Path, default=DEFAULT_XLSX)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    ap.add_argument("--keep-duplicates", action="store_true",
+                    help="keep every GNEM row as its own record (no name de-dup); "
+                         "each gets a record_no. Use for per-facility research.")
     args = ap.parse_args()
 
     wb = openpyxl.load_workbook(args.xlsx, read_only=True)
@@ -58,10 +61,10 @@ def main() -> None:
             continue
         name = str(company).strip()
         key = name.lower()
-        if key in seen:
+        if not args.keep_duplicates and key in seen:
             continue
         seen.add(key)
-        record = {}
+        record = {"record_no": str(len(out_rows) + 1)}
         for out_col in COLUMN_MAP:
             if out_col == "company":
                 record[out_col] = name
@@ -70,12 +73,14 @@ def main() -> None:
             record[out_col] = str(val).strip() if val is not None else ""
         out_rows.append(record)
 
+    fieldnames = ["record_no"] + list(COLUMN_MAP)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(COLUMN_MAP))
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(out_rows)
-    print(f"Wrote {len(out_rows)} unique companies to {args.out}")
+    kind = "records (duplicates kept)" if args.keep_duplicates else "unique companies"
+    print(f"Wrote {len(out_rows)} {kind} to {args.out}")
 
 
 if __name__ == "__main__":

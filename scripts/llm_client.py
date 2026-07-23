@@ -25,7 +25,9 @@ def chat(messages: list[dict], model: str | None = None, base_url: str | None = 
     """Send a chat completion request and return the assistant message text."""
     url = (base_url or DEFAULT_BASE_URL).rstrip("/") + "/chat/completions"
     payload = {
-        "model": model or DEFAULT_MODEL,
+        # Read LLM_MODEL at call time: callers import this module before loading .env,
+        # so the import-time DEFAULT_MODEL can be stale.
+        "model": model or os.environ.get("LLM_MODEL") or DEFAULT_MODEL,
         "messages": messages,
         "temperature": temperature,
         "stream": False,
