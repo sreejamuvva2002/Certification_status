@@ -21,8 +21,15 @@ API_KEY = os.environ.get("LLM_API_KEY", "ollama")
 
 
 def chat(messages: list[dict], model: str | None = None, base_url: str | None = None,
-         temperature: float = 0.0, timeout: float = 300.0) -> str:
-    """Send a chat completion request and return the assistant message text."""
+         temperature: float = 0.0, timeout: float = 300.0,
+         extra: dict | None = None) -> str:
+    """Send a chat completion request and return the assistant message text.
+
+    `extra` merges server-specific options into the payload — e.g.
+    {"reasoning_effort": "none"} to skip a thinking model's hidden reasoning
+    pass (measured ~10x faster on simple classification), or
+    {"options": {"num_ctx": 131072}} to size Ollama's context window.
+    """
     url = (base_url or DEFAULT_BASE_URL).rstrip("/") + "/chat/completions"
     payload = {
         # Read LLM_MODEL at call time: callers import this module before loading .env,
@@ -32,6 +39,8 @@ def chat(messages: list[dict], model: str | None = None, base_url: str | None = 
         "temperature": temperature,
         "stream": False,
     }
+    if extra:
+        payload.update(extra)
     req = urllib.request.Request(
         url,
         data=json.dumps(payload).encode("utf-8"),
