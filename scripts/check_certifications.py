@@ -40,6 +40,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import html as html_lib
 import http.cookiejar
 import json
@@ -459,6 +460,34 @@ def make_backend(kind: str):
         print(f"[backend] browser-harness unavailable ({e.__class__.__name__}: {e}); "
               f"falling back to plain HTTP search")
         return HttpBackend()
+
+
+def install_polite_fetch(backend, cache_dir: Path, min_interval: float = 3.0):
+    """Wrap backend.fetch_page with an on-disk cache and a per-host minimum interval.
+
+    Opt-in (nothing calls this by default, so the main pipeline is unchanged). Used by
+    scripts/gapfill_run.py: a resumed pass must not re-hit hosts it already read, and
+    registrar sites throttle hard, so requests to one host are spaced out.
+    """
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    inner = backend.fetch_page
+    last_hit: dict[str, float] = {}
+
+    def fetch_page(url: str) -> str:
+        path = cache_dir / (hashlib.sha1(url.encode()).hexdigest() + ".txt")
+        if path.exists():
+            return path.read_text(encoding="utf-8")
+        host = urllib.parse.urlsplit(url).netloc.lower()
+        wait = min_interval - (time.monotonic() - last_hit.get(host, -1e9))
+        if wait > 0:
+            time.sleep(wait)
+        last_hit[host] = time.monotonic()
+        text = inner(url)
+        path.write_text(text, encoding="utf-8")
+        return text
+
+    backend.fetch_page = fetch_page
+    return backend
 
 
 # ---------------------------------------------------------------- evidence gathering
