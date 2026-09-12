@@ -1,0 +1,56 @@
+{
+  "query_id": "q_company_12e67d5ae5db170e67a50b2e_targeted",
+  "query": "\"Robert Bosch LLC\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_030ef6fab6c8784dfaff1fab",
+    "claim_3ca478c877e0a4334239a432",
+    "claim_972010ea141b34710ea69408",
+    "claim_9e2392532af41a60a5c96d42"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_030ef6fab6c8784dfaff1fab",
+      "text": "President Trump has implemented a 25% tariff on foreign-made auto parts, including powertrain components, seats, and airbags, while introducing some key exemptions to reduce the strain on automakers.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_9f82b7462f46a2f16899791a"
+    },
+    {
+      "claim_id": "claim_3ca478c877e0a4334239a432",
+      "text": "Mohammad Fatouraie of Bosch talks about navigating financial pressures from changing EV projections",
+      "url": "https://www.youtube.com/watch?v=XdjHlH1q4Ko",
+      "chunk_id": "chunk_237fa6f6828810a39df61ccd"
+    },
+    {
+      "claim_id": "claim_972010ea141b34710ea69408",
+      "text": "The White House announced that passenger vehicles, certain trucks, and auto parts will be exempt from the new 10% global tariff set to take effect on February 24, 2026. This decision provides relief to automakers and dealers who were concerned about additional cost pressures, especially as the industry already faces significant expenses from existing tariffs on steel, aluminum, and imported auto parts.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_e8a1ffd62f7b512ed56a6a50"
+    },
+    {
+      "claim_id": "claim_9e2392532af41a60a5c96d42",
+      "text": "The proposed tariffs, set to begin at 10% in February and escalate to 25% by June, have sparked outrage among German carmakers and trade organizations, who warn of enormous economic costs.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_f3acc3ddb27ff46874313455"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_030ef6fab6c8784dfaff1fab",
+      "claim_9e2392532af41a60a5c96d42"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 25,
+  "synthesis_input_claim_count": 25
+}

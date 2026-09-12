@@ -1,0 +1,71 @@
+{
+  "query_id": "q_270",
+  "query": "site:sec.gov automotive suppliers tariffs Georgia manufacturing",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_360aecd2b453e171841b5dfd",
+    "claim_4589392af59257185fbb6cfb",
+    "claim_57a2fd5c26af1f8ed64b97b4",
+    "claim_6a506036f308c812e533b887",
+    "claim_cfaa2418a3e5a1a9184a909f",
+    "claim_d0f6fdcfd0403b14659dede7"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_360aecd2b453e171841b5dfd",
+      "text": "will be imposed, and that existing tariffs will be increased on imports of our products or the components used in our products",
+      "url": "https://www.sec.gov/Archives/edgar/data/1049502/000119312526066820/mksi-20251231.htm",
+      "chunk_id": "chunk_34899d6da5d52ff454d3974c"
+    },
+    {
+      "claim_id": "claim_4589392af59257185fbb6cfb",
+      "text": "As a result of changes to U.S. administrative policy, there may be changes to existing trade agreements, like the North American Free Trade Agreement (NAFTA) and its anticipated successor agreement, the U.S.-Mexico-Canada Agreement (",
+      "url": "https://www.sec.gov/Archives/edgar/data/1670541/000167054118000065/a9302018adientform10k.htm",
+      "chunk_id": "chunk_fb422b20aff7039cfb1e4890"
+    },
+    {
+      "claim_id": "claim_57a2fd5c26af1f8ed64b97b4",
+      "text": "Supply chain disruptions, including as a result of the relocation of certain low-cost and sole and limited source suppliers to less-developed countries;",
+      "url": "https://www.sec.gov/Archives/edgar/data/1049502/000119312526066820/mksi-20251231.htm",
+      "chunk_id": "chunk_34899d6da5d52ff454d3974c"
+    },
+    {
+      "claim_id": "claim_6a506036f308c812e533b887",
+      "text": "International trade disputes could, among other things, reduce demand for and production of vehicles, disrupt global supply chains, distort commodity pricing, impair the ability of automotive suppliers and vehicle manufacturers to make efficient long-term investment decisions, create volatility in relative foreign exchange rates, and contribute to stock market volatility.",
+      "url": "https://www.sec.gov/Archives/edgar/data/749098/000119312521097041/d46059dex1.htm",
+      "chunk_id": "chunk_43a84505cad9abeac343ada3"
+    },
+    {
+      "claim_id": "claim_cfaa2418a3e5a1a9184a909f",
+      "text": "Magna is a mobility technology company and Tier 1 supplier of automotive parts.",
+      "url": "https://www.sec.gov/Archives/edgar/data/749098/000119312521097041/d46059dex1.htm",
+      "chunk_id": "chunk_43a84505cad9abeac343ada3"
+    },
+    {
+      "claim_id": "claim_d0f6fdcfd0403b14659dede7",
+      "text": "High and fluctuating tariffs on our supplies, resulting in higher prices and our products becoming less competitive;",
+      "url": "https://www.sec.gov/Archives/edgar/data/1049502/000119312526066820/mksi-20251231.htm",
+      "chunk_id": "chunk_34899d6da5d52ff454d3974c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_360aecd2b453e171841b5dfd",
+      "claim_d0f6fdcfd0403b14659dede7"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 6,
+  "synthesis_input_claim_count": 6
+}

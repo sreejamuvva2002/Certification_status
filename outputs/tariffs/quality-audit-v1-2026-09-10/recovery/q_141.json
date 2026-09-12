@@ -1,0 +1,130 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [],
+  "cause_explanation": "The original query seeks specific import duties for 'Battery binder PVDF'. The retrieved evidence fails to provide this because the sources either discuss general market pricing without tariff specifics, list unrelated HTS codes for textile binders or PCBs, or discuss a different product category (NdFeB magnets) where 'binder' refers to an epoxy resin component rather than PVDF. No passage explicitly links a specific tariff rate or duty status to PVDF battery binders, nor does any source establish a named company's exposure to such duties.",
+  "confidence": "high",
+  "remaining_gap": "No evidence found establishing the specific HTS classification or applicable import duty rate for 'PVDF binder' used in lithium battery cathodes. The available text discusses market pricing differentials, regulatory pressures on VOCs, and demand volumes but does not quantify tariffs.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_b513b58fa24d653cad7a0a70",
+      "supporting_excerpt": "Regional differentials in the PVDF Binders for Lithium Battery Cathode Price are becoming more pronounced as localization and trade‑cost structures evolve. Datavagyanik observes that battery‑grade PVDF‑binder prices in Asia‑Pacific are typically 10–15% lower than in Europe and North America, reflecting lower local‑energy costs, higher production scale, and fewer import duties.",
+      "relevance_explanation": "Mentions 'fewer import duties' as a factor for price differentials but does not state the actual duty rate or confirm if duties exist for PVDF binders in specific regions.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_52f427494f96856d686b20e3",
+      "supporting_excerpt": "5607.21.00 Binder or baler twine, of sisal or other textile fibers of genus Agave ... 5607.41.10 Binder or baler twine of wide nonfibrillated strip, of polyethylene or polypropylene",
+      "relevance_explanation": "Lists HTS codes for 'binder' as agricultural or plastic twine, which is irrelevant to PVDF chemical binders for batteries.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_21d9bfe809307263fe8f5fed",
+      "supporting_excerpt": "Printed circuit board, 2 layers, LED right-handed tail stop light, of FR-4 woven fiberglass cloth with a flame resistant epoxy resin binder...",
+      "relevance_explanation": "Discusses 'epoxy resin binder' in the context of printed circuit boards, not PVDF battery binders.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_1567bbcb320010294df36eaf",
+      "supporting_excerpt": "The rapidly solidified powder feedstock is then mixed with a binder to form a final shape using compression bonding, injection molding, or calendaring.",
+      "relevance_explanation": "Describes the use of a 'binder' in NdFeB magnet production, unrelated to PVDF battery binders.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_141",
+  "query": "Battery binder PVDF import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 1,
+    "full_text_sources": 1,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 1,
+    "all_extracted_claims": 17,
+    "claims_presented_to_original_synthesis": 17,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 13,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [],
+  "candidate_passage_ids": [
+    "passage_b513b58fa24d653cad7a0a70",
+    "passage_c871a0b2951babb4207e24d8",
+    "passage_52f427494f96856d686b20e3",
+    "passage_21d9bfe809307263fe8f5fed",
+    "passage_c4ae4d221b212328a3a47dc1",
+    "passage_7ada41c90d46a2157d4c2e2b",
+    "passage_5863baa542e47dbe8293aa55",
+    "passage_1567bbcb320010294df36eaf"
+  ],
+  "candidate_document_ids": [
+    "document_12667e204f23ee95cb1e54a3",
+    "document_592f3ce7cfe389bb185c4047",
+    "document_6f192579e476b813aae38e54",
+    "document_a7dbe6a196be7a4fb8796cd9",
+    "document_d4a043b1765483342ddf7ed9",
+    "document_e7b71f2aa89bd84893a4bbdd"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_1567bbcb320010294df36eaf",
+      "supporting_excerpt": "The rapidly solidified powder feedstock is then mixed with a binder to form a final shape using compression bonding, injection molding, or calendaring.",
+      "relevance_explanation": "Describes the use of a 'binder' in NdFeB magnet production, unrelated to PVDF battery binders.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_69ebd054c41da00adeb2976c",
+      "query_id": "q_141",
+      "chunk_id": "chunk_7b6a531da672eb3f7b2ae4f3",
+      "document_id": "document_a7dbe6a196be7a4fb8796cd9",
+      "source_url": "https://www.federalregister.gov/documents/2023/02/14/2023-03078/publication-of-a-report-on-the-effect-of-imports-of-neodymium-iron-boron-ndfeb-permanent-magnets-on",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/7d9a8e05fa685624880690d483624a3514891eb3a6e86832a73075992b277d7a.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_b513b58fa24d653cad7a0a70",
+        "supporting_excerpt": "Regional differentials in the PVDF Binders for Lithium Battery Cathode Price are becoming more pronounced as localization and trade‑cost structures evolve. Datavagyanik observes that battery‑grade PVDF‑binder prices in Asia‑Pacific are typically 10–15% lower than in Europe and North America, reflecting lower local‑energy costs, higher production scale, and fewer import duties.",
+        "relevance_explanation": "Mentions 'fewer import duties' as a factor for price differentials but does not state the actual duty rate or confirm if duties exist for PVDF binders in specific regions.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_52f427494f96856d686b20e3",
+        "supporting_excerpt": "5607.21.00 Binder or baler twine, of sisal or other textile fibers of genus Agave ... 5607.41.10 Binder or baler twine of wide nonfibrillated strip, of polyethylene or polypropylene",
+        "relevance_explanation": "Lists HTS codes for 'binder' as agricultural or plastic twine, which is irrelevant to PVDF chemical binders for batteries.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_21d9bfe809307263fe8f5fed",
+        "supporting_excerpt": "Printed circuit board, 2 layers, LED right-handed tail stop light, of FR-4 woven fiberglass cloth with a flame resistant epoxy resin binder...",
+        "relevance_explanation": "Discusses 'epoxy resin binder' in the context of printed circuit boards, not PVDF battery binders.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

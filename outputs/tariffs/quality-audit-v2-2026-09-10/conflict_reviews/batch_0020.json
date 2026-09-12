@@ -1,0 +1,30 @@
+{
+  "status": "reviewed",
+  "pairs": {
+    "conflict_12acddc47fb77d1d36a468b7": {
+      "classification": "different_dates_or_policy_stages",
+      "reason": "Claim 1 describes a specific deal resulting in a 15% rate for EU/Japan/Korea auto imports effective April/May 2025, while Claim 2 states a general 25% tariff announced by the President with a note that duties are 'now 15%' on those same countries. The text explicitly frames the 25% as an announcement and the 15% as the current in-force rate following negotiations or exemptions, representing sequential policy stages (announcement vs. effective negotiated rate) rather than a direct contradiction.",
+      "verification_question": "Does the 'now 15%' status in Claim 2 refer to the specific post-negotiation rate described in Claim 1, or is it a separate general application of Section 232 duties pending further action?"
+    },
+    "conflict_a57780565482b2b948a1372f": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 cites a CBP ruling classifying a HUD under HTSUS 8531.80.90, while Claim 2 cites import data for Head Up Displays under HS Code 85269190 from Taiwan. The classification codes (8531 vs 8526) and the specific product descriptions or origins differ, indicating these are distinct items or classifications rather than a conflict over the same good.",
+      "verification_question": "Are the HUDs classified under 8531.80.90 in Claim 1 functionally identical to the Head Up Displays imported under 85269190 in Claim 2, or do they differ in technical specifications affecting classification?"
+    },
+    "conflict_154a5c554faf8f3955e50ac0": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 references historical CBP rulings (2008, 2019) classifying LCD displays with limited signaling functions (segment-style characters, fixed icons) under heading 8531. Claim 2 describes a specific ruling for advanced LCD modules capable of displaying wide video content (parking assist, maps, GPS) classified under heading 8528. The distinction lies in the operational capabilities and scope of the products being classified.",
+      "verification_question": "Does the 'advanced' capability to display wide video content in Claim 2 definitively exclude the product from the signaling function criteria used for classification under 8531 in Claim 1?"
+    },
+    "conflict_5c7693230239d1e702e5867f": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 classifies a specific LCD display module capable of displaying wide video content under heading 8528. Claim 2 references multiple historical rulings (HQ H304224, HQ H049555, NY N306705, HQ H026661) classifying automotive LCD modules with limited signaling functions (speed, warnings, fixed icons) under heading 8531. The products differ in their functional scope (video display vs. signaling), justifying different classifications.",
+      "verification_question": "Is the specific LCD display module in Claim 1 functionally distinct from the signaling-only modules referenced in Claim 2 such that they fall under different HTSUS headings?"
+    },
+    "conflict_8fe926d53dff81fd596cf94c": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 states that 14 exclusions were granted for specific solar manufacturing equipment effective Jan 1, 2024 through May 31, 2025. Claim 2 clarifies that the USTR determined not to adopt five specific exclusions covering 'solar manufacturing equipment for modules.' The conflict is resolved by distinguishing between the general category of equipment (where exclusions were granted) and the specific subset of module manufacturing equipment (where exclusions were denied).",
+      "verification_question": "Does the denial of exclusions in Claim 2 apply to a distinct subset of 'solar manufacturing equipment for modules' that was excluded from the 14 grants mentioned in Claim 1?"
+    }
+  }
+}

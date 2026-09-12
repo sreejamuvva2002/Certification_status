@@ -1,0 +1,55 @@
+{
+  "query_id": "q_company_8102602c2cf120a2e06de532_discovery",
+  "query": "\"Archer Aviation Inc.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0afc3b96f9b0728e39f96ad3",
+    "claim_451a8707a04c6034af730d33",
+    "claim_905944755d41337d38e0753c",
+    "claim_cc245472490f0c74592a3c53"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0afc3b96f9b0728e39f96ad3",
+      "text": "In December 2024, we completed construction of our high-volume aircraft manufacturing facility, ARC, located in Covington, Georgia.",
+      "url": "https://s206.q4cdn.com/823642595/files/doc_financials/2024/q4/1eadfdad-b78e-415f-9a41-7fa8e4b340b3.pdf",
+      "chunk_id": "chunk_4d77f4ab048affe0d8c0df52"
+    },
+    {
+      "claim_id": "claim_451a8707a04c6034af730d33",
+      "text": "In December 2024, we launched Archer Defense, entering into a strategic partnership with Anduril Industries Inc. (“Anduril”) to jointly develop a next-generation aircraft for defense applications.",
+      "url": "https://s206.q4cdn.com/823642595/files/doc_financials/2024/q4/1eadfdad-b78e-415f-9a41-7fa8e4b340b3.pdf",
+      "chunk_id": "chunk_4d77f4ab048affe0d8c0df52"
+    },
+    {
+      "claim_id": "claim_905944755d41337d38e0753c",
+      "text": "In December 2024, we completed construction of our high-volume aircraft manufacturing facility, ARC, located in Covington, Georgia.",
+      "url": "https://s206.q4cdn.com/823642595/files/doc_financials/2024/q4/1eadfdad-b78e-415f-9a41-7fa8e4b340b3.pdf",
+      "chunk_id": "chunk_7850a882b1e8b28821c0fba2"
+    },
+    {
+      "claim_id": "claim_cc245472490f0c74592a3c53",
+      "text": "We plan to start our initial production of aircraft at this facility in the first half of 2025 and ramp our production there to support our commercialization efforts.",
+      "url": "https://s206.q4cdn.com/823642595/files/doc_financials/2024/q4/1eadfdad-b78e-415f-9a41-7fa8e4b340b3.pdf",
+      "chunk_id": "chunk_4d77f4ab048affe0d8c0df52"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_0afc3b96f9b0728e39f96ad3",
+      "claim_905944755d41337d38e0753c"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

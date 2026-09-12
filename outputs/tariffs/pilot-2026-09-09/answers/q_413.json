@@ -1,0 +1,73 @@
+{
+  "query_id": "q_413",
+  "query": "Cobalt hydroxide United States customs classification tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_123212bf9d5bcd421c23b053",
+    "claim_35c884fb88fb886fe82ce774",
+    "claim_444a28bfa9bb5363d5edb1df",
+    "claim_58ddf5b0ef8f3afc6130f7b6",
+    "claim_5da3652429b3be9cc810edf5",
+    "claim_7fa882420ecdd1e4316be013"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_123212bf9d5bcd421c23b053",
+      "text": "The general rate of duty will be 0.1 percent ad valorem.",
+      "url": "https://rulings.cbp.gov/ruling/N299059",
+      "chunk_id": "chunk_bb93f3bde75f3abde49beaac"
+    },
+    {
+      "claim_id": "claim_35c884fb88fb886fe82ce774",
+      "text": "The bill’s signing will affect cobalt products listed under HS code 8105.20.30, which the Harmonized Tariff Schedule (HTS) defines as cobalt mattes and other intermediate products of cobalt metallurgy; unwrought cobalt; powders; and unwrought cobalt: alloys.",
+      "url": "https://www.fastmarkets.com/insights/us-imports-of-russian-cobalt-to-face-45-duty",
+      "chunk_id": "chunk_610257075d88ead650688a18"
+    },
+    {
+      "claim_id": "claim_444a28bfa9bb5363d5edb1df",
+      "text": "US cobalt imports (HS 8105) from all origins totaled 9,288 tonnes in 2021, according to Comtrade.",
+      "url": "https://www.fastmarkets.com/insights/us-imports-of-russian-cobalt-to-face-45-duty",
+      "chunk_id": "chunk_610257075d88ead650688a18"
+    },
+    {
+      "claim_id": "claim_58ddf5b0ef8f3afc6130f7b6",
+      "text": "The higher duty rate for these products is listed as 45% in HTS/Rate 2, up from 4.4.% under General/Rate 1 regime.",
+      "url": "https://www.fastmarkets.com/insights/us-imports-of-russian-cobalt-to-face-45-duty",
+      "chunk_id": "chunk_610257075d88ead650688a18"
+    },
+    {
+      "claim_id": "claim_5da3652429b3be9cc810edf5",
+      "text": "The bill, which was introduced to the Senate on March 2, suspends the PNTR status that Russia has had in its trade relations with the US since 2012, when the country joined the World Trade Organization.",
+      "url": "https://www.fastmarkets.com/insights/us-imports-of-russian-cobalt-to-face-45-duty",
+      "chunk_id": "chunk_610257075d88ead650688a18"
+    },
+    {
+      "claim_id": "claim_7fa882420ecdd1e4316be013",
+      "text": "The general rate of duty will be 0.1 percent ad valorem.",
+      "url": "https://rulings.cbp.gov/ruling/N288463",
+      "chunk_id": "chunk_bb93f3bde75f3abde49beaac"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_123212bf9d5bcd421c23b053",
+      "claim_7fa882420ecdd1e4316be013"
+    ],
+    [
+      "claim_35c884fb88fb886fe82ce774",
+      "claim_58ddf5b0ef8f3afc6130f7b6"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 6,
+  "synthesis_input_claim_count": 6
+}

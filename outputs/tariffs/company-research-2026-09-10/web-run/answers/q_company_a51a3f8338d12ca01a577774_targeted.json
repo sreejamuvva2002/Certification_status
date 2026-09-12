@@ -1,0 +1,73 @@
+{
+  "query_id": "q_company_a51a3f8338d12ca01a577774_targeted",
+  "query": "\"NVH Korea\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1eac734959b2c600fe256d7a",
+    "claim_7e47373680b365080bbecda3",
+    "claim_c83be9ec47c077161de5197f",
+    "claim_ce0ecd21755859752b8e5274",
+    "claim_f33873bd7ae1cd3062227e17",
+    "claim_946b50c548f7f1ce83cd3ccb"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1eac734959b2c600fe256d7a",
+      "text": "President Donald Trump announced he will be increasing tariffs on South Korean goods from 15% to 25%, citing South Korea’s failure to enact a trade agreement signed in July 2025. The tariffs will affect a wide range of goods, including automobiles, lumber, and pharmaceuticals",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_f3acc3ddb27ff46874313455"
+    },
+    {
+      "claim_id": "claim_7e47373680b365080bbecda3",
+      "text": "Vehicles from the U.K. are now subject to a 10% tariff, and, in the past few weeks, 15% automobile import tariffs were established with several other major trading partners, including Japan, South Korea and the EU.",
+      "url": "https://www.coxautoinc.com/insights-hub/the-trump-tariff-stance-has-shifted-where-are-we-now",
+      "chunk_id": "chunk_c70d0065a7c97ff634980ede"
+    },
+    {
+      "claim_id": "claim_c83be9ec47c077161de5197f",
+      "text": "Deals the Trump administration reached with the EU, Japan and South Korea in 2025 reduced U.S. auto tariffs on vehicles and parts from those countries to 15 percent, from 25 percent, while a deal with the United Kingdom lowered tariffs on most imports to 10 percent.",
+      "url": "https://www.facebook.com/AutoNews/posts/automakers-and-suppliers-hope-the-15-percent-tariff-on-vehicle-and-parts-imports/1598119755507085",
+      "chunk_id": "chunk_7aa2f53664e70dec8b6cffbc"
+    },
+    {
+      "claim_id": "claim_ce0ecd21755859752b8e5274",
+      "text": "The United States and South Korea have reached a significant trade agreement, reducing U.S. tariffs on South Korean automobile exports from 25% to 15%.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_4dd34d22b4ec1ee472f18fb9"
+    },
+    {
+      "claim_id": "claim_f33873bd7ae1cd3062227e17",
+      "text": "President Donald Trump has announced a 25 percent tariff on goods imported from Japan and South Korea, alongside new import taxes on 12 other nations, set to take effect on August 1.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_e64fc3d84b6efb93481b3a67"
+    },
+    {
+      "claim_id": "claim_946b50c548f7f1ce83cd3ccb",
+      "text": "According to general estimates from Cox Automotive, the total bill so far in 2025 for vehicles imported from Korea would be $3.8 billion, or roughly $4,000 per unit (if tariffs were in place since Jan. 1).",
+      "url": "https://www.coxautoinc.com/insights-hub/the-trump-tariff-stance-has-shifted-where-are-we-now",
+      "chunk_id": "chunk_c70d0065a7c97ff634980ede"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_1eac734959b2c600fe256d7a",
+      "claim_c83be9ec47c077161de5197f"
+    ],
+    [
+      "claim_f33873bd7ae1cd3062227e17",
+      "claim_ce0ecd21755859752b8e5274"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 37,
+  "synthesis_input_claim_count": 37
+}

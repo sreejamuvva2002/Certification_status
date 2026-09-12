@@ -1,0 +1,58 @@
+{
+  "query_id": "q_317",
+  "query": "EV traction motors United States import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2c459b3e25009d9ef46099bb",
+    "claim_30c63ef11da3430bb246822d",
+    "claim_cbe69d9e4ccf199bba99e944",
+    "claim_e1578b8044f522c2f4142bd1"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2c459b3e25009d9ef46099bb",
+      "text": "Tariffs on EVs under Section 301 will rise from 25% to 100% in 2024.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_30c63ef11da3430bb246822d",
+      "text": "On May 14, the Biden administration announced the US will impose additional tariffs on $18 billion worth of goods from China, which includes a tariff increase from 25% to 100% on electric vehicles (EVs), and from 7.5% to 25% on lithium-ion (li-ion) batteries for electric vehicles in 2024.",
+      "url": "https://interactanalysis.com/insight/us-tariff-increases-what-is-the-impact-on-the-us-and-china-markets-for-electric-vehicles-and-li-ion-batteries",
+      "chunk_id": "chunk_fe816256453a5acd88ebe9b3"
+    },
+    {
+      "claim_id": "claim_cbe69d9e4ccf199bba99e944",
+      "text": "in May 2024, the Biden administration imposed a 100% additional tariff on Chinese EV imports. Subsequently, the Trump administration raised this tariff substantially to 145%-245%, before negotiations reduced it to 135%.",
+      "url": "https://www.nature.com/articles/s44168-025-00330-6",
+      "chunk_id": "chunk_fb8cbb0a139e93c7a2b05b2f"
+    },
+    {
+      "claim_id": "claim_e1578b8044f522c2f4142bd1",
+      "text": "Tariffs on lithium-ion EV batteries will rise from 7.5% to 25% in 2024",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_2c459b3e25009d9ef46099bb",
+      "claim_cbe69d9e4ccf199bba99e944"
+    ],
+    [
+      "claim_30c63ef11da3430bb246822d",
+      "claim_e1578b8044f522c2f4142bd1"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 17,
+  "synthesis_input_claim_count": 17
+}

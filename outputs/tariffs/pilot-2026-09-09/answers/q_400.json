@@ -1,0 +1,63 @@
+{
+  "query_id": "q_400",
+  "query": "Georgia battery suppliers tariff-driven domestic sourcing",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1dc1d43f5beebde0b73a884a",
+    "claim_227c2a6403a1b754353752ac",
+    "claim_47195bd3c7c25db8f18139e8",
+    "claim_601d4458767b355fed513088",
+    "claim_a4aba979c1a4bb6c2cbf2f35"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1dc1d43f5beebde0b73a884a",
+      "text": "Last week, Donald Trump’s administration announced a staggering 93.5% tariff on Chinese graphite—a material essential to battery production.",
+      "url": "https://washingtonmonthly.com/2025/07/22/trump-is-destroying-the-american-battery-industry",
+      "chunk_id": "chunk_c25459a7388e0b1c6a13f739"
+    },
+    {
+      "claim_id": "claim_227c2a6403a1b754353752ac",
+      "text": "The first three months of 2025 saw cancellations of billions of dollars in planned battery cell-manufacturing investment from Freyr Battery (now T1 Energy) in Georgia and Kore Power in Arizona.",
+      "url": "https://www.canarymedia.com/articles/energy-storage/tariffs-tax-credits-grid-battery-trump",
+      "chunk_id": "chunk_19f1d071e2aaacf3b767469d"
+    },
+    {
+      "claim_id": "claim_47195bd3c7c25db8f18139e8",
+      "text": "SK Battery America, who opened its first U.S. battery factory in Georgia to supply Hyundai and other regional OEMs.",
+      "url": "https://www.c2es.org/document/securing-the-critical-battery-materials-supply-chain-in-the-southeast-united-states",
+      "chunk_id": "chunk_2891a96192071ed9dc28bc19"
+    },
+    {
+      "claim_id": "claim_601d4458767b355fed513088",
+      "text": "For first-of-a-kind manufacturing facilities, new equipment must often be imported from other countries, raising the costs significantly and exposing the domestic facility to import tariffs, an additional capital cost in an already capital-intensive industry.",
+      "url": "https://www.c2es.org/document/securing-the-critical-battery-materials-supply-chain-in-the-southeast-united-states",
+      "chunk_id": "chunk_0eecd797249b5f9c11cd5f27"
+    },
+    {
+      "claim_id": "claim_a4aba979c1a4bb6c2cbf2f35",
+      "text": "Trump policies are destroying the American battery industry. Here, the SK, Hyundai Joint Battery Plant is seen Friday, June 27, 2025, in Bartow County, George.",
+      "url": "https://washingtonmonthly.com/2025/07/22/trump-is-destroying-the-american-battery-industry",
+      "chunk_id": "chunk_c25459a7388e0b1c6a13f739"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_1dc1d43f5beebde0b73a884a",
+      "claim_a4aba979c1a4bb6c2cbf2f35"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 44,
+  "synthesis_input_claim_count": 44
+}

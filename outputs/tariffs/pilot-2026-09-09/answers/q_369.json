@@ -1,0 +1,74 @@
+{
+  "query_id": "q_369",
+  "query": "Georgia automotive foundries imported metal tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_5c3f3f333a94331788a2caf5",
+    "claim_6c837c5adf04f57adf9c52c5",
+    "claim_70740bc6c0b79e15344938af",
+    "claim_7d96dafcb8275c78ac666fc7",
+    "claim_b8eed32cc6edbe46f32072d7",
+    "claim_f9756ed67401e8bb1ae4e63d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_5c3f3f333a94331788a2caf5",
+      "text": "German business leaders are expressing concerns that President Donald Trump’s 25 percent tariff on imported steel could affect the auto industry in the South.",
+      "url": "https://aldailynews.com/fear-steel-tariff-hurt-auto-industry-south",
+      "chunk_id": "chunk_266a70c3921e68607b72d98f"
+    },
+    {
+      "claim_id": "claim_6c837c5adf04f57adf9c52c5",
+      "text": "On August 15, the US Department of Commerce expanded the list of goods subject to these 50% tariffs, adding 407 product categories of steel and aluminium derivative products",
+      "url": "https://www.fastmarkets.com/insights/ghost-of-steel-past-a-timeline-of-2025-in-the-americas-steel-industry",
+      "chunk_id": "chunk_dd366872482fb523eaf7b3ab"
+    },
+    {
+      "claim_id": "claim_70740bc6c0b79e15344938af",
+      "text": "A 25% tariff on all steel and aluminium imports went into effect on March 12, under the umbrella of Section 232 of the 1962 Trade Expansion Act. This new iteration barred previous country-specific exemptions and exclusions, including for the EU, Canada, Mexico, Japan and the UK.",
+      "url": "https://www.fastmarkets.com/insights/ghost-of-steel-past-a-timeline-of-2025-in-the-americas-steel-industry",
+      "chunk_id": "chunk_dd366872482fb523eaf7b3ab"
+    },
+    {
+      "claim_id": "claim_7d96dafcb8275c78ac666fc7",
+      "text": "South Korean automaker Hyundai Motor Group said it will invest $2.7 billion in its fully electrified vehicle and battery manufacturing plant in southeast Georgia",
+      "url": "https://www.fastmarkets.com/insights/ghost-of-steel-past-a-timeline-of-2025-in-the-americas-steel-industry",
+      "chunk_id": "chunk_dd366872482fb523eaf7b3ab"
+    },
+    {
+      "claim_id": "claim_b8eed32cc6edbe46f32072d7",
+      "text": "The concern among some industry experts is that tariffs on steel could hurt companies like Mercedes-Benz, Volkswagen and Porsche, all of which have significant operations in the South",
+      "url": "https://aldailynews.com/fear-steel-tariff-hurt-auto-industry-south",
+      "chunk_id": "chunk_266a70c3921e68607b72d98f"
+    },
+    {
+      "claim_id": "claim_f9756ed67401e8bb1ae4e63d",
+      "text": "Trump signed a proclamation last week to impose a 25 percent tariff on steel from every country except Canada and Mexico.",
+      "url": "https://aldailynews.com/fear-steel-tariff-hurt-auto-industry-south",
+      "chunk_id": "chunk_266a70c3921e68607b72d98f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_5c3f3f333a94331788a2caf5",
+      "claim_f9756ed67401e8bb1ae4e63d"
+    ],
+    [
+      "claim_6c837c5adf04f57adf9c52c5",
+      "claim_70740bc6c0b79e15344938af"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 8,
+  "synthesis_input_claim_count": 8
+}

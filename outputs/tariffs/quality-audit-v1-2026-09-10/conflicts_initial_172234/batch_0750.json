@@ -1,0 +1,50 @@
+{
+  "status": "reviewed",
+  "pairs": [
+    {
+      "pair_id": "conflict_fe8334de248565677b6c0f4d",
+      "claim_ids": [
+        "claim_17cb0628d67837a5ffaad80b",
+        "claim_8c9b540476549b57dffa7d83"
+      ],
+      "query_ids": [
+        "q_99"
+      ],
+      "classification": "apparent_same_scope_conflict",
+      "reason": "Claims report incompatible tariff rates (25% vs 50%) for similar scope (steel/aluminum/fasteners) without explicit differentiation in text.",
+      "requires_current_authority_verification": true,
+      "assessment_method": "local_Qwen_scope_review_not_manual_verification",
+      "resolved": false
+    },
+    {
+      "pair_id": "conflict_75f97b53f84d55214c55ecd4",
+      "claim_ids": [
+        "claim_17cb0628d67837a5ffaad80b",
+        "claim_b124c333e0a5dd0b1922625b"
+      ],
+      "query_ids": [
+        "q_99"
+      ],
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 addresses raw material imports (steel/aluminum), Claim 2 addresses finished goods (fasteners) from specific origin (Taiwan).",
+      "requires_current_authority_verification": false,
+      "assessment_method": "local_Qwen_scope_review_not_manual_verification",
+      "resolved": false
+    },
+    {
+      "pair_id": "conflict_7b08c7517e818bde5ba351cf",
+      "claim_ids": [
+        "claim_8c9b540476549b57dffa7d83",
+        "claim_b124c333e0a5dd0b1922625b"
+      ],
+      "query_ids": [
+        "q_99"
+      ],
+      "classification": "apparent_same_scope_conflict",
+      "reason": "Claims report incompatible tariff rates (50% vs 33%) for similar scope (fasteners/derivatives) without explicit differentiation in text.",
+      "requires_current_authority_verification": true,
+      "assessment_method": "local_Qwen_scope_review_not_manual_verification",
+      "resolved": false
+    }
+  ]
+}

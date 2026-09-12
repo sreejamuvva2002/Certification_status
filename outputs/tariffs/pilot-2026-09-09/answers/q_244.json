@@ -1,0 +1,74 @@
+{
+  "query_id": "q_244",
+  "query": "Georgia EV supplier tariff exposure product country of origin",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0001f2f51a2cf2b2e9ef5a49",
+    "claim_02c0a159872d5a6a51639ca6",
+    "claim_275c05d186b10cfc69491626",
+    "claim_43a6b60c8646d24ae10b8a8b",
+    "claim_c8395b727700d0db203a2a95",
+    "claim_b3e64e31e04f93c56b117540"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0001f2f51a2cf2b2e9ef5a49",
+      "text": "As noted above, the country of origin determines whether an EV imported into the United States is subject to the general tariff, the unilateral tariffs imposed under Section 301 or the IEEPA, or whether it qualifies for a reduced dutiable base",
+      "url": "https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1618&context=djcil",
+      "chunk_id": "chunk_8b8f2b6812b345670b3d5828"
+    },
+    {
+      "claim_id": "claim_02c0a159872d5a6a51639ca6",
+      "text": "If assembly takes place in Mexico, an additional 25 percent tariff under the IEEPA would apply unless the EVs qualify as USMCA-originating goods.",
+      "url": "https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1618&context=djcil",
+      "chunk_id": "chunk_8b8f2b6812b345670b3d5828"
+    },
+    {
+      "claim_id": "claim_275c05d186b10cfc69491626",
+      "text": "automakers produce EVs outside China—such as in Mexico or elsewhere—where the STT is satisfied. In such cases, the 100 percent tariff under Section 301 may be avoided, although the vehicle would remain subject to the 25 percent tariff under Section 232.",
+      "url": "https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1618&context=djcil",
+      "chunk_id": "chunk_8b8f2b6812b345670b3d5828"
+    },
+    {
+      "claim_id": "claim_43a6b60c8646d24ae10b8a8b",
+      "text": "In practical terms, it appears that an OEM assembling vehicles in Mexico (or any other country) may source components from Chinese suppliers without triggering Section 301 tariffs, as long as those components are not imported under a CKD logistics structure.",
+      "url": "https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1618&context=djcil",
+      "chunk_id": "chunk_8b8f2b6812b345670b3d5828"
+    },
+    {
+      "claim_id": "claim_c8395b727700d0db203a2a95",
+      "text": "an OEM assembling vehicles in Mexico (or any other country) may source components from Chinese suppliers without triggering Section 301 tariffs, as long as those components are not imported under a CKD logistics structure.",
+      "url": "https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1618&context=djcil",
+      "chunk_id": "chunk_8b8f2b6812b345670b3d5828"
+    },
+    {
+      "claim_id": "claim_b3e64e31e04f93c56b117540",
+      "text": "The Democratic president quadrupled tariffs on Chinese EVs and sharply increased import taxes on solar panels and raw materials like semiconductors that are used to produce plug-in cars.",
+      "url": "https://www.ajc.com/news/business/how-will-new-chinese-tariffs-affect-georgia-business-its-complicated/7XZZOOZMUVH6TPWP2ZJY74GIFQ",
+      "chunk_id": "chunk_cc35eae6fb8e0df5ba6de3e9"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_02c0a159872d5a6a51639ca6",
+      "claim_275c05d186b10cfc69491626"
+    ],
+    [
+      "claim_43a6b60c8646d24ae10b8a8b",
+      "claim_c8395b727700d0db203a2a95"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

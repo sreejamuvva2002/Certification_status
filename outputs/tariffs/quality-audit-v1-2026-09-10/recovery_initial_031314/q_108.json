@@ -1,0 +1,130 @@
+{
+  "primary_cause": "missing_sources",
+  "contributing_causes": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "cause_explanation": "The original answer fails to establish a specific company's import exposure because no source explicitly names a company and links it to a tariff liability. The evidence is limited to general product classifications, proposed policy impacts on the industry, or unverified publisher claims about rates without confirming current legal status for a specific entity.",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly connects a named company (e.g., 'Dräxlmaier', 'Lear') to a specific tariff rate or duty calculation for copper wire automotive harnesses. The only mention of companies is in the context of proposed tariffs affecting supply chains, not established liability.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_3fdc7252e88ed57bed7b6324",
+      "supporting_excerpt": "Experts warn that widespread tariffs proposed by the Trump Administration could have catastrophic effects on the U.S. auto industry, especially when it comes to key components such as wiring harnesses. Mexico is an important base for wire harness suppliers such as Dräxlmaier, Lear, Leoni, Sumitomo and Yazaki... High tariffs could force suppliers to shift production...",
+      "relevance_explanation": "Mentions specific companies (Dräxlmaier, Lear, etc.) but only in the context of 'proposed' tariffs, not effective law or a confirmed duty rate for a specific import event.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_72cf2ea2d8f8ae05e57ed482",
+      "supporting_excerpt": "For example, an automotive lighting harness may fit 8544.30. A low-voltage cable assembly fitted with connectors may fall under 8544.42.9090... The right code depends on product design and end use.",
+      "relevance_explanation": "Provides general HTS classification guidance but does not link to a specific company or confirm the current applicability of Section 301 tariffs for that entity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_89c745e26421b0cf85138f81",
+      "supporting_excerpt": "For many China-origin wire harnesses under HTS 8544.30, the duty stack can include a 5% general duty plus a 25% Section 301 duty, creating a common 30% duty estimate... The exact rate depends on the HTS code, entry date, and exclusion status.",
+      "relevance_explanation": "States a 'common' estimate but explicitly notes that the rate depends on exclusions and entry dates, failing to confirm a specific company's liability or current law status.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_3ac6615b0e47463945c72561",
+      "supporting_excerpt": "For automotive wire harnesses from China under HTS 8544.30.0000, budget for 30% total duty (5% base + 25% Section 301). On a $50,000 shipment, expect $15,000 in combined duties.",
+      "relevance_explanation": "Provides a specific rate calculation but is from an unverified publisher and does not name a company or confirm the current legal status of the tariff for that entity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_108",
+  "query": "Copper wire automotive harness import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 4,
+    "all_extracted_claims": 16,
+    "claims_presented_to_original_synthesis": 16,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 4,
+    "company_named_claims": 3,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_72cf2ea2d8f8ae05e57ed482",
+    "passage_ee59498f2fe83afe32bd8fad",
+    "passage_89c745e26421b0cf85138f81",
+    "passage_3fdc7252e88ed57bed7b6324",
+    "passage_3ac6615b0e47463945c72561",
+    "passage_63d81602f02a27d503faa4ea",
+    "passage_344731b25f6066e46195a274",
+    "passage_6f787d538837272e8deaf05c"
+  ],
+  "candidate_document_ids": [
+    "document_76e3dd7e96ebfcf483ebb218",
+    "document_8b147960e94ce74cc45ee8f3",
+    "document_9dcbcb4362552ae2b6c999ed",
+    "document_abcc372c7d136699cf80b62d",
+    "document_bc72c6112a68baec615b0c32",
+    "document_efaaf65da5c6a0a40a8281df"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_3fdc7252e88ed57bed7b6324",
+        "supporting_excerpt": "Experts warn that widespread tariffs proposed by the Trump Administration could have catastrophic effects on the U.S. auto industry, especially when it comes to key components such as wiring harnesses. Mexico is an important base for wire harness suppliers such as Dräxlmaier, Lear, Leoni, Sumitomo and Yazaki... High tariffs could force suppliers to shift production...",
+        "relevance_explanation": "Mentions specific companies (Dräxlmaier, Lear, etc.) but only in the context of 'proposed' tariffs, not effective law or a confirmed duty rate for a specific import event.",
+        "company_applicability": "not_established",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_72cf2ea2d8f8ae05e57ed482",
+        "supporting_excerpt": "For example, an automotive lighting harness may fit 8544.30. A low-voltage cable assembly fitted with connectors may fall under 8544.42.9090... The right code depends on product design and end use.",
+        "relevance_explanation": "Provides general HTS classification guidance but does not link to a specific company or confirm the current applicability of Section 301 tariffs for that entity.",
+        "company_applicability": "not_established",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_89c745e26421b0cf85138f81",
+        "supporting_excerpt": "For many China-origin wire harnesses under HTS 8544.30, the duty stack can include a 5% general duty plus a 25% Section 301 duty, creating a common 30% duty estimate... The exact rate depends on the HTS code, entry date, and exclusion status.",
+        "relevance_explanation": "States a 'common' estimate but explicitly notes that the rate depends on exclusions and entry dates, failing to confirm a specific company's liability or current law status.",
+        "company_applicability": "not_established",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_3ac6615b0e47463945c72561",
+        "supporting_excerpt": "For automotive wire harnesses from China under HTS 8544.30.0000, budget for 30% total duty (5% base + 25% Section 301). On a $50,000 shipment, expect $15,000 in combined duties.",
+        "relevance_explanation": "Provides a specific rate calculation but is from an unverified publisher and does not name a company or confirm the current legal status of the tariff for that entity.",
+        "company_applicability": "not_established",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

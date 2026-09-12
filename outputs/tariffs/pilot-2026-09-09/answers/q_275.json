@@ -1,0 +1,81 @@
+{
+  "query_id": "q_275",
+  "query": "Southeast Georgia automotive electronics import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3be5545253060985e7b73183",
+    "claim_76a96aa95a61147c7b50f93a",
+    "claim_833d693cad9726316e190a69",
+    "claim_8ae985d3e1b9e41ba08e3913",
+    "claim_c403f86a5e86217460e43839",
+    "claim_b531b191fcd0b4213d6244b9",
+    "claim_ddef72466cf375331ca358fc"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3be5545253060985e7b73183",
+      "text": "In 2025, President Donald Trump imposed 25% tariffs on U.S. imports of automobiles and certain automobile parts under Section 232.",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    },
+    {
+      "claim_id": "claim_76a96aa95a61147c7b50f93a",
+      "text": "Today, President Donald J. Trump signed a proclamation invoking Section 232 of the Trade Expansion Act of 1962 to impose a 25% tariff on imports of automobiles and certain automobile parts",
+      "url": "https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-adjusts-imports-of-automobiles-and-automobile-parts-into-the-united-states",
+      "chunk_id": "chunk_a1de1eb7c3560e5de1d82ce3"
+    },
+    {
+      "claim_id": "claim_833d693cad9726316e190a69",
+      "text": "The above ad valorem tariff is in addition to any other duties, fees, exactions, and charges applicable to such imported automobiles and certain automobile parts articles.",
+      "url": "https://www.federalregister.gov/documents/2025/04/03/2025-05930/adjusting-imports-of-automobiles-and-automobile-parts-into-the-united-states",
+      "chunk_id": "chunk_a8c7f2c018a7fec41e2eeb8b"
+    },
+    {
+      "claim_id": "claim_8ae985d3e1b9e41ba08e3913",
+      "text": "I, DONALD J. TRUMP, President of the United States of America, by the authority vested in me by the Constitution and the laws of the United States of America, including section 301 of title 3, United States Code; section 604 of the Trade Act of 1974, as amended; and section 232 of the Trade Expansion Act of 1962, as amended, do hereby proclaim as follows:",
+      "url": "https://www.federalregister.gov/documents/2025/04/03/2025-05930/adjusting-imports-of-automobiles-and-automobile-parts-into-the-united-states",
+      "chunk_id": "chunk_e3c1cfec8bb51cf3c6674814"
+    },
+    {
+      "claim_id": "claim_c403f86a5e86217460e43839",
+      "text": "The 25% tariff will be applied to imported passenger vehicles (sedans, SUVs, crossovers, minivans, cargo vans) and light trucks, as well as key automobile parts (engines, transmissions, powertrain parts, and electrical components)",
+      "url": "https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-adjusts-imports-of-automobiles-and-automobile-parts-into-the-united-states",
+      "chunk_id": "chunk_a1de1eb7c3560e5de1d82ce3"
+    },
+    {
+      "claim_id": "claim_b531b191fcd0b4213d6244b9",
+      "text": "Under a U.S. deal with the United Kingdom (UK), most UK auto imports face a 10% total U.S. tariff rate.",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    },
+    {
+      "claim_id": "claim_ddef72466cf375331ca358fc",
+      "text": "auto imports from the EU, Japan, and South Korea face a 15% total",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_3be5545253060985e7b73183",
+      "claim_76a96aa95a61147c7b50f93a"
+    ],
+    [
+      "claim_b531b191fcd0b4213d6244b9",
+      "claim_ddef72466cf375331ca358fc"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 17,
+  "synthesis_input_claim_count": 17
+}

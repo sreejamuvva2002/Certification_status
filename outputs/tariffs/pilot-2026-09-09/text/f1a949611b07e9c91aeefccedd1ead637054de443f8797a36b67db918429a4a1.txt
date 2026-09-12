@@ -1,0 +1,50 @@
+2025 U.S. Tariffs: Vietnam Transshipment & Country of Origin
+By C. Matthew Schulz
+On April 2, 2025, the White House issued Executive Order 14257, launching broad “reciprocal” tariffs on imports to the U.S., later adjusted by follow-on orders in April and July/August 2025. These actions raised baseline duties on many partners and set the stage for heightened penalties on transshipped goods, with Vietnam singled out in subsequent policy messaging. See the executive orders and USTR’s running updates for the official record. T
+Major media report that under the July 2025 deal framework with Vietnam, ordinary Vietnamese-origin goods face a ~20% tariff, while goods deemed “transshipped” (e.g., Chinese goods routed via Vietnam) face a steep ~40% rate, with CBP ramping enforcement. (The administration’s formal definitions and mechanics are still evolving, so expect continued clarification in notices and rulings.)
+CBP has simultaneously tightened enforcement tools. It highlights increased EAPA (Enforce and Protect Act) actions against evasion—including transshipment—and announced >$400M in uncovered unpaid duties year-to-date, underscoring the real risk of penalty rates if origin is misstated.
+How The U.S. Decides “Country Of Origin”
+Default Rule (Non-FTA Goods)
+For marking and most tariff purposes, origin is the country where the article last underwent a substantial transformation into a new article with a different name, character, or use. There is no general percentage-of-content test in this regime. (Textiles/apparel follow special tariff-shift rules—see below.)
+Textiles & Apparel Exception
+For goods in Chapters 50–63 HTSUS, apply 19 C.F.R. § 102.21 (hierarchical rules such as yarn-forward/wholly assembled/most important process). Don’t use the case-law “substantial transformation” test here.
+AD/CVD Anti-Circumvention Is Different
+Separately, Commerce can extend antidumping/countervailing orders to third-country processing that is minor/insignificant under 19 U.S.C. § 1677j (e.g., prior solar inquiries covering Cambodia/Malaysia/Thailand/Vietnam). That’s about remedy scope, not everyday COO/marking—but it often overlaps with “transshipment” fact patterns.
+What “Substantial Transformation” Really Means
+U.S. courts and CBP look at the totality: the complexity of processing, whether components’ end use was predetermined, and whether the result is a commercially different article.
+Simple/minor assembly usually fails (origin stays with key components):
+- Energizer (CIT 2016): assembling ~50 flashlight parts in the U.S. did not change origin.
+- National Hand Tool (CIT/Fed. Cir.): assembling forged tool parts didn’t change origin. Case Western Reserve University
+- Uniroyal (CIT/Fed. Cir.): attaching soles to formed uppers did not change origin (the upper is the “essence” of the shoe).
+Complex, transformative processes usually pass (origin shifts to the processing country):
+- Ferrostaal (CIT 1987): continuous hot-dip galvanizing changed the steel’s character—origin shifted.
+- Belcrest Linens (Fed. Cir. 1984): cutting/sewing fabric into pillowcases created a new article—origin shifted.
+Electronics: PCBs & Firmware
+CBP has repeatedly found that building PCB assemblies (SMT/wave solder) from numerous components is a substantial transformation of those parts; in multi-country devices, where the operative PCBA(s) are created often drives overall origin. Merely downloading an OS or firmware to finished hardware is not a transformation; compiling/building code that makes hardware function can matter, fact-dependently. 
+Vietnam/China Examples
+Vietnam work that did confer Vietnam origin (electronics)
+CBP rulings have found Vietnamese SMT/PCBA population and complex subassembly work to be “meaningful/complex,” conferring Vietnam as COO for the finished device (e.g., trackers, adapters, vacuums with key subassemblies made and integrated in Vietnam).
+Vietnam work that did not confer Vietnam origin
+Where finished subassemblies from China are merely screwed together or lightly wired/tested in Vietnam, CBP has found no substantial transformation; China remains origin. (See patterns described in multiple rulings on inflators, pumps, and consumer electronics.)
+Takeaway
+The nature of the Vietnamese operations—not the address on the box—controls. Build the operative PCBA(s) or perform complex manufacturing in Vietnam and you have a strong COO case; do simple fit-up of Chinese guts and you likely do not.
+Two Semiconductor Chip Scenarios
+Scenario 1 — Chips made in China, then “assembled” in Vietnam for export to the U.S.
+What “assembled” means determines the outcome
+If “assembly” = back-end packaging/test in Vietnam (after front-end wafer fabrication in China): CBP’s recent rulings make origin where front-end fab occurs; back-end work usually does not substantially transform the die. Origin → China.
+If “assembly” = placing those Chinese chips onto PCBAs and building the finished device in Vietnam: then you must apply the device-level test. If Vietnam creates the core PCBAs (SMT) and integrates/test them, the device can be Vietnam origin even though individual chips are Chinese. If Vietnam only does light final assembly and OS loading, origin likely stays China (Energizer logic).
+Tariff risk under 2025 policy
+Where the chips (or devices) are China origin but shipped from Vietnam as “Vietnam,” CBP can treat that as transshipment—exposing the goods to a reported ~40% penalty rate under the current framework, on top of baseline tariffs. (
+Scenario 2 — Chinese IP licensed to a Vietnam subsidiary; Chinese tools and raw materials sold to that Vietnam subsidiary; wafers fabricated, and chips produced in Vietnam for U.S. export
+In this fact pattern, the front-end wafer fabrication happens in Vietnam. CBP’s recent semiconductor rulings emphasize that the front-end is where the die becomes functional; back-end assembly/testing does not change origin. That strongly supports Vietnam as the chips’ COO—even if the designs, equipment, and materials originate from China. (Licensing IP or importing tools doesn’t control origin; the manufacturing location does.)
+Key “substantial transformation” Takeaways
+- Cite the rule: 19 C.F.R. § 134.1(b) (name/character/use) + CBP guidance.
+- Show the process: BOM by country; flow of steps in Vietnam; where PCBAs/firmware are created; which operations change material properties or functionality. (This aligns with how courts/CBP analyze complexity vs. simple assembly.)
+- Mind the textile carve-out: if apparel/home textiles, apply § 102.21 tariff shifts.
+- Watch parallel regimes: if your product is in an AD/CVD sector (e.g., solar), Commerce can still capture “minor” third-country work under § 1677j.
+- Consider a CBP Binding Ruling (19 C.F.R. Part 177): submit your BOM and full process narrative for a formal, citable answer. (This is especially smart now, given heightened penalty exposure for transshipment.)
+Conclusion
+Scenario 1 (chips made in China; limited Vietnam steps)
+More likely China origin, so if entered as “Vietnam” you face transshipment exposure and potentially the ~40% penalty rate discussed in 2025 announcements, plus ordinary duties.
+Scenario 2 (front-end wafer fabrication in Vietnam)
+More likely Vietnam origin for the chips, despite Chinese IP/tools/materials; this aligns with CBP’s front-end-controls-origin line of rulings.

@@ -1,0 +1,58 @@
+{
+  "status": "reviewed",
+  "reviews": {
+    "claim_151e821b1f2ac14543412b06": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'President Donald Trump' is a government official, not a named business entity. The audit rules explicitly prohibit using officials as companies."
+      }
+    },
+    "claim_170a08b818b56ce241e7bf24": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'CBP' refers to a government agency (U.S. Customs and Border Protection), not a named business entity as required by the audit rules."
+      }
+    },
+    "claim_17bb3e352242860c0b5e8bab": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'South Korea' is a country/nation, not a named business entity. The audit rules explicitly prohibit using countries as companies."
+      }
+    },
+    "claim_1a8a10adef1e3929028be745": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'we' is a pronoun, not a named business entity. The audit rules explicitly prohibit using pronouns as companies."
+      }
+    },
+    "claim_1cf71a604e497c2e6eedb870": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'USTR' refers to a government agency (Office of the United States Trade Representative), not a named business entity as required by the audit rules."
+      }
+    },
+    "claim_1d3697cdf388e6a4cb17ab18": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'European Union' is a supranational political and economic union, not a named business entity. The audit rules explicitly prohibit using countries or unions as companies."
+      }
+    },
+    "claim_1d3874ac1f958798fa9dc343": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+        "original_model_decision": {
+          "decision": "retain",
+          "reason": "The source explicitly states 'Updated 6/26/2025' as the date for the policy description. This is an absolute anchor date within the historical window (pre-September 10, 2026) and supports the effective date field."
+        },
+        "review_method": "assistant_direct_cached_source_review"
+      }
+    },
+    "claim_1db9655ed0998d042f1aadd8": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "The value 'now' is a relative date without an absolute anchor. The audit rules state that relative dates like 'now/today' without an absolute anchor are insufficient for establishing effective dates."
+      }
+    }
+  }
+}

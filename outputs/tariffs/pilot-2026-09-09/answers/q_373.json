@@ -1,0 +1,61 @@
+{
+  "query_id": "q_373",
+  "query": "EV battery cells United States HTS classification tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_21583c0bf4cc88e3b3eefe1e",
+    "claim_2d190c36457904eb8929914a",
+    "claim_24f43a4ea7edd4b04d5cc1d6",
+    "claim_d75aadc2f6cad7970b93fd7b",
+    "claim_cab615026da05794eb000323"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_21583c0bf4cc88e3b3eefe1e",
+      "text": "Lithium-ion batteries are classified under HTS 8507.60 with a base duty rate of 3.4%.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_2d190c36457904eb8929914a",
+      "text": "Lithium-ion batteries are classified under HTS 8507.60 with a base duty rate of 3.4%. Section 301 tariffs on Chinese-origin lithium-ion batteries add 25%, bringing the effective rate to 28.4% for Chinese imports.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_24f43a4ea7edd4b04d5cc1d6",
+      "text": "Section 301 tariffs on Chinese-origin lithium-ion batteries add 25%, bringing the effective rate to 28.4% for Chinese imports.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_d75aadc2f6cad7970b93fd7b",
+      "text": "Yes, EV battery cells and packs from China face Section 301 tariffs of 25% on top of the base 3.4% duty.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_cab615026da05794eb000323",
+      "text": "The applicable subheading for the rechargeable battery packs of Lithium-ion battery cells will be 8507.60.0020, HTSUS, which provides for Electric storage batteries, including separators therefor, whether or not rectangular; Lithium-ion batteries: Other. The rate of duty will be 3.4 percent ad valorem.",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+N286124&highlight=NY+N286124",
+      "chunk_id": "chunk_2bcd809bd49b9f84f14130c7"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_21583c0bf4cc88e3b3eefe1e",
+      "claim_cab615026da05794eb000323"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

@@ -1,0 +1,56 @@
+{
+  "query_id": "q_241",
+  "query": "Port of Brunswick vehicle tariffs import volume changes",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_4fe721ce28109ed4bbdef5d7",
+    "claim_8ce1add578a55174ca86d095",
+    "claim_82f7d4e1eb28f7ad97c2750f",
+    "claim_b50f2c3f08e7a01199d3b310"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_4fe721ce28109ed4bbdef5d7",
+      "text": "GPA saw a 7.5% decline in 2025 volume at the Port of Brunswick, its Roll-On/Roll-Off port for autos and heavy machinery.",
+      "url": "https://www.savannahnow.com/story/news/local/2026/01/28/georgia-ports-authority-weathers-year-of-tariffs-with-strong-performance/88382339007",
+      "chunk_id": "chunk_ad72c668f6c1a280d829985e"
+    },
+    {
+      "claim_id": "claim_8ce1add578a55174ca86d095",
+      "text": "Shipments of autos and machinery through the Port of Brunswick fell 14.3%. For the fiscal year to date, volumes have declined 11.8% to 132,918",
+      "url": "https://www.bizjournals.com/atlanta/news/2025/10/01/georgia-ports-august-tariffs.html",
+      "chunk_id": "chunk_55bf99642e410528df28b946"
+    },
+    {
+      "claim_id": "claim_82f7d4e1eb28f7ad97c2750f",
+      "text": "The drop in volume was driven by tariffs that led to some manufacturers pausing shipments and a decline in exports to China, according to GPA.",
+      "url": "https://www.savannahnow.com/story/news/local/2026/01/28/georgia-ports-authority-weathers-year-of-tariffs-with-strong-performance/88382339007",
+      "chunk_id": "chunk_ad72c668f6c1a280d829985e"
+    },
+    {
+      "claim_id": "claim_b50f2c3f08e7a01199d3b310",
+      "text": "With the introduction of US tariffs in 2025, automakers paused shipments, closed factories and held volumes at ports, leading to a year-on-year reduction in import and export volumes at the Port of Brunswick in Georgia.",
+      "url": "https://www.automotivelogistics.media/vehicle-logistics/us-tariffs-dent-vehicle-growth-at-brunswick-in-2025/2653646",
+      "chunk_id": "chunk_5ba3c567fa64da09a9a642ab"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_4fe721ce28109ed4bbdef5d7",
+      "claim_8ce1add578a55174ca86d095"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

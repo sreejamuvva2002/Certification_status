@@ -1,0 +1,26 @@
+{
+  "status": "needs_attention",
+  "started_at": "2026-09-09T20:07:10.954443+00:00",
+  "command": [
+    "/home/sm11926/Certification_status/outputs/tariffs/runtime-venv/bin/python",
+    "-u",
+    "/home/sm11926/Certification_status/scripts/research_tariffs.py",
+    "--out",
+    "/home/sm11926/Certification_status/outputs/tariffs/pilot-2026-09-09",
+    "--max-queries",
+    "510",
+    "--max-credits",
+    "700",
+    "--retry-failed"
+  ],
+  "passes": [
+    {
+      "pass": 1,
+      "exit_code": 1,
+      "finished_at": "2026-09-09T20:10:09.186101+00:00"
+    }
+  ],
+  "credit_ceiling": 700,
+  "audit_exit_code": 0,
+  "finished_at": "2026-09-09T20:10:12.599524+00:00"
+}

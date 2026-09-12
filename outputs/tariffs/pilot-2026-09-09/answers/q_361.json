@@ -1,0 +1,64 @@
+{
+  "query_id": "q_361",
+  "query": "Automotive aluminum imports Canada United States tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2b252561813bc732fd498051",
+    "claim_a9ad09d8744db7d324739d67",
+    "claim_843e8399a100f28fe9edcb24",
+    "claim_9ca7d5d8e6ba06f32cf9fc63",
+    "claim_d6a5475fae0444e7cb1fea9a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2b252561813bc732fd498051",
+      "text": "Starting March 12, 2025, imports of Canadian steel and aluminum products into the United States could face tariffs that exceed 25%, if the proposed 25% tariff on imported goods under the US International Emergency Economic Powers Act (IEEPA) is also implemented.",
+      "url": "https://www.pwc.com/ca/en/services/tax/publications/tax-insights/us-impose-tariffs-steel-aluminum-imports-2025.html",
+      "chunk_id": "chunk_8e019bc0b25aa27c683b9393"
+    },
+    {
+      "claim_id": "claim_a9ad09d8744db7d324739d67",
+      "text": "U.S. presidential proclamations “Adjusting Imports of Steel Into the United States” and “Adjusting Imports of Aluminum Into the United States” dated February 10, 2025, impose a 25% tariff on steel and aluminum imported from all countries effective March 12, 2025.",
+      "url": "https://www.jdsupra.com/legalnews/u-s-canada-tariffs-timeline-of-key-1897320",
+      "chunk_id": "chunk_cd5363adeefe41bf00362bbb"
+    },
+    {
+      "claim_id": "claim_843e8399a100f28fe9edcb24",
+      "text": "Proclamation Adjusting Imports of Aluminum and Steel into the United States increases the U.S. tariffs on aluminum, steel and their derivatives from 25% to 50% effective June 4, 2025",
+      "url": "https://www.jdsupra.com/legalnews/u-s-canada-tariffs-timeline-of-key-1897320",
+      "chunk_id": "chunk_cd5363adeefe41bf00362bbb"
+    },
+    {
+      "claim_id": "claim_9ca7d5d8e6ba06f32cf9fc63",
+      "text": "In certain sectors, such as steel and aluminum, existing counter-tariffs will increase from 25 per cent to 50 per cent to match U.S. rates,” Canada’s government said as it vowed to match the U.S. tariffs – effective August 22 – dollar for dollar.",
+      "url": "https://oilprice.com/Metals/Commodities/Canada-Tariffs-Deepen-North-Americas-Steel-and-Aluminum-Squeeze.html",
+      "chunk_id": "chunk_58f18fa52b5df93d7bbfb6b6"
+    },
+    {
+      "claim_id": "claim_d6a5475fae0444e7cb1fea9a",
+      "text": "Canada retaliated by announcing counter-tariffs to come into effect on September 8 on sectors including steel and aluminum, dairy, appliances, agricultural equipment, pulp and paper, and electronics.",
+      "url": "https://oilprice.com/Metals/Commodities/Canada-Tariffs-Deepen-North-Americas-Steel-and-Aluminum-Squeeze.html",
+      "chunk_id": "chunk_58f18fa52b5df93d7bbfb6b6"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_2b252561813bc732fd498051",
+      "claim_a9ad09d8744db7d324739d67"
+    ],
+    [
+      "claim_843e8399a100f28fe9edcb24",
+      "claim_9ca7d5d8e6ba06f32cf9fc63"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 16,
+  "synthesis_input_claim_count": 16
+}

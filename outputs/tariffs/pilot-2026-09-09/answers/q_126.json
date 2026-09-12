@@ -1,0 +1,47 @@
+{
+  "query_id": "q_126",
+  "query": "Natural graphite Section 301 tariffs effective dates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_7bc403bf66ff8e9d400a1f09",
+    "claim_813e50963b2b3a37488e8ce0",
+    "claim_d542b4df559832603f5b3d62"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_7bc403bf66ff8e9d400a1f09",
+      "text": "Natural graphite | 0% | 25% | Jan 1, 2026",
+      "url": "https://ustariffrates.com/section-301-tariffs",
+      "chunk_id": "chunk_2b48b5f7d47a69cad6cc0a63"
+    },
+    {
+      "claim_id": "claim_813e50963b2b3a37488e8ce0",
+      "text": "Natural graphite | 25% | January 1, 2026 | 0%",
+      "url": "https://www.whitecase.com/insight-alert/united-states-finalizes-section-301-tariff-increases-imports-china",
+      "chunk_id": "chunk_3024efe7a2ff89d6474c3ffb"
+    },
+    {
+      "claim_id": "claim_d542b4df559832603f5b3d62",
+      "text": "NOVONIX Limited (NASDAQ: NVX, ASX: NVX) (“NOVONIX”), a leading battery materials and technology company, today applauded the recent announcement by the United States Trade Representative (USTR) on Section 301 tariffs, removing the current exclusions and reimposing the 25% tariff on artificial graphite and natural graphite powder imported from China effective June 15, 2024.",
+      "url": "https://www.novonixgroup.com/news/united-states-government-to-reinstate-section-301-import-tariffs-on-artificial-graphite-from-china",
+      "chunk_id": "chunk_c30bf9b94ef69fc545fb10bf"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_7bc403bf66ff8e9d400a1f09",
+      "claim_d542b4df559832603f5b3d62"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 18,
+  "synthesis_input_claim_count": 18
+}

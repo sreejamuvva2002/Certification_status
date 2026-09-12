@@ -1,0 +1,57 @@
+{
+  "query_id": "q_company_8888aef32079e2fde2def9b4_targeted",
+  "query": "\"Seoyon E-Hwa Interior Systems\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3c20f7fd27594528aac985aa",
+    "claim_7d134ff96f441a0d92ab4726",
+    "claim_ac4ec92aa402250666c2126d",
+    "claim_c7c147335f0c2a7775d9d33e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3c20f7fd27594528aac985aa",
+      "text": "As of late 2025, South Korean vehicles benefited from a negotiated reduction to a 15% U.S. tariff rate, tied to a broader investment understanding between Washington and Seoul.",
+      "url": "https://www.wcshipping.com/blog/south-korean-car-tariffs-2026-verified-update-for-importers-shippers",
+      "chunk_id": "chunk_26bd578c9d7fd3727b6c6457"
+    },
+    {
+      "claim_id": "claim_7d134ff96f441a0d92ab4726",
+      "text": "On January 26–27, 2026, President Trump publicly threatened to restore a 25% tariff on South Korean autos, but formal legal instruments to implement that increase had not yet been published when this article was updated.",
+      "url": "https://www.wcshipping.com/blog/south-korean-car-tariffs-2026-verified-update-for-importers-shippers",
+      "chunk_id": "chunk_26bd578c9d7fd3727b6c6457"
+    },
+    {
+      "claim_id": "claim_ac4ec92aa402250666c2126d",
+      "text": "Since 2025, U.S. auto tariffs have been reshaped by a Section 232 national‑security framework that raised duties on many imported vehicles, including Korean cars.",
+      "url": "https://www.wcshipping.com/blog/south-korean-car-tariffs-2026-verified-update-for-importers-shippers",
+      "chunk_id": "chunk_26bd578c9d7fd3727b6c6457"
+    },
+    {
+      "claim_id": "claim_c7c147335f0c2a7775d9d33e",
+      "text": "The U.S. agreed to set a 15% auto tariff on South Korean vehicles, effective November 1, 2025, down from the 25% Section 232 level.",
+      "url": "https://www.wcshipping.com/blog/south-korean-car-tariffs-2026-verified-update-for-importers-shippers",
+      "chunk_id": "chunk_26bd578c9d7fd3727b6c6457"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_3c20f7fd27594528aac985aa",
+      "claim_c7c147335f0c2a7775d9d33e"
+    ],
+    [
+      "claim_7d134ff96f441a0d92ab4726",
+      "claim_c7c147335f0c2a7775d9d33e"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

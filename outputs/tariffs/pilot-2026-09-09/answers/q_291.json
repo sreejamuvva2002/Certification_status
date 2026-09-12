@@ -1,0 +1,62 @@
+{
+  "query_id": "q_291",
+  "query": "\"Hyundai Motor Group Metaplant America\" steel aluminum tariff exposure",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_31b1ea84aa975c0d5d20b426",
+    "claim_42ecc9917326af9798c8785e",
+    "claim_63c7f1221fc37fcbedf05f49",
+    "claim_9bcfdb2f3df0c91950283408",
+    "claim_e9df5e110291e243c53e9219"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_31b1ea84aa975c0d5d20b426",
+      "text": "The steelmaker also plans to deliver its steel sheets from the US mill to Hyundai Motor Group’s EV-dedicated assembly lines, dubbed Hyundai Motor Group Metaplant America LLC (HMGMA), in Georgia, which is capable of producing 300,000 units annually",
+      "url": "https://www.kedglobal.com/automobiles/newsView/ked202503250003",
+      "chunk_id": "chunk_a45975bb22d5b7fd5fbab605"
+    },
+    {
+      "claim_id": "claim_42ecc9917326af9798c8785e",
+      "text": "It also vowed to invest nearly $6 billion to build its steel-making unit Hyundai Steel Co.'s first US steel mill in Louisiana, which will be an electric arc furnace mill with an annual steel production capacity of 2.7 million tons",
+      "url": "https://www.kedglobal.com/automobiles/newsView/ked202503250003",
+      "chunk_id": "chunk_a45975bb22d5b7fd5fbab605"
+    },
+    {
+      "claim_id": "claim_63c7f1221fc37fcbedf05f49",
+      "text": "Once it completes the construction of its first-ever US steel mill in Louisiana in the first quarter of 2029, it will provide its steel products to Hyundai Motor’s Alabama-based plant with an annual capacity of 330,000 units and Kia’s plant in the US state of Georgia with a capacity of 350,000 units.",
+      "url": "https://www.kedglobal.com/automobiles/newsView/ked202503250003",
+      "chunk_id": "chunk_a45975bb22d5b7fd5fbab605"
+    },
+    {
+      "claim_id": "claim_9bcfdb2f3df0c91950283408",
+      "text": "Last month, Trump ordered a 25% import tax on all steel and aluminium entering the US.",
+      "url": "https://www.bbc.com/news/articles/cgkmvdz144vo",
+      "chunk_id": "chunk_54430f4bc5f4bcb02247e7fb"
+    },
+    {
+      "claim_id": "claim_e9df5e110291e243c53e9219",
+      "text": "Its steel-making firm Hyundai Steel is also about to take a hit from 25% US tariffs reimposed on all foreign steel and aluminum products.",
+      "url": "https://www.kedglobal.com/automobiles/newsView/ked202503250003",
+      "chunk_id": "chunk_a45975bb22d5b7fd5fbab605"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_9bcfdb2f3df0c91950283408",
+      "claim_e9df5e110291e243c53e9219"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

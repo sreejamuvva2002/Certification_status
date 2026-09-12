@@ -1,0 +1,48 @@
+{
+  "query_id": "q_company_3bfce136e09e64002bf1582c_targeted",
+  "query": "\"Yamaha Motor Manufacturing Corp.\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3b812bafbc0b47b701cb5690",
+    "claim_a81e19bba1cbee8f27efdb13",
+    "claim_e15e2823a103683fd44f8581"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3b812bafbc0b47b701cb5690",
+      "text": "Cost increases from 2025 Approx. ¥37.0 billion Profit improvement in 2026 Approx. ¥37.0 billion Countermeasures Price pass-throughs, review of model development, review of cost structure at YMMC, reduction of IT investment, workforce reductions at U.S. subsidiary, increased asset efficiency, addressing unprofitable businesses",
+      "url": "https://global.yamaha-motor.com/ir/library/integrated-report/2026/YMC_IR2026_Eng_print.pdf",
+      "chunk_id": "chunk_dbe56cf4769f003ea2ae53fd"
+    },
+    {
+      "claim_id": "claim_a81e19bba1cbee8f27efdb13",
+      "text": "In its Consolidated Business Results for 2025, Yamaha noted that its “total unit sales and revenue were on par with the previous fiscal year.” While Team Blue reported sales increases in markets such as Japan, Indonesia, Thailand, and the Philippines, there was lower demand in the U.S. market (compared to the previous fiscal year). The brand partly attributed that to “tariffs enacted by the U.S.”",
+      "url": "https://www.revzilla.com/common-tread/manufacturers-grapple-with-tariffs-as-us-trade-policy-remains-in-flux",
+      "chunk_id": "chunk_72e603ed9f4608282c912e55"
+    },
+    {
+      "claim_id": "claim_e15e2823a103683fd44f8581",
+      "text": "Shortly after the Supreme Court announced its ruling, President Trump imposed a new 10% tariff on all goods entering the United States, using a different legal justification. Unless extended by Congress, that temporary import duty is due to expire on July 24, 2026.",
+      "url": "https://www.revzilla.com/common-tread/manufacturers-grapple-with-tariffs-as-us-trade-policy-remains-in-flux",
+      "chunk_id": "chunk_72e603ed9f4608282c912e55"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_3b812bafbc0b47b701cb5690",
+      "claim_e15e2823a103683fd44f8581"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

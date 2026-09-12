@@ -1,0 +1,53 @@
+{
+  "status": "reviewed",
+  "reviews": {
+    "claim_82b57f0af0697e908441c58d": {
+      "company": {
+        "decision": "clear",
+        "reason": "The source text uses the pronoun 'we' and does not explicitly name a specific business entity as the subject of the claim in the provided quote or support context. The audit rules require a named business, not a pronoun."
+      }
+    },
+    "claim_82b99688be78d8ec5b8ddb32": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "The value 'Wednesday' is a relative date without an absolute anchor (e.g., specific month/year) in the source text. The audit rules state that relative dates without an absolute anchor are insufficient for establishing an effective date."
+      }
+    },
+    "claim_8530598be0a3d7a2e14cde84": {
+      "company": {
+        "decision": "clear",
+        "reason": "The source text identifies 'White House' as the entity making the statement, but the White House is a government body/agency, not a named business. The audit rules prohibit using agencies or government entities as the company."
+      }
+    },
+    "claim_8654c0e2c043b0b14261108b": {
+      "company": {
+        "decision": "clear",
+        "reason": "The source text identifies 'CBP' (U.S. Customs and Border Protection) as the entity making the finding. CBP is a government agency, not a named business. The audit rules prohibit using agencies or government entities as the company."
+      }
+    },
+    "claim_86d0793a3d7f1b515ad54c39": {
+      "company": {
+        "decision": "clear",
+        "reason": "The source text identifies 'CBP' as the entity confirming the filing of Post Summary Corrections. CBP is a government agency, not a named business. The audit rules prohibit using agencies or government entities as the company."
+      }
+    },
+    "claim_87cebb34dc0290f66c33a392": {
+      "city": {
+        "decision": "clear",
+        "reason": "The source text cites 'Bryan County' as the location. The audit rules explicitly state that a county is misclassified when a city is required."
+      }
+    },
+    "claim_88a0008c26d5885bd24fc3ef": {
+      "company": {
+        "decision": "clear",
+        "reason": "The source text attributes the tariff implementation to 'U.S.', which is a country/national entity, not a named business. The audit rules prohibit using countries as the company."
+      }
+    },
+    "claim_8933ca8bc8d432e39e532058": {
+      "effective_date": {
+        "decision": "needs_external_verification",
+        "reason": "The source text cites 'March 16, 2026' as the publication date of a report by the Penn Wharton Budget Model. While this is an absolute date, it represents the data update/publishing date of a model, not necessarily the effective date of the tariff rate itself. The audit rules require distinguishing between publication dates and tariff effective law"
+      }
+    }
+  }
+}

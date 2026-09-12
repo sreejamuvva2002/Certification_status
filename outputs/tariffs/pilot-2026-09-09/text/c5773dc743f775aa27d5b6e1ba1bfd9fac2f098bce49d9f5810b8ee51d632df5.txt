@@ -1,0 +1,303 @@
+If you're a manufacturer importing components and exporting finished goods, the US government may owe you money. Possibly a lot of it.
+Related: drawback is Move 4 of the five in The Buyer's Tariff Playbook -- the BOM-level tariff strategy these mechanics plug into.
+Duty drawback is a federal program that refunds up to 99% of import duties, taxes, and fees when the imported goods are later exported or destroyed. The program has existed since 1789 -- it was in the fifth law Congress ever passed -- but most companies don't use it. CBP estimates that roughly 80% of eligible drawback refunds go unclaimed every year, totaling approximately $15 billion left on the table.
+In a tariff environment where import duties on Chinese goods range from 7.5% to over 100%, and a 10% Section 122 surcharge was added in February 2026, the math on duty drawback has never been more compelling. This post explains what drawback is, how it works, what's changed in 2026, and how to build a program from scratch.
+What Duty Drawback Actually Is
+Drawback is straightforward in concept. You import a component. You pay duties on it. You later export a finished product that contains that component (or a substitute). The government refunds up to 99% of the duties you originally paid.
+The "99%" number is not a rounding -- the 1% retention was set by Congress as an administrative fee. For all practical purposes, you get everything back.
+There are three types of drawback:
+Manufacturing drawback. You import raw materials or components, manufacture them into a different article, and export the finished product. Example: you import steel coils, stamp them into automotive brackets, and export the brackets to a plant in Mexico.
+Unused merchandise drawback. You import goods, never use them in the US, and export them in the same condition. Example: you import 10,000 electronic connectors, sell 8,000 domestically, and export 2,000 to a customer in Canada.
+Substitution drawback. This is the most flexible and often the most valuable. You import goods under a specific tariff classification (8-digit HTSUS code), and you export commercially interchangeable goods under the same classification -- even if the exported goods aren't the exact items you imported. Example: you import aluminum extrusions from China and pay 25% duties. You also buy aluminum extrusions domestically. When you export finished products containing domestic aluminum, you can claim drawback on the Chinese import duties because the materials share the same HTSUS code.
+Substitution drawback was significantly expanded by TFTEA (the Trade Facilitation and Trade Enforcement Act of 2015), which broadened matching from part-number-level to 8-digit HTSUS code. This change made drawback practical for many more companies.
+What's Happening in 2026
+The tariff environment in 2026 has made drawback dramatically more valuable. Here's the current landscape:
+Section 301 tariffs (China): ELIGIBLE for drawback. These tariffs range from 7.5% to over 100% depending on the product list. If you're importing from China and exporting finished goods, this is where the largest drawback opportunity lives.
+Section 122 surcharge (10%, imposed February 24, 2026): ELIGIBLE for drawback. CBP confirmed through CSMS guidance that the surcharge is recoverable. This applies broadly across imports.
+Reciprocal tariffs: ELIGIBLE for drawback. CBP has confirmed these qualify.
+Section 232 tariffs (steel, aluminum, copper, automobiles): NOT ELIGIBLE for drawback. This is the major exception. If your primary imports are steel or aluminum, drawback does not apply to the Section 232 duties (though it may apply to other duties paid on those same imports).
+IEEPA tariff refunds. Following the Supreme Court's February 2026 ruling (6-3) that IEEPA does not authorize tariffs, CBP launched the CAPE refund system on April 20, 2026. As of April 26, importers had submitted approximately 75,300 CAPE declarations covering over 11.2 million entries. Important: IEEPA refunds and drawback claims cannot double-recover on the same duties. If you receive an IEEPA refund, any drawback claim on those same duties must be adjusted.
+Only about 20% of eligible drawback refunds are actually claimed. The remaining ~$15 billion per year goes unclaimed. -- CBP / industry estimates
+The ROI Calculation
+Before building a drawback program, run the numbers. Here's a framework.
+Step 1: Calculate your annual import duties.
+Look at your CBP entry summaries (Form 7501) for the last 12 months. Sum the duties paid, excluding Section 232 duties on steel/aluminum. If you're importing $50 million in components with an average duty rate of 15%, you're paying roughly $7.5 million per year in eligible duties.
+Step 2: Estimate your export ratio.
+What percentage of your imported goods (or goods containing imported components) are ultimately exported? For a manufacturer with global customers, this might be 20-60%. If you export 40% of your production that incorporates imported materials, your drawback-eligible duties are roughly 40% of your total.
+Step 3: Apply the 99% recovery rate.
+Drawback refunds 99% of eligible duties on the exported portion.
+Worked example:
+| Line | Value | 
+|---|---|
+| Annual imports | $50,000,000 | 
+| Average duty rate | 15% | 
+| Total duties paid | $7,500,000 | 
+| Export ratio | 40% | 
+| Drawback-eligible duties | $3,000,000 | 
+| Recovery rate | 99% | 
+| Annual drawback refund | $2,970,000 | 
+For context, Whirlpool recovered $10 million through their drawback program, resulting in a 5% reduction in production costs. 3M recovered $5 million, lowering production costs by 3%.
+Step 4: Subtract program costs.
+Drawback programs have real costs: customs broker or service provider fees (typically 10-20% of recovered duties as a success fee), record-keeping systems, and internal staff time. A common net recovery after fees is 75-85% of gross drawback.
+In the example above: $2,970,000 gross x 80% net = ~$2.4 million in annual net savings.
+If you're paying more than $1 million in eligible import duties annually and exporting more than 20% of your production, a drawback program almost certainly pays for itself.
+How to Build a Duty Drawback Program
+Phase 1: Assessment (Weeks 1-4)
+Audit your import and export data. Pull 24 months of CBP entry summaries (Form 7501), commercial invoices, and export documentation. Map which imports feed into which exports. Identify your highest-duty product families.
+Classify your opportunity. Is it manufacturing drawback, unused merchandise, or substitution? Most manufacturers find the largest opportunity in substitution drawback, because the 8-digit HTSUS matching rule is flexible enough to capture exports that don't contain the exact imported components.
+Estimate the dollar value using the ROI framework above. If the opportunity is less than $200,000 annually, a third-party service provider on a success-fee basis is the most practical path. If it's above $1 million, consider building internal capability alongside a provider.
+Phase 2: Registration (Months 2-4)
+Apply for drawback privileges with CBP. Submit a Combined Privileges Application. This establishes your right to file claims. Processing takes 3-6 months.
+Apply for Accelerated Payment. Standard drawback processing takes 1-3 years. Accelerated Payment privilege gets you refunds in weeks while CBP reviews in the background. This is critical for cash flow.
+Establish record-keeping systems. CBP requires you to maintain records linking imports to exports for 3 years after payment of the drawback claim. This means: import entry data (HTSUS codes, duty amounts, dates), BOM structures linking imported components to finished goods, and export proof (bills of lading, commercial invoices, foreign customs declarations).
+Phase 3: First Claims (Months 4-8)
+File your first claim via ACE. All drawback claims must be filed electronically through the Automated Commercial Environment using CBP Form 7551. You can self-file (requires ABI software), use a licensed customs broker, or use a drawback service provider.
+Start with the clearest matches. Your first claims should use the most straightforward import-export pairs -- products where the supply chain link is well-documented and the HTSUS classification is unambiguous. Build confidence and refine your process before tackling complex cases.
+Track everything. Every claim needs a paper trail: import entry summary, proof of duty payment, manufacturing records or commercial documentation linking import to export, and export proof. Missing documentation is the number one reason claims get rejected.
+Phase 4: Optimize (Ongoing)
+Expand to substitution claims if you started with direct identification. Substitution is typically where the largest recoveries live.
+File retroactively. You have 5 years from the date of importation. If you're starting a program now, go back and file claims on eligible imports from 2021 forward.
+Integrate drawback tracking into your procurement process. The most efficient programs capture drawback data at the point of import -- HTSUS codes, duty amounts, and intended use -- rather than reconstructing it retroactively. This is where procurement, trade compliance, and finance need to work together.
+Common Mistakes
+Assuming Section 232 covers all your imports. Section 232 only applies to specific metals and autos. Many manufacturers import a mix of 232-covered and non-232 components. The non-232 imports may still be eligible for drawback on Section 301 or other duties.
+Not applying for Accelerated Payment. Without it, you wait 1-3 years for refunds. With it, weeks. The application takes a few months to process, but the cash flow difference is enormous.
+Poor record-keeping. CBP can audit drawback claims for 3 years after payment. If you can't produce the documentation linking your imports to your exports, you may have to return the refund -- plus interest.
+Ignoring substitution drawback. Many companies only consider direct identification (tracking the actual imported item through manufacturing). Substitution is more flexible and often captures more value, because any goods with the same 8-digit HTSUS classification qualify.
+Not coordinating with IEEPA refunds. If you're filing both IEEPA refund claims through CAPE and drawback claims, you must ensure there's no double recovery on the same duties. CBP is reconciling these, and discrepancies will trigger audits.
+What This Means for Direct Materials Teams
+For manufacturers managing complex bills of materials with imported components, duty drawback is one of the highest-ROI activities available to the procurement function. It directly reduces COGS without requiring any supplier negotiation, price reduction, or design change. You're simply recovering money the government already owes you.
+The challenge is data. A drawback claim requires precise linkage between import records (HTSUS codes, duty amounts, entry dates) and export records (what was shipped, when, containing which components). For companies running sourcing on spreadsheets and email, this linkage is manual and error-prone. For companies with structured procurement data -- where every BOM, every supplier quote, and every import record lives in one system -- the drawback calculation becomes a reporting function rather than a forensic exercise.
+At LightSource, we see this play out with customers who manage direct materials procurement on the platform. When import data, BOM structures, and supplier records are already connected, identifying drawback-eligible flows is a fraction of the work it takes when that data is scattered across dozens of spreadsheets.
+Sources
+- Drawback Overview | U.S. Customs and Border Protection -- Official CBP drawback program overview and filing requirements
+- IEEPA Duty Refunds | CBP -- CBP's CAPE refund system for IEEPA tariff refunds, launched April 2026
+- Duty Drawback Explained | Credible Law -- Comprehensive overview of drawback types, eligibility, and filing process
+- Duty Drawback 2026 | TariffsTool -- Current tariff eligibility matrix including Section 301, 122, and 232
+- IEEPA Tariff Refunds: CIT Ruling and Section 122 Updates | Wipfli -- April 2026 CAPE filing statistics and IEEPA/drawback interaction
+- IEEPA Tariff Refund Claims: Key Considerations | Sidley Austin -- Legal analysis of IEEPA refund process and double-recovery rules
+- Duty Drawback Benefits: Data-Backed Cash-Flow Wins | JM Rodgers -- Whirlpool ($10M) and 3M ($5M) drawback recovery case studies
+- TFTEA Changes | Alliance Drawback Services -- TFTEA modernization of drawback rules including substitution expansion
+Frequently Asked Questions
+What is duty drawback?
+Duty drawback is a US Customs and Border Protection program that refunds up to 99% of import duties, taxes, and fees paid on goods that are later exported or destroyed. The program has existed since 1789 and was modernized by TFTEA in 2015. It applies to manufacturing drawback (imported materials made into exported products), unused merchandise drawback (imported goods exported in the same condition), and substitution drawback (exported goods sharing the same 8-digit HTSUS code as the imports).
+Which tariffs are eligible for duty drawback in 2026?
+Section 301 tariffs on Chinese imports (7.5-100%) are eligible. The Section 122 surcharge (10%, imposed February 2026) is eligible -- confirmed by CBP CSMS guidance. Reciprocal tariffs are eligible. Section 232 tariffs on steel, aluminum, copper, and automobiles are NOT eligible. IEEPA tariff refunds are handled through a separate CAPE refund process and cannot double-recover with drawback claims.
+How much can a manufacturer save through duty drawback?
+Savings depend on import volume, duty rates, and export ratio. A manufacturer paying $7.5 million in annual eligible import duties with a 40% export ratio could recover approximately $3 million per year (99% of the export-eligible portion). After service provider fees (typically 10-20% success fee), net annual savings of $2-2.5 million are realistic. Whirlpool recovered $10 million through their program; 3M recovered $5 million.
+How long does it take to set up a duty drawback program?
+Initial assessment takes 2-4 weeks. CBP privilege applications take 3-6 months to process. First claims can typically be filed within 4-8 months of starting the process. Companies that apply for Accelerated Payment privileges receive refunds in weeks rather than the standard 1-3 year processing time.
+Can I file drawback claims retroactively?
+Yes. You can file drawback claims up to 5 years from the date of importation. If you're starting a program in May 2026, you can potentially recover duties paid on eligible imports going back to May 2021. This retroactive recovery is often the single largest benefit of starting a drawback program -- it generates an immediate lump-sum refund on years of accumulated eligible duties.
+How does duty drawback interact with IEEPA tariff refunds?
+Following the Supreme Court's February 2026 ruling that IEEPA does not authorize tariffs, CBP launched the CAPE refund system in April 2026 for IEEPA duty refunds. If you receive an IEEPA refund on duties that were also the basis for a drawback claim, the drawback must be adjusted to prevent double recovery. Companies filing both should coordinate carefully, as CBP is actively reconciling claims across both programs.
+What documentation do I need to support a duty drawback claim?
+At minimum: import entry summaries (CBP Form 7501) for the duties being recovered, export documentation (commercial invoice, bill of lading, AES filing) proving the goods left the country, and a documented match between imports and exports -- by part number, by 8-digit HTSUS code (for substitution drawback), or by manufacturing record (for manufacturing drawback). For manufacturing drawback you also need bills of materials and yield records. The recordkeeping burden is the single biggest source of friction in DIY drawback programs.
+Should I run a drawback program in-house or hire a specialist provider?
+Most companies hire a specialist for the first three to five years and bring it in-house only at very high volume. Specialist firms (Comstock, J.M. Rodgers, Sandler & Travis) charge a 10-20% success fee but handle the privilege applications, documentation matching, and CBP correspondence. For under $5M in annual recoverable duties, the math usually favors outsourcing. Above $20M, an in-house team paired with drawback software can be more cost-effective.
+If you're a manufacturer importing components and exporting finished goods, the US government may owe you money. Possibly a lot of it.
+Related: drawback is Move 4 of the five in The Buyer's Tariff Playbook -- the BOM-level tariff strategy these mechanics plug into.
+Duty drawback is a federal program that refunds up to 99% of import duties, taxes, and fees when the imported goods are later exported or destroyed. The program has existed since 1789 -- it was in the fifth law Congress ever passed -- but most companies don't use it. CBP estimates that roughly 80% of eligible drawback refunds go unclaimed every year, totaling approximately $15 billion left on the table.
+In a tariff environment where import duties on Chinese goods range from 7.5% to over 100%, and a 10% Section 122 surcharge was added in February 2026, the math on duty drawback has never been more compelling. This post explains what drawback is, how it works, what's changed in 2026, and how to build a program from scratch.
+What Duty Drawback Actually Is
+Drawback is straightforward in concept. You import a component. You pay duties on it. You later export a finished product that contains that component (or a substitute). The government refunds up to 99% of the duties you originally paid.
+The "99%" number is not a rounding -- the 1% retention was set by Congress as an administrative fee. For all practical purposes, you get everything back.
+There are three types of drawback:
+Manufacturing drawback. You import raw materials or components, manufacture them into a different article, and export the finished product. Example: you import steel coils, stamp them into automotive brackets, and export the brackets to a plant in Mexico.
+Unused merchandise drawback. You import goods, never use them in the US, and export them in the same condition. Example: you import 10,000 electronic connectors, sell 8,000 domestically, and export 2,000 to a customer in Canada.
+Substitution drawback. This is the most flexible and often the most valuable. You import goods under a specific tariff classification (8-digit HTSUS code), and you export commercially interchangeable goods under the same classification -- even if the exported goods aren't the exact items you imported. Example: you import aluminum extrusions from China and pay 25% duties. You also buy aluminum extrusions domestically. When you export finished products containing domestic aluminum, you can claim drawback on the Chinese import duties because the materials share the same HTSUS code.
+Substitution drawback was significantly expanded by TFTEA (the Trade Facilitation and Trade Enforcement Act of 2015), which broadened matching from part-number-level to 8-digit HTSUS code. This change made drawback practical for many more companies.
+What's Happening in 2026
+The tariff environment in 2026 has made drawback dramatically more valuable. Here's the current landscape:
+Section 301 tariffs (China): ELIGIBLE for drawback. These tariffs range from 7.5% to over 100% depending on the product list. If you're importing from China and exporting finished goods, this is where the largest drawback opportunity lives.
+Section 122 surcharge (10%, imposed February 24, 2026): ELIGIBLE for drawback. CBP confirmed through CSMS guidance that the surcharge is recoverable. This applies broadly across imports.
+Reciprocal tariffs: ELIGIBLE for drawback. CBP has confirmed these qualify.
+Section 232 tariffs (steel, aluminum, copper, automobiles): NOT ELIGIBLE for drawback. This is the major exception. If your primary imports are steel or aluminum, drawback does not apply to the Section 232 duties (though it may apply to other duties paid on those same imports).
+IEEPA tariff refunds. Following the Supreme Court's February 2026 ruling (6-3) that IEEPA does not authorize tariffs, CBP launched the CAPE refund system on April 20, 2026. As of April 26, importers had submitted approximately 75,300 CAPE declarations covering over 11.2 million entries. Important: IEEPA refunds and drawback claims cannot double-recover on the same duties. If you receive an IEEPA refund, any drawback claim on those same duties must be adjusted.
+Only about 20% of eligible drawback refunds are actually claimed. The remaining ~$15 billion per year goes unclaimed. -- CBP / industry estimates
+The ROI Calculation
+Before building a drawback program, run the numbers. Here's a framework.
+Step 1: Calculate your annual import duties.
+Look at your CBP entry summaries (Form 7501) for the last 12 months. Sum the duties paid, excluding Section 232 duties on steel/aluminum. If you're importing $50 million in components with an average duty rate of 15%, you're paying roughly $7.5 million per year in eligible duties.
+Step 2: Estimate your export ratio.
+What percentage of your imported goods (or goods containing imported components) are ultimately exported? For a manufacturer with global customers, this might be 20-60%. If you export 40% of your production that incorporates imported materials, your drawback-eligible duties are roughly 40% of your total.
+Step 3: Apply the 99% recovery rate.
+Drawback refunds 99% of eligible duties on the exported portion.
+Worked example:
+| Line | Value | 
+|---|---|
+| Annual imports | $50,000,000 | 
+| Average duty rate | 15% | 
+| Total duties paid | $7,500,000 | 
+| Export ratio | 40% | 
+| Drawback-eligible duties | $3,000,000 | 
+| Recovery rate | 99% | 
+| Annual drawback refund | $2,970,000 | 
+For context, Whirlpool recovered $10 million through their drawback program, resulting in a 5% reduction in production costs. 3M recovered $5 million, lowering production costs by 3%.
+Step 4: Subtract program costs.
+Drawback programs have real costs: customs broker or service provider fees (typically 10-20% of recovered duties as a success fee), record-keeping systems, and internal staff time. A common net recovery after fees is 75-85% of gross drawback.
+In the example above: $2,970,000 gross x 80% net = ~$2.4 million in annual net savings.
+If you're paying more than $1 million in eligible import duties annually and exporting more than 20% of your production, a drawback program almost certainly pays for itself.
+How to Build a Duty Drawback Program
+Phase 1: Assessment (Weeks 1-4)
+Audit your import and export data. Pull 24 months of CBP entry summaries (Form 7501), commercial invoices, and export documentation. Map which imports feed into which exports. Identify your highest-duty product families.
+Classify your opportunity. Is it manufacturing drawback, unused merchandise, or substitution? Most manufacturers find the largest opportunity in substitution drawback, because the 8-digit HTSUS matching rule is flexible enough to capture exports that don't contain the exact imported components.
+Estimate the dollar value using the ROI framework above. If the opportunity is less than $200,000 annually, a third-party service provider on a success-fee basis is the most practical path. If it's above $1 million, consider building internal capability alongside a provider.
+Phase 2: Registration (Months 2-4)
+Apply for drawback privileges with CBP. Submit a Combined Privileges Application. This establishes your right to file claims. Processing takes 3-6 months.
+Apply for Accelerated Payment. Standard drawback processing takes 1-3 years. Accelerated Payment privilege gets you refunds in weeks while CBP reviews in the background. This is critical for cash flow.
+Establish record-keeping systems. CBP requires you to maintain records linking imports to exports for 3 years after payment of the drawback claim. This means: import entry data (HTSUS codes, duty amounts, dates), BOM structures linking imported components to finished goods, and export proof (bills of lading, commercial invoices, foreign customs declarations).
+Phase 3: First Claims (Months 4-8)
+File your first claim via ACE. All drawback claims must be filed electronically through the Automated Commercial Environment using CBP Form 7551. You can self-file (requires ABI software), use a licensed customs broker, or use a drawback service provider.
+Start with the clearest matches. Your first claims should use the most straightforward import-export pairs -- products where the supply chain link is well-documented and the HTSUS classification is unambiguous. Build confidence and refine your process before tackling complex cases.
+Track everything. Every claim needs a paper trail: import entry summary, proof of duty payment, manufacturing records or commercial documentation linking import to export, and export proof. Missing documentation is the number one reason claims get rejected.
+Phase 4: Optimize (Ongoing)
+Expand to substitution claims if you started with direct identification. Substitution is typically where the largest recoveries live.
+File retroactively. You have 5 years from the date of importation. If you're starting a program now, go back and file claims on eligible imports from 2021 forward.
+Integrate drawback tracking into your procurement process. The most efficient programs capture drawback data at the point of import -- HTSUS codes, duty amounts, and intended use -- rather than reconstructing it retroactively. This is where procurement, trade compliance, and finance need to work together.
+Common Mistakes
+Assuming Section 232 covers all your imports. Section 232 only applies to specific metals and autos. Many manufacturers import a mix of 232-covered and non-232 components. The non-232 imports may still be eligible for drawback on Section 301 or other duties.
+Not applying for Accelerated Payment. Without it, you wait 1-3 years for refunds. With it, weeks. The application takes a few months to process, but the cash flow difference is enormous.
+Poor record-keeping. CBP can audit drawback claims for 3 years after payment. If you can't produce the documentation linking your imports to your exports, you may have to return the refund -- plus interest.
+Ignoring substitution drawback. Many companies only consider direct identification (tracking the actual imported item through manufacturing). Substitution is more flexible and often captures more value, because any goods with the same 8-digit HTSUS classification qualify.
+Not coordinating with IEEPA refunds. If you're filing both IEEPA refund claims through CAPE and drawback claims, you must ensure there's no double recovery on the same duties. CBP is reconciling these, and discrepancies will trigger audits.
+What This Means for Direct Materials Teams
+For manufacturers managing complex bills of materials with imported components, duty drawback is one of the highest-ROI activities available to the procurement function. It directly reduces COGS without requiring any supplier negotiation, price reduction, or design change. You're simply recovering money the government already owes you.
+The challenge is data. A drawback claim requires precise linkage between import records (HTSUS codes, duty amounts, entry dates) and export records (what was shipped, when, containing which components). For companies running sourcing on spreadsheets and email, this linkage is manual and error-prone. For companies with structured procurement data -- where every BOM, every supplier quote, and every import record lives in one system -- the drawback calculation becomes a reporting function rather than a forensic exercise.
+At LightSource, we see this play out with customers who manage direct materials procurement on the platform. When import data, BOM structures, and supplier records are already connected, identifying drawback-eligible flows is a fraction of the work it takes when that data is scattered across dozens of spreadsheets.
+Sources
+- Drawback Overview | U.S. Customs and Border Protection -- Official CBP drawback program overview and filing requirements
+- IEEPA Duty Refunds | CBP -- CBP's CAPE refund system for IEEPA tariff refunds, launched April 2026
+- Duty Drawback Explained | Credible Law -- Comprehensive overview of drawback types, eligibility, and filing process
+- Duty Drawback 2026 | TariffsTool -- Current tariff eligibility matrix including Section 301, 122, and 232
+- IEEPA Tariff Refunds: CIT Ruling and Section 122 Updates | Wipfli -- April 2026 CAPE filing statistics and IEEPA/drawback interaction
+- IEEPA Tariff Refund Claims: Key Considerations | Sidley Austin -- Legal analysis of IEEPA refund process and double-recovery rules
+- Duty Drawback Benefits: Data-Backed Cash-Flow Wins | JM Rodgers -- Whirlpool ($10M) and 3M ($5M) drawback recovery case studies
+- TFTEA Changes | Alliance Drawback Services -- TFTEA modernization of drawback rules including substitution expansion
+Frequently Asked Questions
+What is duty drawback?
+Duty drawback is a US Customs and Border Protection program that refunds up to 99% of import duties, taxes, and fees paid on goods that are later exported or destroyed. The program has existed since 1789 and was modernized by TFTEA in 2015. It applies to manufacturing drawback (imported materials made into exported products), unused merchandise drawback (imported goods exported in the same condition), and substitution drawback (exported goods sharing the same 8-digit HTSUS code as the imports).
+Which tariffs are eligible for duty drawback in 2026?
+Section 301 tariffs on Chinese imports (7.5-100%) are eligible. The Section 122 surcharge (10%, imposed February 2026) is eligible -- confirmed by CBP CSMS guidance. Reciprocal tariffs are eligible. Section 232 tariffs on steel, aluminum, copper, and automobiles are NOT eligible. IEEPA tariff refunds are handled through a separate CAPE refund process and cannot double-recover with drawback claims.
+How much can a manufacturer save through duty drawback?
+Savings depend on import volume, duty rates, and export ratio. A manufacturer paying $7.5 million in annual eligible import duties with a 40% export ratio could recover approximately $3 million per year (99% of the export-eligible portion). After service provider fees (typically 10-20% success fee), net annual savings of $2-2.5 million are realistic. Whirlpool recovered $10 million through their program; 3M recovered $5 million.
+How long does it take to set up a duty drawback program?
+Initial assessment takes 2-4 weeks. CBP privilege applications take 3-6 months to process. First claims can typically be filed within 4-8 months of starting the process. Companies that apply for Accelerated Payment privileges receive refunds in weeks rather than the standard 1-3 year processing time.
+Can I file drawback claims retroactively?
+Yes. You can file drawback claims up to 5 years from the date of importation. If you're starting a program in May 2026, you can potentially recover duties paid on eligible imports going back to May 2021. This retroactive recovery is often the single largest benefit of starting a drawback program -- it generates an immediate lump-sum refund on years of accumulated eligible duties.
+How does duty drawback interact with IEEPA tariff refunds?
+Following the Supreme Court's February 2026 ruling that IEEPA does not authorize tariffs, CBP launched the CAPE refund system in April 2026 for IEEPA duty refunds. If you receive an IEEPA refund on duties that were also the basis for a drawback claim, the drawback must be adjusted to prevent double recovery. Companies filing both should coordinate carefully, as CBP is actively reconciling claims across both programs.
+What documentation do I need to support a duty drawback claim?
+At minimum: import entry summaries (CBP Form 7501) for the duties being recovered, export documentation (commercial invoice, bill of lading, AES filing) proving the goods left the country, and a documented match between imports and exports -- by part number, by 8-digit HTSUS code (for substitution drawback), or by manufacturing record (for manufacturing drawback). For manufacturing drawback you also need bills of materials and yield records. The recordkeeping burden is the single biggest source of friction in DIY drawback programs.
+Should I run a drawback program in-house or hire a specialist provider?
+Most companies hire a specialist for the first three to five years and bring it in-house only at very high volume. Specialist firms (Comstock, J.M. Rodgers, Sandler & Travis) charge a 10-20% success fee but handle the privilege applications, documentation matching, and CBP correspondence. For under $5M in annual recoverable duties, the math usually favors outsourcing. Above $20M, an in-house team paired with drawback software can be more cost-effective.
+If you're a manufacturer importing components and exporting finished goods, the US government may owe you money. Possibly a lot of it.
+Related: drawback is Move 4 of the five in The Buyer's Tariff Playbook -- the BOM-level tariff strategy these mechanics plug into.
+Duty drawback is a federal program that refunds up to 99% of import duties, taxes, and fees when the imported goods are later exported or destroyed. The program has existed since 1789 -- it was in the fifth law Congress ever passed -- but most companies don't use it. CBP estimates that roughly 80% of eligible drawback refunds go unclaimed every year, totaling approximately $15 billion left on the table.
+In a tariff environment where import duties on Chinese goods range from 7.5% to over 100%, and a 10% Section 122 surcharge was added in February 2026, the math on duty drawback has never been more compelling. This post explains what drawback is, how it works, what's changed in 2026, and how to build a program from scratch.
+What Duty Drawback Actually Is
+Drawback is straightforward in concept. You import a component. You pay duties on it. You later export a finished product that contains that component (or a substitute). The government refunds up to 99% of the duties you originally paid.
+The "99%" number is not a rounding -- the 1% retention was set by Congress as an administrative fee. For all practical purposes, you get everything back.
+There are three types of drawback:
+Manufacturing drawback. You import raw materials or components, manufacture them into a different article, and export the finished product. Example: you import steel coils, stamp them into automotive brackets, and export the brackets to a plant in Mexico.
+Unused merchandise drawback. You import goods, never use them in the US, and export them in the same condition. Example: you import 10,000 electronic connectors, sell 8,000 domestically, and export 2,000 to a customer in Canada.
+Substitution drawback. This is the most flexible and often the most valuable. You import goods under a specific tariff classification (8-digit HTSUS code), and you export commercially interchangeable goods under the same classification -- even if the exported goods aren't the exact items you imported. Example: you import aluminum extrusions from China and pay 25% duties. You also buy aluminum extrusions domestically. When you export finished products containing domestic aluminum, you can claim drawback on the Chinese import duties because the materials share the same HTSUS code.
+Substitution drawback was significantly expanded by TFTEA (the Trade Facilitation and Trade Enforcement Act of 2015), which broadened matching from part-number-level to 8-digit HTSUS code. This change made drawback practical for many more companies.
+What's Happening in 2026
+The tariff environment in 2026 has made drawback dramatically more valuable. Here's the current landscape:
+Section 301 tariffs (China): ELIGIBLE for drawback. These tariffs range from 7.5% to over 100% depending on the product list. If you're importing from China and exporting finished goods, this is where the largest drawback opportunity lives.
+Section 122 surcharge (10%, imposed February 24, 2026): ELIGIBLE for drawback. CBP confirmed through CSMS guidance that the surcharge is recoverable. This applies broadly across imports.
+Reciprocal tariffs: ELIGIBLE for drawback. CBP has confirmed these qualify.
+Section 232 tariffs (steel, aluminum, copper, automobiles): NOT ELIGIBLE for drawback. This is the major exception. If your primary imports are steel or aluminum, drawback does not apply to the Section 232 duties (though it may apply to other duties paid on those same imports).
+IEEPA tariff refunds. Following the Supreme Court's February 2026 ruling (6-3) that IEEPA does not authorize tariffs, CBP launched the CAPE refund system on April 20, 2026. As of April 26, importers had submitted approximately 75,300 CAPE declarations covering over 11.2 million entries. Important: IEEPA refunds and drawback claims cannot double-recover on the same duties. If you receive an IEEPA refund, any drawback claim on those same duties must be adjusted.
+Only about 20% of eligible drawback refunds are actually claimed. The remaining ~$15 billion per year goes unclaimed. -- CBP / industry estimates
+The ROI Calculation
+Before building a drawback program, run the numbers. Here's a framework.
+Step 1: Calculate your annual import duties.
+Look at your CBP entry summaries (Form 7501) for the last 12 months. Sum the duties paid, excluding Section 232 duties on steel/aluminum. If you're importing $50 million in components with an average duty rate of 15%, you're paying roughly $7.5 million per year in eligible duties.
+Step 2: Estimate your export ratio.
+What percentage of your imported goods (or goods containing imported components) are ultimately exported? For a manufacturer with global customers, this might be 20-60%. If you export 40% of your production that incorporates imported materials, your drawback-eligible duties are roughly 40% of your total.
+Step 3: Apply the 99% recovery rate.
+Drawback refunds 99% of eligible duties on the exported portion.
+Worked example:
+| Line | Value | 
+|---|---|
+| Annual imports | $50,000,000 | 
+| Average duty rate | 15% | 
+| Total duties paid | $7,500,000 | 
+| Export ratio | 40% | 
+| Drawback-eligible duties | $3,000,000 | 
+| Recovery rate | 99% | 
+| Annual drawback refund | $2,970,000 | 
+For context, Whirlpool recovered $10 million through their drawback program, resulting in a 5% reduction in production costs. 3M recovered $5 million, lowering production costs by 3%.
+Step 4: Subtract program costs.
+Drawback programs have real costs: customs broker or service provider fees (typically 10-20% of recovered duties as a success fee), record-keeping systems, and internal staff time. A common net recovery after fees is 75-85% of gross drawback.
+In the example above: $2,970,000 gross x 80% net = ~$2.4 million in annual net savings.
+If you're paying more than $1 million in eligible import duties annually and exporting more than 20% of your production, a drawback program almost certainly pays for itself.
+How to Build a Duty Drawback Program
+Phase 1: Assessment (Weeks 1-4)
+Audit your import and export data. Pull 24 months of CBP entry summaries (Form 7501), commercial invoices, and export documentation. Map which imports feed into which exports. Identify your highest-duty product families.
+Classify your opportunity. Is it manufacturing drawback, unused merchandise, or substitution? Most manufacturers find the largest opportunity in substitution drawback, because the 8-digit HTSUS matching rule is flexible enough to capture exports that don't contain the exact imported components.
+Estimate the dollar value using the ROI framework above. If the opportunity is less than $200,000 annually, a third-party service provider on a success-fee basis is the most practical path. If it's above $1 million, consider building internal capability alongside a provider.
+Phase 2: Registration (Months 2-4)
+Apply for drawback privileges with CBP. Submit a Combined Privileges Application. This establishes your right to file claims. Processing takes 3-6 months.
+Apply for Accelerated Payment. Standard drawback processing takes 1-3 years. Accelerated Payment privilege gets you refunds in weeks while CBP reviews in the background. This is critical for cash flow.
+Establish record-keeping systems. CBP requires you to maintain records linking imports to exports for 3 years after payment of the drawback claim. This means: import entry data (HTSUS codes, duty amounts, dates), BOM structures linking imported components to finished goods, and export proof (bills of lading, commercial invoices, foreign customs declarations).
+Phase 3: First Claims (Months 4-8)
+File your first claim via ACE. All drawback claims must be filed electronically through the Automated Commercial Environment using CBP Form 7551. You can self-file (requires ABI software), use a licensed customs broker, or use a drawback service provider.
+Start with the clearest matches. Your first claims should use the most straightforward import-export pairs -- products where the supply chain link is well-documented and the HTSUS classification is unambiguous. Build confidence and refine your process before tackling complex cases.
+Track everything. Every claim needs a paper trail: import entry summary, proof of duty payment, manufacturing records or commercial documentation linking import to export, and export proof. Missing documentation is the number one reason claims get rejected.
+Phase 4: Optimize (Ongoing)
+Expand to substitution claims if you started with direct identification. Substitution is typically where the largest recoveries live.
+File retroactively. You have 5 years from the date of importation. If you're starting a program now, go back and file claims on eligible imports from 2021 forward.
+Integrate drawback tracking into your procurement process. The most efficient programs capture drawback data at the point of import -- HTSUS codes, duty amounts, and intended use -- rather than reconstructing it retroactively. This is where procurement, trade compliance, and finance need to work together.
+Common Mistakes
+Assuming Section 232 covers all your imports. Section 232 only applies to specific metals and autos. Many manufacturers import a mix of 232-covered and non-232 components. The non-232 imports may still be eligible for drawback on Section 301 or other duties.
+Not applying for Accelerated Payment. Without it, you wait 1-3 years for refunds. With it, weeks. The application takes a few months to process, but the cash flow difference is enormous.
+Poor record-keeping. CBP can audit drawback claims for 3 years after payment. If you can't produce the documentation linking your imports to your exports, you may have to return the refund -- plus interest.
+Ignoring substitution drawback. Many companies only consider direct identification (tracking the actual imported item through manufacturing). Substitution is more flexible and often captures more value, because any goods with the same 8-digit HTSUS classification qualify.
+Not coordinating with IEEPA refunds. If you're filing both IEEPA refund claims through CAPE and drawback claims, you must ensure there's no double recovery on the same duties. CBP is reconciling these, and discrepancies will trigger audits.
+What This Means for Direct Materials Teams
+For manufacturers managing complex bills of materials with imported components, duty drawback is one of the highest-ROI activities available to the procurement function. It directly reduces COGS without requiring any supplier negotiation, price reduction, or design change. You're simply recovering money the government already owes you.
+The challenge is data. A drawback claim requires precise linkage between import records (HTSUS codes, duty amounts, entry dates) and export records (what was shipped, when, containing which components). For companies running sourcing on spreadsheets and email, this linkage is manual and error-prone. For companies with structured procurement data -- where every BOM, every supplier quote, and every import record lives in one system -- the drawback calculation becomes a reporting function rather than a forensic exercise.
+At LightSource, we see this play out with customers who manage direct materials procurement on the platform. When import data, BOM structures, and supplier records are already connected, identifying drawback-eligible flows is a fraction of the work it takes when that data is scattered across dozens of spreadsheets.
+Sources
+- Drawback Overview | U.S. Customs and Border Protection -- Official CBP drawback program overview and filing requirements
+- IEEPA Duty Refunds | CBP -- CBP's CAPE refund system for IEEPA tariff refunds, launched April 2026
+- Duty Drawback Explained | Credible Law -- Comprehensive overview of drawback types, eligibility, and filing process
+- Duty Drawback 2026 | TariffsTool -- Current tariff eligibility matrix including Section 301, 122, and 232
+- IEEPA Tariff Refunds: CIT Ruling and Section 122 Updates | Wipfli -- April 2026 CAPE filing statistics and IEEPA/drawback interaction
+- IEEPA Tariff Refund Claims: Key Considerations | Sidley Austin -- Legal analysis of IEEPA refund process and double-recovery rules
+- Duty Drawback Benefits: Data-Backed Cash-Flow Wins | JM Rodgers -- Whirlpool ($10M) and 3M ($5M) drawback recovery case studies
+- TFTEA Changes | Alliance Drawback Services -- TFTEA modernization of drawback rules including substitution expansion
+Frequently Asked Questions
+What is duty drawback?
+Duty drawback is a US Customs and Border Protection program that refunds up to 99% of import duties, taxes, and fees paid on goods that are later exported or destroyed. The program has existed since 1789 and was modernized by TFTEA in 2015. It applies to manufacturing drawback (imported materials made into exported products), unused merchandise drawback (imported goods exported in the same condition), and substitution drawback (exported goods sharing the same 8-digit HTSUS code as the imports).
+Which tariffs are eligible for duty drawback in 2026?
+Section 301 tariffs on Chinese imports (7.5-100%) are eligible. The Section 122 surcharge (10%, imposed February 2026) is eligible -- confirmed by CBP CSMS guidance. Reciprocal tariffs are eligible. Section 232 tariffs on steel, aluminum, copper, and automobiles are NOT eligible. IEEPA tariff refunds are handled through a separate CAPE refund process and cannot double-recover with drawback claims.
+How much can a manufacturer save through duty drawback?
+Savings depend on import volume, duty rates, and export ratio. A manufacturer paying $7.5 million in annual eligible import duties with a 40% export ratio could recover approximately $3 million per year (99% of the export-eligible portion). After service provider fees (typically 10-20% success fee), net annual savings of $2-2.5 million are realistic. Whirlpool recovered $10 million through their program; 3M recovered $5 million.
+How long does it take to set up a duty drawback program?
+Initial assessment takes 2-4 weeks. CBP privilege applications take 3-6 months to process. First claims can typically be filed within 4-8 months of starting the process. Companies that apply for Accelerated Payment privileges receive refunds in weeks rather than the standard 1-3 year processing time.
+Can I file drawback claims retroactively?
+Yes. You can file drawback claims up to 5 years from the date of importation. If you're starting a program in May 2026, you can potentially recover duties paid on eligible imports going back to May 2021. This retroactive recovery is often the single largest benefit of starting a drawback program -- it generates an immediate lump-sum refund on years of accumulated eligible duties.
+How does duty drawback interact with IEEPA tariff refunds?
+Following the Supreme Court's February 2026 ruling that IEEPA does not authorize tariffs, CBP launched the CAPE refund system in April 2026 for IEEPA duty refunds. If you receive an IEEPA refund on duties that were also the basis for a drawback claim, the drawback must be adjusted to prevent double recovery. Companies filing both should coordinate carefully, as CBP is actively reconciling claims across both programs.
+What documentation do I need to support a duty drawback claim?
+At minimum: import entry summaries (CBP Form 7501) for the duties being recovered, export documentation (commercial invoice, bill of lading, AES filing) proving the goods left the country, and a documented match between imports and exports -- by part number, by 8-digit HTSUS code (for substitution drawback), or by manufacturing record (for manufacturing drawback). For manufacturing drawback you also need bills of materials and yield records. The recordkeeping burden is the single biggest source of friction in DIY drawback programs.
+Should I run a drawback program in-house or hire a specialist provider?
+Most companies hire a specialist for the first three to five years and bring it in-house only at very high volume. Specialist firms (Comstock, J.M. Rodgers, Sandler & Travis) charge a 10-20% success fee but handle the privilege applications, documentation matching, and CBP correspondence. For under $5M in annual recoverable duties, the math usually favors outsourcing. Above $20M, an in-house team paired with drawback software can be more cost-effective.
+Read more
+Civilization's Biggest Bet Runs on Five-Year Lead Times: Takeaways from the Berkeley Agentic AI Summit
+Velocity Is Existential: Three Takeaways From the MEMA Commercial Vehicle Outlook Conference
+Source Code Episode 14: Jim Nelles, Supply Chain & Procurement Executive, on Why Procurement Is the Fastest Way to Grow EBITDA
+Read more
+Civilization's Biggest Bet Runs on Five-Year Lead Times: Takeaways from the Berkeley Agentic AI Summit
+Velocity Is Existential: Three Takeaways From the MEMA Commercial Vehicle Outlook Conference
+Source Code Episode 14: Jim Nelles, Supply Chain & Procurement Executive, on Why Procurement Is the Fastest Way to Grow EBITDA
+Read more
+Civilization's Biggest Bet Runs on Five-Year Lead Times: Takeaways from the Berkeley Agentic AI Summit
+Velocity Is Existential: Three Takeaways From the MEMA Commercial Vehicle Outlook Conference
+Source Code Episode 14: Jim Nelles, Supply Chain & Procurement Executive, on Why Procurement Is the Fastest Way to Grow EBITDA
+Trusted by:
+Trusted by:
+Trusted by:

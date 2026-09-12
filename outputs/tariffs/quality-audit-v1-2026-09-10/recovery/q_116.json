@@ -1,0 +1,148 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original answer is insufficient because the available evidence contains conflicting tariff rates for South Korean batteries (10%, 15%, and standard MFN) and relies on future-dated or proposal-based metrics that do not establish a single effective rate as of the research date. Additionally, one source required for full verification was inaccessible, preventing resolution of the conflict between the 'forced-labor' tier and the 'FTA/Section 232' overlays.",
+  "confidence": "high",
+  "remaining_gap": "No single source explicitly states the definitive, effective tariff rate for South Korean lithium-ion battery cells applicable to a specific named company as of September 2026. The evidence presents a 10% forced-labor tier, a 15% post-April 2025 deal rate, and standard MFN rates with Section 232 overlays, creating an unresolvable conflict without the inaccessible source.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_a1812fa3eb99faa9006df6d7",
+      "supporting_excerpt": "Since April 2025, a deal effective August 1, 2025, set tariffs at 15%. The 50% tariff rate on aluminum, steel, and copper products remains in place. Impact on U.S. Battery Industry: The 15% tariff on South Korean battery components (e.g., cathode materials) and cells will increase costs for U.S. battery manufacturers.",
+      "relevance_explanation": "Directly addresses the specific tariff rate (15%) and effective date (August 1, 2025) for South Korean batteries, contrasting with other rates in the dataset.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_186c46a9694ce5206f668e41",
+      "supporting_excerpt": "As of August 2025, the trade landscape has seen notable developments. For instance, a new EU-US trade deal, finalized on July 27, 2025, sets a 15% baseline tariff on most goods, including electric vehicles (EVs) and battery components... China Tariffs – A Deep Dive into Lithium-ion... Reciprocal Tariff: A newly imposed 34% tariff on all goods from China... Section 301 Tariff: A specific 7.5% tariff targeting China's new energy industry...",
+      "relevance_explanation": "Provides context for the August 2025 timeline and confirms the existence of a 15% baseline tariff, but also highlights conflicting data regarding Chinese tariffs which may be conflated in the original query.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_5af87bdc4fd8579972e8ee14",
+      "supporting_excerpt": "What tariffs apply to batteries from South Korea? Batteries imported from South Korea are subject to the standard MFN base duty rate, plus Section 232 steel screening, Section 232 aluminum screening tariff overlays. Use the duty calculator to get the exact rate for your HTS code.",
+      "relevance_explanation": "Indicates that South Korean batteries do not have a single fixed rate but depend on MFN base rates plus specific Section 232 overlays, creating a conflict with the flat 15% or 10% figures found elsewhere.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_413f4cc50602a89858ee89cd",
+      "supporting_excerpt": "What is the US tariff on lithium-ion batteries? Lithium-ion batteries are classified under HTS 8507.60 with a base duty rate of 3.4%. Section 301 tariffs on Chinese-origin lithium-ion batteries add 25%, bringing the effective rate to 28.4% for Chinese imports.",
+      "relevance_explanation": "Confirms the base HTS code and rate but explicitly limits the high tariff discussion to Chinese origin, failing to provide a specific rate for South Korea other than implying it is the 'standard MFN' which conflicts with the 15% figure.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_116",
+  "query": "Lithium ion battery cells South Korea United States import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 11,
+    "all_extracted_claims": 11,
+    "claims_presented_to_original_synthesis": 11,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 3,
+    "company_named_claims": 3,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_5af87bdc4fd8579972e8ee14",
+    "passage_a1812fa3eb99faa9006df6d7",
+    "passage_413f4cc50602a89858ee89cd",
+    "passage_186c46a9694ce5206f668e41",
+    "passage_d42063c7f6e7656ff88ec136",
+    "passage_096dd7912ab01f0bb7215403",
+    "passage_1c9dc8fac9f051c8f25c07ff",
+    "passage_cab9b0dec63a593e78dd4c04"
+  ],
+  "candidate_document_ids": [
+    "document_13d2e3b3f4dcddf612491236",
+    "document_2aa623e29eb433e0df03dc78",
+    "document_50e47ac99d704cf10e6cd2a1",
+    "document_53282925fd2c3b74a4215d86",
+    "document_59ddee8a8a9e420fab4ec2f4",
+    "document_6f9b33447339803b24b72748",
+    "document_8695ef4b56febfbbc209df65",
+    "document_bd16d60fc66b38cdb704c7b9"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_5af87bdc4fd8579972e8ee14",
+      "supporting_excerpt": "What tariffs apply to batteries from South Korea? Batteries imported from South Korea are subject to the standard MFN base duty rate, plus Section 232 steel screening, Section 232 aluminum screening tariff overlays. Use the duty calculator to get the exact rate for your HTS code.",
+      "relevance_explanation": "Indicates that South Korean batteries do not have a single fixed rate but depend on MFN base rates plus specific Section 232 overlays, creating a conflict with the flat 15% or 10% figures found elsewhere.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_e4c535b62a2f6b3dfdf09676",
+      "query_id": "q_116",
+      "chunk_id": "chunk_848c1626ca3557a4b3006680",
+      "document_id": "document_53282925fd2c3b74a4215d86",
+      "source_url": "https://ustariffrates.com/import/batteries/from/south-korea",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/3f635a188462e3bc13890596d891f0e9235745be96f53c12ad4bdb83aed53887.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_413f4cc50602a89858ee89cd",
+      "supporting_excerpt": "What is the US tariff on lithium-ion batteries? Lithium-ion batteries are classified under HTS 8507.60 with a base duty rate of 3.4%. Section 301 tariffs on Chinese-origin lithium-ion batteries add 25%, bringing the effective rate to 28.4% for Chinese imports.",
+      "relevance_explanation": "Confirms the base HTS code and rate but explicitly limits the high tariff discussion to Chinese origin, failing to provide a specific rate for South Korea other than implying it is the 'standard MFN' which conflicts with the 15% figure.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_864632f2b05111d75f209df0",
+      "query_id": "q_116",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111",
+      "document_id": "document_59ddee8a8a9e420fab4ec2f4",
+      "source_url": "https://ustariffrates.com/products/batteries",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/6e03ad1bdf1c7d2197491930bf6f95382bd658cc82276e02327eb62ab7888e11.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_a1812fa3eb99faa9006df6d7",
+        "supporting_excerpt": "Since April 2025, a deal effective August 1, 2025, set tariffs at 15%. The 50% tariff rate on aluminum, steel, and copper products remains in place. Impact on U.S. Battery Industry: The 15% tariff on South Korean battery components (e.g., cathode materials) and cells will increase costs for U.S. battery manufacturers.",
+        "relevance_explanation": "Directly addresses the specific tariff rate (15%) and effective date (August 1, 2025) for South Korean batteries, contrasting with other rates in the dataset.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_186c46a9694ce5206f668e41",
+        "supporting_excerpt": "As of August 2025, the trade landscape has seen notable developments. For instance, a new EU-US trade deal, finalized on July 27, 2025, sets a 15% baseline tariff on most goods, including electric vehicles (EVs) and battery components... China Tariffs – A Deep Dive into Lithium-ion... Reciprocal Tariff: A newly imposed 34% tariff on all goods from China... Section 301 Tariff: A specific 7.5% tariff targeting China's new energy industry...",
+        "relevance_explanation": "Provides context for the August 2025 timeline and confirms the existence of a 15% baseline tariff, but also highlights conflicting data regarding Chinese tariffs which may be conflated in the original query.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

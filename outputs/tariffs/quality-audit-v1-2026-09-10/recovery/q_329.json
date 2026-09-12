@@ -1,0 +1,151 @@
+{
+  "primary_cause": "inaccessible_documents",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "cause_explanation": "Original synthesis relied on snippets with zero full-text sources, preventing verification of current tariff rates or legal status.",
+  "confidence": "high",
+  "remaining_gap": "Current applicability of specific duty rates remains unverified against official trade data.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_426a8545aba655bc153a9517",
+      "supporting_excerpt": "As of April 3, a 25% tariff now applies to imported vehicles and will extend to imported automotive parts by May 3. Safety-critical components, including airbags, windshields, mirrors, and seat belts, are among the targeted items.",
+      "relevance_explanation": "Claims specific rate but lacks verification of current status relative to query date.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_da737a492b4ac8f2ef581e1d",
+      "supporting_excerpt": "Persons seeking data for individual or different product codes are welcome to utilize at no charge the data retrieval system operated by the USITC to access the federal government’s official trade data base.",
+      "relevance_explanation": "Indicates official rate data is external, not contained in this document.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_da737a492b4ac8f2ef581e1d",
+      "supporting_excerpt": "HTS 10-Digit Codes for Automotive Parts Imports by Product Categories\nBodies and Parts\n- 8708210000 Seat Belts",
+      "relevance_explanation": "Lists classification code but omits applicable tariff rate.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_dddb68c034d22cb9bcee35f6",
+      "supporting_excerpt": "Automotive manufacturers have developed and incorporated safety technologies (e.g., seat belts, airbags, and advanced driver assistance systems) to promote vehicle safety.",
+      "relevance_explanation": "Confirms product relevance but provides no tariff or duty information.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_329",
+  "query": "Automotive seat belts airbags import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 0,
+    "snippet_sources": 3,
+    "inaccessible_source_count": 3,
+    "selected_claims": 3,
+    "all_extracted_claims": 3,
+    "claims_presented_to_original_synthesis": 3,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "insufficient_evidence",
+      "snippet_only"
+    ],
+    "conflict_groups": 1,
+    "company_named_claims": 0,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_da737a492b4ac8f2ef581e1d",
+    "passage_426a8545aba655bc153a9517",
+    "passage_dddb68c034d22cb9bcee35f6",
+    "passage_ac2353f32ee2637000c71c2c",
+    "passage_e01c97bc5938102a4422cfd6",
+    "passage_f28498758e5d02ae68b92c7f",
+    "passage_692f429a9c12e2db8306721c",
+    "passage_1e624a68f766c4f6acadabea"
+  ],
+  "candidate_document_ids": [
+    "document_10a14492092f30e7c7d2f976",
+    "document_150a243c03e39787abea51cf",
+    "document_35e37010a1a34d0ce7c9d267",
+    "document_9e90d68f9138d0ce517a4182",
+    "document_fa95f5701bd94c20dfa77c42"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_426a8545aba655bc153a9517",
+      "supporting_excerpt": "As of April 3, a 25% tariff now applies to imported vehicles and will extend to imported automotive parts by May 3. Safety-critical components, including airbags, windshields, mirrors, and seat belts, are among the targeted items.",
+      "relevance_explanation": "Claims specific rate but lacks verification of current status relative to query date.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_af4e2650779f58b16a38c3d4",
+      "query_id": "q_329",
+      "chunk_id": "chunk_0e904fe2cb92be0365d8e6dc",
+      "document_id": "document_9e90d68f9138d0ce517a4182",
+      "source_url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/4ba28204f598267a3c914d164c3a649f21490bcb8fb8d17388fb0f6167613ad0.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_da737a492b4ac8f2ef581e1d",
+      "supporting_excerpt": "Persons seeking data for individual or different product codes are welcome to utilize at no charge the data retrieval system operated by the USITC to access the federal government’s official trade data base.",
+      "relevance_explanation": "Indicates official rate data is external, not contained in this document.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_82b8cd77c7a2f26e2b83f9f1",
+      "query_id": "q_329",
+      "chunk_id": "chunk_57fe4f7cd1279b7a7edecc79",
+      "document_id": "document_10a14492092f30e7c7d2f976",
+      "source_url": "https://www.trade.gov/automotive-parts-tariff-codes",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/407287bb9a039871b4b9f66d2aabe9c50a4ba18be7ebb44de2b744f6049400b6.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_dddb68c034d22cb9bcee35f6",
+      "supporting_excerpt": "Automotive manufacturers have developed and incorporated safety technologies (e.g., seat belts, airbags, and advanced driver assistance systems) to promote vehicle safety.",
+      "relevance_explanation": "Confirms product relevance but provides no tariff or duty information.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_ba789b471f6d7447f95ac054",
+      "query_id": "q_329",
+      "chunk_id": "chunk_444117c056555c43fb32ecfb",
+      "document_id": "document_35e37010a1a34d0ce7c9d267",
+      "source_url": "https://www.congress.gov/crs_external_products/R/PDF/R48876/R48876.3.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/76902a8352e3b450188a5963bfc002b6cc2c2789dc0dc7ce1f8d0ec213df349d.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_da737a492b4ac8f2ef581e1d",
+        "supporting_excerpt": "HTS 10-Digit Codes for Automotive Parts Imports by Product Categories\nBodies and Parts\n- 8708210000 Seat Belts",
+        "relevance_explanation": "Lists classification code but omits applicable tariff rate.",
+        "company_applicability": "not_established",
+        "temporal_status": "date_not_established"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

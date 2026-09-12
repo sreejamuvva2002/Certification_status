@@ -1,0 +1,66 @@
+{
+  "query_id": "q_276",
+  "query": "Southeast Georgia vehicle display suppliers tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_308073f842561b19f797bd14",
+    "claim_4d539e6513052f883d9681ac",
+    "claim_9fc893d8b9a16cf1e485ba93",
+    "claim_b101d12ca13a6fc08e611b84",
+    "claim_fad80ef1d770b9ca909779cd"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_308073f842561b19f797bd14",
+      "text": "The tariffs are in addition to existing duties, which currently stand at a base rate of 2.5% for automotive imports.",
+      "url": "https://www.ledger-enquirer.com/news/politics-government/article302957479.html",
+      "chunk_id": "chunk_a7951b04d3a05c40348e2dfa"
+    },
+    {
+      "claim_id": "claim_4d539e6513052f883d9681ac",
+      "text": "Components compliant with the United States-Mexico-Canada Agreement (USMCA) will remain tariff-free until the U.S. Customs and Border Protection establishes a process to apply tariffs to their non-U.S. content.",
+      "url": "https://www.ledger-enquirer.com/news/politics-government/article302957479.html",
+      "chunk_id": "chunk_a7951b04d3a05c40348e2dfa"
+    },
+    {
+      "claim_id": "claim_9fc893d8b9a16cf1e485ba93",
+      "text": "Ferrel is one of 300 workers at American BOA in Cumming who make metal hoses and \"bellows\" used as sleeves in vehicle engine and exhaust systems. Half the steel comes from Europe, and new tariffs initiated by the Trump administration this spring have raised the company's costs by more than $200,000 a month",
+      "url": "https://www.ajc.com/business/georgia-auto-sector-fears-tariff-damage/lT9ZkTnli54RJltUfZT2OI",
+      "chunk_id": "chunk_76376c97eedac647c26a2a45"
+    },
+    {
+      "claim_id": "claim_b101d12ca13a6fc08e611b84",
+      "text": "German car brands like BMW, Mercedes-Benz, and Audi have a significant presence in the U.S. market and are subject to the 25% tariffs.",
+      "url": "https://www.ledger-enquirer.com/news/politics-government/article302957479.html",
+      "chunk_id": "chunk_a7951b04d3a05c40348e2dfa"
+    },
+    {
+      "claim_id": "claim_fad80ef1d770b9ca909779cd",
+      "text": "In anticipation of the tariffs – which include a base of 10% for all goods and 25% on imported cars – consumer sentiment continued a steep drop in March, reaching its lowest levels since November 2022",
+      "url": "https://www.csmonitor.com/Business/2025/0408/tariffs-hyundai-auto-factory-jobs-georgia",
+      "chunk_id": "chunk_1bb739b5b8aa2461228dbeee"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_308073f842561b19f797bd14",
+      "claim_fad80ef1d770b9ca909779cd"
+    ],
+    [
+      "claim_b101d12ca13a6fc08e611b84",
+      "claim_fad80ef1d770b9ca909779cd"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

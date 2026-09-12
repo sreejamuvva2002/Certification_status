@@ -1,0 +1,74 @@
+{
+  "query_id": "q_474",
+  "query": "Automotive parts transshipment country-of-origin enforcement",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0148e05cbaecadedb09ae599",
+    "claim_27656beb375b0187a1645256",
+    "claim_2ec30b49dfee4db2ba01d3e3",
+    "claim_3afd5cea062bb433169640f9",
+    "claim_6855560ba5b2d7d5d210b23d",
+    "claim_9ff0feb7f32297e1d91e037d",
+    "claim_93a2328fa10c4d1903011d97"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0148e05cbaecadedb09ae599",
+      "text": "These facilities are designed less for true manufacturing than for origin-shifting, tariff evasion, and tariff avoidance.",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/08/The-Great-Transshipment-Scam.pdf",
+      "chunk_id": "chunk_d5edcf814985922dbc680b66"
+    },
+    {
+      "claim_id": "claim_27656beb375b0187a1645256",
+      "text": "OTEA estimates that approximately $67 billion in U.S.-bound goods were transshipped from China through the top hubs—Mexico, India, and Vietnam—in 2025",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/08/The-Great-Transshipment-Scam.pdf",
+      "chunk_id": "chunk_9f74705968b80f708ac6382b"
+    },
+    {
+      "claim_id": "claim_2ec30b49dfee4db2ba01d3e3",
+      "text": "In 2026, President Trump also signed Executive Order 14411, which gives U.S. Customs and Border Protection (CBP) additional tools to crack down on transshipment by strengthening customs enforcement and increasing trade transparency.",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/08/The-Great-Transshipment-Scam.pdf",
+      "chunk_id": "chunk_721002c79aaa0098a595d770"
+    },
+    {
+      "claim_id": "claim_3afd5cea062bb433169640f9",
+      "text": "CBP notes that the industries and products that are often the focus for illegal transshipment practices include steel and aluminum, textiles and apparel, automobiles and auto parts, electronics, solar panels, and agriculture.",
+      "url": "https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/september/cbp-identifies-red-flags-best-practices-on-transshipping",
+      "chunk_id": "chunk_180bdafa512f5effeca2077a"
+    },
+    {
+      "claim_id": "claim_6855560ba5b2d7d5d210b23d",
+      "text": "President Trump's implementation of a 40% penalty tariff on transshipped goods, effective August 7, 2025.",
+      "url": "https://www.e2open.com/blog/navigating-the-transshipment-crisis",
+      "chunk_id": "chunk_d4527d85d8c69699762f8cf9"
+    },
+    {
+      "claim_id": "claim_9ff0feb7f32297e1d91e037d",
+      "text": "the Trump administration has indicated that, under some of the preliminary trade agreements it has reached with several countries, U.S. imports of goods transshipped through those countries may be subject to an additional 40 percent tariff.",
+      "url": "https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/september/cbp-identifies-red-flags-best-practices-on-transshipping",
+      "chunk_id": "chunk_180bdafa512f5effeca2077a"
+    },
+    {
+      "claim_id": "claim_93a2328fa10c4d1903011d97",
+      "text": "Critical automotive components, especially engines and transmissions, face rigorous inspections.",
+      "url": "https://www.e2open.com/blog/navigating-the-transshipment-crisis",
+      "chunk_id": "chunk_d4527d85d8c69699762f8cf9"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_6855560ba5b2d7d5d210b23d",
+      "claim_9ff0feb7f32297e1d91e037d"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 30,
+  "synthesis_input_claim_count": 30
+}

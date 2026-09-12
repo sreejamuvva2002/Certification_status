@@ -1,0 +1,59 @@
+{
+  "query_id": "q_272",
+  "query": "Southeast Georgia automotive suppliers tariff impact",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3efe5110aa884dd444bc8b29",
+    "claim_450651bea681424476107aee",
+    "claim_c4858a488fe5562499bf36ba",
+    "claim_bd3b304ebf60fae2b659af2e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3efe5110aa884dd444bc8b29",
+      "text": "new tariffs initiated by the Trump administration this spring have raised the company's costs by more than $200,000 a month",
+      "url": "https://www.ajc.com/business/georgia-auto-sector-fears-tariff-damage/lT9ZkTnli54RJltUfZT2OI",
+      "chunk_id": "chunk_76376c97eedac647c26a2a45"
+    },
+    {
+      "claim_id": "claim_450651bea681424476107aee",
+      "text": "On March 26, President Donald Trump signed a proclamation invoking Section 232 of the Trade Expansion Act of 1962, imposing a 25% tariff on imported automobiles and certain automotive parts.",
+      "url": "https://www.wipfli.com/insights/articles/trumps-proposed-auto-tariffs-impact-on-the-supply-chain-and-consumers",
+      "chunk_id": "chunk_c676a7922896c86a7e1220d9"
+    },
+    {
+      "claim_id": "claim_c4858a488fe5562499bf36ba",
+      "text": "Ferrel is one of 300 workers at American BOA in Cumming who make metal hoses and \"bellows\" used as sleeves in vehicle engine and exhaust systems. Half the steel comes from Europe, and new tariffs initiated by the Trump administration this spring have raised the company's costs by more than $200,000 a month",
+      "url": "https://www.ajc.com/business/georgia-auto-sector-fears-tariff-damage/lT9ZkTnli54RJltUfZT2OI",
+      "chunk_id": "chunk_76376c97eedac647c26a2a45"
+    },
+    {
+      "claim_id": "claim_bd3b304ebf60fae2b659af2e",
+      "text": "Half the steel comes from Europe, and new tariffs initiated by the Trump administration this spring have raised the company's costs by more than $200,000 a month",
+      "url": "https://www.ajc.com/business/georgia-auto-sector-fears-tariff-damage/lT9ZkTnli54RJltUfZT2OI",
+      "chunk_id": "chunk_76376c97eedac647c26a2a45"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_3efe5110aa884dd444bc8b29",
+      "claim_450651bea681424476107aee"
+    ],
+    [
+      "claim_c4858a488fe5562499bf36ba",
+      "claim_bd3b304ebf60fae2b659af2e"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

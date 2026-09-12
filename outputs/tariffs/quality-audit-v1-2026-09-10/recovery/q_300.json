@@ -1,0 +1,154 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [],
+  "cause_explanation": "Evidence confirms SK Battery America presence in Georgia but lacks explicit import duty rates or named-company tariff exposure.",
+  "confidence": "high",
+  "remaining_gap": "No specific duty rates for SK Battery America materials found in retrieved sources.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_f72a07474655349dd2584112",
+      "supporting_excerpt": "SK Battery America 3,000 Electric vehicle batteries Jackson",
+      "relevance_explanation": "Confirms facility location but no tariff data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_3a004899070fc001b4f616b3",
+      "supporting_excerpt": "The U.S. joint venture between Hyundai Motor Group and SK On has started series production of battery cells.",
+      "relevance_explanation": "Confirms operations but no import duty specifics.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_b9e932178f9285f001cc810b",
+      "supporting_excerpt": "However, the US battery manufacturing base remains heavily dependent on imported raw materials and components – particularly graphite, lithium carbonate, and cathode active materials – which means “made in America” batteries often still carry significant tariff exposure through their supply chains.",
+      "relevance_explanation": "General tariff exposure noted without company-specific rates.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_b76160826ad1793f7c71ff6d",
+      "supporting_excerpt": "The US Department of Commerce announced final affirmative determinations in its anti dumping and countervailing duty investigations of active battery anode material imported from China this week, with details published in the Federal Register expected next week.",
+      "relevance_explanation": "Specific tariff rates exist for Chinese materials but not SK Battery America.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "date_not_established"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_300",
+  "query": "SK Battery America Georgia battery materials import duties",
+  "metrics": {
+    "retrieved_candidates": 1,
+    "retained_sources": 0,
+    "full_text_sources": 0,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 0,
+    "all_extracted_claims": 0,
+    "claims_presented_to_original_synthesis": 0,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 0,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance"
+  ],
+  "candidate_passage_ids": [
+    "passage_f72a07474655349dd2584112",
+    "passage_b9e932178f9285f001cc810b",
+    "passage_55191d414c8ffd5a58abb085",
+    "passage_3a004899070fc001b4f616b3",
+    "passage_7aca255665bf26a834a7201b",
+    "passage_51041480e2e62ba2de15fae5",
+    "passage_b76160826ad1793f7c71ff6d",
+    "passage_90148e81c801a5beb408f009"
+  ],
+  "candidate_document_ids": [
+    "document_10ab437f1472c5c1447ddb5d",
+    "document_150a243c03e39787abea51cf",
+    "document_6639c375dd8589aa6f7a5717",
+    "document_78d5f38ea11227317f5a972a",
+    "document_7fe379d4f0e0c7c2d39e18b8",
+    "document_a162e58e59a48f96d2c77035",
+    "document_bc72c6112a68baec615b0c32"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_f72a07474655349dd2584112",
+      "supporting_excerpt": "SK Battery America 3,000 Electric vehicle batteries Jackson",
+      "relevance_explanation": "Confirms facility location but no tariff data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_b2a69e5ad135bcb6e2cf0cf8",
+      "query_id": "q_300",
+      "chunk_id": "chunk_956d70b57a7c29eda962e9a8",
+      "document_id": "document_150a243c03e39787abea51cf",
+      "source_url": "https://selectgeorgia-production-assets.s3.amazonaws.com/media/documents/Automotive_Manufacturing_2026.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/10d78892bed3af44937c5722a55799a091f34d861ab25edb33f9e47dc1356719.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_3a004899070fc001b4f616b3",
+      "supporting_excerpt": "The U.S. joint venture between Hyundai Motor Group and SK On has started series production of battery cells.",
+      "relevance_explanation": "Confirms operations but no import duty specifics.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_40be6d42182298f5330d4391",
+      "query_id": "q_300",
+      "chunk_id": "chunk_79d870d110fb7dc49ea6b981",
+      "document_id": "document_6639c375dd8589aa6f7a5717",
+      "source_url": "https://battery-news.de/en/2026/07/16/hyundai-and-sk-on-begin-battery-production-in-georgia",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/cd55b45055247bc0167cedc70cb772137a87f6fce688ef2aeb75a1356375cc4c.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_b9e932178f9285f001cc810b",
+      "supporting_excerpt": "However, the US battery manufacturing base remains heavily dependent on imported raw materials and components – particularly graphite, lithium carbonate, and cathode active materials – which means “made in America” batteries often still carry significant tariff exposure through their supply chains.",
+      "relevance_explanation": "General tariff exposure noted without company-specific rates.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_d671732dc028a93392e4a28b",
+      "query_id": "q_300",
+      "chunk_id": "chunk_d625c75d6d3fc6f5cf2f6a0a",
+      "document_id": "document_78d5f38ea11227317f5a972a",
+      "source_url": "https://www.totexmfg.com/battery-pack-tariffs-oem-2026",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e0ba04e755583e765ed98ccd9a41c4332f768101b26871fe34c5c660b1c84fdb.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_b76160826ad1793f7c71ff6d",
+      "supporting_excerpt": "The US Department of Commerce announced final affirmative determinations in its anti dumping and countervailing duty investigations of active battery anode material imported from China this week, with details published in the Federal Register expected next week.",
+      "relevance_explanation": "Specific tariff rates exist for Chinese materials but not SK Battery America.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_b5e39def01c8576e915e171f",
+      "query_id": "q_300",
+      "chunk_id": "chunk_b5fbb5cb3876f71efab4c105",
+      "document_id": "document_10ab437f1472c5c1447ddb5d",
+      "source_url": "https://www.linkedin.com/posts/missgoelectric_evnews-ev-electric-activity-7428754956649750528-eGVi",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/136c267834c12228abe67ef50c7c6e23361c4524042e72a88ff8ca3e27a05e13.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

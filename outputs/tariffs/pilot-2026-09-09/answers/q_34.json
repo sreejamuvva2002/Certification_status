@@ -1,0 +1,36 @@
+{
+  "query_id": "q_34",
+  "query": "Hyundai Metaplant imported machinery customs duties",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_8027d69ad55fe7930c9b9c9d",
+    "claim_e3bb2ecd1dd8619095bf04c1"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_8027d69ad55fe7930c9b9c9d",
+      "text": "this week the Trump Administration announced a 25% tariff on vehicles imported into the us we were there in Georgia just as the news was breaking",
+      "url": "https://www.youtube.com/watch?v=u1XBETuQbVE",
+      "chunk_id": "chunk_49c3da0c84286d8dbf2304a5"
+    },
+    {
+      "claim_id": "claim_e3bb2ecd1dd8619095bf04c1",
+      "text": "We visited Hyundai’s new EV Metaplant in Savannah, Georgia, just as 25% tariffs on imported vehicles were announced.",
+      "url": "https://www.youtube.com/watch?v=u1XBETuQbVE",
+      "chunk_id": "chunk_49c3da0c84286d8dbf2304a5"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

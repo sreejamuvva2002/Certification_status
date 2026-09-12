@@ -1,0 +1,53 @@
+{
+  "status": "reviewed",
+  "reviews": {
+    "claim_bd65dfb14c9c7a5edc569751": {
+      "city": {
+        "decision": "clear",
+        "reason": "The source text explicitly identifies 'Whitfield County' as the location. A county is a misclassified value for a city field."
+      }
+    },
+    "claim_be7045fe3935450161729b43": {
+      "city": {
+        "decision": "clear",
+        "reason": "The source text explicitly identifies 'Bartow County' as the location. A county is a misclassified value for a city field."
+      }
+    },
+    "claim_c24602f71351b876cb5e491a": {
+      "company": {
+        "decision": "clear",
+        "reason": "The source text identifies 'U.S. Customs and Border Protection' as the agency issuing the ruling, not a named business entity subject to tariffs."
+      }
+    },
+    "claim_c6ccab6e8f93c46218f627a2": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "The value 'THIS YEAR' is a relative term without an absolute anchor date in the text. The audit date is 2026-09-10, but the text does not explicitly state which year 'this year' refers to (2024 or 2025), making it insufficient for verification."
+      }
+    },
+    "claim_c72b211caa1ab232ba1e3b73": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "The value 'today' is a relative term without an absolute anchor date in the text. The audit date is 2026-09-10, but the article does not specify the publication date to establish when 'today' occurred."
+      }
+    },
+    "claim_c88766e65b43f04d72cc5741": {
+      "company": {
+        "decision": "clear",
+        "reason": "The source text identifies the 'U.S. Trade Representative' as a government official/agency, not a named business entity."
+      }
+    },
+    "claim_c9c4e7d1564325b465cfcb6a": {
+      "company": {
+        "decision": "clear",
+        "reason": "The source text uses the pronoun 'We' without explicitly naming a specific business entity in the provided context, and 'Hyundai' is not explicitly linked as the subject of this specific sentence's claim in the snippet."
+      }
+    },
+    "claim_cd1463d30cbbc8a143a5245c": {
+      "company": {
+        "decision": "clear",
+        "reason": "The source text identifies 'CBP' (Customs and Border Protection) as the agency issuing the ruling, not a named business entity subject to tariffs."
+      }
+    }
+  }
+}

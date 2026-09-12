@@ -1,0 +1,60 @@
+{
+  "query_id": "q_company_2bc94a6bcf8d11a21a6cf4eb_targeted",
+  "query": "\"Vernay\" automotive vehicles auto parts steel aluminum copper tariffs tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1a0ba1a7c088afad26d7ad54",
+    "claim_2657207f174991320ae4f438",
+    "claim_58231e50145689061b90faf7",
+    "claim_612d4e26ec7b0db83bf8e407",
+    "claim_fa3ef7b9495c4dbe69922617"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1a0ba1a7c088afad26d7ad54",
+      "text": "Since April 6, 2026, Section 232 duty applies to the full customs value of covered metal goods, not just the metal content. This raises the effective cost of many imports even where the tariff rate looks unchanged.",
+      "url": "https://www.jaggaer.com/blog/us-tariffs-direct-procurement-2026",
+      "chunk_id": "chunk_88cb344b27de48a9a10aebc7"
+    },
+    {
+      "claim_id": "claim_2657207f174991320ae4f438",
+      "text": "Full-metal steel and aluminum articles carry a 50% duty, derivatives above 15% metal content carry 25%, and automobiles, covered auto parts, and semiconductors carry a 25% duty.",
+      "url": "https://www.jaggaer.com/blog/us-tariffs-direct-procurement-2026",
+      "chunk_id": "chunk_88cb344b27de48a9a10aebc7"
+    },
+    {
+      "claim_id": "claim_58231e50145689061b90faf7",
+      "text": "Section 232 metals tariffs apply to auto components: after the April 6, 2026 restructure, articles wholly of steel/aluminum/copper carry 50% while derivative components substantially made of those metals carry 25%",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    },
+    {
+      "claim_id": "claim_612d4e26ec7b0db83bf8e407",
+      "text": "effective April 6, 2026 (Proclamation issued April 2, 2026), Section 232 was restructured into two tiers: 50% on articles that are wholly steel, aluminum, or copper, and 25% on derivative products",
+      "url": "https://www.tariffstool.com/guides/section-232-tariffs-steel-aluminum-guide",
+      "chunk_id": "chunk_df1e7a5d377c4f163087fcf0"
+    },
+    {
+      "claim_id": "claim_fa3ef7b9495c4dbe69922617",
+      "text": "Section 301 (China) and the MFN base: a Chinese steel article pays 50% Section 232 + 25% Section 301 = 75%",
+      "url": "https://www.tariffstool.com/guides/section-232-tariffs-steel-aluminum-guide",
+      "chunk_id": "chunk_df1e7a5d377c4f163087fcf0"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_2657207f174991320ae4f438",
+      "claim_58231e50145689061b90faf7"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

@@ -1,0 +1,164 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence",
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original answer relies on general tariff impacts and port data rather than specific Georgia supplier exposure. Evidence shows broad industry statements and historical data without linking named companies to current tariff effects.",
+  "confidence": "high",
+  "remaining_gap": "No explicit named-company effect established for Georgia automotive electronics suppliers regarding component shortages under current tariffs.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_a15081566626b23897a434f6",
+      "supporting_excerpt": "Savannah: -13% in cargo volume, disrupting East Coast parts distribution.",
+      "relevance_explanation": "Indicates geographic impact but lacks specific supplier linkage.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_79591d67bcf2f0d2eb22e946",
+      "supporting_excerpt": "It is likely that every company operating in the vast automotive segment will be impacted by tariffs.",
+      "relevance_explanation": "Generalizes impact without establishing specific Georgia supplier exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_bbb6a0c7121747238ad1445e",
+      "supporting_excerpt": "In fact, in 2018, shortages of electronic components--multilayered ceramic chip capacitors, resistors, semiconductors, graphics cards--are growing as new markets and applications create surges in demand that mostly Asian manufacturers are unable to meet.",
+      "relevance_explanation": "Historical data (2018) does not establish current 2026 applicability for component shortages.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_979b4bc207c00a861ef891bc",
+      "supporting_excerpt": "An electronics assembly manufactured in Mexico does not automatically enter the United States duty-free.",
+      "relevance_explanation": "Explains trade rules but fails to connect specific Georgia facilities or companies to tariff exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_442",
+  "query": "Georgia automotive electronics suppliers component shortages tariffs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 2,
+    "full_text_sources": 1,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 11,
+    "all_extracted_claims": 11,
+    "claims_presented_to_original_synthesis": 11,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 2,
+    "company_named_claims": 2,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_a15081566626b23897a434f6",
+    "passage_9883eb4291a3f42d0326c69b",
+    "passage_79591d67bcf2f0d2eb22e946",
+    "passage_c228db2d7697d75ff9a3bb1d",
+    "passage_bbb6a0c7121747238ad1445e",
+    "passage_9ba963356ebb8457726e8648",
+    "passage_979b4bc207c00a861ef891bc",
+    "passage_06a1a72c3b6b5742661e76f4"
+  ],
+  "candidate_document_ids": [
+    "document_03bbe90c34832e1434fed9ad",
+    "document_08f49fc2382e0fd108cba980",
+    "document_2ed898a0b44943f3580f8f62",
+    "document_30a8feb950b531fa166c0e15",
+    "document_5d510d029f27d48ffade2892",
+    "document_93d026ae70704fc39ba4f3e7",
+    "document_b8e4116cf9a88cc5171794bc",
+    "document_c58af87f6386ebc9f034979f"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_a15081566626b23897a434f6",
+      "supporting_excerpt": "Savannah: -13% in cargo volume, disrupting East Coast parts distribution.",
+      "relevance_explanation": "Indicates geographic impact but lacks specific supplier linkage.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_acf6e821014c54fdbb41de9e",
+      "query_id": "q_442",
+      "chunk_id": "chunk_20207f6767d220a4f86103f9",
+      "document_id": "document_b8e4116cf9a88cc5171794bc",
+      "source_url": "https://www.linkedin.com/posts/jcmillerjr_supplychain-tariffs-automotiveaftermarket-activity-7331644499019948033-WS6f",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e6b7438e7d1b47c31f87f3cc770de8717cad448182db3dce492d30a1d982e3e4.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_79591d67bcf2f0d2eb22e946",
+      "supporting_excerpt": "It is likely that every company operating in the vast automotive segment will be impacted by tariffs.",
+      "relevance_explanation": "Generalizes impact without establishing specific Georgia supplier exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_ca512cf1d062e208492e4ad8",
+      "query_id": "q_442",
+      "chunk_id": "chunk_f381003a7acc4265b0ffa5fe",
+      "document_id": "document_5d510d029f27d48ffade2892",
+      "source_url": "https://www.stout.com/en/insights/commentary/effect-tariffs-automotive-industry",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/fea226ff67b4a040c2d76d9f40dfcbd89a6a5b39a533179d40a76ec536fbbdf1.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_bbb6a0c7121747238ad1445e",
+      "supporting_excerpt": "In fact, in 2018, shortages of electronic components--multilayered ceramic chip capacitors, resistors, semiconductors, graphics cards--are growing as new markets and applications create surges in demand that mostly Asian manufacturers are unable to meet.",
+      "relevance_explanation": "Historical data (2018) does not establish current 2026 applicability for component shortages.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_a749edece53cc2c149feb51d",
+      "query_id": "q_442",
+      "chunk_id": "chunk_a6a38524bff3b04544a0b122",
+      "document_id": "document_03bbe90c34832e1434fed9ad",
+      "source_url": "https://www.govinfo.gov/content/pkg/CHRG-115shrg40897/html/CHRG-115shrg40897.htm",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/f30925b8ea3be5dbaed17d934b11458b924bc6ea7a38f8269bbfb6d50c13a393.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_979b4bc207c00a861ef891bc",
+      "supporting_excerpt": "An electronics assembly manufactured in Mexico does not automatically enter the United States duty-free.",
+      "relevance_explanation": "Explains trade rules but fails to connect specific Georgia facilities or companies to tariff exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_d757c07ac160ddb79bbf8242",
+      "query_id": "q_442",
+      "chunk_id": "chunk_3268a1e3e567297006f62d36",
+      "document_id": "document_08f49fc2382e0fd108cba980",
+      "source_url": "https://www.markzetter.com/usmca-rules-of-origin-and-automotive-electronics-tariff-implications-for-cross-border-sourcing",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/69f3dda80729099d1c44a150c0b73e1fd99cfeb457d8825e4cfde4f2d93c8011.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

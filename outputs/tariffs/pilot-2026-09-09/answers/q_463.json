@@ -1,0 +1,63 @@
+{
+  "query_id": "q_463",
+  "query": "Port of Savannah electronics imports customs duties",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_70d09ad41fb37814c36816c2",
+    "claim_c0353fc95beeb129ae1a94bd",
+    "claim_774b7f5ca264eb8eafe51b51",
+    "claim_f5902beba796c5a6824fed47",
+    "claim_1fb197bc421567d4b13ab2d6"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_70d09ad41fb37814c36816c2",
+      "text": "High on the list of imports coming into the Georgia ports are retail consumer goods, including furniture, automotive, and electronics.",
+      "url": "https://augustabusinessdaily.com/part-2-impact-of-tariffs-on-imports-sales-and-the-georgia-ports",
+      "chunk_id": "chunk_26a67c8a01c34d15d83c3fc1"
+    },
+    {
+      "claim_id": "claim_c0353fc95beeb129ae1a94bd",
+      "text": "Retailers scrambling to stock up ahead of anticipated stiff tariffs on imports boosted the Port of Savannah, one of the top U.S. container ports, to its second-busiest year ever, Georgia officials said Tuesday.",
+      "url": "https://www.wabe.org/cargo-surge-amid-tariff-turmoil-drives-the-port-of-savannah-to-its-2nd-busiest-year",
+      "chunk_id": "chunk_2357e2204456e03a0ab6179b"
+    },
+    {
+      "claim_id": "claim_774b7f5ca264eb8eafe51b51",
+      "text": "Fabio Batista, Chief Commercial Officer of the Georgia Ports Authority (GPA), told Metro Augusta business leaders that tariffs are beginning to impact business in the Georgia ports.",
+      "url": "https://augustabusinessdaily.com/part-2-impact-of-tariffs-on-imports-sales-and-the-georgia-ports",
+      "chunk_id": "chunk_26a67c8a01c34d15d83c3fc1"
+    },
+    {
+      "claim_id": "claim_f5902beba796c5a6824fed47",
+      "text": "AS A RESULT OF THE 145 PERCENT TARIFFS ON CHINESE IMPORTS - PRESIDENT TRUMP ANNOUNCED BACK IN APRIL",
+      "url": "https://www.youtube.com/watch?v=GaFiWuGhJTo",
+      "chunk_id": "chunk_769cd0e5663ec8703865c49f"
+    },
+    {
+      "claim_id": "claim_1fb197bc421567d4b13ab2d6",
+      "text": "India was taking off, and it was going very fast, but now they still have 50% tariffs on Indian products.",
+      "url": "https://augustabusinessdaily.com/part-2-impact-of-tariffs-on-imports-sales-and-the-georgia-ports",
+      "chunk_id": "chunk_26a67c8a01c34d15d83c3fc1"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_f5902beba796c5a6824fed47",
+      "claim_1fb197bc421567d4b13ab2d6"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

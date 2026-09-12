@@ -1,0 +1,78 @@
+{
+  "query_id": "q_company_6ad2cc466d4f49495289e32c_discovery",
+  "query": "\"Magna International\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_13f4c1fce2275bcd9320bc61",
+    "claim_689339fa92436a891e6c9e9f",
+    "claim_79f0619b43377b534464955f",
+    "claim_954d09f255987bd223071921",
+    "claim_a81ce1265a91587baee8ea81",
+    "claim_adef9dee9293b51b8a594dca",
+    "claim_c5b88ec51df30662ef15f409"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_13f4c1fce2275bcd9320bc61",
+      "text": "Magna International Inc. CEO Swamy Kotagiri said tariffs are \"adversely impacting\" the automotive industry.",
+      "url": "https://www.detroitnews.com/story/business/autos/2025/04/15/magna-ceo-swamy-kotagiri-tariffs-trump/83096064007",
+      "chunk_id": "chunk_99be57d3ae8fce710ccad485"
+    },
+    {
+      "claim_id": "claim_689339fa92436a891e6c9e9f",
+      "text": "Magna CEO Swamy Kotagiri said at an Automotive Press Association media event on Tuesday, April 15, 2025, at Magna’s headquarters in Troy tariffs on automotive imports is akin to hitting the industry with COVID-19, the chip shortage, and the Great Recession all at once.",
+      "url": "https://www.freep.com/story/money/cars/2025/04/15/auto-tariffs-trump-supplier-magna-international/83096063007",
+      "chunk_id": "chunk_c0680ee359de5307852f5871"
+    },
+    {
+      "claim_id": "claim_79f0619b43377b534464955f",
+      "text": "As North America’s largest auto supplier, Magna employs more than 12,300 people in Michigan as of January and supplies parts to all the major carmakers.",
+      "url": "https://www.freep.com/story/money/cars/2025/04/15/auto-tariffs-trump-supplier-magna-international/83096063007",
+      "chunk_id": "chunk_c0680ee359de5307852f5871"
+    },
+    {
+      "claim_id": "claim_954d09f255987bd223071921",
+      "text": "Reshoring production, meanwhile, would probably take much of Trump’s second term.",
+      "url": "https://www.freep.com/story/money/cars/2025/04/15/auto-tariffs-trump-supplier-magna-international/83096063007",
+      "chunk_id": "chunk_c0680ee359de5307852f5871"
+    },
+    {
+      "claim_id": "claim_a81ce1265a91587baee8ea81",
+      "text": "Lack of clarity on when tariffs will be applied, what will be impacted and material costs makes it even more difficult to plan production to fulfill contracts with automakers, Kotagiri said.",
+      "url": "https://www.freep.com/story/money/cars/2025/04/15/auto-tariffs-trump-supplier-magna-international/83096063007",
+      "chunk_id": "chunk_c0680ee359de5307852f5871"
+    },
+    {
+      "claim_id": "claim_adef9dee9293b51b8a594dca",
+      "text": "Trump earlier this month imposed 25% tariffs on vehicles imported into the United States, and 25% tariffs on certain auto parts are expected to go into effect May 3.",
+      "url": "https://www.detroitnews.com/story/business/autos/2025/04/15/magna-ceo-swamy-kotagiri-tariffs-trump/83096064007",
+      "chunk_id": "chunk_99be57d3ae8fce710ccad485"
+    },
+    {
+      "claim_id": "claim_c5b88ec51df30662ef15f409",
+      "text": "He added that Magna is “at the table with the policymakers and hoping to have a clear objective in the long term.”",
+      "url": "https://www.freep.com/story/money/cars/2025/04/15/auto-tariffs-trump-supplier-magna-international/83096063007",
+      "chunk_id": "chunk_c0680ee359de5307852f5871"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_13f4c1fce2275bcd9320bc61",
+      "claim_adef9dee9293b51b8a594dca"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

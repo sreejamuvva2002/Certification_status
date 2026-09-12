@@ -1,0 +1,160 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "cause_explanation": "Metrics show zero company named claims and zero facility label claims despite statewide Georgia query. Evidence discusses general US tariffs or BESS projects without linking specific automotive suppliers to Georgia facilities.",
+  "confidence": "high",
+  "remaining_gap": "No explicit named-company effect for Georgia found in evidence.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_2fea06d8a2145ac73d7fe410",
+      "supporting_excerpt": "The right approach is the key to negotiation success - we will show you how our team can support you in preparing effective negotiations with top customers based on previous project experience.",
+      "relevance_explanation": "General negotiation advice without Georgia or company specificity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_beba4054d8589c796cd0cdef",
+      "supporting_excerpt": "A supplier with only one manufacturing facility in the U.S. will find its market limited to the Tier 1s as the Tier 1 suppliers find their markets limited to its customer base.",
+      "relevance_explanation": "Discusses US supply chain limitations generally, no Georgia specific data.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_124422a352267af3502a5e6a",
+      "supporting_excerpt": "Aftermarket suppliers have greater pricing power and less production in Mexico, but tariffs on China could hurt some aftermarket suppliers.",
+      "relevance_explanation": "Mentions Mexico/China impacts, not Georgia automotive supplier pass-through.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_aa0e9e279b569b1725b4b020",
+      "supporting_excerpt": "Alternatively, the parties can introduce flexible contractual terms and renegotiation clauses within the supply agreements or EPC contracts, including price adjustment mechanisms that trigger renegotiation in response to significant tariff changes.",
+      "relevance_explanation": "General BESS project contract advice, not Georgia automotive specific.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_231",
+  "query": "Automotive suppliers tariff pass through customer negotiations Georgia",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 5,
+    "all_extracted_claims": 5,
+    "claims_presented_to_original_synthesis": 5,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 2,
+    "company_named_claims": 0,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_2fea06d8a2145ac73d7fe410",
+    "passage_7defb88f250b1d64761b6470",
+    "passage_beba4054d8589c796cd0cdef",
+    "passage_aa0e9e279b569b1725b4b020",
+    "passage_124422a352267af3502a5e6a",
+    "passage_c8e8a0b6b459804689741ac7",
+    "passage_232395e8c320dbde5b2e3c5d",
+    "passage_41610b2abb92bb861ed8bde4"
+  ],
+  "candidate_document_ids": [
+    "document_03bbe90c34832e1434fed9ad",
+    "document_49bc2dcf6e5a033d371bfd60",
+    "document_509f150d033f6e532a9c598a",
+    "document_68708536f8de4e9ce3a94db8",
+    "document_9e90d68f9138d0ce517a4182",
+    "document_b5bcc57368fdbac1f1276a95",
+    "document_ccbf5c8421b44abbe94d6ac7",
+    "document_fa95f5701bd94c20dfa77c42"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_2fea06d8a2145ac73d7fe410",
+      "supporting_excerpt": "The right approach is the key to negotiation success - we will show you how our team can support you in preparing effective negotiations with top customers based on previous project experience.",
+      "relevance_explanation": "General negotiation advice without Georgia or company specificity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_781e8df306e2e45e7fef178f",
+      "query_id": "q_231",
+      "chunk_id": "chunk_13f363fefa123952dd64cfb0",
+      "document_id": "document_b5bcc57368fdbac1f1276a95",
+      "source_url": "https://www.fti-andersch.com/en/insights/high-impact-customer-negotiations-in-times-of-huge-cost-increases",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/32ab9487962ae8cbb25de3ef260ba6da2021d4a311111ac8452e062bbf443730.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_beba4054d8589c796cd0cdef",
+      "supporting_excerpt": "A supplier with only one manufacturing facility in the U.S. will find its market limited to the Tier 1s as the Tier 1 suppliers find their markets limited to its customer base.",
+      "relevance_explanation": "Discusses US supply chain limitations generally, no Georgia specific data.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_418325e51946c58db4d67b73",
+      "query_id": "q_231",
+      "chunk_id": "chunk_1b9dc2784823537a1a50ad46",
+      "document_id": "document_03bbe90c34832e1434fed9ad",
+      "source_url": "https://www.govinfo.gov/content/pkg/CHRG-115shrg40897/html/CHRG-115shrg40897.htm",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/f30925b8ea3be5dbaed17d934b11458b924bc6ea7a38f8269bbfb6d50c13a393.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_124422a352267af3502a5e6a",
+      "supporting_excerpt": "Aftermarket suppliers have greater pricing power and less production in Mexico, but tariffs on China could hurt some aftermarket suppliers.",
+      "relevance_explanation": "Mentions Mexico/China impacts, not Georgia automotive supplier pass-through.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_2e7a5f82110053aa18dc5adc",
+      "query_id": "q_231",
+      "chunk_id": "chunk_09fb3ff6c8701f55f5872069",
+      "document_id": "document_9e90d68f9138d0ce517a4182",
+      "source_url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/4ba28204f598267a3c914d164c3a649f21490bcb8fb8d17388fb0f6167613ad0.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_aa0e9e279b569b1725b4b020",
+      "supporting_excerpt": "Alternatively, the parties can introduce flexible contractual terms and renegotiation clauses within the supply agreements or EPC contracts, including price adjustment mechanisms that trigger renegotiation in response to significant tariff changes.",
+      "relevance_explanation": "General BESS project contract advice, not Georgia automotive specific.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_48181e1bf5b4f41b57e1eb0e",
+      "query_id": "q_231",
+      "chunk_id": "chunk_2a4f5d0e895bf34e2a657492",
+      "document_id": "document_509f150d033f6e532a9c598a",
+      "source_url": "https://www.morganlewis.com/pubs/2025/03/addressing-tariffs-and-trade-in-energy-storage-projects",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/23c6f86416709384a8b7cdbdd2153b7b092eef27ad50b9ac2e115e463a934291.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

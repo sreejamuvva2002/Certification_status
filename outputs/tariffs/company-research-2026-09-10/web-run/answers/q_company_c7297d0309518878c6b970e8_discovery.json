@@ -1,0 +1,48 @@
+{
+  "query_id": "q_company_c7297d0309518878c6b970e8_discovery",
+  "query": "\"Beaver Manufacturing Co. Inc.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_182d9de3b487f9e9659d385a",
+    "claim_49733d3796bc73a424045218",
+    "claim_6a0b6af7482a4c01e3598530",
+    "claim_dd4111036b4f938b2c94bb47"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_182d9de3b487f9e9659d385a",
+      "text": "Consignee | BEAVER MFG CO INC PLANT #3 4558 HWY 213 30055 MANSFIELD",
+      "url": "https://www.seair.co.in/us-importers/beaver-mfg-co-inc.aspx",
+      "chunk_id": "chunk_ef87d24b3132c318e50c212f"
+    },
+    {
+      "claim_id": "claim_49733d3796bc73a424045218",
+      "text": "Beaver Manufacturing Company Corporate Headquarters 12 Ed Needham Drive Mansfield, Georgia 30055",
+      "url": "https://www.beaverloc.com/imprint",
+      "chunk_id": "chunk_6f4c6aaf2bb60a2f707b1197"
+    },
+    {
+      "claim_id": "claim_6a0b6af7482a4c01e3598530",
+      "text": "Manufacturer / Shipper | THE FILAMENTFACTORY GMBH BERLINER STRASSE 36251 BAD HERSFELD",
+      "url": "https://www.seair.co.in/us-importers/beaver-mfg-co-inc.aspx",
+      "chunk_id": "chunk_ef87d24b3132c318e50c212f"
+    },
+    {
+      "claim_id": "claim_dd4111036b4f938b2c94bb47",
+      "text": "Marks and Numbers | THE FILAMENT FACTORY GMBH PO18120 DDP - CHARLESTON 626209 81468164 MADE IN GERMANY",
+      "url": "https://www.seair.co.in/us-importers/beaver-mfg-co-inc.aspx",
+      "chunk_id": "chunk_ef87d24b3132c318e50c212f"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "insufficient_evidence"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 4,
+  "synthesis_input_claim_count": 4
+}

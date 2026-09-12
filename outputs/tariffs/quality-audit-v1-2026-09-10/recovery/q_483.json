@@ -1,0 +1,161 @@
+{
+  "primary_cause": "inaccessible_documents",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "cause_explanation": "Original metrics show 0 full_text_sources and 3 inaccessible sources, preventing verification of current policy status or specific company applicability.",
+  "confidence": "high",
+  "remaining_gap": "snippet_only_limitation_prevents_company_specific_tariff_verification",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_22ebf9a7501a30784faeaade",
+      "supporting_excerpt": "Therefore, the custom battery packs are subject to Section 301 duties.",
+      "relevance_explanation": "Confirms duty applicability but lacks specific company facility linkage.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_81f3e11893fc407acfb5e83a",
+      "supporting_excerpt": "In HQ H308831, CBP held that the assembly processes performed in China, which involved assembling, connecting, attaching, applying, and welding various components together followed by installing them into a plastic housing, did not result in a substantial transformation",
+      "relevance_explanation": "Demonstrates conflicting origin determination logic compared to other rulings.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_536b494bf051013fee985d8e",
+      "supporting_excerpt": "Report the Section 232 duties based on the value of the non-U.S. content with HTSUS 9903.94.03.",
+      "relevance_explanation": "Indicates regulatory reporting requirements without confirming current Georgia facility exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_7f3dcd36a4a342b9a8f2cedd",
+      "supporting_excerpt": "Hyundai’s supply chain sustainability risk management process consists of prior risk identification (screening), written assessments, on-site audits, and improvement and monitoring.",
+      "relevance_explanation": "Shows company disclosure exists but does not confirm tariff exposure or Georgia facility specifics.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_483",
+  "query": "site:cbp.gov battery tariffs country of origin",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 0,
+    "snippet_sources": 3,
+    "inaccessible_source_count": 3,
+    "selected_claims": 13,
+    "all_extracted_claims": 13,
+    "claims_presented_to_original_synthesis": 13,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_only"
+    ],
+    "conflict_groups": 2,
+    "company_named_claims": 1,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_536b494bf051013fee985d8e",
+    "passage_81f3e11893fc407acfb5e83a",
+    "passage_ec44da1b584f5ea14dd501a3",
+    "passage_22ebf9a7501a30784faeaade",
+    "passage_68b9f0896bcaaf5986c2dc12",
+    "passage_6bd08d31bba0137462808b50",
+    "passage_7f3dcd36a4a342b9a8f2cedd",
+    "passage_4c0fdfb1e7ef6bdbfb98ff6a"
+  ],
+  "candidate_document_ids": [
+    "document_147239c45e4c492f0232dcd8",
+    "document_33177711cd0ada5d5d0fe486",
+    "document_4bbbac03207d0fce2a8e066b",
+    "document_837f7aee5703e31db133c694",
+    "document_89094d2db2a6b11cc65c862c",
+    "document_e4b15a8983c43a82a1fbe977",
+    "document_fa95f5701bd94c20dfa77c42",
+    "document_ff93bc75603028dd4c2b37d3"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_22ebf9a7501a30784faeaade",
+      "supporting_excerpt": "Therefore, the custom battery packs are subject to Section 301 duties.",
+      "relevance_explanation": "Confirms duty applicability but lacks specific company facility linkage.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical",
+      "recovery_claim_id": "recovered_b9e0947c5948031755cf2818",
+      "query_id": "q_483",
+      "chunk_id": "chunk_3802299155335d8540a1b194",
+      "document_id": "document_147239c45e4c492f0232dcd8",
+      "source_url": "https://www.customsmobile.com/rulings/docview?doc_id=HQ+H316545&highlight=HQ+H316545",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/52ae68b9b8a6e899074fb54823b860d75703cc128b7972256c6346fe156c4160.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_81f3e11893fc407acfb5e83a",
+      "supporting_excerpt": "In HQ H308831, CBP held that the assembly processes performed in China, which involved assembling, connecting, attaching, applying, and welding various components together followed by installing them into a plastic housing, did not result in a substantial transformation",
+      "relevance_explanation": "Demonstrates conflicting origin determination logic compared to other rulings.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical",
+      "recovery_claim_id": "recovered_48b3866377464e31cbbda93b",
+      "query_id": "q_483",
+      "chunk_id": "chunk_3db3a108c6e23fac3a95eb94",
+      "document_id": "document_89094d2db2a6b11cc65c862c",
+      "source_url": "https://www.customsmobile.com/rulings/docview?doc_id=HQ+H316389&highlight=HQ+H316389",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/0e79e47c62095772efc9982fd9d77b8ddd1f3e1cb32ad35301c845b2dd0bdbb4.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_536b494bf051013fee985d8e",
+      "supporting_excerpt": "Report the Section 232 duties based on the value of the non-U.S. content with HTSUS 9903.94.03.",
+      "relevance_explanation": "Indicates regulatory reporting requirements without confirming current Georgia facility exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical",
+      "recovery_claim_id": "recovered_928cb55f1c6cc9f32e69e594",
+      "query_id": "q_483",
+      "chunk_id": "chunk_1cd9a3d35cdd8dc0699298dc",
+      "document_id": "document_e4b15a8983c43a82a1fbe977",
+      "source_url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3e9bbf4",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/d4369e16013b39a81ab1d4adeb277491bdf1b18ed726a1a8836121519e6f965a.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_7f3dcd36a4a342b9a8f2cedd",
+      "supporting_excerpt": "Hyundai’s supply chain sustainability risk management process consists of prior risk identification (screening), written assessments, on-site audits, and improvement and monitoring.",
+      "relevance_explanation": "Shows company disclosure exists but does not confirm tariff exposure or Georgia facility specifics.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical",
+      "recovery_claim_id": "recovered_c2d5c342236de7de4fcfe2ef",
+      "query_id": "q_483",
+      "chunk_id": "chunk_478da7a02c440bdad248de1b",
+      "document_id": "document_fa95f5701bd94c20dfa77c42",
+      "source_url": "https://www.hyundai.com/content/dam/hyundai/kr/ko/images/company-intro/sustain-manage/2026/hmc-sr-eng-2026.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/4da5bacd27a0c90b06e2e61c449f0e99c48a4338725e058ae1fbbb5f07d2f3c0.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

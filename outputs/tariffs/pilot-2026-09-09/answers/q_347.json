@@ -1,0 +1,58 @@
+{
+  "query_id": "q_347",
+  "query": "Section 232 aluminum tariffs automotive supply chain effective dates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1ee321bbaf82a57811f24908",
+    "claim_4fdff70940017a274acab875",
+    "claim_54c295ca5ec22e5454038a9c",
+    "claim_a47944e846150842f118fd1d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1ee321bbaf82a57811f24908",
+      "text": "President Trump announced tariffs of 50% will take effect August 1, though no formal proclamation or notice to this effect has yet been issued.",
+      "url": "https://www.cov.com/en/news-and-insights/insights/2025/07/status-of-section-232-actions-by-the-trump-administration",
+      "chunk_id": "chunk_e368c45d637ec4f20333b4d0"
+    },
+    {
+      "claim_id": "claim_4fdff70940017a274acab875",
+      "text": "Tariffs were paused until March 4, 2025 and went into effect on March 4, 2025",
+      "url": "https://www.internationaltradeinsights.com/2025/08/summary-of-tariff-requirements-updated-august-4-2025",
+      "chunk_id": "chunk_dfe63e6b84e55650a88a918c"
+    },
+    {
+      "claim_id": "claim_54c295ca5ec22e5454038a9c",
+      "text": "Section 232 Auto & Auto Parts Duties and IEEPA Tariffs (Canada & Mexico) | Normal Duty + 25% (auto & auto parts only)",
+      "url": "https://www.internationaltradeinsights.com/2025/08/summary-of-tariff-requirements-updated-august-4-2025",
+      "chunk_id": "chunk_dfe63e6b84e55650a88a918c"
+    },
+    {
+      "claim_id": "claim_a47944e846150842f118fd1d",
+      "text": "Tariffs were increased to 35% effective August 1, 2025",
+      "url": "https://www.internationaltradeinsights.com/2025/08/summary-of-tariff-requirements-updated-august-4-2025",
+      "chunk_id": "chunk_dfe63e6b84e55650a88a918c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_1ee321bbaf82a57811f24908",
+      "claim_4fdff70940017a274acab875"
+    ],
+    [
+      "claim_4fdff70940017a274acab875",
+      "claim_a47944e846150842f118fd1d"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 17,
+  "synthesis_input_claim_count": 17
+}

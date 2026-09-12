@@ -1,0 +1,79 @@
+{
+  "query_id": "q_441",
+  "query": "Georgia electronics manufacturers PCB tariff exposure",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_303c362fc0f5db793e17cd63",
+    "claim_3562cfe9a5d9a6e89ea1816f",
+    "claim_386f9b4a6cbef97a099aa829",
+    "claim_91555418cf392d34eb40521c",
+    "claim_afef7c81a375c89bfcb76d75",
+    "claim_ef7adb5fcfcae09d93f35c33",
+    "claim_fa2cb28377375f538de6e663"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_303c362fc0f5db793e17cd63",
+      "text": "PCBs and PCBAs often fall under: - 8534 - Printed Circuits (bare boards) - 8537 - Control panels or assemblies - 8542 - Electronic integrated circuits",
+      "url": "https://www.teamsmt.com/blog/tariffs-on-electronics-whats-exempt-and-whats-not",
+      "chunk_id": "chunk_b31ba67163064beae88b14b6"
+    },
+    {
+      "claim_id": "claim_3562cfe9a5d9a6e89ea1816f",
+      "text": "Even 2-4 layer rigid PCBs, which are temporarily exempt from Section 301, still face 145% total duties - a major challenge for cost-competitive, import-reliant designs.",
+      "url": "https://www.teamsmt.com/blog/tariffs-on-electronics-whats-exempt-and-whats-not",
+      "chunk_id": "chunk_b31ba67163064beae88b14b6"
+    },
+    {
+      "claim_id": "claim_386f9b4a6cbef97a099aa829",
+      "text": "In April 2025, the United States has implemented new tariffs on Chinese imports, including printed circuit boards (PCBs) and custom-made technical parts.",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_91555418cf392d34eb40521c",
+      "text": "The following products are still subject to the full 170% tariff burden when imported from China: - 6+ layer rigid PCBs - All other bare PCB types - Fully assembled PCBAs",
+      "url": "https://www.teamsmt.com/blog/tariffs-on-electronics-whats-exempt-and-whats-not",
+      "chunk_id": "chunk_b31ba67163064beae88b14b6"
+    },
+    {
+      "claim_id": "claim_afef7c81a375c89bfcb76d75",
+      "text": "A PCBA assembled in Vietnam using Chinese-origin PCBs may still trigger tariffs under US rules of origin.",
+      "url": "https://www.teamsmt.com/blog/tariffs-on-electronics-whats-exempt-and-whats-not",
+      "chunk_id": "chunk_b31ba67163064beae88b14b6"
+    },
+    {
+      "claim_id": "claim_ef7adb5fcfcae09d93f35c33",
+      "text": "As of April 2025, most China-origin electronics are subject to multiple layers of import duties: - 25% Section 301 Tariff - 20% IEEPA Emergency Tariff - 125% Reciprocal Tariff",
+      "url": "https://www.teamsmt.com/blog/tariffs-on-electronics-whats-exempt-and-whats-not",
+      "chunk_id": "chunk_b31ba67163064beae88b14b6"
+    },
+    {
+      "claim_id": "claim_fa2cb28377375f538de6e663",
+      "text": "| China | 30% DS/4Layer, 55% other | 14/05/25 | Until 12/11/25 | Interim deal; 90-day truce. |",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_3562cfe9a5d9a6e89ea1816f",
+      "claim_91555418cf392d34eb40521c"
+    ],
+    [
+      "claim_ef7adb5fcfcae09d93f35c33",
+      "claim_fa2cb28377375f538de6e663"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 8,
+  "synthesis_input_claim_count": 8
+}

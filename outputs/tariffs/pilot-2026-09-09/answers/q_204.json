@@ -1,0 +1,47 @@
+{
+  "query_id": "q_204",
+  "query": "Reciprocal tariffs automotive electronics exceptions current status",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_08ed95132fc25af5bb28ff41",
+    "claim_543555a92dfac25f9a498cb5",
+    "claim_28f461033b1950871fac3ae4"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_08ed95132fc25af5bb28ff41",
+      "text": "The additional ad valorem duty on all imports from all trading partners shall start at 10 percent and shortly thereafter, the additional ad valorem duty shall increase for trading partners enumerated in Annex I to this order at the rates set forth in Annex I to this order.",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/04/regulating-imports-with-a-reciprocal-tariff-to-rectify-trade-practices-that-contribute-to-large-and-persistent-annual-united-states-goods-trade-deficits",
+      "chunk_id": "chunk_74616ce4bf44520b2d71378e"
+    },
+    {
+      "claim_id": "claim_543555a92dfac25f9a498cb5",
+      "text": "Announced – U.S. exempts electronics from reciprocal tariffs, pending sector-specific measures: The U.S. has temporarily excluded smartphones, laptops, and other consumer electronics from the 10% universal reciprocal tariff.",
+      "url": "https://zonos.com/docs/guides/us-tariff-changes",
+      "chunk_id": "chunk_56da2a8d1f6e0b5d97d45769"
+    },
+    {
+      "claim_id": "claim_28f461033b1950871fac3ae4",
+      "text": "Section 122 global surcharge | 10% | Expired — July 24, 2026 | No | Replaced IEEPA-based reciprocal tariffs effective February 24, 2026 at 12:01 a.m. EST. Applied to most imports. Certain categories excluded (USMCA-compliant goods, critical minerals, pharmaceuticals, electronics, passenger vehicles, aerospace). Expired July 24, 2026, when standard duties (MFN, Section 232, Section 301, etc.) — including the new Section 301 forced-labor tariff (10% or 12.5% by country of origin) — began applying to postal shipments for the first time.",
+      "url": "https://zonos.com/docs/guides/us-tariff-changes",
+      "chunk_id": "chunk_d718e7148916ac4521b24409"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_28f461033b1950871fac3ae4",
+      "claim_543555a92dfac25f9a498cb5"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 46,
+  "synthesis_input_claim_count": 38
+}

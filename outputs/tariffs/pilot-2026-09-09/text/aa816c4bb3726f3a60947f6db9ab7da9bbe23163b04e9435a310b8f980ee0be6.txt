@@ -1,0 +1,156 @@
+TL;DR
+- Chapter 99 HTS codes are secondary classifications, not replacements. Every applicable 9903 code goes on the same line as the base 10-digit HTS, in functional order, with each layer multiplying the same dutiable value.
+- The stacking rule in 2026: MFN base + Section 301 + Section 232 + Section 122. Section 232 and Section 122 do not stack (9903.03.06 fires for any line with 9903.74-9903.85 or 9903.94). AD/CVD assesses separately as a cash deposit, not an ad valorem add-on.
+- ACE reporting order matters for field validation: base 10-digit HTS first, then 9903.88.x / 9903.91.x (Section 301), then 9903.82.x and the rest of 9903.74-9903.85 (Section 232 metals), then 9903.03.x (Section 122), then exclusions, then any Chapter 98 reference. CBP CSMS messages 64384423, 67834313, and 68253075 walk through the multi-code reporting model.
+- IEEPA reciprocal tariffs (9903.01.x and 9903.02.x) are no longer collected. The Supreme Court struck them down in Learning Resources, Inc. v. Trump on February 20, 2026; CBP stopped collection February 24, 2026. The 10% Section 122 surcharge under 9903.03.01 replaced them through July 24, 2026.
+- The Tandom calculator at tariffs.tandom.ai/calculator returns every applicable 9903 code for the entry's HTS, origin, and date, in ACE reporting order, with the regulatory authority and the dollar contribution per layer.
+What Chapter 99 is
+Chapter 99 of the HTSUS is the temporary-provisions chapter. Where Chapters 1 through 97 contain the permanent international Harmonized System and the US-specific 8-digit and 10-digit breakouts, Chapter 99 holds the time-bounded layers Congress and the executive branch have grafted onto the tariff schedule: Section 232 metals, Section 301 China, Section 122 surcharge, IEEPA-era proclamations (now expired), Section 201 safeguards, and the product-specific exclusions written against each.
+Each Chapter 99 subheading is a 10-digit code under the 9903 four-digit prefix. It is a secondary classification: it sits on the same entry line as the base HTS code from Chapters 1 through 97 and modifies the rate. It does not replace the base. The base still controls country of origin determinations, the unit of measure, the Special-column SPI claim, every PGA flag (FDA, USDA, EPA, CPSC, etc.), and any AD/CVD scope check. The 9903 code only changes the rate.
+Chapter 99 codes are reported in ACE in the secondary HTS classification field of the entry summary line, not as a separate line. A line with three applicable 9903 codes (Section 301 + Section 232 + an exclusion) reports as one base 10-digit HTS plus three secondary 9903 codes, all on Line 1. Splitting identical merchandise across multiple lines for accounting convenience is misclassification and CBP rejects it.
+Reporting authority comes from 19 CFR Part 141 (entry of merchandise) plus the per-program implementing FR notices that introduce each 9903 family. The CBP CSMS messages that translate the FR notices into operational ACE field requirements are the controlling guidance for brokers (CSMS 64384423, 67834313, and 68253075 are the canonical 2025-2026 multi-code reporting series).
+Stacking rules in 2026
+Stacking determines which Chapter 99 layers apply concurrently on the same line and how their rates combine. The rules as of May 2026:
+Section 301 + Section 232
+Stack additively. A China-origin steel derivative on heading 7318 pays MFN + Section 301 (List 1-3 at 25%, List 4A at 7.5%, or four-year-review categories at 25 to 100%) + Section 232 (50% on steel and aluminum since June 4, 2025). Each layer multiplies the same dutiable value, then sums. The arithmetic is plain addition of ad valorem percentages, not compounding.
+Section 122 + Section 232
+Do not stack. The 9903.03.06 Section 232 non-stacking exclusion fires automatically for any line carrying 9903.74-9903.85 or 9903.94 (the 232 metals families). The Tandom calculator returns 9903.03.06 with appliesOnClaim: false (automatic suppression) for any line where 232 metals fire. Section 122 is uniform across non-232 lines and across origins, capped at 15% under 19 USC 2132, and cannot exceed 150 days without an Act of Congress, so it terminates July 24, 2026 absent legislative extension.
+Section 301 + Section 122
+Stack additively. A China-origin good not subject to Section 232 metals pays MFN + Section 301 + 10% Section 122. A China-origin steel derivative pays MFN + Section 301 + Section 232; the 9903.03.06 non-stacking exclusion suppresses Section 122. Brokers used to the 2025-era IEEPA reciprocal stack should treat the post-February-24 entries as a different rate environment.
+AD/CVD
+Always assesses separately as a cash deposit at entry. AD/CVD is not a Chapter 99 program (the case-specific deposit rate is set by Commerce determinations, not by an HTSUS subheading), but brokers think of it alongside Chapter 99 because the rate assessment is a deposit on top of the duty stack. AD/CVD is never offset by a preference program or a Chapter 99 exclusion. It is its own track. Final liquidation rates land 12 to 18+ months later through Commerce's administrative review.
+Preference programs (USMCA, KORUS, AGOA, etc.)
+A successful SPI claim replaces the MFN base with the preferential column rate (Free for most USMCA-originating goods). It does not waive Section 232, Section 301, or Section 122 as a class. A USMCA-originating steel derivative still pays Section 232 at 50%; the savings are in the MFN-plus-Section-301 layers, not the 232 layer. MPF is waived for USMCA-originating goods, Israel FTA, AGOA-eligible goods, and a few others.
+Exclusions
+Each program has its own exclusion family. 9903.88.6x covers the 178 active product-specific Section 301 exclusions (164 product-specific plus 14 solar-manufacturing equipment), most expiring November 10, 2026. 9903.03.x covers Section 122 carve-outs (etrogs/coconut water under .04, civil aircraft under .05, donations under .10, informational materials under .11, the 232 non-stacking under .06). An exclusion only removes the layer it is written against; it does not affect the other layers on the line. Pre-April-2026 Section 232 product-specific exclusions used 9903.81.81 and similar; the April 2026 consolidation moved most of them under 9903.82.
+ACE reporting order
+ACE field validation is positional. The base 10-digit HTS goes first; each applicable 9903 code follows in functional order. Out-of-order or non-companion combinations get rejected at submission. The order in 2026:
+- Base 10-digit HTS from Chapters 1-97 (or a Chapter 98 special-classification provision if applicable).
+- Section 301 9903.88.x (List 1-4A) or 9903.91.x (Sept 2024 four-year-review strategic sectors).
+- Section 232 metals 9903.74-9903.85 (pre-April 6, 2026 families) or the consolidated 9903.82 family for steel, aluminum, and copper (post-April 6, 2026). Russia-aluminum stays at 9903.85.67/.68.
+- Section 122 9903.03.01 (the 10% surcharge in force February 24 through July 24, 2026), unless a 9903.03.x carve-out fires.
+- Exclusions in the family matching the suppressed authority: 9903.88.6x for Section 301 product-specific, 9903.03.04/05/06/10/11 for Section 122, and so on.
+The CSMS multi-code reporting series (CSMS 64384423, 67834313, 68253075) walks through the ACE field model adopted with the 2025 Section 232 expansion. The same series clarified that identical merchandise on a single line carries every applicable 9903 code on that line, not split across separate lines. Splitting is misclassification.
+Section 232 metal-content lines
+For Section 232 derivatives in HTS Chapters 73, 76, 82, 83, 84, 85, and 87, the duty applies only to the steel or aluminum content value, not the entered value of the whole article. CBP's preferred reporting is two lines: a non-metal Line 1 carrying the original HTS at full value with no Chapter 99 code, and a metal-content Line 2 carrying the same HTS at quantity zero plus the 9903 code, with the duty calculated against the metal content value. This is the one place where splitting a single shipment across two lines is required, not optional.
+The 9903 families on a line
+Each 9903 family covers a defined population of goods. Knowing which family applies to a line is the broker's primary Chapter 99 task.
+9903.88.x and 9903.91.x: Section 301 China
+Section 301 of the Trade Act of 1974, on goods of China origin. The four-list architecture is still in force:
+- 9903.88.01: List 1, 25% (~$34B in Chinese goods, in force July 2018)
+- 9903.88.02: List 2, 25% (~$16B, August 2018)
+- 9903.88.03: List 3, 25% (~$200B, May 2019 increase from 10%)
+- 9903.88.15: List 4A, 7.5% (~$112B, September 2019)
+- 9903.88.6x: 178 active product-specific exclusions, most expiring November 10, 2026
+- 9903.91.x: USTR Sept 2024 four-year-review strategic sectors (EVs at 100%, semiconductors at 50%, ship-to-shore cranes at 25%, syringes/PPE staged 25 to 50%)
+Hong Kong (ISO HK) is exempt from Section 301 even though CBP requires "Made in China" physical marking under EO 13936. Report HK as country of origin and omit the 9903.88.x code. Treating HK as China for tariff purposes is a recurring filing mistake.
+9903.74-9903.85 and 9903.82.x: Section 232 metals
+Section 232 of the Trade Expansion Act of 1962, originally on steel and aluminum, expanded by 2025 proclamations to copper and to derivative products in Chapters 73, 76, 82, 83, 84, 85, and 87. The current rate is 50% on steel and aluminum (from June 4, 2025), with country-specific carve-outs:
+- UK: 25% (vs. 50%) under the May 8, 2025 US-UK Economic Prosperity Deal
+- Brazil: 10% on a defined subset of products
+- Russia (aluminum): 200% under Proclamation 10522, codified at 9903.85.67 and 9903.85.68; aluminum derivatives entered with smelt-and-cast "unknown" carry the same 200% rate by default since June 28, 2025
+The April 6, 2026 consolidation moved steel, aluminum, and copper into the 9903.82 family. Pre-consolidation entries used 9903.80/9903.81 (steel), 9903.85 (aluminum), and 9903.78 (copper). The Russia-aluminum codes 9903.85.67/.68 carry forward. Country of melt-and-pour (steel) or smelt-and-cast (aluminum) is a separate ACE field from origin and drives the country-specific rate selection.
+9903.03.x: Section 122 surcharge (the IEEPA replacement)
+A 10% temporary import surcharge under Section 122 of the Trade Act of 1974, effective 12:01 a.m. ET February 24, 2026. Uniform across countries, capped at 15% ad valorem, and cannot exceed 150 days without an Act of Congress, so it terminates July 24, 2026 absent legislative extension. The 9903.03 family:
+- 9903.03.01: the 10% surcharge itself
+- 9903.03.03: Annex II carve-out (specific goods exempted from the surcharge)
+- 9903.03.04: specific products (etrogs, acai, coconut water, religious articles)
+- 9903.03.05: civil aircraft and parts under General Note 6
+- 9903.03.06: Section 232 non-stacking. Fires automatically for any line carrying 9903.74-9903.85 or 9903.94. Suppresses the 122 surcharge without a broker claim.
+- 9903.03.10: donations for humanitarian relief or combatant-activity defense
+- 9903.03.11: informational materials (publications, films, artworks, news wire feeds)
+9903.01.x and 9903.02.x: IEEPA reciprocal (expired)
+The IEEPA reciprocal-tariff regime introduced in early 2025 was struck down by the Supreme Court in Learning Resources, Inc. v. Trump (decided February 20, 2026, 6-3). The Court held that the International Emergency Economic Powers Act does not authorize tariffs. CBP stopped collection at 12:01 a.m. ET February 24, 2026. The IEEPA codes (9903.01.x, 9903.02.x, 9903.96.01-.02) remain in HTSUS Chapter 99 as historical record and apply only to entries before February 24, 2026. Refunds for the roughly $130 to $175 billion already collected remain unresolved as of May 2026.
+Chapter 98 vs Chapter 99
+Chapter 98 carries permanent special-classification provisions (9801 returned goods, 9802 articles exported for repair, 9803 instruments of international traffic). Chapter 98 generally reduces or eliminates duty when its conditions are met; Chapter 99 generally adds duty. The two can co-exist on the same line: a 9802.00.80 line with a 9903.88.03 secondary still owes the 25% Section 301 on the value-added portion abroad. Chapter 98 provisions are not Chapter 99 layers in the stacking sense; they modify the dutiable base, not add a percentage on top.
+Worked example
+A line item for men's cotton T-shirts from China.
+Facts.
+- HTS: 6109.10.00.18 (T-shirts of cotton, men's, knitted)
+- Country of origin: China (CN)
+- Entry date: May 1, 2026
+- Customs value (transaction value, freight and insurance separately stated): $25,000
+- Mode: ocean
+- No SPI claim, not covered by a Section 301 exclusion
+Layer-by-layer build. Same shape you would see in the calculator: each row carries an authority badge, the regulatory citation, the rate, and the dollar amount contributed.
+| 6109.10.00.18MFN base, T-shirts of cotton, men's (Column 1 General) | MFN | 16.5% | $4,125.00 | 
+| 9903.88.15Section 301 List 4A (USTR Sept 2019) | S301 | 7.5% | $1,875.00 | 
+| 9903.03.01Section 122 surcharge (Trade Act 1974, post-IEEPA) | S122 | 10% | $2,500.00 | 
+| n/aMPF (19 CFR 24.23, within FY26 cap) | MPF | 0.3464% | $86.60 | 
+| n/aHMF (19 USC 4461, ocean only) | HMF | 0.125% | $31.25 | 
+| Total duty + fees (no AD/CVD scope match for cotton apparel) |  |  | $8,617.85 | 
+Effective rate: 34% on a $25,000 invoice. The MFN base contributes 16.5% (cotton apparel sits in the high-MFN tier). Section 301 List 4A adds 7.5% (cotton T-shirts under heading 6109 fall on USTR's List 4A, not List 3, so the 9903.88.15 secondary fires, not 9903.88.03). Section 122 adds 10% (the IEEPA replacement, in force February 24 through July 24, 2026). MPF and HMF land on every entry regardless of duty layer.
+ACE reporting order on this line
+The entry summary line shows the base HTS first, then each 9903 code in its functional position:
+Line 1, Cap T-shirts of cotton, men's, China origin, $25,000
+  Primary HTS:    6109.10.00.18    (MFN 16.5% = $4,125.00)
+  Secondary 1:    9903.88.15       (S301 List 4A 7.5% = $1,875.00)
+  Secondary 2:    9903.03.01       (S122 10% = $2,500.00)
+  Subtotal duty:                                  $8,500.00
+  + MPF (0.3464%):                                   $86.60
+  + HMF (0.125%):                                    $31.25
+  Total landed duty:                              $8,617.85
+No Section 232 layer fires on cotton apparel (no metal content), so 9903.03.06 does not suppress the Section 122 surcharge. If this same shipment routed through a steel-derivative line under heading 7318, the 9903.82.x Section 232 secondary would fire at 50% and 9903.03.06 would automatically suppress 9903.03.01 on that line. The non-metal cotton line carries 122; a metal line on the same entry would not.
+Hong Kong flip example
+The same product but Hong Kong-origin (ISO HK). Section 301 does not apply (List 4A is China-only). The line stays at MFN 16.5% + Section 122 10% = 26.5% effective rate plus MPF and HMF. $25,000 × 26.5% = $6,625 in duty plus $117.85 in fees, for $6,742.85 total landed duty. CBP still requires "Made in China" physical marking under EO 13936, but the 9903.88.15 code does not appear on the line.
+Common pitfalls
+The Chapter 99 stacking mistakes that bite most often:
+Splitting one line of identical merchandise across multiple lines
+ACE expects every applicable 9903 code on the same line as the base HTS. Splitting a 100-piece carton of identical China-origin cotton T-shirts into "Line 1: MFN-only, Line 2: Section 301, Line 3: Section 122" is misclassification and CBP rejects it. The exception is the Section 232 metal-content split documented above.
+Reporting 9903.88.03 on List 4A merchandise
+List 3 (9903.88.03) is 25%. List 4A (9903.88.15) is 7.5%. The two lists cover disjoint HTS ranges. Cotton apparel under heading 6109 falls on List 4A; steel fasteners under 7318 fall on List 3. Substituting the wrong code from broker memory inflates duty by 17.5 percentage points or more.
+Forgetting the Section 232 non-stacking exclusion
+9903.03.06 fires automatically for any line with 9903.74-9903.85 or 9903.94. ACE does not require a broker claim; the exclusion is automatic. Brokers used to declaring every applicable code sometimes claim 9903.03.01 on a 232-metals line by reflex, which ACE rejects as a stacking conflict. Let the calculator surface the suppression.
+Treating IEEPA codes as still active
+9903.01.x and 9903.02.x are not collected on entries dated February 24, 2026 and later. CBP guidance is to omit the codes from new entries; the 10% Section 122 surcharge under 9903.03.01 replaces them. Brokers carrying forward Q1 2025 templates need to delete the IEEPA reciprocal lines.
+Missing the four-year-review categories
+The USTR's September 2024 four-year-review increases use new 9903.91.x and 9903.88.6x codes for strategic sectors. EVs, EV batteries, semiconductors, solar cells, ship-to-shore cranes, syringes, and PPE all moved to higher rates that staged in through 2025 and 2026. A China-origin EV under 8703.80.00 owes 100%, not 25%, under the new code. Re-verify against USTR's September 2024 FRN before quoting.
+Aluminum smelt-and-cast "unknown"
+Effective June 28, 2025, declaring "unknown" on derivative aluminum forces the 200% Russia rate via 9903.85.67/.68. Brokers who used to leave smelt-and-cast blank now produce a 200% bill if the importer does not supply origin data. Always populate the smelt-and-cast field for any derivative aluminum line.
+Pre-April-6, 2026 vs post-April-6, 2026 232 codes
+The April 2026 consolidation moved steel, aluminum, and copper into the 9903.82 family. Entries dated before April 6 use the legacy 9903.80/9903.81 (steel), 9903.85 (aluminum), and 9903.78 (copper) codes. Entries on and after April 6 use 9903.82.x. Carrying forward a March 2026 template into May 2026 produces rejected entries.
+Treating Hong Kong as China for Section 301
+Section 301 applies only to ISO CN origin. Hong Kong (ISO HK) is exempt even though physical marking still says "Made in China" per EO 13936. Reporting 9903.88.x on a HK-origin line adds duty CBP did not levy.
+Confusing Chapter 98 with a Chapter 99 layer
+Chapter 98 (9801 returns, 9802 repairs, 9803 instruments) modifies the dutiable base; Chapter 99 adds an ad valorem percentage. A 9802.00.80 line with a 9903.88.03 secondary still owes the 25% Section 301 on the value-added portion abroad. The two chapters do different things and can co-exist.
+Quoting MFN-only and forgetting Chapter 99
+The MFN base is just the floor. A China-origin steel derivative under heading 7318 carries 25% Section 301 + 50% Section 232 on top of the MFN, often pushing the effective rate above 90%. Quoting MFN alone to a customer for budget purposes is a recipe for an angry call after the entry summary.
+Stale exclusion certificates
+A Section 301 exclusion is product-specific, time-bounded, and sometimes importer-specific. If the certificate's effective dates do not bracket the entry date, the certificate does not help. Re-verify against the exclusion's FR notice, not a saved PDF.
+Misreporting 9903 codes that include conditional inputs
+The Section 232 metal-content lines require a quantity-zero metal-only Line 2 with the 9903 code, not a single line with mixed reporting. Aluminum derivatives require smelt-and-cast country. Cotton percentage on apparel does not affect Chapter 99 but does affect MFN. Conditional inputs are documented in the FR notice that introduced the 9903 family; CSMS messages translate them into ACE field requirements.
+Glossary
+- Chapter 99
+- HTSUS chapter that holds temporary trade-remedy provisions: Sections 232, 301, 122, 201 safeguards, IEEPA (now expired), and product-specific exclusions. The 9903 four-digit prefix is reported as a secondary classification on the entry line alongside the base HTS code.
+- Chapter 98
+- HTSUS chapter that holds permanent special-classification provisions: 9801 (US/foreign goods returned), 9802 (articles exported for repair, alteration, or processing), 9803 (instruments of international traffic). Chapter 98 modifies the dutiable base; Chapter 99 adds an ad valorem percentage.
+- 9903.88.03
+- Section 301 List 3, on goods of China origin, in force at 25% since May 2019. Covers thousands of HTS subheadings across Chapters 28, 29, 38, 39, 40, 44, 70, 73, 76, 84, 85, 87, and others. Distinct from List 4A (9903.88.15) at 7.5%.
+- 9903.88.15
+- Section 301 List 4A, on goods of China origin, at 7.5%. Covers consumer goods including apparel under heading 6109, toys, footwear, and household items.
+- 9903.91.x
+- USTR September 2024 four-year-review categories. EVs at 100%, semiconductors at 50%, ship-to-shore cranes at 25%, syringes/PPE staged 25 to 50%. Distinct from the original 9903.88.x list architecture.
+- 9903.82.x
+- Post-April 6, 2026 consolidated Section 232 family for steel, aluminum, and copper. Pre-consolidation entries used 9903.80/9903.81 (steel), 9903.85 (aluminum), and 9903.78 (copper). Russia-aluminum stays at 9903.85.67/.68.
+- 9903.03.01
+- Section 122 surcharge at 10% ad valorem, in force February 24 through July 24, 2026. Uniform across countries, capped at 15% under 19 USC 2132, and cannot exceed 150 days without congressional action.
+- 9903.03.06
+- Section 232 non-stacking exclusion. Fires automatically for any line carrying 9903.74-9903.85 or 9903.94. Suppresses the Section 122 surcharge so 232 metals lines do not also pay the 10% surcharge.
+- 9903.01.x / 9903.02.x
+- IEEPA reciprocal-tariff codes from the early-2025 regime. Struck down by the Supreme Court February 20, 2026; CBP stopped collection February 24, 2026. The codes remain in HTSUS Chapter 99 as historical record but do not apply to entries on or after February 24, 2026.
+- ACE
+- Automated Commercial Environment, CBP's entry-filing platform. All formal entries, PGA messages, and Chapter 99 secondary classifications flow through ACE. Field validation is positional: base HTS first, then 9903 codes in functional order.
+- CSMS
+- Cargo Systems Messaging Service. CBP's broker-facing channel for operational guidance. Translates Federal Register notices and proclamations into ACE field requirements. CSMS 64384423, 67834313, and 68253075 cover the multi-Chapter-99 reporting model adopted in 2025-2026.
+- Secondary classification
+- An additional HTS code reported on the same entry line as the base 10-digit HTS, modifying the rate without replacing the base. Chapter 99 codes are always secondary classifications.
+- Non-stacking exclusion
+- A Chapter 99 code that suppresses another applicable Chapter 99 layer. 9903.03.06 (Section 232 non-stacking) is the canonical example: it fires automatically when 232 metals apply, removing the 122 surcharge from the same line.
+- Companion code
+- A 9903 code that ACE expects to see paired with another 9903 code on the same line. Some Section 232 derivative codes require a companion code naming the metal-content portion; ACE rejects standalone reporting.
+- Melt and pour
+- For steel, the country where the raw steel was first solidified into slab, billet, or ingot. Drives Section 232 country-specific rate selection (UK 25%, Brazil 10%, default 50%).
+- Smelt and cast
+- For aluminum, the country where the metal was last liquefied and cast. Drives the 200% Russia-aluminum rate at 9903.85.67/.68. "Unknown" forces the 200% rate by default.
+FAQ
+High-intent questions brokers ask most often about Chapter 99 stacking and ACE reporting.

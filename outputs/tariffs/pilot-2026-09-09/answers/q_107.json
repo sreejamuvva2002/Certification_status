@@ -1,0 +1,53 @@
+{
+  "query_id": "q_107",
+  "query": "Copper import tariffs current scope effective dates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0fc222aad0072d03c6011d4e",
+    "claim_1b84cf2907907021121c0169",
+    "claim_2367d62151bc330db9653b8a",
+    "claim_9c4813be754dc7557b586d58"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0fc222aad0072d03c6011d4e",
+      "text": "all imports of semi-finished copper products and intensive copper derivative products, as set forth in the Annex to this proclamation, shall be subject to a 50 percent tariff. This tariff shall be effective with respect to goods entered for consumption, or withdrawn from warehouse for consumption, on or after 12:01 a.m. eastern daylight time on August 1, 2025",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/07/adjusting-imports-of-copper-into-the-united-states",
+      "chunk_id": "chunk_db99c67d2582ce05279e09f7"
+    },
+    {
+      "claim_id": "claim_1b84cf2907907021121c0169",
+      "text": "Effective with respect to goods entered for consumption, or withdrawn from warehouse for consumption, on or after 12:01 a.m. eastern time on August 1, 2025",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/07/adjusting-imports-of-copper-into-the-united-states",
+      "chunk_id": "chunk_498c643c857665b75ff0800a"
+    },
+    {
+      "claim_id": "claim_2367d62151bc330db9653b8a",
+      "text": "all imports of semi-finished copper products and intensive copper derivative products, as set forth in the Annex to this proclamation, shall be subject to a 50 percent tariff. This tariff shall be effective with respect to goods entered for consumption, or withdrawn from warehouse for consumption, on or after 12:01 a.m. eastern daylight time on August 1, 2025",
+      "url": "https://www.federalregister.gov/documents/2025/08/05/2025-14893/adjusting-imports-of-copper-into-the-united-states",
+      "chunk_id": "chunk_41d444533bed9e0245bf0678"
+    },
+    {
+      "claim_id": "claim_9c4813be754dc7557b586d58",
+      "text": "On 30 June 2025, United States (US) President Donald Trump signed a Proclamation titled \"Adjusting Imports of Copper into the United States,\" which imposes 50% tariffs, effective 1 August 2025, on imports of semi-finished copper products and copper-intensive derivative products.",
+      "url": "https://www.ey.com/en_gl/technical/tax-alerts/us-imposes-tariffs-on-copper-products",
+      "chunk_id": "chunk_469409b3ce7233072f438f43"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0fc222aad0072d03c6011d4e",
+      "claim_2367d62151bc330db9653b8a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 27,
+  "synthesis_input_claim_count": 27
+}

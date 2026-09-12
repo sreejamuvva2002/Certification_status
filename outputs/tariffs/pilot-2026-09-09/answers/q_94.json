@@ -1,0 +1,88 @@
+{
+  "query_id": "q_94",
+  "query": "Galvanized automotive steel sheets tariffs country of origin",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_128ca8fb1b7f1fda53cc6c48",
+    "claim_14a366d30d8a416dcf5b8539",
+    "claim_177240169061dac999e95f24",
+    "claim_246876ecf4718e8245c6880f",
+    "claim_36b1f2b9ad72a8e3c5fb8205",
+    "claim_39e6e028f4352f1b4192e197",
+    "claim_64cbbf6aa4e7a55d757c3f1f",
+    "claim_b3e96cbb4c09799fad1bf254"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_128ca8fb1b7f1fda53cc6c48",
+      "text": "Annex I-B [...] (reduced tariffs for certain steel derivatives until December 31, 2027)",
+      "url": "https://www.congress.gov/crs-product/IN12519",
+      "chunk_id": "chunk_551e1a084a839bec3df4eb3f"
+    },
+    {
+      "claim_id": "claim_14a366d30d8a416dcf5b8539",
+      "text": "Tariffs generally mirror the 25% rate for primary steel, but exemptions or quotas may apply based on country-specific agreements.",
+      "url": "https://www.ctp-inc.com/articles/tariffs-on-steel-derivative-products",
+      "chunk_id": "chunk_abc1d7e5563a93186adbb541"
+    },
+    {
+      "claim_id": "claim_177240169061dac999e95f24",
+      "text": "10% tariff on full value of derivatives composed of at least 85% U.S.-sourced steel, aluminum, and copper",
+      "url": "https://www.congress.gov/crs-product/IN12519",
+      "chunk_id": "chunk_551e1a084a839bec3df4eb3f"
+    },
+    {
+      "claim_id": "claim_246876ecf4718e8245c6880f",
+      "text": "The tariff applies only to the steel content of the product, not the entire value of the imported article.",
+      "url": "https://www.ctp-inc.com/articles/tariffs-on-steel-derivative-products",
+      "chunk_id": "chunk_abc1d7e5563a93186adbb541"
+    },
+    {
+      "claim_id": "claim_36b1f2b9ad72a8e3c5fb8205",
+      "text": "Tariffs on steel derivative products extend U.S. trade measures to downstream goods containing steel, aiming to prevent circumvention of primary steel tariffs.",
+      "url": "https://www.ctp-inc.com/articles/tariffs-on-steel-derivative-products",
+      "chunk_id": "chunk_abc1d7e5563a93186adbb541"
+    },
+    {
+      "claim_id": "claim_39e6e028f4352f1b4192e197",
+      "text": "25% tariff on full value of steel and aluminum articles and derivatives from the United Kingdom (UK) composed of at least 95% UK-sourced steel/aluminum",
+      "url": "https://www.congress.gov/crs-product/IN12519",
+      "chunk_id": "chunk_551e1a084a839bec3df4eb3f"
+    },
+    {
+      "claim_id": "claim_64cbbf6aa4e7a55d757c3f1f",
+      "text": "For products of Argentina, Ecuador, El Salvador, Guatemala, Japan, South Korea, Liechtenstein, Switzerland, Taiwan, the United Kingdom, or the European Union: Column 1 duty rate ≥15%",
+      "url": "https://www.congress.gov/crs-product/IN12519",
+      "chunk_id": "chunk_551e1a084a839bec3df4eb3f"
+    },
+    {
+      "claim_id": "claim_b3e96cbb4c09799fad1bf254",
+      "text": "Steel derivative products include items like nails, staples, and automotive components, with tariffs applying only to the steel content.",
+      "url": "https://www.ctp-inc.com/articles/tariffs-on-steel-derivative-products",
+      "chunk_id": "chunk_abc1d7e5563a93186adbb541"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_14a366d30d8a416dcf5b8539",
+      "claim_177240169061dac999e95f24"
+    ],
+    [
+      "claim_246876ecf4718e8245c6880f",
+      "claim_177240169061dac999e95f24"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

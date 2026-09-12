@@ -1,0 +1,64 @@
+{
+  "query_id": "q_386",
+  "query": "Nickel manganese cobalt batteries United States import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1690b5f31f7eb7924f319753",
+    "claim_6cd407d9bd052632da702c4a",
+    "claim_cc01312d1e404d171bd02c0f",
+    "claim_db369d8c70d0bc9a717c0baa",
+    "claim_f8c6ccfd3480589bcee47ac4"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1690b5f31f7eb7924f319753",
+      "text": "port duties ranging from 54% to over 100% on components sourced from China. These tariffs apply to lithium iron phosphate (LFP) and nickel manganese cobalt (NMC) battery chemistries.",
+      "url": "https://manlybattery.com/battery-tariffs",
+      "chunk_id": "chunk_6e2612480637e11888def965"
+    },
+    {
+      "claim_id": "claim_6cd407d9bd052632da702c4a",
+      "text": "- A Section 301 tariff targeting Chinese imports, currently at 7.5%, is scheduled to rise to 25% by January 2026.",
+      "url": "https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries",
+      "chunk_id": "chunk_f79dfb8079dd44d53c7d662c"
+    },
+    {
+      "claim_id": "claim_cc01312d1e404d171bd02c0f",
+      "text": "Despite a less than ideal trade climate between the U.S. and China, it remains one of the top sources for hundreds of products.",
+      "url": "https://usacustomsclearance.com/process/importing-lithium-batteries",
+      "chunk_id": "chunk_f7e6c75378c1cfcd81d1142b"
+    },
+    {
+      "claim_id": "claim_db369d8c70d0bc9a717c0baa",
+      "text": "At minimum, such imports from China could result in a tariff exceeding 145% ad valorem. This tariff, whatever it may be when you import your lithium batteries, will be added on to Section 301 tariffs.",
+      "url": "https://usacustomsclearance.com/process/importing-lithium-batteries",
+      "chunk_id": "chunk_f7e6c75378c1cfcd81d1142b"
+    },
+    {
+      "claim_id": "claim_f8c6ccfd3480589bcee47ac4",
+      "text": "Current U.S. policies apply a 54% base tariff on key lithium chemistries, including LFP (lithium iron phosphate) and NMC (nickel manganese cobalt) cells.",
+      "url": "https://manlybattery.com/battery-tariffs",
+      "chunk_id": "chunk_20b2c1bdb432d5bfb78380b2"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_6cd407d9bd052632da702c4a",
+      "claim_db369d8c70d0bc9a717c0baa"
+    ],
+    [
+      "claim_cc01312d1e404d171bd02c0f",
+      "claim_f8c6ccfd3480589bcee47ac4"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 29,
+  "synthesis_input_claim_count": 29
+}

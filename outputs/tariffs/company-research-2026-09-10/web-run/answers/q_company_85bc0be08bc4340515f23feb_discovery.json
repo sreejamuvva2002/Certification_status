@@ -1,0 +1,40 @@
+{
+  "query_id": "q_company_85bc0be08bc4340515f23feb_discovery",
+  "query": "\"DAEHAN Solution Georgia LLC\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_5928e5c2304b977a84fbd626",
+    "claim_7b2491ae86e9d885ff0b640a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_5928e5c2304b977a84fbd626",
+      "text": "Established a factory in Michigan, USA",
+      "url": "http://dhsol.com/content/companye.php",
+      "chunk_id": "chunk_7490ca1066855bdd238a7977"
+    },
+    {
+      "claim_id": "claim_7b2491ae86e9d885ff0b640a",
+      "text": "Established a factory in Nevada, USA",
+      "url": "http://dhsol.com/content/companye.php",
+      "chunk_id": "chunk_7490ca1066855bdd238a7977"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_5928e5c2304b977a84fbd626",
+      "claim_7b2491ae86e9d885ff0b640a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 4,
+  "synthesis_input_claim_count": 4
+}

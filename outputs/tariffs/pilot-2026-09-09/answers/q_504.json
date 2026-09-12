@@ -1,0 +1,67 @@
+{
+  "query_id": "q_504",
+  "query": "Georgia automotive electronics tariff investor presentation",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3d8a4382086e5189ebfd350d",
+    "claim_759e14ec841b6d19b2f5b925",
+    "claim_87cebb34dc0290f66c33a392",
+    "claim_e0b419e72b29c66398925287",
+    "claim_ee0ecda05c1e3aff0131d5b2"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3d8a4382086e5189ebfd350d",
+      "text": "the Trump administration will potentially only be in power for approximately 3.5 more years and the tariff landscape may drastically change at that point, nullifying any investment decisions.",
+      "url": "https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740",
+      "chunk_id": "chunk_6bb594047515ea6015be7937"
+    },
+    {
+      "claim_id": "claim_759e14ec841b6d19b2f5b925",
+      "text": "Imported vehicle parts will face a 25% tariff, potentially raising production costs at Georgia’s auto plants.",
+      "url": "https://www.fox5atlanta.com/news/trumps-tariff-plan-sparks-economic-uncertainty-georgia",
+      "chunk_id": "chunk_abda6832d4708e9d28a77631"
+    },
+    {
+      "claim_id": "claim_87cebb34dc0290f66c33a392",
+      "text": "Tariff threat casts shadow over Hyundai's plant-opening party in Bryan County.",
+      "url": "https://thecurrentga.org/2025/03/31/tariff-threat-casts-shadow-over-hyundais-plant-opening-party-in-bryan-county",
+      "chunk_id": "chunk_bcfcb46bd6564ff6477cb37b"
+    },
+    {
+      "claim_id": "claim_e0b419e72b29c66398925287",
+      "text": "Production lines move away from EVs to hybrid vehicles as",
+      "url": "https://thecurrentga.org/2025/03/31/tariff-threat-casts-shadow-over-hyundais-plant-opening-party-in-bryan-county",
+      "chunk_id": "chunk_bcfcb46bd6564ff6477cb37b"
+    },
+    {
+      "claim_id": "claim_ee0ecda05c1e3aff0131d5b2",
+      "text": "The week before the 2 April tariff announcement, Hyundai committed to a $21 billion investment through 2028 in the US. This included a new $7.6 billion Metaplant in Georgia, targeting 1.2 million annual units and 100,000 jobs and included vertical integration and localisation of steel, batteries and vehicle production.",
+      "url": "https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740",
+      "chunk_id": "chunk_6bb594047515ea6015be7937"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_759e14ec841b6d19b2f5b925",
+      "claim_3d8a4382086e5189ebfd350d"
+    ],
+    [
+      "claim_e0b419e72b29c66398925287",
+      "claim_ee0ecda05c1e3aff0131d5b2"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

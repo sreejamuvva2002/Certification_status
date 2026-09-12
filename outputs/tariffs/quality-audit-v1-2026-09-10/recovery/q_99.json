@@ -1,0 +1,131 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original answer is insufficient because the available evidence contains conflicting tariff rates (25%, 30-50%, 8.5%) and dates, alongside a lack of specific application to a named company for the query's context. While one source mentions a 'Trump administration' confirmation effective March 12, 2025, another cites an official Customs Bulletin from July 2024 assigning an 8.5% rate to specific fasteners. Additionally, metrics indicate two inaccessible sources and conflicting claims regarding the exact duty rates (25% vs 30-50% vs 8.5%), preventing a definitive conclusion on current applicability for a specific entity.",
+  "confidence": "high",
+  "remaining_gap": "No single source explicitly links a specific named company to a confirmed, effective tariff rate for automotive steel fasteners that resolves the conflict between the 2024 Customs Bulletin (8.5%) and the 2025 proposed/announced rates (25% or 30-50%). The evidence does not establish which rate applies to the specific query context or company.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_ff31d3a41f895ce0f9b9cb76",
+      "supporting_excerpt": "The applicable subheading for product number 44–06 (hex head cap screw) will be 7318.15.8066, HTSUS... The duty rate will be 8.5% ad valorem. The applicable subheading for product number 85–68 (exhaust manifold bolt) will be 7318.15.8069, HTSUS... The duty rate will be 8.5% ad valorem.",
+      "relevance_explanation": "This official Customs Bulletin provides a specific, effective duty rate of 8.5% for steel fasteners as of July 2024, directly conflicting with higher rates mentioned in other sources.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_3aec8dee3f4aae5f453d9531",
+      "supporting_excerpt": "The U.S. tariffs on imported industrial fasteners—particularly from China and other major Asian exporters—have created widespread ramifications across manufacturing, construction, automotive, and infrastructure sectors. With tariffs applied to imported steel and fasteners, U.S. producers are seeing substantial cost increases.",
+      "relevance_explanation": "This source confirms the existence of tariffs impacting the automotive sector but does not specify a single rate or apply it to a named company, contributing to the lack of specific applicability.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_80da816e069747c153f15110",
+      "supporting_excerpt": "In March 2025, under the authority of the International Emergency Economic Powers Act (IEEPA), the U.S. government introduced an additional 20% punitive tariff... Consequently, Chinese-origin fasteners exported to the United States are currently subject to the following cumulative tariffs: MFN Base Tariff – Ranges from 5% to 12.5%... Section 232 Duty – 50%... Section 301 Duty – 25%.",
+      "relevance_explanation": "This source introduces a complex, conflicting set of rates (25%, 50%, 10%) and dates (March 2025) that contradict the 8.5% rate in the Customs Bulletin, highlighting the evidence conflict.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_3c30906c6abb2f672a754713",
+      "supporting_excerpt": "Misapplying \"parts of general use\" rules. Note 2 to Section XV and Note 1(g) to Section XVII define \"parts of general use\" - standardized articles like screws, bolts, nuts... Even when these items are sold specifically for automotive applications, they are classified under their material-based chapter (typically Chapter 73 for steel fasteners) rather than Chapter 87.",
+      "relevance_explanation": "This source clarifies the classification rules for automotive fasteners but does not provide a specific tariff rate or company-specific application, leaving the gap in rate determination open.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_99",
+  "query": "Automotive steel fasteners bolts nuts import tariffs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 1,
+    "snippet_sources": 2,
+    "inaccessible_source_count": 2,
+    "selected_claims": 12,
+    "all_extracted_claims": 12,
+    "claims_presented_to_original_synthesis": 12,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 3,
+    "company_named_claims": 5,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_3aec8dee3f4aae5f453d9531",
+    "passage_ff31d3a41f895ce0f9b9cb76",
+    "passage_3c30906c6abb2f672a754713",
+    "passage_de6fc9f7e4e0a136337d8b2d",
+    "passage_80da816e069747c153f15110",
+    "passage_d4127270a61b46da8555f933",
+    "passage_ebe5acf94d9ed97f72abc0fe",
+    "passage_3118d6ca7d5c562665297bd6"
+  ],
+  "candidate_document_ids": [
+    "document_2a21d352f1a50bcd779cd0f1",
+    "document_a936e70b05ee4a77c85ed8d4",
+    "document_abcc372c7d136699cf80b62d",
+    "document_b75907e603c6d1165139434d",
+    "document_dafe3c8df4485dc97087bf53",
+    "document_db1c9c74d81772cd98df372f"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_ff31d3a41f895ce0f9b9cb76",
+        "supporting_excerpt": "The applicable subheading for product number 44–06 (hex head cap screw) will be 7318.15.8066, HTSUS... The duty rate will be 8.5% ad valorem. The applicable subheading for product number 85–68 (exhaust manifold bolt) will be 7318.15.8069, HTSUS... The duty rate will be 8.5% ad valorem.",
+        "relevance_explanation": "This official Customs Bulletin provides a specific, effective duty rate of 8.5% for steel fasteners as of July 2024, directly conflicting with higher rates mentioned in other sources.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_3aec8dee3f4aae5f453d9531",
+        "supporting_excerpt": "The U.S. tariffs on imported industrial fasteners—particularly from China and other major Asian exporters—have created widespread ramifications across manufacturing, construction, automotive, and infrastructure sectors. With tariffs applied to imported steel and fasteners, U.S. producers are seeing substantial cost increases.",
+        "relevance_explanation": "This source confirms the existence of tariffs impacting the automotive sector but does not specify a single rate or apply it to a named company, contributing to the lack of specific applicability.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_80da816e069747c153f15110",
+        "supporting_excerpt": "In March 2025, under the authority of the International Emergency Economic Powers Act (IEEPA), the U.S. government introduced an additional 20% punitive tariff... Consequently, Chinese-origin fasteners exported to the United States are currently subject to the following cumulative tariffs: MFN Base Tariff – Ranges from 5% to 12.5%... Section 232 Duty – 50%... Section 301 Duty – 25%.",
+        "relevance_explanation": "This source introduces a complex, conflicting set of rates (25%, 50%, 10%) and dates (March 2025) that contradict the 8.5% rate in the Customs Bulletin, highlighting the evidence conflict.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_3c30906c6abb2f672a754713",
+        "supporting_excerpt": "Misapplying \"parts of general use\" rules. Note 2 to Section XV and Note 1(g) to Section XVII define \"parts of general use\" - standardized articles like screws, bolts, nuts... Even when these items are sold specifically for automotive applications, they are classified under their material-based chapter (typically Chapter 73 for steel fasteners) rather than Chapter 87.",
+        "relevance_explanation": "This source clarifies the classification rules for automotive fasteners but does not provide a specific tariff rate or company-specific application, leaving the gap in rate determination open.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

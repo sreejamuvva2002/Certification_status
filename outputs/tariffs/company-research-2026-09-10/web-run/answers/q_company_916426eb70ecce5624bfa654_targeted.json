@@ -1,0 +1,54 @@
+{
+  "query_id": "q_company_916426eb70ecce5624bfa654_targeted",
+  "query": "\"Porsche Cars North America Inc.\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3805361d388de121c9508664",
+    "claim_50aa324ec29ae46cc4a08a86",
+    "claim_9004a48e6122ab4458b3fe91",
+    "claim_d712332800bb305acd11dd9e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3805361d388de121c9508664",
+      "text": "As of March 26, 2025, the U.S. has implemented an additional 25% tariff on imported vehicles and parts, bringing the total tariff rate to 27.5%. With Porsche models exclusively manufactured in Germany, this change may lead to price increases on future inventory.",
+      "url": "https://saltlakecity.porsche.com/en/news-and-events/2025-how-new-auto-tariffs-could-impact-porsche-buyers",
+      "chunk_id": "chunk_59fb9f6c10ba409faa1d43d7"
+    },
+    {
+      "claim_id": "claim_50aa324ec29ae46cc4a08a86",
+      "text": "Manufacturer response Porsche has not announced any official response to the tariffs. The German carmaker shipped additional inventory into the U.S. ahead of the tariffs taken effect, and will honor prices for orders made in March.",
+      "url": "https://www.truecar.com/auto-tariffs-explained",
+      "chunk_id": "chunk_574337eb0dddbbe08222ab07"
+    },
+    {
+      "claim_id": "claim_9004a48e6122ab4458b3fe91",
+      "text": "Pricing impact Porsche confirmed a 1.2%–2.9% price increase for the new year. Orders delivered before January 5th are exempt from the adjustment.",
+      "url": "https://www.truecar.com/auto-tariffs-explained",
+      "chunk_id": "chunk_574337eb0dddbbe08222ab07"
+    },
+    {
+      "claim_id": "claim_d712332800bb305acd11dd9e",
+      "text": "Trump's 25% tariff on all foreign-made cars is a big blow even for luxury carmakers like Porsche.",
+      "url": "https://www.facebook.com/deutschewellenews/videos/will-trump-tariffs-force-luxury-carmakers-to-move-production-to-the-us/1376667536802890",
+      "chunk_id": "chunk_3bff9f2a3575a5aefad456a8"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_3805361d388de121c9508664",
+      "claim_d712332800bb305acd11dd9e"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

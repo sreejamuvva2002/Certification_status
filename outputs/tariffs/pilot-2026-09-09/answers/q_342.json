@@ -1,0 +1,66 @@
+{
+  "query_id": "q_342",
+  "query": "Automotive fasteners United States tariffs country of origin",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3b95534cf648bd2671aa93c8",
+    "claim_4be73f74a7f480cf73156449",
+    "claim_54e9c76c4e8eea1d36c263c1",
+    "claim_645d6d32c5502b054215c673",
+    "claim_9a894affb60828fe9f942e7e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3b95534cf648bd2671aa93c8",
+      "text": "Only some products are included on the exemption list for reciprocal tariffs, such as steel (including fasteners) and aluminum products already subject to the 25% Section 232 tariff",
+      "url": "https://www.fastener-world.com/data/pdf_download/FW_212_E_270.pdf?v=2",
+      "chunk_id": "chunk_25d82e77a3821830c6cb9914"
+    },
+    {
+      "claim_id": "claim_4be73f74a7f480cf73156449",
+      "text": "At present, the United States imposes a uniform 50% Section 232 tariff on fastener imports from all countries— except the UK, which is subject to a 25% rate.",
+      "url": "https://www.arkfastech.com/th/knowledge-detail/Carbonitriding__1",
+      "chunk_id": "chunk_c8cf8023bdf8e1675b632bb3"
+    },
+    {
+      "claim_id": "claim_54e9c76c4e8eea1d36c263c1",
+      "text": "Effective March 12, 2025, the Trump administration eliminated all previous exemptions and implemented a uniform 25% tariff on steel and derivative products, including HTS 7318 fasteners, from all countries",
+      "url": "https://www.arkfastech.com/th/knowledge-detail/Carbonitriding__1",
+      "chunk_id": "chunk_bd6151ed9b77714d1559db07"
+    },
+    {
+      "claim_id": "claim_645d6d32c5502b054215c673",
+      "text": "Since February 8, 2020, steel and aluminum derivative products—including fasteners—have been brought under the scope of Section 232 of the Trade Expansion Act.",
+      "url": "https://www.arkfastech.com/th/knowledge-detail/Carbonitriding__1",
+      "chunk_id": "chunk_bd6151ed9b77714d1559db07"
+    },
+    {
+      "claim_id": "claim_9a894affb60828fe9f942e7e",
+      "text": "Beginning June 4, 2025, the Section 232 tariff rate was further increased to 50% for steel, aluminum, and their derivative products.",
+      "url": "https://www.arkfastech.com/th/knowledge-detail/Carbonitriding__1",
+      "chunk_id": "chunk_bd6151ed9b77714d1559db07"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_3b95534cf648bd2671aa93c8",
+      "claim_4be73f74a7f480cf73156449"
+    ],
+    [
+      "claim_54e9c76c4e8eea1d36c263c1",
+      "claim_9a894affb60828fe9f942e7e"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 19,
+  "synthesis_input_claim_count": 19
+}

@@ -1,0 +1,73 @@
+{
+  "query_id": "q_company_933e96a9f78bb1d41d7089e0_discovery",
+  "query": "\"Joon Georgia, Inc.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_00764ac760c84c94b122e269",
+    "claim_589da822f75a1df2432274bc",
+    "claim_8704c3271664ff6cacede098",
+    "claim_88548f9c235aa797ff9d68a2",
+    "claim_acc0f7ab473b3404d0935677",
+    "claim_fb4020e2e6c6975f4a917ef3"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_00764ac760c84c94b122e269",
+      "text": "HS-Code DATA UNAVAILABLE",
+      "url": "https://www.importgenius.com/importers/joon-georgia-inc-dba-ajin-georgia",
+      "chunk_id": "chunk_36d3f44212f617c74f917c8c"
+    },
+    {
+      "claim_id": "claim_589da822f75a1df2432274bc",
+      "text": "Consignee | JOON GEORGIA INC DBA AJIN GEORGIA 239 ROCKY RD REGISTER GA 30452 U ATTN HEESUB LEETEL 1-334-560-225 4",
+      "url": "https://www.seair.co.in/us-importers/joon-georgia-inc.aspx",
+      "chunk_id": "chunk_a03536fd308ef3190b013474"
+    },
+    {
+      "claim_id": "claim_8704c3271664ff6cacede098",
+      "text": "JOON GEORGIA, INC DBA AJIN GEORGIA | WOOSHIN INDUSTRIAL CO.,LTD | 2026-08-28 | South Korea",
+      "url": "https://www.importgenius.com/importers/joon-georgia-inc-dba-ajin-georgia",
+      "chunk_id": "chunk_0e08a3c473a88d79eb03c3e0"
+    },
+    {
+      "claim_id": "claim_88548f9c235aa797ff9d68a2",
+      "text": "JOON GEORGIA, INC DBA AJIN GEORGIA | AJINCARINTECH INC. | 2026-08-28 | South Korea",
+      "url": "https://www.importgenius.com/importers/joon-georgia-inc-dba-ajin-georgia",
+      "chunk_id": "chunk_0e08a3c473a88d79eb03c3e0"
+    },
+    {
+      "claim_id": "claim_acc0f7ab473b3404d0935677",
+      "text": "JOON GEORGIA, INC DBA AJIN GEORGIA | AJIN INDUSTRIAL CO.,LTD. | 2026-09-03 | South Korea",
+      "url": "https://www.importgenius.com/importers/joon-georgia-inc-dba-ajin-georgia",
+      "chunk_id": "chunk_0e08a3c473a88d79eb03c3e0"
+    },
+    {
+      "claim_id": "claim_fb4020e2e6c6975f4a917ef3",
+      "text": "JOON GEORGIA, INC DBA AJIN GEORGIA | AJIN INDUSTRIAL CO.,LTD. | 2026-08-28 | South Korea",
+      "url": "https://www.importgenius.com/importers/joon-georgia-inc-dba-ajin-georgia",
+      "chunk_id": "chunk_0e08a3c473a88d79eb03c3e0"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_8704c3271664ff6cacede098",
+      "claim_fb4020e2e6c6975f4a917ef3"
+    ],
+    [
+      "claim_88548f9c235aa797ff9d68a2",
+      "claim_acc0f7ab473b3404d0935677"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 6,
+  "synthesis_input_claim_count": 6
+}

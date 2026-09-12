@@ -1,0 +1,69 @@
+{
+  "query_id": "q_264",
+  "query": "site:rulings.cbp.gov electric vehicle motor inverter classification",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_03307a2b4f419fab69761510",
+    "claim_a6d1d600e2c2960e8defed06",
+    "claim_e9e37bfa6a49d2488570089a",
+    "claim_fec5f0b5dcf4c15f0cb76430",
+    "claim_81b250e23a74f591e7bc6348",
+    "claim_b6b7c70e50fd11feebae6d73"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_03307a2b4f419fab69761510",
+      "text": "The second item under consideration is identified as the X83F E-Axle Electric Drive Motor Assembly (X83F Motor), which consists of a 200 kW electric motor, a gearbox, and an inverter.",
+      "url": "https://rulings.cbp.gov/ruling/N329048",
+      "chunk_id": "chunk_2c13e1353d33eeb903f148ed"
+    },
+    {
+      "claim_id": "claim_a6d1d600e2c2960e8defed06",
+      "text": "The applicable subheading for the Beam E-Axle Electric Drive Motor Assembly will be 8501.53.8060, HTSUS, which provides for “Electric motors…: Other AC motors, multi-phase: Of an output exceeding 75kW: Other: Other.”",
+      "url": "https://rulings.cbp.gov/ruling/N329048",
+      "chunk_id": "chunk_2c13e1353d33eeb903f148ed"
+    },
+    {
+      "claim_id": "claim_e9e37bfa6a49d2488570089a",
+      "text": "The applicable subheading for the X83F E-Axle Electric Drive Motor Assembly will be 8501.53.8040, HTSUS, which provides for “Electric motors…: Other AC motors, multi-phase: Of an output exceeding 75kW: Other: Not exceeding 373 kW.”",
+      "url": "https://rulings.cbp.gov/ruling/N329048",
+      "chunk_id": "chunk_2c13e1353d33eeb903f148ed"
+    },
+    {
+      "claim_id": "claim_fec5f0b5dcf4c15f0cb76430",
+      "text": "The first item under consideration is identified as the Beam E-Axle Electric Drive Motor Assembly (Beam Motor), which consists of a 375 kW electric motor, a gearbox, and an inverter.",
+      "url": "https://rulings.cbp.gov/ruling/N329048",
+      "chunk_id": "chunk_2c13e1353d33eeb903f148ed"
+    },
+    {
+      "claim_id": "claim_81b250e23a74f591e7bc6348",
+      "text": "In longstanding precedence, CBP concluded the intent of EN 85.01 as electric motors having additional components that merely complement the function of the motor were intended to remain classifiable in heading 8501.",
+      "url": "https://rulings.cbp.gov/ruling/N322256",
+      "chunk_id": "chunk_1a81d13f18883a908fc547d3"
+    },
+    {
+      "claim_id": "claim_b6b7c70e50fd11feebae6d73",
+      "text": "In HQ 086832 (1990) Customs stated, “a motor remains a motor for tariff purposes despite having other articles attached to it” while noting that “[t]hese other articles can be quite substantial.”",
+      "url": "https://rulings.cbp.gov/ruling/N322256",
+      "chunk_id": "chunk_1a81d13f18883a908fc547d3"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_a6d1d600e2c2960e8defed06",
+      "claim_e9e37bfa6a49d2488570089a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

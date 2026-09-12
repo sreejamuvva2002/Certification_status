@@ -1,0 +1,126 @@
+{
+  "primary_cause": "inaccessible_documents",
+  "contributing_causes": [],
+  "cause_explanation": "The audit metrics indicate zero full-text sources were retained and one source was inaccessible, preventing verification of specific tariff rates or company-level applicability for Georgia EV supply-chain entities. The original query sought specific import tariffs for 'PCB prepreg fiberglass epoxy materials' in a context that requires explicit linkage to a named company's exposure, which cannot be established from the available snippets alone.",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly links a specific Georgia EV supply-chain company or facility to an import tariff rate for PCB prepreg fiberglass epoxy materials. The available text discusses general HTS classifications and Section 301 duties on Chinese goods but lacks the necessary named-company effect or facility-specific exposure data required to answer the query.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_6ef76f65a871dd3840d2363c",
+      "supporting_excerpt": "Colored Fiberglass Printed Circuit Board Prepreg... HTS 7019.62.90 covers this as colored closed roving fabric, excluding fully cured composites. Critical for electronics industry.",
+      "relevance_explanation": "Identifies the product category and a potential HTS code but provides no tariff rate or company-specific applicability.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_dd3f63b15223f3309cb18ff7",
+      "supporting_excerpt": "The applicable subheading for the bare PCB will be 8534.00.0040... The rate of duty will be Free. Pursuant to U.S. Note 20... products of China classified under subheading 8534.00.0040... are subject to an additional 25 percent ad valorem rate of duty.",
+      "relevance_explanation": "Discusses a specific ruling for a PCB from China but does not mention Georgia EV supply-chain entities or confirm applicability to prepreg materials in that context.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_59b463edeebaff509e1bb207",
+      "supporting_excerpt": "Tariff policies in the North American market caused a 12% decline in Chinese PCB imports, but delayed local capacity expansion created a supply gap...",
+      "relevance_explanation": "Mentions tariff impacts on the industry generally but fails to establish a specific exposure for a named Georgia company or facility.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_1a934e003c26c668b30ad959",
+      "supporting_excerpt": "Duty rates vary by: Country of origin, Trade agreements, Level of assembly, End-use application. PCBA often carries higher tariffs than bare PCBs...",
+      "relevance_explanation": "Explains factors influencing duty rates but does not provide a specific rate or link to the Georgia EV supply-chain context.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_169",
+  "query": "PCB prepreg fiberglass epoxy materials import tariffs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 1,
+    "full_text_sources": 0,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 0,
+    "all_extracted_claims": 0,
+    "claims_presented_to_original_synthesis": 0,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 0,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents"
+  ],
+  "candidate_passage_ids": [
+    "passage_6ef76f65a871dd3840d2363c",
+    "passage_21d9bfe809307263fe8f5fed",
+    "passage_1fd4d3d116f9453d89f60218",
+    "passage_dd3f63b15223f3309cb18ff7",
+    "passage_9741616d8e4f4e0c86e4514f",
+    "passage_f763d2bde7d0457f4f05a07b",
+    "passage_59b463edeebaff509e1bb207",
+    "passage_1a934e003c26c668b30ad959"
+  ],
+  "candidate_document_ids": [
+    "document_27a2e0762727bfdfc895ff79",
+    "document_59e6f304db0610830bcefab9",
+    "document_68b719b4ff550c1427d1526f",
+    "document_6f192579e476b813aae38e54",
+    "document_b826b531526ee3f6af685e75",
+    "document_c904f98e6711a99203a9720a",
+    "document_d4a043b1765483342ddf7ed9",
+    "document_f54b0d22c62373a210da7794"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_6ef76f65a871dd3840d2363c",
+        "supporting_excerpt": "Colored Fiberglass Printed Circuit Board Prepreg... HTS 7019.62.90 covers this as colored closed roving fabric, excluding fully cured composites. Critical for electronics industry.",
+        "relevance_explanation": "Identifies the product category and a potential HTS code but provides no tariff rate or company-specific applicability.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_dd3f63b15223f3309cb18ff7",
+        "supporting_excerpt": "The applicable subheading for the bare PCB will be 8534.00.0040... The rate of duty will be Free. Pursuant to U.S. Note 20... products of China classified under subheading 8534.00.0040... are subject to an additional 25 percent ad valorem rate of duty.",
+        "relevance_explanation": "Discusses a specific ruling for a PCB from China but does not mention Georgia EV supply-chain entities or confirm applicability to prepreg materials in that context.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_59b463edeebaff509e1bb207",
+        "supporting_excerpt": "Tariff policies in the North American market caused a 12% decline in Chinese PCB imports, but delayed local capacity expansion created a supply gap...",
+        "relevance_explanation": "Mentions tariff impacts on the industry generally but fails to establish a specific exposure for a named Georgia company or facility.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_1a934e003c26c668b30ad959",
+        "supporting_excerpt": "Duty rates vary by: Country of origin, Trade agreements, Level of assembly, End-use application. PCBA often carries higher tariffs than bare PCBs...",
+        "relevance_explanation": "Explains factors influencing duty rates but does not provide a specific rate or link to the Georgia EV supply-chain context.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

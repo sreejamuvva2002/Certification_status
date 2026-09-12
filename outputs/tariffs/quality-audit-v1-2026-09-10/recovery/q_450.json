@@ -1,0 +1,131 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original answer fails to establish a specific tariff exposure for automotive head-up displays (HUDs) because the available evidence contains conflicting classification precedents and unverified policy proposals. While HQ H304224 classifies certain HUDs under HTS 8531 as signaling devices, other passages suggest LCD modules may fall under HTS 8524 depending on design features like drivers or integration. Furthermore, the proposed 25% tariffs on automotive parts are described with uncertain effective dates (e.g., 'no later than May 3') and conditional applicability, preventing a definitive conclusion on current liability for specific HUDs.",
+  "confidence": "high",
+  "remaining_gap": "A definitive determination of whether the specific HUD in question falls under HTS 8531 or 8524 is required to apply the correct tariff rate, alongside confirmation of whether the proposed 25% part tariffs are currently effective law or still pending as of the research date.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_0340bef5805d07de509ddd6a",
+      "supporting_excerpt": "For example, in Headquarters Ruling Letter (HQ) H304224, dated December 3, 2020, CBP classified in heading 8531, HTSUS, a 'Heads Up' automotive LCD display designed to provide limited, easily understood information... Although the LCD did not have permanently etched icons or segment-style characters, the screen utilized similarly simplistic icons and numbers...",
+      "relevance_explanation": "This passage provides specific evidence that CBP has classified certain HUDs under HTS 8531 based on their function of providing limited information to the driver.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_4119550ea466124277566ac6",
+      "supporting_excerpt": "7-inch LCD Module for Automotive Dashboard... without drivers or controls for ECU integration. HTS 8524.11.90.00 covers this as other LCD module, designed for automotive vibration and temperature extremes.",
+      "relevance_explanation": "This passage suggests an alternative classification (HTS 8524) for automotive LCD modules lacking specific drivers, creating a conflict with the HTS 8531 classification found in HQ H304224 depending on technical specifications.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_9afca696778465926e4bc943",
+      "supporting_excerpt": "Automotive Motor Vehicle Tariff Codes... 8705300000 FIRE FIGHTING VEHICLES... 8706000300 CHASSIS FITTED W/ ENG FOR VEH OF HEAD 8704.21 & 31",
+      "relevance_explanation": "This passage lists general tariff codes for vehicles and chassis but does not explicitly address the classification of HUDs or confirm the applicability of proposed part tariffs to this specific component.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_1bb7b120b6d62f7162a0fb43",
+      "supporting_excerpt": "CBP has classified LCDs that are limited by design and/or principal use to 'signaling' in heading 8531, HTSUS. For example, in HQ H049555 (April 13, 2009), CBP classified LCD modules intended for use in automobiles as radio/message displays in heading 8531, HTSUS.",
+      "relevance_explanation": "This passage reinforces the precedent for classifying signaling-related automotive LCDs under 8531 but highlights that classification depends on design limitations, which may not apply to all HUDs.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_450",
+  "query": "Automotive head-up displays United States import tariffs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 1,
+    "snippet_sources": 2,
+    "inaccessible_source_count": 2,
+    "selected_claims": 13,
+    "all_extracted_claims": 13,
+    "claims_presented_to_original_synthesis": 13,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 2,
+    "company_named_claims": 2,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_1bb7b120b6d62f7162a0fb43",
+    "passage_f302c89330b4d6f692870184",
+    "passage_fdd06860fa204e8cf9d2d1da",
+    "passage_9afca696778465926e4bc943",
+    "passage_4119550ea466124277566ac6",
+    "passage_2ab23b3e4cb5ca3630c77dc9",
+    "passage_0340bef5805d07de509ddd6a",
+    "passage_14c7bd5e4b40edc65dfa926f"
+  ],
+  "candidate_document_ids": [
+    "document_03bbe90c34832e1434fed9ad",
+    "document_10a14492092f30e7c7d2f976",
+    "document_434186ff7197295e5699ce8c",
+    "document_8037158b04394a8ccc0506de",
+    "document_ddde8c39f79e5f08a561410d",
+    "document_fd542f99d171260ad8a21b12"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_0340bef5805d07de509ddd6a",
+        "supporting_excerpt": "For example, in Headquarters Ruling Letter (HQ) H304224, dated December 3, 2020, CBP classified in heading 8531, HTSUS, a 'Heads Up' automotive LCD display designed to provide limited, easily understood information... Although the LCD did not have permanently etched icons or segment-style characters, the screen utilized similarly simplistic icons and numbers...",
+        "relevance_explanation": "This passage provides specific evidence that CBP has classified certain HUDs under HTS 8531 based on their function of providing limited information to the driver.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_4119550ea466124277566ac6",
+        "supporting_excerpt": "7-inch LCD Module for Automotive Dashboard... without drivers or controls for ECU integration. HTS 8524.11.90.00 covers this as other LCD module, designed for automotive vibration and temperature extremes.",
+        "relevance_explanation": "This passage suggests an alternative classification (HTS 8524) for automotive LCD modules lacking specific drivers, creating a conflict with the HTS 8531 classification found in HQ H304224 depending on technical specifications.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_9afca696778465926e4bc943",
+        "supporting_excerpt": "Automotive Motor Vehicle Tariff Codes... 8705300000 FIRE FIGHTING VEHICLES... 8706000300 CHASSIS FITTED W/ ENG FOR VEH OF HEAD 8704.21 & 31",
+        "relevance_explanation": "This passage lists general tariff codes for vehicles and chassis but does not explicitly address the classification of HUDs or confirm the applicability of proposed part tariffs to this specific component.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_1bb7b120b6d62f7162a0fb43",
+        "supporting_excerpt": "CBP has classified LCDs that are limited by design and/or principal use to 'signaling' in heading 8531, HTSUS. For example, in HQ H049555 (April 13, 2009), CBP classified LCD modules intended for use in automobiles as radio/message displays in heading 8531, HTSUS.",
+        "relevance_explanation": "This passage reinforces the precedent for classifying signaling-related automotive LCDs under 8531 but highlights that classification depends on design limitations, which may not apply to all HUDs.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_historical"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

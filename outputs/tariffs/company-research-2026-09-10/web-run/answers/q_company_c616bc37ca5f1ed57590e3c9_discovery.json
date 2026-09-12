@@ -1,0 +1,70 @@
+{
+  "query_id": "q_company_c616bc37ca5f1ed57590e3c9_discovery",
+  "query": "\"Hyundai MOBIS (Georgia)\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_72c0a37f7e3906aa9d88b1fd",
+    "claim_810b3774a3b5e0589aa1fed2",
+    "claim_8444faeda2e758a6684f0925",
+    "claim_95e215b2929743c32f504399",
+    "claim_e122cb695257af1faaffb93a",
+    "claim_f1643f2d21a2edff50ca698a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_72c0a37f7e3906aa9d88b1fd",
+      "text": "Trump administration readied tariffs on foreign-sourced materials, the carmaker announced it was building a new steel mill in Louisiana.",
+      "url": "https://www.csmonitor.com/Business/2025/0408/tariffs-hyundai-auto-factory-jobs-georgia",
+      "chunk_id": "chunk_1bb739b5b8aa2461228dbeee"
+    },
+    {
+      "claim_id": "claim_810b3774a3b5e0589aa1fed2",
+      "text": "The massive plant, located in Ellabell, about 25 miles outside Savannah, may eventually employ as many as 8,000 people.",
+      "url": "https://www.csmonitor.com/Business/2025/0408/tariffs-hyundai-auto-factory-jobs-georgia",
+      "chunk_id": "chunk_1bb739b5b8aa2461228dbeee"
+    },
+    {
+      "claim_id": "claim_8444faeda2e758a6684f0925",
+      "text": "Hyundai signed the biggest economic development deal in Georgia’s history. This new $7.6 billion EV factory broke ground just over two years ago in a massive pine grove just west of Savannah, Georgia.",
+      "url": "https://www.csmonitor.com/Business/2025/0408/tariffs-hyundai-auto-factory-jobs-georgia",
+      "chunk_id": "chunk_1bb739b5b8aa2461228dbeee"
+    },
+    {
+      "claim_id": "claim_95e215b2929743c32f504399",
+      "text": "tariffs – which include a base of 10% for all goods and 25% on imported cars",
+      "url": "https://www.csmonitor.com/Business/2025/0408/tariffs-hyundai-auto-factory-jobs-georgia",
+      "chunk_id": "chunk_1bb739b5b8aa2461228dbeee"
+    },
+    {
+      "claim_id": "claim_e122cb695257af1faaffb93a",
+      "text": "The tariffs will still affect Hyundai, like other auto companies producing in the U.S., to the degree that parts are imported.",
+      "url": "https://www.csmonitor.com/Business/2025/0408/tariffs-hyundai-auto-factory-jobs-georgia",
+      "chunk_id": "chunk_1bb739b5b8aa2461228dbeee"
+    },
+    {
+      "claim_id": "claim_f1643f2d21a2edff50ca698a",
+      "text": "We visited Hyundai’s new EV Metaplant in Savannah, Georgia, just as 25% tariffs on imported vehicles were announced.",
+      "url": "https://www.youtube.com/watch?v=u1XBETuQbVE",
+      "chunk_id": "chunk_6634c42e97079f754d3cf8d2"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_95e215b2929743c32f504399",
+      "claim_f1643f2d21a2edff50ca698a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 6,
+  "synthesis_input_claim_count": 6
+}

@@ -1,0 +1,74 @@
+{
+  "query_id": "q_502",
+  "query": "Georgia EV battery supplier tariff risk annual report",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2eebb4806759d445769fb031",
+    "claim_362d2eda7cf48a2610b1af26",
+    "claim_7c8728274db16b1230c671e3",
+    "claim_1254da532e442a3ed8b3e560",
+    "claim_5edf4cf159e412f8678f0dcb",
+    "claim_17bce4c6687f7a897c4d7270"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2eebb4806759d445769fb031",
+      "text": "February 11, 2021 - A battery supplier with an upcoming Georgia plant with the capability to supply up to 300,000 EVs annually has been banned from the U.S. by an ITC ruling.",
+      "url": "https://www.greencarreports.com/news/1131259_itc-ruling-puts-georgia-ev-battery-plant-domestic-cell-supply-in-jeopardy",
+      "chunk_id": "chunk_011f681cac454f160fc1fd7e"
+    },
+    {
+      "claim_id": "claim_362d2eda7cf48a2610b1af26",
+      "text": "The immigration raid last week on an electric vehicle battery plant in Georgia owned by two South Korean manufacturers was yet another setback for what had been a fast-growing industry in the United States.",
+      "url": "https://www.nytimes.com/2025/09/08/business/georgia-immigration-raid-ev-battery-plant-hyundai-lg.html",
+      "chunk_id": "chunk_7725f7f94e4de40d9a10e0bd"
+    },
+    {
+      "claim_id": "claim_7c8728274db16b1230c671e3",
+      "text": "But the raid at the plant under construction in Ellabell, Ga., which is owned by the carmaker Hyundai and battery supplier LG Energy Solution, raised more risks for foreign manufacturers in the United States.",
+      "url": "https://www.nytimes.com/2025/09/08/business/georgia-immigration-raid-ev-battery-plant-hyundai-lg.html",
+      "chunk_id": "chunk_7725f7f94e4de40d9a10e0bd"
+    },
+    {
+      "claim_id": "claim_1254da532e442a3ed8b3e560",
+      "text": "Immigration officials arrested 475 people. Of them, about 300 were South Korean citizens, according to the South Korean foreign minister’s office.",
+      "url": "https://www.nytimes.com/2025/09/08/business/georgia-immigration-raid-ev-battery-plant-hyundai-lg.html",
+      "chunk_id": "chunk_7725f7f94e4de40d9a10e0bd"
+    },
+    {
+      "claim_id": "claim_5edf4cf159e412f8678f0dcb",
+      "text": "The sector was already beleaguered by lower-than-expected demand for electric vehicles, tariffs on raw materials and the rapid phaseout of a federal tax credit for purchases of E.V.s, which have led companies to delay or scale back production.",
+      "url": "https://www.nytimes.com/2025/09/08/business/georgia-immigration-raid-ev-battery-plant-hyundai-lg.html",
+      "chunk_id": "chunk_7725f7f94e4de40d9a10e0bd"
+    },
+    {
+      "claim_id": "claim_17bce4c6687f7a897c4d7270",
+      "text": "the Biden administration’s looming a 25 per cent tariff on graphite (to take effect on January 1, 2026)",
+      "url": "https://www.oxfordenergy.org/wpcms/wp-content/uploads/2025/04/OEF-144.pdf",
+      "chunk_id": "chunk_255f1792ab1e2014f9abcf1e"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_2eebb4806759d445769fb031",
+      "claim_362d2eda7cf48a2610b1af26"
+    ],
+    [
+      "claim_362d2eda7cf48a2610b1af26",
+      "claim_7c8728274db16b1230c671e3"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 96,
+  "synthesis_input_claim_count": 56
+}

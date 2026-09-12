@@ -1,0 +1,64 @@
+{
+  "query_id": "q_company_1397e4a3a1b21417765afda3_targeted",
+  "query": "\"Global Powertrain Systems LLC\" automotive vehicles auto parts steel aluminum copper tariffs tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_41c16ac91af5a877c4949d08",
+    "claim_a8e153aa6bc4619d6c1bcef3",
+    "claim_bb6c67d7275f7246968718b7",
+    "claim_db1adf5efa3db1db4fb0e8b9",
+    "claim_f574ede16771b49fbb1a36ac"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_41c16ac91af5a877c4949d08",
+      "text": "The 25% tariff will be applied to imported passenger vehicles (sedans, SUVs, crossovers, minivans, cargo vans) and light trucks, as well as key automobile parts (engines, transmissions, powertrain parts, and electrical components), with processes to expand tariffs on additional parts “if necessary.”",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0969af449067d814a4142531"
+    },
+    {
+      "claim_id": "claim_a8e153aa6bc4619d6c1bcef3",
+      "text": "On February 18, President Trump also announced plans to impose a new tariff on automotive imports, tentatively scheduled to go into effect on April 2. The tariffs will “be in the neighborhood of 25%” and may include another tariff on semiconductors (used extensively in automotive production).",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_28807caf1809cf89455cbfb6"
+    },
+    {
+      "claim_id": "claim_bb6c67d7275f7246968718b7",
+      "text": "A new 25% tariff on imported auto parts officially took effect at 12:01 a.m. EDT on May 3.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_5c5c8c1128134c895d5d95df"
+    },
+    {
+      "claim_id": "claim_db1adf5efa3db1db4fb0e8b9",
+      "text": "Automobiles and Parts - 25% tariff on all imported automobiles and specific automobile parts.",
+      "url": "https://www.agc.org/tariff-resources-contractors",
+      "chunk_id": "chunk_5a4c210bca37e781ede6f0c7"
+    },
+    {
+      "claim_id": "claim_f574ede16771b49fbb1a36ac",
+      "text": "On March 26, President Trump signed a proclamation to impose a 25% tariff on all imported automobiles and certain automobile parts to address “a critical threat to U.S. national security,” according to a White House Fact Sheet.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0969af449067d814a4142531"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_41c16ac91af5a877c4949d08",
+      "claim_a8e153aa6bc4619d6c1bcef3"
+    ],
+    [
+      "claim_bb6c67d7275f7246968718b7",
+      "claim_f574ede16771b49fbb1a36ac"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 19,
+  "synthesis_input_claim_count": 19
+}

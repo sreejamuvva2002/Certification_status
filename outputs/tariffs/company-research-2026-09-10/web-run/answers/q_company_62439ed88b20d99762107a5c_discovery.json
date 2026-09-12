@@ -1,0 +1,55 @@
+{
+  "query_id": "q_company_62439ed88b20d99762107a5c_discovery",
+  "query": "\"GSC Steel Stamping LLC\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1138137355421846b497a5ed",
+    "claim_4ab78a73f69547b31754b865",
+    "claim_ac3ca59e097ec132d4eded80",
+    "claim_d9daa4242af5870d90e85734"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1138137355421846b497a5ed",
+      "text": "GSC specializes in the automotive parts supply business with Tier 1 supply relationships with some of North America's leading automotive OEM's.",
+      "url": "https://gscsteelstamping.com/capabilities",
+      "chunk_id": "chunk_55d6abecdeb52885dee0527b"
+    },
+    {
+      "claim_id": "claim_4ab78a73f69547b31754b865",
+      "text": "GSC Steel Stamping operates in Lake City, Georgia occupying 200,000 sq. ft.",
+      "url": "https://gscsteelstamping.com/capabilities",
+      "chunk_id": "chunk_55d6abecdeb52885dee0527b"
+    },
+    {
+      "claim_id": "claim_ac3ca59e097ec132d4eded80",
+      "text": "GSC Steel Stamping, LLC, is a minority and family-owned and operated automotive parts manufacturer providing Body in White frame assembly brackets to some of the world’s leading OEMs and tier one suppliers.",
+      "url": "https://gscsteelstamping.com/about",
+      "chunk_id": "chunk_19cf1450b8d5ccb411741587"
+    },
+    {
+      "claim_id": "claim_d9daa4242af5870d90e85734",
+      "text": "At GSC Steel Stamping, we are your trusted partner for top-quality metal stamping services in the Atlanta area, catering to industrial and automotive brands",
+      "url": "https://gscsteelstamping.com/",
+      "chunk_id": "chunk_e42de1a07f29a46463a8e5e7"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_4ab78a73f69547b31754b865",
+      "claim_d9daa4242af5870d90e85734"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 4,
+  "synthesis_input_claim_count": 4
+}

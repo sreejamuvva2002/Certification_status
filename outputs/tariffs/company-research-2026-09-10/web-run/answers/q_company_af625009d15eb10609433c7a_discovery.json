@@ -1,0 +1,41 @@
+{
+  "query_id": "q_company_af625009d15eb10609433c7a_discovery",
+  "query": "\"AVS\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2439a5025bf68fca14e6cb77",
+    "claim_a37cb37fc0cfb28ff2ce7693",
+    "claim_c5787d58208fe3e621f93c6e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2439a5025bf68fca14e6cb77",
+      "text": "Rates of duty on imported goods fall into three bands: zero percent, five percent, and 12 percent. Nearly 90 percent of goods benefit from a zero rate of duty.",
+      "url": "https://www.trade.gov/country-commercial-guides/georgia-import-tariffs",
+      "chunk_id": "chunk_6133a1c29343d4b0d01c46dd"
+    },
+    {
+      "claim_id": "claim_a37cb37fc0cfb28ff2ce7693",
+      "text": "An 18 percent VAT applies to most imported goods.",
+      "url": "https://www.trade.gov/country-commercial-guides/georgia-import-tariffs",
+      "chunk_id": "chunk_6133a1c29343d4b0d01c46dd"
+    },
+    {
+      "claim_id": "claim_c5787d58208fe3e621f93c6e",
+      "text": "For example, high-quality beef from the United States has a 12 percent tariff while beef from the EU faces no tariff due to the DCFTA.",
+      "url": "https://www.trade.gov/country-commercial-guides/georgia-import-tariffs",
+      "chunk_id": "chunk_6133a1c29343d4b0d01c46dd"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "insufficient_evidence"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

@@ -1,0 +1,64 @@
+{
+  "query_id": "q_353",
+  "query": "Section 232 steel aluminum country exemptions current status",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_092b925a21d34534e71515d3",
+    "claim_64ab9cf2398dfa4ef752372f",
+    "claim_f6663be5837aca1e2ffb6ec0",
+    "claim_9b7d09ce15f5fa70f92b8e30",
+    "claim_66a3aec4db97765416280987"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_092b925a21d34534e71515d3",
+      "text": "All General Approved Exclusions (GAEs) and country-level ‘alternative arrangements’ to the Section 232 Steel and Aluminum Duties (including exemptions, absolute quotas, and tariff-rate quotas) were revoked effective 12:01 AM Eastern Time on March 12, 2025.",
+      "url": "https://www.bis.gov/about-bis/bis-leadership-and-offices/SIES/section-232-investigations/section-232-steel-aluminum",
+      "chunk_id": "chunk_e316fb27edb77c8b04340b0b"
+    },
+    {
+      "claim_id": "claim_64ab9cf2398dfa4ef752372f",
+      "text": "Proclamations 10895 and 10896 of February 2025, among other actions, applied the Section 232 Steel and Aluminum Tariffs to additional steel and aluminum downstream (or “derivative”) products",
+      "url": "https://www.bis.gov/about-bis/bis-leadership-and-offices/SIES/section-232-investigations/section-232-steel-aluminum",
+      "chunk_id": "chunk_e316fb27edb77c8b04340b0b"
+    },
+    {
+      "claim_id": "claim_f6663be5837aca1e2ffb6ec0",
+      "text": "Pursuant to Presidential Proclamations 10895 and 10896 of February 10, 2025, Commerce is no longer processing Section 232 Exclusion Requests effective 11:59 PM ET on February 10, 2025",
+      "url": "https://www.bis.gov/about-bis/bis-leadership-and-offices/SIES/section-232-investigations/section-232-steel-aluminum",
+      "chunk_id": "chunk_e316fb27edb77c8b04340b0b"
+    },
+    {
+      "claim_id": "claim_9b7d09ce15f5fa70f92b8e30",
+      "text": "April 2, 2026 Presidential Proclamation Effective April 6, 2026, tariffs on steel and aluminum and their derivative products were modified as below. However, these changes are superceded by the above June 1, 2026 proclamation. - A flat 50 percent tariff will be imposed on the full value of articles made entirely or almost entirely of aluminum or steel.",
+      "url": "https://www.strtrade.com/trade-news-resources/tariff-actions-resources/section-232-tariffs-on-steel-aluminum",
+      "chunk_id": "chunk_f9587394d0a5bd3ae6eb08ce"
+    },
+    {
+      "claim_id": "claim_66a3aec4db97765416280987",
+      "text": "June 1, 2026 Presidential Proclamation The proclamation makes the following modifications to the April 2026 framework. - lowering from 25 percent to 15 percent the tariff rate on certain agricultural equipment (e.g., combines and harvesters) and certain heating, ventilation, and air conditioning systems and components that are predominantly for residential use",
+      "url": "https://www.strtrade.com/trade-news-resources/tariff-actions-resources/section-232-tariffs-on-steel-aluminum",
+      "chunk_id": "chunk_f9587394d0a5bd3ae6eb08ce"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_092b925a21d34534e71515d3",
+      "claim_64ab9cf2398dfa4ef752372f"
+    ],
+    [
+      "claim_9b7d09ce15f5fa70f92b8e30",
+      "claim_66a3aec4db97765416280987"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 20,
+  "synthesis_input_claim_count": 20
+}

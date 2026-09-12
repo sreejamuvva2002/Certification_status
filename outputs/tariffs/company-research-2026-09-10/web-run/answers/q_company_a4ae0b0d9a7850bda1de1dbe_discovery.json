@@ -1,0 +1,50 @@
+{
+  "query_id": "q_company_a4ae0b0d9a7850bda1de1dbe_discovery",
+  "query": "\"Mercedes-Benz USA LLC\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_d2e9793833322866eab3fe56",
+    "claim_deeabedf4e86dd8c5e9d38d6",
+    "claim_e9e39c5ff756dfb9f9df781d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_d2e9793833322866eab3fe56",
+      "text": "tariffs on steel could hurt companies like Mercedes-Benz, 25 percent tariff on imported. Sandy Springs, Georgia,",
+      "url": "https://www.ien.com/supply-chain/news/20998227/could-tariffs-hurt-auto-industry-in-the-south",
+      "chunk_id": "chunk_a6c3772cacdeeff01736a80e"
+    },
+    {
+      "claim_id": "claim_deeabedf4e86dd8c5e9d38d6",
+      "text": "Mercedes-Benz is well-positioned to supply the U.S. market with domestically produced vehicles, reducing exposure to import tariffs.",
+      "url": "https://www.mercedesbenzportland.com/how-tariffs-affect-auto-industry",
+      "chunk_id": "chunk_e0bfb2acf42b663da8a13670"
+    },
+    {
+      "claim_id": "claim_e9e39c5ff756dfb9f9df781d",
+      "text": "Mercedes-Benz is fortunate to have a well-established presence producing vehicles in the U.S. since 1997 with its plant in Tuscaloosa, Alabama.",
+      "url": "https://www.mercedesbenzofdenver.com/tariff-faqs.htm",
+      "chunk_id": "chunk_300b71cbd06795e8606df066"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_d2e9793833322866eab3fe56",
+      "claim_deeabedf4e86dd8c5e9d38d6"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 3,
+  "synthesis_input_claim_count": 3
+}

@@ -1,0 +1,127 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer fails to provide a definitive duty rate because the available evidence contains conflicting specific rates (e.g., 'free' base vs. '25 percent ad valorem') and explicitly states that no single fixed rate exists for all PCBs. The sources indicate that classification depends on construction, origin, and Chapter 99 exclusions, creating a gap where a universal answer cannot be synthesized from the conflicting data points.",
+  "confidence": "high",
+  "remaining_gap": "No single source provides a universally applicable duty rate for 'Bare printed circuit boards' without specifying conditions like country of origin (China vs. others), layer count, or specific Chapter 99 exclusion status. The evidence confirms that rates vary significantly based on these factors, preventing a definitive classification of the tariff.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_4acbb5c7108053e7aebacd35",
+      "supporting_excerpt": "The core question isn't just the board's unit price, but its total landed cost after duty, freight, brokerage, and compliance risk – this is the figure your purchasing team truly needs to compare. The first step in calculating PCB import duty from China is identifying exactly what you are importing. Bare PCBs: HTS 8534.00... The normal base duty for many bare PCBs under HTS 8534 is often listed as Free. That does not mean the shipment is tariff-free. If the product has China origin, Section 301 duties may still apply on top of the zero base.",
+      "relevance_explanation": "This passage explains that while the base duty for bare PCBs (HTS 8534) is often 'Free', this does not guarantee a tariff-free status due to potential Section 301 duties, directly addressing the complexity and lack of a single fixed rate.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_84bc9be6d73c190bc67ec4b6",
+      "supporting_excerpt": "FAQ: Is there one fixed PCB tariff China 2026 rate? No. The rate depends on product classification, country of origin, entry date, Chapter 99 treatment, and whether a valid exclusion applies. A bare PCB and a populated PCBA may not be reviewed the same way.",
+      "relevance_explanation": "This passage explicitly refutes the existence of a single fixed tariff rate, listing multiple variables (classification, origin, date, exclusions) that determine the duty, which explains why the original answer could not provide a specific number.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_e796b30cc75a7d4cad193944",
+      "supporting_excerpt": "| Country | Type | Standard Rate | Exemption | Section 301 | Total | \n|---|---|---|---|---|---|---| China | 2L and 4L FR4 PCBs | 25% | -25% | 12.5% | 12.5% | | | 6L+, Flex and Non-FR4 PCBs | 25% | 0% | 12.5% | 37.5% |",
+      "relevance_explanation": "This table provides conflicting specific rates (12.5% vs 37.5%) depending on the board type (layers/material), demonstrating that a single rate cannot be assigned to 'Bare printed circuit boards' generally.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_918169fcc34c5d75aa6420d6",
+      "supporting_excerpt": "Bare printed circuit boards have their own heading, 8534... All of these lines are duty-free, so the breakouts matter for statistical reporting rather than duty. The most important classification point is the boundary between a bare board and a populated assembly... Once components... are soldered onto the board... the populated board takes on the character of a part of a finished article...",
+      "relevance_explanation": "This passage clarifies that while the base HTS lines for bare boards are duty-free, the classification is critical to distinguish from assemblies, and the 'duty-free' status applies to the statistical breakouts, not necessarily the final landed cost when origin-based duties apply.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_157",
+  "query": "Bare printed circuit boards HTS 8534 import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 9,
+    "all_extracted_claims": 16,
+    "claims_presented_to_original_synthesis": 16,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 2,
+    "company_named_claims": 3,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_4acbb5c7108053e7aebacd35",
+    "passage_918169fcc34c5d75aa6420d6",
+    "passage_bd44c5ab1263c445d1a04768",
+    "passage_84bc9be6d73c190bc67ec4b6",
+    "passage_e796b30cc75a7d4cad193944",
+    "passage_6940790bcbd1a49aad3b8422",
+    "passage_5de0f220cddc54fecd20a1db",
+    "passage_1a934e003c26c668b30ad959"
+  ],
+  "candidate_document_ids": [
+    "document_1d5075d12505504842d6d613",
+    "document_255e5df411464974f9bd069b",
+    "document_6f192579e476b813aae38e54",
+    "document_825b725df4af4cdb47efe501",
+    "document_b826b531526ee3f6af685e75",
+    "document_ca6b0058c3235e5abbcd88d2",
+    "document_ed31f7ae16ebdd3bc39aabfd"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_4acbb5c7108053e7aebacd35",
+        "supporting_excerpt": "The core question isn't just the board's unit price, but its total landed cost after duty, freight, brokerage, and compliance risk – this is the figure your purchasing team truly needs to compare. The first step in calculating PCB import duty from China is identifying exactly what you are importing. Bare PCBs: HTS 8534.00... The normal base duty for many bare PCBs under HTS 8534 is often listed as Free. That does not mean the shipment is tariff-free. If the product has China origin, Section 301 duties may still apply on top of the zero base.",
+        "relevance_explanation": "This passage explains that while the base duty for bare PCBs (HTS 8534) is often 'Free', this does not guarantee a tariff-free status due to potential Section 301 duties, directly addressing the complexity and lack of a single fixed rate.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_84bc9be6d73c190bc67ec4b6",
+        "supporting_excerpt": "FAQ: Is there one fixed PCB tariff China 2026 rate? No. The rate depends on product classification, country of origin, entry date, Chapter 99 treatment, and whether a valid exclusion applies. A bare PCB and a populated PCBA may not be reviewed the same way.",
+        "relevance_explanation": "This passage explicitly refutes the existence of a single fixed tariff rate, listing multiple variables (classification, origin, date, exclusions) that determine the duty, which explains why the original answer could not provide a specific number.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_e796b30cc75a7d4cad193944",
+        "supporting_excerpt": "| Country | Type | Standard Rate | Exemption | Section 301 | Total | \n|---|---|---|---|---|---|---| China | 2L and 4L FR4 PCBs | 25% | -25% | 12.5% | 12.5% | | | 6L+, Flex and Non-FR4 PCBs | 25% | 0% | 12.5% | 37.5% |",
+        "relevance_explanation": "This table provides conflicting specific rates (12.5% vs 37.5%) depending on the board type (layers/material), demonstrating that a single rate cannot be assigned to 'Bare printed circuit boards' generally.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_918169fcc34c5d75aa6420d6",
+        "supporting_excerpt": "Bare printed circuit boards have their own heading, 8534... All of these lines are duty-free, so the breakouts matter for statistical reporting rather than duty. The most important classification point is the boundary between a bare board and a populated assembly... Once components... are soldered onto the board... the populated board takes on the character of a part of a finished article...",
+        "relevance_explanation": "This passage clarifies that while the base HTS lines for bare boards are duty-free, the classification is critical to distinguish from assemblies, and the 'duty-free' status applies to the statistical breakouts, not necessarily the final landed cost when origin-based duties apply.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

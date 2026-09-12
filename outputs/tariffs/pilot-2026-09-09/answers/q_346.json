@@ -1,0 +1,65 @@
+{
+  "query_id": "q_346",
+  "query": "Section 232 steel tariffs automotive supply chain effective dates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0b9a4947d610fabe8cb16e8a",
+    "claim_4fdff70940017a274acab875",
+    "claim_a47944e846150842f118fd1d",
+    "claim_c07265f9a89e128019908a17",
+    "claim_a7f7b6c66c7259c467822e1d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0b9a4947d610fabe8cb16e8a",
+      "text": "Section 232 Auto & Auto Parts Duties and Reciprocal Tariffs | Normal Duty + 25% (auto & auto parts only)",
+      "url": "https://www.internationaltradeinsights.com/2025/08/summary-of-tariff-requirements-updated-august-4-2025",
+      "chunk_id": "chunk_dfe63e6b84e55650a88a918c"
+    },
+    {
+      "claim_id": "claim_4fdff70940017a274acab875",
+      "text": "Tariffs were paused until March 4, 2025 and went into effect on March 4, 2025",
+      "url": "https://www.internationaltradeinsights.com/2025/08/summary-of-tariff-requirements-updated-august-4-2025",
+      "chunk_id": "chunk_dfe63e6b84e55650a88a918c"
+    },
+    {
+      "claim_id": "claim_a47944e846150842f118fd1d",
+      "text": "Tariffs were increased to 35% effective August 1, 2025",
+      "url": "https://www.internationaltradeinsights.com/2025/08/summary-of-tariff-requirements-updated-august-4-2025",
+      "chunk_id": "chunk_dfe63e6b84e55650a88a918c"
+    },
+    {
+      "claim_id": "claim_c07265f9a89e128019908a17",
+      "text": "On March 26, the President issued a Proclamation imposing a tariff of 25% on imports of automobiles effective April 3, with a tariff of 25% also on imports of auto parts effective May 3.",
+      "url": "https://www.cov.com/en/news-and-insights/insights/2025/07/status-of-section-232-actions-by-the-trump-administration",
+      "chunk_id": "chunk_e368c45d637ec4f20333b4d0"
+    },
+    {
+      "claim_id": "claim_a7f7b6c66c7259c467822e1d",
+      "text": "On March 26, the President issued a Proclamation imposing a tariff of 25% on imports of automobiles effective April 3, with a tariff of 25% also on imports of auto parts effective May 3.",
+      "url": "https://www.cov.com/en/news-and-insights/insights/2025/07/status-of-section-232-actions-by-the-trump-administration",
+      "chunk_id": "chunk_e368c45d637ec4f20333b4d0"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_0b9a4947d610fabe8cb16e8a",
+      "claim_a47944e846150842f118fd1d"
+    ],
+    [
+      "claim_c07265f9a89e128019908a17",
+      "claim_a7f7b6c66c7259c467822e1d"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 18,
+  "synthesis_input_claim_count": 18
+}

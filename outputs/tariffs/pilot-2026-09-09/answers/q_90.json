@@ -1,0 +1,65 @@
+{
+  "query_id": "q_90",
+  "query": "Section 232 steel aluminum duties tariff stacking rules",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_366394ff2c5771ca846a92a4",
+    "claim_6c6625ca2517f2a156606c81",
+    "claim_773494de891f3d49f8a19f7e",
+    "claim_9d5e7a328901372a1c7b8fa3",
+    "claim_eba8421aedea241f357a1dcb"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_366394ff2c5771ca846a92a4",
+      "text": "For Japan and the EU, the US limits total auto tariffs to a combined maximum of 15%, encompassing both the MFN rate and any Section 232 duties.",
+      "url": "https://globaltradealert.org/blog/US-Tariff-Stacking-Explained",
+      "chunk_id": "chunk_36ea6fdec1a96829106218cf"
+    },
+    {
+      "claim_id": "claim_6c6625ca2517f2a156606c81",
+      "text": "The tariffs do not stack with each other",
+      "url": "https://www.whitecase.com/insight-alert/united-states-modifies-steel-aluminum-and-copper-section-232-tariffs",
+      "chunk_id": "chunk_6fb97232aa3a27773af75b4c"
+    },
+    {
+      "claim_id": "claim_773494de891f3d49f8a19f7e",
+      "text": "Goods listed as articles or derivatives of more than one of these metals will only be subject to one of the tariff rates specified above (i.e., no tariff stacking).",
+      "url": "https://www.strtrade.com/trade-news-resources/tariff-actions-resources/section-232-tariffs-on-steel-aluminum",
+      "chunk_id": "chunk_f9587394d0a5bd3ae6eb08ce"
+    },
+    {
+      "claim_id": "claim_9d5e7a328901372a1c7b8fa3",
+      "text": "The 3 June and 31 July guidances state that Section 232 steel, aluminium and copper tariffs and other additional tariffs can now apply to the same product based on its content. Section 232 tariffs now only apply to the metal content of imported products.",
+      "url": "https://globaltradealert.org/blog/US-Tariff-Stacking-Explained",
+      "chunk_id": "chunk_36ea6fdec1a96829106218cf"
+    },
+    {
+      "claim_id": "claim_eba8421aedea241f357a1dcb",
+      "text": "When an imported product faces Section 232 tariffs on auto or autoparts, or Section 232 tariffs on MHDVs, MHDVPs, and buses, it will NOT be subject to Section 232 tariffs on aluminium, Section 232 tariffs on steel, Section 232 tariffs on copper, Section 232 tariffs on timber, or IEEPA tariffs on imports from Canada, Mexico, Brazil and India.",
+      "url": "https://globaltradealert.org/blog/US-Tariff-Stacking-Explained",
+      "chunk_id": "chunk_36ea6fdec1a96829106218cf"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_6c6625ca2517f2a156606c81",
+      "claim_9d5e7a328901372a1c7b8fa3"
+    ],
+    [
+      "claim_773494de891f3d49f8a19f7e",
+      "claim_9d5e7a328901372a1c7b8fa3"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

@@ -1,0 +1,79 @@
+{
+  "query_id": "q_company_1b71f48f9617b15b0e014979_targeted",
+  "query": "\"Volvo Cars USA\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_04528098c3a3e490e2c806be",
+    "claim_11d9bb7e8b2359d26cb7869d",
+    "claim_186a4ac92e9af7a08b3935a5",
+    "claim_49885cacd3d3242a31c3dc0e",
+    "claim_8b590ef321651687e9b58e74",
+    "claim_92fcb885a43df7baa98f0fa2",
+    "claim_f3d4c503bb146c3519405ec1"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_04528098c3a3e490e2c806be",
+      "text": "Volvo is removing the S90 sedan from its U.S. lineup due to the new 125 percent tariff on China-made vehicles.",
+      "url": "https://www.truecar.com/auto-tariffs-explained",
+      "chunk_id": "chunk_e5de37b25e04e36e86e3d5a7"
+    },
+    {
+      "claim_id": "claim_11d9bb7e8b2359d26cb7869d",
+      "text": "The company plans to focus more heavily on its top-selling SUVs, and is also considering expanding production at its South Carolina plant to offset future tariff impacts.",
+      "url": "https://www.truecar.com/auto-tariffs-explained",
+      "chunk_id": "chunk_e5de37b25e04e36e86e3d5a7"
+    },
+    {
+      "claim_id": "claim_186a4ac92e9af7a08b3935a5",
+      "text": "Volvo is evaluating plans to scale up production at its South Carolina facility to strengthen its U.S. manufacturing footprint.",
+      "url": "https://www.truecar.com/auto-tariffs-explained",
+      "chunk_id": "chunk_e5de37b25e04e36e86e3d5a7"
+    },
+    {
+      "claim_id": "claim_49885cacd3d3242a31c3dc0e",
+      "text": "Volvo's EV, the EX30, has begun production at its Belgian factory, to avoid the steeper Chinese tariffs, where the EX30 was previously being manufactured.",
+      "url": "https://www.truecar.com/auto-tariffs-explained",
+      "chunk_id": "chunk_e5de37b25e04e36e86e3d5a7"
+    },
+    {
+      "claim_id": "claim_8b590ef321651687e9b58e74",
+      "text": "he EX90, which, despite being assembled in the U.S., relies heavily on European components subject to import duties.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_e64fc3d84b6efb93481b3a67"
+    },
+    {
+      "claim_id": "claim_92fcb885a43df7baa98f0fa2",
+      "text": "Volvo is moving production of the XC60 SUV from Sweden to its plant in Ridgeville, South Carolina.",
+      "url": "https://www.truecar.com/auto-tariffs-explained",
+      "chunk_id": "chunk_e5de37b25e04e36e86e3d5a7"
+    },
+    {
+      "claim_id": "claim_f3d4c503bb146c3519405ec1",
+      "text": "Volvo Cars has announced plans to cut 3,000 jobs globally, primarily impacting office-based positions in Sweden, as part of an 18 billion Swedish kronor ($1.89 billion) cost-cutting initiative. The layoffs include eliminating 1,000 consultant roles and reducing investments worldwide. This move reflects the company’s effort to address increasing challenges in the global market, such as tariff pressures. Recent geopolitical tensions, including potential U.S.-EU tariffs, have further destabilized the sector, prompting Volvo to withdraw its financial guidance for 2025 and 2026.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_9f82b7462f46a2f16899791a"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_04528098c3a3e490e2c806be",
+      "claim_f3d4c503bb146c3519405ec1"
+    ],
+    [
+      "claim_11d9bb7e8b2359d26cb7869d",
+      "claim_186a4ac92e9af7a08b3935a5"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 49,
+  "synthesis_input_claim_count": 49
+}

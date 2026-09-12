@@ -1,0 +1,154 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence",
+    "extraction_problems"
+  ],
+  "cause_explanation": "The original answer likely claimed specific tariff exposure for Hyundai's Georgia supply chain, but the evidence only establishes general localization strategy and future plans without confirming current policy applicability or specific rates.",
+  "confidence": "high",
+  "remaining_gap": "facility_exposure_not_established",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_1756d84fd0507066ad7ad926",
+      "supporting_excerpt": "Hyundai Motor is exploring plans to expand annual production capacity at its new plant in Georgia to as much as 800,000 units. The tariff policies of the Donald Trump administration are seen as a key factor accelerating the push toward local production.",
+      "relevance_explanation": "Confirms Hyundai/Georgia/tariff link but describes plans rather than established exposure rates.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_1756d84fd0507066ad7ad926",
+      "supporting_excerpt": "Muñoz directly acknowledged that the Trump administration's tariffs are pulling forward the localization strategy. \"Tariffs are helping us accelerate our localization plans.",
+      "relevance_explanation": "Shows company acknowledgement of tariff impact on strategy, not specific supply chain exposure data.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_25f03370bee52db69491fd53",
+      "supporting_excerpt": "For instance, Ford and SK Innovation’s USD 5.6 billion Blue Oval City in Tennessee, Hyundai’s USD7.6 billion EV plant in Georgia, and Honda has invested around USD 19 billion in its US manufacturing operations, signaling a strong shift toward USA-based manufacturing.",
+      "relevance_explanation": "Establishes facility location but does not quantify tariff exposure or supplier impact.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_c812a481977cbc43166917d9",
+      "supporting_excerpt": "In response to these protectionist policies and tariffs, automakers and their suppliers are localizing their supply chains.",
+      "relevance_explanation": "General industry statement regarding tariffs and localization without specific Hyundai Georgia supply chain data.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_268",
+  "query": "site:hyundai.com Georgia tariffs localization suppliers",
+  "metrics": {
+    "retrieved_candidates": 7,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 5,
+    "all_extracted_claims": 248,
+    "claims_presented_to_original_synthesis": 50,
+    "synthesis_claims_omitted": 198,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 154,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "conflicting_or_outdated_evidence",
+    "extraction_problems"
+  ],
+  "candidate_passage_ids": [
+    "passage_423658d3c4356e9d1367fbc4",
+    "passage_25f03370bee52db69491fd53",
+    "passage_7c26098c9d10d849a7fdf1fc",
+    "passage_1756d84fd0507066ad7ad926",
+    "passage_ccbf2104f5c06da76cb53764",
+    "passage_384ffcebe1a0647c2f17e5ee",
+    "passage_c812a481977cbc43166917d9",
+    "passage_d2f3b4046a0524cc384fb032"
+  ],
+  "candidate_document_ids": [
+    "document_3255c41857c6cbbfa7ee8d86",
+    "document_6a390a4669d2cce6a18ad65c",
+    "document_b80d6effd2270cb1977ef869",
+    "document_e32f90b997a6ece25ea1c921",
+    "document_f9476e65504a25d75d94b0cf",
+    "document_fa95f5701bd94c20dfa77c42"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_1756d84fd0507066ad7ad926",
+      "supporting_excerpt": "Hyundai Motor is exploring plans to expand annual production capacity at its new plant in Georgia to as much as 800,000 units. The tariff policies of the Donald Trump administration are seen as a key factor accelerating the push toward local production.",
+      "relevance_explanation": "Confirms Hyundai/Georgia/tariff link but describes plans rather than established exposure rates.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_cf9a6e79f51b140cf8f0410f",
+      "query_id": "q_268",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f",
+      "document_id": "document_f9476e65504a25d75d94b0cf",
+      "source_url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2e4ad3ac57ef0fca29d597f638acd82ad63cd9486a8de6562a0d8461ac728fda.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_1756d84fd0507066ad7ad926",
+      "supporting_excerpt": "Muñoz directly acknowledged that the Trump administration's tariffs are pulling forward the localization strategy. \"Tariffs are helping us accelerate our localization plans.",
+      "relevance_explanation": "Shows company acknowledgement of tariff impact on strategy, not specific supply chain exposure data.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_6176fa8a9ee842949f705e52",
+      "query_id": "q_268",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f",
+      "document_id": "document_f9476e65504a25d75d94b0cf",
+      "source_url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2e4ad3ac57ef0fca29d597f638acd82ad63cd9486a8de6562a0d8461ac728fda.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_25f03370bee52db69491fd53",
+      "supporting_excerpt": "For instance, Ford and SK Innovation’s USD 5.6 billion Blue Oval City in Tennessee, Hyundai’s USD7.6 billion EV plant in Georgia, and Honda has invested around USD 19 billion in its US manufacturing operations, signaling a strong shift toward USA-based manufacturing.",
+      "relevance_explanation": "Establishes facility location but does not quantify tariff exposure or supplier impact.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_bd5c419ec0923377c594c008",
+      "query_id": "q_268",
+      "chunk_id": "chunk_8a0a33a45648716bd3add7e7",
+      "document_id": "document_b80d6effd2270cb1977ef869",
+      "source_url": "https://www.iebrain.com/mediacoverage/automotive-supply-chain-localization-transformative-step-amid-tariff-wars",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/132a80a89deab732c1d18d30194da10cdf50bea83fab5783b9e90a0483a65252.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_c812a481977cbc43166917d9",
+        "supporting_excerpt": "In response to these protectionist policies and tariffs, automakers and their suppliers are localizing their supply chains.",
+        "relevance_explanation": "General industry statement regarding tariffs and localization without specific Hyundai Georgia supply chain data.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

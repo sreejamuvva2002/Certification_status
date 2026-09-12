@@ -1,0 +1,56 @@
+{
+  "query_id": "q_507",
+  "query": "Southeast Georgia automotive tariffs plant expansion decisions",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_00f5841bc82f34dc3c700f94",
+    "claim_6251ed3a5afd13dc03335679",
+    "claim_d119bc054e534700289d9dc8",
+    "claim_f24284daaeb8dbf1eaf8bb5b"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_00f5841bc82f34dc3c700f94",
+      "text": "José Muñoz, president and CEO of Hyundai Motor, said in a CNBC interview on the 20th (local time) that the company is reviewing plans to increase capacity at Hyundai Motor Group Metaplant America (HMGMA) from the currently planned 500,000 units per year to between 700,000 and 800,000 units by 2028.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    },
+    {
+      "claim_id": "claim_6251ed3a5afd13dc03335679",
+      "text": "The 15% tariff applied to South Korean imports is increasing the economic incentive for local production expansion.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    },
+    {
+      "claim_id": "claim_d119bc054e534700289d9dc8",
+      "text": "Tariffs take effect this week, creating pricing instability across the auto industry.",
+      "url": "https://www.facebook.com/quartznews/posts/hyundai-is-weighing-a-massive-expansion-of-its-georgia-car-plant-citing-tariffs-/1419057173423430",
+      "chunk_id": "chunk_112ddc5502cd7488eb95d5d5"
+    },
+    {
+      "claim_id": "claim_f24284daaeb8dbf1eaf8bb5b",
+      "text": "Hyundai Motor is exploring plans to expand annual production capacity at its new plant in Georgia to as much as 800,000 units. The tariff policies of the Donald Trump administration are seen as a key factor accelerating the push toward local production.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_6251ed3a5afd13dc03335679",
+      "claim_d119bc054e534700289d9dc8"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

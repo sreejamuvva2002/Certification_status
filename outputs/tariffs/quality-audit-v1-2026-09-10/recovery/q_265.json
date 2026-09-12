@@ -1,0 +1,127 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer fails to establish a specific tariff exposure for a named company or facility regarding Georgia EV supply chains. The available evidence discusses general port traffic, macroeconomic impacts on the state of Georgia, and future infrastructure projects at Brunswick and Savannah ports. While it mentions Hyundai's Metaplant America in Ellabell, GA, it does not link this facility to specific tariff rates, HTS classifications, or direct import exposure resulting from the cited tariffs. The evidence remains at a national or sectoral level without isolating a company-specific effect as required.",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly connects a named Georgia EV manufacturer (e.g., Hyundai) to specific tariff rates, HTS codes, or direct import duty exposure for the supply chain in question. The evidence confirms port activity and general economic uncertainty but lacks the granular company-level applicability required.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_a08e178830a84fb811ece61f",
+      "supporting_excerpt": "Savannah rides a tariff-fueled surge while Brunswick's auto trade hits the brakes. The Georgia Ports Authority is doing what it does best: moving cargo, even as President Donald Trump's second term tariff storm rolls across the global trade horizon.",
+      "relevance_explanation": "Discusses general port traffic and tariff impacts on the region but does not name a specific company or facility with defined exposure.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_3a175e01d7e30fd2a9bc1522",
+      "supporting_excerpt": "Construction is now underway on a fourth berth at the Colonel's Island terminal, a $100m project that will further boost capacity for vehicles, heavy equipment and project cargo. That project is due for completion in 2027, according to GPA.",
+      "relevance_explanation": "Details infrastructure expansion at Brunswick but does not establish tariff exposure for any specific company or facility.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_future"
+    },
+    {
+      "passage_id": "passage_c812a481977cbc43166917d9",
+      "supporting_excerpt": "Hyundai Motor Group Metaplant America (HMGMA) is an electric vehicle (EV) production site operated by Hyundai and located in Ellabell, Bryan County, Georgia, United States. The $7.6 billion campus was built along Interstate 16 about 25 miles west of downtown Savannah.",
+      "relevance_explanation": "Identifies a specific EV facility in Georgia but provides no data on tariff rates, import duties, or supply chain exposure resulting from the tariffs.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_075d5cd6805c865f73e9c03a",
+      "supporting_excerpt": "In Brunswick, home to the nation's busiest auto and heavy equipment port, local officials are especially concerned. Mayor Cosby Johnson spoke with News4JAX about the potential consequences of these tariffs for the Port of Brunswick.",
+      "relevance_explanation": "Confirms concern regarding tariffs at a specific port but does not link this to a named company's specific tariff liability or exposure.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_265",
+  "query": "site:gaports.com automobile tariffs Brunswick Savannah",
+  "metrics": {
+    "retrieved_candidates": 2,
+    "retained_sources": 0,
+    "full_text_sources": 0,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 0,
+    "all_extracted_claims": 0,
+    "claims_presented_to_original_synthesis": 0,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 0,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance"
+  ],
+  "candidate_passage_ids": [
+    "passage_a08e178830a84fb811ece61f",
+    "passage_3a175e01d7e30fd2a9bc1522",
+    "passage_157559a0582b996a449e9703",
+    "passage_423f8d2d128993ddbc1db46f",
+    "passage_c812a481977cbc43166917d9",
+    "passage_075d5cd6805c865f73e9c03a",
+    "passage_42ce39f34b3d0ee4c2a42b3d",
+    "passage_bf44c792c4878d5665a74083"
+  ],
+  "candidate_document_ids": [
+    "document_0fe93b485392284e2758944b",
+    "document_3255c41857c6cbbfa7ee8d86",
+    "document_5552512902ec8f0d861ff683",
+    "document_559b3471aaf08c46cc157b1e",
+    "document_6f8bb2d6058cf4fa53fba6a7",
+    "document_8696f8516e64d5c22efdd5ee",
+    "document_9121c02d44063faf4fda1009",
+    "document_c87ec8c076e1a5b724e5d9a5"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_a08e178830a84fb811ece61f",
+        "supporting_excerpt": "Savannah rides a tariff-fueled surge while Brunswick's auto trade hits the brakes. The Georgia Ports Authority is doing what it does best: moving cargo, even as President Donald Trump's second term tariff storm rolls across the global trade horizon.",
+        "relevance_explanation": "Discusses general port traffic and tariff impacts on the region but does not name a specific company or facility with defined exposure.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_3a175e01d7e30fd2a9bc1522",
+        "supporting_excerpt": "Construction is now underway on a fourth berth at the Colonel's Island terminal, a $100m project that will further boost capacity for vehicles, heavy equipment and project cargo. That project is due for completion in 2027, according to GPA.",
+        "relevance_explanation": "Details infrastructure expansion at Brunswick but does not establish tariff exposure for any specific company or facility.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "source_reports_future"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_c812a481977cbc43166917d9",
+        "supporting_excerpt": "Hyundai Motor Group Metaplant America (HMGMA) is an electric vehicle (EV) production site operated by Hyundai and located in Ellabell, Bryan County, Georgia, United States. The $7.6 billion campus was built along Interstate 16 about 25 miles west of downtown Savannah.",
+        "relevance_explanation": "Identifies a specific EV facility in Georgia but provides no data on tariff rates, import duties, or supply chain exposure resulting from the tariffs.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_075d5cd6805c865f73e9c03a",
+        "supporting_excerpt": "In Brunswick, home to the nation's busiest auto and heavy equipment port, local officials are especially concerned. Mayor Cosby Johnson spoke with News4JAX about the potential consequences of these tariffs for the Port of Brunswick.",
+        "relevance_explanation": "Confirms concern regarding tariffs at a specific port but does not link this to a named company's specific tariff liability or exposure.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

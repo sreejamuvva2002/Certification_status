@@ -1,0 +1,94 @@
+{
+  "query_id": "q_company_b1eb8328a45bb51000d1ecaa_targeted",
+  "query": "\"IMMI\" LCD OLED displays PCBs printed circuit boards electronics tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0a7b81d2333509cfd5947a0b",
+    "claim_267629a9de3b667b8995f57b",
+    "claim_34ca73ab5c869fa086613a16",
+    "claim_58119e007f8d899fc4060ef0",
+    "claim_705350929c14882c59c9ec25",
+    "claim_8fffd2e877b8957e2149ab55",
+    "claim_95b59814be7d17a1efac0a53",
+    "claim_a09d600d2486496380b146dc",
+    "claim_b2049caa0ae84fb319fe4a17"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0a7b81d2333509cfd5947a0b",
+      "text": "| Country | Type | Standard Rate | Exemption | Section 301 | Total | \n|---|---|---|---|---|---|\n| China | 2L and 4L FR4 PCBs | 25% | -25% | 12.5% | 12.5% |",
+      "url": "https://www.sunshinepcbgroup.com/resources/tariff-rates",
+      "chunk_id": "chunk_a73efa901dcdf5106e26a4e0"
+    },
+    {
+      "claim_id": "claim_267629a9de3b667b8995f57b",
+      "text": "Since July 1, 2026, EU-origin electronics are the exception: they fall under the EU-US trade deal's 15% all-inclusive ceiling (with EU semiconductors explicitly capped at 15%) instead of the base surcharge.",
+      "url": "https://www.tariffstool.com/tariffs-on-electronics",
+      "chunk_id": "chunk_a48ed7c13923f4cfa3337200"
+    },
+    {
+      "claim_id": "claim_34ca73ab5c869fa086613a16",
+      "text": "Products from USMCA partners Canada and Mexico may qualify for duty-free treatment if they meet the rules of origin, bypassing the base surcharge entirely.",
+      "url": "https://www.tariffstool.com/tariffs-on-electronics",
+      "chunk_id": "chunk_a48ed7c13923f4cfa3337200"
+    },
+    {
+      "claim_id": "claim_58119e007f8d899fc4060ef0",
+      "text": "China remains by far the most affected country, supplying over $150 billion in electronics to the US annually and facing a 25% Section 301 surcharge on top of the 12.5% Section 301 forced-labor tariff",
+      "url": "https://www.tariffstool.com/tariffs-on-electronics",
+      "chunk_id": "chunk_a48ed7c13923f4cfa3337200"
+    },
+    {
+      "claim_id": "claim_705350929c14882c59c9ec25",
+      "text": "Vietnam and Malaysia, which saw massive manufacturing growth as companies relocated supply chains from China, benefited significantly from the drop away from the steep IEEPA rates of 46% and 24% they faced before the Supreme Court ruling",
+      "url": "https://www.tariffstool.com/tariffs-on-electronics",
+      "chunk_id": "chunk_a48ed7c13923f4cfa3337200"
+    },
+    {
+      "claim_id": "claim_8fffd2e877b8957e2149ab55",
+      "text": "Many categories lost their exclusions, including some printed circuit board assemblies, which means those [...] Check the country of origin and classification of imported products carefully.",
+      "url": "https://quantronic.net/navigating-2026-tariff-landscape",
+      "chunk_id": "chunk_491b6b5071a69d4748a797d2"
+    },
+    {
+      "claim_id": "claim_95b59814be7d17a1efac0a53",
+      "text": "The electronics sector surcharge covers computers, smartphones, televisions, semiconductors, printed circuit boards, and consumer electronics classified under HTS chapters 84-85.",
+      "url": "https://www.tariffstool.com/tariffs-on-electronics",
+      "chunk_id": "chunk_a48ed7c13923f4cfa3337200"
+    },
+    {
+      "claim_id": "claim_a09d600d2486496380b146dc",
+      "text": "| Malaysia | All PCB Types | 0% | 0% | 10% | 10% |",
+      "url": "https://www.sunshinepcbgroup.com/resources/tariff-rates",
+      "chunk_id": "chunk_a73efa901dcdf5106e26a4e0"
+    },
+    {
+      "claim_id": "claim_b2049caa0ae84fb319fe4a17",
+      "text": "Tariffs differ between bare printed circuit boards and PCBAs, so any errors in classification could be costly.",
+      "url": "https://quantronic.net/navigating-2026-tariff-landscape",
+      "chunk_id": "chunk_491b6b5071a69d4748a797d2"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_0a7b81d2333509cfd5947a0b",
+      "claim_a09d600d2486496380b146dc"
+    ],
+    [
+      "claim_267629a9de3b667b8995f57b",
+      "claim_58119e007f8d899fc4060ef0"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

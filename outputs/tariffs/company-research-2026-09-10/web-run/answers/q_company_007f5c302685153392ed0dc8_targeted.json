@@ -1,0 +1,47 @@
+{
+  "query_id": "q_company_007f5c302685153392ed0dc8_targeted",
+  "query": "\"Linde + Wiemann\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_799ad86d46ac1973891020b9",
+    "claim_a89546d9597c41add8c67810",
+    "claim_ae8b4e99dde072c24ed0b618"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_799ad86d46ac1973891020b9",
+      "text": "> Seat cross member > Cross member",
+      "url": "https://www.linde-wiemann.com/en/company",
+      "chunk_id": "chunk_1700b739f7f091c2960a2e70"
+    },
+    {
+      "claim_id": "claim_a89546d9597c41add8c67810",
+      "text": "LINDE + WIEMANN US Inc. 1720 Knox Bridge Crossing Rd 30553, Lavonia / GA – US",
+      "url": "https://www.linde-wiemann.com/en/company",
+      "chunk_id": "chunk_1700b739f7f091c2960a2e70"
+    },
+    {
+      "claim_id": "claim_ae8b4e99dde072c24ed0b618",
+      "text": "LINDE + WIEMANN US Inc. 1720 Knox Bridge Crossing Rd 30553, Lavonia / GA – US",
+      "url": "https://www.linde-wiemann.com/en/company",
+      "chunk_id": "chunk_1700b739f7f091c2960a2e70"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_a89546d9597c41add8c67810",
+      "claim_ae8b4e99dde072c24ed0b618"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 3,
+  "synthesis_input_claim_count": 3
+}

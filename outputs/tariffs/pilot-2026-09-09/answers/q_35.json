@@ -1,0 +1,77 @@
+{
+  "query_id": "q_35",
+  "query": "Hyundai Georgia battery sourcing tariff exposure",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0121e6ff87fc85fedb29ce21",
+    "claim_2a9b6a142f4856f27c7b50b2",
+    "claim_48cec9561885e6850e85acc5",
+    "claim_8b9af0159a5ac6f24293333c",
+    "claim_b71c4cae4dd2491f2ff66da8",
+    "claim_ecdb323af65c84a1823af870",
+    "claim_f66ad60c85fa3056b1fb43e2"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0121e6ff87fc85fedb29ce21",
+      "text": "Georgia Hyundai Battery Plant",
+      "url": "https://www.reddit.com/r/Ioniq5/comments/1jse6v5/hyundai_avoiding_tariffs_with_agreement_with_the",
+      "chunk_id": "chunk_f664674de63ac854ec54cb6a"
+    },
+    {
+      "claim_id": "claim_2a9b6a142f4856f27c7b50b2",
+      "text": "It is expected to make steel for Hyundai's plants in Alabama and Georgia.",
+      "url": "https://www.bbc.com/news/articles/cgkmvdz144vo",
+      "chunk_id": "chunk_54430f4bc5f4bcb02247e7fb"
+    },
+    {
+      "claim_id": "claim_48cec9561885e6850e85acc5",
+      "text": "everything in their supply chain not sourced from USA is subject to a tariff.",
+      "url": "https://www.reddit.com/r/Ioniq5/comments/1jse6v5/hyundai_avoiding_tariffs_with_agreement_with_the",
+      "chunk_id": "chunk_f664674de63ac854ec54cb6a"
+    },
+    {
+      "claim_id": "claim_8b9af0159a5ac6f24293333c",
+      "text": "Last month, Trump ordered a 25% import tax on all steel and aluminium entering the US.",
+      "url": "https://www.bbc.com/news/articles/cgkmvdz144vo",
+      "chunk_id": "chunk_54430f4bc5f4bcb02247e7fb"
+    },
+    {
+      "claim_id": "claim_b71c4cae4dd2491f2ff66da8",
+      "text": "We visited Hyundai’s new EV Metaplant in Savannah, Georgia, just as 25% tariffs on imported vehicles were announced. Go inside the factory, hear from Kia COO Steve Center on U.S. production strategy, and get Hyundai CEO Jose Muñoz’s reaction to the latest trade news",
+      "url": "https://www.youtube.com/watch?v=u1XBETuQbVE",
+      "chunk_id": "chunk_49c3da0c84286d8dbf2304a5"
+    },
+    {
+      "claim_id": "claim_ecdb323af65c84a1823af870",
+      "text": "On Wednesday, Hyundai Motor is set to hold an opening ceremony for a new $7.59bn car and battery factory in Georgia.",
+      "url": "https://www.bbc.com/news/articles/cgkmvdz144vo",
+      "chunk_id": "chunk_54430f4bc5f4bcb02247e7fb"
+    },
+    {
+      "claim_id": "claim_f66ad60c85fa3056b1fb43e2",
+      "text": "Hyundai Motor Group metap Plant America or HM GMA for short when fully operational The Meta plant will produce 300,000 Hyundai Kia and Genesis EVs and hybrids each year with potential expansion to half a million units this isn't just a Hyundai Endeavor it's a full industrial ecosystem with five Hyundai Affiliates on site and at least 18 suppliers supporting operations across the region",
+      "url": "https://www.youtube.com/watch?v=u1XBETuQbVE",
+      "chunk_id": "chunk_49c3da0c84286d8dbf2304a5"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_0121e6ff87fc85fedb29ce21",
+      "claim_ecdb323af65c84a1823af870"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

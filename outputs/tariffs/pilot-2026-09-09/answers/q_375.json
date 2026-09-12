@@ -1,0 +1,79 @@
+{
+  "query_id": "q_375",
+  "query": "EV battery packs United States HTS classification tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_12fd7642c7633ffd9290ae43",
+    "claim_5769d193593803687a12d5da",
+    "claim_d9068c64183a6107a3077b81",
+    "claim_13300913193c6f509d0c06c2",
+    "claim_d0feba095dacf738da9f946a",
+    "claim_30c63ef11da3430bb246822d",
+    "claim_f9ad922cae2646eb38b27419"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_12fd7642c7633ffd9290ae43",
+      "text": "Batteries fall under HTS 8507 (electric accumulators). Lithium-ion is 8507.60, lead-acid is 8507.10, nickel-metal hydride is 8507.50.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_5769d193593803687a12d5da",
+      "text": "Lithium-ion batteries are classified under HTS 8507.60 with a base duty rate of 3.4%.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_d9068c64183a6107a3077b81",
+      "text": "Lithium-ion batteries are classified under HTS 8507.60 with a base duty rate of 3.4%. Section 301 tariffs on Chinese-origin lithium-ion batteries add 25%, bringing the effective rate to 28.4% for Chinese imports.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_13300913193c6f509d0c06c2",
+      "text": "Yes, EV battery cells and packs from China face Section 301 tariffs of 25% on top of the base 3.4% duty.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_d0feba095dacf738da9f946a",
+      "text": "imposing a 100% ad valorem duty on Chinese EV imports and a 25% tariff on lithium-ion battery cells and packs, alongside a 7.5% tariff on graphite and critical minerals.",
+      "url": "https://energy-solutions.co/supply-chain/risk-index/us-section-301-tariffs-on-chinese-evs-and-batteries",
+      "chunk_id": "chunk_79a2b7a8018bf65b6c7c7c92"
+    },
+    {
+      "claim_id": "claim_30c63ef11da3430bb246822d",
+      "text": "On May 14, the Biden administration announced the US will impose additional tariffs on $18 billion worth of goods from China, which includes a tariff increase from 25% to 100% on electric vehicles (EVs), and from 7.5% to 25% on lithium-ion (li-ion) batteries for electric vehicles in 2024.",
+      "url": "https://interactanalysis.com/insight/us-tariff-increases-what-is-the-impact-on-the-us-and-china-markets-for-electric-vehicles-and-li-ion-batteries",
+      "chunk_id": "chunk_fe816256453a5acd88ebe9b3"
+    },
+    {
+      "claim_id": "claim_f9ad922cae2646eb38b27419",
+      "text": "The tariffs imposed this time impact li-ion batteries for electric vehicles in 2024, with plans to impose tariffs on non-EV li-ion batteries in 2026.",
+      "url": "https://interactanalysis.com/insight/us-tariff-increases-what-is-the-impact-on-the-us-and-china-markets-for-electric-vehicles-and-li-ion-batteries",
+      "chunk_id": "chunk_fe816256453a5acd88ebe9b3"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_13300913193c6f509d0c06c2",
+      "claim_d0feba095dacf738da9f946a"
+    ],
+    [
+      "claim_30c63ef11da3430bb246822d",
+      "claim_f9ad922cae2646eb38b27419"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 13,
+  "synthesis_input_claim_count": 13
+}

@@ -1,0 +1,138 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original answer fails to address the specific query regarding 'automotive display module assembly' because the available evidence is dominated by rulings concerning LED display panels (HQ H332752) and general substantial transformation principles, rather than the specific automotive context. While passage_6758c7d658b6ac0d291a27f0 and passage_f445e06b808ab70d299ffc6e discuss LED panels and PCBA assembly in Taiwan, they do not explicitly confirm the 'automotive' classification or transformation status for display modules intended for vehicles. Passage_c6a4433e210c7b72f741ffcd mentions a ruling request by Tianma America regarding an LCD for ",
+  "confidence": "high",
+  "remaining_gap": "No cached passage explicitly confirms the substantial transformation status or tariff classification outcome for 'automotive display module assembly' as a distinct category, nor does it link the specific company (Tianma) to a final ruling result in the provided text. The evidence is limited to general principles and rulings on non-automotive LED panels.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_c6a4433e210c7b72f741ffcd",
+      "supporting_excerpt": "RE: Ruling request concerning the tariff classification of an LCD module for motor vehicle applications; Decoder IC... The subject module is intended for automotive use as a driver or passenger display screen. At importation, software on the subject PCB subassembly is described as capable of a",
+      "relevance_explanation": "This passage identifies the specific product type (LCD module for motor vehicle) and the company (Tianma America) relevant to the query, establishing the context for an automotive display ruling request.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_6758c7d658b6ac0d291a27f0",
+      "supporting_excerpt": "In ruling HQ H332752, CBP concluded that the country of origin of the devices is Taiwan because the assembly of the main PCBA in Taiwan results in a substantial transformation. Of particular importance, CBP stated, is that the PCBA enables the devices to distribute power to the LED lamps and therefore imparts the character of the devices.",
+      "relevance_explanation": "This passage provides the legal reasoning for substantial transformation regarding PCBA assembly, which is relevant to the 'assembly' aspect of the query, though it concerns LED display panels rather than explicitly automotive modules.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_f445e06b808ab70d299ffc6e",
+      "supporting_excerpt": "In the present matter, and in accordance with HQ H304910 and H218360, the assembly of the main PCBA in Taiwan results in a substantial transformation. We find that the SMT and curing processes incorporate a large number of discrete component parts onto a PCB, which is a sufficiently complex and meaningful operation so as to result in a substantial transformation of the parts making up the PCBA.",
+      "relevance_explanation": "This passage details the specific operations (SMT, curing) that constitute substantial transformation for electronic assemblies, supporting the analysis of whether automotive display assembly qualifies.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_47deed61a4957f053fa20c87",
+      "supporting_excerpt": "Does simple assembly in another country change the country of origin? Generally no. Per CBP rulings including N357277 on control arms, simple assembly operations do not result in substantial transformation. The character remains the country of origin of the inputs that gave the product its essential identity.",
+      "relevance_explanation": "This passage provides a counter-principle regarding 'simple assembly' versus substantial transformation, highlighting the need to distinguish between the two for automotive components.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_197",
+  "query": "Automotive display module assembly substantial transformation CBP",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 7,
+    "all_extracted_claims": 13,
+    "claims_presented_to_original_synthesis": 13,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 4,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_6758c7d658b6ac0d291a27f0",
+    "passage_46969ff15baff2f682df4428",
+    "passage_47deed61a4957f053fa20c87",
+    "passage_6545a271469b53971df829d0",
+    "passage_c6a4433e210c7b72f741ffcd",
+    "passage_1bd512e331aa1072829127b7",
+    "passage_9e5e9929e2f6369d58101cc1",
+    "passage_f445e06b808ab70d299ffc6e"
+  ],
+  "candidate_document_ids": [
+    "document_15b7e1408aa8729c4c3e9c46",
+    "document_21ffa6dc059431515e6e8957",
+    "document_cc2bcddd973804f344f90f3d",
+    "document_da8f7540a07fd9aedee638f9",
+    "document_db1c9c74d81772cd98df372f",
+    "document_fd542f99d171260ad8a21b12"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_6758c7d658b6ac0d291a27f0",
+      "supporting_excerpt": "In ruling HQ H332752, CBP concluded that the country of origin of the devices is Taiwan because the assembly of the main PCBA in Taiwan results in a substantial transformation. Of particular importance, CBP stated, is that the PCBA enables the devices to distribute power to the LED lamps and therefore imparts the character of the devices.",
+      "relevance_explanation": "This passage provides the legal reasoning for substantial transformation regarding PCBA assembly, which is relevant to the 'assembly' aspect of the query, though it concerns LED display panels rather than explicitly automotive modules.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_96a2f84c285d5b67d2ba3fd9",
+      "query_id": "q_197",
+      "chunk_id": "chunk_d01d8baac8f762753a6edc24",
+      "document_id": "document_21ffa6dc059431515e6e8957",
+      "source_url": "https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/june/cbp-rules-on-origin-of-led-display-panels",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/287bdb4761ed0fd58c7ca7175e6aaad49dbb490bfd08c5797f45f0f83891819e.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_c6a4433e210c7b72f741ffcd",
+        "supporting_excerpt": "RE: Ruling request concerning the tariff classification of an LCD module for motor vehicle applications; Decoder IC... The subject module is intended for automotive use as a driver or passenger display screen. At importation, software on the subject PCB subassembly is described as capable of a",
+        "relevance_explanation": "This passage identifies the specific product type (LCD module for motor vehicle) and the company (Tianma America) relevant to the query, establishing the context for an automotive display ruling request.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_f445e06b808ab70d299ffc6e",
+        "supporting_excerpt": "In the present matter, and in accordance with HQ H304910 and H218360, the assembly of the main PCBA in Taiwan results in a substantial transformation. We find that the SMT and curing processes incorporate a large number of discrete component parts onto a PCB, which is a sufficiently complex and meaningful operation so as to result in a substantial transformation of the parts making up the PCBA.",
+        "relevance_explanation": "This passage details the specific operations (SMT, curing) that constitute substantial transformation for electronic assemblies, supporting the analysis of whether automotive display assembly qualifies.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_47deed61a4957f053fa20c87",
+        "supporting_excerpt": "Does simple assembly in another country change the country of origin? Generally no. Per CBP rulings including N357277 on control arms, simple assembly operations do not result in substantial transformation. The character remains the country of origin of the inputs that gave the product its essential identity.",
+        "relevance_explanation": "This passage provides a counter-principle regarding 'simple assembly' versus substantial transformation, highlighting the need to distinguish between the two for automotive components.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

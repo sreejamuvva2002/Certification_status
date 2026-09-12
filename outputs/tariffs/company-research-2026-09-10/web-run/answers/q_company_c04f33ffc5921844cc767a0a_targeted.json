@@ -1,0 +1,76 @@
+{
+  "query_id": "q_company_c04f33ffc5921844cc767a0a_targeted",
+  "query": "\"Hyundai & LG Energy Solution (LGES)\" batteries critical minerals lithium graphite LCD OLED displays PCBs printed circuit boards electronics tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_066ccaa4eef774975ccf7b31",
+    "claim_2780a1b12c95f6f5c0436227",
+    "claim_424fcd0ac08e575f89327ffb",
+    "claim_4c713480cf30a01407224110",
+    "claim_84e3b2a2b2be0377c7742c44",
+    "claim_8e037f01fd0102d9c8766f54",
+    "claim_d6665660a4a8477254e64080"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_066ccaa4eef774975ccf7b31",
+      "text": "The company’s decision to increase investment in cylindrical EV battery production in North America comes from rising demand from EV makers for locally manufactured high-quality, high-performance batteries in an effort to satisfy the Inflation Reduction Act (IRA)’s EV tax credits.",
+      "url": "https://news.lgensol.com/company-news/press-releases/1613",
+      "chunk_id": "chunk_f579ebdd0b25402a62b4aae7"
+    },
+    {
+      "claim_id": "claim_2780a1b12c95f6f5c0436227",
+      "text": "In 2025, over 50 GWh of battery manufacturing capacity, belonging to companies such as LG Energy Solution (LGES) and Ford, was reallocated toward LFP production. This underscores efforts to onshore this technology, albeit largely targeting the battery energy storage market",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries",
+      "chunk_id": "chunk_76e8c905ab08ef8b9ad33123"
+    },
+    {
+      "claim_id": "claim_424fcd0ac08e575f89327ffb",
+      "text": "The lithium iron phosphate (LFP) batteries will be supplied from LGES's U.S. factory in Michigan, the person said on condition of anonymity because the details were not public.",
+      "url": "https://ca.finance.yahoo.com/news/exclusive-lg-energy-solution-tesla-013247205.html",
+      "chunk_id": "chunk_914d21b073ecdcfeb505a55e"
+    },
+    {
+      "claim_id": "claim_4c713480cf30a01407224110",
+      "text": "Korean manufacturers – including LG Energy Solution, Samsung SDI and SK On – expanded their production footprint across the US market.",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries",
+      "chunk_id": "chunk_2dbf2ec8aaf8840b0d9384fd"
+    },
+    {
+      "claim_id": "claim_84e3b2a2b2be0377c7742c44",
+      "text": "South Korea's LG Energy Solution (LGES) has signed a $4.3 billion deal to supply Tesla with energy storage system batteries, said a person familiar with the matter, as the U.S. company looks to reduce reliance on Chinese imports due to tariffs.",
+      "url": "https://ca.finance.yahoo.com/news/exclusive-lg-energy-solution-tesla-013247205.html",
+      "chunk_id": "chunk_914d21b073ecdcfeb505a55e"
+    },
+    {
+      "claim_id": "claim_8e037f01fd0102d9c8766f54",
+      "text": "Tesla Chief Financial Officer Vaibhav Taneja said in April that U.S. tariffs had an \"outsized\" impact on its energy business, since it sources LFP batteries from China.",
+      "url": "https://ca.finance.yahoo.com/news/exclusive-lg-energy-solution-tesla-013247205.html",
+      "chunk_id": "chunk_914d21b073ecdcfeb505a55e"
+    },
+    {
+      "claim_id": "claim_d6665660a4a8477254e64080",
+      "text": "Three South Korean cabinet-level officials met U.S. Commerce Secretary Howard Lutnick in Washington in a push to close a trade deal ahead of an August 1 deadline for 25% tariffs on U.S. imports from South Korea to kick in, Seoul said on Wednesday.",
+      "url": "https://ca.finance.yahoo.com/news/exclusive-lg-energy-solution-tesla-013247205.html",
+      "chunk_id": "chunk_914d21b073ecdcfeb505a55e"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_2780a1b12c95f6f5c0436227",
+      "claim_d6665660a4a8477254e64080"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 19,
+  "synthesis_input_claim_count": 19
+}

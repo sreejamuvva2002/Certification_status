@@ -1,0 +1,128 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer fails to provide a definitive import duty rate for EV charging cables because the available evidence contains conflicting temporal statuses and lacks specific company applicability. While one source (passage_fa7e3f4db648bafcec53e87c) provides a specific HTS classification (8544.42.9090) for a named entity (Yura Co. Ltd.), it does not state the resulting duty rate, only that eligibility under UKFTA is being requested. Other sources discuss tariffs on raw materials (steel, aluminum, copper) with rates of 25% or 'yet to be determined' (passage_0a0125fb4c8983c741bb701b), but these are general market impacts rather than a final",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly states the effective duty rate for EV charging cables under current law or confirms the applicability of the UKFTA exemption to the specific product in question without further investigation. The distinction between material tariffs and finished good classification remains unresolved for general applicability.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_fa7e3f4db648bafcec53e87c",
+      "supporting_excerpt": "The applicable subheading for the Liquid-Cooled High-Power EV Charging Cable Assembly, part number S8600-YR05X-A0-USG will be 8544.42.9090... In your request, you state that the manufacturing process for the cable occurs in Korea... eligibility under the United States-Korea Free Trade Agreement (UKFTA)",
+      "relevance_explanation": "This passage identifies a specific company (Yura Co. Ltd.) and product classification but does not state the final duty rate or confirm the exemption status, only that a ruling was requested.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_0a0125fb4c8983c741bb701b",
+      "supporting_excerpt": "The rate and effective date for tariffs on copper are yet to be determined by the Department of Commerce's investigation. The active 25% tariff on all steel and aluminum imports could raise costs for charger enclosures/housing, mounting systems, and conduit and cable trays.",
+      "relevance_explanation": "This passage highlights that key material tariffs affecting cables are either pending or general market impacts, not a specific duty rate for the finished cable product itself.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_bdafc0f997fa362a966fba56",
+      "supporting_excerpt": "The introduction of US tariffs in 2025 is poised to reshape the electric vehicle (EV) charging market... Tariffs on copper and steel may raise costs for EV charger cables and enclosures. ... Switchgear and transformer costs could increase due to tariffs on steel and aluminum.",
+      "relevance_explanation": "This source discusses future or projected impacts of tariffs on materials, not a confirmed duty rate for the specific product category of EV charging cables.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_future"
+    },
+    {
+      "passage_id": "passage_3ac6615b0e47463945c72561",
+      "supporting_excerpt": "The most common classification question: 8544.30 vs 8544.42. The dividing line is application, not construction... For custom cable assemblies with mixed applications, classify based on the principal use.",
+      "relevance_explanation": "This passage provides general classification guidance but does not confirm the specific duty rate for EV charging cables or their applicability to a specific company's import exposure.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_336",
+  "query": "EV charging cables United States import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 12,
+    "all_extracted_claims": 13,
+    "claims_presented_to_original_synthesis": 13,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 5,
+    "company_named_claims": 1,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_fa7e3f4db648bafcec53e87c",
+    "passage_4dbba3a93fd051de2b4e7dc7",
+    "passage_bdafc0f997fa362a966fba56",
+    "passage_3ac6615b0e47463945c72561",
+    "passage_d3445c42d26878f6d6152e37",
+    "passage_affc7f6be707be388ad379a0",
+    "passage_0a0125fb4c8983c741bb701b",
+    "passage_6734a1306658dabe75f5145b"
+  ],
+  "candidate_document_ids": [
+    "document_057d814b6d8668a8cc1a1297",
+    "document_33177711cd0ada5d5d0fe486",
+    "document_6f192579e476b813aae38e54",
+    "document_8d212fd8e3a67b475cb53764",
+    "document_c3e2af5128feb40eaa7e64dd",
+    "document_ca6b0058c3235e5abbcd88d2",
+    "document_efaaf65da5c6a0a40a8281df"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_fa7e3f4db648bafcec53e87c",
+        "supporting_excerpt": "The applicable subheading for the Liquid-Cooled High-Power EV Charging Cable Assembly, part number S8600-YR05X-A0-USG will be 8544.42.9090... In your request, you state that the manufacturing process for the cable occurs in Korea... eligibility under the United States-Korea Free Trade Agreement (UKFTA)",
+        "relevance_explanation": "This passage identifies a specific company (Yura Co. Ltd.) and product classification but does not state the final duty rate or confirm the exemption status, only that a ruling was requested.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_0a0125fb4c8983c741bb701b",
+        "supporting_excerpt": "The rate and effective date for tariffs on copper are yet to be determined by the Department of Commerce's investigation. The active 25% tariff on all steel and aluminum imports could raise costs for charger enclosures/housing, mounting systems, and conduit and cable trays.",
+        "relevance_explanation": "This passage highlights that key material tariffs affecting cables are either pending or general market impacts, not a specific duty rate for the finished cable product itself.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_bdafc0f997fa362a966fba56",
+        "supporting_excerpt": "The introduction of US tariffs in 2025 is poised to reshape the electric vehicle (EV) charging market... Tariffs on copper and steel may raise costs for EV charger cables and enclosures. ... Switchgear and transformer costs could increase due to tariffs on steel and aluminum.",
+        "relevance_explanation": "This source discusses future or projected impacts of tariffs on materials, not a confirmed duty rate for the specific product category of EV charging cables.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_future"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_3ac6615b0e47463945c72561",
+        "supporting_excerpt": "The most common classification question: 8544.30 vs 8544.42. The dividing line is application, not construction... For custom cable assemblies with mixed applications, classify based on the principal use.",
+        "relevance_explanation": "This passage provides general classification guidance but does not confirm the specific duty rate for EV charging cables or their applicability to a specific company's import exposure.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

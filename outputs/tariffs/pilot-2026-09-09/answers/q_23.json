@@ -1,0 +1,56 @@
+{
+  "query_id": "q_23",
+  "query": "Brunswick automotive imports tariffs port processing",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_12a6f0273c23858cd241f69f",
+    "claim_2dd1990bad82b1a0e1beabd5",
+    "claim_495d14d749adbffce9b3477e",
+    "claim_952fddeaa74608892238f651"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_12a6f0273c23858cd241f69f",
+      "text": "With the introduction of US tariffs in 2025, automakers paused shipments, closed factories and held volumes at ports, leading to a year-on-year reduction in import and export volumes at the Port of Brunswick in Georgia.",
+      "url": "https://www.automotivelogistics.media/vehicle-logistics/us-tariffs-dent-vehicle-growth-at-brunswick-in-2025/2653646",
+      "chunk_id": "chunk_5ba3c567fa64da09a9a642ab"
+    },
+    {
+      "claim_id": "claim_2dd1990bad82b1a0e1beabd5",
+      "text": "Despite all the uncertainty about how tariffs will affect auto imports to the Port of Brunswick, a new record is about to be set.",
+      "url": "https://thebrunswicknews.com/news/local_news/port-sets-new-record-with-auto-arrivals/article_0eae1bb7-83e0-413c-a99a-8504ea8543ea.html",
+      "chunk_id": "chunk_3a676fece36349d3762ce432"
+    },
+    {
+      "claim_id": "claim_495d14d749adbffce9b3477e",
+      "text": "The impact of US tariffs on vehicle imports had repercussions across vehicle ports in the US and abroad, with the initial 25% tariff effective from April causing carmakers to hold volumes at ports of export.",
+      "url": "https://www.automotivelogistics.media/vehicle-logistics/us-tariffs-dent-vehicle-growth-at-brunswick-in-2025/2653646",
+      "chunk_id": "chunk_5ba3c567fa64da09a9a642ab"
+    },
+    {
+      "claim_id": "claim_952fddeaa74608892238f651",
+      "text": "a 25% tariff on imports of automobiles and automobile parts. The tariff on vehicles begins April 3rd while the start date for the tariff on",
+      "url": "https://www.facebook.com/thebrunswicknews/posts/despite-all-the-uncertainty-about-how-tariffs-will-affect-auto-imports-to-the-po/1444991954298795",
+      "chunk_id": "chunk_e6f99024bac0ebfca4e1360f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_12a6f0273c23858cd241f69f",
+      "claim_2dd1990bad82b1a0e1beabd5"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

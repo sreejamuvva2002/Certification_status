@@ -1,0 +1,78 @@
+{
+  "query_id": "q_351",
+  "query": "Section 232 steel content valuation automotive parts",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_00f7b259f664f82bf10c0a1b",
+    "claim_3e071a8e805edd096e820e36",
+    "claim_3e7cd664ba77e5f59365b4b0",
+    "claim_40fa145ae8a14f9bfcc1f04c",
+    "claim_b56d0ebea19a852848024f58",
+    "claim_c7a4c35a58f16c74424ecc4a",
+    "claim_d28b50774415a3b2bc2f5949"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_00f7b259f664f82bf10c0a1b",
+      "text": "Updated 6/13/2025. Per Presidential Proclamations 9704 and 10895, HTS 7616.99.51.30, 7616.99.51.40, 7616.99.51.60, 7616.99.51.70 and 7616.99.51.90 are subject to the Section 232 duties.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/232-tariffs-aluminum-and-steel-faqs",
+      "chunk_id": "chunk_5a80266b0a024b1d4b5adce2"
+    },
+    {
+      "claim_id": "claim_3e071a8e805edd096e820e36",
+      "text": "Under the new order, all imports of steel and aluminum will be subject to a 25% tariff rate, effective March 12, 2025. This represents an increase from the previous 10% tariff on aluminum.",
+      "url": "https://www.autocare.org/government-relations/current-issues/tariffs-and-trade/section-232-steel-aluminum-tariffs",
+      "chunk_id": "chunk_6250ba27a4169be2459fe7ab"
+    },
+    {
+      "claim_id": "claim_3e7cd664ba77e5f59365b4b0",
+      "text": "CBP ties the metal-content value to the standard customs valuation law, 19 U.S.C. § 1401a, i.e. “the total price paid or payable” for the steel/aluminum input—“normally … based on the invoice” for that input (exclusive of international freight/insurance).",
+      "url": "https://globaltradealert.org/reports/Section-232-Metal-Content-Calculus-Explained",
+      "chunk_id": "chunk_6d4d3e6c7478f17b3732ef00"
+    },
+    {
+      "claim_id": "claim_40fa145ae8a14f9bfcc1f04c",
+      "text": "Tariffs of 25% to be imposed on additional steel derivatives and aluminum derivatives. The additional duty shall only apply to the declared value of the aluminum or stel content of the derivative article.",
+      "url": "https://www.autocare.org/government-relations/current-issues/tariffs-and-trade/section-232-steel-aluminum-tariffs",
+      "chunk_id": "chunk_6250ba27a4169be2459fe7ab"
+    },
+    {
+      "claim_id": "claim_b56d0ebea19a852848024f58",
+      "text": "A White House Proclamation lifted Section 232 to 50% for most countries; United Kingdom 25%. For Chapter 73 (steel) and Chapter 76 (aluminum) articles, the Proclamation confirms the ad-valorem duty “apply[ies] only to the steel content” or “only to the aluminum content.” Proclamation, 3 Jun 2025.",
+      "url": "https://globaltradealert.org/reports/Section-232-Metal-Content-Calculus-Explained",
+      "chunk_id": "chunk_6d4d3e6c7478f17b3732ef00"
+    },
+    {
+      "claim_id": "claim_c7a4c35a58f16c74424ecc4a",
+      "text": "If the value of the [metal] content … is unknown, the duty must be reported … based on the entire entered value” (one line). See CSMS 3 Jun 2025 for steel and aluminum: Aluminum • Steel.",
+      "url": "https://globaltradealert.org/reports/Section-232-Metal-Content-Calculus-Explained",
+      "chunk_id": "chunk_6d4d3e6c7478f17b3732ef00"
+    },
+    {
+      "claim_id": "claim_d28b50774415a3b2bc2f5949",
+      "text": "Aluminum “unknown” trap. If the country of smelt and/or cast is unknown, CBP instructs you to report “UN/unknown”—and “the 200 percent Section 232 duties … will be assessed on the entry summary line.” That default is intentional: traceability or pay 200%. See CSMS 13 Jun 2025.",
+      "url": "https://globaltradealert.org/reports/Section-232-Metal-Content-Calculus-Explained",
+      "chunk_id": "chunk_6d4d3e6c7478f17b3732ef00"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_3e071a8e805edd096e820e36",
+      "claim_b56d0ebea19a852848024f58"
+    ],
+    [
+      "claim_3e7cd664ba77e5f59365b4b0",
+      "claim_c7a4c35a58f16c74424ecc4a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 20,
+  "synthesis_input_claim_count": 20
+}

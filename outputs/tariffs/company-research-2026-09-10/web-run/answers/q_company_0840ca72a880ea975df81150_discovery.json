@@ -1,0 +1,35 @@
+{
+  "query_id": "q_company_0840ca72a880ea975df81150_discovery",
+  "query": "\"SHIROKI North America Inc\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1e0ac93fed2f5fcc1e012c5a",
+    "claim_a4eefa677f3b63a3d5bd285f"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1e0ac93fed2f5fcc1e012c5a",
+      "text": "SNA 60 C/# 388 (1 P/T) TN MADE IN JAPAN JU /29/2026 SNA 60 C/# 389 (1 P/T) TN MADE IN JAPAN JUL/29/2026",
+      "url": "https://www.importgenius.com/importers/shiroki-north-america-inc",
+      "chunk_id": "chunk_0ea92947d446d66d3d092f58"
+    },
+    {
+      "claim_id": "claim_a4eefa677f3b63a3d5bd285f",
+      "text": "SNA 60 C/# 416 (1 P/ ) GT MADE IN CHINA JUL/30/2026 SNA 60 C/# 17 (1 P/T) GT MADE IN CHINA JUL/30/2026",
+      "url": "https://www.importgenius.com/importers/shiroki-north-america-inc",
+      "chunk_id": "chunk_0ea92947d446d66d3d092f58"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 2,
+  "synthesis_input_claim_count": 2
+}

@@ -1,0 +1,154 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original query seeks specific tariff costs for EV manufacturing in Savannah, Georgia. The available evidence contains conflicting signals regarding the status of tariffs (proposed vs. effective) and lacks explicit named-company cost calculations for Hyundai or SK On. While some sources mention a '25% proposed tariff' or a 'sticker' listing parts origins, they do not establish a verified current duty rate applicable to the specific facility's output. Furthermore, metrics indicate 2 inaccessible sources and conflicting groups, meaning the full context of any exemption or specific cost calculation is missing. The evidence mixes historical 20",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly calculates or states the final tariff cost (in dollars or percentage) currently applicable to Hyundai's Savannah EV production or SK On's battery components, distinguishing between proposed threats and effective rates.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_233b2220b91a89405b268095",
+      "supporting_excerpt": "AnkerPak operates a 350,000 square foot facility in Columbus, Georgia — approximately 65 miles from the Port of Savannah... We provide contract packaging, kitting, light manufacturing, and third-party logistics services for brands that need to move production or finishing operations onshore without building their own facility.",
+      "relevance_explanation": "This passage discusses a different company (AnkerPak) in a different Georgia city (Columbus) and focuses on FTZ strategies rather than specific EV tariff costs for Hyundai or SK On.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_6022edbf823a0e9aa7a5fd8c",
+      "supporting_excerpt": "The regulatory environment for tariffs and trade zones changes frequently. This post reflects conditions as of early 2026 and is intended as educational context, not legal or customs compliance advice.",
+      "relevance_explanation": "This passage explicitly disclaims providing specific legal or cost advice for a company's situation, confirming the lack of verified tariff data for the query.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_423f8d2d128993ddbc1db46f",
+      "supporting_excerpt": "While the Trump administration argues that long-term gains in domestic investment will outweigh short-term disruption, the outcome will depend heavily on how global trade partners respond — and how quickly new deals, if any, are reached. For now, businesses across Georgia are bracing for potentially higher costs, tighter margins, and increased uncertainty.",
+      "relevance_explanation": "This passage discusses general economic uncertainty and potential higher costs for 'businesses across Georgia' but does not provide specific tariff rates or costs for Hyundai's EV manufacturing.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_65adfc43cb457fb27c4b315c",
+      "supporting_excerpt": "GPA chief Griff Lynch blamed the downturn squarely on auto-import tariffs. So while container cargo is coasting on a tariff tailwind, the roll-on/roll-off side is squarely in the headwind.",
+      "relevance_explanation": "This passage attributes volume drops to 'auto-import tariffs' but does not quantify the specific cost or rate applicable to Hyundai's Savannah plant operations.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_historical"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_277",
+  "query": "Savannah Georgia EV manufacturing tariff costs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 1,
+    "snippet_sources": 2,
+    "inaccessible_source_count": 2,
+    "selected_claims": 11,
+    "all_extracted_claims": 11,
+    "claims_presented_to_original_synthesis": 11,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 2,
+    "company_named_claims": 10,
+    "facility_label_claims": 1
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_233b2220b91a89405b268095",
+    "passage_6022edbf823a0e9aa7a5fd8c",
+    "passage_d8d1b2a3755e5083638a7e45",
+    "passage_423f8d2d128993ddbc1db46f",
+    "passage_27f580fa7b5aaa1df65e66a7",
+    "passage_65adfc43cb457fb27c4b315c",
+    "passage_a15081566626b23897a434f6",
+    "passage_356ddb80fd921c044fcd8a39"
+  ],
+  "candidate_document_ids": [
+    "document_0fe93b485392284e2758944b",
+    "document_3255c41857c6cbbfa7ee8d86",
+    "document_559b3471aaf08c46cc157b1e",
+    "document_716d5cd5b79e31399e3c087f",
+    "document_9121c02d44063faf4fda1009",
+    "document_b8e4116cf9a88cc5171794bc",
+    "document_ff1f71a176d8e81f15b6beeb"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_6022edbf823a0e9aa7a5fd8c",
+      "supporting_excerpt": "The regulatory environment for tariffs and trade zones changes frequently. This post reflects conditions as of early 2026 and is intended as educational context, not legal or customs compliance advice.",
+      "relevance_explanation": "This passage explicitly disclaims providing specific legal or cost advice for a company's situation, confirming the lack of verified tariff data for the query.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_01237a165e03528de944bc4c",
+      "query_id": "q_277",
+      "chunk_id": "chunk_7f8b88b1f85439d7d76b3a8f",
+      "document_id": "document_ff1f71a176d8e81f15b6beeb",
+      "source_url": "https://ankerpak.com/blog/foreign-trade-zones-bonded-warehousing",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/cb62b42b52f4d506fc8a60d37c9812d42da381c5b6cb9aaf8ad8d9cf8672efc9.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_423f8d2d128993ddbc1db46f",
+      "supporting_excerpt": "While the Trump administration argues that long-term gains in domestic investment will outweigh short-term disruption, the outcome will depend heavily on how global trade partners respond — and how quickly new deals, if any, are reached. For now, businesses across Georgia are bracing for potentially higher costs, tighter margins, and increased uncertainty.",
+      "relevance_explanation": "This passage discusses general economic uncertainty and potential higher costs for 'businesses across Georgia' but does not provide specific tariff rates or costs for Hyundai's EV manufacturing.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_historical",
+      "recovery_claim_id": "recovered_f8c7a36249ee4efaa5abd22f",
+      "query_id": "q_277",
+      "chunk_id": "chunk_abda6832d4708e9d28a77631",
+      "document_id": "document_559b3471aaf08c46cc157b1e",
+      "source_url": "https://www.fox5atlanta.com/news/trumps-tariff-plan-sparks-economic-uncertainty-georgia",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/ef33853c979fb661a9dcb2e3e85e09fe15a9e6319df730c244999701a6e5c05f.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_65adfc43cb457fb27c4b315c",
+      "supporting_excerpt": "GPA chief Griff Lynch blamed the downturn squarely on auto-import tariffs. So while container cargo is coasting on a tariff tailwind, the roll-on/roll-off side is squarely in the headwind.",
+      "relevance_explanation": "This passage attributes volume drops to 'auto-import tariffs' but does not quantify the specific cost or rate applicable to Hyundai's Savannah plant operations.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_historical",
+      "recovery_claim_id": "recovered_1c59df096d4cd974306f42a2",
+      "query_id": "q_277",
+      "chunk_id": "chunk_67b54c12332bc0e7881e3edb",
+      "document_id": "document_9121c02d44063faf4fda1009",
+      "source_url": "https://valdostadailytimes.com/2025/11/03/gary-wisenbaker-georgia-ports-weather-tariff-turbulence",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/ca9ceb838489392234a867eaf1ce8f7555ed7983d963cca40d280e5e9e9fd22a.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_233b2220b91a89405b268095",
+        "supporting_excerpt": "AnkerPak operates a 350,000 square foot facility in Columbus, Georgia — approximately 65 miles from the Port of Savannah... We provide contract packaging, kitting, light manufacturing, and third-party logistics services for brands that need to move production or finishing operations onshore without building their own facility.",
+        "relevance_explanation": "This passage discusses a different company (AnkerPak) in a different Georgia city (Columbus) and focuses on FTZ strategies rather than specific EV tariff costs for Hyundai or SK On.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

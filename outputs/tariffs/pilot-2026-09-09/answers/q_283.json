@@ -1,0 +1,61 @@
+{
+  "query_id": "q_283",
+  "query": "Port of Savannah EV supply chain tariff impact",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_096ce87a2edd87e2c78e328e",
+    "claim_30302d0f95731d21cd9fcefc",
+    "claim_2f2f8e81d57e16f4201a478a",
+    "claim_a4c4c082b80235eeb3cea69c",
+    "claim_70850a1f2b0f8684c6dd588a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_096ce87a2edd87e2c78e328e",
+      "text": "President Donald Trump’s implementation of a sweeping 25% tariff on imported EVs and components, particularly those sourced from China",
+      "url": "https://aspire.usu.edu/july-25-market-intelligence",
+      "chunk_id": "chunk_41593fec7fa6ad8a670aabc3"
+    },
+    {
+      "claim_id": "claim_30302d0f95731d21cd9fcefc",
+      "text": "Savannah: -13% in cargo volume, disrupting East Coast parts distribution.",
+      "url": "https://www.linkedin.com/posts/jcmillerjr_supplychain-tariffs-automotiveaftermarket-activity-7331644499019948033-WS6f",
+      "chunk_id": "chunk_20207f6767d220a4f86103f9"
+    },
+    {
+      "claim_id": "claim_2f2f8e81d57e16f4201a478a",
+      "text": "We manage the flow of products to your inland and final destinations through our transload centers located in key import gateways, including Redlands, Houston, Vancouver, Seattle, Burlington, Savannah, and Chesapeake.",
+      "url": "https://www.maersk.com/news/articles/2025/03/13/global-tariffs-impacting-supply-chains",
+      "chunk_id": "chunk_2f72661b94c9fd130f5aac09"
+    },
+    {
+      "claim_id": "claim_a4c4c082b80235eeb3cea69c",
+      "text": "Pending tariffs on Chinese imports and a 25% automobile levy are threatening global supply chains, with potential disruptions looming for the aftermarket automotive sector in Q3 2025.",
+      "url": "https://www.linkedin.com/posts/jcmillerjr_supplychain-tariffs-automotiveaftermarket-activity-7331644499019948033-WS6f",
+      "chunk_id": "chunk_20207f6767d220a4f86103f9"
+    },
+    {
+      "claim_id": "claim_70850a1f2b0f8684c6dd588a",
+      "text": "We can also quickly activate short- and long-term warehouse solutions in our existing facilities in Redlands, Seattle, Savannah, and Burlington to help you transition fulfillment of orders back to the U.S. and reduce tariff impact.",
+      "url": "https://www.maersk.com/news/articles/2025/03/13/global-tariffs-impacting-supply-chains",
+      "chunk_id": "chunk_2f72661b94c9fd130f5aac09"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_096ce87a2edd87e2c78e328e",
+      "claim_a4c4c082b80235eeb3cea69c"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 56,
+  "synthesis_input_claim_count": 50
+}

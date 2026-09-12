@@ -1,0 +1,54 @@
+{
+  "query_id": "q_471",
+  "query": "EV component temporary importation bond tariff treatment",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_01fef2e9fd005db14f9f1fb3",
+    "claim_7ac02a25ba607e4ff2e9f742",
+    "claim_d614cb9f85293c735bb7590a",
+    "claim_fb861afa60932db092282016"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_01fef2e9fd005db14f9f1fb3",
+      "text": "Only those listed under HTSUS subheadings 9813.00.05 through 9813.00.75 can be imported under TIB.",
+      "url": "https://www.customsmanager.info/post/us-tib-temporary-imports-under-bond",
+      "chunk_id": "chunk_74fef1e6e1291f0d97d11055"
+    },
+    {
+      "claim_id": "claim_7ac02a25ba607e4ff2e9f742",
+      "text": "A Temporary Importation under Bond (TIB) is a temporary importation of goods under bond, not imported for sale or sale on approval, without payment of duty with the intent to export or destroy the goods within a certain period of time not to exceed three years from the date of importation.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary-and-post-release-processes/temporary-importation-under-bond",
+      "chunk_id": "chunk_e12fcd8916abace2421c5faf"
+    },
+    {
+      "claim_id": "claim_d614cb9f85293c735bb7590a",
+      "text": "Failure to export or destroy the articles in accordance with the regulations within the appropriate period of time will result in liquidated damages.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary-and-post-release-processes/temporary-importation-under-bond",
+      "chunk_id": "chunk_e12fcd8916abace2421c5faf"
+    },
+    {
+      "claim_id": "claim_fb861afa60932db092282016",
+      "text": "Failing to export or destroy the goods on time? That triggers liquidated damages, typically equal to twice the estimated duties.",
+      "url": "https://www.customsmanager.info/post/us-tib-temporary-imports-under-bond",
+      "chunk_id": "chunk_74fef1e6e1291f0d97d11055"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_d614cb9f85293c735bb7590a",
+      "claim_fb861afa60932db092282016"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

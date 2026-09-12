@@ -1,0 +1,66 @@
+{
+  "query_id": "q_475",
+  "query": "Automotive suppliers tariff pass-through contract clauses",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_08ff06926ad3fb5a2c67d8ac",
+    "claim_e7bc12cb626624b0ec81e403",
+    "claim_6c42dea0c8cf670975e22bb9",
+    "claim_d7fe3e06a5f7841ec1ec9efa",
+    "claim_edf40f98e14b5f69ed32fbbb"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_08ff06926ad3fb5a2c67d8ac",
+      "text": "Price adjustment clauses are your safety valve when supplier costs spike. Without them, vendors may have no obligation to absorb tariff-related increases, or worse, they might pass them straight on to you with no warning.",
+      "url": "https://www.docusign.com/blog/tariffs-impact-8-important-clauses-to-check-for-in-your-supplier-agreements",
+      "chunk_id": "chunk_fe16263657a76e0c64689b42"
+    },
+    {
+      "claim_id": "claim_e7bc12cb626624b0ec81e403",
+      "text": "Nearly all suppliers say they plan pass through 100% of the tariff impact to the manufacturers.",
+      "url": "https://www.eatonvance.com/insights/articles/how-do-automotive-tariffs-impact-the-auto-corporate-sector.html",
+      "chunk_id": "chunk_657718adcb57fdcaf7806bca"
+    },
+    {
+      "claim_id": "claim_6c42dea0c8cf670975e22bb9",
+      "text": "Tier 1 suppliers are likely to achieve something close to this, but Tier 2 and Tier 3 suppliers will struggle and will need to share some of the pain.",
+      "url": "https://www.eatonvance.com/insights/articles/how-do-automotive-tariffs-impact-the-auto-corporate-sector.html",
+      "chunk_id": "chunk_657718adcb57fdcaf7806bca"
+    },
+    {
+      "claim_id": "claim_d7fe3e06a5f7841ec1ec9efa",
+      "text": "The original equipment manufacturers (OEM)s will likely be forced to support critical suppliers that may struggle with the tariff impact, as they did during the post-COVID-19 shutdown supply chain shocks.",
+      "url": "https://www.eatonvance.com/insights/articles/how-do-automotive-tariffs-impact-the-auto-corporate-sector.html",
+      "chunk_id": "chunk_657718adcb57fdcaf7806bca"
+    },
+    {
+      "claim_id": "claim_edf40f98e14b5f69ed32fbbb",
+      "text": "Understand your exposure: Quickly find agreements with suppliers in tariff-impacted areas and flag terms like price increases, pass-through costs, or price caps.",
+      "url": "https://www.docusign.com/blog/tariffs-impact-8-important-clauses-to-check-for-in-your-supplier-agreements",
+      "chunk_id": "chunk_fe16263657a76e0c64689b42"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_08ff06926ad3fb5a2c67d8ac",
+      "claim_e7bc12cb626624b0ec81e403"
+    ],
+    [
+      "claim_6c42dea0c8cf670975e22bb9",
+      "claim_d7fe3e06a5f7841ec1ec9efa"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

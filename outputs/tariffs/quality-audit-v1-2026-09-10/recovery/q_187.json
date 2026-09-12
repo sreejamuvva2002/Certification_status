@@ -1,0 +1,127 @@
+{
+  "primary_cause": "inaccessible_documents",
+  "contributing_causes": [],
+  "cause_explanation": "The original query sought specific import duty information for vehicle instrument clusters. The audit metrics indicate that while 8 candidates were retrieved, only 1 full-text source was available and 2 sources were inaccessible. The single retained snippet (claim_cd49575c9c5e4ba589c74b21) references a ruling but does not contain the duty rate or current applicability status. The accessible cached passages provide general classification rules, historical rulings for specific Hyundai items, or unrelated tariff discussions (Section 301, USMCA, EV batteries), none of which explicitly state the current import duty rate for the specific instrument",
+  "confidence": "high",
+  "remaining_gap": "No accessible source explicitly states the current applicable import duty rate for vehicle instrument clusters in the relevant context. The available text contains a historical ruling (2015) stating 'free' duty for a specific Hyundai assembly, and general classification guidance, but lacks a definitive, current rate applicable to the query's scope without inference.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_b2e7d58c8889fb7df55f28f0",
+      "supporting_excerpt": "The applicable subheading for the instrument cluster will be 9029.20.4080, Harmonized Tariff Schedule of the United States (HTSUS)... The rate of duty will be free. Duty rates are provided for your convenience and are subject to change.",
+      "relevance_explanation": "This passage provides a specific classification and duty rate ('free') for an instrument cluster but is explicitly dated 2015 and includes a disclaimer that rates are subject to change, making it historical rather than current evidence.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_4119550ea466124277566ac6",
+      "supporting_excerpt": "7-inch LCD Module for Automotive Dashboard... HTS 8524.11.90.00 covers this as other LCD module, designed for automotive vibration and temperature extremes.",
+      "relevance_explanation": "This passage discusses a specific LCD module for instrument clusters but classifies it under a different heading (8524) than the ruling in passage 1 (9029), creating ambiguity without providing a definitive duty rate or confirming current applicability.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_400cbeec210c58c7eafae6cd",
+      "supporting_excerpt": "9104.00.10 Instrument panel clocks for vehicles... not over $10 each Aircraft... 9104.00.25... opto-electronic display only, over $10 each Aircraft",
+      "relevance_explanation": "This text lists HTS codes for instrument panel clocks but does not provide the corresponding duty rates and appears to be a scope definition from a Section 301 investigation notice rather than a definitive tariff schedule.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_c4dac56efc41466efb4d9a01",
+      "supporting_excerpt": "Instrument clusters may classify under 9029 (revolution counters, speedometers) or 9031 (measuring instruments)... Parts classified under 8708 generally face duty rates between 2.5% and 4%, but components classified in other chapters may face higher or lower rates.",
+      "relevance_explanation": "This passage offers general classification possibilities for instrument clusters but explicitly states that duty rates vary widely depending on classification, failing to provide a specific rate for the queried item.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_187",
+  "query": "Vehicle instrument cluster displays import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 1,
+    "snippet_sources": 2,
+    "inaccessible_source_count": 2,
+    "selected_claims": 1,
+    "all_extracted_claims": 3,
+    "claims_presented_to_original_synthesis": 3,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "insufficient_evidence",
+      "snippet_only"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 1,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents"
+  ],
+  "candidate_passage_ids": [
+    "passage_b2e7d58c8889fb7df55f28f0",
+    "passage_4119550ea466124277566ac6",
+    "passage_02ee73e0ebe3ecdbaaf4c019",
+    "passage_400cbeec210c58c7eafae6cd",
+    "passage_84caefd7e49b98da044af43b",
+    "passage_5ca57e4331a3447154bc31bb",
+    "passage_e23f64228725cc7a4ee5f78e",
+    "passage_c4dac56efc41466efb4d9a01"
+  ],
+  "candidate_document_ids": [
+    "document_3307a517b66b81365c4da881",
+    "document_3f09b598fda8d162189bcc9c",
+    "document_6f192579e476b813aae38e54",
+    "document_7c67e6c4161964f9ec8f1d75",
+    "document_8037158b04394a8ccc0506de",
+    "document_bc72c6112a68baec615b0c32",
+    "document_ca6b0058c3235e5abbcd88d2",
+    "document_e25e5185a5ef17776467b1d1"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_b2e7d58c8889fb7df55f28f0",
+        "supporting_excerpt": "The applicable subheading for the instrument cluster will be 9029.20.4080, Harmonized Tariff Schedule of the United States (HTSUS)... The rate of duty will be free. Duty rates are provided for your convenience and are subject to change.",
+        "relevance_explanation": "This passage provides a specific classification and duty rate ('free') for an instrument cluster but is explicitly dated 2015 and includes a disclaimer that rates are subject to change, making it historical rather than current evidence.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_4119550ea466124277566ac6",
+        "supporting_excerpt": "7-inch LCD Module for Automotive Dashboard... HTS 8524.11.90.00 covers this as other LCD module, designed for automotive vibration and temperature extremes.",
+        "relevance_explanation": "This passage discusses a specific LCD module for instrument clusters but classifies it under a different heading (8524) than the ruling in passage 1 (9029), creating ambiguity without providing a definitive duty rate or confirming current applicability.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_400cbeec210c58c7eafae6cd",
+        "supporting_excerpt": "9104.00.10 Instrument panel clocks for vehicles... not over $10 each Aircraft... 9104.00.25... opto-electronic display only, over $10 each Aircraft",
+        "relevance_explanation": "This text lists HTS codes for instrument panel clocks but does not provide the corresponding duty rates and appears to be a scope definition from a Section 301 investigation notice rather than a definitive tariff schedule.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_c4dac56efc41466efb4d9a01",
+        "supporting_excerpt": "Instrument clusters may classify under 9029 (revolution counters, speedometers) or 9031 (measuring instruments)... Parts classified under 8708 generally face duty rates between 2.5% and 4%, but components classified in other chapters may face higher or lower rates.",
+        "relevance_explanation": "This passage offers general classification possibilities for instrument clusters but explicitly states that duty rates vary widely depending on classification, failing to provide a specific rate for the queried item.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

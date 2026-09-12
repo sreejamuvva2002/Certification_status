@@ -1,0 +1,67 @@
+{
+  "query_id": "q_380",
+  "query": "European EV battery imports United States duties",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_026c49a30f22ecabd38d0c74",
+    "claim_14edffb8608cb9113a37a2cf",
+    "claim_2c459b3e25009d9ef46099bb",
+    "claim_2ea38ec8c805ff08fab450b4",
+    "claim_5c055a95028b50fad3f515cc",
+    "claim_e1578b8044f522c2f4142bd1"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_026c49a30f22ecabd38d0c74",
+      "text": "We expect the Commission to place provisional duties on Chinese EV imports by early July.",
+      "url": "https://rhg.com/research/aint-no-duty-high-enough",
+      "chunk_id": "chunk_cc6764f103cfe5a69051dc16"
+    },
+    {
+      "claim_id": "claim_14edffb8608cb9113a37a2cf",
+      "text": "Other critical minerals will have the same tariffs, starting even earlier – this year.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_2c459b3e25009d9ef46099bb",
+      "text": "Tariffs on EVs under Section 301 will rise from 25% to 100% in 2024.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_2ea38ec8c805ff08fab450b4",
+      "text": "The EU chose to launch an anti-subsidy investigation into EVs rather than opt for an anti-dumping probe, which would have allowed it to impose higher tariffs.",
+      "url": "https://rhg.com/research/aint-no-duty-high-enough",
+      "chunk_id": "chunk_cc6764f103cfe5a69051dc16"
+    },
+    {
+      "claim_id": "claim_5c055a95028b50fad3f515cc",
+      "text": "Should it determine that China-based producers have benefited from subsidies in ways that harm EU-based manufacturers, it could place provisional countervailing duties on China-origin EV imports anytime from now until July 3, and final duties by early November.",
+      "url": "https://rhg.com/research/aint-no-duty-high-enough",
+      "chunk_id": "chunk_7ee04a4d2bb5186f16f71e6f"
+    },
+    {
+      "claim_id": "claim_e1578b8044f522c2f4142bd1",
+      "text": "Tariffs on lithium-ion EV batteries will rise from 7.5% to 25% in 2024",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_026c49a30f22ecabd38d0c74",
+      "claim_5c055a95028b50fad3f515cc"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 18,
+  "synthesis_input_claim_count": 18
+}

@@ -1,0 +1,65 @@
+{
+  "query_id": "q_company_0f47bea73e79482f99163b3b_targeted",
+  "query": "\"FREYR Battery\" automotive vehicles auto parts batteries critical minerals lithium graphite steel aluminum copper tariffs tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_36ede1f89319993398630d54",
+    "claim_d3dfae4e8e57a3305e4f9891",
+    "claim_a2c3aaae2873cb81f3997b2a",
+    "claim_67bbc5e173270b60fdedd8fc",
+    "claim_d5aa0068cce94daf76efb813"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_36ede1f89319993398630d54",
+      "text": "The tariff rate on natural graphite and permanent magnets will increase from zero to 25% in 2026.",
+      "url": "https://www.renewableenergyworld.com/energy-business/policy-and-regulation/white-house-increases-chinese-tariffs-for-critical-industries-like-solar-cells-batteries",
+      "chunk_id": "chunk_6857a3d6a3dab8164fb035f3"
+    },
+    {
+      "claim_id": "claim_d3dfae4e8e57a3305e4f9891",
+      "text": "· Natural graphite - Increase rate to 25% in 2026 · Other critical minerals - Increase rate to 25% in 2024",
+      "url": "https://www.linkedin.com/posts/richardlpearce_us-trade-representative-katherine-tai-to-activity-7196169910689906691-9Vjw",
+      "chunk_id": "chunk_6c0180f3826c704040cea816"
+    },
+    {
+      "claim_id": "claim_a2c3aaae2873cb81f3997b2a",
+      "text": "It also included the same rate for natural graphite, lithium-ion batteries for other applications and permanent magnets from 2026.",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/091324-us-to-go-ahead-with-modified-section-301-tariffs-on-chinese-steel-aluminum-critical-minerals",
+      "chunk_id": "chunk_99ad8b20f30d70075047c500"
+    },
+    {
+      "claim_id": "claim_67bbc5e173270b60fdedd8fc",
+      "text": "U.S. Trade Representative Katherine Tai to Take Further Action on China Tariffs After Releasing Statutory Four-Year Review It's a start, but as I have previously said and additional 2 years (2026) for OEMs is great for consumers and OEMs, but will do nothing to resolve the graphite shortage as this will stifle investment for another 2 years.",
+      "url": "https://www.linkedin.com/posts/richardlpearce_us-trade-representative-katherine-tai-to-activity-7196169910689906691-9Vjw",
+      "chunk_id": "chunk_6c0180f3826c704040cea816"
+    },
+    {
+      "claim_id": "claim_d5aa0068cce94daf76efb813",
+      "text": "Modifications proposed in May largely adopted, to be effective 2024-2026.",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/091324-us-to-go-ahead-with-modified-section-301-tariffs-on-chinese-steel-aluminum-critical-minerals",
+      "chunk_id": "chunk_99ad8b20f30d70075047c500"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_36ede1f89319993398630d54",
+      "claim_d3dfae4e8e57a3305e4f9891"
+    ],
+    [
+      "claim_a2c3aaae2873cb81f3997b2a",
+      "claim_67bbc5e173270b60fdedd8fc"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

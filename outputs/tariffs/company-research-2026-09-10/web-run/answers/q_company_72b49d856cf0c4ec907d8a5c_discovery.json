@@ -1,0 +1,54 @@
+{
+  "query_id": "q_company_72b49d856cf0c4ec907d8a5c_discovery",
+  "query": "\"F&P Georgia Manufacturing\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_147b9b23e761e63527f163b6",
+    "claim_195411518b56ae2f3fb011cf",
+    "claim_9b9065e4f60994ecd6787166",
+    "claim_d640a6059fff06e9e02bd599"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_147b9b23e761e63527f163b6",
+      "text": "The 25% auto tariff could pose a major threat to automobile titans like Hyundai and Kia that have production plants in the state",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_195411518b56ae2f3fb011cf",
+      "text": "A baseline 10% tariff on imports took effect last week, with broader and steeper tariffs set to begin Wednesday",
+      "url": "https://www.fox5atlanta.com/news/trumps-tariff-plan-sparks-economic-uncertainty-georgia",
+      "chunk_id": "chunk_abda6832d4708e9d28a77631"
+    },
+    {
+      "claim_id": "claim_9b9065e4f60994ecd6787166",
+      "text": "Imported vehicle parts will face a 25% tariff, potentially raising production costs at Georgia’s auto plants.",
+      "url": "https://www.fox5atlanta.com/news/trumps-tariff-plan-sparks-economic-uncertainty-georgia",
+      "chunk_id": "chunk_abda6832d4708e9d28a77631"
+    },
+    {
+      "claim_id": "claim_d640a6059fff06e9e02bd599",
+      "text": "President Donald Trump’s newly unveiled tariffs have sent shockwaves through the manufacturing, technology and agricultural sectors across the country — particularly in Georgia.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_147b9b23e761e63527f163b6",
+      "claim_9b9065e4f60994ecd6787166"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

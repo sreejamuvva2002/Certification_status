@@ -1,0 +1,34 @@
+{
+  "query_id": "q_company_2fc6813eb9f41f003204ef69_discovery",
+  "query": "\"PHA Body Systems LLC\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_252582e4074ced3cc8db8e62",
+    "claim_8d109e1b8d81cd5c8e3608a9"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_252582e4074ced3cc8db8e62",
+      "text": "PHA BODY SYSTEMS, PHA ALABAMA LLC",
+      "url": "https://importkey.com/i/pha-georgia-llc",
+      "chunk_id": "chunk_3a228a992625211b26d1c618"
+    },
+    {
+      "claim_id": "claim_8d109e1b8d81cd5c8e3608a9",
+      "text": "PHA Body Systems is engaged in the assembly, production and sales of complete door systems modules for manufacturing plants in the Alabama and Georgia areas.",
+      "url": "https://www.linkedin.com/company/pha-body-systems",
+      "chunk_id": "chunk_04aeef712265e52b1e44d40a"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "insufficient_evidence"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 2,
+  "synthesis_input_claim_count": 2
+}

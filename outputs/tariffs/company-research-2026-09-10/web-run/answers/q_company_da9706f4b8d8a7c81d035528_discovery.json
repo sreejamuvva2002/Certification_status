@@ -1,0 +1,66 @@
+{
+  "query_id": "q_company_da9706f4b8d8a7c81d035528_discovery",
+  "query": "\"Great Dane Trailers\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_12d89ed28ce2b4ab6b31cbc3",
+    "claim_6055f040b8f54d5d3ee31f39",
+    "claim_725ea5963d9d61e77f03895e",
+    "claim_9825d6bbc9b313892df7a635",
+    "claim_e0684d477b3aa1eadd6e2785"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_12d89ed28ce2b4ab6b31cbc3",
+      "text": "The group, which calls itself the American Trailer Manufacturers Coalition, comprises Great Dane, Stoughton Trailers and Wabash.",
+      "url": "https://www.ttnews.com/articles/trailer-makers-seek-duties",
+      "chunk_id": "chunk_3478d6e8107ba7d4457d1f46"
+    },
+    {
+      "claim_id": "claim_6055f040b8f54d5d3ee31f39",
+      "text": "U.S. customs officials are poised to levy new duties on semitruck trailers made in China and Mexico after a yearlong legal battle fought by Savannah’s Great Dane LLC",
+      "url": "https://americantrailercoalition.com/savannahs-great-dane-wins-chinese-tariff-battle",
+      "chunk_id": "chunk_66c86bdd09d1be0b150c3b4f"
+    },
+    {
+      "claim_id": "claim_725ea5963d9d61e77f03895e",
+      "text": "U.S. customs officials are poised to levy new duties on semitruck trailers made in China and Mexico after a yearlong legal battle fought by Savannah’s Great Dane LLC",
+      "url": "https://thecurrentga.org/2026/06/12/savannahs-great-dane-wins-chinese-tariff-battle",
+      "chunk_id": "chunk_3f3d71d6091dc6054fd23654"
+    },
+    {
+      "claim_id": "claim_9825d6bbc9b313892df7a635",
+      "text": "In a second decision, the Department of Commerce set additional duties on specific Chinese companies intended to offset the amount by which a product is sold at less than fair value — or “dumped” — in America.. Those antidumping duties were set at 130% in a preliminary decision that is expected to be finalized later this summer.",
+      "url": "https://thecurrentga.org/2026/06/12/savannahs-great-dane-wins-chinese-tariff-battle",
+      "chunk_id": "chunk_3f3d71d6091dc6054fd23654"
+    },
+    {
+      "claim_id": "claim_e0684d477b3aa1eadd6e2785",
+      "text": "Those antidumping duties were set at 130% in a preliminary decision that is expected to be finalized later this summer.",
+      "url": "https://americantrailercoalition.com/savannahs-great-dane-wins-chinese-tariff-battle",
+      "chunk_id": "chunk_66c86bdd09d1be0b150c3b4f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_6055f040b8f54d5d3ee31f39",
+      "claim_725ea5963d9d61e77f03895e"
+    ],
+    [
+      "claim_9825d6bbc9b313892df7a635",
+      "claim_e0684d477b3aa1eadd6e2785"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

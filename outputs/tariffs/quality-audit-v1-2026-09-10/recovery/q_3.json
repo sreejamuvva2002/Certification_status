@@ -1,0 +1,155 @@
+{
+  "primary_cause": "inaccessible_documents",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "cause_explanation": "Original retrieval metrics indicate zero full-text sources were available (full_text_sources: 0), forcing reliance on snippets that claimed tariff effectiveness while full text later revealed exemption status.",
+  "confidence": "high",
+  "remaining_gap": "current_policy_status_not_established",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_abd3930100d7c38894f17f71",
+      "supporting_excerpt": "Cars and auto parts will also face a 25% tariff, but for now, they remain exempt until April 2nd.",
+      "relevance_explanation": "Contradicts snippet claims of immediate effect by establishing conditional exemption status.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_389a3a06529d4f033e82ca0b",
+      "supporting_excerpt": "It remains unclear whether tariffs of this size are significant enough to stimulate domestic production...",
+      "relevance_explanation": "Highlights uncertainty in policy impact, supporting insufficiency of original definitive claims.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_4e332fd535be4ac7f14c0afa",
+      "supporting_excerpt": "Georgia is becoming a critical state for EV and battery manufacturing. Significant investment from automakers, battery suppliers, energy companies, and government funding is driving economic output in the state.",
+      "relevance_explanation": "Confirms facility presence but lacks specific tariff exposure data required for company applicability.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_16916e248e30fd616eef36d6",
+      "supporting_excerpt": "Automotive manufacturers and suppliers began to scale back electrified vehicle investments and product plans in 2025.",
+      "relevance_explanation": "Indicates investment scaling back due to various factors, not explicitly verified tariff law impact on Georgia facilities.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_3",
+  "query": "Southeast Georgia electric vehicle manufacturing tariff impacts",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 0,
+    "snippet_sources": 3,
+    "inaccessible_source_count": 3,
+    "selected_claims": 6,
+    "all_extracted_claims": 6,
+    "claims_presented_to_original_synthesis": 6,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_only"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 4,
+    "facility_label_claims": 1
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_16916e248e30fd616eef36d6",
+    "passage_4e332fd535be4ac7f14c0afa",
+    "passage_3b8e95e143a3494b6799f850",
+    "passage_eef24a8eef278ba9a4065b2b",
+    "passage_abd3930100d7c38894f17f71",
+    "passage_1a15f28f8dffac8438e0f9e2",
+    "passage_389a3a06529d4f033e82ca0b",
+    "passage_01c3304963ecfb57acb52baa"
+  ],
+  "candidate_document_ids": [
+    "document_150a243c03e39787abea51cf",
+    "document_1d06d263d127c447bcdc813b",
+    "document_2ae42d2d976038d72bd5e26d",
+    "document_2d2104a8618b92177b162069",
+    "document_35e37010a1a34d0ce7c9d267",
+    "document_6458c173cfeebfa1bd4c968e",
+    "document_8a8c8a8b2e0fff43bf50eea8"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_abd3930100d7c38894f17f71",
+      "supporting_excerpt": "Cars and auto parts will also face a 25% tariff, but for now, they remain exempt until April 2nd.",
+      "relevance_explanation": "Contradicts snippet claims of immediate effect by establishing conditional exemption status.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_35932a4a20a2d389a353a379",
+      "query_id": "q_3",
+      "chunk_id": "chunk_c8f20035c684173c70612022",
+      "document_id": "document_6458c173cfeebfa1bd4c968e",
+      "source_url": "https://www.construction.com/blog/how-will-tariffs-impact-the-construction-industry-in-2025",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/87593a29f39bda64d5fb9a786c4fa03c8741d2045a1bdd1ca8143d9736ae926f.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_4e332fd535be4ac7f14c0afa",
+      "supporting_excerpt": "Georgia is becoming a critical state for EV and battery manufacturing. Significant investment from automakers, battery suppliers, energy companies, and government funding is driving economic output in the state.",
+      "relevance_explanation": "Confirms facility presence but lacks specific tariff exposure data required for company applicability.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_0cabe2966fed8f476cc89842",
+      "query_id": "q_3",
+      "chunk_id": "chunk_cf1485dd06b0e14d0a37b0f0",
+      "document_id": "document_2ae42d2d976038d72bd5e26d",
+      "source_url": "https://electrificationcoalition.org/wp-content/uploads/2025/10/GA-Factsheet-20251229.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/cd145f2ef47dc396342d1fd3ce57d7e7b294608ca8f7b34260fb6eb798da1d67.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_16916e248e30fd616eef36d6",
+      "supporting_excerpt": "Automotive manufacturers and suppliers began to scale back electrified vehicle investments and product plans in 2025.",
+      "relevance_explanation": "Indicates investment scaling back due to various factors, not explicitly verified tariff law impact on Georgia facilities.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_68bfd0aac9664d57eafa049c",
+      "query_id": "q_3",
+      "chunk_id": "chunk_af40e2c31e82d94dc8ac5e78",
+      "document_id": "document_35e37010a1a34d0ce7c9d267",
+      "source_url": "https://www.congress.gov/crs_external_products/R/PDF/R48876/R48876.3.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/76902a8352e3b450188a5963bfc002b6cc2c2789dc0dc7ce1f8d0ec213df349d.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_389a3a06529d4f033e82ca0b",
+        "supporting_excerpt": "It remains unclear whether tariffs of this size are significant enough to stimulate domestic production...",
+        "relevance_explanation": "Highlights uncertainty in policy impact, supporting insufficiency of original definitive claims.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

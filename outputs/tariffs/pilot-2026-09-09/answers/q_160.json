@@ -1,0 +1,105 @@
+{
+  "query_id": "q_160",
+  "query": "Automotive PCB assemblies South Korea import duties",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_01418ca32f0d0a4c0ac3baf7",
+    "claim_02c31f868d0d1e19390a1848",
+    "claim_0e503ba1460bb78f43bb3e3d",
+    "claim_2708cb9a3703e8a250d16a0a",
+    "claim_370508071b9b2675ba4f87cb",
+    "claim_55583648b6163281060f27d6",
+    "claim_a88b7268c30bb8605c8d336d",
+    "claim_d288d4326ab2703e0d3f9423",
+    "claim_d7f9a95c735ce06f4c1cc464",
+    "claim_f322cd52b92257bbd9f3c36b"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_01418ca32f0d0a4c0ac3baf7",
+      "text": "U.S. imports of intermediate and capital goods from Korea remain subject to relatively high tariff rates, ranging from 12.5 to 50 percent, under Section 301 and Section 232 measures.",
+      "url": "https://keia.org/analysis/tariffs-on-korean-imports-implications-for-u-s-manufacturing-and-investment",
+      "chunk_id": "chunk_60c54951c92c5f349107c42e"
+    },
+    {
+      "claim_id": "claim_02c31f868d0d1e19390a1848",
+      "text": "U.S. imports of Korean products subject to Section 232 tariffs on the automotive sector are valued at USD 44.7 billion, accounting for approximately 36 percent of total U.S. imports from Korea.",
+      "url": "https://keia.org/analysis/tariffs-on-korean-imports-implications-for-u-s-manufacturing-and-investment",
+      "chunk_id": "chunk_60c54951c92c5f349107c42e"
+    },
+    {
+      "claim_id": "claim_0e503ba1460bb78f43bb3e3d",
+      "text": "For an automobile part that is the product of South Korea with a Column 1 duty rate less than 15 percent ad valorem, the combined Column 1 and additional Section 232 duty rate is 15 percent ad valorem. Use heading 9903.94.63.",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3fe2566",
+      "chunk_id": "chunk_ee8f29c9360ab12d6bea518f"
+    },
+    {
+      "claim_id": "claim_2708cb9a3703e8a250d16a0a",
+      "text": "Section 232 tariffs of 25% apply to certain auto parts, particularly those from countries without trade agreements.",
+      "url": "https://ustariffrates.com/import/auto-parts/from/south-korea",
+      "chunk_id": "chunk_6587d9012dfe19b122be6d83"
+    },
+    {
+      "claim_id": "claim_370508071b9b2675ba4f87cb",
+      "text": "The United States reduced its Section 232 sectoral tariffs on automobiles, auto parts, timber, lumber, and wood derivatives to 15 percent on an MFN-inclusive basis.",
+      "url": "https://keia.org/analysis/tariffs-on-korean-imports-implications-for-u-s-manufacturing-and-investment",
+      "chunk_id": "chunk_b22ad065b6ece36ad2ca075f"
+    },
+    {
+      "claim_id": "claim_55583648b6163281060f27d6",
+      "text": "Auto Parts imported from South Korea are subject to the standard MFN base duty rate, plus Section 232 steel screening, Section 232 aluminum screening tariff overlays.",
+      "url": "https://ustariffrates.com/import/auto-parts/from/south-korea",
+      "chunk_id": "chunk_6587d9012dfe19b122be6d83"
+    },
+    {
+      "claim_id": "claim_a88b7268c30bb8605c8d336d",
+      "text": "Auto Parts imported into the United States from South Korea must be classified under the correct HTS code before the US duty rate can be confirmed.",
+      "url": "https://ustariffrates.com/import/auto-parts/from/south-korea",
+      "chunk_id": "chunk_6587d9012dfe19b122be6d83"
+    },
+    {
+      "claim_id": "claim_d288d4326ab2703e0d3f9423",
+      "text": "For an automobile part that is the product of South Korea with a Column 1 duty rate greater than or equal to 15 percent ad valorem, the additional Section 232 duty rate is zero (0). Use heading 9903.94.64.",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3fe2566",
+      "chunk_id": "chunk_ee8f29c9360ab12d6bea518f"
+    },
+    {
+      "claim_id": "claim_d7f9a95c735ce06f4c1cc464",
+      "text": "Effective for automobiles and automobile parts entered for consumption or withdrawn from warehouse for consumption on or after 12:01 a.m. eastern time on November 1, 2025, the Section 232 tariff is based on the ad valorem Column 1 (either Column 1-General or Column 1-Special) tariff applicable to the products.",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3fe2566",
+      "chunk_id": "chunk_ee8f29c9360ab12d6bea518f"
+    },
+    {
+      "claim_id": "claim_f322cd52b92257bbd9f3c36b",
+      "text": "Auto parts duty rates vary widely from 0% to 6% depending on the component.",
+      "url": "https://ustariffrates.com/import/auto-parts/from/south-korea",
+      "chunk_id": "chunk_6587d9012dfe19b122be6d83"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_02c31f868d0d1e19390a1848",
+      "claim_2708cb9a3703e8a250d16a0a"
+    ],
+    [
+      "claim_370508071b9b2675ba4f87cb",
+      "claim_2708cb9a3703e8a250d16a0a"
+    ],
+    [
+      "claim_f322cd52b92257bbd9f3c36b",
+      "claim_02c31f868d0d1e19390a1848"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 23,
+  "synthesis_input_claim_count": 23
+}

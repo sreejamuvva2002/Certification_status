@@ -1,0 +1,50 @@
+{
+  "query_id": "q_company_df83f1d388dc1cf299de32ec_discovery",
+  "query": "\"YKK USA Inc.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1cb64644ef585cef87067885",
+    "claim_6578737ec136976789b81a60",
+    "claim_6875171032d052e404e5ec0b",
+    "claim_e3ad78f65729249b6446782f"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1cb64644ef585cef87067885",
+      "text": "YKK, the world's number 1 zipper manufacturer, is hit by a storm of US tariffs, affecting 40% of its global supply chain.",
+      "url": "https://en.moneyandbanking.co.th/2025/191208",
+      "chunk_id": "chunk_f2541ae43fefd1f012d1a8a6"
+    },
+    {
+      "claim_id": "claim_6578737ec136976789b81a60",
+      "text": "New facilities in Texas and Georgia focused on supplying jeans manufacturers, and ones in Chicago and Los Angeles targeted workwear and outerwear makers, respectively.",
+      "url": "https://adamtooze.substack.com/p/ykk-the-global-zipper-company-hit",
+      "chunk_id": "chunk_643cf850231d69dc14742f6b"
+    },
+    {
+      "claim_id": "claim_6875171032d052e404e5ec0b",
+      "text": "YKK has spent decades mastering the global supply chain. Now it has to weather the Trump-tariff era.",
+      "url": "https://adamtooze.substack.com/p/ykk-the-global-zipper-company-hit",
+      "chunk_id": "chunk_643cf850231d69dc14742f6b"
+    },
+    {
+      "claim_id": "claim_e3ad78f65729249b6446782f",
+      "text": "Georgia, will have 15 or 20 products made by YKK in Macon, Georgia. We work with every automobile manufacturer.",
+      "url": "https://www.bloomberg.com/features/2025-ykk-zippers-tariffs-era",
+      "chunk_id": "chunk_a339a04f3721937864014bbe"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 6,
+  "synthesis_input_claim_count": 6
+}

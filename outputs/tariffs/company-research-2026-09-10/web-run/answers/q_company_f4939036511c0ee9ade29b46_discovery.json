@@ -1,0 +1,40 @@
+{
+  "query_id": "q_company_f4939036511c0ee9ade29b46_discovery",
+  "query": "\"Panasonic Automotive Systems Co.\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_4cd233a6bc9adb0ae78004cf",
+    "claim_e8d7b0e37b6b3b22cdeb60b6"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_4cd233a6bc9adb0ae78004cf",
+      "text": "Japanese firms like Denso and Panasonic dominate advanced electrical components: - EV Batteries: 25% tariff adds $1,875 to a $7,500 battery pack.",
+      "url": "https://www.wcshipping.com/blog/auto-parts-tariff-effect-us-japan-supply-chains-2025",
+      "chunk_id": "chunk_dadb33feba1401857a7bcb82"
+    },
+    {
+      "claim_id": "claim_e8d7b0e37b6b3b22cdeb60b6",
+      "text": "The May 3, 2025 implementation of a 25% tariff on imported auto parts has triggered a seismic shift in global automotive supply chains.",
+      "url": "https://www.wcshipping.com/blog/auto-parts-tariff-effect-us-japan-supply-chains-2025",
+      "chunk_id": "chunk_dadb33feba1401857a7bcb82"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_4cd233a6bc9adb0ae78004cf",
+      "claim_e8d7b0e37b6b3b22cdeb60b6"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

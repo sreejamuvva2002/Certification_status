@@ -1,0 +1,153 @@
+{
+  "primary_cause": "missing_sources",
+  "contributing_causes": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "cause_explanation": "The original answer lacks a specific, named-company tariff exposure for copper busbars in EV battery packs. The available evidence consists of general export guides, historical customs rulings (2017-2021) on different battery types, and broad industry analyses that do not explicitly link the 50% tariff rate to a specific company's import activity or facility.",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly states that [Company Name] faces a specific tariff rate on copper busbars for EV battery packs in 2026.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_d3733c9c0256876d9243e527",
+      "supporting_excerpt": "Wellgo Battery exports custom copper-nickel busbars optimized for EV batteries and ESS modules, aligning with each destination's import classification to reduce customs risks.",
+      "relevance_explanation": "Identifies a specific company (Wellgo Battery) exporting the product but does not state the applicable tariff rate or duty exposure for 2026.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_c8c4aa7f130dba0d3c42316c",
+      "supporting_excerpt": "Copper (busbars, wiring) | 50% | Electrical interconnects, connectors | Yes – US and Chilean sources",
+      "relevance_explanation": "States a 50% tariff rate for copper busbars in the context of Chinese components but does not link this to a specific named company's import exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_04be3b37fb2a0e3f65fb7760",
+      "supporting_excerpt": "In a March 2026 CBP ruling, a rechargeable 3.7V, 1150mAh lithium-ion replacement battery for a noise-canceling headset was classified under HTSUS 8507.60.0090.",
+      "relevance_explanation": "Provides a specific classification example but for a different product (headset battery) and does not address copper busbars or company-specific exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_ac85d4ac6f341d092b90e7ea",
+      "supporting_excerpt": "Although the MFN rate is 3.4%, Chinese-origin lithium-ion batteries are subject to Section 301 List 4A tariffs that have increased significantly since 2024, and EV traction packs from China are subject to additional measures under the Inflation Reduction Act eligibility framework.",
+      "relevance_explanation": "Discusses tariff stacking for lithium-ion batteries but does not provide a specific rate or company exposure for copper busbars in EV battery packs.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_110",
+  "query": "Copper busbars EV battery packs tariff classification",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 2,
+    "all_extracted_claims": 21,
+    "claims_presented_to_original_synthesis": 21,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 11,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_d3733c9c0256876d9243e527",
+    "passage_c8c4aa7f130dba0d3c42316c",
+    "passage_d42063c7f6e7656ff88ec136",
+    "passage_677ae9121e4c3542c127beb7",
+    "passage_04be3b37fb2a0e3f65fb7760",
+    "passage_b61903f485c5dd7a391ca3fc",
+    "passage_ac85d4ac6f341d092b90e7ea",
+    "passage_c3d09debfecca660410cd0ce"
+  ],
+  "candidate_document_ids": [
+    "document_147239c45e4c492f0232dcd8",
+    "document_28a8d8ff9b5b446f64c24996",
+    "document_6080287f7a45bacc95fb830c",
+    "document_78d5f38ea11227317f5a972a",
+    "document_8185c31a82b4844e6b61f7ac",
+    "document_8695ef4b56febfbbc209df65",
+    "document_89094d2db2a6b11cc65c862c",
+    "document_aa63779c91edab79cc4cb329"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_c8c4aa7f130dba0d3c42316c",
+      "supporting_excerpt": "Copper (busbars, wiring) | 50% | Electrical interconnects, connectors | Yes – US and Chilean sources",
+      "relevance_explanation": "States a 50% tariff rate for copper busbars in the context of Chinese components but does not link this to a specific named company's import exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_abafe9d95ff91f70d1620359",
+      "query_id": "q_110",
+      "chunk_id": "chunk_d625c75d6d3fc6f5cf2f6a0a",
+      "document_id": "document_78d5f38ea11227317f5a972a",
+      "source_url": "https://www.totexmfg.com/battery-pack-tariffs-oem-2026",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e0ba04e755583e765ed98ccd9a41c4332f768101b26871fe34c5c660b1c84fdb.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_04be3b37fb2a0e3f65fb7760",
+      "supporting_excerpt": "In a March 2026 CBP ruling, a rechargeable 3.7V, 1150mAh lithium-ion replacement battery for a noise-canceling headset was classified under HTSUS 8507.60.0090.",
+      "relevance_explanation": "Provides a specific classification example but for a different product (headset battery) and does not address copper busbars or company-specific exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_bf256f637401f32b8f4ce6c7",
+      "query_id": "q_110",
+      "chunk_id": "chunk_3a908fea6ce0738050277e8a",
+      "document_id": "document_6080287f7a45bacc95fb830c",
+      "source_url": "https://www.large-battery.com/blog/us-tariff-on-chinese-lithium-ion-batteries",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/0837cbb87b5a42347550bcd978396b1239312f1de0e331a216c2d8c40ec2ca06.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_ac85d4ac6f341d092b90e7ea",
+      "supporting_excerpt": "Although the MFN rate is 3.4%, Chinese-origin lithium-ion batteries are subject to Section 301 List 4A tariffs that have increased significantly since 2024, and EV traction packs from China are subject to additional measures under the Inflation Reduction Act eligibility framework.",
+      "relevance_explanation": "Discusses tariff stacking for lithium-ion batteries but does not provide a specific rate or company exposure for copper busbars in EV battery packs.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_71c5ece8d5fe1237fa4b6035",
+      "query_id": "q_110",
+      "chunk_id": "chunk_ae1b517c3e8ec7067835bcd5",
+      "document_id": "document_8185c31a82b4844e6b61f7ac",
+      "source_url": "https://www.gaiadynamics.ai/hs-code-lookup/us/battery",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/0f94187a62a7e5ca57ba0df7fe0f2fe2c0685bc96af85093d19505c5858b0d7a.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_d3733c9c0256876d9243e527",
+        "supporting_excerpt": "Wellgo Battery exports custom copper-nickel busbars optimized for EV batteries and ESS modules, aligning with each destination's import classification to reduce customs risks.",
+        "relevance_explanation": "Identifies a specific company (Wellgo Battery) exporting the product but does not state the applicable tariff rate or duty exposure for 2026.",
+        "company_applicability": "not_established",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

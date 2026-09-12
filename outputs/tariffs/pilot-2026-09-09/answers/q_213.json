@@ -1,0 +1,73 @@
+{
+  "query_id": "q_213",
+  "query": "Customs country of origin substantial transformation EV components",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_09a379c12ef29e7791d39999",
+    "claim_12bd65580741739c2b5c8bb0",
+    "claim_33dfd0386a3942274caf8752",
+    "claim_399142074bc05e0764b3471a",
+    "claim_89f58f20b448567c896e565b",
+    "claim_910bc701665b60e8d7878ffa"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_09a379c12ef29e7791d39999",
+      "text": "It was determined that a substantial transformation occurred, and further, the critical components to making an electric vehicle – battery pack,",
+      "url": "https://rulings.cbp.gov/ruling/H155115",
+      "chunk_id": "chunk_b4d2299fcdcb08088610b040"
+    },
+    {
+      "claim_id": "claim_12bd65580741739c2b5c8bb0",
+      "text": "CBP has previously held that assembling battery cells into battery packs does not characterize substantial transformation of the battery cells because the fundamental character of the cells is not altered simply by being placed together in plastic casing. See HQ 563045 (Aug. 9, 2004) and HQ 734393 (Mar. 20, 1992).",
+      "url": "https://www.cmtradelaw.com/2023/01/customs-ruling-of-the-week-country-of-origin-of-battery-modules-and-battery-packs-and-the-applicability-of-certain-trade-remedies-under-section-301",
+      "chunk_id": "chunk_333c00475bdad86b3a516263"
+    },
+    {
+      "claim_id": "claim_33dfd0386a3942274caf8752",
+      "text": "HRL H118435 held that none of the imported parts could function as an electric vehicle on their own and needed to be assembled with other necessary U.S. components.",
+      "url": "https://rulings.cbp.gov/ruling/H155115",
+      "chunk_id": "chunk_b4d2299fcdcb08088610b040"
+    },
+    {
+      "claim_id": "claim_399142074bc05e0764b3471a",
+      "text": "the assembly of the glider and other components of various origins constitutes a substantial transformation and results in an article with a new name, character, and use, such that the country of origin for the TCE vehicle is the U.S. for purposes of U.S. Government procurement.",
+      "url": "https://rulings.cbp.gov/ruling/H155115",
+      "chunk_id": "chunk_b4d2299fcdcb08088610b040"
+    },
+    {
+      "claim_id": "claim_89f58f20b448567c896e565b",
+      "text": "The battery modules are manufactured into battery packs containing multiple battery modules. Both the battery modules and battery packs are assembled in Canada through multi-step assembly processes that include: applying adhesive, aligning, pressing, curing, plasma cleaning, laser ablation, wire bonding, material",
+      "url": "https://www.cmtradelaw.com/2023/01/customs-ruling-of-the-week-country-of-origin-of-battery-modules-and-battery-packs-and-the-applicability-of-certain-trade-remedies-under-section-301",
+      "chunk_id": "chunk_333c00475bdad86b3a516263"
+    },
+    {
+      "claim_id": "claim_910bc701665b60e8d7878ffa",
+      "text": "You claim that the U.S. assembly operations, along with the value of the U.S. origin contributions (labor and components), results in a substantial transformation of the imported parts, and warrants a determination that the U.S. is the country of origin for purposes of U.S. Government procurement.",
+      "url": "https://rulings.cbp.gov/ruling/H155115",
+      "chunk_id": "chunk_b4d2299fcdcb08088610b040"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_09a379c12ef29e7791d39999",
+      "claim_12bd65580741739c2b5c8bb0"
+    ],
+    [
+      "claim_399142074bc05e0764b3471a",
+      "claim_12bd65580741739c2b5c8bb0"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

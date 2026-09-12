@@ -1,0 +1,48 @@
+{
+  "query_id": "q_company_3d6e0348f06d2e4c8bef6828_discovery",
+  "query": "\"JAC Products Inc.\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_4080090779bb52562a95687b",
+    "claim_c7486dbd4143309df323cd90",
+    "claim_d92d94a9486fbed1fcdd586d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_4080090779bb52562a95687b",
+      "text": "JAC Products Inc. in Pontiac, Mich., makes exterior trim parts for General Motors.",
+      "url": "https://www.autonews.com/manufacturing/an-trump-tariffs-supplier-lawsuit-0417",
+      "chunk_id": "chunk_b44fde27e0cbb4329d9319c3"
+    },
+    {
+      "claim_id": "claim_c7486dbd4143309df323cd90",
+      "text": "JAC Products Inc. pay $55,932 worth of duties and cover the import costs going forward, according to the lawsuit filed in U.S. District Court",
+      "url": "https://prod.crainsdetroit.com/manufacturing/auto-supplier-lawsuit-over-tariffs-highlights-vulnerabilities",
+      "chunk_id": "chunk_81104bbacde4d9d3520d51c0"
+    },
+    {
+      "claim_id": "claim_d92d94a9486fbed1fcdd586d",
+      "text": "JAC Products, a Michigan supplier to GM, has sued Chinese Tier-2 supplier Pangeo for refusing to ship exterior trim parts unless JAC paid $56k in tariffs",
+      "url": "https://automotive-risk-digest.elmanalytics.com/p/automotive-supply-chain-risk-digest-428-20250418",
+      "chunk_id": "chunk_57fc5e66e263f300c5e6c65c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_c7486dbd4143309df323cd90",
+      "claim_d92d94a9486fbed1fcdd586d"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

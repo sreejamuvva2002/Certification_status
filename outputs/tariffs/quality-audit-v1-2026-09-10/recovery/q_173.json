@@ -1,0 +1,161 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "cause_explanation": "The original answer fails to establish specific company exposure for the Georgia EV supply-chain context, relying instead on rulings for other entities (Hitachi, Glamar Solar) or general guidance. Additionally, evidence contains conflicting HTS codes and outdated rulings relative to the 2026 query date.",
+  "confidence": "high",
+  "remaining_gap": "facility_exposure_not_established",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_9fde74d1e403654bc4efe28c",
+      "supporting_excerpt": "The Main PCB consists of a printed circuit board (PCB) that has capacitors, diodes, transistors, resistors, terminal strips, connectors, integrated circuits, and zener diodes mounted upon it.",
+      "relevance_explanation": "Specific to Hitachi IPM/PCB components, not general EV supply chain exposure.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_635f25e5eeaf3ea25a490116",
+      "supporting_excerpt": "There is no single universal HS Code for PCB assembly because classification depends on: - Level of assembly - Function of the board - End-use application",
+      "relevance_explanation": "Demonstrates ambiguity and lack of definitive classification for generic EV inverter PCB assemblies.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_aef36e3b0e4f5880053fa5ae",
+      "supporting_excerpt": "PCBs and PCBAs often fall under:\n- 8534 - Printed Circuits (bare boards)\n- 8537 - Control panels or assemblies\n- 8542 - Electronic integrated circuits",
+      "relevance_explanation": "Shows conflicting potential HTS codes for PCBs/PCBAs, complicating specific classification.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_f88b8d88c6f61948b386e08b",
+      "supporting_excerpt": "In your letter dated September 30, 2019 you requested a tariff classification ruling.",
+      "relevance_explanation": "Indicates source date (2019) is potentially outdated relative to the 2026 research query.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_173",
+  "query": "EV inverter PCB assemblies tariff classification",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 8,
+    "all_extracted_claims": 12,
+    "claims_presented_to_original_synthesis": 12,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 3,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_9fde74d1e403654bc4efe28c",
+    "passage_635f25e5eeaf3ea25a490116",
+    "passage_a42ff99609714b34e7b3f7e9",
+    "passage_460182e3e1bf1a7b7d91acb6",
+    "passage_aef36e3b0e4f5880053fa5ae",
+    "passage_f88b8d88c6f61948b386e08b",
+    "passage_c818556de2b998d7b288cf6f",
+    "passage_00664484849d55df1e33f648"
+  ],
+  "candidate_document_ids": [
+    "document_255e5df411464974f9bd069b",
+    "document_31136dc9b87c8ce846720df9",
+    "document_76e3dd7e96ebfcf483ebb218",
+    "document_825b725df4af4cdb47efe501",
+    "document_b826b531526ee3f6af685e75",
+    "document_d450897e691f4029d8009402",
+    "document_e2b13035fa0102975f68109b"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_9fde74d1e403654bc4efe28c",
+      "supporting_excerpt": "The Main PCB consists of a printed circuit board (PCB) that has capacitors, diodes, transistors, resistors, terminal strips, connectors, integrated circuits, and zener diodes mounted upon it.",
+      "relevance_explanation": "Specific to Hitachi IPM/PCB components, not general EV supply chain exposure.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_23017e132afa3b5f551e62a5",
+      "query_id": "q_173",
+      "chunk_id": "chunk_e2818398ee72ac02e1b2b551",
+      "document_id": "document_31136dc9b87c8ce846720df9",
+      "source_url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+N198199&highlight=8504.90.6500%2A",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/fc3e4cf7e610dad08365f9b22b35b90c0351afd89057b5a7acdedb252f51f2bc.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_635f25e5eeaf3ea25a490116",
+      "supporting_excerpt": "There is no single universal HS Code for PCB assembly because classification depends on: - Level of assembly - Function of the board - End-use application",
+      "relevance_explanation": "Demonstrates ambiguity and lack of definitive classification for generic EV inverter PCB assemblies.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_fcc5c11710058424b0d9fd5b",
+      "query_id": "q_173",
+      "chunk_id": "chunk_cd874bef00e480997e245a92",
+      "document_id": "document_b826b531526ee3f6af685e75",
+      "source_url": "https://www.anzer-usa.com/resources/hs-code-for-pcb-assembly-guide",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/5b33ae46f7da9ca4f46f43e7690efc10fd14dad9f684878a0de0a544b6b2df3d.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_aef36e3b0e4f5880053fa5ae",
+      "supporting_excerpt": "PCBs and PCBAs often fall under:\n- 8534 - Printed Circuits (bare boards)\n- 8537 - Control panels or assemblies\n- 8542 - Electronic integrated circuits",
+      "relevance_explanation": "Shows conflicting potential HTS codes for PCBs/PCBAs, complicating specific classification.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_539895bebdf26ce74fed2cee",
+      "query_id": "q_173",
+      "chunk_id": "chunk_b31ba67163064beae88b14b6",
+      "document_id": "document_e2b13035fa0102975f68109b",
+      "source_url": "https://www.teamsmt.com/blog/tariffs-on-electronics-whats-exempt-and-whats-not",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e52d55d55235783744018b6f3fa28a2a0ee10f559f07e7a5718120c608c43821.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_f88b8d88c6f61948b386e08b",
+      "supporting_excerpt": "In your letter dated September 30, 2019 you requested a tariff classification ruling.",
+      "relevance_explanation": "Indicates source date (2019) is potentially outdated relative to the 2026 research query.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_b6360f6ea2e90a3aa41ff669",
+      "query_id": "q_173",
+      "chunk_id": "chunk_ad9608b60950c988772e65c0",
+      "document_id": "document_d450897e691f4029d8009402",
+      "source_url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+N306512&highlight=NY+N306512",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/b8e88239b5f63c8ac10cee27a1048ea1309bffbdbf0cba6928dca18fdbe0087b.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

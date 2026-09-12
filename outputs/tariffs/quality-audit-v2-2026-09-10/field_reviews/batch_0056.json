@@ -1,0 +1,58 @@
+{
+  "status": "reviewed",
+  "reviews": {
+    "claim_4626f82799015d8cdab73352": {
+      "city": {
+        "decision": "clear",
+        "reason": "The field value 'Bartow County' is a county, not a city. The audit rules explicitly state that a county in a city is misclassified."
+      }
+    },
+    "claim_470bb6d5902764607b8694d8": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+        "original_model_decision": {
+          "decision": "retain",
+          "reason": "The source explicitly states 'Updated 6/13/2025' in the context of tariff applicability. This is an absolute date within the historical window relative to the audit date of September 10, 2026."
+        },
+        "review_method": "assistant_direct_cached_source_review"
+      }
+    },
+    "claim_47e5bddd33e1567b8bc71b67": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'European Union' is a supranational entity/government body, not a named business. The audit rules prohibit using agencies, governments, or countries as company values."
+      }
+    },
+    "claim_498c7f5254dfb2e1a07e1ab4": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'U.S. Trade Representative' refers to a government official/agency role, not a named business entity. The audit rules prohibit using agencies or officials as company values."
+      }
+    },
+    "claim_49bd4ac737873455028c4d19": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'CBP' is an acronym for a government agency (U.S. Customs and Border Protection), not a named business. The audit rules prohibit using agencies as company values."
+      }
+    },
+    "claim_4a3c70380b91a81d8a5f1845": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'U.S. Customs and Border Protection' is a government agency, not a named business. The audit rules prohibit using agencies as company values."
+      }
+    },
+    "claim_4bd3cb5ba8b4c1173e650aac": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'United States' is a country, not a named business. The audit rules prohibit using countries as company values."
+      }
+    },
+    "claim_4d4477c4bfcd08a3f2f134bb": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'United States Trade Representative' refers to a government agency/official, not a named business. The audit rules prohibit using agencies or officials as company values."
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "query_id": "q_37",
+  "query": "Hyundai Mobis Georgia EV components tariff exposure",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_01fdfde67c437e49efa4afe2",
+    "claim_aac25fdf945185e431d3df43",
+    "claim_dc6db724095c63bf7b73c7f5"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_01fdfde67c437e49efa4afe2",
+      "text": "The news came as President Donald Trump announced 25% tariffs on auto imports at the White House. Hyundai will be spared from those tariffs on its U.S.-made vehicles.",
+      "url": "https://tedmag.com/hyundai-shows-off-new-7-6b-ev-plant-amid-tariff-announcement",
+      "chunk_id": "chunk_eaceed9a54eac3cb41c33ff3"
+    },
+    {
+      "claim_id": "claim_aac25fdf945185e431d3df43",
+      "text": "Munoz said the company's revised financial guidance was based on the current 25% U.S. tariff rate, adding that its plan to produce 80% of the vehicles it sells in the United States locally is to reduce tariff exposure and strengthen growth, but would not come at the expense of South Korean output.",
+      "url": "https://finance.yahoo.com/news/hyundai-motor-ramp-us-output-084922286.html",
+      "chunk_id": "chunk_63adb9ff9befd17ac0ca80aa"
+    },
+    {
+      "claim_id": "claim_dc6db724095c63bf7b73c7f5",
+      "text": "This plant couldn’t come at a better time than now,” Munoz told reporters, “because definitely all the cars that we would produce here are going to be exempted from any tariffs.”",
+      "url": "https://tedmag.com/hyundai-shows-off-new-7-6b-ev-plant-amid-tariff-announcement",
+      "chunk_id": "chunk_eaceed9a54eac3cb41c33ff3"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established"
+  ],
+  "conflicts": [
+    [
+      "claim_01fdfde67c437e49efa4afe2",
+      "claim_dc6db724095c63bf7b73c7f5"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

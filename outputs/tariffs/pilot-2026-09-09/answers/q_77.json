@@ -1,0 +1,40 @@
+{
+  "query_id": "q_77",
+  "query": "Automotive seats seat frames import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2840f5c89a256d650e1e0b2d",
+    "claim_e14868b8e1115a9412a48647"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2840f5c89a256d650e1e0b2d",
+      "text": "Seats of a kind used for motor vehicles No. Free",
+      "url": "https://hts.usitc.gov/search?query=9401806021",
+      "chunk_id": "chunk_7a749ced534239e2b67c4661"
+    },
+    {
+      "claim_id": "claim_e14868b8e1115a9412a48647",
+      "text": "Other seats, with metal frames: 0.01",
+      "url": "https://hts.usitc.gov/search?query=9401806021",
+      "chunk_id": "chunk_7a749ced534239e2b67c4661"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_2840f5c89a256d650e1e0b2d",
+      "claim_e14868b8e1115a9412a48647"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

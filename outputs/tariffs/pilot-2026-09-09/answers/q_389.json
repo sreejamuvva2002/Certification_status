@@ -1,0 +1,68 @@
+{
+  "query_id": "q_389",
+  "query": "Battery electrolyte salts United States import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0b17c0b555dae4c53a6637d5",
+    "claim_29502698aa89a49a9e19335e",
+    "claim_4e57536b1d820665c4a580d5",
+    "claim_71c62964526a157c3a6a3ae9",
+    "claim_d4f3f38731b99c4f49614e71"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0b17c0b555dae4c53a6637d5",
+      "text": "Key battery materials such as lithium carbonate, lithium hydroxide, cobalt sulphate, cobalt metal, manganese dioxide, and natural graphite (both powder and flakes) are exempt from these new tariffs.",
+      "url": "https://christopherchico.substack.com/p/trumps-tariff-hike-what-it-means",
+      "chunk_id": "chunk_7d32d3808b15749ea6516c3c"
+    },
+    {
+      "claim_id": "claim_29502698aa89a49a9e19335e",
+      "text": "Key materials that are not exempt include nickel sulphate, manganese sulphate, phosphoric acid, iron phosphate and synthetic graphite, all of which will be included in the tariff regimes implemented on individual countries.",
+      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2674679-us-battery-costs-face-sharp-rise-on-tariffs",
+      "chunk_id": "chunk_46a20c1adc606ab7eab9ab54"
+    },
+    {
+      "claim_id": "claim_4e57536b1d820665c4a580d5",
+      "text": "A 93.5 percent tariff on Chinese graphite – the primary anode material in virtually all lithium-ion batteries – took effect, representing one of the most significant raw material tariffs in US manufacturing history.",
+      "url": "https://www.totexmfg.com/battery-pack-tariffs-oem-2026",
+      "chunk_id": "chunk_d625c75d6d3fc6f5cf2f6a0a"
+    },
+    {
+      "claim_id": "claim_71c62964526a157c3a6a3ae9",
+      "text": "With regard to synthetic graphite, another essential item for battery cell production, the US imported 115,778t in 2024, up substantially from 30,109t in 2020. Most of this came from China, at 74pc of the import market. This material now will be subject to 54pc tariffs, significantly increasing this cost for US battery cell producers.",
+      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2674679-us-battery-costs-face-sharp-rise-on-tariffs",
+      "chunk_id": "chunk_46a20c1adc606ab7eab9ab54"
+    },
+    {
+      "claim_id": "claim_d4f3f38731b99c4f49614e71",
+      "text": "However, several critical materials will be impacted, including nickel sulphate, manganese sulphate, phosphoric acid, iron phosphate, and synthetic graphite. These materials will fall under country-specific tariff regimes.",
+      "url": "https://christopherchico.substack.com/p/trumps-tariff-hike-what-it-means",
+      "chunk_id": "chunk_7d32d3808b15749ea6516c3c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0b17c0b555dae4c53a6637d5",
+      "claim_29502698aa89a49a9e19335e"
+    ],
+    [
+      "claim_0b17c0b555dae4c53a6637d5",
+      "claim_d4f3f38731b99c4f49614e71"
+    ],
+    [
+      "claim_29502698aa89a49a9e19335e",
+      "claim_d4f3f38731b99c4f49614e71"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 28,
+  "synthesis_input_claim_count": 28
+}

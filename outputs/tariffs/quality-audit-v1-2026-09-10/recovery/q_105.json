@@ -1,0 +1,141 @@
+{
+  "primary_cause": "extraction_problems",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer failed to extract specific evidence linking Section 232 tariffs to EV battery tray aluminum enclosures because the retrieval system did not surface or synthesize the explicit scope definitions found in the Federal Register passages. While the cached full-text contains direct statements that 'electric vehicle battery trays' are included in the scope of aluminum extrusion investigations, the original synthesis omitted these critical details. The metrics show 11 claims were extracted but none were presented to the synthesis regarding this specific product-tariff link, indicating a failure to map the generic 'aluminum extruder",
+  "confidence": "high",
+  "remaining_gap": "The specific applicability of Section 232 tariffs (or related AD/CVD duties on aluminum extrusions) to 'EV battery trays aluminum enclosures' remains unverified in the original answer. The gap is the lack of explicit confirmation that these specific components fall under the subject merchandise definitions for aluminum extrusions, despite the source text listing them explicitly.",
+  "recovery_assessment": "potentially_adequate_source_reported_support",
+  "evidence": [
+    {
+      "passage_id": "passage_1b41adb6463d2a12a18c0a7f",
+      "supporting_excerpt": "The types of products that meet the definition of subject merchandise include but are not limited to, the aluminum extrusion portions of vehicle roof rails and sun/moon roof framing... electric vehicle battery trays, heat sinks, signage or advertising poles, telescoping poles, or cleaning system components.",
+      "relevance_explanation": "This passage explicitly lists 'electric vehicle battery trays' as subject merchandise within the scope of aluminum extrusion investigations, directly addressing the product in question.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_6732fa2609b933405a996f9b",
+      "supporting_excerpt": "The types of products that meet the definition of subject merchandise include but are not limited to, the aluminum extrusion portions of vehicle roof rails and sun/moon roof framing... electric vehicle battery trays, heat sinks, signage or advertising poles, telescoping poles, or cleaning system components.",
+      "relevance_explanation": "This passage reiterates the inclusion of 'electric vehicle battery trays' in the scope of subject merchandise for aluminum extrusions, confirming the product classification.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_8f3a2329fc3907aa6ac08974",
+      "supporting_excerpt": "EV battery enclosures and structural components rely on aluminum extrusions and high-pressure die castings. The 10% tariff on aluminum imports has increased costs for extrusions by 8-12%, as domestic smelters cannot meet demand.",
+      "relevance_explanation": "This passage connects EV battery enclosures to aluminum extrusions and explicitly states the impact of a 10% tariff on these imports, providing context on cost implications.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_b91474aa1189d3c88248b42e",
+      "supporting_excerpt": "Other Trade Measures: Section 232 metal tariffs (25% on steel, 10% on aluminum) also indirectly affect the EMS industry supply chain. Aluminum enclosures or steel chassis parts face higher costs unless exempted (Canada and Mexico, for instance, are exempt under quotas).",
+      "relevance_explanation": "This passage confirms the existence of Section 232 tariffs on aluminum (10%) and notes that aluminum enclosures face higher costs, establishing the tariff mechanism relevant to the query.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_105",
+  "query": "EV battery trays aluminum enclosures Section 232 tariffs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 0,
+    "all_extracted_claims": 11,
+    "claims_presented_to_original_synthesis": 11,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 2,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "extraction_problems"
+  ],
+  "candidate_passage_ids": [
+    "passage_0a0125fb4c8983c741bb701b",
+    "passage_d889e5f63231ac42f77f004a",
+    "passage_b91474aa1189d3c88248b42e",
+    "passage_8f3a2329fc3907aa6ac08974",
+    "passage_8ce1c9d6888d927045296c34",
+    "passage_1b41adb6463d2a12a18c0a7f",
+    "passage_bdafc0f997fa362a966fba56",
+    "passage_6732fa2609b933405a996f9b"
+  ],
+  "candidate_document_ids": [
+    "document_2ed898a0b44943f3580f8f62",
+    "document_4cb631ab08e2fa66bed6c315",
+    "document_531d82c2d97c230d5b7209f8",
+    "document_5bdafc0268fd14b1234b879c",
+    "document_6cc1093d8905c24a6def6bbc",
+    "document_8d212fd8e3a67b475cb53764",
+    "document_949ab1cd3e2df0aebe59fbca",
+    "document_c3e2af5128feb40eaa7e64dd"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_8f3a2329fc3907aa6ac08974",
+      "supporting_excerpt": "EV battery enclosures and structural components rely on aluminum extrusions and high-pressure die castings. The 10% tariff on aluminum imports has increased costs for extrusions by 8-12%, as domestic smelters cannot meet demand.",
+      "relevance_explanation": "This passage connects EV battery enclosures to aluminum extrusions and explicitly states the impact of a 10% tariff on these imports, providing context on cost implications.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_f327b3f3e79849ffccf895a9",
+      "query_id": "q_105",
+      "chunk_id": "chunk_ba69b68b76d89ba95a0fe9e4",
+      "document_id": "document_5bdafc0268fd14b1234b879c",
+      "source_url": "https://energy-solutions.co/supply-chain/risk-index/us-section-232-tariffs-steel-aluminum-wind-ev-costs",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/ad246b5d795a6351ab7faed5338648cda55a715a27f0206a0083f5cd90d93d72.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_b91474aa1189d3c88248b42e",
+      "supporting_excerpt": "Other Trade Measures: Section 232 metal tariffs (25% on steel, 10% on aluminum) also indirectly affect the EMS industry supply chain. Aluminum enclosures or steel chassis parts face higher costs unless exempted (Canada and Mexico, for instance, are exempt under quotas).",
+      "relevance_explanation": "This passage confirms the existence of Section 232 tariffs on aluminum (10%) and notes that aluminum enclosures face higher costs, establishing the tariff mechanism relevant to the query.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_c6492ca8ad0f0b34f1442bd2",
+      "query_id": "q_105",
+      "chunk_id": "chunk_545660cb646576e173d1c2c8",
+      "document_id": "document_2ed898a0b44943f3580f8f62",
+      "source_url": "https://www.teamsmt.com/blog/2025-tariffs-reshoring-ems-industry",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2566eb7981016a97449487c9ac123d2f7633ef0d6a5c0a702054f0d1552c677f.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_1b41adb6463d2a12a18c0a7f",
+        "supporting_excerpt": "The types of products that meet the definition of subject merchandise include but are not limited to, the aluminum extrusion portions of vehicle roof rails and sun/moon roof framing... electric vehicle battery trays, heat sinks, signage or advertising poles, telescoping poles, or cleaning system components.",
+        "relevance_explanation": "This passage explicitly lists 'electric vehicle battery trays' as subject merchandise within the scope of aluminum extrusion investigations, directly addressing the product in question.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_6732fa2609b933405a996f9b",
+        "supporting_excerpt": "The types of products that meet the definition of subject merchandise include but are not limited to, the aluminum extrusion portions of vehicle roof rails and sun/moon roof framing... electric vehicle battery trays, heat sinks, signage or advertising poles, telescoping poles, or cleaning system components.",
+        "relevance_explanation": "This passage reiterates the inclusion of 'electric vehicle battery trays' in the scope of subject merchandise for aluminum extrusions, confirming the product classification.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

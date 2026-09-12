@@ -1,0 +1,98 @@
+{
+  "query_id": "q_21",
+  "query": "Liberty County automotive parts manufacturers tariffs",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_5ae8f734ea172e4ef519b23d",
+    "claim_65e43d2552e9e7496319eaec",
+    "claim_6613137fec5ca00e553703f1",
+    "claim_67118654217fc1397879452e",
+    "claim_7c5450c616477770706e5f74",
+    "claim_8bdf822336377e9aca1dffdb",
+    "claim_d1cecfc8725f7a9e6644d62b",
+    "claim_d6242ec9e801d72aaa1e25a2",
+    "claim_e91ac6b0b65f0c3e7db9c1e4",
+    "claim_ef9648f586eb9370ec6393ac"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_5ae8f734ea172e4ef519b23d",
+      "text": "Manufacturer Marelli, which made internal electronics for Jeeps and Nissans, filed for bankruptcy this month due to the subsequent financial strain.",
+      "url": "https://www.apmresearchlab.org/10x/dozens-of-qs-auto-parts-tariffs",
+      "chunk_id": "chunk_02006f24db5a3d54369100ff"
+    },
+    {
+      "claim_id": "claim_65e43d2552e9e7496319eaec",
+      "text": "President Donald Trump made economic waves earlier this year when he announced a 25% tariff on imported automobiles and parts with the stated goal of revitalizing U.S. auto manufacturing.",
+      "url": "https://www.apmresearchlab.org/10x/dozens-of-qs-auto-parts-tariffs",
+      "chunk_id": "chunk_02006f24db5a3d54369100ff"
+    },
+    {
+      "claim_id": "claim_6613137fec5ca00e553703f1",
+      "text": "Meanwhile, a tail light produced entirely in Mexico will not face any tariff.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_67118654217fc1397879452e",
+      "text": "On March 26, the Trump Administration announced a 25 percent tariff on imports of automobiles and certain automotive parts. The tariff went into effect for fully assembled vehicles on April 3. The tariff on auto parts will go into effect on May 3.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_7c5450c616477770706e5f74",
+      "text": "Meanwhile, the President is mulling further action, saying he might increase auto tariffs in the “not-so-distant future.”",
+      "url": "https://www.apmresearchlab.org/10x/dozens-of-qs-auto-parts-tariffs",
+      "chunk_id": "chunk_02006f24db5a3d54369100ff"
+    },
+    {
+      "claim_id": "claim_8bdf822336377e9aca1dffdb",
+      "text": "The original order only applied the tariff on auto parts that fit the following categories: engines and engine parts; transmissions and powertrains; and electrical components. Since then, that list has been updated to include 150 categories, including bumper components, motor vehicle hinges, windshield wipers, tires, lubricants, and more.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_d1cecfc8725f7a9e6644d62b",
+      "text": "While Mexico and Canada continue to largely dodge the auto parts tariffs, tariffs on imports from other parts of the world are still in effect.",
+      "url": "https://www.apmresearchlab.org/10x/dozens-of-qs-auto-parts-tariffs",
+      "chunk_id": "chunk_02006f24db5a3d54369100ff"
+    },
+    {
+      "claim_id": "claim_d6242ec9e801d72aaa1e25a2",
+      "text": "China faces a more unique situation. In January, President Trump imposed a 20 percent tariff on all goods from China. That means that a windshield wiper manufactured in China will face a 45 percent import tariff starting on May 3.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_e91ac6b0b65f0c3e7db9c1e4",
+      "text": "For example, the European Union will be subject to 20 percent tariffs, Thailand will be subject to a 36 percent rate, and China will be subject to a 34 percent levy. Providing an example for clarity, a tire produced in Thailand will only be subject to a 25 percent import tax.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_ef9648f586eb9370ec6393ac",
+      "text": "That’s because of a March 2025 revision that exempts cars and parts manufactured in compliance with the United States-Mexico-Canada Agreement (USMCA) from tariffs.",
+      "url": "https://www.apmresearchlab.org/10x/dozens-of-qs-auto-parts-tariffs",
+      "chunk_id": "chunk_02006f24db5a3d54369100ff"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_d6242ec9e801d72aaa1e25a2",
+      "claim_e91ac6b0b65f0c3e7db9c1e4"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

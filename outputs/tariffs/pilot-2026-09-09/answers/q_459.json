@@ -1,0 +1,55 @@
+{
+  "query_id": "q_459",
+  "query": "Georgia automotive display suppliers tariff sourcing exposure",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_028b7f1105bf240bab714fc4",
+    "claim_081a64a2fb5dd94a7a6dd1f9",
+    "claim_e073b9be35c61a61bcb2773a",
+    "claim_eaa9e638c497c4b96a16ffbf"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_028b7f1105bf240bab714fc4",
+      "text": "The US and South Korea agreed on tariffs of 15% for vehicle imports and automotive parts imports in late July, replacing the previously threatened 25% rate. This came into effect on August 1, but as of early September, the agreement remains provisional and has not been formally finalised.",
+      "url": "https://www.automotivelogistics.media/supply-chain/tariff-analysis-deep-dive-the-most-important-changes-for-the-auto-industry/663875",
+      "chunk_id": "chunk_aadfedec0b4209946c7e44f7"
+    },
+    {
+      "claim_id": "claim_081a64a2fb5dd94a7a6dd1f9",
+      "text": "Now, a 50% tariff rate applies to stamped components such as bodyshop panels, brackets and structural elements, even if they would otherwise qualify as car parts, meaning the rate goes up from 27.5% (25% for USMCA compliance) to 50%.",
+      "url": "https://www.automotivelogistics.media/supply-chain/tariff-analysis-deep-dive-the-most-important-changes-for-the-auto-industry/663875",
+      "chunk_id": "chunk_aadfedec0b4209946c7e44f7"
+    },
+    {
+      "claim_id": "claim_e073b9be35c61a61bcb2773a",
+      "text": "Ferrel is one of 300 workers at American BOA in Cumming who make metal hoses and \"bellows\" used as sleeves in vehicle engine and exhaust systems. Half the steel comes from Europe, and new tariffs initiated by the Trump administration this spring have raised the company's costs by more than $200,000 a month",
+      "url": "https://www.ajc.com/business/georgia-auto-sector-fears-tariff-damage/lT9ZkTnli54RJltUfZT2OI",
+      "chunk_id": "chunk_76376c97eedac647c26a2a45"
+    },
+    {
+      "claim_id": "claim_eaa9e638c497c4b96a16ffbf",
+      "text": "In August, the US administration extended the scope of the 50% import tariffs for steel and aluminium goods, adding more than 400 additional items to the levy, including car parts such as chassis components, axles, steel wiring, brackets and mounts, and parts of heavy vehicles.",
+      "url": "https://www.automotivelogistics.media/supply-chain/tariff-analysis-deep-dive-the-most-important-changes-for-the-auto-industry/663875",
+      "chunk_id": "chunk_aadfedec0b4209946c7e44f7"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_028b7f1105bf240bab714fc4",
+      "claim_eaa9e638c497c4b96a16ffbf"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

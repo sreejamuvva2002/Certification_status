@@ -1,0 +1,54 @@
+{
+  "query_id": "q_379",
+  "query": "Japanese EV battery imports United States duties",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0a93b255acd2a8c1a9b1e9ba",
+    "claim_26c6882f7083e8034372ad81",
+    "claim_c213ed65262e143a4423ce0c",
+    "claim_aef983ee3922e0eb247d06bb"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0a93b255acd2a8c1a9b1e9ba",
+      "text": "Select Export Country: Choose the country from which the product is being exported, such as China, Japan, or Vietnam.",
+      "url": "https://manlybattery.com/battery-tools-and-resources/usa-import-duty-calculator",
+      "chunk_id": "chunk_9e67b2a4f4d551c7b1913c0b"
+    },
+    {
+      "claim_id": "claim_26c6882f7083e8034372ad81",
+      "text": "February 2025: A 24% tariff is applied to battery products imported from Japan. These tariffs impact products used in automotive manufacturing and energy storage systems.",
+      "url": "https://manlybattery.com/battery-tools-and-resources/usa-import-duty-calculator",
+      "chunk_id": "chunk_4429ed3e0fea61f7656e476b"
+    },
+    {
+      "claim_id": "claim_c213ed65262e143a4423ce0c",
+      "text": "South Korea and Japan, as major battery manufacturers, now sit in the forced-labor tariff's 10% tier",
+      "url": "https://www.tariffstool.com/tariffs-on-energy-batteries",
+      "chunk_id": "chunk_1eefd733841b21664a410654"
+    },
+    {
+      "claim_id": "claim_aef983ee3922e0eb247d06bb",
+      "text": "South Korean batteries now face only the 10% forced-labor tariff on top of any base duty — a marked improvement from their former IEEPA reciprocal rate",
+      "url": "https://www.tariffstool.com/tariffs-on-energy-batteries",
+      "chunk_id": "chunk_1eefd733841b21664a410654"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_26c6882f7083e8034372ad81",
+      "claim_c213ed65262e143a4423ce0c"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 19,
+  "synthesis_input_claim_count": 19
+}

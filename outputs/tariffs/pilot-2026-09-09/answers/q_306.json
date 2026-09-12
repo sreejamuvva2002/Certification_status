@@ -1,0 +1,69 @@
+{
+  "query_id": "q_306",
+  "query": "United States automotive tariffs country exemptions",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0ecb250f52e29008647c2278",
+    "claim_1f4bfc1bf36497f0c533f8f2",
+    "claim_2a69bb341e46bbe21b79479e",
+    "claim_b531b191fcd0b4213d6244b9",
+    "claim_ddef72466cf375331ca358fc",
+    "claim_a6f914b7c02b7e459229a663"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0ecb250f52e29008647c2278",
+      "text": "Heading 9903.01.33, HTSUS, exempting products subject to Section 232 from the reciprocal tariffs, applies to auto parts for passenger vehicles and light trucks.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_df1c0b3d40b66bc09c852e25"
+    },
+    {
+      "claim_id": "claim_1f4bfc1bf36497f0c533f8f2",
+      "text": "Only auto parts for passenger vehicles and light trucks, as defined by Executive Order 14257, issued April 2, 2025, and subject to Section 232 duties as of May 3, 2025, are not subject to the reciprocal duties effective April 5, 2025, pursuant to heading 9903.01.33, HTSUS.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_df1c0b3d40b66bc09c852e25"
+    },
+    {
+      "claim_id": "claim_2a69bb341e46bbe21b79479e",
+      "text": "new trade deals have reduced rates for some — including 15% for the EU and Japan, and 10% for select UK vehicles",
+      "url": "https://blogs.tradlinx.com/auto-tariffs-101-how-u-s-car-import-duties-really-work-in-2025",
+      "chunk_id": "chunk_f12b7972dd3f7520d6a0bc54"
+    },
+    {
+      "claim_id": "claim_b531b191fcd0b4213d6244b9",
+      "text": "Under a U.S. deal with the United Kingdom (UK), most UK auto imports face a 10% total U.S. tariff rate.",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    },
+    {
+      "claim_id": "claim_ddef72466cf375331ca358fc",
+      "text": "auto imports from the EU, Japan, and South Korea face a 15% total",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    },
+    {
+      "claim_id": "claim_a6f914b7c02b7e459229a663",
+      "text": "Other countries like China face 30% or higher.",
+      "url": "https://blogs.tradlinx.com/auto-tariffs-101-how-u-s-car-import-duties-really-work-in-2025",
+      "chunk_id": "chunk_f12b7972dd3f7520d6a0bc54"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_2a69bb341e46bbe21b79479e",
+      "claim_ddef72466cf375331ca358fc"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

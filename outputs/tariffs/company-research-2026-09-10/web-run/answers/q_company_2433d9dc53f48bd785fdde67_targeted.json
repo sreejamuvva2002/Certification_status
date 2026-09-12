@@ -1,0 +1,60 @@
+{
+  "query_id": "q_company_2433d9dc53f48bd785fdde67_targeted",
+  "query": "\"Enplas USA Inc.\" automotive vehicles auto parts steel aluminum copper tariffs tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_488478bf2f0436210604cf63",
+    "claim_4eda74e7cf2cf13d763175aa",
+    "claim_ab57852d531c854bb119276f",
+    "claim_af85cd1efe8b7269fcdbfa9a",
+    "claim_ee0eadf0372e1ea210949c23"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_488478bf2f0436210604cf63",
+      "text": "The 25% Section 232 tariff on autos was based on a 2019 Commerce Department finding that auto imports threatened national security.",
+      "url": "https://gingercontrol.com/blog/section-232-tariff-rates-products",
+      "chunk_id": "chunk_a6eba0765a54fb61c88f6b30"
+    },
+    {
+      "claim_id": "claim_4eda74e7cf2cf13d763175aa",
+      "text": "Steel and aluminum were raised to 50% in June 2025. Automobile tariffs are 25% for most countries, with reduced rates of 10-15% for countries with bilateral trade deals.",
+      "url": "https://gingercontrol.com/blog/section-232-tariff-rates-products",
+      "chunk_id": "chunk_a6eba0765a54fb61c88f6b30"
+    },
+    {
+      "claim_id": "claim_ab57852d531c854bb119276f",
+      "text": "Semiconductor tariffs at 25% took effect January 15, 2026 and cover a narrow range of advanced computing chips.",
+      "url": "https://gingercontrol.com/blog/section-232-tariff-rates-products",
+      "chunk_id": "chunk_a6eba0765a54fb61c88f6b30"
+    },
+    {
+      "claim_id": "claim_af85cd1efe8b7269fcdbfa9a",
+      "text": "USMCA carve-out: Qualifying USMCA parts for passenger vehicles may be exempt from Section 232 under HTS 9903.94.06",
+      "url": "https://gingercontrol.com/blog/section-232-tariff-rates-products",
+      "chunk_id": "chunk_a6eba0765a54fb61c88f6b30"
+    },
+    {
+      "claim_id": "claim_ee0eadf0372e1ea210949c23",
+      "text": "Section 232 tariffs currently cover six product categories: steel and aluminum (50%), automobiles and auto parts (25%), copper (50%), timber and lumber (10-25%), and semiconductors (25%).",
+      "url": "https://gingercontrol.com/blog/section-232-tariff-rates-products",
+      "chunk_id": "chunk_a6eba0765a54fb61c88f6b30"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_4eda74e7cf2cf13d763175aa",
+      "claim_ee0eadf0372e1ea210949c23"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

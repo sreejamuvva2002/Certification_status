@@ -1,0 +1,60 @@
+{
+  "query_id": "q_481",
+  "query": "site:cbp.gov auto parts tariff frequently asked questions",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0831284337ad688b751f805e",
+    "claim_33992b2fc01b8d2f1a3b2380",
+    "claim_a2d3f7c1adf7e45ec36bf385",
+    "claim_fe84a592701a9e587f766ce0",
+    "claim_e9dbccad9ddcccfdbdf17c81"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0831284337ad688b751f805e",
+      "text": "However, the USMCA SPI code can still be used to claim the USMCA MPF exemption and the exception for IEEPA CA or IEEPA MX if the good meets the rules of origin and all other requirements of the USMCA.",
+      "url": "https://www.cbp.gov/trade/programs-administration/trade-remedies/IEEPA-FAQ",
+      "chunk_id": "chunk_865e1d74b70750f040164baa"
+    },
+    {
+      "claim_id": "claim_33992b2fc01b8d2f1a3b2380",
+      "text": "Effective on or after March 7, 2025, goods entered for consumption or withdrawn from warehouse for consumption from Canada or Mexico that qualify for the USMCA preference are not subject to the additional tariffs under the IEEPA.",
+      "url": "https://www.cbp.gov/trade/programs-administration/trade-remedies/IEEPA-FAQ",
+      "chunk_id": "chunk_865e1d74b70750f040164baa"
+    },
+    {
+      "claim_id": "claim_a2d3f7c1adf7e45ec36bf385",
+      "text": "Articles subject to the section 232 duties imposed on autos and auto parts under Proclamation 10908 (March 26, 2025), as amended, are not subject to the IEEPA duties imposed on products of Canada (EO 14193, as amended) or Mexico (EO 14194, as amended)",
+      "url": "https://www.cbp.gov/trade/programs-administration/trade-remedies/IEEPA-FAQ",
+      "chunk_id": "chunk_ac76548788621744b2a54738"
+    },
+    {
+      "claim_id": "claim_fe84a592701a9e587f766ce0",
+      "text": "Articles subject to the section 232 duties imposed on autos and auto parts under Proclamation 10908 (March 26, 2025), as amended, are not subject to the IEEPA duties imposed on products of Canada (EO 14193, as amended) or Mexico (EO 14194, as amended) as detailed in CSMS # 65236574 -UPDATED GUIDANCE – Proclamation “Adjusting Imports of Aluminum and Steel in the United States,” Amending Executive Order 14289, “Addressing Certain Tariffs on Imported Articles”. Nor are such articles subject to the IEEPA Reciprocal duties (EO 14257, as amended) under heading 9903.01.33, HTSUS.",
+      "url": "https://www.cbp.gov/trade/programs-administration/trade-remedies/IEEPA-FAQ",
+      "chunk_id": "chunk_9d9d58aad58500d6aa56490e"
+    },
+    {
+      "claim_id": "claim_e9dbccad9ddcccfdbdf17c81",
+      "text": "The reciprocal tariffs do apply to the goods of countries for which a Free Trade Agreement exists. Presently, articles the product of Canada and Mexico, including those that qualify for USMCA, are exempt from the reciprocal tariffs.",
+      "url": "https://www.cbp.gov/trade/programs-administration/trade-remedies/IEEPA-FAQ",
+      "chunk_id": "chunk_ac76548788621744b2a54738"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0831284337ad688b751f805e",
+      "claim_e9dbccad9ddcccfdbdf17c81"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 21,
+  "synthesis_input_claim_count": 21
+}

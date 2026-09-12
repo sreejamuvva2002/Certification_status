@@ -1,0 +1,62 @@
+{
+  "query_id": "q_282",
+  "query": "Liberty County Georgia automotive suppliers tariff exposure",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1e76eb23b27956cdf937ef21",
+    "claim_0960be35c8ea1888bdf7c04b",
+    "claim_1c37d651c18ae4a47cf24d48",
+    "claim_4ff970e9d3b059c3eb177ede",
+    "claim_4defad36e1853c0943fac5d4"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1e76eb23b27956cdf937ef21",
+      "text": "consultants recommended focusing proactive outreach on five target clusters: automotive and electric-vehicle suppliers, aerospace and aviation, Department of Defense suppliers and manufacturers, and higher-value distribution such as cold storage and e-commerce.",
+      "url": "https://citizenportal.ai/articles/6194127/georgia/liberty-county/liberty-county-development-authority-unveils-strategic-plan-targeting-manufacturing-ev-supply-chain-and-highervalue-distribution",
+      "chunk_id": "chunk_ce3c62673bc7f3583a37126c"
+    },
+    {
+      "claim_id": "claim_0960be35c8ea1888bdf7c04b",
+      "text": "Suppliers are facing the cumulative effect of increased costs from section 232 steel and aluminum tariffs, section 301 tariffs and retaliatory tariffs from China, and the very real prospect of section 232 tariffs on imported vehicle parts.",
+      "url": "https://www.govinfo.gov/content/pkg/CHRG-115shrg40897/html/CHRG-115shrg40897.htm",
+      "chunk_id": "chunk_1b9dc2784823537a1a50ad46"
+    },
+    {
+      "claim_id": "claim_1c37d651c18ae4a47cf24d48",
+      "text": "The Trump administration has proposed applying tariffs on imported automobiles for the purpose of pro",
+      "url": "https://www.govinfo.gov/content/pkg/CHRG-115shrg40897/html/CHRG-115shrg40897.htm",
+      "chunk_id": "chunk_6656f98671647fcd3f10930c"
+    },
+    {
+      "claim_id": "claim_4ff970e9d3b059c3eb177ede",
+      "text": "The Commerce Department is currently investigating whether imports of autos and auto parts are a threat to national security, potentially subjecting the products to additional tariffs.",
+      "url": "https://www.govinfo.gov/content/pkg/CHRG-115shrg40897/html/CHRG-115shrg40897.htm",
+      "chunk_id": "chunk_c98af6b9a1741fd282218009"
+    },
+    {
+      "claim_id": "claim_4defad36e1853c0943fac5d4",
+      "text": "Steep tariffs recently placed on steel and aluminum, imposed pursuant to an investigation into whether imports of these metals are a threat to U.S. national security under section 232 of the Trade Expansion Act of 1962 are already rippling through the automotive supply chain.",
+      "url": "https://www.govinfo.gov/content/pkg/CHRG-115shrg40897/html/CHRG-115shrg40897.htm",
+      "chunk_id": "chunk_66d6ef0f5f38a6b66faee74d"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_1c37d651c18ae4a47cf24d48",
+      "claim_4ff970e9d3b059c3eb177ede"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 196,
+  "synthesis_input_claim_count": 52
+}

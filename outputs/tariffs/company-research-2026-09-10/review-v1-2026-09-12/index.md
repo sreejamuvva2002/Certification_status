@@ -1,0 +1,199 @@
+# Reviewed company tariff evidence
+
+All 193 companies have completed searches and a profile. Evidence gaps remain; current facility-specific liability is not verified.
+
+[Completion report](completion_report.md) · [Company summary CSV](company_summary.reviewed.csv) · [Evidence CSV](company_evidence.reviewed.csv)
+
+- [Ajin Georgia](companies/company_fdd3fe73423e13e3b595140c.md) — company_context_only
+- [Aspen Aerogels](companies/company_1a42c8704adcaf70bd49cb78.md) — company_context_only
+- [DaeChang Seat Company](companies/company_c637266c7de19e629af5b867.md) — company_context_only
+- [Ecoplastic America Corporation](companies/company_2c4b6344bfab2e8f192bfba9.md) — company_context_only
+- [Ecoplastic Corporation](companies/company_79ae9d99f72979a1c1261010.md) — company_context_only
+- [Elan Technology Inc.](companies/company_c01c638d33df890a6b51cd0c.md) — company_context_only
+- [GLOVIS Georgia LLC](companies/company_90ce15ff13f865cb62749afb.md) — group_context_only
+- [Great Dane LP](companies/company_87068da9d6a4b546bd557609.md) — company_tariff_response_or_opinion
+- [Great Dane Trailers](companies/company_da9706f4b8d8a7c81d035528.md) — no_usable_company_evidence
+- [Hyundai & LG Energy Solution (LGES)](companies/company_c04f33ffc5921844cc767a0a.md) — group_context_only
+- [Hyundai Industrial Co.](companies/company_9c033fbbbe5dd968878b7417.md) — company_context_only
+- [Hyundai Motor Group](companies/company_2b21c38fbded6ea1b5538a75.md) — company_tariff_response_or_opinion
+- [PHA Body Systems LLC](companies/company_2fc6813eb9f41f003204ef69.md) — company_context_only
+- [Propex Operating Co. LLC](companies/company_3d4d0f99f4974152e5c9657d.md) — company_context_only
+- [SK Battery America](companies/company_2ca807a86c0a7e4aeb4ae014.md) — company_context_only
+- [ACM Georgia LLC](companies/company_56947b6791bbd3d8817d1869.md) — no_usable_company_evidence
+- [Adient](companies/company_39f85ab24943ff1c43fdb019.md) — source_reported_company_tariff_effect
+- [ADVICS Manufacturing Georgia LLC](companies/company_a1d2f17b3360077e6922a03d.md) — company_context_only
+- [ALBAform Inc.](companies/company_5d6710bbebca17301582eef6.md) — company_context_only
+- [Anovion Technologies](companies/company_105d9963b102a6ae236572eb.md) — company_context_only
+- [Apache Mills Inc.](companies/company_2e20e495efaa524f3c7b4c3a.md) — no_usable_company_evidence
+- [Archer Aviation Inc.](companies/company_8102602c2cf120a2e06de532.md) — company_context_only
+- [Arising Industries Inc.](companies/company_2c8b7f05b5f09138866667d6.md) — group_context_only
+- [Ascend Elements](companies/company_36bb5b7f923c6cc0642f4aca.md) — company_tariff_response_or_opinion
+- [Aurubis](companies/company_42975cd2568a7dcbeb7cbd98.md) — company_tariff_response_or_opinion
+- [AVS](companies/company_af625009d15eb10609433c7a.md) — no_usable_company_evidence
+- [Beaver Manufacturing Co. Inc.](companies/company_c7297d0309518878c6b970e8.md) — company_context_only
+- [Big Tex Trailer Manufacturing Inc.](companies/company_17d2a2419c972bbfbd0d3c66.md) — no_usable_company_evidence
+- [Blue Bird Corp.](companies/company_7401d56b17c5cd19433e6b12.md) — company_context_only
+- [Blue Ridge Manufacturing](companies/company_22670a5f0b194d8bd2c5eb74.md) — no_usable_company_evidence
+- [Bonnell Aluminum](companies/company_d34cd4f09e41e0c33dd7091f.md) — company_tariff_response_or_opinion
+- [Boogook Industries](companies/company_c5335f42ecc83c2a03899ecb.md) — no_usable_company_evidence
+- [Bosal Industries Georgia](companies/company_0d0c7e1f704d4df061e129a4.md) — no_usable_company_evidence
+- [Bosch (Automotive Division)](companies/company_c5fcc97bfb2974073676415c.md) — group_context_only
+- [Bridgestone Bandag](companies/company_ae431317033c698ebc8dbdc9.md) — group_context_only
+- [Carcoustics USA](companies/company_554a225e8185b55b8a0a41bd.md) — no_usable_company_evidence
+- [Club Car LLC](companies/company_9f7649ab93e553fce03a0293.md) — company_tariff_response_or_opinion
+- [Constellium Automotive USA](companies/company_80c510ece7aa44948187d533.md) — no_usable_company_evidence
+- [Continental Automotive](companies/company_fc7c935e96c630b5d97e68a4.md) — group_context_only
+- [Continental Tire the Americas LLC](companies/company_9e5f148c5a229152f328fcb1.md) — group_context_only
+- [DAEHAN Solution Georgia LLC](companies/company_85bc0be08bc4340515f23feb.md) — no_usable_company_evidence
+- [Daesol Ausys](companies/company_95301b2e6722331d5c2f845b.md) — company_context_only
+- [Daesol Material Georgia, LLC](companies/company_afab7be1621b5bafcfb7f0b4.md) — company_context_only
+- [Daimler Truck North America](companies/company_8d42c7988edcfa40dca2f234.md) — company_tariff_response_or_opinion
+- [DAS Corp.](companies/company_0493452f9eb077afb0f244bd.md) — company_context_only
+- [Decostar Industries](companies/company_90866fc8cf495eea5d2f62ee.md) — company_context_only
+- [DeKalb Tool & Die Inc.](companies/company_a67cb8fe187afc2e4991e639.md) — no_usable_company_evidence
+- [Denkai America](companies/company_15be2d53cdedc8bb7d9f1da8.md) — no_usable_company_evidence
+- [Denso Manufacturing Georgia](companies/company_5b628ee8f4aa57a92808347b.md) — group_context_only
+- [Die-Tech Industries Inc.](companies/company_89c7fb4ea40a16de2124266e.md) — no_usable_company_evidence
+- [Dinex Emissions Inc.](companies/company_8c24996dab6424ef3a7a1d2c.md) — company_context_only
+- [Dongwon Autopart Technology Georgia LLC](companies/company_e4034603e2ef1f2c82e9bef8.md) — no_usable_company_evidence
+- [Dorsett Industries Inc.](companies/company_9ddeeb9ac201aee6620312ef.md) — company_context_only
+- [Down 2 Earth Trailers](companies/company_2a4a597f72ccf38caccb9442.md) — no_usable_company_evidence
+- [Duckyang](companies/company_5dcbbc145bf0d5ed726febae.md) — company_context_only
+- [Eaton Corp.](companies/company_c1c4fd592ddbedf564507b8b.md) — no_usable_company_evidence
+- [Enchem America Inc.](companies/company_23ebfd09d6c7f37b2dc25904.md) — company_context_only
+- [Enplas USA Inc.](companies/company_2433d9dc53f48bd785fdde67.md) — no_usable_company_evidence
+- [Erdrich USA Inc.](companies/company_39deb7adc0f95475d16ebb1b.md) — no_usable_company_evidence
+- [EVCO Plastics](companies/company_8b600a968a9e1e7afd1f6cb1.md) — company_tariff_response_or_opinion
+- [F&P Georgia Manufacturing](companies/company_72b49d856cf0c4ec907d8a5c.md) — no_usable_company_evidence
+- [Fanello Industries Inc.](companies/company_16cfdd7795f2585f3782e10a.md) — no_usable_company_evidence
+- [First American Resources](companies/company_dd47a3941fa7ff93d27cfe5d.md) — no_usable_company_evidence
+- [Flambeau Inc.](companies/company_5fd1cdbb7f4fedfb0fc5ec73.md) — no_usable_company_evidence
+- [Fouts Brothers Fire Equipment](companies/company_db84bb9d505096e9f1ac05ff.md) — no_usable_company_evidence
+- [FOX Factory](companies/company_b77873acd655b85203123334.md) — no_usable_company_evidence
+- [Freudenberg-NOK](companies/company_95499c81d98267ad7ee60c61.md) — no_usable_company_evidence
+- [FREYR Battery](companies/company_0f47bea73e79482f99163b3b.md) — company_context_only
+- [GEDIA Georgia LLC](companies/company_4cf9aea6b8343b258d83e9d6.md) — no_usable_company_evidence
+- [Global Powertrain Systems LLC](companies/company_1397e4a3a1b21417765afda3.md) — no_usable_company_evidence
+- [Goodyear Tire & Rubber Co.](companies/company_b7b4dc548795424b83c672ad.md) — company_context_only
+- [Grudem](companies/company_284da82fa1a5d254a086d112.md) — no_usable_company_evidence
+- [GSC Steel Stamping LLC](companies/company_62439ed88b20d99762107a5c.md) — company_context_only
+- [Haering Precision USA LP](companies/company_cd5434e61fd91cb82ebf56cf.md) — no_usable_company_evidence
+- [Hanon Systems USA LLC](companies/company_2f674205f91f09171f99b95d.md) — no_usable_company_evidence
+- [HELLA Automotive Sales Inc.](companies/company_83738a1fb07cdd4d4438490b.md) — company_context_only
+- [HEXPOL Compounding Corp.](companies/company_c07c982df0d492aa3945a40c.md) — no_usable_company_evidence
+- [Hitachi Astemo](companies/company_09c2e352043905f0b725491b.md) — company_context_only
+- [Hitachi Astemo Americas Inc.](companies/company_857a53c98c8af0ccf25cdd3a.md) — company_context_only
+- [Hollingsworth & Vose Co.](companies/company_1a995c929c9b6b4f4eafd428.md) — company_context_only
+- [Honda Development & Manufacturing](companies/company_19c065ceff1df6bfa321c147.md) — company_context_only
+- [Hwashin](companies/company_26beff672f7c2515d668d5a8.md) — company_context_only
+- [Hyundai MOBIS (Georgia)](companies/company_c616bc37ca5f1ed57590e3c9.md) — group_context_only
+- [Hyundai Transys Georgia Powertrain](companies/company_a5d8748e8f29ace38fb5e117.md) — company_context_only
+- [Hyundai Transys Georgia Seating Systems](companies/company_127cc1bfd36760f9a2c064cc.md) — group_context_only
+- [IMMI](companies/company_b1eb8328a45bb51000d1ecaa.md) — no_usable_company_evidence
+- [IMS Gear Georgia Inc.](companies/company_688fd73015130e3680f03efc.md) — no_usable_company_evidence
+- [Inalfa Roof Systems Inc.](companies/company_bf629aedfdcb5f68f8719223.md) — no_usable_company_evidence
+- [JAC Products Inc.](companies/company_3d6e0348f06d2e4c8bef6828.md) — source_reported_company_tariff_effect
+- [Jefferson Southern Corp.](companies/company_5e93b599969eccdd9ccfe0a3.md) — company_context_only
+- [Jefferson Southern Corporation](companies/company_b7bd683c22b8b3f21d8e9f7d.md) — company_context_only
+- [Joon Georgia, Inc.](companies/company_933e96a9f78bb1d41d7089e0.md) — company_context_only
+- [JTEKT North America Corp.](companies/company_51acf7e91bf99d07602b0a15.md) — company_context_only
+- [Kautex Inc.](companies/company_7959438dbd42735054f1a7a4.md) — company_context_only
+- [Kia Georgia Inc.](companies/company_284421b36ec8283988c17894.md) — company_context_only
+- [KTX America Corporation](companies/company_98ae8e7c06629f61cd42906f.md) — no_usable_company_evidence
+- [Kumho Tire USA Inc.](companies/company_0070706649688b18a55fb394.md) — group_context_only
+- [Kyungshin America Corp.](companies/company_fc5db24fad4fb6564b0f2519.md) — company_context_only
+- [Lark United Manufacturing Inc.](companies/company_9c755b1461327a4d399720e7.md) — company_context_only
+- [Lear Corporation](companies/company_1ccd8d549b6d5b76fe835826.md) — company_tariff_response_or_opinion
+- [Lehigh Technologies Inc.](companies/company_ccca310b7ffd19ccc338c019.md) — no_usable_company_evidence
+- [Linde + Wiemann](companies/company_007f5c302685153392ed0dc8.md) — company_context_only
+- [Lund International Inc.](companies/company_f8508eb6bd1d98eac99aa886.md) — company_context_only
+- [Lund International Inc./Ventshade Division](companies/company_41d9c60287871fc6c424af25.md) — no_usable_company_evidence
+- [Lyle Industries Inc.](companies/company_b5ea19d5054e315d972744db.md) — company_context_only
+- [Mack Trucks](companies/company_ef38ad6c248a16d5d72da55c.md) — company_context_only
+- [Magna International](companies/company_6ad2cc466d4f49495289e32c.md) — source_reported_company_tariff_effect
+- [Mando America Corp.](companies/company_74f4835a25a8890b2477e48b.md) — company_context_only
+- [Master Craft Engineering Inc.](companies/company_cc05f0fa42a8b67bc3fac107.md) — no_usable_company_evidence
+- [MAT Heavy Duty](companies/company_40f766afc78f2026929f2f25.md) — no_usable_company_evidence
+- [Maxxis International USA](companies/company_04aa588dd09fd1f4ac08e185.md) — no_usable_company_evidence
+- [Mercedes-Benz USA LLC](companies/company_a4ae0b0d9a7850bda1de1dbe.md) — company_context_only
+- [Michelin Tread Technologies](companies/company_154339ddd87245d6b7e95ca5.md) — group_context_only
+- [Milliken & Co./Valway Plant](companies/company_d75ac400f676e94363abe01a.md) — no_usable_company_evidence
+- [Minebea AccessSolutions USA Inc.](companies/company_d4ec137cd59e7e026abc774c.md) — company_context_only
+- [Mobis Alabama LLC](companies/company_859f550089b8293c0ae121ed.md) — no_usable_company_evidence
+- [MollerTech LLC](companies/company_10d15bbbe68ff2be14d6aec2.md) — no_usable_company_evidence
+- [Morgan Corp.](companies/company_eede3852858fee3e71f33721.md) — company_context_only
+- [Murata Electronics North America Inc.](companies/company_1586819e6c963998b5db83da.md) — no_usable_company_evidence
+- [Neaton Rome Inc.](companies/company_4744f7fd4e0e4f89f2f73b2a.md) — no_usable_company_evidence
+- [Nidec Elesys Americas Corp.](companies/company_88a2081314267701955f6546.md) — group_context_only
+- [NIFCO KTW America Corp.](companies/company_7849dc05e9630d0106497b00.md) — company_context_only
+- [Nile Automotive](companies/company_8f5291e2a5a64e6a8f7f09e2.md) — company_context_only
+- [Nisshinbo Automotive Manufacturing Inc.](companies/company_c511a92fcd95a7cc9a4a2c33.md) — no_usable_company_evidence
+- [Nivel Parts & Manufacturing Co. LLC](companies/company_620054e4e188e563c4920e21.md) — no_usable_company_evidence
+- [Novelis Inc.](companies/company_bcc838354309e862758a8371.md) — source_reported_company_tariff_effect
+- [NVH Korea](companies/company_a51a3f8338d12ca01a577774.md) — no_usable_company_evidence
+- [Oneda Corp.](companies/company_a25ed74f86091489db686a03.md) — no_usable_company_evidence
+- [OTR Wheel Engineering Inc.](companies/company_bce2d26074c9cd4b0409dbc0.md) — no_usable_company_evidence
+- [Paccar](companies/company_b2519d425e8c787c3825d2b9.md) — source_reported_company_tariff_effect
+- [PAI Industries Inc.](companies/company_065f929c58de60436123306d.md) — no_usable_company_evidence
+- [Pak-Lite Inc.](companies/company_d0e4b3968ef99687d30dd1ba.md) — no_usable_company_evidence
+- [Panasonic Automotive Systems Co.](companies/company_f4939036511c0ee9ade29b46.md) — group_context_only
+- [Panduit Corp.](companies/company_abf2b48f96cf55c66c957e6e.md) — no_usable_company_evidence
+- [Peerless-Winsmith Inc.](companies/company_58e740dcd9f3598d25e1cf8c.md) — no_usable_company_evidence
+- [Perkins Small Engines LLC](companies/company_09088da4230e4aa9653a62b0.md) — company_context_only
+- [Peterson Spring](companies/company_3b08d60cda1e626125460263.md) — company_context_only
+- [Piedmont Automotive Products Inc.](companies/company_2d4ba2a74a409a97bbfe7442.md) — no_usable_company_evidence
+- [PIOLAX Corp.](companies/company_f5609ab445df94a594136ba8.md) — company_context_only
+- [Pirelli Tire North America LLC](companies/company_ca4c6bbbf98fac1857c252a1.md) — group_context_only
+- [Porsche Cars North America Inc.](companies/company_916426eb70ecce5624bfa654.md) — group_context_only
+- [PPG Industries Inc.](companies/company_d52e9e16bbe521b4e9847297.md) — company_tariff_response_or_opinion
+- [QSR Inc.](companies/company_29f6309444ab2e1c3472c3a7.md) — no_usable_company_evidence
+- [Racemark International LLC](companies/company_7dd0e30354ae58e70bc7f1ab.md) — no_usable_company_evidence
+- [RealTruck](companies/company_733f406bade7f8e2e5e1a4ac.md) — company_context_only
+- [Rivian Automotive](companies/company_bf47a285d281fa0f069e5d46.md) — company_context_only
+- [Robert Bosch LLC](companies/company_12e67d5ae5db170e67a50b2e.md) — company_context_only
+- [SAFT America Inc.](companies/company_200ebe21e055e72509aa1abc.md) — no_usable_company_evidence
+- [Sejong Georgia LLC](companies/company_e9fd0ec8b547bf4492af2a45.md) — company_context_only
+- [Seohan Auto USA](companies/company_07bdb7c1d1dbfa2bc94f0282.md) — no_usable_company_evidence
+- [Seoyon E-HWA](companies/company_c89f5b7a127c7ebb39ac7795.md) — company_context_only
+- [Seoyon E-Hwa Interior Systems](companies/company_8888aef32079e2fde2def9b4.md) — no_usable_company_evidence
+- [Sewon America Inc.](companies/company_a3f3c6917807f4d6e5d3818f.md) — company_context_only
+- [SHIROKI North America Inc](companies/company_0840ca72a880ea975df81150.md) — no_usable_company_evidence
+- [SKF USA Inc.](companies/company_8df8745aa77e1b6d38397a4e.md) — no_usable_company_evidence
+- [Solvay Specialty Polymers USA LLC](companies/company_2703f483acb6cc525b6a7848.md) — company_context_only
+- [Southern Switches Corp.](companies/company_897a9db8aebed83bd2799b36.md) — no_usable_company_evidence
+- [SRG Global Inc.](companies/company_5851dbb8592edb520cc2ac87.md) — no_usable_company_evidence
+- [Stryten Energy](companies/company_01817ab985f63f3cc976a82f.md) — no_usable_company_evidence
+- [Suhner Manufacturing Corp.](companies/company_705c975c0b21d509bfb29018.md) — no_usable_company_evidence
+- [SungEel Recycling Park Georgia](companies/company_37a56bc9ae554661c98d2c5e.md) — no_usable_company_evidence
+- [Superior Essex Inc.](companies/company_f48a5d63b769d5a79766038c.md) — no_usable_company_evidence
+- [Suzuki Manufacturing of America Corp.](companies/company_a70d2f26955acf1b5a0306e6.md) — no_usable_company_evidence
+- [TCI Powder Coatings](companies/company_1f5709cc554bb7b9bb9826bf.md) — company_context_only
+- [TDK Components USA Inc.](companies/company_3e0686f60c22b008dd5a18cf.md) — no_usable_company_evidence
+- [TE Connectivity](companies/company_aaa7f0307f6d78ed3a046f8c.md) — unverified_tariff_leads_only
+- [Teklas USA](companies/company_c6dcb308bcb598c09e54dacd.md) — company_context_only
+- [Textron Specialized Vehicles](companies/company_7941a108fa084dfe890ed1d8.md) — company_tariff_response_or_opinion
+- [Thermal Ceramics Inc.](companies/company_102e1a25f7c6be28624dcef0.md) — company_context_only
+- [Thomson Plastics Inc.](companies/company_2abed4e8267cf9012537b79e.md) — company_context_only
+- [TI Fluid Systems](companies/company_6cbe93bbec566a18e6054681.md) — no_usable_company_evidence
+- [Tie Down Engineering](companies/company_e0551e94478a46a41053fe4e.md) — no_usable_company_evidence
+- [TN Americas Holding Inc.](companies/company_dfea087f5e2dd31c50e24164.md) — no_usable_company_evidence
+- [Toyota Industries Group (TACG-TICA)](companies/company_caacbd2dc0461ed785c2c708.md) — group_context_only
+- [Trenton Pressing](companies/company_ee8dbbd4cf1c48979fcf0406.md) — company_context_only
+- [Trenton Pressing Inc.](companies/company_d6618350a3c99d906f0ee2c2.md) — company_context_only
+- [Valeo](companies/company_7150fb43251087a238bda4ce.md) — company_tariff_response_or_opinion
+- [Vanguard National Trailer Corp.](companies/company_596feb00112a7e34ae91ab24.md) — source_reported_company_tariff_effect
+- [Vernay](companies/company_2bc94a6bcf8d11a21a6cf4eb.md) — no_usable_company_evidence
+- [Vista Metals Corp.](companies/company_b0f60975ef3d7167cafebe78.md) — no_usable_company_evidence
+- [Voestalpine Automotive Body Parts Inc.](companies/company_e8ba5621ee1abfc8fd4637ee.md) — company_context_only
+- [Volvo Cars USA](companies/company_1b71f48f9617b15b0e014979.md) — group_context_only
+- [Volvo Group North America](companies/company_7a96eea5ccf771c156845947.md) — group_context_only
+- [Wabash National Corp.](companies/company_bac57d36c7250058fae99e10.md) — source_reported_company_tariff_effect
+- [Wheelabrator Group Inc.](companies/company_aacc5e2a4c9fc98b8e2f9d80.md) — no_usable_company_evidence
+- [WIKA USA](companies/company_3c67e220aad7d9c8ee1929f3.md) — no_usable_company_evidence
+- [Woodbridge Foam Corp.](companies/company_a61f2691b7ceb2228b2ccd4d.md) — no_usable_company_evidence
+- [Woory Industrial Co.](companies/company_aa1a5dfbbcb7e72c4fc98871.md) — company_context_only
+- [Yachiyo Manufacturing of America LLC](companies/company_74bf2146c064be5012820c17.md) — no_usable_company_evidence
+- [Yamaha Motor Manufacturing Corp.](companies/company_3bfce136e09e64002bf1582c.md) — company_context_only
+- [Yazaki North America](companies/company_efe9bd3c5d9ae8c0879f1258.md) — no_usable_company_evidence
+- [YKK USA Inc.](companies/company_df83f1d388dc1cf299de32ec.md) — no_usable_company_evidence
+- [ZF Gainesville LLC](companies/company_8d222dd0a0807029704fdce6.md) — no_usable_company_evidence

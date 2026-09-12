@@ -1,0 +1,67 @@
+{
+  "query_id": "q_304",
+  "query": "United States imported electric vehicles tariffs effective dates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3fae7b535a58b4ac99386a63",
+    "claim_2c459b3e25009d9ef46099bb",
+    "claim_e1578b8044f522c2f4142bd1",
+    "claim_14edffb8608cb9113a37a2cf",
+    "claim_75699b58d4a4a2ba52a18d45",
+    "claim_c285a022a64271a2eab3d11a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3fae7b535a58b4ac99386a63",
+      "text": "On May 14, 2024, the US announced that it would impose a 100% tariff on Chinese EVs after a review by the United States Trade Representative. This tariff was imposed under US law using Section 301 of the Trade Act of 1974.",
+      "url": "https://asil.org/insights/volume-28-issue-12",
+      "chunk_id": "chunk_f80c91cc44b607e39e3f5789"
+    },
+    {
+      "claim_id": "claim_2c459b3e25009d9ef46099bb",
+      "text": "Tariffs on EVs under Section 301 will rise from 25% to 100% in 2024.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_e1578b8044f522c2f4142bd1",
+      "text": "Tariffs on lithium-ion EV batteries will rise from 7.5% to 25% in 2024",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_14edffb8608cb9113a37a2cf",
+      "text": "Other critical minerals will have the same tariffs, starting even earlier – this year.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_75699b58d4a4a2ba52a18d45",
+      "text": "Natural graphite will face tariffs of 25%, as will permanent magnets, starting 2026.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_c285a022a64271a2eab3d11a",
+      "text": "Natural graphite will face tariffs of 25%, as will permanent magnets, starting 2026.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_2c459b3e25009d9ef46099bb",
+      "claim_e1578b8044f522c2f4142bd1"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 24,
+  "synthesis_input_claim_count": 24
+}

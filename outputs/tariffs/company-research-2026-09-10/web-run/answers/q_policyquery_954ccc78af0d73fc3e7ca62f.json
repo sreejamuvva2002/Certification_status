@@ -1,0 +1,76 @@
+{
+  "query_id": "q_policyquery_954ccc78af0d73fc3e7ca62f",
+  "query": "automobiles auto parts Section 232 HTS Chapter 99 product scope",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_39b1d4608b69b215859e7cc5",
+    "claim_5b8de90f2c3264ee76191604",
+    "claim_6d6f45836e0e748462714485",
+    "claim_8c8a53324fa0a4fe30d1fbc0",
+    "claim_9e97ef64347b5ad40133ef4f"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_39b1d4608b69b215859e7cc5",
+      "text": "Commercial vehicles, such as sedans, sport utility vehicles, crossover utility vehicles, minivans, cargo vans and light trucks, provided for in heading 9903.94.01, HTSUS, are subject to the Section 232 duties pursuant to the Proclamation.",
+      "url": "https://cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_fe5e2939202360977b32001f"
+    },
+    {
+      "claim_id": "claim_5b8de90f2c3264ee76191604",
+      "text": "Light trucks classified in subheadings 8704.21.01, 8704.31.01, 8704.41.00, 8704.51.00, and 8704.60.00 are subject to the duties.",
+      "url": "http://cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_fe5e2939202360977b32001f"
+    },
+    {
+      "claim_id": "claim_6d6f45836e0e748462714485",
+      "text": "Auto parts for passenger vehicles and light trucks, as defined by Executive Order 14257, issued April 2, 2025, and subject to Section 232 duties as of May 3, 2025, are not subject to the reciprocal duties effective April 5, 2025, pursuant to heading 9903.01.33, HTSUS.",
+      "url": "https://cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_fe5e2939202360977b32001f"
+    },
+    {
+      "claim_id": "claim_8c8a53324fa0a4fe30d1fbc0",
+      "text": "Heading 9903.01.33, HTSUS, exempting products subject to Section 232 from the reciprocal tariffs, applies to auto parts for passenger vehicles and light trucks.",
+      "url": "https://cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_fe5e2939202360977b32001f"
+    },
+    {
+      "claim_id": "claim_9e97ef64347b5ad40133ef4f",
+      "text": "Yes, used passenger vehicles and trucks are subject to the Section 232 duties pursuant to the Proclamation, except those manufactured in a year at least 25 years prior to the year of the date of entry.",
+      "url": "http://cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_fe5e2939202360977b32001f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_39b1d4608b69b215859e7cc5",
+      "claim_8b76d5cbbf7a8ce44f1bdc2b"
+    ],
+    [
+      "claim_5b8de90f2c3264ee76191604",
+      "claim_65ed1b7a9f8e263b9f754e6d"
+    ],
+    [
+      "claim_6d6f45836e0e748462714485",
+      "claim_ad4a7e254eda51a0b8c949f0"
+    ],
+    [
+      "claim_8c8a53324fa0a4fe30d1fbc0",
+      "claim_c0acbcd8a9b3874b4b8104d1"
+    ],
+    [
+      "claim_6d6f45836e0e748462714485",
+      "claim_b9674333f79b31b7ae861611"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

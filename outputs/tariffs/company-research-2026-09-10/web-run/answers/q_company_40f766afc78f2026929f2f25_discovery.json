@@ -1,0 +1,42 @@
+{
+  "query_id": "q_company_40f766afc78f2026929f2f25_discovery",
+  "query": "\"MAT Heavy Duty\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_92061268cf44853fa5e5237f",
+    "claim_cd0d6dbd165ce428173eaeec"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_92061268cf44853fa5e5237f",
+      "text": "25% tariff on imports of all heavy-duty trucks and 50% tariffs on kitchen cabinets.",
+      "url": "https://www.facebook.com/cnbctv18india/posts/trumps-latest-tariff-hammer-is-hitting-imports-you-wouldnt-expect-starting-octob/1267163415444421",
+      "chunk_id": "chunk_2e72ec1609a300cc7d038c0b"
+    },
+    {
+      "claim_id": "claim_cd0d6dbd165ce428173eaeec",
+      "text": "25% tariff on imports of all heavy-duty trucks and 50% tariffs on kitchen cabinets.",
+      "url": "https://www.facebook.com/cnbctv18india/posts/trumps-latest-tariff-hammer-is-hitting-imports-you-wouldnt-expect-starting-octob/1267163415444421",
+      "chunk_id": "chunk_2e72ec1609a300cc7d038c0b"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_92061268cf44853fa5e5237f",
+      "claim_cd0d6dbd165ce428173eaeec"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 2,
+  "synthesis_input_claim_count": 2
+}

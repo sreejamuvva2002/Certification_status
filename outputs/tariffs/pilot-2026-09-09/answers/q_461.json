@@ -1,0 +1,90 @@
+{
+  "query_id": "q_461",
+  "query": "Port of Savannah battery imports tariff-related volume changes",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_38d8e71ff2cc691b45665250",
+    "claim_c0353fc95beeb129ae1a94bd",
+    "claim_7856862543c35babd094b586",
+    "claim_c4f60cc8ca60a6e8d4361c84",
+    "claim_79040501f75d79e2f0ec0e86",
+    "claim_8d67186055b32a2f6d526b4b",
+    "claim_6926953d440c82d66bc1862d",
+    "claim_d027b0cd4f18e7ffb0b0ff8a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_38d8e71ff2cc691b45665250",
+      "text": "Retailers scrambling to stock up ahead of anticipated stiff tariffs on imports boosted the Port of Savannah, one of the top U.S. container ports, to its second-busiest year ever, Georgia officials said Tuesday.",
+      "url": "https://finance.yahoo.com/news/cargo-surge-amid-tariff-turmoil-144757802.html",
+      "chunk_id": "chunk_6b4c58716059b8c2d99f1655"
+    },
+    {
+      "claim_id": "claim_c0353fc95beeb129ae1a94bd",
+      "text": "Retailers scrambling to stock up ahead of anticipated stiff tariffs on imports boosted the Port of Savannah, one of the top U.S. container ports, to its second-busiest year ever, Georgia officials said Tuesday.",
+      "url": "https://www.wabe.org/cargo-surge-amid-tariff-turmoil-drives-the-port-of-savannah-to-its-2nd-busiest-year",
+      "chunk_id": "chunk_2357e2204456e03a0ab6179b"
+    },
+    {
+      "claim_id": "claim_7856862543c35babd094b586",
+      "text": "Container traffic through the Port of Savannah returned at near-record volumes in August, topping 500,000 units for the fourth time in the last six months.",
+      "url": "https://www.ajc.com/business/2025/09/trade-rebounds-sharply-at-georgias-ports-after-tariff-related-disruption",
+      "chunk_id": "chunk_e05bf080f506fe56edc5bb18"
+    },
+    {
+      "claim_id": "claim_c4f60cc8ca60a6e8d4361c84",
+      "text": "Traffic slumped in June to its worst point in two years and was off marginally in July before the August surge.",
+      "url": "https://www.ajc.com/business/2025/09/trade-rebounds-sharply-at-georgias-ports-after-tariff-related-disruption",
+      "chunk_id": "chunk_e05bf080f506fe56edc5bb18"
+    },
+    {
+      "claim_id": "claim_79040501f75d79e2f0ec0e86",
+      "text": "The growth was caused in part by a surge in cargo since President Donald Trump returned to office in January, promising heavy tariffs on China and other U.S. trading partners.",
+      "url": "https://www.wabe.org/cargo-surge-amid-tariff-turmoil-drives-the-port-of-savannah-to-its-2nd-busiest-year",
+      "chunk_id": "chunk_2357e2204456e03a0ab6179b"
+    },
+    {
+      "claim_id": "claim_8d67186055b32a2f6d526b4b",
+      "text": "The growth was caused in part by a surge in cargo since President Donald Trump returned to office in January promising heavy tariffs on China and other U.S. trading partners.",
+      "url": "https://finance.yahoo.com/news/cargo-surge-amid-tariff-turmoil-144757802.html",
+      "chunk_id": "chunk_6b4c58716059b8c2d99f1655"
+    },
+    {
+      "claim_id": "claim_6926953d440c82d66bc1862d",
+      "text": "A 90-day pause the Republican president placed on new tariffs announced in April gave American retailers and manufacturers a window to build up inventories ahead of new price hikes.",
+      "url": "https://finance.yahoo.com/news/cargo-surge-amid-tariff-turmoil-144757802.html",
+      "chunk_id": "chunk_6b4c58716059b8c2d99f1655"
+    },
+    {
+      "claim_id": "claim_d027b0cd4f18e7ffb0b0ff8a",
+      "text": "A 90-day pause the Republican president placed on new tariffs announced in April gave American retailers and manufacturers a window to build up inventories ahead of new price hikes.",
+      "url": "https://www.wabe.org/cargo-surge-amid-tariff-turmoil-drives-the-port-of-savannah-to-its-2nd-busiest-year",
+      "chunk_id": "chunk_2357e2204456e03a0ab6179b"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_38d8e71ff2cc691b45665250",
+      "claim_c0353fc95beeb129ae1a94bd"
+    ],
+    [
+      "claim_79040501f75d79e2f0ec0e86",
+      "claim_8d67186055b32a2f6d526b4b"
+    ],
+    [
+      "claim_6926953d440c82d66bc1862d",
+      "claim_d027b0cd4f18e7ffb0b0ff8a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

@@ -1,0 +1,88 @@
+{
+  "query_id": "q_281",
+  "query": "Chatham County Georgia EV component imports tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_21ae080bd2877af02ac66528",
+    "claim_413138df1e72e34a6738836c",
+    "claim_4800b20174305de509ef16e1",
+    "claim_5ee25d7b952ae1f96d5d3c2d",
+    "claim_6012da176c0634dd04c68c58",
+    "claim_61d39b47ebb60777d567b81a",
+    "claim_656c2224370896d2f64b4418",
+    "claim_7531db0793e65fb95f537381"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_21ae080bd2877af02ac66528",
+      "text": "The White House initially established 10% tariffs on imports from all countries, along with higher “reciprocal” tariffs targeting nations such as China, Vietnam and members of the European Union that levy tariffs on U.S. goods.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_413138df1e72e34a6738836c",
+      "text": "Tariff threat casts shadow over Hyundai's plant-opening party in Bryan County. Production lines move away from EVs to hybrid vehicles as",
+      "url": "https://thecurrentga.org/2025/03/31/tariff-threat-casts-shadow-over-hyundais-plant-opening-party-in-bryan-county",
+      "chunk_id": "chunk_bcfcb46bd6564ff6477cb37b"
+    },
+    {
+      "claim_id": "claim_4800b20174305de509ef16e1",
+      "text": "President Donald Trump recently announced 25% tariffs on auto imports at the White House.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    },
+    {
+      "claim_id": "claim_5ee25d7b952ae1f96d5d3c2d",
+      "text": "On April 3, the chamber published a report outlining the impacts local industries may experience from the tariffs, including higher prices for car parts and steel, a squeeze on crop imports and possible slowdowns at the state’s bustling ports.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_6012da176c0634dd04c68c58",
+      "text": "The 25% auto tariff could pose a major threat to automobile titans like Hyundai and Kia that have production plants in the state, said Jennifer Safavian, president and CEO of the trade group Autos Drive America.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_61d39b47ebb60777d567b81a",
+      "text": "Hyundai’s $7.6 billion Georgia plant dodged U.S. President Donald Trump’s recently announced tariffs on imported vehicles and auto parts.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    },
+    {
+      "claim_id": "claim_656c2224370896d2f64b4418",
+      "text": "Because definitely all the cars that we would produce here are going to be exempted from any tariffs,” said Hyundai Motor Company CEO Jose Munoz.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    },
+    {
+      "claim_id": "claim_7531db0793e65fb95f537381",
+      "text": "Hyundai started EV production in Georgia six months ago. As of this writing, over 1,200 workers run the massive plant.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_4800b20174305de509ef16e1",
+      "claim_61d39b47ebb60777d567b81a"
+    ],
+    [
+      "claim_61d39b47ebb60777d567b81a",
+      "claim_656c2224370896d2f64b4418"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

@@ -1,0 +1,51 @@
+company candidate review 8 339 failed
+company candidate review 16 339 failed
+company candidate review 24 339 failed
+company candidate review 32 339 failed
+company candidate review 40 339 failed
+company candidate review 48 339 failed
+company candidate review 56 339 failed
+company candidate review 64 339 failed
+company candidate review 72 339 failed
+company candidate review 80 339 failed
+company candidate review 88 339 failed
+company candidate review 96 339 failed
+company candidate review 104 339 failed
+company candidate review 112 339 failed
+company candidate review 120 339 failed
+company candidate review 128 339 failed
+company candidate review 136 339 failed
+company candidate review 144 339 failed
+company candidate review 152 339 failed
+company candidate review 160 339 failed
+company candidate review 168 339 failed
+company candidate review 176 339 failed
+company candidate review 184 339 failed
+company candidate review 192 339 failed
+company candidate review 200 339 failed
+company candidate review 208 339 failed
+company candidate review 216 339 failed
+company candidate review 224 339 failed
+company candidate review 232 339 failed
+company candidate review 240 339 failed
+company candidate review 248 339 failed
+company candidate review 256 339 failed
+company candidate review 264 339 failed
+company candidate review 272 339 failed
+company candidate review 280 339 failed
+company candidate review 288 339 failed
+company candidate review 296 339 failed
+company candidate review 304 339 failed
+company candidate review 312 339 failed
+company candidate review 320 339 failed
+company candidate review 328 339 failed
+company candidate review 336 339 failed
+company candidate review 339 339 failed
+Traceback (most recent call last):
+  File "/home/sm11926/Certification_status/scripts/finalize_company_tariff_research.py", line 72, in <module>
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--out',type=Path,default=OUT);args=p.parse_args();review(args.out)
+                                                                                                                     ^^^^^^^^^^^^^^^^
+  File "/home/sm11926/Certification_status/scripts/finalize_company_tariff_research.py", line 64, in review
+    if r['status']!='reviewed':raise ValueError('Failed local review; resume before finalizing')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Failed local review; resume before finalizing

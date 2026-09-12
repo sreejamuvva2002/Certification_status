@@ -1,0 +1,36 @@
+{
+  "query_id": "q_10",
+  "query": "Georgia automotive suppliers tariffs employment impacts",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_03d7c6e8ad56e0b3fd04d7e3",
+    "claim_0fe2bc55ef35f74329743ae0"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_03d7c6e8ad56e0b3fd04d7e3",
+      "text": "In Georgia, Kia has invested $1.6 billion in their first U.S. manufacturing facility located in West Point. They directly employ 2,700 people at the facility and indirectly support another 14,000 jobs through their regional suppliers.",
+      "url": "https://www.govinfo.gov/content/pkg/CHRG-115shrg40897/html/CHRG-115shrg40897.htm",
+      "chunk_id": "chunk_7590a943a20ab331eb46cfea"
+    },
+    {
+      "claim_id": "claim_0fe2bc55ef35f74329743ae0",
+      "text": "In a majority of Auto Alley states, parts workers have seen real (inflation-adjusted) monthly earnings decline from 2001 to 2013. See Table 6, bottom right. Kentucky and Georgia--the two states with the lowest monthly earnings in 2001--saw increases",
+      "url": "https://www.govinfo.gov/content/pkg/CHRG-115shrg40897/html/CHRG-115shrg40897.htm",
+      "chunk_id": "chunk_a8c954054277622d767aa248"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 223,
+  "synthesis_input_claim_count": 51
+}

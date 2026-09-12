@@ -1,0 +1,161 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence",
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "Evidence identifies Liberty County manufacturing targets and companies but lacks explicit tariff exposure links for specific entities.",
+  "confidence": "high",
+  "remaining_gap": "No named company in Liberty County linked to specific tariff rates or rules in retrieved text.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_15edcabec64da12f58c30a09",
+      "supporting_excerpt": "The Liberty County Development Authority presented a strategic plan to commissioners that prioritizes automotive/EV suppliers, aerospace, defense-related manufacturing and higher-value distribution",
+      "relevance_explanation": "Confirms focus on EV supply chain in Liberty County without tariff specifics.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_510f7e07df2d578d2acfe464",
+      "supporting_excerpt": "Elan Technology Inc. 60 Glass, ceramics and glass ceramic composites Liberty",
+      "relevance_explanation": "Identifies company in Liberty County but no tariff data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_bf597a20672921cab8d6fdd4",
+      "supporting_excerpt": "Seohan Auto Georgia 180 Axle bearings Liberty",
+      "relevance_explanation": "Identifies company in Liberty County but no tariff data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_6d749fc7f1dd2ca25e86395b",
+      "supporting_excerpt": "Tollison said not relying on shipments outside the country is a win for the Hyundai Metaplant due to the current 25% tariffs put in place by President Donald Trump.",
+      "relevance_explanation": "Discusses tariffs but applies to Bryan County/Hyundai, not Liberty County manufacturers.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_21",
+  "query": "Liberty County automotive parts manufacturers tariffs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 10,
+    "all_extracted_claims": 11,
+    "claims_presented_to_original_synthesis": 11,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 1,
+    "company_named_claims": 2,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_15edcabec64da12f58c30a09",
+    "passage_510f7e07df2d578d2acfe464",
+    "passage_bf597a20672921cab8d6fdd4",
+    "passage_15fe73624ae297f7fda0dbd5",
+    "passage_8d5243052ceeea7729717a22",
+    "passage_6d749fc7f1dd2ca25e86395b",
+    "passage_bcb728b78417a79349094f70",
+    "passage_5a5dc76c9da8c578df267e7e"
+  ],
+  "candidate_document_ids": [
+    "document_03bbe90c34832e1434fed9ad",
+    "document_079b4ba6ee636e62b14b4271",
+    "document_150a243c03e39787abea51cf",
+    "document_8a8c8a8b2e0fff43bf50eea8",
+    "document_d26cacbd9896ebd89058e825",
+    "document_da2e4b24c6d2a6d4291d4a38"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_15edcabec64da12f58c30a09",
+      "supporting_excerpt": "The Liberty County Development Authority presented a strategic plan to commissioners that prioritizes automotive/EV suppliers, aerospace, defense-related manufacturing and higher-value distribution",
+      "relevance_explanation": "Confirms focus on EV supply chain in Liberty County without tariff specifics.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_12767413831319e72bff447f",
+      "query_id": "q_21",
+      "chunk_id": "chunk_ce3c62673bc7f3583a37126c",
+      "document_id": "document_da2e4b24c6d2a6d4291d4a38",
+      "source_url": "https://citizenportal.ai/articles/6194127/georgia/liberty-county/liberty-county-development-authority-unveils-strategic-plan-targeting-manufacturing-ev-supply-chain-and-highervalue-distribution",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/3e8221e2df526f5c0402d627c5afec2a09bd76a1a1c89ae98163bc89c04f93ab.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_510f7e07df2d578d2acfe464",
+      "supporting_excerpt": "Elan Technology Inc. 60 Glass, ceramics and glass ceramic composites Liberty",
+      "relevance_explanation": "Identifies company in Liberty County but no tariff data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_e6a6abf15fb8995935bb5756",
+      "query_id": "q_21",
+      "chunk_id": "chunk_956d70b57a7c29eda962e9a8",
+      "document_id": "document_150a243c03e39787abea51cf",
+      "source_url": "https://selectgeorgia-production-assets.s3.amazonaws.com/media/documents/Automotive_Manufacturing_2026.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/10d78892bed3af44937c5722a55799a091f34d861ab25edb33f9e47dc1356719.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_bf597a20672921cab8d6fdd4",
+      "supporting_excerpt": "Seohan Auto Georgia 180 Axle bearings Liberty",
+      "relevance_explanation": "Identifies company in Liberty County but no tariff data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_167b770abb475b796ace743a",
+      "query_id": "q_21",
+      "chunk_id": "chunk_ae120155e0da2233a9ef1564",
+      "document_id": "document_150a243c03e39787abea51cf",
+      "source_url": "https://selectgeorgia-production-assets.s3.amazonaws.com/media/documents/Automotive_Manufacturing_2026.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/10d78892bed3af44937c5722a55799a091f34d861ab25edb33f9e47dc1356719.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_6d749fc7f1dd2ca25e86395b",
+      "supporting_excerpt": "Tollison said not relying on shipments outside the country is a win for the Hyundai Metaplant due to the current 25% tariffs put in place by President Donald Trump.",
+      "relevance_explanation": "Discusses tariffs but applies to Bryan County/Hyundai, not Liberty County manufacturers.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_7c5862ff12a9d5b24761235e",
+      "query_id": "q_21",
+      "chunk_id": "chunk_e7c5aaacf2fceb4b706a6700",
+      "document_id": "document_079b4ba6ee636e62b14b4271",
+      "source_url": "https://www.wjcl.com/article/hyundai-20-billion-positive-impact-hyundai-metaplant-bryan-county/64290033",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2145120b013461f75c2dca6a9b8a29c0e4599d490f3156241b9771a76f761785.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

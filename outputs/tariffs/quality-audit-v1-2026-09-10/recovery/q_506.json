@@ -1,0 +1,143 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence",
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "Selected evidence failed to establish explicit tariff causality for specific Georgia facilities; available full-text passages contain relevant tariff-delay links not utilized in synthesis.",
+  "confidence": "high",
+  "remaining_gap": "facility_exposure_not_established",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_77a98f67daaf529e144d1269",
+      "supporting_excerpt": "Automotive manufacturing costs: Cars and auto parts will also face a 25% tariff, but for now, they remain exempt until April 2nd. Dodge reported a 33% drop in the dollar value of manufacturing starts in 2024.",
+      "relevance_explanation": "Establishes general tariff link to EV plant delays but highlights policy exemption status uncertainty.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_77a98f67daaf529e144d1269",
+      "supporting_excerpt": "This decline was strongly influenced by project delays and cancellations for electric vehicle plants & electric vehicle battery plants.",
+      "relevance_explanation": "Confirms tariff-related delays in EV sector but lacks specific Georgia facility attribution in this segment.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_6ddd2aed79c29c0b2958927f",
+      "supporting_excerpt": "Meanwhile, Rivian’s planned Georgia campus remains stalled—emblematic of the broader freeze in EV development caused by uncertainty surrounding H.R. 1.",
+      "relevance_explanation": "Links specific Georgia facility delay to policy uncertainty rather than explicit tariffs in this context.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_6ddd2aed79c29c0b2958927f",
+      "supporting_excerpt": "The raid on this facility has caused a lot of confusion both in terms of satisfying previous agreements and in deciding the best course of action moving forward.",
+      "relevance_explanation": "Identifies non-tariff cause (raid/confusion) for Hyundai delays, highlighting evidence gap regarding tariff causality.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_506",
+  "query": "Southeast Georgia EV manufacturing tariff-related project delays",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 4,
+    "all_extracted_claims": 10,
+    "claims_presented_to_original_synthesis": 10,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 8,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_4639e06ae5bd02e824821423",
+    "passage_48b273cbc34ff9d87c0aecdd",
+    "passage_a9db809b9cffd5b0e3684b15",
+    "passage_77a98f67daaf529e144d1269",
+    "passage_6ddd2aed79c29c0b2958927f",
+    "passage_abd3930100d7c38894f17f71",
+    "passage_bdafc0f997fa362a966fba56",
+    "passage_5ceadae14ff0545caf329642"
+  ],
+  "candidate_document_ids": [
+    "document_19e36ecfd57bbe60b8f05d2b",
+    "document_509f150d033f6e532a9c598a",
+    "document_6458c173cfeebfa1bd4c968e",
+    "document_6a390a4669d2cce6a18ad65c",
+    "document_8d212fd8e3a67b475cb53764",
+    "document_9e698e2e384d6117a779c6f5",
+    "document_b67679976393fdc2ef29fabb",
+    "document_ccbf5c8421b44abbe94d6ac7"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_6ddd2aed79c29c0b2958927f",
+      "supporting_excerpt": "The raid on this facility has caused a lot of confusion both in terms of satisfying previous agreements and in deciding the best course of action moving forward.",
+      "relevance_explanation": "Identifies non-tariff cause (raid/confusion) for Hyundai delays, highlighting evidence gap regarding tariff causality.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_e44c120cea785df4d5a85343",
+      "query_id": "q_506",
+      "chunk_id": "chunk_af3adbf5b1f3bee7f9dae8ff",
+      "document_id": "document_6a390a4669d2cce6a18ad65c",
+      "source_url": "https://cobblawgroup.net/blog/slow-payment-ice-raid-halts-hyundai-ev-plant-what-it-means-for-georgia-contractors-suppliers",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/d32eafa63edbadc869f1fa7110759998f5d4266c90fbcd52b1508392e7c8237f.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_77a98f67daaf529e144d1269",
+        "supporting_excerpt": "Automotive manufacturing costs: Cars and auto parts will also face a 25% tariff, but for now, they remain exempt until April 2nd. Dodge reported a 33% drop in the dollar value of manufacturing starts in 2024.",
+        "relevance_explanation": "Establishes general tariff link to EV plant delays but highlights policy exemption status uncertainty.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_77a98f67daaf529e144d1269",
+        "supporting_excerpt": "This decline was strongly influenced by project delays and cancellations for electric vehicle plants & electric vehicle battery plants.",
+        "relevance_explanation": "Confirms tariff-related delays in EV sector but lacks specific Georgia facility attribution in this segment.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_6ddd2aed79c29c0b2958927f",
+        "supporting_excerpt": "Meanwhile, Rivian’s planned Georgia campus remains stalled—emblematic of the broader freeze in EV development caused by uncertainty surrounding H.R. 1.",
+        "relevance_explanation": "Links specific Georgia facility delay to policy uncertainty rather than explicit tariffs in this context.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

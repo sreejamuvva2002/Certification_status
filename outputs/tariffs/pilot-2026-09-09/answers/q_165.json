@@ -1,0 +1,72 @@
+{
+  "query_id": "q_165",
+  "query": "Flexible printed circuit boards import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0000c077fce6295378000a0b",
+    "claim_36785787fdf226e5c814581d",
+    "claim_376d89b8216b3ed25e2f33be",
+    "claim_6895fc2376c9a257563df81d",
+    "claim_a7cbc3ac673990d477c2d1b2",
+    "claim_f3674f104e3b68976491740a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0000c077fce6295378000a0b",
+      "text": "At present, there is a 10% universal tariff on most goods imported to the U.S.",
+      "url": "https://emsginc.com/resources/how-tariffs-are-affecting-the-pcb-circuit-board-industry",
+      "chunk_id": "chunk_943c717854b4a93c0e97f987"
+    },
+    {
+      "claim_id": "claim_36785787fdf226e5c814581d",
+      "text": "At the moment, there are no U.S. tariffs on printed circuit board imports specifically.",
+      "url": "https://emsginc.com/resources/how-tariffs-are-affecting-the-pcb-circuit-board-industry",
+      "chunk_id": "chunk_943c717854b4a93c0e97f987"
+    },
+    {
+      "claim_id": "claim_376d89b8216b3ed25e2f33be",
+      "text": "China | 30% DS/4Layer, 55% other | 14/05/25 | Until 12/11/25 | Interim deal; 90-day truce.",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_6895fc2376c9a257563df81d",
+      "text": "In April 2025, the United States has implemented new tariffs on Chinese imports, including printed circuit boards (PCBs) and custom-made technical parts.",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_a7cbc3ac673990d477c2d1b2",
+      "text": "| Country | Type | Standard Rate | Exemption | Section 301 | Total | \n|---|---|---|---|---|---|\n| China | 2L and 4L FR4 PCBs | 25% | -25% | 12.5% | 12.5% |",
+      "url": "https://www.sunshinepcbgroup.com/resources/tariff-rates",
+      "chunk_id": "chunk_a73efa901dcdf5106e26a4e0"
+    },
+    {
+      "claim_id": "claim_f3674f104e3b68976491740a",
+      "text": "Flexible PCBs | 8534.00.00 | 55%",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_0000c077fce6295378000a0b",
+      "claim_36785787fdf226e5c814581d"
+    ],
+    [
+      "claim_36785787fdf226e5c814581d",
+      "claim_f3674f104e3b68976491740a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

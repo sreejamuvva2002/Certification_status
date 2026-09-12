@@ -1,0 +1,49 @@
+{
+  "query_id": "q_company_bcc838354309e862758a8371_discovery",
+  "query": "\"Novelis Inc.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_5a08f8d746dfb17e2770004a",
+    "claim_a294ca7aae0468667906b5d3",
+    "claim_c16e0055a62f39b1c6b12cd1"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_5a08f8d746dfb17e2770004a",
+      "text": "During the second quarter of fiscal 2026, U.S. Customs and Border Protection (\"U.S. Customs\") issued the Company a notice of action asserting that certain aluminum shipments from the Company's Brazilian operations to the United States were subject to antidumping duties and additional tariffs based on U.S.",
+      "url": "https://investors.novelis.com/sec-filings/all-sec-filings/content/0001304280-26-000019/nvl-20260331.htm",
+      "chunk_id": "chunk_3ff444538957c07910cafe49"
+    },
+    {
+      "claim_id": "claim_a294ca7aae0468667906b5d3",
+      "text": "During the second quarter of fiscal 2026, U.S. Customs and Border Protection (\"U.S. Customs\") issued the Company a notice of action asserting that certain aluminum shipments from the Company's Brazilian operations to the United States were subject to antidumping duties and additional tariffs based on U.S. Customs' determination of the classification of the shipped products.",
+      "url": "https://investors.novelis.com/sec-filings/all-sec-filings/content/0001304280-26-000019/nvl-20260331.htm",
+      "chunk_id": "chunk_9dc1305209031c84826bfe6f"
+    },
+    {
+      "claim_id": "claim_c16e0055a62f39b1c6b12cd1",
+      "text": "According to the Wall Street Journal, Novelis has been compensating for lost production at Oswego with aluminium from its plants in Europe and South Korea. The company's imported metal is subject to a 50% tariff.",
+      "url": "https://supplychaindigital.com/news/aluminium-tariff-relief-ford-vs-the-us-government",
+      "chunk_id": "chunk_9826bf0b78938cb863de80b5"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_5a08f8d746dfb17e2770004a",
+      "claim_a294ca7aae0468667906b5d3"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

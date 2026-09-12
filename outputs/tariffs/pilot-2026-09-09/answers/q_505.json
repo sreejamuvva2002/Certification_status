@@ -1,0 +1,81 @@
+{
+  "query_id": "q_505",
+  "query": "Georgia automotive display sourcing tariffs supplier disclosure",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_308073f842561b19f797bd14",
+    "claim_324ab39c33f911d46e9da9b3",
+    "claim_82e20559697341874cc72d65",
+    "claim_b101d12ca13a6fc08e611b84",
+    "claim_c71f371c7d88e834f36ca982",
+    "claim_d9021dcc7320bd5b8a989d52",
+    "claim_e8a841aa696850a94fb9c762"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_308073f842561b19f797bd14",
+      "text": "The tariffs are in addition to existing duties, which currently stand at a base rate of 2.5% for automotive imports.",
+      "url": "https://www.ledger-enquirer.com/news/politics-government/article302957479.html",
+      "chunk_id": "chunk_a7951b04d3a05c40348e2dfa"
+    },
+    {
+      "claim_id": "claim_324ab39c33f911d46e9da9b3",
+      "text": "Georgia is also experiencing a boom in the electric vehicle market, with the presence and expansion of the Hyundai and Kia facilities",
+      "url": "https://www.ledger-enquirer.com/news/politics-government/article302957479.html",
+      "chunk_id": "chunk_a7951b04d3a05c40348e2dfa"
+    },
+    {
+      "claim_id": "claim_82e20559697341874cc72d65",
+      "text": "On April 3, the chamber published a report outlining the impacts local industries may experience from the tariffs, including higher prices for car parts and steel, a squeeze on crop imports and possible slowdowns at the state’s bustling ports.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_b101d12ca13a6fc08e611b84",
+      "text": "German car brands like BMW, Mercedes-Benz, and Audi have a significant presence in the U.S. market and are subject to the 25% tariffs.",
+      "url": "https://www.ledger-enquirer.com/news/politics-government/article302957479.html",
+      "chunk_id": "chunk_a7951b04d3a05c40348e2dfa"
+    },
+    {
+      "claim_id": "claim_c71f371c7d88e834f36ca982",
+      "text": "The 25% auto tariff could pose a major threat to automobile titans like Hyundai and Kia that have production plants in the state, said Jennifer Safavian, president and CEO of the trade group Autos Drive America.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_d9021dcc7320bd5b8a989d52",
+      "text": "The 25% auto tariff could pose a major threat to automobile titans like Hyundai and Kia that have production plants in the state",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_e8a841aa696850a94fb9c762",
+      "text": "Aug 20, 2025 — The introduced U.S. automotive tariffs create potential challenges and risks for display panel supply chains.",
+      "url": "https://omdia.tech.informa.com/blogs/2025/aug/the-introduced-us-automotive-tariffs-create-potential-challenges-and-risks-for-display-panel-supply-chains",
+      "chunk_id": "chunk_279a0eb4d3fa382e40e0ade0"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_308073f842561b19f797bd14",
+      "claim_b101d12ca13a6fc08e611b84"
+    ],
+    [
+      "claim_c71f371c7d88e834f36ca982",
+      "claim_d9021dcc7320bd5b8a989d52"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

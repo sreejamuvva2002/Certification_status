@@ -1,0 +1,64 @@
+{
+  "query_id": "q_410",
+  "query": "Nickel matte battery supply chain United States tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0f762cccb9a8bb771a95397f",
+    "claim_a6a7e3474922ef8383ae704f",
+    "claim_332ea1128d2e93e8849d6638",
+    "claim_c6ccab6e8f93c46218f627a2",
+    "claim_2b5eab76d6d314a5839b32bd"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0f762cccb9a8bb771a95397f",
+      "text": "Exempt cobalt products include ores and concentrates under 2605.00.00, oxides and hydroxides under 2822.00.00, cobalt sulphate under 2833.29.10, cobalt carbonate under 2836.99.10, as well as cobalt mattes, intermediate products, powders, and unwrought metal.",
+      "url": "https://news.metal.com/newscontent/104021517-us-imposes-forced-labor-related-section-301-tariffs-lithium-ion-batteries-and-key-raw-materials-exempt",
+      "chunk_id": "chunk_33bb03bb19ef9ab26f962eac"
+    },
+    {
+      "claim_id": "claim_a6a7e3474922ef8383ae704f",
+      "text": "Exempt nickel products include ores and concentrates under 2604.00.00, mattes under 7501.10.00, oxides and hydroxides under 2825.40.00, nickel sulphate under 2833.24.00, and unwrought non-alloyed and alloyed nickel under 7502.10.00 and 7502.20.00.",
+      "url": "https://news.metal.com/newscontent/104021517-us-imposes-forced-labor-related-section-301-tariffs-lithium-ion-batteries-and-key-raw-materials-exempt",
+      "chunk_id": "chunk_33bb03bb19ef9ab26f962eac"
+    },
+    {
+      "claim_id": "claim_332ea1128d2e93e8849d6638",
+      "text": "However, batteries and a broad range of key battery raw materials are included in the exemption list. According to the final product list released by the Office of the United States Trade Representative (USTR), lithium-ion batteries under HTSUS 8507.60.00 will not be subject to the additional Section 301 tariffs.",
+      "url": "https://news.metal.com/newscontent/104021517-us-imposes-forced-labor-related-section-301-tariffs-lithium-ion-batteries-and-key-raw-materials-exempt",
+      "chunk_id": "chunk_33bb03bb19ef9ab26f962eac"
+    },
+    {
+      "claim_id": "claim_c6ccab6e8f93c46218f627a2",
+      "text": "the tariff on battery parts and lithium-ion batteries for EVs will increase from 7.5% TO 25% THIS YEAR.",
+      "url": "https://www.alixpartners.com/media/zwkcl4ec/impact-of-tariffs_sept-24.pdf",
+      "chunk_id": "chunk_511339069c3c1b0d3a0ff8cb"
+    },
+    {
+      "claim_id": "claim_2b5eab76d6d314a5839b32bd",
+      "text": "in 2024, the Biden administration imposed a 100% tariff on Chinese EVs, and the 2025 Trump administration followed with a 54% cumulative tariff on Chinese imports",
+      "url": "https://kleinmanenergy.upenn.edu/research/publications/battling-for-batteries-li-ion-policy-and-supply-chain-dynamics-in-the-u-s-and-china",
+      "chunk_id": "chunk_2d0d4d38033cbb9fc6f365ed"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0f762cccb9a8bb771a95397f",
+      "claim_a6a7e3474922ef8383ae704f"
+    ],
+    [
+      "claim_332ea1128d2e93e8849d6638",
+      "claim_c6ccab6e8f93c46218f627a2"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 29,
+  "synthesis_input_claim_count": 29
+}

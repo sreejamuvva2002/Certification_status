@@ -1,0 +1,76 @@
+{
+  "query_id": "q_289",
+  "query": "\"Hyundai Motor Group Metaplant America\" tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2a579779eeaf9e25859b15b4",
+    "claim_ad2ea3e3a85c068cb0da422e",
+    "claim_bb5bb59ac60b68f5ce5d6f24",
+    "claim_bf99a7e56719a997c17ae1ce",
+    "claim_c7126a4c34dc570941ec748e",
+    "claim_d0e45eae1412c47ae478e05e",
+    "claim_f24284daaeb8dbf1eaf8bb5b"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2a579779eeaf9e25859b15b4",
+      "text": "Hyundai considers Georgia Metaplant expansion to 800,000 units",
+      "url": "https://www.facebook.com/quartznews/posts/tariffs-are-pushing-hyundai-to-build-more-cars-in-america-a-lot-more-hyundai-is-/1419022150093599",
+      "chunk_id": "chunk_cb4542e10e20af3b252e53a1"
+    },
+    {
+      "claim_id": "claim_ad2ea3e3a85c068cb0da422e",
+      "text": "José Muñoz, president and CEO of Hyundai Motor, said in a CNBC interview on the 20th (local time) that the company is reviewing plans to increase capacity at Hyundai Motor Group Metaplant America (HMGMA) from the currently planned 500,000 units per year to between 700,000 and 800,000 units by 2028.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    },
+    {
+      "claim_id": "claim_bb5bb59ac60b68f5ce5d6f24",
+      "text": "Muñoz directly acknowledged that the Trump administration's tariffs are pulling forward the localization strategy. \"Tariffs are helping us accelerate our localization plans. It's a very simple matter,\" he said.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    },
+    {
+      "claim_id": "claim_bf99a7e56719a997c17ae1ce",
+      "text": "The 15% tariff applied to South Korean imports is increasing the economic incentive for local production expansion.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    },
+    {
+      "claim_id": "claim_c7126a4c34dc570941ec748e",
+      "text": "The Georgia Metaplant has steadily grown in scale since Hyundai first announced investment plans in 2022. The current investment totals $7.6 billion (approximately 10.5 trillion won). Completed last year, the plant serves as a production hub for Hyundai, Genesis, and Kia electric vehicles and hybrids, currently producing the Ioniq 5, Ioniq 9, and Kia Sportage Hybrid, among others.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    },
+    {
+      "claim_id": "claim_d0e45eae1412c47ae478e05e",
+      "text": "Tariff threat casts shadow over Hyundai's plant-opening party in Bryan County. Production lines move away from EVs to hybrid vehicles as",
+      "url": "https://thecurrentga.org/2025/03/31/tariff-threat-casts-shadow-over-hyundais-plant-opening-party-in-bryan-county",
+      "chunk_id": "chunk_bcfcb46bd6564ff6477cb37b"
+    },
+    {
+      "claim_id": "claim_f24284daaeb8dbf1eaf8bb5b",
+      "text": "Hyundai Motor is exploring plans to expand annual production capacity at its new plant in Georgia to as much as 800,000 units. The tariff policies of the Donald Trump administration are seen as a key factor accelerating the push toward local production.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_bb5bb59ac60b68f5ce5d6f24",
+      "claim_d0e45eae1412c47ae478e05e"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

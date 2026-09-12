@@ -1,0 +1,43 @@
+{
+  "query_id": "q_company_1a42c8704adcaf70bd49cb78_discovery",
+  "query": "\"Aspen Aerogels\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_17355c6811f1ddcb114e4f33",
+    "claim_66800a6c0ea56f5def22bd5c",
+    "claim_e65c95d0ce4a9c1bc144b109"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_17355c6811f1ddcb114e4f33",
+      "text": "In China, Aspen is planning to increase annual production capacity by $200 million by 2026. The company’s manufacturing partnerships in China have already proven effective in delivering products for other business arms, and are “capable of delivering increased aerogel production capacity” to help make up for the loss of the plant in Georgia",
+      "url": "https://www.latitudemedia.com/news/why-aspen-aerogels-cancelled-its-lpo-loan-and-its-georgia-factory",
+      "chunk_id": "chunk_0ad6625b7cf099835646baf7"
+    },
+    {
+      "claim_id": "claim_66800a6c0ea56f5def22bd5c",
+      "text": "This comes as the Trump administration pushes to cut taxes on domestic manufacturing and levy steep tariffs against competing products, including from China and Mexico.",
+      "url": "https://www.latitudemedia.com/news/why-aspen-aerogels-cancelled-its-lpo-loan-and-its-georgia-factory",
+      "chunk_id": "chunk_0ad6625b7cf099835646baf7"
+    },
+    {
+      "claim_id": "claim_e65c95d0ce4a9c1bc144b109",
+      "text": "The earnings call came after the Trump administration’s first 10% tariff increase on China, but before the second, which took effect just last week.",
+      "url": "https://www.latitudemedia.com/news/why-aspen-aerogels-cancelled-its-lpo-loan-and-its-georgia-factory",
+      "chunk_id": "chunk_0ad6625b7cf099835646baf7"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

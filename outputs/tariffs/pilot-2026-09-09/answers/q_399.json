@@ -1,0 +1,89 @@
+{
+  "query_id": "q_399",
+  "query": "Georgia battery factories imported equipment tariff exposure",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_112bf10b83a3d0d3f702f14e",
+    "claim_38686e1a114c6a3e6d472842",
+    "claim_5c6447ad5bfca0c4a15aa73c",
+    "claim_65b74d6de0415ef4c482d213",
+    "claim_7aa14e1ddafd7b66fee99210",
+    "claim_9b54a02e235d99efdbad8ea1",
+    "claim_a9a11e6a6a0c3f03077f605a",
+    "claim_ef8e6f53850c5e5d2017e290"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_112bf10b83a3d0d3f702f14e",
+      "text": "U.S. automakers import many battery materials from South Korea, via suppliers like SK On and LG Chem, which face the global 10 percent tariff",
+      "url": "https://www.eenews.net/articles/how-a-trade-war-could-move-american-evs-out-of-reach",
+      "chunk_id": "chunk_9691174f0159cb9338ce7761"
+    },
+    {
+      "claim_id": "claim_38686e1a114c6a3e6d472842",
+      "text": "The cost of steel has risen from around 35 cents per pound prior to February 2025 to approximately 50 cents per pound, a 43% increase. The steel trays, being one of the most expensive components of the battery, could see a cost increase of about 30%",
+      "url": "https://www.stryten.com/the-impact-of-critical-mineral-bans-and-steel-tariffs-on-battery-manufacturing",
+      "chunk_id": "chunk_6c43a7048808d5e80fff2f8e"
+    },
+    {
+      "claim_id": "claim_5c6447ad5bfca0c4a15aa73c",
+      "text": "The recent 25% tariff on imported steel has significant implications for battery manufacturing costs. The tariff has led to increased prices in anticipation of increased domestic demand and constrained supply.",
+      "url": "https://www.stryten.com/the-impact-of-critical-mineral-bans-and-steel-tariffs-on-battery-manufacturing",
+      "chunk_id": "chunk_6c43a7048808d5e80fff2f8e"
+    },
+    {
+      "claim_id": "claim_65b74d6de0415ef4c482d213",
+      "text": "effective March 12, 2025, the current administration reinstated 25% tariffs on global steel imports and increased tariffs on global aluminum imports to 25%. These measures significantly affect the battery manufacturing industry",
+      "url": "https://www.stryten.com/the-impact-of-critical-mineral-bans-and-steel-tariffs-on-battery-manufacturing",
+      "chunk_id": "chunk_6c43a7048808d5e80fff2f8e"
+    },
+    {
+      "claim_id": "claim_7aa14e1ddafd7b66fee99210",
+      "text": "the possibility of a far higher 25 percent duty after Trump’s reciprocal tariffs resume in July",
+      "url": "https://www.eenews.net/articles/how-a-trade-war-could-move-american-evs-out-of-reach",
+      "chunk_id": "chunk_9691174f0159cb9338ce7761"
+    },
+    {
+      "claim_id": "claim_9b54a02e235d99efdbad8ea1",
+      "text": "Tariffs are highest on China, which automakers and suppliers can’t yet escape as a key source of crucial battery materials.",
+      "url": "https://www.eenews.net/articles/how-a-trade-war-could-move-american-evs-out-of-reach",
+      "chunk_id": "chunk_9691174f0159cb9338ce7761"
+    },
+    {
+      "claim_id": "claim_a9a11e6a6a0c3f03077f605a",
+      "text": "The materials from China that matter most are battery cells; cathode-active materials; and raw inputs like graphite, lithium, cobalt and nickel.",
+      "url": "https://www.eenews.net/articles/how-a-trade-war-could-move-american-evs-out-of-reach",
+      "chunk_id": "chunk_9691174f0159cb9338ce7761"
+    },
+    {
+      "claim_id": "claim_ef8e6f53850c5e5d2017e290",
+      "text": "The tariffs are threatening to raise the costs of minerals used to build equipment like lithium-ion batteries and other equipment coming into the U.S.",
+      "url": "https://www.eenews.net/articles/how-a-trade-war-could-move-american-evs-out-of-reach",
+      "chunk_id": "chunk_9691174f0159cb9338ce7761"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_38686e1a114c6a3e6d472842",
+      "claim_5c6447ad5bfca0c4a15aa73c"
+    ],
+    [
+      "claim_65b74d6de0415ef4c482d213",
+      "claim_7aa14e1ddafd7b66fee99210"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 8,
+  "synthesis_input_claim_count": 8
+}

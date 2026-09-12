@@ -1,0 +1,46 @@
+{
+  "query_id": "q_69",
+  "query": "Imported electric vehicles China Section 301 tariff schedule",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_049b6af867f270686e2a26ee",
+    "claim_350613bf0eea28059f969f3c",
+    "claim_9c566896ab52b9747a1960d5"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_049b6af867f270686e2a26ee",
+      "text": "Electric vehicles (BEVs and PHEVs) | 25% | 100% | September 27, 2024",
+      "url": "https://gingercontrol.com/blog/section-301-tariff-rates-china",
+      "chunk_id": "chunk_5372a4563c69e6209a549215"
+    },
+    {
+      "claim_id": "claim_350613bf0eea28059f969f3c",
+      "text": "Strategic products face elevated rates following the 2024 review: electric vehicles at 100%, solar cells at 50%, and EV batteries at 25%.",
+      "url": "https://gingercontrol.com/blog/section-301-tariff-rates-china",
+      "chunk_id": "chunk_5372a4563c69e6209a549215"
+    },
+    {
+      "claim_id": "claim_9c566896ab52b9747a1960d5",
+      "text": "The tariff rate will increase from 25% to 100% on August 1, 2024 for certain fully electric passenger vehicles, as well as certain hybrid passenger vehicles that can be charged through plugging into an external power source.",
+      "url": "https://www.wiley.law/alert-Administration-Releases-Details-on-Planned-Increases-to-Section-301-Duties-on-Imports-from-China",
+      "chunk_id": "chunk_f1679feb3f36c2306c8267f6"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_049b6af867f270686e2a26ee",
+      "claim_9c566896ab52b9747a1960d5"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 18,
+  "synthesis_input_claim_count": 18
+}

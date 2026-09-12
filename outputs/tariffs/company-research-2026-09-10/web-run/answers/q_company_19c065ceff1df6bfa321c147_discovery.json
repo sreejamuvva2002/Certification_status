@@ -1,0 +1,71 @@
+{
+  "query_id": "q_company_19c065ceff1df6bfa321c147_discovery",
+  "query": "\"Honda Development & Manufacturing\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_297fdb13f85a4f7181544d2a",
+    "claim_3a731ab59602e007495294d7",
+    "claim_86dff497f88e76147841d758",
+    "claim_87196076f532dd9eb3fe4710",
+    "claim_ab3fd08f602144c41b4c25eb",
+    "claim_f9f40904e08957e5edf2ffd2"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_297fdb13f85a4f7181544d2a",
+      "text": "Honda Motor Co. lowered the impact of tariffs for the fiscal year ending March 31 from 450 billion yen ($2.85 billion) to 310 billion yen ($1.9 billion), according to the company’s Feb. 10 earnings call.",
+      "url": "https://www.supplychaindive.com/news/honda-cuts-tariff-hit-tackles-supply-gaps/813579",
+      "chunk_id": "chunk_dde1b5af9b87a87bd4d7dc76"
+    },
+    {
+      "claim_id": "claim_3a731ab59602e007495294d7",
+      "text": "among the companies that could be most affected by the tariffs are Honda, Toyota and Mazda.",
+      "url": "https://www.facebook.com/aldotcom/posts/according-to-gobankingrates-among-the-companies-that-could-be-most-affected-by-t/1041560011352229",
+      "chunk_id": "chunk_54617a73f786d62d4e989bd1"
+    },
+    {
+      "claim_id": "claim_86dff497f88e76147841d758",
+      "text": "Honda disclosed the tariff burden while also reporting a 267 billion yen ($1.7 billion) operating loss for the last nine months of 2025 as it navigated shifts in U.S. electric vehicle policy.",
+      "url": "https://www.supplychaindive.com/news/honda-cuts-tariff-hit-tackles-supply-gaps/813579",
+      "chunk_id": "chunk_dde1b5af9b87a87bd4d7dc76"
+    },
+    {
+      "claim_id": "claim_87196076f532dd9eb3fe4710",
+      "text": "Honda partially offset tariffs through logistics adjustments and increased procurement that met the requirements of the U.S.-Mexico-Canada Agreement, executives told investors.",
+      "url": "https://www.supplychaindive.com/news/honda-cuts-tariff-hit-tackles-supply-gaps/813579",
+      "chunk_id": "chunk_dde1b5af9b87a87bd4d7dc76"
+    },
+    {
+      "claim_id": "claim_ab3fd08f602144c41b4c25eb",
+      "text": "Other issues facing the carmaker included “heightened supply chain risk due to expansion of global procurement, further exacerbated by intensifying global competition from emerging OEMs,” EVP Noriya Kaihara said.",
+      "url": "https://www.supplychaindive.com/news/honda-cuts-tariff-hit-tackles-supply-gaps/813579",
+      "chunk_id": "chunk_dde1b5af9b87a87bd4d7dc76"
+    },
+    {
+      "claim_id": "claim_f9f40904e08957e5edf2ffd2",
+      "text": "Honda’s supply troubles included a semiconductor crunch in the third fiscal quarter, which is easing, Kaihara said. However, the next wave of risk is the rare earth supply chain, affected by China’s export restrictions.",
+      "url": "https://www.supplychaindive.com/news/honda-cuts-tariff-hit-tackles-supply-gaps/813579",
+      "chunk_id": "chunk_dde1b5af9b87a87bd4d7dc76"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_3a731ab59602e007495294d7",
+      "claim_4391f168e0e1445e537ae2e3"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 33,
+  "synthesis_input_claim_count": 33
+}

@@ -1,0 +1,62 @@
+{
+  "query_id": "q_392",
+  "query": "Battery copper current collectors import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_37affa16bed9cc702f0886d8",
+    "claim_780b43a253ec599ce7412559",
+    "claim_84250c1220446efb15c6063d",
+    "claim_dd2a7d37c8f82f0ee8981b2a",
+    "claim_cab1718ea0b24c8d5ce53dad"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_37affa16bed9cc702f0886d8",
+      "text": "Steel and copper tariffs of 50 percent added further cost pressure on pack housings, connectors, busbars, and wiring harnesses.",
+      "url": "https://www.totexmfg.com/battery-pack-tariffs-oem-2026",
+      "chunk_id": "chunk_d625c75d6d3fc6f5cf2f6a0a"
+    },
+    {
+      "claim_id": "claim_780b43a253ec599ce7412559",
+      "text": "While copper prices have somewhat stabilized in the weeks since a 50% import tariff on the metal went into effect, the battery energy storage industry is bracing for higher prices and supply chain disruptions in the near future.",
+      "url": "https://pv-magazine-usa.com/2025/09/08/polymer-batteries-could-help-protect-the-energy-storage-industry-from-copper-tariffs",
+      "chunk_id": "chunk_381fba27fed856451ad2394d"
+    },
+    {
+      "claim_id": "claim_84250c1220446efb15c6063d",
+      "text": "Copper features prominently in various battery components like wiring and current converters; the average lithium-ion battery is up to 15% copper by weight.",
+      "url": "https://pv-magazine-usa.com/2025/09/08/polymer-batteries-could-help-protect-the-energy-storage-industry-from-copper-tariffs",
+      "chunk_id": "chunk_381fba27fed856451ad2394d"
+    },
+    {
+      "claim_id": "claim_dd2a7d37c8f82f0ee8981b2a",
+      "text": "Though refined copper has been granted a temporary exemption, it might not be enough to shield the market, as semi-finished products are still vulnerable.",
+      "url": "https://pv-magazine-usa.com/2025/09/08/polymer-batteries-could-help-protect-the-energy-storage-industry-from-copper-tariffs",
+      "chunk_id": "chunk_381fba27fed856451ad2394d"
+    },
+    {
+      "claim_id": "claim_cab1718ea0b24c8d5ce53dad",
+      "text": "The FEOC bill of materials analysis considers the import duties and tariffs for battery components/materials. ... copper foils used as current collectors.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378775326020264",
+      "chunk_id": "chunk_300c34afbbf718cd2dc51e83"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_780b43a253ec599ce7412559",
+      "claim_dd2a7d37c8f82f0ee8981b2a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 24,
+  "synthesis_input_claim_count": 24
+}

@@ -1,0 +1,78 @@
+{
+  "query_id": "q_464",
+  "query": "Georgia Ports Authority automotive tariffs cargo forecast",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_28645ae0f976931772da9b19",
+    "claim_72189b6a320fc655ab359272",
+    "claim_7cdb9b39781dd53b3c3e187a",
+    "claim_7fb184ced7d27a86d470ea56",
+    "claim_bdbb4cc7b91632b47f4d38a8",
+    "claim_d607909db5d42181f0ce0b8e",
+    "claim_fe023bb827ed81215c2c7dbd"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_28645ae0f976931772da9b19",
+      "text": "GPA chief Griff Lynch blamed the downturn squarely on auto-import tariffs.",
+      "url": "https://valdostadailytimes.com/2025/11/03/gary-wisenbaker-georgia-ports-weather-tariff-turbulence",
+      "chunk_id": "chunk_67b54c12332bc0e7881e3edb"
+    },
+    {
+      "claim_id": "claim_72189b6a320fc655ab359272",
+      "text": "tariffs caused dips in volume in June and October",
+      "url": "https://www.savannahnow.com/story/news/local/2026/01/28/georgia-ports-authority-weathers-year-of-tariffs-with-strong-performance/88382339007",
+      "chunk_id": "chunk_ad72c668f6c1a280d829985e"
+    },
+    {
+      "claim_id": "claim_7cdb9b39781dd53b3c3e187a",
+      "text": "Lynch said tariffs on",
+      "url": "https://apnews.com/article/georgia-port-of-savannah-statistics-tariffs-3b7ae80b790d8de9fde4e297ca7d00f9",
+      "chunk_id": "chunk_a0fdb3ed545f58c26a4d072e"
+    },
+    {
+      "claim_id": "claim_7fb184ced7d27a86d470ea56",
+      "text": "Georgia's nearby Port of Brunswick saw automobile shipments drop 2.2% as it moved 811,042 cars and trucks in fiscal 2025.",
+      "url": "https://apnews.com/article/georgia-port-of-savannah-statistics-tariffs-3b7ae80b790d8de9fde4e297ca7d00f9",
+      "chunk_id": "chunk_a0fdb3ed545f58c26a4d072e"
+    },
+    {
+      "claim_id": "claim_bdbb4cc7b91632b47f4d38a8",
+      "text": "Manufacturers are holding back shipments from Europe, Asia, and Mexico as costs rise and markets shift.",
+      "url": "https://valdostadailytimes.com/2025/11/03/gary-wisenbaker-georgia-ports-weather-tariff-turbulence",
+      "chunk_id": "chunk_67b54c12332bc0e7881e3edb"
+    },
+    {
+      "claim_id": "claim_d607909db5d42181f0ce0b8e",
+      "text": "The growth was anchored by early year gains in February, March and April, when shippers were moving large amounts of cargo ahead of the anticipated tariffs",
+      "url": "https://www.savannahnow.com/story/news/local/2026/01/28/georgia-ports-authority-weathers-year-of-tariffs-with-strong-performance/88382339007",
+      "chunk_id": "chunk_ad72c668f6c1a280d829985e"
+    },
+    {
+      "claim_id": "claim_fe023bb827ed81215c2c7dbd",
+      "text": "GPA saw a 7.5% decline in 2025 volume at the Port of Brunswick, its Roll-On/Roll-Off port for autos and heavy machinery. The drop in volume was driven by tariffs that led to some manufacturers pausing shipments",
+      "url": "https://www.savannahnow.com/story/news/local/2026/01/28/georgia-ports-authority-weathers-year-of-tariffs-with-strong-performance/88382339007",
+      "chunk_id": "chunk_ad72c668f6c1a280d829985e"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_7fb184ced7d27a86d470ea56",
+      "claim_fe023bb827ed81215c2c7dbd"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

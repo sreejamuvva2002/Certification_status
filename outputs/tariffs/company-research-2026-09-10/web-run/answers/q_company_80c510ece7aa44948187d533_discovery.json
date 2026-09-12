@@ -1,0 +1,55 @@
+{
+  "query_id": "q_company_80c510ece7aa44948187d533_discovery",
+  "query": "\"Constellium Automotive USA\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1137d0ade7c7734984ff66c9",
+    "claim_6b1f78583b25a579ac5b46db",
+    "claim_9d888877defddd20fc0f1497",
+    "claim_ade91f07c8d03deb07027438"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1137d0ade7c7734984ff66c9",
+      "text": "From 3 May 2025, the 25% tariff will then also be applied to automotive components.",
+      "url": "https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740",
+      "chunk_id": "chunk_1f0ebc1036b3ff77151336c5"
+    },
+    {
+      "claim_id": "claim_6b1f78583b25a579ac5b46db",
+      "text": "From 3 April 2025, 25% tariffs on all vehicle imports – except for Canada and Mexico, where USMCA compliant parts and vehicles will remain exempt.",
+      "url": "https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740",
+      "chunk_id": "chunk_1f0ebc1036b3ff77151336c5"
+    },
+    {
+      "claim_id": "claim_9d888877defddd20fc0f1497",
+      "text": "On 'Liberation Day', 2 April 2025, US president Trump announced sweeping tariffs which had the potential to overturn 80 years of successful globalisation and free-market trade consensus.",
+      "url": "https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740",
+      "chunk_id": "chunk_1f0ebc1036b3ff77151336c5"
+    },
+    {
+      "claim_id": "claim_ade91f07c8d03deb07027438",
+      "text": "Tariffs could also be charged on both component and finished vehicles.",
+      "url": "https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740",
+      "chunk_id": "chunk_1f0ebc1036b3ff77151336c5"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_1137d0ade7c7734984ff66c9",
+      "claim_6b1f78583b25a579ac5b46db"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

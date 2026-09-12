@@ -1,0 +1,130 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original answer fails to establish a specific company's tariff exposure because the available evidence is dominated by general regulatory frameworks, future projections, and sector-wide analysis rather than explicit named-company effects. The metrics indicate 'incomplete_document' and 'snippet_evidence_present', meaning full-text sources were not fully utilized or accessible for specific claims. Furthermore, the evidence contains conflicting temporal statuses: some passages discuss 2026 reviews or future timelines (e.g., CATL's stalled facility, BMW's 2027 timeline), while others describe effective rules as of source dates without linking",
+  "confidence": "high",
+  "remaining_gap": "No passage explicitly names a specific company and states its current tariff liability or exemption status under USMCA for EV batteries. The evidence describes general RVC thresholds (75%), labor value content, and supply chain gaps but does not connect these rules to a named entity's specific import exposure.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_a99e7706ca435af4bcfec800",
+      "supporting_excerpt": "EV batteries must meet the same 75% RVC threshold as engines and transmissions. This requires substantial North American processing of critical materials, including cathode active material (CAM). Industry analyses indicate that Mexico currently lacks sufficient domestic CAM production capacity... CATL's planned facility in Juárez has stalled. Volkswagen's Puebla battery plant targets 2026 production.",
+      "relevance_explanation": "This passage establishes the regulatory threshold for EV batteries and mentions specific companies (CATL, Volkswagen) but only in the context of future plans or stalled projects, not current tariff liability or exemption status.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_future"
+    },
+    {
+      "passage_id": "passage_7525d5814d0eba87964bb09c",
+      "supporting_excerpt": "Overall, the current inability to source significant portions of EV batteries from North America could make it difficult for manufacturers to meet both USMCA rules and receive the full IRA tax credit. As automobile supply chains transition away from ICEs and toward EVs, it is possible that auto manufacturers will encounter a situation in which EV batteries meet the USMCA's content threshold while failing to obtain the full tax credit...",
+      "relevance_explanation": "This passage discusses general manufacturer difficulties and potential future scenarios regarding tax credits and rules of origin but does not name a specific company or confirm current tariff exposure.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_65c2b60fc9faa93346e05fe0",
+      "supporting_excerpt": "If vehicles with a certain percentage of Chinese components cannot meet the USMCA's rules of origin, they would likely be classified as non-USMCA products and subject to the 27.5% tariff for Chinese vehicles and 102.5% tariff for electric vehicles.",
+      "relevance_explanation": "This passage outlines the consequence of failing to meet rules of origin (tariffs) but applies it generally to 'vehicles' with Chinese components, without identifying a specific company or confirming its current status.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_228a8499d413e367c1dcc9b6",
+      "supporting_excerpt": "EV batteries face the same 75% RVC threshold as engines, yet North American cathode active material capacity remains insufficient—plan for 2026 rule tightening. Evaluate whether shelter, IMMEX, or direct investment structures best align your operating model with RVC and LVC compliance obligations before the 2026 review window closes.",
+      "relevance_explanation": "This passage provides general compliance advice and mentions a future review window (2026) but does not link these rules to a specific named company's current tariff exposure.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_future"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_66",
+  "query": "USMCA automotive rules of origin electric vehicles batteries",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 8,
+    "all_extracted_claims": 14,
+    "claims_presented_to_original_synthesis": 14,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 1,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_a99e7706ca435af4bcfec800",
+    "passage_7525d5814d0eba87964bb09c",
+    "passage_49b0c9ccd60c5732797395e6",
+    "passage_aba6653f28f6fd2336b1f868",
+    "passage_8de0bb85342bdd34776c00ed",
+    "passage_228a8499d413e367c1dcc9b6",
+    "passage_65c2b60fc9faa93346e05fe0",
+    "passage_74f541ec663470b1e2850c22"
+  ],
+  "candidate_document_ids": [
+    "document_08bda47bed55360f676ebda1",
+    "document_1bb264a24a1f6b76860da3cb",
+    "document_3b0d7a928231d707eb0130e7",
+    "document_3f09b598fda8d162189bcc9c",
+    "document_40cecc7f76b7926541708d8c",
+    "document_8d9769be7b98341e62f938a1"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_a99e7706ca435af4bcfec800",
+        "supporting_excerpt": "EV batteries must meet the same 75% RVC threshold as engines and transmissions. This requires substantial North American processing of critical materials, including cathode active material (CAM). Industry analyses indicate that Mexico currently lacks sufficient domestic CAM production capacity... CATL's planned facility in Juárez has stalled. Volkswagen's Puebla battery plant targets 2026 production.",
+        "relevance_explanation": "This passage establishes the regulatory threshold for EV batteries and mentions specific companies (CATL, Volkswagen) but only in the context of future plans or stalled projects, not current tariff liability or exemption status.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "source_reports_future"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_7525d5814d0eba87964bb09c",
+        "supporting_excerpt": "Overall, the current inability to source significant portions of EV batteries from North America could make it difficult for manufacturers to meet both USMCA rules and receive the full IRA tax credit. As automobile supply chains transition away from ICEs and toward EVs, it is possible that auto manufacturers will encounter a situation in which EV batteries meet the USMCA's content threshold while failing to obtain the full tax credit...",
+        "relevance_explanation": "This passage discusses general manufacturer difficulties and potential future scenarios regarding tax credits and rules of origin but does not name a specific company or confirm current tariff exposure.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_65c2b60fc9faa93346e05fe0",
+        "supporting_excerpt": "If vehicles with a certain percentage of Chinese components cannot meet the USMCA's rules of origin, they would likely be classified as non-USMCA products and subject to the 27.5% tariff for Chinese vehicles and 102.5% tariff for electric vehicles.",
+        "relevance_explanation": "This passage outlines the consequence of failing to meet rules of origin (tariffs) but applies it generally to 'vehicles' with Chinese components, without identifying a specific company or confirming its current status.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_228a8499d413e367c1dcc9b6",
+        "supporting_excerpt": "EV batteries face the same 75% RVC threshold as engines, yet North American cathode active material capacity remains insufficient—plan for 2026 rule tightening. Evaluate whether shelter, IMMEX, or direct investment structures best align your operating model with RVC and LVC compliance obligations before the 2026 review window closes.",
+        "relevance_explanation": "This passage provides general compliance advice and mentions a future review window (2026) but does not link these rules to a specific named company's current tariff exposure.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_future"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

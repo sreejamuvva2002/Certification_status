@@ -1,0 +1,150 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence",
+    "extraction_problems"
+  ],
+  "cause_explanation": "The original query specifically targets 'Coastal Georgia automotive suppliers' and their tariff exposure. The retrieved evidence fails to establish a direct link between any specific named company or facility in Coastal Georgia and the applicable tariffs. While passage_96906ac4eff670c34fbc257d mentions a Hyundai plant in Ellabell (Coastal Georgia), it discusses general tariff impacts on consumer sentiment and factory towns without quantifying exposure for suppliers or establishing a specific named-company effect for the supply chain. Other passages discuss national trends, OEMs like GM/Stellantis/VW, or generic procurement strategies without ",
+  "confidence": "high",
+  "remaining_gap": "No evidence explicitly connects a named automotive supplier in Coastal Georgia to a specific tariff rate or exposure mechanism. The available text confirms the existence of a plant in Ellabell and general tariff impacts on the industry but does not establish the import exposure for the local supply chain.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_96906ac4eff670c34fbc257d",
+      "supporting_excerpt": "he massive plant, located in Ellabell, about 25 miles outside Savannah, may eventually employ as many as 8,000 people. It is already changing the demography and economy of the area of Georgia known as the Coastal Empire... As a result of the tariffs, Fitch Ratings just downgraded its U.S. car sales forecast.",
+      "relevance_explanation": "Identifies a specific facility in Coastal Georgia (Ellabell/Savannah) but only discusses general economic impacts and consumer sentiment, not specific supplier tariff exposure or named company effects.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_b840d47912603a7caefd960c",
+      "supporting_excerpt": "Hyundai is expanding its US output, boosting capacity in Georgia, and has adjusted its operating profit margin targets downward to account for tariff pressures. The company is also accelerating its plans for its hybrid and EV portfolio in North America.",
+      "relevance_explanation": "Mentions Hyundai's expansion in Georgia and tariff pressure on the company, but does not isolate the exposure of local suppliers or provide a specific named-company effect for the supply chain.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_692c167079280c0d28b1c5f6",
+      "supporting_excerpt": "GM revealed that its Q2 2025 operating profit fell by US $1.1bn due to tariff exposure... VW Group reported a €1.3bn hit to operating profit in H1 2025.",
+      "relevance_explanation": "Provides specific financial impacts for major OEMs (GM, VW) but does not address the specific geographic focus of Coastal Georgia or its local suppliers.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_549c0bdc68e34db7cbe15352",
+      "supporting_excerpt": "Companies must navigate overlapping tariff regimes, evolving regulatory authority, and new relief mechanisms while managing cost exposure and supply chain risk.",
+      "relevance_explanation": "Describes the general complexity of the tariff landscape for automotive manufacturers but offers no specific data on Coastal Georgia suppliers or named company effects.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_2",
+  "query": "Coastal Georgia automotive suppliers tariff exposure",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 18,
+    "all_extracted_claims": 31,
+    "claims_presented_to_original_synthesis": 18,
+    "synthesis_claims_omitted": 13,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 2,
+    "company_named_claims": 13,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "conflicting_or_outdated_evidence",
+    "extraction_problems"
+  ],
+  "candidate_passage_ids": [
+    "passage_96906ac4eff670c34fbc257d",
+    "passage_b840d47912603a7caefd960c",
+    "passage_549c0bdc68e34db7cbe15352",
+    "passage_c8e8a0b6b459804689741ac7",
+    "passage_747ef69b32def442e8efc22f",
+    "passage_02cf4d761d73b13dbbb2318f",
+    "passage_692c167079280c0d28b1c5f6",
+    "passage_62de7fc60097b0c8d080ef79"
+  ],
+  "candidate_document_ids": [
+    "document_2571a13302a71e78101a3a4f",
+    "document_257ee235ba1734974245cefd",
+    "document_49bc2dcf6e5a033d371bfd60",
+    "document_5cdc5c073814b3242cba2ec3",
+    "document_6dd2e026763e8cd233c8e222",
+    "document_e0c3a67645d2e2c460e82d84",
+    "document_fb6cbe1c5a81d49b8fae718b",
+    "document_fbff09b79902a92b93bae0be"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_b840d47912603a7caefd960c",
+      "supporting_excerpt": "Hyundai is expanding its US output, boosting capacity in Georgia, and has adjusted its operating profit margin targets downward to account for tariff pressures. The company is also accelerating its plans for its hybrid and EV portfolio in North America.",
+      "relevance_explanation": "Mentions Hyundai's expansion in Georgia and tariff pressure on the company, but does not isolate the exposure of local suppliers or provide a specific named-company effect for the supply chain.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_d611d06d59c949682511c3e5",
+      "query_id": "q_2",
+      "chunk_id": "chunk_c90d561f6993da981a304aaf",
+      "document_id": "document_257ee235ba1734974245cefd",
+      "source_url": "https://www.automotivelogistics.media/news-and-features/tariff-timeline-us-imposes-10-125-tariffs-on-60-economies-and-50-tariff-on-canada/196419",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/adcc7875c63dc705368581eaf9c6a5f75156d22e05f9b0ae44eada17a5b63930.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_549c0bdc68e34db7cbe15352",
+      "supporting_excerpt": "Companies must navigate overlapping tariff regimes, evolving regulatory authority, and new relief mechanisms while managing cost exposure and supply chain risk.",
+      "relevance_explanation": "Describes the general complexity of the tariff landscape for automotive manufacturers but offers no specific data on Coastal Georgia suppliers or named company effects.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_0b58eb05646df08fb2a7abee",
+      "query_id": "q_2",
+      "chunk_id": "chunk_fdbd0f793edcf9020372f316",
+      "document_id": "document_fbff09b79902a92b93bae0be",
+      "source_url": "https://www.morganlewis.com/pubs/2026/05/automotive-tariffs-and-trade-remedy-investigations-navigating-shifts-in-the-us-trade-landscape",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/50085a129daa52a58a774c94534a94cbf1204add848f1d504553cab5893b398b.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_96906ac4eff670c34fbc257d",
+        "supporting_excerpt": "he massive plant, located in Ellabell, about 25 miles outside Savannah, may eventually employ as many as 8,000 people. It is already changing the demography and economy of the area of Georgia known as the Coastal Empire... As a result of the tariffs, Fitch Ratings just downgraded its U.S. car sales forecast.",
+        "relevance_explanation": "Identifies a specific facility in Coastal Georgia (Ellabell/Savannah) but only discusses general economic impacts and consumer sentiment, not specific supplier tariff exposure or named company effects.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_692c167079280c0d28b1c5f6",
+        "supporting_excerpt": "GM revealed that its Q2 2025 operating profit fell by US $1.1bn due to tariff exposure... VW Group reported a €1.3bn hit to operating profit in H1 2025.",
+        "relevance_explanation": "Provides specific financial impacts for major OEMs (GM, VW) but does not address the specific geographic focus of Coastal Georgia or its local suppliers.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

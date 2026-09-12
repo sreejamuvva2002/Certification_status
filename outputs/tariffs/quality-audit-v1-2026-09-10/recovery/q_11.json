@@ -1,0 +1,162 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence",
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "Evidence lacks explicit Georgia EV manufacturer tariff sourcing links; metrics show zero facility_label_claims and one inaccessible source.",
+  "confidence": "high",
+  "remaining_gap": "No named Georgia facility or company-specific tariff exposure established in full-text passages.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_b9e932178f9285f001cc810b",
+      "supporting_excerpt": "Domestic battery manufacturing in the US is growing, driven by a combination of tariff pressure, defense procurement requirements, and residual IRA investment momentum that was locked in before the subsidies were eliminated.",
+      "relevance_explanation": "Confirms US-wide focus without Georgia specificity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_98367d3bba4b5cfbd4e05fd2",
+      "supporting_excerpt": "Automotive OEMs: Companies like General Motors, Ford, Tesla, BMW, and Toyota will need to reassess sourcing and manufacturing strategies.",
+      "relevance_explanation": "Lists major OEMs but omits Georgia-based entities or specific tariff sourcing changes for them.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_6439607e671b202443ec5036",
+      "supporting_excerpt": "The impact of battery tariffs will continue to influence the battery import market in the U.S. over the long term.",
+      "relevance_explanation": "Indicates general US market trends rather than state-specific manufacturer exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_83fc47cd6551b639a2d197b8",
+      "supporting_excerpt": "Predicting the tariff environment with precision is not possible – policy changes can happen quickly, court decisions can invalidate existing measures, and geopolitical developments can reshape trade relationships in ways that no forecast captures.",
+      "relevance_explanation": "Highlights uncertainty preventing definitive current law application to specific Georgia facilities.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_11",
+  "query": "Georgia EV manufacturers tariff-related sourcing changes",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 5,
+    "all_extracted_claims": 14,
+    "claims_presented_to_original_synthesis": 14,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 2,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_1cd405978f758d5619f51904",
+    "passage_6439607e671b202443ec5036",
+    "passage_7ac29ccc93ed31566b679a4c",
+    "passage_b2dea3249ce37667635551a9",
+    "passage_b9e932178f9285f001cc810b",
+    "passage_b718ef8be411fd0a065522af",
+    "passage_98367d3bba4b5cfbd4e05fd2",
+    "passage_83fc47cd6551b639a2d197b8"
+  ],
+  "candidate_document_ids": [
+    "document_0d8cb30c5cd96bf588519dab",
+    "document_2571a13302a71e78101a3a4f",
+    "document_78d5f38ea11227317f5a972a",
+    "document_8fe2972bc8f3973c539449df",
+    "document_90ead78a10bf996f2be57ff3",
+    "document_e2b13035fa0102975f68109b",
+    "document_ed7db848dffcb4e48fa97e1b"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_b9e932178f9285f001cc810b",
+      "supporting_excerpt": "Domestic battery manufacturing in the US is growing, driven by a combination of tariff pressure, defense procurement requirements, and residual IRA investment momentum that was locked in before the subsidies were eliminated.",
+      "relevance_explanation": "Confirms US-wide focus without Georgia specificity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_ca1e39fcd6d610db43ce672e",
+      "query_id": "q_11",
+      "chunk_id": "chunk_d625c75d6d3fc6f5cf2f6a0a",
+      "document_id": "document_78d5f38ea11227317f5a972a",
+      "source_url": "https://www.totexmfg.com/battery-pack-tariffs-oem-2026",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e0ba04e755583e765ed98ccd9a41c4332f768101b26871fe34c5c660b1c84fdb.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_98367d3bba4b5cfbd4e05fd2",
+      "supporting_excerpt": "Automotive OEMs: Companies like General Motors, Ford, Tesla, BMW, and Toyota will need to reassess sourcing and manufacturing strategies.",
+      "relevance_explanation": "Lists major OEMs but omits Georgia-based entities or specific tariff sourcing changes for them.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_1c5bbd424fb872941e59ba58",
+      "query_id": "q_11",
+      "chunk_id": "chunk_b5f17f3af7ad7535daef23db",
+      "document_id": "document_8fe2972bc8f3973c539449df",
+      "source_url": "https://www.marketsandmarkets.com/ResearchInsight/us-tariff-impact-on-future-of-digital-cockpit-industry.asp",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/f388b3bdfaef8c1b960a5da4fc54e8c058f581146f6ea451b904fd90e45a6bb2.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_6439607e671b202443ec5036",
+      "supporting_excerpt": "The impact of battery tariffs will continue to influence the battery import market in the U.S. over the long term.",
+      "relevance_explanation": "Indicates general US market trends rather than state-specific manufacturer exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_db2a044261b2f8bb57a01c59",
+      "query_id": "q_11",
+      "chunk_id": "chunk_9e67b2a4f4d551c7b1913c0b",
+      "document_id": "document_ed7db848dffcb4e48fa97e1b",
+      "source_url": "https://manlybattery.com/battery-tools-and-resources/usa-import-duty-calculator",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/ecae6f0ee882df4fc5d8efd1a24869a9222b9c011c055076689cb2ac9fabd7ca.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_83fc47cd6551b639a2d197b8",
+      "supporting_excerpt": "Predicting the tariff environment with precision is not possible – policy changes can happen quickly, court decisions can invalidate existing measures, and geopolitical developments can reshape trade relationships in ways that no forecast captures.",
+      "relevance_explanation": "Highlights uncertainty preventing definitive current law application to specific Georgia facilities.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_5626300042728467fad77afc",
+      "query_id": "q_11",
+      "chunk_id": "chunk_239013f99289196c4ed421b6",
+      "document_id": "document_78d5f38ea11227317f5a972a",
+      "source_url": "https://www.totexmfg.com/battery-pack-tariffs-oem-2026",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e0ba04e755583e765ed98ccd9a41c4332f768101b26871fe34c5c660b1c84fdb.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

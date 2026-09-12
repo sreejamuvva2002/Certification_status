@@ -1,0 +1,47 @@
+recovery 1/125 q_1: failed
+recovery 2/125 q_10: reviewed
+recovery 3/125 q_103: reviewed
+recovery 4/125 q_104: reviewed
+recovery 5/125 q_105: reviewed
+recovery 6/125 q_108: reviewed
+recovery 7/125 q_11: reviewed
+recovery 8/125 q_110: reviewed
+recovery 9/125 q_116: reviewed
+Traceback (most recent call last):
+  File "/home/sm11926/Certification_status/scripts/audit_tariff_quality.py", line 222, in <module>
+  File "/home/sm11926/Certification_status/scripts/audit_tariff_quality.py", line 219, in run
+    if not matching:raise ValueError('Required local model is not installed')
+    ^^^^^^^^^^^^^^^
+  File "/home/sm11926/Certification_status/scripts/audit_tariff_quality.py", line 145, in recovery
+    instruction='Classify why this original answer is insufficient using exactly one primary cause and any contributing causes. Separate missing sources from irrelevant sources; inaccessible full text from insufficient extraction/synthesis. A historical source is not necessarily false; current applicability may be unestablished. Conflict flags are unverified model suggestions. First try recovery ONLY from the cached full-text passages. Select up to 4 relevant exact contiguous quotes, each 20-550 characters, with passage IDs. Do not repeat an existing quote. Answer all required fields concisely. For company applicability require an explicit named-company effect, not mere facility location or a nationwide tariff. Never declare current law verified. A source reporting effective status only establishes what it reported at its own date. Empty evidence is valid; do not force a recovery.'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sm11926/Certification_status/scripts/audit_tariff_quality.py", line 62, in call
+    with urllib.request.build_opener(NoRedirect()).open(req,timeout=300) as r:raw=json.load(r)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 1457, in getresponse
+    response.begin()
+  File "/usr/lib/python3.12/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

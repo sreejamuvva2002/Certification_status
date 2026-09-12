@@ -1,0 +1,64 @@
+{
+  "query_id": "q_449",
+  "query": "Automotive infotainment systems United States tariff classification",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_832bbf16f0aeaa092d6b4cf9",
+    "claim_cee5d797da7d540e1dad8f68",
+    "claim_a46c5248a7d6bbd1804050c6",
+    "claim_85870720dd041507ba4d4d39",
+    "claim_da5050a10fdf74974a04d1f4"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_832bbf16f0aeaa092d6b4cf9",
+      "text": "Infotainment systems with display screens may classify under 8528 (monitors and projectors) or 8527 (radio receivers).",
+      "url": "https://www.camtomx.com/en/blog/hts-classification-automotive-parts-guide",
+      "chunk_id": "chunk_1eb84bb933bf2010e6cfd4cf"
+    },
+    {
+      "claim_id": "claim_cee5d797da7d540e1dad8f68",
+      "text": "An infotainment system includes a display (Chapter 85), GPS navigation (Chapter 90), speakers (Chapter 85), and a vehicle interface module (potentially Chapter 87).",
+      "url": "https://gingercontrol.com/blog/hts-classification-auto-parts",
+      "chunk_id": "chunk_17ac2ffb63924d2e2dc9a7b2"
+    },
+    {
+      "claim_id": "claim_a46c5248a7d6bbd1804050c6",
+      "text": "Presidential Proclamation 10908 (effective April 3, 2025) imposed a 25% tariff on passenger vehicles classified under HTS heading 8703",
+      "url": "https://gingercontrol.com/blog/hts-classification-auto-parts",
+      "chunk_id": "chunk_17ac2ffb63924d2e2dc9a7b2"
+    },
+    {
+      "claim_id": "claim_85870720dd041507ba4d4d39",
+      "text": "Presidential Proclamation 10908, \"Adjusting Imports of Automobiles and Certain Automobile Parts Into the United States,\" March 2025. Imposed a 25% tariff on passenger vehicles under HTS heading 8703, effective April 3, 2025.",
+      "url": "https://gingercontrol.com/blog/hts-classification-auto-parts",
+      "chunk_id": "chunk_08b2fd1bbe1cc486ada40bfc"
+    },
+    {
+      "claim_id": "claim_da5050a10fdf74974a04d1f4",
+      "text": "Presidential Proclamation 10908, \"Adjusting Imports of Automobiles and Certain Automobile Parts Into the United States,\" March 2025. Imposed a 25% tariff on passenger vehicles under HTS heading 8703, effective April 3, 2025.",
+      "url": "https://gingercontrol.com/blog/hts-classification-auto-parts",
+      "chunk_id": "chunk_08b2fd1bbe1cc486ada40bfc"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_a46c5248a7d6bbd1804050c6",
+      "claim_85870720dd041507ba4d4d39"
+    ],
+    [
+      "claim_a46c5248a7d6bbd1804050c6",
+      "claim_da5050a10fdf74974a04d1f4"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 20,
+  "synthesis_input_claim_count": 20
+}

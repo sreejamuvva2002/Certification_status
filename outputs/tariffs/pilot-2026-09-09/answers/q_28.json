@@ -1,0 +1,48 @@
+{
+  "query_id": "q_28",
+  "query": "Georgia Ports Authority automotive tariffs trade volumes",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_7807462600ace973dec08451",
+    "claim_a96daca7bccfc39c5c00322a",
+    "claim_b5a165fc5c2ed88edb25e117"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_7807462600ace973dec08451",
+      "text": "GPA saw a 7.5% decline in 2025 volume at the Port of Brunswick, its Roll-On/Roll-Off port for autos and heavy machinery. The drop in volume was driven by tariffs that led to some manufacturers pausing shipments",
+      "url": "https://www.savannahnow.com/story/news/local/2026/01/28/georgia-ports-authority-weathers-year-of-tariffs-with-strong-performance/88382339007",
+      "chunk_id": "chunk_ad72c668f6c1a280d829985e"
+    },
+    {
+      "claim_id": "claim_a96daca7bccfc39c5c00322a",
+      "text": "shippers were moving large amounts of cargo ahead of the anticipated tariffs. Those same gains contributed to GPA having its second busiest fiscal year on record, although tariffs caused dips in volume in June and October.",
+      "url": "https://www.savannahnow.com/story/news/local/2026/01/28/georgia-ports-authority-weathers-year-of-tariffs-with-strong-performance/88382339007",
+      "chunk_id": "chunk_ad72c668f6c1a280d829985e"
+    },
+    {
+      "claim_id": "claim_b5a165fc5c2ed88edb25e117",
+      "text": "Shipments of autos and machinery through the Port of Brunswick fell 14.3%. For the fiscal year to date, volumes have declined 11.8% to 132,918",
+      "url": "https://www.bizjournals.com/atlanta/news/2025/10/01/georgia-ports-august-tariffs.html",
+      "chunk_id": "chunk_55bf99642e410528df28b946"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_7807462600ace973dec08451",
+      "claim_b5a165fc5c2ed88edb25e117"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 4,
+  "synthesis_input_claim_count": 4
+}

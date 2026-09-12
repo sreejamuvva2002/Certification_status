@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-09-10T18:38:33.883752+00:00",
+  "seed_workbook_rows": 205,
+  "distinct_company_names": 193,
+  "duplicate_name_rows_preserved": 12,
+  "seed_rows_with_location_issues": 67,
+  "planned_company_queries": 386,
+  "shared_policy_queries": 20,
+  "planned_queries_total": 406,
+  "basic_search_credits_without_retries": 406,
+  "proposed_cumulative_credit_cap": 500,
+  "initial_authorized_query_limit": 20,
+  "initial_credit_cap": 100,
+  "full_run_budget_approved": true,
+  "paid_extraction": "off",
+  "pricing_documentation": "https://docs.tavily.com/documentation/api-credits",
+  "pricing_checked_on": "2026-09-10",
+  "all_five_sector_terms": {
+    "automotive_and_trade": [
+      "automotive",
+      "vehicle",
+      "EV",
+      "auto parts",
+      "automobile",
+      "OEM",
+      "powertrain",
+      "wiring harness",
+      "Hyundai",
+      "Kia",
+      "Metaplant"
+    ],
+    "metals": [
+      "steel",
+      "aluminum",
+      "aluminium",
+      "copper",
+      "castings",
+      "stamping",
+      "battery tray",
+      "battery enclosure",
+      "busbar"
+    ],
+    "batteries_and_minerals": [
+      "battery",
+      "batteries",
+      "lithium",
+      "graphite",
+      "nickel",
+      "cobalt",
+      "manganese",
+      "cathode",
+      "anode",
+      "critical minerals",
+      "rare earth",
+      "electrolyte",
+      "PVDF",
+      "separator"
+    ],
+    "pcbs_and_electronics": [
+      "PCB",
+      "PCBs",
+      "printed circuit",
+      "semiconductor",
+      "electronic",
+      "inverter",
+      "charger",
+      "control module"
+    ],
+    "displays": [
+      "display",
+      "displays",
+      "LCD",
+      "OLED",
+      "touchscreen",
+      "infotainment",
+      "instrument cluster",
+      "digital cockpit"
+    ]
+  },
+  "sequence": [
+    "local_cleanup",
+    "initial_primary_policy_verification",
+    "company_discovery_and_targeted_queries",
+    "company_evidence_profiles"
+  ],
+  "company_roster_basis": "193 exact case-insensitive names; similar names are not merged automatically.",
+  "approved_cumulative_credit_cap": 500,
+  "approval_source": "User explicitly approved 500-credit ceiling for all companies",
+  "approval_date": "2026-09-10"
+}

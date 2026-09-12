@@ -1,0 +1,143 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [],
+  "cause_explanation": "The original query asks for specific import duties on 'Automotive PCB assemblies' from South Korea. The available evidence contains conflicting tariff rates (12.5-50%, 15%, 25%, 0%) and discusses general automotive parts or Chinese PCBs, but fails to provide a definitive rate for the specific product category from the specific origin. Furthermore, the evidence lacks any explicit named-company effect linking these tariffs to a specific entity's exposure, relying instead on national sectoral context which is insufficient for company-specific applicability.",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly states the exact duty rate applicable to 'Automotive PCB assemblies' imported from South Korea for a specific named company. The evidence provides general rates for automotive parts or Chinese PCBs, and discusses rules of origin for proposed FTAs, but does not resolve the specific classification and duty calculation for the queried product origin combination.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_99aed8814154ea5a888b3330",
+      "supporting_excerpt": "There is no single universal code; PCBA is generally classified under 8537.x or 8543.70, depending on function. ... Are PCB assemblies subject to higher duties? Often yes, because they represent greater value and complexity.",
+      "relevance_explanation": "This passage explains that PCB assembly classification varies by function and country, indicating that a single duty rate cannot be assumed without specific product details, contributing to the gap in determining the exact rate for 'Automotive PCB assemblies'.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_339f5161e9b73bdfd25d1385",
+      "supporting_excerpt": "The US has repeatedly extended tariff exemptions for Chinese PCBs, but PCBs for military use will be restricted after 2027. Furthermore, if the US expands the scope of tariffs on semiconductor intermediate products, it could indirectly affect PCB companies through downstream demand.",
+      "relevance_explanation": "This passage discusses tariffs on Chinese PCBs and potential future restrictions, which is irrelevant to South Korean automotive PCB assemblies and highlights the lack of specific evidence for the queried origin and product type.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_future"
+    },
+    {
+      "passage_id": "passage_2c43a9278d578d278a89970f",
+      "supporting_excerpt": "This is in response to your request for a binding ruling dated August 14, 2020, on behalf of LG Electronics concerning the application of Section 301 trade remedy duties for your product: a rotor-stator assembly for an electric vehicle motor.",
+      "relevance_explanation": "This passage references a specific company (LG Electronics) but concerns 'rotor-stator assemblies' for EV motors, not 'PCB assemblies', demonstrating that while company-specific rulings exist, they do not cover the queried product type.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_0f3bfb3ea19acae96beca364",
+      "supporting_excerpt": "The provisions concerning automobiles and auto parts are among the most controversial elements of the KORUS FTA. ... These rules will be used to determine if automotive goods imported from South Korea are eligible to receive duty-free or reduced tariff benefits under the KORUS FTA...",
+      "relevance_explanation": "This passage discusses the proposed KORUS FTA and its rules of origin for automobiles, which is a proposal and not effective law establishing current duties, further complicating the determination of current applicable rates.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_160",
+  "query": "Automotive PCB assemblies South Korea import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 10,
+    "all_extracted_claims": 23,
+    "claims_presented_to_original_synthesis": 23,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 3,
+    "company_named_claims": 4,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_99aed8814154ea5a888b3330",
+    "passage_9fde74d1e403654bc4efe28c",
+    "passage_339f5161e9b73bdfd25d1385",
+    "passage_2c43a9278d578d278a89970f",
+    "passage_0f3bfb3ea19acae96beca364",
+    "passage_e953a0c0db02f63104d3bfdd",
+    "passage_a42ff99609714b34e7b3f7e9",
+    "passage_c8ce9a84e3d2e47fe8844b6a"
+  ],
+  "candidate_document_ids": [
+    "document_0fdca1e5301f242e9a11e572",
+    "document_31136dc9b87c8ce846720df9",
+    "document_7dc1196a443d152a83603b9f",
+    "document_825b725df4af4cdb47efe501",
+    "document_b826b531526ee3f6af685e75",
+    "document_deed7bcba7c578fe6ec11be4",
+    "document_f54b0d22c62373a210da7794"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_339f5161e9b73bdfd25d1385",
+      "supporting_excerpt": "The US has repeatedly extended tariff exemptions for Chinese PCBs, but PCBs for military use will be restricted after 2027. Furthermore, if the US expands the scope of tariffs on semiconductor intermediate products, it could indirectly affect PCB companies through downstream demand.",
+      "relevance_explanation": "This passage discusses tariffs on Chinese PCBs and potential future restrictions, which is irrelevant to South Korean automotive PCB assemblies and highlights the lack of specific evidence for the queried origin and product type.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_future",
+      "recovery_claim_id": "recovered_c975aad8610cada49ce67368",
+      "query_id": "q_160",
+      "chunk_id": "chunk_307a6070b72809afb0b8b4e3",
+      "document_id": "document_f54b0d22c62373a210da7794",
+      "source_url": "https://www.topfastpcb.com/blog/how-u-s-tariffs-are-reshaping-the-global-printed-circuit-board-pcb-industry-landscape",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/69932d9b8683a419d759d82628a0d9056f88e89109cbb634c1dd58f0ef46a2e1.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_2c43a9278d578d278a89970f",
+      "supporting_excerpt": "This is in response to your request for a binding ruling dated August 14, 2020, on behalf of LG Electronics concerning the application of Section 301 trade remedy duties for your product: a rotor-stator assembly for an electric vehicle motor.",
+      "relevance_explanation": "This passage references a specific company (LG Electronics) but concerns 'rotor-stator assemblies' for EV motors, not 'PCB assemblies', demonstrating that while company-specific rulings exist, they do not cover the queried product type.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical",
+      "recovery_claim_id": "recovered_ea0edf1df682e746f46f47bf",
+      "query_id": "q_160",
+      "chunk_id": "chunk_887d813fba122c837001fbd6",
+      "document_id": "document_7dc1196a443d152a83603b9f",
+      "source_url": "https://www.customsmobile.com/rulings/docview?doc_id=H313371",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/aeb3cfd1a3b0786400a5803918e28d4fad9b047d57552e315f3f33d60ee32e44.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_99aed8814154ea5a888b3330",
+        "supporting_excerpt": "There is no single universal code; PCBA is generally classified under 8537.x or 8543.70, depending on function. ... Are PCB assemblies subject to higher duties? Often yes, because they represent greater value and complexity.",
+        "relevance_explanation": "This passage explains that PCB assembly classification varies by function and country, indicating that a single duty rate cannot be assumed without specific product details, contributing to the gap in determining the exact rate for 'Automotive PCB assemblies'.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_0f3bfb3ea19acae96beca364",
+        "supporting_excerpt": "The provisions concerning automobiles and auto parts are among the most controversial elements of the KORUS FTA. ... These rules will be used to determine if automotive goods imported from South Korea are eligible to receive duty-free or reduced tariff benefits under the KORUS FTA...",
+        "relevance_explanation": "This passage discusses the proposed KORUS FTA and its rules of origin for automobiles, which is a proposal and not effective law establishing current duties, further complicating the determination of current applicable rates.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

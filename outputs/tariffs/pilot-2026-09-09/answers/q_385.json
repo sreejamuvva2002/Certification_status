@@ -1,0 +1,80 @@
+{
+  "query_id": "q_385",
+  "query": "Lithium iron phosphate batteries United States import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_06e4f24d089cc4ea60701694",
+    "claim_0f5cf3580948fd8d062a4c01",
+    "claim_972e84ea7ca2c0d3db6e673d",
+    "claim_836d19a7c9095abcbe2c8721",
+    "claim_981aea59abf6bb7361b4d6fa",
+    "claim_ecfebaf16a81f49195149cc1"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_06e4f24d089cc4ea60701694",
+      "text": "In September, the outgoing administration of President Joe Biden finalized a proposal to increase the Section 301 import duty on Chinese-made lithium-ion batteries from 7.5% to 25%, beginning on Jan. 1, 2026.",
+      "url": "https://www.utilitydive.com/news/us-battery-storage-lfp-nmc-market-possible-significant-tariff-impacts-clean-energy/737317",
+      "chunk_id": "chunk_235295ac7b22e3641d8302b1"
+    },
+    {
+      "claim_id": "claim_0f5cf3580948fd8d062a4c01",
+      "text": "Lithium-ion batteries are classified under HTS 8507.60 with a base duty rate of 3.4%. Section 301 tariffs on Chinese-origin lithium-ion batteries add 25%, bringing the effective rate to 28.4% for Chinese imports.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_972e84ea7ca2c0d3db6e673d",
+      "text": "Yes, EV battery cells and packs from China face Section 301 tariffs of 25% on top of the base 3.4% duty.",
+      "url": "https://ustariffrates.com/products/batteries",
+      "chunk_id": "chunk_9ebb2396e7eb83976c726111"
+    },
+    {
+      "claim_id": "claim_836d19a7c9095abcbe2c8721",
+      "text": "the combined rate will reach a high of 57.4% starting April 9, 2025",
+      "url": "https://www.lithiumforkliftbattery.com/impact-of-usa-tariff-increase-on-lifepo4-batteries.html",
+      "chunk_id": "chunk_5748c3f3e337ef4d2c97726e"
+    },
+    {
+      "claim_id": "claim_981aea59abf6bb7361b4d6fa",
+      "text": "As of April 2025, the total tariffs range from approximately 70% to over 170%, depending on the battery type and classification.",
+      "url": "https://www.lithiumforkliftbattery.com/impact-of-usa-tariff-increase-on-lifepo4-batteries.html",
+      "chunk_id": "chunk_5748c3f3e337ef4d2c97726e"
+    },
+    {
+      "claim_id": "claim_ecfebaf16a81f49195149cc1",
+      "text": "The incoming administration of President-elect Donald Trump has proposed further increasing the duty as high as 60%, CEA said.",
+      "url": "https://www.utilitydive.com/news/us-battery-storage-lfp-nmc-market-possible-significant-tariff-impacts-clean-energy/737317",
+      "chunk_id": "chunk_235295ac7b22e3641d8302b1"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_06e4f24d089cc4ea60701694",
+      "claim_836d19a7c9095abcbe2c8721"
+    ],
+    [
+      "claim_0f5cf3580948fd8d062a4c01",
+      "claim_972e84ea7ca2c0d3db6e673d"
+    ],
+    [
+      "claim_836d19a7c9095abcbe2c8721",
+      "claim_981aea59abf6bb7361b4d6fa"
+    ],
+    [
+      "claim_06e4f24d089cc4ea60701694",
+      "claim_ecfebaf16a81f49195149cc1"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

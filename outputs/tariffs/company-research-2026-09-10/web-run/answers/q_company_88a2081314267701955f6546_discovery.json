@@ -1,0 +1,68 @@
+{
+  "query_id": "q_company_88a2081314267701955f6546_discovery",
+  "query": "\"Nidec Elesys Americas Corp.\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_14c750913d49638ea349e77a",
+    "claim_21244c8f3e25ec59deb2f551",
+    "claim_610fe61dd6b7ba8ac616476e",
+    "claim_ab1e30b419bc3020a2f07339",
+    "claim_b6d8cdde6c2b8ab625e9af43",
+    "claim_e24739cfe80421e4a9f32c75"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_14c750913d49638ea349e77a",
+      "text": "Nidec Automation will be adding a separate invoice line-item for each item affected at the tariff rate on the day of import.",
+      "url": "https://moen.nidec.com/automation/Support-and-Literature/Tariff-Notice",
+      "chunk_id": "chunk_f1d1d6c928a94b6339b36720"
+    },
+    {
+      "claim_id": "claim_21244c8f3e25ec59deb2f551",
+      "text": "| Business | Distribution and Sales of Electronic Control Devices for Automotives | \n|---|---|\n| Address | 70 Crestridge Drive Suite 150 Suwanee, GA 30024 USA |",
+      "url": "https://www.nidec.com/en/nidec-elesys/corporate/network/hq/elesys_usa",
+      "chunk_id": "chunk_c228c4b1cfa86f80f2c7125c"
+    },
+    {
+      "claim_id": "claim_610fe61dd6b7ba8ac616476e",
+      "text": "In the event there are changes or new tariffs stated here or otherwise, Nidec will make the required adjustments to the tariff charges invoiced.",
+      "url": "https://moen.nidec.com/automation/Support-and-Literature/Tariff-Notice",
+      "chunk_id": "chunk_f1d1d6c928a94b6339b36720"
+    },
+    {
+      "claim_id": "claim_ab1e30b419bc3020a2f07339",
+      "text": "The US government is discussing tariffs on products imported from Mexico and Canada, and additional tariffs on imports from China. A large majority of Nidec Automation products could be impacted by these tariffs.",
+      "url": "https://moen.nidec.com/automation/Support-and-Literature/Tariff-Notice",
+      "chunk_id": "chunk_f1d1d6c928a94b6339b36720"
+    },
+    {
+      "claim_id": "claim_b6d8cdde6c2b8ab625e9af43",
+      "text": "Subject: Important Nidec Automation Trade Update Dear Valued Customer, The US government is discussing tariffs on products imported from Mexico and Canada, and additional tariffs on imports from China.",
+      "url": "https://moen.nidec.com/automation/Support-and-Literature/Tariff-Notice",
+      "chunk_id": "chunk_f1d1d6c928a94b6339b36720"
+    },
+    {
+      "claim_id": "claim_e24739cfe80421e4a9f32c75",
+      "text": "A large majority of Nidec Automation products could be impacted by these tariffs.",
+      "url": "https://moen.nidec.com/automation/Support-and-Literature/Tariff-Notice",
+      "chunk_id": "chunk_f1d1d6c928a94b6339b36720"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_ab1e30b419bc3020a2f07339",
+      "claim_b6d8cdde6c2b8ab625e9af43"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 6,
+  "synthesis_input_claim_count": 6
+}

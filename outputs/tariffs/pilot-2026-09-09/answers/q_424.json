@@ -1,0 +1,79 @@
+{
+  "query_id": "q_424",
+  "query": "Argentina lithium United States import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_123286ded2dfbed976cbce55",
+    "claim_3141097757e3a5985fa395c5",
+    "claim_37de64a9070fd60fcde46387",
+    "claim_5275079e66d0a436e7b6b507",
+    "claim_64fa3c0164e23acb0092b60e",
+    "claim_65979a41e01b84c16185e67d",
+    "claim_84814084f3ac62eeb66830c9"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_123286ded2dfbed976cbce55",
+      "text": "The US and Argentina have ratified the trade deal agreed in November which is set to eliminate tariffs on hundreds of products while expanding US beef access to the South American nation.",
+      "url": "https://www.icis.com/explore/resources/news/2026/02/06/11178365/us-argentina-sign-trade-deal-focused-on-critical-minerals-beef-access",
+      "chunk_id": "chunk_13620c3ebcfe053e714ec2bb"
+    },
+    {
+      "claim_id": "claim_3141097757e3a5985fa395c5",
+      "text": "the framework of the agreement - announced by the White House on November 13 - establishes that Argentina and the United States must promote trade in minerals.",
+      "url": "https://www.bnamericas.com/en/analysis/trump-milei-trade-deal-prelude-to-a-critical-minerals-pact-or-a-us-argentina-fta",
+      "chunk_id": "chunk_253dd452b9974d7037e99322"
+    },
+    {
+      "claim_id": "claim_37de64a9070fd60fcde46387",
+      "text": "In exchange, the US will eliminate reciprocal tariffs imposed earlier this year on certain Argentine goods, particularly natural resources and pharmaceutical inputs.",
+      "url": "https://www.icis.com/explore/resources/news/2026/02/06/11178365/us-argentina-sign-trade-deal-focused-on-critical-minerals-beef-access",
+      "chunk_id": "chunk_13620c3ebcfe053e714ec2bb"
+    },
+    {
+      "claim_id": "claim_5275079e66d0a436e7b6b507",
+      "text": "In contrast, strategic commodities including beef, crude oil, lithium, gold and aluminum retain their preferential treatment, minimizing disruption for Argentina's largest export industries.",
+      "url": "https://www.agrolatam.com/usa/news/us-tariffs-argentina-exports-exempt-2026",
+      "chunk_id": "chunk_a40985f369c86c9e245153db"
+    },
+    {
+      "claim_id": "claim_64fa3c0164e23acb0092b60e",
+      "text": "Trade experts also point to the U.S.-Argentina Trade and Investment Agreement (ARTI), signed in Washington on February 5, 2026, as a key reason behind the exemptions.",
+      "url": "https://www.agrolatam.com/usa/news/us-tariffs-argentina-exports-exempt-2026",
+      "chunk_id": "chunk_a40985f369c86c9e245153db"
+    },
+    {
+      "claim_id": "claim_65979a41e01b84c16185e67d",
+      "text": "Effective July 25, the policy maintains a 10% tariff baseline for Argentina while excluding strategic goods such as crude oil, beef, precious metals and aluminum.",
+      "url": "https://www.agrolatam.com/usa/news/us-tariffs-argentina-exports-exempt-2026",
+      "chunk_id": "chunk_a40985f369c86c9e245153db"
+    },
+    {
+      "claim_id": "claim_84814084f3ac62eeb66830c9",
+      "text": "While many trading partners will now face tariffs of up to 12.5%, Argentina's most significant export categories remain exempt from the additional duties.",
+      "url": "https://www.agrolatam.com/usa/news/us-tariffs-argentina-exports-exempt-2026",
+      "chunk_id": "chunk_a40985f369c86c9e245153db"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_123286ded2dfbed976cbce55",
+      "claim_65979a41e01b84c16185e67d"
+    ],
+    [
+      "claim_37de64a9070fd60fcde46387",
+      "claim_65979a41e01b84c16185e67d"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

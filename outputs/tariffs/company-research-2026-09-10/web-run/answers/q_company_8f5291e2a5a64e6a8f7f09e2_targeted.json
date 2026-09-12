@@ -1,0 +1,72 @@
+{
+  "query_id": "q_company_8f5291e2a5a64e6a8f7f09e2_targeted",
+  "query": "\"Nile Automotive\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_030ef6fab6c8784dfaff1fab",
+    "claim_5660f160c83adcce52497d18",
+    "claim_570397308dafbe26196b4d61",
+    "claim_6dfd3abc11136b304bdc1102",
+    "claim_8fbf1da80f96e1c2a94540d4",
+    "claim_93936735327eed9a8a5c8538"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_030ef6fab6c8784dfaff1fab",
+      "text": "President Trump has implemented a 25% tariff on foreign-made auto parts, including powertrain components, seats, and airbags, while introducing some key exemptions to reduce the strain on automakers.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_9f82b7462f46a2f16899791a"
+    },
+    {
+      "claim_id": "claim_5660f160c83adcce52497d18",
+      "text": "The White House announced that passenger vehicles, certain trucks, and auto parts will be exempt from the new 10% global tariff set to take effect on February 24, 2026.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_e8a1ffd62f7b512ed56a6a50"
+    },
+    {
+      "claim_id": "claim_570397308dafbe26196b4d61",
+      "text": "The Supreme Court struck down the 2025 IEEPA tariffs and a $166B refund pool is open. See your personalized refund opportunity & filing roadmap.",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    },
+    {
+      "claim_id": "claim_6dfd3abc11136b304bdc1102",
+      "text": "Ford Motor has raised prices on three Mexico-produced models—the Mustang Mach-E, Maverick, and Bronco Sport—by up to $2,000, citing mid-year pricing adjustments and the impact of U.S. tariffs imposed by President Trump.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_9f82b7462f46a2f16899791a"
+    },
+    {
+      "claim_id": "claim_8fbf1da80f96e1c2a94540d4",
+      "text": "EU-built vehicles and auto parts fall under the EU-US trade deal's flat 15% all-inclusive rate, which applies in lieu of the 27.5% Section 232 auto regime.",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    },
+    {
+      "claim_id": "claim_93936735327eed9a8a5c8538",
+      "text": "China remains the most heavily penalized, with Chinese-made electric vehicles facing a combined tariff rate exceeding 100% due to Section 301 surcharges (which were unaffected by the SCOTUS ruling) layered on top of the 12.5% forced-labor tariff",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_030ef6fab6c8784dfaff1fab",
+      "claim_5660f160c83adcce52497d18"
+    ],
+    [
+      "claim_570397308dafbe26196b4d61",
+      "claim_93936735327eed9a8a5c8538"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 39,
+  "synthesis_input_claim_count": 39
+}

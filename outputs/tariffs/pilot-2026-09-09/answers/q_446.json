@@ -1,0 +1,46 @@
+{
+  "query_id": "q_446",
+  "query": "Automotive LCD panels United States tariff classification",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_c735ea79ff1ccac4072fed3b",
+    "claim_cb34d0546c4c153894d2addf",
+    "claim_ec9e91e60338d9d0a0e7531f"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_c735ea79ff1ccac4072fed3b",
+      "text": "NY N306705, dated October 31, 2019, CBP classified LCD indicator panels for automobiles in heading 8531, HTSUS",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=HQ+H325872&highlight=category%3AClassification",
+      "chunk_id": "chunk_11ccf05dbd681a3584ab0038"
+    },
+    {
+      "claim_id": "claim_cb34d0546c4c153894d2addf",
+      "text": "HQ H026661, dated July 8, 2008, CBP classified an LCD display for auto/marine/industrial applications in heading 8531, HTSUS",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=HQ+H325872&highlight=category%3AClassification",
+      "chunk_id": "chunk_11ccf05dbd681a3584ab0038"
+    },
+    {
+      "claim_id": "claim_ec9e91e60338d9d0a0e7531f",
+      "text": "the subject LCD display module is classified in heading 8528, specifically subheading 8528.59.25, HTSUS",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=HQ+H325872&highlight=category%3AClassification",
+      "chunk_id": "chunk_11ccf05dbd681a3584ab0038"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_c735ea79ff1ccac4072fed3b",
+      "claim_ec9e91e60338d9d0a0e7531f"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

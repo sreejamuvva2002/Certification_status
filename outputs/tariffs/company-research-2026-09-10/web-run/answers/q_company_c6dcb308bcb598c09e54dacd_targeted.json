@@ -1,0 +1,72 @@
+{
+  "query_id": "q_company_c6dcb308bcb598c09e54dacd_targeted",
+  "query": "\"Teklas USA\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0f2ab961bd71bfa96271e672",
+    "claim_42f77951f1ba3b292556f861",
+    "claim_5912c27a618adcc80d9d4d69",
+    "claim_61fa50f862822ed65584b485",
+    "claim_a15e45b053db5771e75953a6",
+    "claim_ddce94fa9cdf6449b75ab545"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0f2ab961bd71bfa96271e672",
+      "text": "President Donald Trump announced a 25 percent tariff on imported heavy trucks, effective October 1, 2025, as part of a broader effort to bolster domestic manufacturing and address national security concerns.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_a58187ff4611e6159670dd83"
+    },
+    {
+      "claim_id": "claim_42f77951f1ba3b292556f861",
+      "text": "Models like the GLE-Class, GLS-Class SUVs, and electric EQE and EQS SUVs are manufactured in Alabama, comprising a major share of the over 324,000 vehicles sold by Mercedes in the U.S. in 2024.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_f787d6432ef06213ea8c4131"
+    },
+    {
+      "claim_id": "claim_5912c27a618adcc80d9d4d69",
+      "text": "Hyundai’s investment in US manufacturing has grown significantly, with its new Georgia plant producing the Ioniq 5 and the Ioniq 9 electric SUV entering production this spring.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_f787d6432ef06213ea8c4131"
+    },
+    {
+      "claim_id": "claim_61fa50f862822ed65584b485",
+      "text": "President Donald Trump signed an executive order that goes into effect April 2 imposing a 25 percent tariff on cars built outside of the U.S.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_f787d6432ef06213ea8c4131"
+    },
+    {
+      "claim_id": "claim_a15e45b053db5771e75953a6",
+      "text": "Volkswagen has decided to hold all Audi vehicles, that arrived in the U.S. after April 2, in ports due to the newly imposed 25% tariff on auto imports.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_f787d6432ef06213ea8c4131"
+    },
+    {
+      "claim_id": "claim_ddce94fa9cdf6449b75ab545",
+      "text": "President Donald Trump announced a 25 percent tariff on all medium- and heavy-duty trucks imported into the United States, set to take effect on November 1, 2025.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_a58187ff4611e6159670dd83"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_0f2ab961bd71bfa96271e672",
+      "claim_ddce94fa9cdf6449b75ab545"
+    ],
+    [
+      "claim_61fa50f862822ed65584b485",
+      "claim_a15e45b053db5771e75953a6"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 20,
+  "synthesis_input_claim_count": 20
+}

@@ -1,0 +1,72 @@
+{
+  "query_id": "q_253",
+  "query": "site:usitc.gov automotive components tariff changes 2026",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0bc99fb3d163e036eae5fe0b",
+    "claim_2de1588a853d01b609bf0859",
+    "claim_05339ba824bab7aaaae88a87",
+    "claim_06949adb44ec92a388219b44",
+    "claim_1072d205dee3b812235f99eb",
+    "claim_2348a4bf21b6ce244559a160"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0bc99fb3d163e036eae5fe0b",
+      "text": "Due to lapse in appropriations and the ensuing cessation of Commission operations, changes pursuant to requests submitted not later than July 15, 2025, are expected to be published in a February 2026 revision to the HTS and effective on the date of publication.",
+      "url": "https://hts.usitc.gov/reststop/file?filename=Preface&release=2026HTSBasic",
+      "chunk_id": "chunk_0232d358a59c155bde726ecd"
+    },
+    {
+      "claim_id": "claim_2de1588a853d01b609bf0859",
+      "text": "Harmonized Tariff Schedule of the United States (2026 Basic Edition) January 1, 2026",
+      "url": "https://hts.usitc.gov/reststop/file?filename=Preface&release=2026HTSBasic",
+      "chunk_id": "chunk_1cc83a5cf97bda1192aeb685"
+    },
+    {
+      "claim_id": "claim_05339ba824bab7aaaae88a87",
+      "text": "Harmonized Tariff Schedule of the United States (2026) Annotated for Statistical Reporting Purposes GN p.78 USMCA",
+      "url": "https://hts.usitc.gov/reststop/file?filename=General+Note+11&release=2026HTSBasic",
+      "chunk_id": "chunk_9e0bd1fc90411e42ada534f6"
+    },
+    {
+      "claim_id": "claim_06949adb44ec92a388219b44",
+      "text": "Harmonized Tariff Schedule of the United States (2026) Annotated for Statistical Reporting Purposes GN p.41 USMCA",
+      "url": "https://hts.usitc.gov/reststop/file?filename=General+Note+11&release=2026HTSBasic",
+      "chunk_id": "chunk_7d840f16779a84459e5cf0bd"
+    },
+    {
+      "claim_id": "claim_1072d205dee3b812235f99eb",
+      "text": "Harmonized Tariff Schedule of the United States (2026) Annotated for Statistical Reporting Purposes GN p.131 USMCA",
+      "url": "https://hts.usitc.gov/reststop/file?filename=General+Note+11&release=2026HTSBasic",
+      "chunk_id": "chunk_e7537a3f22e5def851888004"
+    },
+    {
+      "claim_id": "claim_2348a4bf21b6ce244559a160",
+      "text": "Harmonized Tariff Schedule of the United States (2026) Annotated for Statistical Reporting Purposes GN p.129 USMCA",
+      "url": "https://hts.usitc.gov/reststop/file?filename=General+Note+11&release=2026HTSBasic",
+      "chunk_id": "chunk_50403eeb8dca870b77e4aaf9"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_0bc99fb3d163e036eae5fe0b",
+      "claim_2de1588a853d01b609bf0859"
+    ],
+    [
+      "claim_05339ba824bab7aaaae88a87",
+      "claim_06949adb44ec92a388219b44"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 190,
+  "synthesis_input_claim_count": 40
+}

@@ -1,0 +1,95 @@
+{
+  "query_id": "q_435",
+  "query": "EV inverters United States customs classification tariffs",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_631ab6751f89ff1743c64b3a",
+    "claim_6f5e1b376a964af2a6f8d320",
+    "claim_28da344f68d21a7c110d1942",
+    "claim_28e921f07cd1615b9cd37365",
+    "claim_9159253885562047d5d7afb6",
+    "claim_0b67f93d87d4b6f60c0d0404",
+    "claim_ebd1c3744115a7eccb4a6fd7",
+    "claim_aa0c6b9d937448344fd961c1"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_631ab6751f89ff1743c64b3a",
+      "text": "Solar inverters (string inverters, microinverters, and hybrid/multi-mode inverters) are classified under 8504.40 as static converters.",
+      "url": "https://dutiable.io/hs-code/solar-renewable-energy/solar-inverter",
+      "chunk_id": "chunk_9c7722be05def2717b1909c7"
+    },
+    {
+      "claim_id": "claim_6f5e1b376a964af2a6f8d320",
+      "text": "The HS code for solar inverters & grid-tie inverters is 8504.40.55. Import duty rates: EU 0%, US Free, UK 0%. Rates verified April 2026 against USITC HTS.",
+      "url": "https://dutiable.io/hs-code/solar-renewable-energy/solar-inverter",
+      "chunk_id": "chunk_9c7722be05def2717b1909c7"
+    },
+    {
+      "claim_id": "claim_28da344f68d21a7c110d1942",
+      "text": "Enphase and SolarEdge (manufacturing in Hungary) have signaled stable pricing for U.S. customers, using non-Chinese factories to dodge the steepest duties.",
+      "url": "https://www.sunhub.com/blog/april-2025-reciprocal-tariffs-solar-equipment",
+      "chunk_id": "chunk_d4be44e91dc5f2ca9350e869"
+    },
+    {
+      "claim_id": "claim_28e921f07cd1615b9cd37365",
+      "text": "Under the new policy, all imports face at least 10% tariff, and specific countries face more – China-made inverters now see ~34% tariff, European inverters ~20%, South Korea 25%, etc.",
+      "url": "https://www.sunhub.com/blog/april-2025-reciprocal-tariffs-solar-equipment",
+      "chunk_id": "chunk_d4be44e91dc5f2ca9350e869"
+    },
+    {
+      "claim_id": "claim_9159253885562047d5d7afb6",
+      "text": "Solar inverters have also seen price pressures from the tariff updates, though the impact varies by manufacturer origin. Many popular inverter brands for U.S. solar projects are made in China or other foreign countries (for example: Growatt, Sungrow, Solis from China; SolarEdge from Israel/Hungary; SMA from Germany; Fronius from Austria; Huawei (utility-scale) from China, etc.). Under the new policy, all imports face at least 10% tariff, and specific countries face more – China-made inverters now see ~34% tariff, European inverters ~20%, South Korea 25%, etc.",
+      "url": "https://www.sunhub.com/blog/april-2025-reciprocal-tariffs-solar-equipment",
+      "chunk_id": "chunk_8b58c583576e171d7a2022a5"
+    },
+    {
+      "claim_id": "claim_0b67f93d87d4b6f60c0d0404",
+      "text": "Inverters from China (Growatt, Sungrow) likewise rose ~30–34%.",
+      "url": "https://www.sunhub.com/blog/april-2025-reciprocal-tariffs-solar-equipment",
+      "chunk_id": "chunk_eb82a54b066fd6096d5176c3"
+    },
+    {
+      "claim_id": "claim_ebd1c3744115a7eccb4a6fd7",
+      "text": "Inverters from China (Growatt, Sungrow) likewise rose ~30–34%.",
+      "url": "https://www.sunhub.com/blog/april-2025-reciprocal-tariffs-solar-equipment",
+      "chunk_id": "chunk_eb82a54b066fd6096d5176c3"
+    },
+    {
+      "claim_id": "claim_aa0c6b9d937448344fd961c1",
+      "text": "Julio De Jesus Marin\nGlamar Solar Inc.\nPO Box 421  \nJayuya, PR  00664",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+N306512&highlight=NY+N306512",
+      "chunk_id": "chunk_ad9608b60950c988772e65c0"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_631ab6751f89ff1743c64b3a",
+      "claim_6f5e1b376a964af2a6f8d320"
+    ],
+    [
+      "claim_28da344f68d21a7c110d1942",
+      "claim_28e921f07cd1615b9cd37365"
+    ],
+    [
+      "claim_28e921f07cd1615b9cd37365",
+      "claim_9159253885562047d5d7afb6"
+    ],
+    [
+      "claim_0b67f93d87d4b6f60c0d0404",
+      "claim_ebd1c3744115a7eccb4a6fd7"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 19,
+  "synthesis_input_claim_count": 19
+}

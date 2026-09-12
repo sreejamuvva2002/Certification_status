@@ -1,0 +1,61 @@
+{
+  "query_id": "q_51",
+  "query": "United States automobile import tariffs current rates effective dates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_353d89efd7adcebbe0541e19",
+    "claim_c748cd1c486157c4724dde5e",
+    "claim_8d61700d6736dfb04f149bc0",
+    "claim_59dbd6bad2623f202fc76f1a",
+    "claim_cf9460ca496dce95be61e364"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_353d89efd7adcebbe0541e19",
+      "text": "Proclamation and fact sheet issued imposing 25% tariff on automobiles and certain automobile parts, effective for automobiles on April 3, 2025, and no later than May 3, 2025, for auto parts. Special tariff exemptions for USMCA-compliant auto parts and for the value of US content embedded in autos imported under USMCA.",
+      "url": "https://www.chrobinson.com/en-us/resources/insights-and-advisories/trade-tariff-insights/tariff-timeline",
+      "chunk_id": "chunk_ee88aef1f8394205ee85e26c"
+    },
+    {
+      "claim_id": "claim_c748cd1c486157c4724dde5e",
+      "text": "Automobiles took effect April 3, 2025; automobile parts took effect May 3, 2025.",
+      "url": "https://zonos.com/docs/guides/us-tariff-changes",
+      "chunk_id": "chunk_d718e7148916ac4521b24409"
+    },
+    {
+      "claim_id": "claim_8d61700d6736dfb04f149bc0",
+      "text": "Federal Register Notice issued reducing the 25% tariffs on certain Taiwanese auto parts, aerospace components, and wood products to 15%, effective retroactively to May 1, 2026.",
+      "url": "https://www.chrobinson.com/en-us/resources/insights-and-advisories/trade-tariff-insights/tariff-timeline",
+      "chunk_id": "chunk_54fb260598ff917063ff095b"
+    },
+    {
+      "claim_id": "claim_59dbd6bad2623f202fc76f1a",
+      "text": "Proclamation and fact sheet issued imposing a 25% tariff on imports from all countries of medium- and heavy-duty vehicles (Classes 3 & 8) and parts, and a 10% tariff on buses, effective November 1, 2025.",
+      "url": "https://www.chrobinson.com/en-us/resources/insights-and-advisories/trade-tariff-insights/tariff-timeline",
+      "chunk_id": "chunk_9a2ca962e267aca94f3581f7"
+    },
+    {
+      "claim_id": "claim_cf9460ca496dce95be61e364",
+      "text": "Proclamation 10984 imposes a 25% tariff on Class III–VIII trucks and their parts and a 10% tariff on buses, effective November 1, 2025 (separate from the passenger-vehicle tariff).",
+      "url": "https://zonos.com/docs/guides/us-tariff-changes",
+      "chunk_id": "chunk_56da2a8d1f6e0b5d97d45769"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_353d89efd7adcebbe0541e19",
+      "claim_c748cd1c486157c4724dde5e"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 58,
+  "synthesis_input_claim_count": 50
+}

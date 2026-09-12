@@ -1,0 +1,71 @@
+{
+  "query_id": "q_328",
+  "query": "Automotive seat frames steel tariff exposure",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0500ac75b01ee29cdde914c3",
+    "claim_bc62a9ffc8da215971654d71",
+    "claim_6f16f9e43106bf92725da15c",
+    "claim_b1ba152847766d3efe91d8cb",
+    "claim_7b49ad8735108d5143ed01f7",
+    "claim_e2b37fb9c47567238ed0aa2e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0500ac75b01ee29cdde914c3",
+      "text": "In August, the US administration extended the scope of the 50% import tariffs for steel and aluminium goods, adding more than 400 additional items to the levy, including car parts such as chassis components, axles, steel wiring, brackets and mounts, and parts of heavy vehicles.",
+      "url": "https://www.automotivelogistics.media/supply-chain/tariff-analysis-deep-dive-the-most-important-changes-for-the-auto-industry/663875",
+      "chunk_id": "chunk_aadfedec0b4209946c7e44f7"
+    },
+    {
+      "claim_id": "claim_bc62a9ffc8da215971654d71",
+      "text": "In August, the US administration extended the scope of the 50% import tariffs for steel and aluminium goods, adding more than 400 additional items to the levy, including car parts such as chassis components, axles, steel wiring, brackets and mounts, and parts of heavy vehicles.",
+      "url": "https://www.automotivelogistics.media/supply-chain/tariff-analysis-deep-dive-the-most-important-changes-for-the-auto-industry/663875",
+      "chunk_id": "chunk_aadfedec0b4209946c7e44f7"
+    },
+    {
+      "claim_id": "claim_6f16f9e43106bf92725da15c",
+      "text": "Now, a 50% tariff rate applies to stamped components such as bodyshop panels, brackets and structural elements, even if they would otherwise qualify as car parts, meaning the rate goes up from 27.5% (25% for USMCA compliance) to 50%.",
+      "url": "https://www.automotivelogistics.media/supply-chain/tariff-analysis-deep-dive-the-most-important-changes-for-the-auto-industry/663875",
+      "chunk_id": "chunk_aadfedec0b4209946c7e44f7"
+    },
+    {
+      "claim_id": "claim_b1ba152847766d3efe91d8cb",
+      "text": "Starting March 12, 2025, President Trump is bringing back the full 25% tariff on steel imports. He is also raising tariffs on aluminum imports to 25%.",
+      "url": "https://www.everstream.ai/articles/navigate-tariff-risk-automotive-sc-mapping",
+      "chunk_id": "chunk_56bdf817854957de5838f9b4"
+    },
+    {
+      "claim_id": "claim_7b49ad8735108d5143ed01f7",
+      "text": "Trump imposed sweeping 25% tariffs on all steel and aluminum imports on March 12",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_09fb3ff6c8701f55f5872069"
+    },
+    {
+      "claim_id": "claim_e2b37fb9c47567238ed0aa2e",
+      "text": "Safety-critical components like airbags, mirrors, seats, and batteries will be subject to the same 25% tariff starting May 3.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0e904fe2cb92be0365d8e6dc"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0500ac75b01ee29cdde914c3",
+      "claim_bc62a9ffc8da215971654d71"
+    ],
+    [
+      "claim_b1ba152847766d3efe91d8cb",
+      "claim_7b49ad8735108d5143ed01f7"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 27,
+  "synthesis_input_claim_count": 27
+}

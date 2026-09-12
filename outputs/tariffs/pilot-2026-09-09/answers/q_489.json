@@ -1,0 +1,48 @@
+{
+  "query_id": "q_489",
+  "query": "site:commerce.gov steel aluminum derivative tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_17975eb0da262896b676d765",
+    "claim_f7f65a312c7c27490c8dff18",
+    "claim_f9090bf7c95383f2f26a634b"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_17975eb0da262896b676d765",
+      "text": "Imports of derivative articles of aluminum, as referenced in Proclamation 9980,6 [...] under-use of the TRQ.",
+      "url": "https://www.commerce.gov/sites/default/files/2021-10/US-232-EU-Statement.pdf",
+      "chunk_id": "chunk_f47c1e0a74636f6dc9b95d9a"
+    },
+    {
+      "claim_id": "claim_f7f65a312c7c27490c8dff18",
+      "text": "Imports of derivative articles of steel, as referenced in Proclamation 9980,2 from the EU will not be subject to Section 232 duties.",
+      "url": "https://www.commerce.gov/sites/default/files/2021-10/US-232-EU-Statement.pdf",
+      "chunk_id": "chunk_f47c1e0a74636f6dc9b95d9a"
+    },
+    {
+      "claim_id": "claim_f9090bf7c95383f2f26a634b",
+      "text": "At present there is no exclusions process for duties on steel and aluminum derivative",
+      "url": "https://2017-2021.commerce.gov/index.php/tags/aluminum.html",
+      "chunk_id": "chunk_c883ed6ee58f32ff1e10dd16"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_17975eb0da262896b676d765",
+      "claim_f7f65a312c7c27490c8dff18"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

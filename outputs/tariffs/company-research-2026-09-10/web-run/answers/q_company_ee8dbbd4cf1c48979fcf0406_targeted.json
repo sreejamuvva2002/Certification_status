@@ -1,0 +1,62 @@
+{
+  "query_id": "q_company_ee8dbbd4cf1c48979fcf0406_targeted",
+  "query": "\"Trenton Pressing\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_030ef6fab6c8784dfaff1fab",
+    "claim_19150960bf66ca0f5b8e0c1a",
+    "claim_51f33b979e4ef3c80804b4de",
+    "claim_6dfd3abc11136b304bdc1102",
+    "claim_d70f16461e7b413c56cad863"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_030ef6fab6c8784dfaff1fab",
+      "text": "President Trump has implemented a 25% tariff on foreign-made auto parts, including powertrain components, seats, and airbags, while introducing some key exemptions to reduce the strain on automakers.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_9f82b7462f46a2f16899791a"
+    },
+    {
+      "claim_id": "claim_19150960bf66ca0f5b8e0c1a",
+      "text": "Volkswagen has publicly criticized the Trump administration’s 25% tariffs on Mexican and Canadian automotive goods, arguing that they violate commitments made under the United States-Mexico-Canada Agreement (USMCA). The automaker submitted its concerns to the U.S. Trade Representative ahead of the trade pact’s 2026 review",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_f3acc3ddb27ff46874313455"
+    },
+    {
+      "claim_id": "claim_51f33b979e4ef3c80804b4de",
+      "text": "The Trump administration’s tariffs on imported vehicles and auto parts have cost automakers a staggering $35.4 billion since their implementation in 2025, according to an analysis of financial reports by Automotive News. Toyota has been the hardest hit, projecting $9.1 billion in tariff-related costs for the fiscal year ending March 2026.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_e8a1ffd62f7b512ed56a6a50"
+    },
+    {
+      "claim_id": "claim_6dfd3abc11136b304bdc1102",
+      "text": "Ford Motor has raised prices on three Mexico-produced models—the Mustang Mach-E, Maverick, and Bronco Sport—by up to $2,000, citing mid-year pricing adjustments and the impact of U.S. tariffs imposed by President Trump.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_9f82b7462f46a2f16899791a"
+    },
+    {
+      "claim_id": "claim_d70f16461e7b413c56cad863",
+      "text": "President Donald Trump announced he will be increasing tariffs on South Korean goods from 15% to 25%, citing South Korea’s failure to enact a trade agreement signed in July 2025. The tariffs will affect a wide range of goods, including automobiles, lumber, and pharmaceuticals",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_f3acc3ddb27ff46874313455"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_030ef6fab6c8784dfaff1fab",
+      "claim_5660f160c83adcce52497d18"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 33,
+  "synthesis_input_claim_count": 33
+}
