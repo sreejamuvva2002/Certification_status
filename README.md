@@ -189,3 +189,27 @@ Start with **`qwen3:14b`**; drop to `qwen3:8b` if it's slow on your hardware.
   registrar certificate lookups).
 - ~1,000 companies × 2 certs × ~2 s delay + LLM time ≈ several hours for a full run.
   Use `--limit` for testing and let the resume feature do the rest in batches.
+
+## Tariff intelligence (separate workflow)
+
+The supplied 510-query tariff bank and an independent Tavily + local Qwen 35B
+workflow are available on `Tariffs-data`. It defaults to a resumable 50-query,
+100-estimated-credit pilot and leaves the GNEM pipelines unchanged.
+
+```bash
+python3 scripts/research_tariffs.py --dry-run --out outputs/tariffs/dry-run
+python3 scripts/research_tariffs.py --out outputs/tariffs/pilot
+```
+
+See [setup, outputs, budget controls and resume commands](docs/tariff_workflow.md)
+and the [actual run status](docs/tariff_run_status.md). Live execution requires a
+configured Tavily key and a reachable Ollama server with an installed Qwen 35B model.
+
+
+The completed 510-query corpus has a separate cached-only quality revision:
+[quality report and evidence coverage](outputs/tariffs/quality-audit-v1-2026-09-10/quality_report.md).
+It preserves original outputs, records manual corrections and unresolved evidence gaps,
+and prepares targeted sector/company query drafts without executing new searches.
+
+The company tariff workflow now covers all 193 distinct seed company names. See
+[company workflow and reviewed outputs](docs/company_tariff_research.md).
