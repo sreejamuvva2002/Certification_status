@@ -1,0 +1,73 @@
+{
+  "query_id": "q_238",
+  "query": "Georgia EV suppliers alternative sourcing non China battery materials",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0311feac857b8d9a3f8600ff",
+    "claim_2a183f361bc0e616ad31f4a1",
+    "claim_3bb5982d357506707d154214",
+    "claim_7ca957ed2a8d8c86c801dd0e",
+    "claim_9af3e5b325880203e1bdd631",
+    "claim_907ba6bf60e5e5986042718f"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0311feac857b8d9a3f8600ff",
+      "text": "Other midstream suppliers for anode material and electrolytes, two key components for battery cells, have announced plans to build facilities in the state. In total, Georgia has seen investment in the electric-mobility space rise to $27.3 billion since 2018, the highest of any state in the nation.",
+      "url": "https://www.c2es.org/document/securing-the-critical-battery-materials-supply-chain-in-the-southeast-united-states",
+      "chunk_id": "chunk_2891a96192071ed9dc28bc19"
+    },
+    {
+      "claim_id": "claim_2a183f361bc0e616ad31f4a1",
+      "text": "U.S. automakers are building long-term mining relationships in North America and finding stable trading partners like Australia in order to secure a steady supply of battery metals.",
+      "url": "https://www.coxautoinc.com/mobility/wp-content/uploads/sites/11/2022/09/EV_Battery_Whitepaper.pdf",
+      "chunk_id": "chunk_66ec0b3fcd8cffd1cebd76fa"
+    },
+    {
+      "claim_id": "claim_3bb5982d357506707d154214",
+      "text": "Presently, most batteries and critical battery materials are produced in China, but American technological innovation and industrial policy have put the nation in a strategic position to lead the next generation of battery development.",
+      "url": "https://www.c2es.org/document/securing-the-critical-battery-materials-supply-chain-in-the-southeast-united-states",
+      "chunk_id": "chunk_4e61f9e2d5b830e736ea92fb"
+    },
+    {
+      "claim_id": "claim_7ca957ed2a8d8c86c801dd0e",
+      "text": "The top two global battery suppliers are Chinese, with China having produced more than 70 percent of all EV batteries ever manufactured.",
+      "url": "https://www.c2es.org/document/securing-the-critical-battery-materials-supply-chain-in-the-southeast-united-states",
+      "chunk_id": "chunk_4e61f9e2d5b830e736ea92fb"
+    },
+    {
+      "claim_id": "claim_9af3e5b325880203e1bdd631",
+      "text": "China controls nearly three-quarters of the market for the raw materials that go into these batteries.",
+      "url": "https://www.coxautoinc.com/mobility/wp-content/uploads/sites/11/2022/09/EV_Battery_Whitepaper.pdf",
+      "chunk_id": "chunk_6b50066de4aeace6cb883b7e"
+    },
+    {
+      "claim_id": "claim_907ba6bf60e5e5986042718f",
+      "text": "New requirements include that the cars must be assembled in North America and that materials and critical minerals in the battery must come from the U.S. or a country with a free trade agreement with the U.S.",
+      "url": "https://www.coxautoinc.com/mobility/wp-content/uploads/sites/11/2022/09/EV_Battery_Whitepaper.pdf",
+      "chunk_id": "chunk_212aed237750e370397fc4c7"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_3bb5982d357506707d154214",
+      "claim_7ca957ed2a8d8c86c801dd0e"
+    ],
+    [
+      "claim_9af3e5b325880203e1bdd631",
+      "claim_907ba6bf60e5e5986042718f"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 60,
+  "synthesis_input_claim_count": 48
+}

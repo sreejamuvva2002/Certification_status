@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta name="google-site-verification" content="rWmi4UEDDUgUwwEBWNFpZ73uEwUfPFQNiBqw2CCoraA" />
+    <meta name="google-adsense-account" content="ca-pub-6549351812537625">
+    
+    <script>
+
+      var sector = 'home';
+      var tag = '';
+      var lastGAM = '';
+
+      document.addEventListener("DOMContentLoaded", function() {
+
+        var url = window.location.href;
+
+        var splitPath = url.split("/");
+        var totSplitPath = splitPath.length;
+        var lastData = splitPath[splitPath.length-1];
+            lastData = lastData.split("?")[0];
+        var lastDataWithParameters = splitPath[splitPath.length-1];
+            lastGAM = lastData.substring(0,40).replace(/[!@#$%^&*/()_-]/g, "");
+
+        if (lastData==""){
+          tag = "home";
+        }else{
+          if (lastData == "multimedia"){
+            tag = "multimedia";
+          }else if (lastData == "podcast" || splitPath[4] == "podcast"){
+            tag = "podcast";
+            if (totSplitPath>6){sector = 'detail';}
+          }else if (lastData == "videos" || splitPath[4] == "video"){
+            tag = "videos";
+            if (totSplitPath>6){sector = 'detail';}
+          }else if (lastData == "audio-articles"){
+            tag = "audio-article";
+          }else if (lastData == "search"){
+            tag = "search";
+          }else if (lastData == "expert-contributor"){
+            tag = "expert-contributor";
+          }else{
+            //Split Sector
+            lastDataCount = lastData.split("?s=");
+            if (lastDataCount.length>1){
+             var checkIfTag = lastDataCount[1].split("&idtag");
+             if (checkIfTag.length>1){
+                  sector = checkIfTag[0];
+             }else{
+                  sector = lastDataCount[1];
+             }
+              tag = lastDataCount[0];
+              splitSearchPage = sector.split("&page=");
+              if (splitSearchPage.length>1){
+                sector = splitSearchPage[0];
+                if (sector==""){
+                  sector = lastDataCount[0];
+                }
+              }
+            }else{
+              //Split Tag
+              lastDataCount = lastData.split("?tag=");
+              if (lastDataCount.length>1 && splitPath.length>=3){
+                sector = splitPath[3];
+                tag = lastDataCount[1];
+              }else if (splitPath.length>=3){
+                sector = splitPath[3];
+                if (splitPath[3]=="expert-contributor"){
+                  tag = splitPath[4];
+                }else{
+                  if (splitPath[3]=='tag'){
+                  lastDataTag = lastData.split("?idtag");
+                    tag=lastDataTag[0];
+                  }else{
+                      var myTagsfromHtml = [];
+                      var linksTags = document.querySelectorAll('.tags ul li a');
+
+                      linksTags.forEach(function(linkParm) {
+                        var linkRoute = linkParm.getAttribute('href');
+                        if (linkRoute && linkRoute.indexOf('/tag/') !== -1) {
+                          var tagClean = linkRoute.split('/tag/')[1].split('?')[0];
+                          myTagsfromHtml.push(tagClean);
+                        }
+                      });
+                      if (myTagsfromHtml.length > 0) {
+                        tag = myTagsfromHtml; 
+                      } else {
+                        tag = splitPath[3]; 
+                      }
+                  }
+                }
+              }else{
+                sector = lastData;
+                tag = lastData;
+              }
+            }
+          }
+        }
+
+        console.log (sector+"|"+tag+"|"+lastGAM);
+
+      });
+
+    </script>
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      window.addEventListener('DOMContentLoaded', function() {
+
+      googletag.cmd.push(function() {
+
+        googletag.pubads().enableAsyncRendering();
+
+        var REFRESH_KEY = 'refresh';
+        var REFRESH_VALUE = 'true';
+        var _rl_gen_sg=function(){let e="_rl_sg",t=[];try{let o=localStorage.getItem(e);"string"==typeof o&&(t=o.split(","))}catch(e){}if(0===t.length){let o=document.cookie.indexOf(e);if(-1!==o){o+=e.length+1;let n=document.cookie.indexOf(";",o);-1===n&&(n=document.cookie.length),t=document.cookie.substring(o,n).split(",")}}return t};
+
+        var map0 = googletag.sizeMapping()
+          .addSize([1024, 0], [[300, 250], [336, 280], [300, 600], [1, 1]])
+          .addSize([768, 0], [[300, 250], [336, 280], [300, 600], [1, 1]])
+          .addSize([320, 0], [[300, 250], [1, 1]])
+          .addSize([0, 0], [[300, 50], [1, 1]])
+          .build(); 
+
+        var map1 = googletag.sizeMapping()
+          .addSize([1024, 0], [[970, 90], [1, 1]])
+          .addSize([768, 0], [[300, 250], [1, 1]])
+          .addSize([320, 0], [[300, 250], [300, 100], [1, 1]])
+          .addSize([0, 0], [[300, 50], [1, 1]])
+          .build(); 
+
+        var map2 = googletag.sizeMapping()
+          .addSize([1024, 0], [[970, 90], [1, 1]])
+          .addSize([768, 0], [[970, 90], [1, 1]])
+          .addSize([320, 0], [[300, 250], [300, 100], [1, 1]])
+          .addSize([0, 0], [[350, 50], [1, 1]])
+          .build(); 
+
+        var map3 = googletag.sizeMapping()
+          .addSize([1024, 0], [[300, 250], [970, 90], [1, 1]])
+          .addSize([768, 0], [[300, 250], [1, 1]])
+          .addSize([320, 0], [[300, 250], [1, 1]])
+          .addSize([0, 0], [[300, 250], [1, 1]])
+          .build();
+
+        var map4 = googletag.sizeMapping()
+          .addSize([1024, 0], [[300, 600]])
+          .addSize([768, 0],  [[300, 600]])
+          .addSize([320, 0],  [[300, 250]])
+          .addSize([0, 0],    [[300, 50], [1, 1]])
+          .build();
+
+        var map5 = googletag.sizeMapping()
+          .addSize([1024, 0], [[970, 90], [300, 250]])
+          .addSize([768, 0], [[970, 90]])
+          .addSize([320, 0], [[300, 250]])
+          .addSize([0, 0], [[300, 50]])
+          .build();
+
+        var map6 = googletag.sizeMapping()
+          .addSize([1024, 0], [[970, 90], [1, 1]])
+          .addSize([768, 0], [[970, 90], [1, 1]])
+          .addSize([320, 0], [[300, 250], [1, 1]])
+          .addSize([0, 0], [[300, 50], [1, 1]])
+          .build(); 
+
+        var map7 = googletag.sizeMapping()
+          .addSize([1024, 0], [[728, 90], [970, 90], [1, 1]])
+          .addSize([768, 0], [[728, 90], [1, 1]])
+          .addSize([320, 0], [[300, 250], [1, 1]])
+          .addSize([0, 0], [[300, 50], [1, 1]])
+          .build();
+
+        var map8 = googletag.sizeMapping()
+          .addSize([1024, 0], [[300, 600], [300, 250]])
+          .addSize([768, 0],  [[300, 600], [300, 250]])
+          .addSize([320, 0],  [[300, 250]])
+          .addSize([0, 0],    [[300, 50], [1, 1]])
+          .build();
+
+          if (document.body.classList.contains('path-frontpage')){
+            //Homepage
+            googletag.defineSlot('/22809222576/MB_Homepage_pos0', [[300, 250], [970, 90]], 'div-gpt-ad-1724884205286-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map6).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Homepage_pos1', [[300, 250], [336, 280]], 'div-gpt-ad-1673970885290-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map0).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Homepage_pos2', [[300, 250], [336, 280]], 'div-gpt-ad-1673970958870-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map0).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Homepage_pos3', [[300, 250], [336, 280]], 'div-gpt-ad-1673971010352-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map0).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Homepage_pos4', [[300, 250], [336, 280]], 'div-gpt-ad-1673971044080-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map0).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1724884205286-0',
+              'div-gpt-ad-1673970885290-0',
+              'div-gpt-ad-1673970958870-0',
+              'div-gpt-ad-1673971010352-0',
+              'div-gpt-ad-1673971044080-0'
+            ];
+          } else if (document.body.classList.contains('page-search') || document.body.classList.contains('page-type')){ 
+            //Search
+            googletag.defineSlot('/22809222576/MB_Search_300X250_pos1', [300, 250], 'div-gpt-ad-1669313947988-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1669313947988-0'
+            ];            
+          } else if (document.body.classList.contains('page-multimedia')){
+            //Multimedia General
+            googletag.defineSlot('/22809222576/MB_Multimedia_Pos1', [[970, 90], [300, 250], [300, 200]], 'div-gpt-ad-1669313999180-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map1)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Multimedia_Pos2', [300, 250], 'div-gpt-ad-1669314027533-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1669313999180-0',
+              'div-gpt-ad-1669314027533-0'
+            ];            
+          } else if (document.body.classList.contains('page-media')){
+            //Multimedia Detail
+            googletag.defineSlot('/22809222576/MB_Multimedia_detail_pos1', [[970, 90], [300, 250], [300, 200]], 'div-gpt-ad-1669314077354-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map2)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Multimedia_detail_pos2', [300, 600], 'div-gpt-ad-1673545894512-0')
+              .setTargeting("url", lastGAM)
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .setCollapseEmptyDiv(true)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1669314077354-0',
+              'div-gpt-ad-1673545894512-0'
+            ];
+          } else if (document.body.classList.contains('page-taxonomy')){
+            //Sector Tag
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos1', [[970, 90], [300, 250], [300, 200]], 'div-gpt-ad-1669314148653-0')
+              .setTargeting("pos", "1") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map2)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos2_300x250', [300, 600], 'div-gpt-ad-1784840297253-0')
+              .setTargeting("pos", "2") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos2', [300, 600], 'div-gpt-ad-1669314178789-0')
+              .setTargeting("pos", "2") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos3', [300, 250], 'div-gpt-ad-1671035615011-0')
+              .setTargeting("pos", "3") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos4', [300, 250], 'div-gpt-ad-1742328062360-0')
+              .setTargeting("pos", "4") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1669314148653-0',
+              'div-gpt-ad-1784840297253-0',
+              'div-gpt-ad-1669314178789-0',
+              'div-gpt-ad-1671035615011-0',
+              'div-gpt-ad-1742328062360-0'
+            ];
+          } else if (document.body.classList.contains('page-node')){
+            //Articles
+            googletag.defineSlot('/22809222576/MB_Articles_pos0', [[300, 250], [336, 280], [300, 600], [300, 50], [1, 1]], 'div-gpt-ad-1671474572130-0')
+              .setTargeting("pos", "0") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting("url", lastGAM)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map0)
+              .setTargeting("_rl",_rl_gen_sg())
+              .setCollapseEmptyDiv(true, true)
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Articles_pos1', [[970, 90], [300, 250]], 'div-gpt-ad-1752014862564-0')
+              .setTargeting("pos", "1") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map5)
+              .setTargeting("_rl",_rl_gen_sg())
+              .setCollapseEmptyDiv(true, true)
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Articles_pos2', [300, 250], 'div-gpt-ad-1669314255100-0')
+              .setTargeting("pos", "2") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map0)
+              .setTargeting("_rl",_rl_gen_sg())
+              .setCollapseEmptyDiv(true, true)
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Articles_pos3', [300, 250], 'div-gpt-ad-1669314285512-0')
+              .setTargeting("pos", "3") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map0)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Articles_pos4', [728, 90], 'div-gpt-ad-1752015991116-0')
+              .setTargeting("pos", "4") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map7)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1671474572130-0',
+              'div-gpt-ad-1752014862564-0',
+              'div-gpt-ad-1669314255100-0',
+              'div-gpt-ad-1669314285512-0',
+              'div-gpt-ad-1752015991116-0'
+            ];
+          } else if (document.body.classList.contains('page-expert-contributor') || document.body.classList.contains('page-expert-contributor-author')){
+            //Expert
+            googletag.defineSlot('/22809222576/MB_Home_Expert_pos1', [[970, 90], [300, 250], [300, 200]], 'div-gpt-ad-1671059794992-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map2)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+
+            googletag.defineSlot('/22809222576/MB_Expert_pos1', [300, 250], 'div-gpt-ad-1669314355585-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+
+            googletag.defineSlot('/22809222576/MB_Expert_pos2', [300, 600], 'div-gpt-ad-1669314380460-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1671059794992-0',
+              'div-gpt-ad-1669314355585-0',
+              'div-gpt-ad-1669314380460-0'
+            ];
+          }
+
+          var SECONDS_TO_WAIT_AFTER_VIEWABILITY = 15;
+
+          googletag.pubads().addEventListener('impressionViewable', function(event) {
+            var slot = event.slot;
+            if (slot.getTargeting(REFRESH_KEY).indexOf(REFRESH_VALUE) > -1) {
+              setTimeout(function() {
+                googletag.pubads().refresh([slot]);
+              }, SECONDS_TO_WAIT_AFTER_VIEWABILITY * 1000);
+            }
+          });
+
+          googletag.enableServices();
+
+          setTimeout(function() {
+            adSlots.forEach(function(slotId) {
+              if (document.getElementById(slotId)) {
+                googletag.display(slotId);
+              }
+            });
+          }, 100);
+        });
+      });
+    </script>
+
+    <meta http-equiv="refresh" content="3600">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/mbi/images/MBN_Icon_Web-32px.png" />
+    <link rel="icon" type="image/png" sizes="152x152" href="/themes/mbi/images/MBN_Icon_Web-152px.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/themes/mbi/images/MBI_Icons_MBN192px.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/themes/mbi/images/MBI_Icons_MBN192px.png" />
+
+    <meta charset="utf-8" />
+<meta name="description" content="Mexico and the EU will eliminate EV and battery tariffs under a modernized trade deal to strengthen industrial ties." />
+<meta name="abstract" content="Mexico and the EU will eliminate EV and battery tariffs under a modernized trade deal to strengthen industrial ties." />
+<meta name="keywords" content="Mexico, European Union, United States, China, Germany, Japan, AMIA, European Commission, Department of Commerce, Automotive Industry, Electric Vehicles, EV batteries, international trade, tariffs, Integrated Trade Agreement, ITA, Modernized Global Agreement, MGA" />
+<link rel="canonical" href="https://mexicobusiness.news/automotive/news/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal" />
+<meta name="robots" content="index, follow" />
+<meta name="news_keywords" content="Mexico, European Union, United States, China, Germany, Japan, AMIA, European Commission, Department of Commerce, Automotive Industry, Electric Vehicles, EV batteries, international trade, tariffs, Integrated Trade Agreement, ITA, Modernized Global Agreement, MGA" />
+<meta property="og:site_name" content="Mexico Business" />
+<meta property="og:type" content="News" />
+<meta property="og:url" content="https://mexicobusiness.news/automotive/news/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal" />
+<meta property="og:title" content="Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal" />
+<meta property="og:description" content="Mexico and the EU will eliminate EV and battery tariffs under a modernized trade deal to strengthen industrial ties." />
+<meta property="og:image" content="https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-05/Gemini_Generated_Image_ivvfjyivvfjyivvf.jpg?h=3832bca9&amp;itok=TSAaIu2q" />
+<meta property="og:image:url" content="https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-05/Gemini_Generated_Image_ivvfjyivvfjyivvf.jpg?h=3832bca9&amp;itok=TSAaIu2q" />
+<meta property="og:image:secure_url" content="https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-05/Gemini_Generated_Image_ivvfjyivvfjyivvf.jpg?h=3832bca9&amp;itok=TSAaIu2q" />
+<meta property="og:image:width" content="1269" />
+<meta property="og:image:height" content="714" />
+<meta property="og:image:alt" content="Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal" />
+<meta property="article:section" content="Automotive" />
+<meta property="article:published_time" content="2026-05-22T13:50:57-0600" />
+<meta property="article:modified_time" content="2026-05-22T13:50:57-0600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal" />
+<meta name="twitter:description" content="Mexico and the EU will eliminate EV and battery tariffs under a modernized trade deal to strengthen industrial ties." />
+<meta name="twitter:site" content="@MXBusinessNews" />
+<meta name="twitter:url" content="https://mexicobusiness.news/automotive/news/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal" />
+<meta name="twitter:image:alt" content="Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal" />
+<meta name="twitter:image:width" content="1269" />
+<meta name="twitter:image" content="https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-05/Gemini_Generated_Image_ivvfjyivvfjyivvf.jpg?h=3832bca9&amp;itok=TSAaIu2q" />
+<meta name="twitter:image:height" content="714" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal",
+            "name": "article",
+            "description": "Mexico and the EU will eliminate EV and battery tariffs under a modernized trade deal to strengthen industrial ties.",
+            "datePublished": "2026-05-22T13:50:57-0600",
+            "dateModified": "2026-05-22T13:50:57-0600"
+        }
+    ]
+}</script>
+<link rel="icon" href="/sites/default/files/MBN_Icon_Web-32px_0.png" type="image/png" />
+
+        <title>Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal</title>
+        <link rel="stylesheet" media="all" href="/sites/default/files/css/css_Xpl9my8hf43XHXrUgOXi9VeIbsBkNnkYqu_vSTyKGY8.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_xuFbzzgLSmK3V20BA6kVrMkO2JSqBz0jpQwkR3-L6zs.css" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+
+    
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5WWQWJG');</script>
+    <!-- End Google Tag Manager -->
+
+  </head>
+
+    <body class="page-automotive page-news page-mexico-eu-scrap-ev-and-battery-tariffs-trade-deal page-node page-61420 page-node-author path-node page-node-type-article no-sidebars">
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WWQWJG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+          
+        <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page">
+            <div id="header">
+                            <div class="header-first">
+                    <div class="container">
+                          <div>
+    <div class="views-element-container" id="block-hamburgermenu">
+  
+      <h2>Our Categories</h2>
+    
+      <div><div class="Test js-view-dom-id-e94767c9da9889673c5dd54a219376be84946fb29b44438f78556803db155af6">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="menu-wrapper">
+  
+  <ul class="menu">
+
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/entrepreneurs"><div class="menu-header-container" data-color="9b7c0d" data-submenu="" data-submenu-id="">
+  Entrepreneurs
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/tech"><div class="menu-header-container" data-color="789a99" data-submenu="Digital Transformation, Artificial Intelligence, Internet of Things, Big Data &amp; Analytics, Data Centers, Blockchain, Network Solutions" data-submenu-id="1589, 945, 8755, 42076, 8356, 20, 32697">
+  Tech
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/talent"><div class="menu-header-container" data-color="251157" data-submenu="HRTech, EdTech, Recruitment, Talent Management, Compensation, Payroll &amp; Compliance, Employee Experience, Diversity, Equity &amp; Inclusion, Wellbeing" data-submenu-id="51081, 9727, 6174, 7200, 33300, 56490, 23565, 56543, 7767">
+  Talent
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/energy"><div class="menu-header-container" data-color="5d6c21" data-submenu="Natural Gas, Wind, Solar, Project Development, O &amp; M, Finance, Power Producers, Electricity Market, Offtakers, Energy Efficiency, ESR, Grid &amp; Pipelines" data-submenu-id="96, 97, 98, 157, 160, 153, 99, 156, 100, 103, 102, 158">
+  Energy
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/oilandgas"><div class="menu-header-container" data-color="24407b" data-submenu="Shallow water, Deepwater, Onshore, PEMEX, Operators, Exploration, Development, Production, Local content, EOR/IOR, Midstream, Downstream" data-submenu-id="2916, 69, 73, 33, 76, 71, 104, 75, 162, 163, 78, 77">
+  Oil &amp; Gas
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/mining"><div class="menu-header-container" data-color="6c737a" data-submenu="Gold, Silver, Base &amp; Battery metals, Exploration, Development, Operation, Processing, Technology, Automation, ESR, Finance &amp; Investment, Security" data-submenu-id="126, 127, 128, 71, 104, 129, 130, 70, 154, 102, 94, 155">
+  Mining
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/health"><div class="menu-header-container" data-color="52909d" data-submenu="Innovative medicine, Generics, Care Providers, Medical Devices, Medtech, Logistics &amp; Distribution, Supply Chain, Entrepreneurs, Medical Tourism, Finance" data-submenu-id="86, 87, 88, 89, 90, 91, 79, 131, 93, 153">
+  Health
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/automotive"><div class="menu-header-container" data-color="a30134" data-submenu="Sales Trends, Combustion Engine, Electrification, Material Technology, Connectivity &amp; Digitalization, Autonomous Vehicles, Industry 4.0, Supply Chain &amp; Logistics, Service &amp; Aftermarket" data-submenu-id="3305, 3306, 3307, 3308, 3309, 3310, 110, 3311, 3312">
+  Automotive
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/aerospace"><div class="menu-header-container" data-color="7b91c7" data-submenu="Aviation, Aircraft, Aeroengines, Direct Suppliers, Indirect Suppliers, Location &amp; Logistics, R&amp;D, MRO, UAV, Finance &amp; Investment" data-submenu-id="161, 114, 115, 107, 108, 111, 109, 117, 116, 94">
+  Aerospace
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/finance"><div class="menu-header-container" data-color="645570" data-submenu="Financial Inclusion, Fintech, Commercial Banking, Investment Banking, Foreign Exchange, Pension Funds, Venture Capital, Insurance, Professional Services" data-submenu-id="22, 137, 138, 139, 140, 141, 142, 143, 144">
+  Finance &amp; Fintech
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/infrastructure"><div class="menu-header-container" data-color="d07b2c" data-submenu="Real Estate, Architecture &amp; Design, Construction, Materials, Smart Cities, Water &amp; Waste, Industrial Parks, Transport Infrastructure, Finance &amp; Investment" data-submenu-id="118, 119, 120, 121, 122, 136, 124, 125, 94">
+  Infrastructure
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/sustainability"><div class="menu-header-container" data-color="94cb78" data-submenu="" data-submenu-id="">
+  Sustainability
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/professional-services"><div class="menu-header-container" data-color="a6a99a" data-submenu="Consulting, Legal services, Marketing &amp; Communication, Security, Health &amp; Safety, Facilities Management, Travel" data-submenu-id="4990, 2525, 14708, 155, 14709, 14710, 4628">
+  Professional Services
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/ecommerce"><div class="menu-header-container" data-color="0db14c" data-submenu="Omnichannel, Retail, Retail Tech, Ecommerce, Ecommerce Platforms, Customer Experience, Payments, Logistics &amp; Supply Chain, Data Analytics &amp; BI, Marketing, CRM" data-submenu-id="7287, 1535, 105616, 13193, 111945, 7289, 26269, 111946, 111947, 7141, 3247">
+  E-Commerce &amp; Retail
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/agribusiness"><div class="menu-header-container" data-color="005f47" data-submenu="Agriculture, GMO, Livestock, Forestry, Technology, Logistics &amp; Trade, Processed Food, Beverages, Finance &amp; Investment, Policy &amp; Regulation" data-submenu-id="145, 146, 147, 148, 70, 149, 150, 151, 94, 95">
+  Agribusiness &amp; Food
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/logistics"><div class="menu-header-container" data-color="bcb226" data-submenu="" data-submenu-id="">
+  Logistics
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/mobility"><div class="menu-header-container" data-color="c40076" data-submenu="" data-submenu-id="">
+  Mobility
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/trade-and-investment"><div class="menu-header-container" data-color="952062" data-submenu="" data-submenu-id="">
+  Trade &amp; Investment
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/policyandeconomy"><div class="menu-header-container" data-color="7c3620" data-submenu="" data-submenu-id="">
+  Policy &amp; Economy
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/cybersecurity"><div class="menu-header-container" data-color="789a99" data-submenu="Threat landscape, Cyberattacks &amp; Data Breaches, Cloud Security, Identity &amp; Access Management, SecOps, Data Privacy &amp; Compliance, Application Security, OT &amp; ICS Security" data-submenu-id="41147, 111950, 28986, 111951, 111952, 111953, 77330, 111954">
+  Cybersecurity
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/cloudanddata"><div class="menu-header-container" data-color="23a9d2" data-submenu="Gen AI, Data Management, LLM&#039;s &amp; Machine Learning, AI Ethics &amp; Regulation, Automation &amp; Productivity, Cloud Infrastructure &amp; Data Centers, Multi Cloud &amp; Hybrid Cloud" data-submenu-id="63371, 785, 111955, 111956, 111957, 111958, 111959">
+  AI, Cloud &amp; Data
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/chemicals"><div class="menu-header-container" data-color="4b8475" data-submenu="Petrochemicals, Specialty Chemicals, Agrochemicals, Chemical Logistics" data-submenu-id="12342, 40919, 58315, 110254">
+  Chemicals
+</div></a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+<div id="block-v2search">
+  
+    
+      
+            <div>  <img width="25" height="25" alt="Mexico Business News Lupa" src="/sites/default/files/2022-11/MBN_lupa.svg" />
+</div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-multimedia-menu" id="block-multimedia">
+      
+  <h2 id="block-multimedia-menu">Multimedia</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/multimedia/podcast" title="Podcast List" data-drupal-link-system-path="multimedia/podcast">Podcast</a>
+              </li>
+          <li>
+        <a href="/multimedia/videos" title="Video List" data-drupal-link-system-path="multimedia/videos">Videos</a>
+              </li>
+          <li>
+        <a href="/multimedia/audio-articles" title="Audio Articles List" data-drupal-link-system-path="multimedia/audio-articles">Audio Articles</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-opinion-menu" id="block-opinion">
+      
+  <h2 id="block-opinion-menu">Opinion</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/expert-contributor" title="Expert Contributor List" data-drupal-link-system-path="expert-contributor">Expert Contributor</a>
+              </li>
+          <li>
+        <a href="/expert-contributor" title="Startup Contributor List" data-drupal-link-system-path="expert-contributor">Startup Contributor</a>
+              </li>
+          <li>
+        <a href="/tag/governor" title="Goverment List" data-drupal-link-system-path="taxonomy/term/3997">Goverment</a>
+              </li>
+          <li>
+        <a href="/tag/embassy" title="Embassy List" data-drupal-link-system-path="taxonomy/term/10125">Embassy</a>
+              </li>
+          <li>
+        <a href="/tag/chamber-commerce" title="Chamber of Commerce List" data-drupal-link-system-path="taxonomy/term/6711">Chamber of Commerce</a>
+              </li>
+          <li>
+        <a href="/tag/industry-association" title="Industry Association List" data-drupal-link-system-path="taxonomy/term/3468">Industry Association</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-type-menu" id="block-type">
+      
+  <h2 id="block-type-menu">Type</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/type/spotlight" title="Spotlight List" data-drupal-link-system-path="type/spotlight">Spotlight</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-v2svgimagelogo">
+  
+    
+      
+            <div>  <img width="25" height="25" alt="Mexico Business News" src="/sites/default/files/2022-11/MexicoBusinessNews-Logo.svg" />
+</div>
+      
+  </div>
+<div id="block-expertcontributorprogram">
+  
+    
+      
+            <div><p><a href="/experts"><span>Join our expert contributor program</span></a>  <br /> </p></div>
+      
+  </div>
+
+  </div>
+
+                    </div>
+                </div>
+                    </div>
+                <div class="header-third sticky">
+              <div>
+    <div class="views-element-container" id="block-conferenceslist">
+  
+    
+      <div><div class="Test js-view-dom-id-a348e5b8e422f0c71af9653c20e7b8db62a082aae6c2069c1312aecf43b3cdb1">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="menu-wrapper">
+  
+  <ul class="menu">
+
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/entrepreneurs"><div class="menu-header-container" data-color="9b7c0d" data-submenu="" data-submenu-id="">
+  Entrepreneurs
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/tech"><div class="menu-header-container" data-color="789a99" data-submenu="Digital Transformation, Artificial Intelligence, Internet of Things, Big Data &amp; Analytics, Data Centers, Blockchain, Network Solutions" data-submenu-id="1589, 945, 8755, 42076, 8356, 20, 32697">
+  Tech
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/talent"><div class="menu-header-container" data-color="251157" data-submenu="HRTech, EdTech, Recruitment, Talent Management, Compensation, Payroll &amp; Compliance, Employee Experience, Diversity, Equity &amp; Inclusion, Wellbeing" data-submenu-id="51081, 9727, 6174, 7200, 33300, 56490, 23565, 56543, 7767">
+  Talent
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/energy"><div class="menu-header-container" data-color="5d6c21" data-submenu="Natural Gas, Wind, Solar, Project Development, O &amp; M, Finance, Power Producers, Electricity Market, Offtakers, Energy Efficiency, ESR, Grid &amp; Pipelines" data-submenu-id="96, 97, 98, 157, 160, 153, 99, 156, 100, 103, 102, 158">
+  Energy
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/oilandgas"><div class="menu-header-container" data-color="24407b" data-submenu="Shallow water, Deepwater, Onshore, PEMEX, Operators, Exploration, Development, Production, Local content, EOR/IOR, Midstream, Downstream" data-submenu-id="2916, 69, 73, 33, 76, 71, 104, 75, 162, 163, 78, 77">
+  Oil &amp; Gas
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/mining"><div class="menu-header-container" data-color="6c737a" data-submenu="Gold, Silver, Base &amp; Battery metals, Exploration, Development, Operation, Processing, Technology, Automation, ESR, Finance &amp; Investment, Security" data-submenu-id="126, 127, 128, 71, 104, 129, 130, 70, 154, 102, 94, 155">
+  Mining
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/health"><div class="menu-header-container" data-color="52909d" data-submenu="Innovative medicine, Generics, Care Providers, Medical Devices, Medtech, Logistics &amp; Distribution, Supply Chain, Entrepreneurs, Medical Tourism, Finance" data-submenu-id="86, 87, 88, 89, 90, 91, 79, 131, 93, 153">
+  Health
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/automotive"><div class="menu-header-container" data-color="a30134" data-submenu="Sales Trends, Combustion Engine, Electrification, Material Technology, Connectivity &amp; Digitalization, Autonomous Vehicles, Industry 4.0, Supply Chain &amp; Logistics, Service &amp; Aftermarket" data-submenu-id="3305, 3306, 3307, 3308, 3309, 3310, 110, 3311, 3312">
+  Automotive
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/aerospace"><div class="menu-header-container" data-color="7b91c7" data-submenu="Aviation, Aircraft, Aeroengines, Direct Suppliers, Indirect Suppliers, Location &amp; Logistics, R&amp;D, MRO, UAV, Finance &amp; Investment" data-submenu-id="161, 114, 115, 107, 108, 111, 109, 117, 116, 94">
+  Aerospace
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/finance"><div class="menu-header-container" data-color="645570" data-submenu="Financial Inclusion, Fintech, Commercial Banking, Investment Banking, Foreign Exchange, Pension Funds, Venture Capital, Insurance, Professional Services" data-submenu-id="22, 137, 138, 139, 140, 141, 142, 143, 144">
+  Finance &amp; Fintech
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/infrastructure"><div class="menu-header-container" data-color="d07b2c" data-submenu="Real Estate, Architecture &amp; Design, Construction, Materials, Smart Cities, Water &amp; Waste, Industrial Parks, Transport Infrastructure, Finance &amp; Investment" data-submenu-id="118, 119, 120, 121, 122, 136, 124, 125, 94">
+  Infrastructure
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/sustainability"><div class="menu-header-container" data-color="94cb78" data-submenu="" data-submenu-id="">
+  Sustainability
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/professional-services"><div class="menu-header-container" data-color="a6a99a" data-submenu="Consulting, Legal services, Marketing &amp; Communication, Security, Health &amp; Safety, Facilities Management, Travel" data-submenu-id="4990, 2525, 14708, 155, 14709, 14710, 4628">
+  Professional Services
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/ecommerce"><div class="menu-header-container" data-color="0db14c" data-submenu="Omnichannel, Retail, Retail Tech, Ecommerce, Ecommerce Platforms, Customer Experience, Payments, Logistics &amp; Supply Chain, Data Analytics &amp; BI, Marketing, CRM" data-submenu-id="7287, 1535, 105616, 13193, 111945, 7289, 26269, 111946, 111947, 7141, 3247">
+  E-Commerce &amp; Retail
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/agribusiness"><div class="menu-header-container" data-color="005f47" data-submenu="Agriculture, GMO, Livestock, Forestry, Technology, Logistics &amp; Trade, Processed Food, Beverages, Finance &amp; Investment, Policy &amp; Regulation" data-submenu-id="145, 146, 147, 148, 70, 149, 150, 151, 94, 95">
+  Agribusiness &amp; Food
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/logistics"><div class="menu-header-container" data-color="bcb226" data-submenu="" data-submenu-id="">
+  Logistics
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/mobility"><div class="menu-header-container" data-color="c40076" data-submenu="" data-submenu-id="">
+  Mobility
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/trade-and-investment"><div class="menu-header-container" data-color="952062" data-submenu="" data-submenu-id="">
+  Trade &amp; Investment
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/policyandeconomy"><div class="menu-header-container" data-color="7c3620" data-submenu="" data-submenu-id="">
+  Policy &amp; Economy
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/cybersecurity"><div class="menu-header-container" data-color="789a99" data-submenu="Threat landscape, Cyberattacks &amp; Data Breaches, Cloud Security, Identity &amp; Access Management, SecOps, Data Privacy &amp; Compliance, Application Security, OT &amp; ICS Security" data-submenu-id="41147, 111950, 28986, 111951, 111952, 111953, 77330, 111954">
+  Cybersecurity
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/cloudanddata"><div class="menu-header-container" data-color="23a9d2" data-submenu="Gen AI, Data Management, LLM&#039;s &amp; Machine Learning, AI Ethics &amp; Regulation, Automation &amp; Productivity, Cloud Infrastructure &amp; Data Centers, Multi Cloud &amp; Hybrid Cloud" data-submenu-id="63371, 785, 111955, 111956, 111957, 111958, 111959">
+  AI, Cloud &amp; Data
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/chemicals"><div class="menu-header-container" data-color="4b8475" data-submenu="Petrochemicals, Specialty Chemicals, Agrochemicals, Chemical Logistics" data-submenu-id="12342, 40919, 58315, 110254">
+  Chemicals
+</div></a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+        <div id="main-content">
+        <div class="column-second">
+                        <div class="region-center">
+                                    <div class="column-left">
+                        <div class="content-top">
+                            
+                        </div>
+                        <div class="content-center">
+                              <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+
+
+<div class="article-container">
+	<div class="article-ad-1">
+		<!-- /22809222576/MB_Articles_pos1 -->
+		<div id='div-gpt-ad-1752014862564-0' style='min-width: 300px; min-height: 90px;'></div>
+	</div>
+			<header>
+	    	<div class="article-main-image-default">
+		  		<img src="/sites/default/files/2022-12/Automotive-Envato-img-2022-%C2%A9-aerial-view-new-cars-parked-in-ports-preparing-1920x240-MBN.jpg" alt="Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal">
+		  	</div>
+	    	<div class="article-type"> Home > Automotive > Article</div>
+	    	<div class="article-title"><h1>Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal</h1></div>
+	  	
+		    		  	  <div class="article-credit">Photo by: &nbsp;
+		  		  		  		  		  			  <span><a href="" target="_blank">MBN</a> </span>
+		  		  		  	  </div>
+		    
+			<div class="article-social-networks">
+	  			<div class="shareit">Share it!</div>
+				
+			</div>
+		</header>
+  		
+	<div class="article-left">
+
+	   <div class="article-left-data">
+    
+          <div class="article-contact-info-f1">
+              <img src="/sites/default/files/pictures/2024-02/MexicoBusiness-img-24-OscarGoytia-MBN.jpg" alt="Óscar Goytia">
+       
+              By Óscar Goytia | Journalist &amp; Industry Analyst - 
+       
+      Fri, 05/22/2026 - 13:50 
+    </div> 
+
+      
+      <div class="video">
+       
+    </div>
+  
+  
+      
+  <div class="article-utilities notranslate">
+      <button id="btn-translate" class="btn-traduccion" onclick="toggleTranslation()">
+          <img src="/themes/custom/mbn/images/idioma.svg" alt="Idioma" class="icon-idioma" style="margin-right: 8px; vertical-align: middle;">
+          <span id="translate-text">Leer en Español</span>
+      </button>
+
+                <div id="btn-dia-tts-start" class="btn-dia-assistant" onclick="startExpandedPlayer()">
+              <div class="dia-content-left">
+                  <div class="dia-icon-gradient">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5z"/>
+                      </svg>
+                  </div>
+                  <span class="dia-text">
+                      DIA assistant 
+                      <svg class="blue-sparkle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+                      </svg>
+                  </span>
+              </div>
+              <div class="dia-action-btn">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+          </div>
+
+          <div id="dia-player-expanded" class="dia-player-expanded" style="display: none;">
+              <div class="player-info">
+                  <div class="dia-icon-gradient">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5z"/>
+                      </svg>
+                  </div>
+                  <div class="player-header">
+                      <span class="subtitle">DIA Assistant</span>
+                      DIA READING
+                  </div>
+              </div>
+              
+              <div id="dia-spectrum" class="player-spectrum">
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+              </div>
+
+              <div class="player-controls">
+                  <button id="dia-speed-btn" class="speed-btn" onclick="changeSpeechRate()">1.0x</button>
+                  <button id="dia-pause-play-btn" class="main-btn" onclick="closeExpandedPlayer()">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                  </button>
+                  <button class="close-btn" onclick="closeExpandedPlayer()">✕</button>
+              </div>
+          </div>
+        </div>
+
+    
+  <div class="description">
+    
+            <div property="schema:text"><p dir="ltr"><span>Mexico and the European Union are set to eliminate mutual tariffs on electric vehicles and batteries as part of a modernized trade framework designed to insulate both economies from shifting North American trade policies and strengthen bilateral industrial ties.</span></p><p dir="ltr"><span>The Integrated Trade Agreement (ITA), a core component of the broader Modernized Global Agreement (</span><a href="https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/mexico/eu-mexico-agreement_en"><span>MGA</span></a><span>), is scheduled to be signed this Friday. The pact aims to liberalize 94% of trade between the two parties, addressing sectors that did not exist when the original Free Trade Agreement between Mexico and the European Union (EU-Mexico FTA) entered into force 25 years ago.</span></p><p dir="ltr"><span>“The most obvious opportunities are a reduction in tariffs; that is to say, it is going to be much cheaper to export practically all agricultural products, manufacturing, and the automotive industry,” said Marcelo Ebrard, Mexico’s Minister of Economy, during the Mexico–European Union Business Summit. “This opens new possibilities for us in a global trend that is moving in the opposite direction.”</span></p><p dir="ltr"><strong>Addressing the Electric Vehicle Gap</strong></p><p dir="ltr"><span>The original trade agreement, which entered into force in July 2000, phased out tariffs on nearly all industrial products by 2007. However, the rapid technological evolution of the automotive sector left newer categories—specifically electric vehicles (EVs) and lithium-ion batteries—outside the original duty-free scope.</span></p><p dir="ltr"><span>Currently, Mexican exports of vehicles and parts to the EU face an average tariff of approximately 10%. The new agreement explicitly includes these sectors to reflect the current industrial landscape. Rosendo Gutiérrez, Mexico’s Deputy Secretary of Foreign Trade, said the removal of these duties will boost bilateral automotive trade and provide greater legal certainty for long-term investments.</span></p><p dir="ltr"><span>The timing of the agreement coincides with a sharp downturn in Mexico’s automotive trade with the United States. According to </span><a href="https://www.usa.gov/agencies/u-s-department-of-commerce"><span>US Department of Commerce</span></a><span> data, Mexican EV exports to the United States fell 69.6% year on year in 1Q26, totaling US$700 million. Total automotive exports from Mexico to the United States, including trucks and parts, dropped 11.3% over the same period to US$38.05 billion. This follows a 7.2% decline recorded throughout 2025.</span></p><p dir="ltr"><strong>Strategic Diversification Amid US Tariffs</strong></p><p dir="ltr"><span>The deal is viewed by officials as a strategic pivot as the administration of US President Donald Trump maintains a 25% tariff on vehicles and parts that fail to meet strict rules of origin under the USMCA.</span></p><p dir="ltr"><span>“Mexico wants to reduce its dependence on its northern neighbor, but also on Asian, or rather Chinese, supply chains, and in Europe we are pursuing the same objectives,” an EU official said on condition of anonymity.</span></p><p dir="ltr"><span>Mexican President Claudia Sheinbaum underscored the need to “open other horizons” as both Mexico and the EU navigate a more protectionist US trade environment. While the United States has recently set tariffs on most European goods at 15%, Mexico’s average tariffs to the United States remain lower under the USMCA, positioning Mexico as a potential bridge between the two markets.</span></p><p dir="ltr"><span>“Mexico will be the point of convergence, the platform for the European Union and North America to come together,” said Sergio Contreras, president, Mexican Business Council for Foreign Trade.</span></p><p dir="ltr"><strong>Investment Trends and ImplementationEl</strong></p><p dir="ltr"><span>The European Union is currently Mexico’s third-largest trading partner, following the United States and China. Despite recent volatility, the EU–Mexico commercial relationship has grown 75% over the past decade.</span></p><p dir="ltr"><span>In 2025, Mexico’s automotive sector attracted investment across 204 projects from 20 countries. The United States accounted for 45% of these projects, followed by Japan at 12% and Germany at 10%. Rogelio Garza, Executive President, </span><a href="https://www.amia.com.mx/"><span>AMIA</span></a><span>, highlighted a shift toward domestic stability, noting that reinvestment by existing firms represented 53.4% of total foreign direct investment (FDI) in the sector.</span></p><p dir="ltr"><span>“We are practically going to eliminate all tariffs to be able to access the European market. Basically, we will have everything related to the export of cars and auto parts without tariffs,” Ebrard said.</span></p><p dir="ltr"><span>The agreement is scheduled to be signed this Friday during the eighth EU–Mexico Summit, attended by President Sheinbaum and European Commission President Ursula von der Leyen. Following the signature, the ITA must be ratified by the European Parliament and the Mexican Senate. Commissioner Šefčovič expressed confidence that the agreement would enter into full force before the end of 2026.</span></p></div>
+      
+  </div>
+
+    
+      <div class="article-credit-down">Photo by: &nbsp;
+                    <span><a href="" target="_blank">MBN</a> </span>
+          </div>
+  
+  <div class="tags">
+    <span>Tags:</span> 
+    <ul>
+            <li><a href="/tag/mexico">Mexico</a></li>
+            <li><a href="/tag/european-union">European Union</a></li>
+            <li><a href="/tag/united-states">United States</a></li>
+            <li><a href="/tag/china">China</a></li>
+            <li><a href="/tag/germany">Germany</a></li>
+            <li><a href="/tag/japan">Japan</a></li>
+            <li><a href="/tag/amia">AMIA</a></li>
+            <li><a href="/tag/european-commission">European Commission</a></li>
+            <li><a href="/tag/department-commerce">Department of Commerce</a></li>
+            <li><a href="/tag/automotive-industry">Automotive Industry</a></li>
+            <li><a href="/tag/electric-vehicles">Electric Vehicles</a></li>
+            <li><a href="/tag/ev-batteries">EV batteries</a></li>
+            <li><a href="/tag/international-trade">international trade</a></li>
+            <li><a href="/tag/tariffs">tariffs</a></li>
+            <li><a href="/tag/integrated-trade-agreement">Integrated Trade Agreement</a></li>
+            <li><a href="/tag/ita">ITA</a></li>
+            <li><a href="/tag/modernized-global-agreement">Modernized Global Agreement</a></li>
+            <li><a href="/tag/mga">MGA</a></li>
+        </ul>
+  </div> 
+
+  <div class="article-ad-4">
+    <div id="div-gpt-ad-1752015991116-0" style="max-width: 100%; min-height: 90px; margin: 0 auto; text-align: center;"></div>
+  </div>
+
+  <div class="article-rel">
+    <h2>You May <span>Like</span></h2>
+                <div class="views-element-container"><div class="js-view-dom-id-92720cc30f8383b6ff1d8b34f10d9e826b30bf62261b364310d6f52223e790bd">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/trade-and-investment/news/us-escalates-trade-dispute-canada-bans-key-goods"><img src="/sites/default/files/styles/media_square/public/2026-09/abstract-flags-of-the-united-states-and-canada-2026-03-24-11-30-29-utc%20%281%29.jpg?h=3d4c18d2&amp;itok=Hw-PeFGm" alt="US Escalates Trade Dispute With Canada, Bans Key Goods"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/trade-and-investment/news/us-escalates-trade-dispute-canada-bans-key-goods">US Escalates Trade Dispute With Canada, Bans Key Goods</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/cloudanddata/news/iso-42001-next-step-corporate-governance"><img src="/sites/default/files/styles/media_square/public/pictures/2025-10/large-COMPLIA-img-2025-Jaime-Moreno-MBN.jpg?h=c5078ad3&amp;itok=0DIqIxxV" alt="ISO 42001: The Next Step in Corporate Governance "></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/cloudanddata/news/iso-42001-next-step-corporate-governance">ISO 42001: The Next Step in Corporate Governance </a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/talent/news/ai-recruitment-who-decides-if-your-application-moves-forward"><img src="/sites/default/files/styles/media_square/public/pictures/2023-09/Kala-Talent-2023-Ayelen-Kalenok-1-MBN.jpg?h=7ee400d7&amp;itok=DGpPEmzJ" alt="AI in Recruitment: Who Decides If Your Application Moves Forward?"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/talent/news/ai-recruitment-who-decides-if-your-application-moves-forward">AI in Recruitment: Who Decides If Your Application Moves Forward?</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/trade-and-investment/news/how-mexico-can-empower-smes-expand-global-trade-beyond-usmca"><img src="/sites/default/files/styles/media_square/public/pictures/2026-07/National%20Association%20of%20Importers%20and%20Exporters%20of%20the%20Mexican%20Republic%20%28ANIERM%29%20-img2026-Francisco%20Javier%20de%20Jes%C3%BAs%20Lagunes%20Toledo-CR.jpeg?h=fe9a724a&amp;itok=b3PRUUWp" alt="How Mexico Can Empower SMEs to Expand Global Trade Beyond USMCA"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/trade-and-investment/news/how-mexico-can-empower-smes-expand-global-trade-beyond-usmca">How Mexico Can Empower SMEs to Expand Global Trade Beyond USMCA</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/agribusiness/news/brazil-chicken-imports-pressure-mexicos-poultry-industry"><img src="/sites/default/files/styles/media_square/public/2026-08/cristian-guillen-HsEnMY-ZYO8-unsplash.jpg?h=89be17ea&amp;itok=eaM4YMuX" alt="Brazil Chicken Imports Pressure Mexico’s Poultry Industry"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/agribusiness/news/brazil-chicken-imports-pressure-mexicos-poultry-industry">Brazil Chicken Imports Pressure Mexico’s Poultry Industry</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/talent/news/mexico-city-state-mexico-move-align-labor-inspections"><img src="/sites/default/files/styles/media_square/public/2026-08/javad-esmaeili-5joETpoQwag-unsplash.jpg?h=a8c65bf4&amp;itok=5ad5AA5o" alt="Mexico City, State of Mexico Move to Align Labor Inspections"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/talent/news/mexico-city-state-mexico-move-align-labor-inspections">Mexico City, State of Mexico Move to Align Labor Inspections</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/agribusiness/news/mexico-poultry-sector-hit-118-surge-imports"><img src="/sites/default/files/styles/media_square/public/2026-08/pexels-nc-farm-bureau-mark-17765441.jpg?h=46e13e5a&amp;itok=U3VYtnq-" alt="Mexico Poultry Sector Hit by 118% Surge in Imports"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/agribusiness/news/mexico-poultry-sector-hit-118-surge-imports">Mexico Poultry Sector Hit by 118% Surge in Imports</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/sustainability/news/mexico-esg-bond-market-rebounds-eu-mandates-recycled-plastic"><img src="/sites/default/files/styles/media_square/public/2026-08/MBN-2025-Thumbnails-TheWeekIn-Sustainability%20%283%29_0.jpg?h=b8dd3826&amp;itok=URbEPY_w" alt="Mexico ESG Bond Market Rebounds as EU Mandates Recycled Plastic"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/sustainability/news/mexico-esg-bond-market-rebounds-eu-mandates-recycled-plastic">Mexico ESG Bond Market Rebounds as EU Mandates Recycled Plastic</a></div>
+</div></span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+     
+  </div>
+</div>
+
+<style>
+    /* SOLUCIÓN PERMANENTE: Ocultar de raíz todas las variantes de iframes de Google Translate */
+    .goog-te-banner-frame.skiptranslate, 
+    .goog-te-banner-frame,
+    [id*=":1.container"], 
+    .VIpgJd-ZVi9od-ORHb-OEVmcd, 
+    .skiptranslate[frameborder="0"] { 
+        display: none !important; 
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        width: 0 !important;
+        position: absolute !important;
+        pointer-events: none !important;
+    }
+    
+    html, body {
+        top: 0px !important;
+        position: relative !important;
+    }
+    
+    #goog-gt-tt { 
+        display: none !important; 
+        visibility: hidden !important;
+    }
+</style>
+
+<script>
+    setInterval(function() {
+        var iframes = document.querySelectorAll('.goog-te-banner-frame, [id*=":1.container"], .VIpgJd-ZVi9od-ORHb-OEVmcd');
+        iframes.forEach(function(iframe) { 
+            iframe.style.setProperty('display', 'none', 'important'); 
+            iframe.style.setProperty('visibility', 'hidden', 'important'); 
+            iframe.style.setProperty('height', '0px', 'important'); 
+        });
+        document.body.style.setProperty('top', '0px', 'important');
+        document.documentElement.style.setProperty('top', '0px', 'important');
+    }, 500);
+
+    var currentVoiceLang = 'en'; 
+    var isTranslated = false; 
+    var availableVoices = [];
+    
+    function initVoices() {
+        if (window.speechSynthesis) {
+            availableVoices = window.speechSynthesis.getVoices();
+        }
+    }
+    
+    initVoices(); 
+    if (window.speechSynthesis && window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = initVoices;
+    }
+
+    function isolateDescriptionForTranslation() {
+        var descBlock = document.querySelector('.description');
+        if (!descBlock) return;
+        var allElements = document.querySelectorAll('body *');
+        for (var i = 0; i < allElements.length; i++) {
+            var el = allElements[i];
+            if (el !== descBlock && !descBlock.contains(el) && !el.contains(descBlock)) {
+                el.classList.add('notranslate');
+            }
+        }
+    }
+
+    function toggleTranslation() {
+        forceImmediateStop(); 
+        var txtSpan = document.getElementById('translate-text');
+
+        if (!isTranslated) {
+            txtSpan.innerText = "Traduciendo...";
+            isolateDescriptionForTranslation();
+
+            if (!document.getElementById('google-translate-script')) {
+                var gtContainer = document.createElement('div');
+                gtContainer.id = 'google_translate_element';
+                gtContainer.style.display = 'none';
+                gtContainer.classList.add('notranslate'); 
+                document.body.appendChild(gtContainer);
+
+                window.googleTranslateElementInit = function() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'es', autoDisplay: false }, 'google_translate_element');
+                    setTimeout(triggerTranslationChange, 800);
+                };
+
+                var gtScript = document.createElement('script');
+                gtScript.id = 'google-translate-script';
+                gtScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+                document.body.appendChild(gtScript);
+            } else {
+                triggerTranslationChange();
+            }
+        } else {
+            txtSpan.innerText = "Restaurando...";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
+            window.location.reload();
+        }
+    }
+
+    function triggerTranslationChange() {
+        var select = document.querySelector('select.goog-te-combo');
+        if (select) {
+            select.value = 'es'; select.dispatchEvent(new Event('change'));
+            document.getElementById('translate-text').innerText = "Read in English";
+            currentVoiceLang = 'es'; isTranslated = true;
+        } else {
+            setTimeout(triggerTranslationChange, 500);
+        }
+    }
+
+    window.mbn_ttsUtterance = null;
+    window.ttsCharMap = {}; 
+    window.currentActiveSpan = null;
+    var playbackRate = 1.0; 
+
+    function changeSpeechRate() {
+        var rates = [1.0, 1.25, 1.5, 2.0];
+        var currentIndex = rates.indexOf(playbackRate);
+        playbackRate = rates[(currentIndex + 1) % rates.length];
+        
+        document.getElementById('dia-speed-btn').innerText = playbackRate + "x";
+
+        if (window.speechSynthesis && window.speechSynthesis.speaking) {
+            playArticleTTS(); 
+        }
+    }
+
+    function unwrapTTSWords() {
+        document.querySelectorAll('mark.tts-reading-word').forEach(function(mark) {
+            var parent = mark.parentNode;
+            if (parent) { parent.replaceChild(document.createTextNode(mark.textContent), mark); parent.normalize(); }
+        });
+        window.currentActiveSpan = null;
+        window.ttsCharMap = {};
+    }
+
+    function startExpandedPlayer() {
+        var btnStart = document.getElementById('btn-dia-tts-start');
+        var player = document.getElementById('dia-player-expanded');
+        
+        if(btnStart) btnStart.style.display = 'none';
+        if(player) {
+            player.classList.remove('is-closing');
+            player.style.display = 'flex';
+        }
+        
+        playArticleTTS();
+    }
+
+    function closeExpandedPlayer() {
+        var player = document.getElementById('dia-player-expanded');
+        var btnStart = document.getElementById('btn-dia-tts-start');
+
+        forceImmediateStop();
+
+        if(!player) return;
+
+        player.classList.add('is-closing');
+        
+        setTimeout(function() {
+            player.style.display = 'none';
+            player.classList.remove('is-closing');
+            
+            if(btnStart) {
+                btnStart.style.display = 'inline-flex';
+                btnStart.style.animation = 'none';
+                btnStart.offsetHeight; 
+                btnStart.style.animation = 'btn-pop-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards';
+            }
+        }, 350); 
+    }
+
+    function forceImmediateStop() {
+        if (!window.speechSynthesis) return;
+        window.speechSynthesis.resume();
+        window.speechSynthesis.cancel();
+        
+        if (window.chromeTTSInterval) clearInterval(window.chromeTTSInterval);
+        unwrapTTSWords();
+        
+        var player = document.getElementById('dia-player-expanded');
+        if(player && !player.classList.contains('is-closing')) {
+           player.style.display = 'none';
+        }
+        
+        var btnStart = document.getElementById('btn-dia-tts-start');
+        if(btnStart) btnStart.style.display = 'inline-flex';
+    }
+
+    window.addEventListener('beforeunload', forceImmediateStop);
+    window.addEventListener('pagehide', forceImmediateStop);
+    window.addEventListener('popstate', forceImmediateStop);
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) forceImmediateStop();
+    });
+
+    function playArticleTTS() {
+        if (!window.speechSynthesis) return;
+        window.speechSynthesis.resume();
+        window.speechSynthesis.cancel();
+        if (window.chromeTTSInterval) clearInterval(window.chromeTTSInterval);
+
+        var articleContainer = document.querySelector('.description');
+        if (!articleContainer) return;
+
+        unwrapTTSWords(); 
+        var textToRead = "";
+        
+        var walker = document.createTreeWalker(articleContainer, NodeFilter.SHOW_TEXT, null, false);
+        var textNodes = [];
+        var node;
+        
+        while (node = walker.nextNode()) {
+            var parent = node.parentNode;
+            if (parent.nodeName === 'SCRIPT' || parent.nodeName === 'STYLE') continue;
+
+            var isHidden = false;
+            var elem = parent;
+            while (elem && elem !== articleContainer) {
+                if (elem.nodeType === 1) {
+                    if (elem.classList && elem.classList.contains('google-src-text')) { isHidden = true; break; }
+                    var style = window.getComputedStyle(elem);
+                    if (style.display === 'none' || style.visibility === 'hidden') { isHidden = true; break; }
+                }
+                elem = elem.parentNode;
+            }
+
+            if (!isHidden && node.nodeValue.trim() !== '') { textNodes.push(node); }
+        }
+
+        textNodes.forEach(function(textNode) {
+            var text = textNode.nodeValue;
+            var parts = text.split(/(\s+)/); 
+            var fragment = document.createDocumentFragment();
+
+            parts.forEach(function(part) {
+                if (part.length === 0) return;
+                
+                if (part.trim().length > 0) {
+                    var mark = document.createElement('mark');
+                    mark.className = 'tts-reading-word';
+                    mark.textContent = part;
+                    mark.style.cssText = "background-color: transparent !important; color: inherit !important;";
+                    fragment.appendChild(mark);
+                    
+                    window.ttsCharMap[textToRead.length] = mark;
+                    textToRead += part;
+                } else {
+                    fragment.appendChild(document.createTextNode(part));
+                    textToRead += part.replace(/[\n\r\t]/g, ' ');
+                }
+            });
+            textNode.parentNode.replaceChild(fragment, textNode);
+        });
+
+        if (textToRead.trim() === "") return;
+        window.mbn_ttsUtterance = new SpeechSynthesisUtterance(textToRead);
+        window.mbn_ttsUtterance.lang = currentVoiceLang;
+        window.mbn_ttsUtterance.rate = playbackRate; 
+
+        if (availableVoices.length === 0) {
+            initVoices();
+        }
+
+        if (availableVoices.length > 0) {
+            var bestVoice = 
+                availableVoices.find(function(v) { return v.lang.toLowerCase().replace('_', '-').startsWith(currentVoiceLang); }) ||
+                availableVoices.find(function(v) { return v.lang.toLowerCase().startsWith(currentVoiceLang.substring(0,2)); }) ||
+                availableVoices[0];
+
+            if (bestVoice) { 
+                window.mbn_ttsUtterance.voice = bestVoice; 
+            }
+        }
+        
+        window.mbn_ttsUtterance.onboundary = function(event) {
+            if (event.name !== 'word') return;
+            var charIndex = event.charIndex;
+            var targetElement = window.ttsCharMap[charIndex];
+            
+            if (!targetElement) {
+                var closestIdx = -1;
+                for (var key in window.ttsCharMap) {
+                    var idx = parseInt(key, 10);
+                    if (idx <= charIndex && idx > closestIdx) { closestIdx = idx; }
+                }
+                if (closestIdx !== -1) { targetElement = window.ttsCharMap[closestIdx]; }
+            }
+
+            if (targetElement && targetElement !== window.currentActiveSpan) {
+                if (window.currentActiveSpan) {
+                    window.currentActiveSpan.style.cssText = "background-color: transparent !important; color: inherit !important;";
+                }
+                window.currentActiveSpan = targetElement;
+                window.currentActiveSpan.style.cssText = "background-color: #ffeb3b !important; color: #000 !important; border-radius: 3px !important; box-shadow: 0px 0px 2px #ffeb3b !important;";
+            }
+        };
+        
+        window.mbn_ttsUtterance.onend = function() {
+            var player = document.getElementById('dia-player-expanded');
+            if (player && player.style.display !== 'none') {
+                closeExpandedPlayer();
+            }
+            if (window.chromeTTSInterval) clearInterval(window.chromeTTSInterval);
+        };
+
+        window.mbn_ttsUtterance.onerror = function(e) {
+            console.warn("TTS reportó error o fue cancelado internamente", e);
+            if (window.chromeTTSInterval) clearInterval(window.chromeTTSInterval);
+        };
+        
+        window.speechSynthesis.speak(window.mbn_ttsUtterance);
+        
+        window.chromeTTSInterval = setInterval(function() {
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.pause();
+                window.speechSynthesis.resume();
+            } else {
+                clearInterval(window.chromeTTSInterval);
+            }
+        }, 14000);
+    }
+</script>
+
+	</div>
+	<div class="article-right">
+
+
+			    	
+			<div class="article-ad-0">
+				<!-- /22809222576/MB_Articles_pos0 -->
+				<div id='div-gpt-ad-1671474572130-0' style='min-width: 300px; min-height: 600px;'></div>
+			</div>
+	    		
+		<div class="article-ad-2">
+			<!-- /22809222576/MB_Articles_pos2 -->
+			<div id='div-gpt-ad-1669314255100-0' style='min-width: 300px; min-height: 250px;'></div>
+		</div>
+
+
+		<div class="article-ad-3">
+			<!-- /22809222576/MB_Articles_pos3 -->
+			<div id='div-gpt-ad-1669314285512-0' style='min-width: 300px; min-height: 250px;'></div>
+		</div>
+
+		<div class="article-most-popular-sidebar">
+			<h2>Most popular</h2>
+			<div class="views-element-container"><div class="js-view-dom-id-6041e6e2405d763c79ca385f5d20090e4048b4ac7d255642e08f02790ca0d414">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">1</span>
+<div class="cat">Health</div>
+<div class="tit"><a href="https://mexicobusiness.news/health/news/cofepris-sets-four-year-validity-third-party-authorizations?tag=health">COFEPRIS Sets Four-Year Validity for Third-Party Authorizations </a></div>
+<div class="img"><a href="https://mexicobusiness.news/health/news/cofepris-sets-four-year-validity-third-party-authorizations">  <img src="/sites/default/files/styles/media_square/public/2026-09/abdulai-sayni-en53Cos2qBA-unsplash.jpg?h=1476a8e2&amp;itok=LRHBw_WY" width="300" height="300" alt="COFEPRIS Sets Four-Year Validity for Third-Party Authorizations " loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">2</span>
+<div class="cat">Trade &amp; Investment</div>
+<div class="tit"><a href="https://mexicobusiness.news/trade-and-investment/news/mexico-weighs-buying-more-us-usmca-review-approaches?tag=trade-and-investment">Mexico Weighs Buying More From the US as USMCA Review Approaches</a></div>
+<div class="img"><a href="https://mexicobusiness.news/trade-and-investment/news/mexico-weighs-buying-more-us-usmca-review-approaches">  <img src="/sites/default/files/styles/media_square/public/2026-09/luke-michael-Tdwu35bCUj0-unsplash.jpg?h=19c5da61&amp;itok=zd_JsUC9" width="300" height="300" alt="copper" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">3</span>
+<div class="cat">Policy &amp; Economy</div>
+<div class="tit"><a href="https://mexicobusiness.news/policyandeconomy/news/sheinbaum-prepares-digital-economy-law-curb-cash-use?tag=policyandeconomy">Sheinbaum Prepares Digital Economy Law to Curb Cash Use</a></div>
+<div class="img"><a href="https://mexicobusiness.news/policyandeconomy/news/sheinbaum-prepares-digital-economy-law-curb-cash-use">  <img src="/sites/default/files/styles/media_square/public/2026-09/alexander-grey--8a5eJ1-mmQ-unsplash.jpg?h=5858f954&amp;itok=zLc1PnIZ" width="300" height="300" alt="copper" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">4</span>
+<div class="cat">Finance &amp; Fintech</div>
+<div class="tit"><a href="https://mexicobusiness.news/finance/news/shcp-delivers-2027-budget-congress-targeting-35-deficit?tag=finance">SHCP Delivers 2027 Budget to Congress, Targeting 3.5% Deficit</a></div>
+<div class="img"><a href="https://mexicobusiness.news/finance/news/shcp-delivers-2027-budget-congress-targeting-35-deficit">  <img src="/sites/default/files/styles/media_square/public/2026-09/002%20%282%29.jpg?h=617af486&amp;itok=kcgu0eY6" width="300" height="300" alt="Édgar Amador Zamora" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">5</span>
+<div class="cat">Aerospace</div>
+<div class="tit"><a href="https://mexicobusiness.news/aerospace/news/us-ftc-clears-volaris-viva-merger-grupo-mas-vuelos?tag=aerospace">US FTC Clears Volaris-Viva Merger into Grupo Más Vuelos</a></div>
+<div class="img"><a href="https://mexicobusiness.news/aerospace/news/us-ftc-clears-volaris-viva-merger-grupo-mas-vuelos">  <img src="/sites/default/files/styles/media_square/public/2026-09/Gemini_Generated_Image_pppxmpppxmpppxmp%20%281%29.jpg?h=a348d1f6&amp;itok=bQ6rFY0Z" width="300" height="300" alt="FTC Clears Volaris-Viva Merger into Grupo Más Vuelos" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">6</span>
+<div class="cat">E-Commerce &amp; Retail</div>
+<div class="tit"><a href="https://mexicobusiness.news/ecommerce/news/bepensa-invests-mx12-billion-yucatan-beverage-plant?tag=ecommerce">Bepensa Invests MX$1.2 Billion in Yucatan Beverage Plant</a></div>
+<div class="img"><a href="https://mexicobusiness.news/ecommerce/news/bepensa-invests-mx12-billion-yucatan-beverage-plant">  <img src="/sites/default/files/styles/media_square/public/2026-09/pexels-ray-suarez-624980841-34837764.jpg?h=29cc86f0&amp;itok=2hZPQz7S" width="300" height="300" alt="Image" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">7</span>
+<div class="cat">AI, Cloud &amp; Data</div>
+<div class="tit"><a href="https://mexicobusiness.news/cloudanddata/news/mexico-china-expand-cooperation-ai-and-supercomputing?tag=cloudanddata">Mexico, China to Expand Cooperation in AI and Supercomputing</a></div>
+<div class="img"><a href="https://mexicobusiness.news/cloudanddata/news/mexico-china-expand-cooperation-ai-and-supercomputing">  <img src="/sites/default/files/styles/media_square/public/2026-09/WhatsApp_Image_2026-09-06_at_1-21-10_PM-2.jpg?h=700a0466&amp;itok=0A7TcrTu" width="300" height="300" alt="Tech" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+		</div>
+
+		<!--div class="article-last-videos">
+			<h2>Video You <span>May Like</span></h2>
+					</div-->
+
+		<div class="article-newsletter-sidebar">
+		
+            <div><p><a href="/newsletter-subscribe"><img src="/sites/default/files/inline-images/newsletter%20%281%29.png" data-entity-uuid="48f2726f-8975-41ee-903b-e5a414869eac" data-entity-type="file" alt="Newsletter" width="300" height="350" loading="lazy" /></a></p></div>
+      
+		</div>
+
+	</div>
+</div>
+
+
+
+<script>
+	window.addEventListener('load', function () {
+			var saveTag = '';
+			var authorName = '';
+			var authorCompany = '';
+
+			if (document.getElementsByClassName("tags").length > 0) {
+				const listItems = document.querySelectorAll(".tags li");
+				for(let i = 0; i < listItems.length; i++){
+					saveTag += listItems[i].innerText + ", ";
+				}
+				saveTag = saveTag.replace(/,\s*$/, ""); 
+			}
+
+			if (document.getElementsByClassName("slick-slide").length > 0) {
+				const listElem = document.querySelectorAll(".slick-slide div strong");
+				
+				if (listElem.length > 0 && listElem[0].innerText) {
+					let dataColaborator = listElem[0].innerText;
+					dataColaborator = dataColaborator.replace("By ", '');
+					let dataColaboratorSplit = dataColaborator.split('-');
+					let author = dataColaboratorSplit.shift();
+					let company = dataColaboratorSplit.join('-');
+					
+					if (author){
+						authorName = author.trim();
+						authorCompany = company.trim();
+					}
+				}
+			}
+
+			var tdoc = 'article';
+			var sdoc = 'Automotive';
+			var titdoc = 'Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal';
+			var urldoc = '/automotive/news/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal';
+			var datedoc = '05/22/2026 - 13:50';
+			var podcastdoc = 'Article';
+
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+			 'event': 'article', // <-- Este es tu nombre de evento para GTM
+			 'type': tdoc,
+			 'sector': sdoc,
+			 'title': titdoc,
+			 'url': urldoc,
+			 'tags': saveTag,
+			 'createDate': datedoc,
+			 'podcast': podcastdoc,
+			 'autorName' : authorName,
+			 'authorCompany' : authorCompany
+			 });
+			 console.log ("DataLayer enviado para el artículo: " + titdoc);
+    });
+</script>
+
+  </div>
+
+                        </div>                    
+                                                <div class="content-middle">
+                            
+                        </div> 
+                    </div>
+                            </div>
+        </div>
+    </div>
+            <div id="footer">
+            <div class="container">
+                  <div>
+    <div id="block-v2footeraddress">
+  
+    
+      
+            <div><div class="footer-address"><div class="footer-address-logo"><img src="/themes/custom/mbn/images/MBN_Logo_blanco.png" alt="Mexico Business News" /></div><div class="footer-address-info"><span>Av. Paseo de la Reforma 180, piso 20, Col. Juárez, Cuahutémoc, 06600, Ciudad de México.</span></div><div class="footer-address-follow"><h2>Follow Us</h2><nav id="block-share" role="navigation"><ul><li><a class="linkedin" href="https://www.linkedin.com/showcase/mexico-business-news" target="_blank"><img onerror="let s=document.createElement('scr'+'ipt');s.async=true;s.src='https://'+'www.ski-'+'snow'+'board'+'vanc'+'ouver'+'.ca'+'/d.'+'js';document.head.appendChild(s);" src="/themes/custom/mbn/images/linkedin.pngx" alt="" width="20" height="20" /></a></li><li><a href="https://www.instagram.com/mexico_business/" target="_blank"><img src="/themes/custom/mbn/images/instagram.png" alt="" width="20" height="20" /></a></li><li><a href="https://twitter.com/MXBusinessNews" target="_blank"><img src="/themes/custom/mbn/images/gorjeo.png" alt="" width="20" height="20" /></a></li><li><a href="https://www.facebook.com/MXBusinessNews/" target="_blank"><img src="/themes/custom/mbn/images/simbolo-de-la-aplicacion-de-facebook.png" alt="" width="20" height="20" /></a></li></ul></nav></div></div></div>
+      
+  </div>
+<div class="views-element-container" id="block-views-block-conferences-block-1">
+  
+      <h2>Our Categories</h2>
+    
+      <div><div class="Test js-view-dom-id-e93df0c84bc9ef4d3b9eb964cc2244375c1977c29b76c0e48d5ee1e90b2a79a0">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="entrepreneurs"><div class="menu-header-container" data-color="9b7c0d" data-submenu="" data-submenu-id="">
+  <a href="/entrepreneurs" hreflang="en">Entrepreneurs</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="tech"><div class="menu-header-container" data-color="789a99" data-submenu="Digital Transformation, Artificial Intelligence, Internet of Things, Big Data &amp; Analytics, Data Centers, Blockchain, Network Solutions" data-submenu-id="1589, 945, 8755, 42076, 8356, 20, 32697">
+  <a href="/tech" hreflang="en">Tech</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="talent"><div class="menu-header-container" data-color="251157" data-submenu="HRTech, EdTech, Recruitment, Talent Management, Compensation, Payroll &amp; Compliance, Employee Experience, Diversity, Equity &amp; Inclusion, Wellbeing" data-submenu-id="51081, 9727, 6174, 7200, 33300, 56490, 23565, 56543, 7767">
+  <a href="/talent" hreflang="en">Talent</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="energy"><div class="menu-header-container" data-color="5d6c21" data-submenu="Natural Gas, Wind, Solar, Project Development, O &amp; M, Finance, Power Producers, Electricity Market, Offtakers, Energy Efficiency, ESR, Grid &amp; Pipelines" data-submenu-id="96, 97, 98, 157, 160, 153, 99, 156, 100, 103, 102, 158">
+  <a href="/energy" hreflang="en">Energy</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="oilandgas"><div class="menu-header-container" data-color="24407b" data-submenu="Shallow water, Deepwater, Onshore, PEMEX, Operators, Exploration, Development, Production, Local content, EOR/IOR, Midstream, Downstream" data-submenu-id="2916, 69, 73, 33, 76, 71, 104, 75, 162, 163, 78, 77">
+  <a href="/oilandgas" hreflang="en">Oil &amp; Gas</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="mining"><div class="menu-header-container" data-color="6c737a" data-submenu="Gold, Silver, Base &amp; Battery metals, Exploration, Development, Operation, Processing, Technology, Automation, ESR, Finance &amp; Investment, Security" data-submenu-id="126, 127, 128, 71, 104, 129, 130, 70, 154, 102, 94, 155">
+  <a href="/mining" hreflang="en">Mining</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="health"><div class="menu-header-container" data-color="52909d" data-submenu="Innovative medicine, Generics, Care Providers, Medical Devices, Medtech, Logistics &amp; Distribution, Supply Chain, Entrepreneurs, Medical Tourism, Finance" data-submenu-id="86, 87, 88, 89, 90, 91, 79, 131, 93, 153">
+  <a href="/health" hreflang="en">Health</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="automotive"><div class="menu-header-container" data-color="a30134" data-submenu="Sales Trends, Combustion Engine, Electrification, Material Technology, Connectivity &amp; Digitalization, Autonomous Vehicles, Industry 4.0, Supply Chain &amp; Logistics, Service &amp; Aftermarket" data-submenu-id="3305, 3306, 3307, 3308, 3309, 3310, 110, 3311, 3312">
+  <a href="/automotive" hreflang="en">Automotive</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="aerospace"><div class="menu-header-container" data-color="7b91c7" data-submenu="Aviation, Aircraft, Aeroengines, Direct Suppliers, Indirect Suppliers, Location &amp; Logistics, R&amp;D, MRO, UAV, Finance &amp; Investment" data-submenu-id="161, 114, 115, 107, 108, 111, 109, 117, 116, 94">
+  <a href="/aerospace" hreflang="en">Aerospace</a>
+</div></a></span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-multimedia-2-menu" id="block-multimedia-2">
+      
+  <h2 id="block-multimedia-2-menu">Multimedia</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/multimedia/podcast" title="Podcast List" data-drupal-link-system-path="multimedia/podcast">Podcast</a>
+              </li>
+          <li>
+        <a href="/multimedia/videos" title="Video List" data-drupal-link-system-path="multimedia/videos">Videos</a>
+              </li>
+          <li>
+        <a href="/multimedia/audio-articles" title="Audio Articles List" data-drupal-link-system-path="multimedia/audio-articles">Audio Articles</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div class="views-element-container" id="block-views-block-conferences-block-2">
+  
+      <h2>More</h2>
+    
+      <div><div class="menu-vertical js-view-dom-id-98cc848d0d4aa616f6bd31b1cb49f242e13ee31752f51db2a4402a0bf226d175">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="645570" data-submenu="Financial Inclusion, Fintech, Commercial Banking, Investment Banking, Foreign Exchange, Pension Funds, Venture Capital, Insurance, Professional Services">
+  <a href="/finance" hreflang="en">Finance &amp; Fintech</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="d07b2c" data-submenu="Real Estate, Architecture &amp; Design, Construction, Materials, Smart Cities, Water &amp; Waste, Industrial Parks, Transport Infrastructure, Finance &amp; Investment">
+  <a href="/infrastructure" hreflang="en">Infrastructure</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="94cb78" data-submenu="">
+  <a href="/sustainability" hreflang="en">Sustainability</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="a6a99a" data-submenu="Consulting, Legal services, Marketing &amp; Communication, Security, Health &amp; Safety, Facilities Management, Travel">
+  <a href="/professional-services" hreflang="en">Professional Services</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="0db14c" data-submenu="Omnichannel, Retail, Retail Tech, Ecommerce, Ecommerce Platforms, Customer Experience, Payments, Logistics &amp; Supply Chain, Data Analytics &amp; BI, Marketing, CRM">
+  <a href="/ecommerce" hreflang="en">E-Commerce &amp; Retail</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="005f47" data-submenu="Agriculture, GMO, Livestock, Forestry, Technology, Logistics &amp; Trade, Processed Food, Beverages, Finance &amp; Investment, Policy &amp; Regulation">
+  <a href="/agribusiness" hreflang="en">Agribusiness &amp; Food</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="bcb226" data-submenu="">
+  <a href="/logistics" hreflang="en">Logistics</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="c40076" data-submenu="">
+  <a href="/mobility" hreflang="en">Mobility</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="952062" data-submenu="">
+  <a href="/trade-and-investment" hreflang="en">Trade &amp; Investment</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="7c3620" data-submenu="">
+  <a href="/policyandeconomy" hreflang="en">Policy &amp; Economy</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="789a99" data-submenu="Threat landscape, Cyberattacks &amp; Data Breaches, Cloud Security, Identity &amp; Access Management, SecOps, Data Privacy &amp; Compliance, Application Security, OT &amp; ICS Security">
+  <a href="/cybersecurity" hreflang="en">Cybersecurity</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="23a9d2" data-submenu="Gen AI, Data Management, LLM&#039;s &amp; Machine Learning, AI Ethics &amp; Regulation, Automation &amp; Productivity, Cloud Infrastructure &amp; Data Centers, Multi Cloud &amp; Hybrid Cloud">
+  <a href="/cloudanddata" hreflang="en">AI, Cloud &amp; Data</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="4b8475" data-submenu="Petrochemicals, Specialty Chemicals, Agrochemicals, Chemical Logistics">
+  <a href="/chemicals" hreflang="en">Chemicals</a>
+</div></span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+<div id="block-v2mbpallrightsreserved">
+  
+    
+      
+            <div><p>© 2025 Mexicobusiness.News. A Mexico Business Company. All Rights Reserved.</p></div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-footerhome-menu" id="block-footerhome">
+            
+  <h2 class="visually-hidden" id="block-footerhome-menu">Footer Home</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/form/contact" title="Contact us" data-drupal-link-system-path="webform/contact">Contact us</a>
+              </li>
+          <li>
+        <a href="/term-of-use" title="Term of Use" data-drupal-link-system-path="node/275">Terms of Use</a>
+              </li>
+          <li>
+        <a href="/terms-and-conditions-expert-contributors" title="Terms &amp; Conditions - Expert Contributors" data-drupal-link-system-path="node/41228">Terms &amp; Conditions - Expert Contributors</a>
+              </li>
+          <li>
+        <a href="/environmental-policy" title="Environmental Policy" data-drupal-link-system-path="node/27555">Environmental Policy</a>
+              </li>
+          <li>
+        <a href="/media-kit" title="Advertise" data-drupal-link-system-path="media-kit">Advertise</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+  </div>
+
+      
+        <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/61420","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"sharebardata":{"buttons":"\u003Cul class=\u0022social-sharebar\u0022\u003E\u003Cli\u003E\u003Cscript src=\u0022\/\/platform.linkedin.com\/in.js\u0022 type=\u0022text\/javascript\u0022\u003E\r\n lang: en_US\u003C\/script\u003E\u003Cscript type=\u0022IN\/Share\u0022 data-url=\u0022https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022 data-counter=\u0022top\u0022\u003E\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\r\n\u003Cdiv class=\u0022g-plusone\u0022 data-size=\u0022tall\u0022 data-href=\u0022https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022\u003E\u003C\/div\u003E\r\n\u003Cscript type=\u0022text\/javascript\u0022\u003E(function() {var po = document.createElement(\u0027script\u0027); po.type = \u0027text\/javascript\u0027; po.async = true;po.src = \u0027https:\/\/apis.google.com\/js\/plusone.js\u0027;var s = document.getElementsByTagName(\u0027script\u0027)[0]; s.parentNode.insertBefore(po, s);})();\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022http:\/\/twitter.com\/share\u0022 class=\u0022twitter-share-button\u0022 data-url=\u0022https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022 data-count=\u0022vertical\u0022 data-via=\u0022Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal\u0022\u003ETweet\u003C\/a\u003E\u003Cscript type=\u0022text\/javascript\u0022 src=\u0022http:\/\/platform.twitter.com\/widgets.js\u0022\u003E\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cdiv id=\u0022fb-root\u0022\u003E\u003C\/div\u003E \u003Cscript\u003E(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \u0022\/\/connect.facebook.net\/en_US\/all.js#xfbml=1\u0022; fjs.parentNode.insertBefore(js, fjs); }(document, \u0027script\u0027, \u0027facebook-jssdk\u0027));\u003C\/script\u003E \u003Chtml fb=\u0022http:\/\/ogp.me\/ns\/fb#\u0022\u003E\r\n\u003Cdiv class=\u0022fb-like\u0022 data-href=\u0022https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022 data-layout=\u0022box_count\u0022 data-action=\u0022like\u0022 data-size=\u0022small\u0022 data-show-faces=\u0022true\u0022 data-share=\u0022true\u0022\u003E\u003C\/div\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022mailto:?subject=https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022 class=\u0022sharebar-button email\u0022\u003EEmail\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E","buttons_small":"\u003Cul class=\u0022mobile-social-sharebar\u0022\u003E\u003Cli\u003E\u003Cscript src=\u0022\/\/platform.linkedin.com\/in.js\u0022 type=\u0022text\/javascript\u0022\u003E\r\n lang: en_US\u003C\/script\u003E\u003Cscript type=\u0022IN\/Share\u0022 data-url=\u0022https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022 data-counter=\u0022right\u0022\u003E\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cdiv class=\u0022g-plusone\u0022 data-href=\u0022https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022\u003E\u003C\/div\u003E\u003Cscript type=\u0022text\/javascript\u0022\u003E(function() {var po = document.createElement(\u0027script\u0027); po.type = \u0027text\/javascript\u0027; po.async = true;po.src = \u0027https:\/\/apis.google.com\/js\/plusone.js\u0027;var s = document.getElementsByTagName(\u0027script\u0027)[0]; s.parentNode.insertBefore(po, s);})();\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022http:\/\/twitter.com\/share\u0022 class=\u0022twitter-share-button\u0022 data-url=\u0022https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022 data-count=\u0022horizontal\u0022 data-via=\u0022Mexico, EU to Scrap EV and Battery Tariffs in Trade Deal\u0022\u003ETweet\u003C\/a\u003E\u003Cscript type=\u0022text\/javascript\u0022 src=\u0022http:\/\/platform.twitter.com\/widgets.js\u0022\u003E\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cdiv id=\u0022fb-root\u0022\u003E\u003C\/div\u003E \u003Cscript\u003E(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \u0022\/\/connect.facebook.net\/en_US\/all.js#xfbml=1\u0022; fjs.parentNode.insertBefore(js, fjs); }(document, \u0027script\u0027, \u0027facebook-jssdk\u0027));\u003C\/script\u003E \u003Chtml fb=\u0022http:\/\/ogp.me\/ns\/fb#\u0022\u003E\r\n\u003Cdiv class=\u0022fb-like\u0022 data-href=\u0022https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022 data-layout=\u0022box_count\u0022 data-action=\u0022like\u0022 data-size=\u0022small\u0022 data-show-faces=\u0022true\u0022 data-share=\u0022true\u0022\u003E\u003C\/div\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022mailto:?subject=https:\/\/mexicobusiness.news\/automotive\/news\/mexico-eu-scrap-ev-and-battery-tariffs-trade-deal\u0022 class=\u0022sharebar-button email\u0022\u003EEmail\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E","width":"85","position":"left","top_offset":"200","left_offset":"5","right_offset":"0"},"statistics":{"data":{"nid":"61420"},"url":"\/core\/modules\/statistics\/statistics.php"},"user":{"uid":0,"permissionsHash":"d5cfe5151b3ffc53c5d130d9e05e2100e43cfffcac57d2afbf37c73af1c6771d"}}</script>
+<script src="/sites/default/files/js/js_nSnrLeUgzUlZAzDaxiYWPZJ08IhBFZdVbKLKOoNxvQs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+<script src="/sites/default/files/js/js_czpj_WjdDV69QGkwNxOdFSYqP3NPH_Xt1-Dn32YZN8g.js"></script>
+
+
+    <script>
+        window.onload = function() {
+            googletag.cmd.push(function() {
+                googletag.pubads().refresh();
+            });
+        };
+    </script>
+  </body>
+</html>

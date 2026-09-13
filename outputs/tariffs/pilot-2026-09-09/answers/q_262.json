@@ -1,0 +1,84 @@
+{
+  "query_id": "q_262",
+  "query": "site:rulings.cbp.gov printed circuit board assembly substantial transformation",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1814f1486ad1db5ee5a4fb75",
+    "claim_2282ab175a642ad8bd914032",
+    "claim_35d51ffee46179d620dc4d53",
+    "claim_3c4de2c412b39d8cd81eb5e3",
+    "claim_b30fd525f326139a39fb8b53",
+    "claim_e3644d42dcd1845f65966b2c",
+    "claim_f85790fdccc706ca9b3ae2b0"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1814f1486ad1db5ee5a4fb75",
+      "text": "Distributed Processing Technology assembles all the components onto the foreign raw printed circuit board in the United States, and thus the same rationale applies. The board would be substantially transformed.",
+      "url": "https://rulings.cbp.gov/ruling/735306",
+      "chunk_id": "chunk_31af6ae30380b95c84ecd575"
+    },
+    {
+      "claim_id": "claim_2282ab175a642ad8bd914032",
+      "text": "CBP held that for purposes of the Generalized System of Preferences (“GSP”), the assembly of a large number of fabricated components onto a printed circuit board in a process involving a considerable amount of time and skill resulted in a substantial transformation.",
+      "url": "https://rulings.cbp.gov/ruling/H331515",
+      "chunk_id": "chunk_5ad57c430daa560f839c2e33"
+    },
+    {
+      "claim_id": "claim_35d51ffee46179d620dc4d53",
+      "text": "In that case, in excess of 50 discrete fabricated components (such as resistors, capacitors, diodes, integrated circuits, sockets, and connectors) were assembled onto a PCB.",
+      "url": "https://rulings.cbp.gov/ruling/H331515",
+      "chunk_id": "chunk_5ad57c430daa560f839c2e33"
+    },
+    {
+      "claim_id": "claim_3c4de2c412b39d8cd81eb5e3",
+      "text": "With respect to printed circuit boards, Customs has ruled that the complete assembly of all the components onto a printed circuit board was a substantial transformation of the printed circuit board because the assembly process was complex and involved a considerable amount of skill and time.",
+      "url": "https://rulings.cbp.gov/ruling/735306",
+      "chunk_id": "chunk_31af6ae30380b95c84ecd575"
+    },
+    {
+      "claim_id": "claim_b30fd525f326139a39fb8b53",
+      "text": "We find that the SMT and Wave Soldering processes incorporate a large number of discrete components parts onto a printed circuit board, which is a sufficiently “complex and meaningful” operation, so as to result in a substantial transformation",
+      "url": "https://rulings.cbp.gov/ruling/H304910",
+      "chunk_id": "chunk_aa82ea0dc49abb8da6f90ce4"
+    },
+    {
+      "claim_id": "claim_e3644d42dcd1845f65966b2c",
+      "text": "CBP held that for purposes of the Generalized System of Preferences (“GSP”), the assembly of a large number of fabricated components onto a printed circuit board in a process involving a considerable amount of time and skill resulted in a substantial transformation.",
+      "url": "https://rulings.cbp.gov/ruling/H304910",
+      "chunk_id": "chunk_aa82ea0dc49abb8da6f90ce4"
+    },
+    {
+      "claim_id": "claim_f85790fdccc706ca9b3ae2b0",
+      "text": "CBP found that the SMT and Wave Soldering processes incorporated a large number of discrete components parts onto a printed circuit board, which was a sufficiently “complex and meaningful” operation, so as to result in a substantial transformation",
+      "url": "https://rulings.cbp.gov/ruling/H331515",
+      "chunk_id": "chunk_5ad57c430daa560f839c2e33"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_1814f1486ad1db5ee5a4fb75",
+      "claim_3c4de2c412b39d8cd81eb5e3"
+    ],
+    [
+      "claim_2282ab175a642ad8bd914032",
+      "claim_e3644d42dcd1845f65966b2c"
+    ],
+    [
+      "claim_b30fd525f326139a39fb8b53",
+      "claim_f85790fdccc706ca9b3ae2b0"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

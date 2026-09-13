@@ -1,0 +1,66 @@
+{
+  "query_id": "q_company_7a96eea5ccf771c156845947_targeted",
+  "query": "\"Volvo Group North America\" steel aluminum copper tariffs tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1f6aef19ec7c0e480f5918d7",
+    "claim_42f3c68fd5aec3f6e649dd82",
+    "claim_8fb48ae72a9163a92ae38768",
+    "claim_a2a3cbda057922f7ad374d54",
+    "claim_b13d37692c270216d72a6a1d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1f6aef19ec7c0e480f5918d7",
+      "text": "The automotive sector is among the most significantly affected industries by the recent 25% tariffs on steel and aluminum imports.",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    },
+    {
+      "claim_id": "claim_42f3c68fd5aec3f6e649dd82",
+      "text": "June updates introduced reduced rates for certain products, temporary 25% treatment for specified steel and aluminum articles, and a lower threshold for qualifying US-origin metal.",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    },
+    {
+      "claim_id": "claim_8fb48ae72a9163a92ae38768",
+      "text": "These metals are essential for vehicle production, used in everything from chassis and engine components to body panels and structural reinforcements.",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    },
+    {
+      "claim_id": "claim_a2a3cbda057922f7ad374d54",
+      "text": "More recently, additional tariffs on certain Canadian goods took effect in August 2026; however, steel and aluminum products already covered by Section 232 are generally",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    },
+    {
+      "claim_id": "claim_b13d37692c270216d72a6a1d",
+      "text": "With tariffs increasing costs, Mexican steel and aluminum [...] The automotive sector is among the most significantly affected industries by the recent 25% tariffs on steel and aluminum imports.",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_1f6aef19ec7c0e480f5918d7",
+      "claim_b13d37692c270216d72a6a1d"
+    ],
+    [
+      "claim_a2a3cbda057922f7ad374d54",
+      "claim_42f3c68fd5aec3f6e649dd82"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

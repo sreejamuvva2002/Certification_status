@@ -1,0 +1,41 @@
+recovery 10/125 q_118: reviewed
+Traceback (most recent call last):
+  File "/home/sm11926/Certification_status/scripts/audit_tariff_quality.py", line 226, in <module>
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--base',type=Path,default=Path('outputs/tariffs/pilot-2026-09-09'));p.add_argument('--out',type=Path,default=Path('outputs/tariffs/quality-audit-v1-2026-09-10'));p.add_argument('--terms',type=Path,default=Path('data/tariffs/targeted_terms.json'));p.add_argument('--ollama-url',default='http://localhost:11434');p.add_argument('--model',default='qwen3.5:35b-a3b');p.add_argument('--audit-date',default='2026-09-10');p.add_argument('--prepare-only',action='store_true');p.add_argument('--stage',choices=['all','recovery','conflicts'],default='all');p.add_argument('--recovery-limit',type=int);args=p.parse_args();Audit(args).run()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^
+  File "/home/sm11926/Certification_status/scripts/audit_tariff_quality.py", line 221, in run
+    def run(self):
+                   
+  File "/home/sm11926/Certification_status/scripts/audit_tariff_quality.py", line 147, in recovery
+    local_schema['properties']['contributing_causes']=arr(enum(allowed_causes),5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sm11926/Certification_status/scripts/audit_tariff_quality.py", line 62, in call
+    with urllib.request.build_opener(NoRedirect()).open(req,timeout=300) as r:raw=json.load(r)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 1457, in getresponse
+    response.begin()
+  File "/usr/lib/python3.12/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

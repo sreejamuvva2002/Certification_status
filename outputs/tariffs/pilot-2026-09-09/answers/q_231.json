@@ -1,0 +1,66 @@
+{
+  "query_id": "q_231",
+  "query": "Automotive suppliers tariff pass through customer negotiations Georgia",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_37b968dc9cda365eeedb1f44",
+    "claim_4765824d2160ad91112f9819",
+    "claim_69a030abcf8d3f69bfaf9c92",
+    "claim_a6f9afb23572dcadd7a632f0",
+    "claim_d7ef2756a749765457ae67c7"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_37b968dc9cda365eeedb1f44",
+      "text": "Suppliers are forced to take tough cost-cutting measures, e.g. programmes to reduce material costs, cut capacity, relocate production and consolidate sites.",
+      "url": "https://www.fti-andersch.com/en/insights/high-impact-customer-negotiations-in-times-of-huge-cost-increases",
+      "chunk_id": "chunk_13f363fefa123952dd64cfb0"
+    },
+    {
+      "claim_id": "claim_4765824d2160ad91112f9819",
+      "text": "Negotiation results vary widely - some automotive suppliers are able to pass on cost increases almost entirely to customers.",
+      "url": "https://www.fti-andersch.com/en/insights/high-impact-customer-negotiations-in-times-of-huge-cost-increases",
+      "chunk_id": "chunk_13f363fefa123952dd64cfb0"
+    },
+    {
+      "claim_id": "claim_69a030abcf8d3f69bfaf9c92",
+      "text": "Only about 40% of Japanese automotive parts makers affected by higher U.S. tariffs have been able to raise prices to offset the extra costs, a Nikkei survey shows",
+      "url": "https://www.alojapan.com/1437336/japan-auto-parts-suppliers-struggle-to-pass-on-trump-tariff-costs-nikkei-survey",
+      "chunk_id": "chunk_36054f183d404e223abd2ac6"
+    },
+    {
+      "claim_id": "claim_a6f9afb23572dcadd7a632f0",
+      "text": "Automotive suppliers are faced with considerable cost increases and significant volume reductions.",
+      "url": "https://www.fti-andersch.com/en/insights/high-impact-customer-negotiations-in-times-of-huge-cost-increases",
+      "chunk_id": "chunk_13f363fefa123952dd64cfb0"
+    },
+    {
+      "claim_id": "claim_d7ef2756a749765457ae67c7",
+      "text": "Imported Japanese vehicles and auto parts now face a 15% tariff, higher than the previous 2.5% duty.",
+      "url": "https://www.alojapan.com/1437336/japan-auto-parts-suppliers-struggle-to-pass-on-trump-tariff-costs-nikkei-survey",
+      "chunk_id": "chunk_36054f183d404e223abd2ac6"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_37b968dc9cda365eeedb1f44",
+      "claim_4765824d2160ad91112f9819"
+    ],
+    [
+      "claim_69a030abcf8d3f69bfaf9c92",
+      "claim_d7ef2756a749765457ae67c7"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

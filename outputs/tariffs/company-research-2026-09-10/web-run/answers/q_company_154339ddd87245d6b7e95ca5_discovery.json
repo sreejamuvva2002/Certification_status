@@ -1,0 +1,63 @@
+{
+  "query_id": "q_company_154339ddd87245d6b7e95ca5_discovery",
+  "query": "\"Michelin Tread Technologies\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_003467dd3d8c47076eedfed0",
+    "claim_241f8f09ad7e08f035140f06",
+    "claim_36ee77239c5fabfb0d22f9b6",
+    "claim_5264a1a96553a0d7eff485a9",
+    "claim_bf6e9d2a68d671e2207d3468"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_003467dd3d8c47076eedfed0",
+      "text": "Most of the tyres Michelin sells in the United States are produced locally, a spokesperson for the company told Reuters, highlighting the firm's \"strong industrial presence\" in the country with 35 facilities.",
+      "url": "https://www.reuters.com/business/autos-transportation/michelin-sees-possible-impact-sourcing-investments-trump-tariffs-2025-02-05",
+      "chunk_id": "chunk_519d6b23961bd31d08ff92f6"
+    },
+    {
+      "claim_id": "claim_241f8f09ad7e08f035140f06",
+      "text": "Michelin is assessing the impact from possible U.S. tariffs on Canada and Mexico but it is too early to estimate consequences from the levies on its supply chain and investments, the French tyre maker said on Wednesday.",
+      "url": "https://ca.finance.yahoo.com/news/michelin-sees-possible-impact-sourcing-103917897.html",
+      "chunk_id": "chunk_23de9734e5013df9c58696cd"
+    },
+    {
+      "claim_id": "claim_36ee77239c5fabfb0d22f9b6",
+      "text": "U.S. President Donald Trump said at the weekend he would impose 25% tariffs on goods from Mexico and Canada and 10% on China but on Monday agreed to a 30-day delay in imposing them on the United States' two neighbours.",
+      "url": "https://ca.finance.yahoo.com/news/michelin-sees-possible-impact-sourcing-103917897.html",
+      "chunk_id": "chunk_23de9734e5013df9c58696cd"
+    },
+    {
+      "claim_id": "claim_5264a1a96553a0d7eff485a9",
+      "text": "Michelin faces a crowded and shifting federal policy landscape, including tariffs on imported Chinese tires that are under active review by federal agencies, while the broader trade environment with Canada and Mexico remains uncertain amid ongoing USMCA negotiations.",
+      "url": "https://legis1.com/news/michelin-lobbying-trade-policy-north-america",
+      "chunk_id": "chunk_62186e473daa31a30a730eb8"
+    },
+    {
+      "claim_id": "claim_bf6e9d2a68d671e2207d3468",
+      "text": "Michelin North America reported $227,803 in in-house lobbying spending for the first quarter of 2026, according to a lobbying disclosure filed Monday, June 1. The tire manufacturer's federal government affairs team is pressing an agenda spanning trade, defense, tax policy, technology, and environmental regulation",
+      "url": "https://legis1.com/news/michelin-lobbying-trade-policy-north-america",
+      "chunk_id": "chunk_62186e473daa31a30a730eb8"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_241f8f09ad7e08f035140f06",
+      "claim_b88314198aad089063be13b9"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

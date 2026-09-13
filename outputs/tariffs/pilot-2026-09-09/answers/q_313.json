@@ -1,0 +1,93 @@
+{
+  "query_id": "q_313",
+  "query": "United States automotive tariffs bonded warehouse withdrawals",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_035802c6a30a1c0e956a7cc1",
+    "claim_4de0da1551b33b83a79dbf44",
+    "claim_a3b4846f4cd8e94e931cff67",
+    "claim_d7448557ad6496feb0279f1a",
+    "claim_59cd0e4ed1748a67581f7292",
+    "claim_2d36302a3ab658d68f68eb34",
+    "claim_13ee4278b98b7da760a23de7",
+    "claim_f747ad225dc1e8dc54b9d0e4",
+    "claim_1a96708261f0d56641a1717c"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_035802c6a30a1c0e956a7cc1",
+      "text": "Bonded warehouses allow importers to defer duty payments for up to five years, freeing up capital that would otherwise be tied up in customs duties.",
+      "url": "https://geodis.com/us-en/resources/blog/warehousing-and-value-added-logistics-expertise/bonded-warehouses-manage-us-tariffs",
+      "chunk_id": "chunk_98adac9d18defe2d82944330"
+    },
+    {
+      "claim_id": "claim_4de0da1551b33b83a79dbf44",
+      "text": "A bonded warehouse holds goods for up to five years from the import date under 19 CFR 144.5, after which they must be withdrawn, exported, or destroyed.",
+      "url": "https://www.platton.ai/insights/warehouse-and-fulfilment/mitigating-tariff-impacts-bonded-warehouses-ftz",
+      "chunk_id": "chunk_fda03607766851cefdaa9965"
+    },
+    {
+      "claim_id": "claim_a3b4846f4cd8e94e931cff67",
+      "text": "Pay duties at the rate in effect when goods are withdrawn from the bonded warehouse, potentially benefiting from future tariff reductions",
+      "url": "https://geodis.com/us-en/resources/blog/warehousing-and-value-added-logistics-expertise/bonded-warehouses-manage-us-tariffs",
+      "chunk_id": "chunk_ab7297de3326337b5b04d334"
+    },
+    {
+      "claim_id": "claim_d7448557ad6496feb0279f1a",
+      "text": "If tariff rates decrease during storage, you'll pay the lower duty rate when withdrawing goods for consumption.",
+      "url": "https://geodis.com/us-en/resources/blog/warehousing-and-value-added-logistics-expertise/bonded-warehouses-manage-us-tariffs",
+      "chunk_id": "chunk_98adac9d18defe2d82944330"
+    },
+    {
+      "claim_id": "claim_59cd0e4ed1748a67581f7292",
+      "text": "Section 301 merchandise must be admitted to a zone in privileged foreign status, which locks its rate at admission, and the duty is collected when the goods enter US commerce. The zone defers the payment and freezes the rate; it does not remove the tariff.",
+      "url": "https://www.platton.ai/insights/warehouse-and-fulfilment/mitigating-tariff-impacts-bonded-warehouses-ftz",
+      "chunk_id": "chunk_fda03607766851cefdaa9965"
+    },
+    {
+      "claim_id": "claim_2d36302a3ab658d68f68eb34",
+      "text": "Merchandise subject to Section 301 duties, and to the tariff actions of 2025, must be admitted to a zone in privileged foreign status, which fixes its classification and duty rate on the day of admission (Federal Register, April 2025).",
+      "url": "https://www.platton.ai/insights/warehouse-and-fulfilment/mitigating-tariff-impacts-bonded-warehouses-ftz",
+      "chunk_id": "chunk_88b718935c580d0c1ee1a5f4"
+    },
+    {
+      "claim_id": "claim_13ee4278b98b7da760a23de7",
+      "text": "electric vehicles to 100 percent, semiconductors to 50 percent from January 1, 2025, and EV lithium-ion batteries to 25 percent (USTR, 2024).",
+      "url": "https://www.platton.ai/insights/warehouse-and-fulfilment/mitigating-tariff-impacts-bonded-warehouses-ftz",
+      "chunk_id": "chunk_88b718935c580d0c1ee1a5f4"
+    },
+    {
+      "claim_id": "claim_f747ad225dc1e8dc54b9d0e4",
+      "text": "semiconductors to 50 percent from January 1, 2025",
+      "url": "https://www.platton.ai/insights/warehouse-and-fulfilment/mitigating-tariff-impacts-bonded-warehouses-ftz",
+      "chunk_id": "chunk_88b718935c580d0c1ee1a5f4"
+    },
+    {
+      "claim_id": "claim_1a96708261f0d56641a1717c",
+      "text": "EV lithium-ion batteries to 25 percent (USTR, 2024)",
+      "url": "https://www.platton.ai/insights/warehouse-and-fulfilment/mitigating-tariff-impacts-bonded-warehouses-ftz",
+      "chunk_id": "chunk_88b718935c580d0c1ee1a5f4"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_035802c6a30a1c0e956a7cc1",
+      "claim_a3b4846f4cd8e94e931cff67"
+    ],
+    [
+      "claim_d7448557ad6496feb0279f1a",
+      "claim_59cd0e4ed1748a67581f7292"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 19,
+  "synthesis_input_claim_count": 19
+}

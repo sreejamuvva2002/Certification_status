@@ -1,0 +1,45 @@
+{
+  "query_id": "q_223",
+  "query": "Duty drawback eligibility automotive components additional tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_692b636f9baed45fb8020c5d",
+    "claim_7b02e8c7f7d196a24bd6f974",
+    "claim_94d189a3234d5398a16e4869"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_692b636f9baed45fb8020c5d",
+      "text": "Duty drawback will not be available for the 25% tariff imposed pursuant to the Proclamation.",
+      "url": "https://www.troutman.com/insights/new-section-232-tariffs-on-automobiles-and-automotive-parts",
+      "chunk_id": "chunk_1f9bb15f2a5a55b2d2c10d4b"
+    },
+    {
+      "claim_id": "claim_7b02e8c7f7d196a24bd6f974",
+      "text": "No drawback shall be available with respect to the duties imposed pursuant to this proclamation.",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-autombile-parts-into-the-united-states",
+      "chunk_id": "chunk_fe270ead3460766b6b7f1da9"
+    },
+    {
+      "claim_id": "claim_94d189a3234d5398a16e4869",
+      "text": "The purpose of this message is to provide guidance on the 25 percent duty on imports of certain automobile parts from all countries effective 12:01 a.m. ET on May 3, 2025.",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3de7ef9",
+      "chunk_id": "chunk_c65758ee04c2ceeb23366172"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established"
+  ],
+  "conflicts": [
+    [
+      "claim_692b636f9baed45fb8020c5d",
+      "claim_7b02e8c7f7d196a24bd6f974"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 13,
+  "synthesis_input_claim_count": 13
+}

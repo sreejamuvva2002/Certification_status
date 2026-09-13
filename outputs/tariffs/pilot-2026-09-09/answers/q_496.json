@@ -1,0 +1,94 @@
+{
+  "query_id": "q_496",
+  "query": "site:congress.gov automotive tariffs supply chain Georgia",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1296bb22851f7fd209a15a3e",
+    "claim_1eb1c29b32f5b785c4fa4aa9",
+    "claim_217f2b6bb54ba9326b3ec30c",
+    "claim_48690d920bd8316602776d87",
+    "claim_54c9c8a403a880daf07a48a0",
+    "claim_9d76547d67cc3ce988b1c750",
+    "claim_b631a070829ae775bad66b0f",
+    "claim_bb61945a1a550bcfac6c4e6d",
+    "claim_c0150a1a7b00858cb6b535e2"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1296bb22851f7fd209a15a3e",
+      "text": "Many automotive manufacturers, including those headquartered in the United States, rely on suppliers from foreign countries—particularly Canada and Mexico—for vehicle parts.",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R48876/R48876.3.pdf",
+      "chunk_id": "chunk_7416edf4358f05ce5f954bdf"
+    },
+    {
+      "claim_id": "claim_1eb1c29b32f5b785c4fa4aa9",
+      "text": "In 2025, President Donald Trump imposed 25% tariffs on U.S. imports of automobiles and certain automobile parts under Section 232.",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    },
+    {
+      "claim_id": "claim_217f2b6bb54ba9326b3ec30c",
+      "text": "President Trump imposed25% tariffs on (1) all vehicle imports, effective April 2025, with exemptions for the U.S. content of USMCA-compliant vehicles; and (2) certain automobile parts, effective May 2025, with exemptions for USMCA-compliant auto parts.",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    },
+    {
+      "claim_id": "claim_48690d920bd8316602776d87",
+      "text": "Executive Office of the President, Proclamation 10925, “Amendments to Adjusting Imports of Automobiles and Automobile Parts into the United States,” 90 Federal Register 18899, April 29, 2025",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R48876/R48876.3.pdf",
+      "chunk_id": "chunk_70d8a4fec3cada9b544b7087"
+    },
+    {
+      "claim_id": "claim_54c9c8a403a880daf07a48a0",
+      "text": "Tariffs on Canada and Mexico (versus on other countries) generally could have more implications for domestic automotive manufacturers because of their regionalized supply chains.",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R48876/R48876.3.pdf",
+      "chunk_id": "chunk_70d8a4fec3cada9b544b7087"
+    },
+    {
+      "claim_id": "claim_9d76547d67cc3ce988b1c750",
+      "text": "In 2025, the Trump Administration levied tariffs on vehicles and components from various countries, including Canada and Mexico.",
+      "url": "https://www.congress.gov/crs-product/R48876",
+      "chunk_id": "chunk_d007870b17afa69e4865b372"
+    },
+    {
+      "claim_id": "claim_b631a070829ae775bad66b0f",
+      "text": "In 2025, the Trump Administration levied tariffs on vehicles and components from various countries, including Canada and Mexico.",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R48876/R48876.3.pdf",
+      "chunk_id": "chunk_4ddda5d76c7b5fdf92f71104"
+    },
+    {
+      "claim_id": "claim_bb61945a1a550bcfac6c4e6d",
+      "text": "John Irwin, “U.S. Imposes Tariffs on Canada, Mexico Imports, Upending Complex Auto Supply Chains,” Automotive News, March 4, 2025",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R48876/R48876.3.pdf",
+      "chunk_id": "chunk_70d8a4fec3cada9b544b7087"
+    },
+    {
+      "claim_id": "claim_c0150a1a7b00858cb6b535e2",
+      "text": "foreign automotive manufacturers and suppliers have invested in production facilities in the South.",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R48876/R48876.3.pdf",
+      "chunk_id": "chunk_4ee646464d5ef185057133d1"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_1eb1c29b32f5b785c4fa4aa9",
+      "claim_217f2b6bb54ba9326b3ec30c"
+    ],
+    [
+      "claim_9d76547d67cc3ce988b1c750",
+      "claim_b631a070829ae775bad66b0f"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 42,
+  "synthesis_input_claim_count": 42
+}

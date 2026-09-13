@@ -1,0 +1,189 @@
+{
+  "sample_method": "Purposive review across all five sectors, including model-flagged conflicts and dated-stage pairs; exact quotations plus surrounding cached context read directly.",
+  "reviews": [
+    {
+      "pair_id": "conflict_02f33f5182af57e47ddfff75",
+      "claim_ids": [
+        "claim_56645736c71e8be73fa2e20b",
+        "claim_a117a3e855f756d50fa2203c"
+      ],
+      "query_ids": [
+        "q_333"
+      ],
+      "classification": "complementary_or_no_conflict",
+      "reason": "Both quotations describe bumper stampings under the same numerical code. The first occurs under a Schedule B export-code heading: it does not establish a US import HTS classification. Qwen returned a conflict label with reason \"false\"; that label is rejected. Full cached document headings confirm that the second quotation also belongs to Schedule B Codes for Exports; both import-HTS field assignments are removed.",
+      "requires_current_authority_verification": false,
+      "assessment_method": "assistant_direct_source_context_review",
+      "resolved": false,
+      "sector": "automotive_and_trade",
+      "review_id": "MC01",
+      "original_model_classification": "apparent_same_scope_conflict",
+      "reviewer": "assistant_direct_source_context_review",
+      "source_quotes_supported": true,
+      "company_applicability": "not_established",
+      "current_legal_applicability_verified": false,
+      "textual_conflict_cleared": true
+    },
+    {
+      "pair_id": "conflict_06c91c48724ab4fa1045b748",
+      "claim_ids": [
+        "claim_0d2878f8ec3c6660b1cb52ff",
+        "claim_9ef663ab27f63ff4ab98e3f4"
+      ],
+      "query_ids": [
+        "q_345"
+      ],
+      "classification": "different_dates_or_policy_stages",
+      "reason": "The same paragraph states relief ends December 31, 2027, then standard treatment starts January 1, 2028. These are sequential source-reported stages. The first claim misfiles the end date as an effective date. The secondary snippet does not verify current law.",
+      "requires_current_authority_verification": false,
+      "assessment_method": "assistant_direct_source_context_review",
+      "resolved": false,
+      "sector": "automotive_and_trade",
+      "review_id": "MC02",
+      "original_model_classification": "different_dates_or_policy_stages",
+      "reviewer": "assistant_direct_source_context_review",
+      "source_quotes_supported": true,
+      "company_applicability": "not_established",
+      "current_legal_applicability_verified": false,
+      "textual_conflict_cleared": true
+    },
+    {
+      "pair_id": "conflict_0329a6ec9555e3be199e758c",
+      "claim_ids": [
+        "claim_604500c268677fea6b771cce",
+        "claim_e48edeb4ec6077959b65ef70"
+      ],
+      "query_ids": [
+        "q_482"
+      ],
+      "classification": "complementary_or_no_conflict",
+      "reason": "The quotations are identical across two cached CBP URL variants. There is no textual contradiction. Qwen\u2019s conflict label contradicts its own identical-claims explanation. Cached June 2025 update context does not establish September 2026 applicability.",
+      "requires_current_authority_verification": false,
+      "assessment_method": "assistant_direct_source_context_review",
+      "resolved": false,
+      "sector": "metals",
+      "review_id": "MC03",
+      "original_model_classification": "apparent_same_scope_conflict",
+      "reviewer": "assistant_direct_source_context_review",
+      "source_quotes_supported": true,
+      "company_applicability": "not_established",
+      "current_legal_applicability_verified": false,
+      "textual_conflict_cleared": true
+    },
+    {
+      "pair_id": "conflict_015f026dfd0b7141f2283ee3",
+      "claim_ids": [
+        "claim_836d19a7c9095abcbe2c8721",
+        "claim_981aea59abf6bb7361b4d6fa"
+      ],
+      "query_ids": [
+        "q_385"
+      ],
+      "classification": "insufficient_scope",
+      "reason": "The vendor page juxtaposes 57.4% for energy-storage batteries on April 9, 2025 with 70\u2013170% for different battery types during April 2025, without HTS-specific rate components or aligned entry dates. The magnitudes are concerning, but identical scope is not established. Both totals remain unsuitable for calculation pending primary-authority verification.",
+      "requires_current_authority_verification": true,
+      "assessment_method": "assistant_direct_source_context_review",
+      "resolved": false,
+      "sector": "batteries_and_minerals",
+      "review_id": "MC04",
+      "original_model_classification": "apparent_same_scope_conflict",
+      "reviewer": "assistant_direct_source_context_review",
+      "source_quotes_supported": true,
+      "company_applicability": "not_established",
+      "current_legal_applicability_verified": false,
+      "textual_conflict_cleared": false
+    },
+    {
+      "pair_id": "conflict_0cdece981790ed06e4938103",
+      "claim_ids": [
+        "claim_7bc403bf66ff8e9d400a1f09",
+        "claim_d542b4df559832603f5b3d62"
+      ],
+      "query_ids": [
+        "q_126"
+      ],
+      "classification": "different_products_origins_or_programs",
+      "reason": "The NOVONIX paragraph explicitly distinguishes artificial graphite/natural graphite powder exclusion removal in June 2024 from natural flake graphite increases in 2026. The generic secondary table collapses those distinctions. Product form and exclusion status, as well as dates, explain why these cannot be treated as conflicting generic graphite rates.",
+      "requires_current_authority_verification": false,
+      "assessment_method": "assistant_direct_source_context_review",
+      "resolved": false,
+      "sector": "batteries_and_minerals",
+      "review_id": "MC05",
+      "original_model_classification": "different_dates_or_policy_stages",
+      "reviewer": "assistant_direct_source_context_review",
+      "source_quotes_supported": true,
+      "company_applicability": "not_established",
+      "current_legal_applicability_verified": false,
+      "textual_conflict_cleared": true
+    },
+    {
+      "pair_id": "conflict_0c11ea23325e08d306b0743d",
+      "claim_ids": [
+        "claim_00427a56e30008a6fb64ebda",
+        "claim_c64b0d138f4c8069736baad7"
+      ],
+      "query_ids": [
+        "q_164"
+      ],
+      "classification": "different_dates_or_policy_stages",
+      "reason": "The older social post says expiration at the end of May unless renewed; the later vendor page reports extension through November 10, 2026. A conditional expiry and reported renewal are compatible. Neither cached source verifies the precise current exclusion scope; verify the official notice before applying.",
+      "requires_current_authority_verification": false,
+      "assessment_method": "assistant_direct_source_context_review",
+      "resolved": false,
+      "sector": "pcbs_and_electronics",
+      "review_id": "MC06",
+      "original_model_classification": "apparent_same_scope_conflict",
+      "reviewer": "assistant_direct_source_context_review",
+      "source_quotes_supported": true,
+      "company_applicability": "not_established",
+      "current_legal_applicability_verified": false,
+      "textual_conflict_cleared": true
+    },
+    {
+      "pair_id": "conflict_2af92e5cfac0fcb9a7288c7e",
+      "claim_ids": [
+        "claim_6edeba07cb0873e118bb5b78",
+        "claim_d1fd8b73c4da9a6e55cf051d"
+      ],
+      "query_ids": [
+        "q_192"
+      ],
+      "classification": "different_products_origins_or_programs",
+      "reason": "The ruling\u2019s holding classifies its subject video-capable LCD module under 8528. The other passage cites the distinct December 2020 heads-up signaling-display ruling as a comparator under 8531. Product function differs. The signatory and CBP are not companies, and the current holding\u2019s free general duty rate cannot be transferred to the comparator.",
+      "requires_current_authority_verification": false,
+      "assessment_method": "assistant_direct_source_context_review",
+      "resolved": false,
+      "sector": "displays",
+      "review_id": "MC07",
+      "original_model_classification": "apparent_same_scope_conflict",
+      "reviewer": "assistant_direct_source_context_review",
+      "source_quotes_supported": true,
+      "company_applicability": "not_established",
+      "current_legal_applicability_verified": false,
+      "textual_conflict_cleared": true
+    },
+    {
+      "pair_id": "conflict_47b8e0e4dbfd50159bf8dc4b",
+      "claim_ids": [
+        "claim_a79d12636c8b91a8d8f5b549",
+        "claim_f06e6eebac352f909c42817b"
+      ],
+      "query_ids": [
+        "q_447"
+      ],
+      "classification": "complementary_or_no_conflict",
+      "reason": "A 2019 investigation supplied the stated rationale for tariffs imposed in 2025. Investigation date and imposition date describe different events, not incompatible tariff dates. The national-security finding is not a rule of origin. Neither passage establishes display-specific or company-specific exposure.",
+      "requires_current_authority_verification": false,
+      "assessment_method": "assistant_direct_source_context_review",
+      "resolved": false,
+      "sector": "displays",
+      "review_id": "MC08",
+      "original_model_classification": "different_dates_or_policy_stages",
+      "reviewer": "assistant_direct_source_context_review",
+      "source_quotes_supported": true,
+      "company_applicability": "not_established",
+      "current_legal_applicability_verified": false,
+      "textual_conflict_cleared": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "query_id": "q_company_3b08d60cda1e626125460263_targeted",
+  "query": "\"Peterson Spring\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_087b5f3d77779421ee3026cb",
+    "claim_123ec55bea9ad595fdd978e2",
+    "claim_46a7fc454b1554617f3fbab9",
+    "claim_6ff61cf9e3aaed6db9d9a91b",
+    "claim_d0dfb7312b13f5042bfca39c"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_087b5f3d77779421ee3026cb",
+      "text": "On March 26, President Trump signed a proclamation to impose a 25% tariff on all imported automobiles and certain automobile parts to address “a critical threat to U.S. national security,” according to a White House Fact Sheet.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0969af449067d814a4142531"
+    },
+    {
+      "claim_id": "claim_123ec55bea9ad595fdd978e2",
+      "text": "The 25% tariffs on imported vehicles and parts, effective since April 2025, have already driven a 2.5% surge in average new vehicle prices in April",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_5c5c8c1128134c895d5d95df"
+    },
+    {
+      "claim_id": "claim_46a7fc454b1554617f3fbab9",
+      "text": "A new 25% tariff on imported auto parts officially took effect at 12:01 a.m. EDT on May 3.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_5c5c8c1128134c895d5d95df"
+    },
+    {
+      "claim_id": "claim_6ff61cf9e3aaed6db9d9a91b",
+      "text": "On March 26, President Trump signed a proclamation to impose a 25% tariff on all imported automobiles and certain automobile parts to address “a critical threat to U.S. national security,” according to a White House Fact Sheet.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0969af449067d814a4142531"
+    },
+    {
+      "claim_id": "claim_d0dfb7312b13f5042bfca39c",
+      "text": "On May 29, a U.S. Court of Appeals temporarily reinstated certain tariffs after conflicting rulings created uncertainty in the auto industry.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_5c5c8c1128134c895d5d95df"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_087b5f3d77779421ee3026cb",
+      "claim_6ff61cf9e3aaed6db9d9a91b"
+    ],
+    [
+      "claim_123ec55bea9ad595fdd978e2",
+      "claim_46a7fc454b1554617f3fbab9"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

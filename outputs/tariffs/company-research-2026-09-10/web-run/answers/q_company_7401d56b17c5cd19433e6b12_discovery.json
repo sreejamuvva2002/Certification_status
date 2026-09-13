@@ -1,0 +1,58 @@
+{
+  "query_id": "q_company_7401d56b17c5cd19433e6b12_discovery",
+  "query": "\"Blue Bird Corp.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_19907a2fe567a2ee0937421a",
+    "claim_2a5b8d641f91cc6714e05226",
+    "claim_2b11a478bbc140162a871907",
+    "claim_7435a637511f7d59060525c9",
+    "claim_7c5bbad6272eda92ea8dece0"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_19907a2fe567a2ee0937421a",
+      "text": "Blue Bird has 2,560 employees, with manufacturing facilities based in New York, Georgia and Quebec",
+      "url": "https://s23.q4cdn.com/152250413/files/doc_financials/2025/ar/2025-AR_BLUEBIRD-Final.pdf",
+      "chunk_id": "chunk_d9b93749ddb9472c675e7578"
+    },
+    {
+      "claim_id": "claim_2a5b8d641f91cc6714e05226",
+      "text": "As discussed previously above, supply chain disruptions developing subsequent to the COVID-19 pandemic and Russia's invasion of Ukraine have significantly increased our inventory purchase costs, including freight costs incurred to deliver critical components, reflected in cost of goods sold during all of fiscal 2022 and continuing, to a lesser extent, into fiscal 2023, fiscal 2024 and fiscal 2025. Additionally, the imposition of tariffs on certain imported inventory that became effective during [...] 31",
+      "url": "https://www.sec.gov/Archives/edgar/data/1589526/000158952625000100/blbd-20250927.htm",
+      "chunk_id": "chunk_0ed4fe867317ec35a55457e5"
+    },
+    {
+      "claim_id": "claim_2b11a478bbc140162a871907",
+      "text": "There was a larger increase in accounts payable (a source of cash) and a larger net increase in inventory (a use of cash) during fiscal 2025 when compared to fiscal 2024. These changes were driven by an increase in the volume of buses we produced in fiscal 2025 when compared with fiscal 2024, as well as an increase in the cost of procuring inventory that is attributable to inflationary pressures resulting from ongoing supply chain disruptions and the imposition of tariffs beginning during the",
+      "url": "https://www.sec.gov/Archives/edgar/data/1589526/000158952625000100/blbd-20250927.htm",
+      "chunk_id": "chunk_0ed4fe867317ec35a55457e5"
+    },
+    {
+      "claim_id": "claim_7435a637511f7d59060525c9",
+      "text": "the imposition of tariffs on certain imported inventory that became [...] Blue Bird has 2,560 employees",
+      "url": "https://s23.q4cdn.com/152250413/files/doc_financials/2025/ar/2025-AR_BLUEBIRD-Final.pdf",
+      "chunk_id": "chunk_d9b93749ddb9472c675e7578"
+    },
+    {
+      "claim_id": "claim_7c5bbad6272eda92ea8dece0",
+      "text": "Blue Bird Corporation (",
+      "url": "https://investors.blue-bird.com/news-financial-reporting/press-releases/news-details/2025/Blue-Bird-Reports-Fiscal-2025-Fourth-Quarter-and-Full-Year-Results-Beats-Guidance-With-Record-Results/default.aspx",
+      "chunk_id": "chunk_44e195cdc0a3b5bced4fb23a"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

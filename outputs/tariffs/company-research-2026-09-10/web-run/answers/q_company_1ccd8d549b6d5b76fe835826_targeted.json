@@ -1,0 +1,64 @@
+{
+  "query_id": "q_company_1ccd8d549b6d5b76fe835826_targeted",
+  "query": "\"Lear Corporation\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0b0bf81bc30ed57f22a198c9",
+    "claim_4daa4b3cdd4365068fd3f226",
+    "claim_ab080f1001bfac175d9d3696",
+    "claim_da67748cb0b190cab0585f4d",
+    "claim_e8a959b206e155f24d2177ff"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0b0bf81bc30ed57f22a198c9",
+      "text": "Country-specific tariffs (potentially above 10%) will follow on April 9, targeting countries with large U.S. trade deficits.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0969af449067d814a4142531"
+    },
+    {
+      "claim_id": "claim_4daa4b3cdd4365068fd3f226",
+      "text": "The tariff is applied the moment a part enters the country, meaning repair shops and parts distributors are already absorbing the added costs. Some may seek to shift sourcing to domestic suppliers, but the U.S. currently lacks the manufacturing capacity to meet demand for many high-volume aftermarket components at scale or cost parity.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_5c5c8c1128134c895d5d95df"
+    },
+    {
+      "claim_id": "claim_ab080f1001bfac175d9d3696",
+      "text": "On March 26, President Trump signed a proclamation to impose a 25% tariff on all imported automobiles and certain automobile parts to address “a critical threat to U.S. national security,” according to a White House Fact Sheet.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0969af449067d814a4142531"
+    },
+    {
+      "claim_id": "claim_da67748cb0b190cab0585f4d",
+      "text": "According to an April 2 statement by the White House, the Trump Administration has issued a sweeping executive order that will impose a 10% universal tariff on nearly all imported goods beginning April 5.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0969af449067d814a4142531"
+    },
+    {
+      "claim_id": "claim_e8a959b206e155f24d2177ff",
+      "text": "Trump has imposed new 20% duties on Chinese imports, reinstated 25% tariffs on global steel and aluminum, and applied 25% tariffs on certain imports from Canada and Mexico that do not comply with a North American trade agreement over the U.S. fentanyl overdose crisis.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_28807caf1809cf89455cbfb6"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0b0bf81bc30ed57f22a198c9",
+      "claim_da67748cb0b190cab0585f4d"
+    ],
+    [
+      "claim_ab080f1001bfac175d9d3696",
+      "claim_e8a959b206e155f24d2177ff"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

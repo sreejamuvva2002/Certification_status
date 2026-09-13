@@ -1,0 +1,50 @@
+{
+  "query_id": "q_140",
+  "query": "Battery separator films China import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_04bc8e24cf5f1d98dc062615",
+    "claim_3e4cc3cf1179211f96d30fba",
+    "claim_ad6a823271f7e74c8a91684c"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_04bc8e24cf5f1d98dc062615",
+      "text": "April 2025: De minimis exemptions are removed for packages under $800 from China, raising duties to 90%.",
+      "url": "https://manlybattery.com/battery-tariffs",
+      "chunk_id": "chunk_20b2c1bdb432d5bfb78380b2"
+    },
+    {
+      "claim_id": "claim_3e4cc3cf1179211f96d30fba",
+      "text": "Starting in 2025, new Chinese tariffs on imported lithium-ion cells and components—especially those used in energy storage systems—have reached levels as high as 104%, according to updated trade filings.",
+      "url": "https://manlybattery.com/battery-tariffs",
+      "chunk_id": "chunk_68a262dbaa467aa53692e0f5"
+    },
+    {
+      "claim_id": "claim_ad6a823271f7e74c8a91684c",
+      "text": "The extended tariff policy also includes key upstream materials essential for battery production. These include cathodes, anodes, electrolytes, and separator films.",
+      "url": "https://manlybattery.com/battery-tariffs",
+      "chunk_id": "chunk_6e2612480637e11888def965"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_04bc8e24cf5f1d98dc062615",
+      "claim_3e4cc3cf1179211f96d30fba"
+    ],
+    [
+      "claim_04bc8e24cf5f1d98dc062615",
+      "claim_ad6a823271f7e74c8a91684c"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 27,
+  "synthesis_input_claim_count": 27
+}

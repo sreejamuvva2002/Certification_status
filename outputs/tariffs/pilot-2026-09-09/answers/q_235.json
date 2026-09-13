@@ -1,0 +1,66 @@
+{
+  "query_id": "q_235",
+  "query": "Georgia battery plants tariffs capacity expansion decisions",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_199b2ddbde9b1e7d8e6842a8",
+    "claim_9042ca7b535523c5b28d7e1a",
+    "claim_bb5bb59ac60b68f5ce5d6f24",
+    "claim_d119bc054e534700289d9dc8",
+    "claim_f121c6ae83cb279d26a53bd6"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_199b2ddbde9b1e7d8e6842a8",
+      "text": "Hyundai Motor is exploring plans to expand annual production capacity at its new plant in Georgia to as much as 800,000 units. The tariff policies of the Donald Trump administration are seen as a key factor accelerating the push toward local production.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    },
+    {
+      "claim_id": "claim_9042ca7b535523c5b28d7e1a",
+      "text": "José Muñoz, president and CEO of Hyundai Motor, said in a CNBC interview on the 20th (local time) that the company is reviewing plans to increase capacity at Hyundai Motor Group Metaplant America (HMGMA) from the currently planned 500,000 units per year to between 700,000 and 800,000 units by 2028.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    },
+    {
+      "claim_id": "claim_bb5bb59ac60b68f5ce5d6f24",
+      "text": "Muñoz directly acknowledged that the Trump administration's tariffs are pulling forward the localization strategy. \"Tariffs are helping us accelerate our localization plans. It's a very simple matter,\" he said.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    },
+    {
+      "claim_id": "claim_d119bc054e534700289d9dc8",
+      "text": "Tariffs take effect this week, creating pricing instability across the auto industry.",
+      "url": "https://www.facebook.com/quartznews/posts/hyundai-is-weighing-a-massive-expansion-of-its-georgia-car-plant-citing-tariffs-/1419057173423430",
+      "chunk_id": "chunk_112ddc5502cd7488eb95d5d5"
+    },
+    {
+      "claim_id": "claim_f121c6ae83cb279d26a53bd6",
+      "text": "The 15% tariff applied to South Korean imports is increasing the economic incentive for local production expansion.",
+      "url": "https://finance.biggo.com/news/7c816f70-187d-4f54-84d6-c8c8f26bacb6",
+      "chunk_id": "chunk_70920848a4459e26c55c1d6f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_199b2ddbde9b1e7d8e6842a8",
+      "claim_9042ca7b535523c5b28d7e1a"
+    ],
+    [
+      "claim_d119bc054e534700289d9dc8",
+      "claim_f121c6ae83cb279d26a53bd6"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

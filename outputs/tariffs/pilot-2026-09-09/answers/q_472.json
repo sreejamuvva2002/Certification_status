@@ -1,0 +1,39 @@
+{
+  "query_id": "q_472",
+  "query": "Automotive tariff refunds liquidation protest deadlines",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2bcb49a85b4ad6d50cd03f23",
+    "claim_c9c2d2481319f0496b7f1fe2",
+    "claim_5a974ecc7cbbb9120830473e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2bcb49a85b4ad6d50cd03f23",
+      "text": "The 180-day protest window doesn't pause. A missed deadline can't be undone.",
+      "url": "https://ayarlaw.com/tariff-refund-resources/cbp-protest-tariff-refund",
+      "chunk_id": "chunk_b40932a4fd914e5397c212d4"
+    },
+    {
+      "claim_id": "claim_c9c2d2481319f0496b7f1fe2",
+      "text": "The protest deadline is 180 days from the date of liquidation of the entry.",
+      "url": "https://ayarlaw.com/tariff-refund-resources/cbp-protest-tariff-refund",
+      "chunk_id": "chunk_dc56b94df15e107764c6a843"
+    },
+    {
+      "claim_id": "claim_5a974ecc7cbbb9120830473e",
+      "text": "Within 180 days of liquidation, the importer, their broker, or attorney can contest CBP decisions relating to imported merchandise with a protest under section 514 of the Tariff Act of 1930.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/protests",
+      "chunk_id": "chunk_a72fb1806ecef41b7b8a5ee5"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

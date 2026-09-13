@@ -1,0 +1,62 @@
+{
+  "query_id": "q_company_09c2e352043905f0b725491b_targeted",
+  "query": "\"Hitachi Astemo\" LCD OLED displays PCBs printed circuit boards electronics tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3da72981e8c49b702af1eac3",
+    "claim_8e2aee65feb8122db170c5a2",
+    "claim_af82e1d9070a167aa7528f1b",
+    "claim_b2049caa0ae84fb319fe4a17",
+    "claim_db2e9c77a820d6ddd44eb81b"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3da72981e8c49b702af1eac3",
+      "text": "For many China-origin bare PCBs under HTS 8534.00 and certain PCBAs under HTS 8473.30.1180, the additional Section 301 tariff is 25% unless a product-specific exclusion applies.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_44199e7241fc2b339598dfec"
+    },
+    {
+      "claim_id": "claim_8e2aee65feb8122db170c5a2",
+      "text": "China-origin PCBs and some PCBAs can face a 25% Section 301 tariff unless a valid exclusion applies.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_44199e7241fc2b339598dfec"
+    },
+    {
+      "claim_id": "claim_af82e1d9070a167aa7528f1b",
+      "text": "Certain qualifying two-layer and four-layer rigid PCBs may use Section 301 exclusion code 9903.88.69 through November 9, 2026.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_44199e7241fc2b339598dfec"
+    },
+    {
+      "claim_id": "claim_b2049caa0ae84fb319fe4a17",
+      "text": "Tariffs differ between bare printed circuit boards and PCBAs, so any errors in classification could be costly.",
+      "url": "https://quantronic.net/navigating-2026-tariff-landscape",
+      "chunk_id": "chunk_491b6b5071a69d4748a797d2"
+    },
+    {
+      "claim_id": "claim_db2e9c77a820d6ddd44eb81b",
+      "text": "CBP guidance states that duty-free de minimis treatment has been suspended for low-value shipments from China.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_44199e7241fc2b339598dfec"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_3da72981e8c49b702af1eac3",
+      "claim_8e2aee65feb8122db170c5a2"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

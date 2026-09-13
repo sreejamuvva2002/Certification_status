@@ -1,0 +1,59 @@
+{
+  "query_id": "q_378",
+  "query": "South Korean EV battery imports United States duties",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2cdb7fce00f997e6aa6f018a",
+    "claim_a7e9cd574dd1880ab3fdc992",
+    "claim_ac3085e5fa39afdd634a0a36",
+    "claim_dbcc08567604182eba96470d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2cdb7fce00f997e6aa6f018a",
+      "text": "The U.S. government currently levies a 38.4 percent tariff on Chinese EV batteries, with a 10 percent “baseline tariff” newly added in April.",
+      "url": "https://www.koreajoongangdaily.com/business/exclusive-us-ev-battery-imports-from-korea-top-1300-as-tariffs-push-shift-from-china/11937242",
+      "chunk_id": "chunk_4db87254eadb0497ac799379"
+    },
+    {
+      "claim_id": "claim_a7e9cd574dd1880ab3fdc992",
+      "text": "Korean products, which enjoyed a zero percent tariff for decades under the Korea-U.S. FTA, are now subject to a 15 percent tariff.",
+      "url": "https://www.koreajoongangdaily.com/business/exclusive-us-ev-battery-imports-from-korea-top-1300-as-tariffs-push-shift-from-china/11937242",
+      "chunk_id": "chunk_4db87254eadb0497ac799379"
+    },
+    {
+      "claim_id": "claim_ac3085e5fa39afdd634a0a36",
+      "text": "And US companies now have to pay a 15% tax on those batteries, where previously they didn't.",
+      "url": "https://www.reddit.com/r/electricvehicles/comments/1mp1jzn/exclusive_us_ev_battery_imports_from_korea_top",
+      "chunk_id": "chunk_a72f38cf1454c6757866c273"
+    },
+    {
+      "claim_id": "claim_dbcc08567604182eba96470d",
+      "text": "South Korea - January 2025: Battery imports from South Korea are subject to a 25% tariff, affecting energy storage systems and electric vehicle batteries.",
+      "url": "https://manlybattery.com/battery-tools-and-resources/usa-import-duty-calculator",
+      "chunk_id": "chunk_4429ed3e0fea61f7656e476b"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_2cdb7fce00f997e6aa6f018a",
+      "claim_dbcc08567604182eba96470d"
+    ],
+    [
+      "claim_a7e9cd574dd1880ab3fdc992",
+      "claim_ac3085e5fa39afdd634a0a36"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

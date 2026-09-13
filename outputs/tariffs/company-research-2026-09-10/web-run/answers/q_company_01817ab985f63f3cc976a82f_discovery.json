@@ -1,0 +1,40 @@
+{
+  "query_id": "q_company_01817ab985f63f3cc976a82f_discovery",
+  "query": "\"Stryten Energy\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_5ac87db4473baee16707d4c4",
+    "claim_bcce962f67bba89eddb41cf2"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_5ac87db4473baee16707d4c4",
+      "text": "The recent 25% tariff on imported steel has significant implications for battery manufacturing costs. The tariff has led to increased prices in anticipation of increased domestic demand and constrained supply.",
+      "url": "https://www.stryten.com/the-impact-of-critical-mineral-bans-and-steel-tariffs-on-battery-manufacturing",
+      "chunk_id": "chunk_6c43a7048808d5e80fff2f8e"
+    },
+    {
+      "claim_id": "claim_bcce962f67bba89eddb41cf2",
+      "text": "effective March 12, 2025, the current administration reinstated 25% tariffs on global steel imports and increased tariffs on global aluminum imports to 25%. These measures significantly affect the battery manufacturing industry",
+      "url": "https://www.stryten.com/the-impact-of-critical-mineral-bans-and-steel-tariffs-on-battery-manufacturing",
+      "chunk_id": "chunk_6c43a7048808d5e80fff2f8e"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_5ac87db4473baee16707d4c4",
+      "claim_bcce962f67bba89eddb41cf2"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

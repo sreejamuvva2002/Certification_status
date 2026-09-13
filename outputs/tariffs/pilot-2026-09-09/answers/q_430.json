@@ -1,0 +1,86 @@
+{
+  "query_id": "q_430",
+  "query": "Bare printed circuit boards Section 301 tariff coverage",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_05a44bfd4047faed6ce6797d",
+    "claim_112c0012a45f09c64276d8d8",
+    "claim_15ba285ff1e8d11f6f93efab",
+    "claim_5aac0550c35c5686085fc716",
+    "claim_d08b3eb9f2eb286f4cda5429",
+    "claim_d59ef5e6d74c4de71fd8ded6",
+    "claim_d8bd93bd6915a24002574e49",
+    "claim_edbc7f441113ba3c38510705"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_05a44bfd4047faed6ce6797d",
+      "text": "For 2026 China PCB imports, buyers should not rely on duty-free de minimis treatment. Low-value shipments may still require proper entry handling along with applicable duties, taxes, and fees.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_8f16c1d4db7ae03fbbe4ce37"
+    },
+    {
+      "claim_id": "claim_112c0012a45f09c64276d8d8",
+      "text": "Certain qualifying two-layer and four-layer rigid PCBs may use Section 301 exclusion code 9903.88.69 through November 9, 2026.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_44199e7241fc2b339598dfec"
+    },
+    {
+      "claim_id": "claim_15ba285ff1e8d11f6f93efab",
+      "text": "For many China-origin PCB imports, the normal base duty may be Free, but Section 301 can add 25% unless a valid exclusion applies.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_8f16c1d4db7ae03fbbe4ce37"
+    },
+    {
+      "claim_id": "claim_5aac0550c35c5686085fc716",
+      "text": "Based on current industry classifications and customs data, all HTS codes we have observed for semiconductors, PCBs, and PCB assemblies sourced from China are subject to the Section 301 tariffs. This includes HTS codes in Chapters 85 and 90 most relevant to electronic components: - 8541.x / 8542.x: Semiconductors (now at 50%) - 8534.00.0020 / 0040: Two- and four-layer rigid PCBs excluded until May 31, 2025 - 8534.00.00: Other bare PCBs—25% duty",
+      "url": "https://www.cofactr.com/articles/definitive-guide-to-semiconductor-tariffs",
+      "chunk_id": "chunk_4c25481ca09c299d4eae8ca7"
+    },
+    {
+      "claim_id": "claim_d08b3eb9f2eb286f4cda5429",
+      "text": "A Section 301 tariff is a U.S. trade remedy duty applied to specific products from China following a trade investigation.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_8f16c1d4db7ae03fbbe4ce37"
+    },
+    {
+      "claim_id": "claim_d59ef5e6d74c4de71fd8ded6",
+      "text": "For many China-origin bare PCBs under HTS 8534.00 and certain PCBAs under HTS 8473.30.1180, the additional Section 301 tariff is 25% unless a product-specific exclusion applies.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_44199e7241fc2b339598dfec"
+    },
+    {
+      "claim_id": "claim_d8bd93bd6915a24002574e49",
+      "text": "China-origin PCBs and some PCBAs can face a 25% Section 301 tariff unless a valid exclusion applies.",
+      "url": "https://www.ourpcb.com/blog/china-us-pcb-tariffs-2026",
+      "chunk_id": "chunk_44199e7241fc2b339598dfec"
+    },
+    {
+      "claim_id": "claim_edbc7f441113ba3c38510705",
+      "text": "Originally applied by President Trump during his first term as a 25% tariff, the most recent update to Section 301 tariffs came from the Office of the U.S. Trade Representative under President Biden on September 18, 2024 (Federal Register No. 2024-21217). The order doubled existing tariffs on key semiconductor categories from 25% to 50%, effective January 1, 2025.",
+      "url": "https://www.cofactr.com/articles/definitive-guide-to-semiconductor-tariffs",
+      "chunk_id": "chunk_4c25481ca09c299d4eae8ca7"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_112c0012a45f09c64276d8d8",
+      "claim_5aac0550c35c5686085fc716"
+    ],
+    [
+      "claim_15ba285ff1e8d11f6f93efab",
+      "claim_d59ef5e6d74c4de71fd8ded6"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 21,
+  "synthesis_input_claim_count": 21
+}

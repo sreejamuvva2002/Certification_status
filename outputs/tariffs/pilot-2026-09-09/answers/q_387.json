@@ -1,0 +1,60 @@
+{
+  "query_id": "q_387",
+  "query": "Sodium-ion batteries United States customs classification duties",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_5d4edd458ed00061c91564c6",
+    "claim_8bd08a843ab502fcac8d7b5e",
+    "claim_4abac7e4cc244dede91cf7cb",
+    "claim_92b5d5874d81ad4cf86f0f0a",
+    "claim_cfbdf8ecc747e740fbe4ab8e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_5d4edd458ed00061c91564c6",
+      "text": "In the United States, lithium-ion batteries face a combined import tariff exceeding 100%, factoring in base duties, anti-dumping measures, and Section 301 tariffs. In contrast, sodium-ion batteries are currently subject to a total import duty of just 38.4%",
+      "url": "https://www.pknergy.com/news/global-sodium-ion-battery-import-tariff-overview-and-export-strategy",
+      "chunk_id": "chunk_ce9a9c07ee10d36e3e1bb5a2"
+    },
+    {
+      "claim_id": "claim_8bd08a843ab502fcac8d7b5e",
+      "text": "Sodium-ion batteries have no lithium, cobalt, or nickel – making them entirely insulated from the tariff pressures affecting lithium-based chemistries.",
+      "url": "https://www.totexmfg.com/battery-pack-tariffs-oem-2026",
+      "chunk_id": "chunk_09f75cc3bb2a3beaace95e3e"
+    },
+    {
+      "claim_id": "claim_4abac7e4cc244dede91cf7cb",
+      "text": "Yes. Sodium-ion cells and batteries covered by the applicable entries must satisfy the relevant UN Manual of Tests and Criteria, part III, subsection 38.3 requirements.",
+      "url": "https://carraglobe.com/lithium-battery-customs-clearance",
+      "chunk_id": "chunk_a83fce0c267f5a99baed7360"
+    },
+    {
+      "claim_id": "claim_92b5d5874d81ad4cf86f0f0a",
+      "text": "Sodium-ion batteries with aqueous alkaline electrolyte fall under a different entry entirely, UN2795 (Batteries, wet, filled with alkali), which is Class 8 corrosive, not Class 9.",
+      "url": "https://carraglobe.com/lithium-battery-customs-clearance",
+      "chunk_id": "chunk_f67a4152432ecf5d58eb1260"
+    },
+    {
+      "claim_id": "claim_cfbdf8ecc747e740fbe4ab8e",
+      "text": "For sodium-ion, the 67th edition of the IATA DGR introduced UN3551 (batteries shipped alone) and UN3552 (batteries packed with or contained in equipment) for cells and batteries with organic electrolyte.",
+      "url": "https://carraglobe.com/lithium-battery-customs-clearance",
+      "chunk_id": "chunk_f67a4152432ecf5d58eb1260"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_5d4edd458ed00061c91564c6",
+      "claim_8bd08a843ab502fcac8d7b5e"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 24,
+  "synthesis_input_claim_count": 24
+}

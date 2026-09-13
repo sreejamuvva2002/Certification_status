@@ -1,0 +1,88 @@
+{
+  "query_id": "q_299",
+  "query": "Kia Georgia supplier localization tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_09196d43898ce85a65f6f644",
+    "claim_1d42e25db84d5b4529fad4ed",
+    "claim_3931b232a7a58f9ed19c3af3",
+    "claim_490ebed0b3a7abc4269f8064",
+    "claim_7df5f5983e29704d00399b2f",
+    "claim_8d34d31560c8e049b300323f",
+    "claim_bbb55876a2357541c4fc2d0d",
+    "claim_df3a7c8630aeb9ca54fc1ff3"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_09196d43898ce85a65f6f644",
+      "text": "Kia says it has invested $1.6 billion in the 2,200-acre West Point plant and surrounding community.",
+      "url": "https://www.npr.org/2018/07/27/631839199/trumps-proposed-auto-tariffs-threaten-kia-plant-in-georgia",
+      "chunk_id": "chunk_3ce6fe386ec6b40bfe2c28e5"
+    },
+    {
+      "claim_id": "claim_1d42e25db84d5b4529fad4ed",
+      "text": "Yanfeng Automotive Interiors, where he's a production supervisor. The company makes door panels for the Sorento.",
+      "url": "https://www.npr.org/2018/07/27/631839199/trumps-proposed-auto-tariffs-threaten-kia-plant-in-georgia",
+      "chunk_id": "chunk_3ce6fe386ec6b40bfe2c28e5"
+    },
+    {
+      "claim_id": "claim_3931b232a7a58f9ed19c3af3",
+      "text": "President Trump surprised the world this week when he announced a detente on tariffs with Europe. But new U.S. tariffs on imported cars and parts still loom.",
+      "url": "https://www.npr.org/2018/07/27/631839199/trumps-proposed-auto-tariffs-threaten-kia-plant-in-georgia",
+      "chunk_id": "chunk_3ce6fe386ec6b40bfe2c28e5"
+    },
+    {
+      "claim_id": "claim_490ebed0b3a7abc4269f8064",
+      "text": "KIA HAS ANOTHER PLANT IN SLOVAKIA, AND HERE IN THE U.S. AT A MANUFACTURING PLANT IN WEST POINT IN GEORGIA, WHERE THE CARS ARE ASSEMBLED WOULD OF COURSE BE EXEMPT FROM TARIFFS.",
+      "url": "https://www.youtube.com/watch?v=wWzZYMAbgJw",
+      "chunk_id": "chunk_c0fc3b71e9894c14bd7de6bf"
+    },
+    {
+      "claim_id": "claim_7df5f5983e29704d00399b2f",
+      "text": "Kia was already reeling from US tariffs when the new HMGMA project opened, and such tariffs apparently cost the company more than $2.3 billion in 2025 alone.",
+      "url": "https://www.military.com/how-kia-quietly-built-the-most-tariff-proof-car-factory-in-america",
+      "chunk_id": "chunk_263eb34a2bfb8f4ca6a5507f"
+    },
+    {
+      "claim_id": "claim_8d34d31560c8e049b300323f",
+      "text": "Kia already builds other US market models like the Telluride, EV9, EV6 and Sorento at its West Point, Georgia facility.",
+      "url": "https://www.military.com/how-kia-quietly-built-the-most-tariff-proof-car-factory-in-america",
+      "chunk_id": "chunk_263eb34a2bfb8f4ca6a5507f"
+    },
+    {
+      "claim_id": "claim_bbb55876a2357541c4fc2d0d",
+      "text": "Kia's business could be affected by the tariffs in two ways. First, importing vehicles into the U.S would be more expensive.",
+      "url": "https://www.npr.org/2018/07/27/631839199/trumps-proposed-auto-tariffs-threaten-kia-plant-in-georgia",
+      "chunk_id": "chunk_3ce6fe386ec6b40bfe2c28e5"
+    },
+    {
+      "claim_id": "claim_df3a7c8630aeb9ca54fc1ff3",
+      "text": "While import duties on South Korean-built vehicles fell from 25% to 15% as part of a November 2025 trade deal, there's no doubt that tariffs expose companies like Hyundai and Kia to major cost disadvantages.",
+      "url": "https://www.military.com/how-kia-quietly-built-the-most-tariff-proof-car-factory-in-america",
+      "chunk_id": "chunk_263eb34a2bfb8f4ca6a5507f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_3931b232a7a58f9ed19c3af3",
+      "claim_df3a7c8630aeb9ca54fc1ff3"
+    ],
+    [
+      "claim_490ebed0b3a7abc4269f8064",
+      "claim_7df5f5983e29704d00399b2f"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

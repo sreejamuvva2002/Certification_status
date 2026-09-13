@@ -1,0 +1,59 @@
+{
+  "query_id": "q_406",
+  "query": "Natural graphite United States import tariffs effective dates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1256d84b5649950a2309fdcc",
+    "claim_556cfa3a97903420232cca19",
+    "claim_ca929b9b15435e761d28ccf0",
+    "claim_f610fd08614a1949e67265bc"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1256d84b5649950a2309fdcc",
+      "text": "USTR previously announced new tariffs on natural flake graphite on May 14, 2024, increasing to 25% in 2026.",
+      "url": "https://www.novonixgroup.com/news/united-states-government-to-reinstate-section-301-import-tariffs-on-artificial-graphite-from-china",
+      "chunk_id": "chunk_c30bf9b94ef69fc545fb10bf"
+    },
+    {
+      "claim_id": "claim_556cfa3a97903420232cca19",
+      "text": "The US government renewed 25% tariﬀs on them, eﬀective immediately, in June 2024.",
+      "url": "https://graphitealliance.org/wp-content/uploads/2024/10/NAGA-Potential-Tariffs-on-Graphite.pdf",
+      "chunk_id": "chunk_25e55a0d58fb0b5fc374dc85"
+    },
+    {
+      "claim_id": "claim_ca929b9b15435e761d28ccf0",
+      "text": "The US government installed 25% tariﬀs on the same products in September 2024: 2504.10.10 – Natural graphite, crystalline ﬂake (not including ﬂake dust)",
+      "url": "https://graphitealliance.org/wp-content/uploads/2024/10/NAGA-Potential-Tariffs-on-Graphite.pdf",
+      "chunk_id": "chunk_25e55a0d58fb0b5fc374dc85"
+    },
+    {
+      "claim_id": "claim_f610fd08614a1949e67265bc",
+      "text": "During the review of the \"Section 301 Tariffs,\" the U.S. announced a 25% tariff on natural graphite, but postponed its implementation until 2026.",
+      "url": "https://www.linkedin.com/pulse/impact-us-tariffs-chinas-natural-graphite-exports-supply-chain-arohc",
+      "chunk_id": "chunk_697b4011e5b7d0ce21b2b5f2"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_1256d84b5649950a2309fdcc",
+      "claim_f610fd08614a1949e67265bc"
+    ],
+    [
+      "claim_556cfa3a97903420232cca19",
+      "claim_ca929b9b15435e761d28ccf0"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

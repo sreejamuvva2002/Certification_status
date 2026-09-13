@@ -1,0 +1,40 @@
+{
+  "query_id": "q_148",
+  "query": "EV battery manufacturing equipment United States import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1fde0113c49851106611218b",
+    "claim_dd2cb3423f689d5e87535cf4"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1fde0113c49851106611218b",
+      "text": "terf rate on battery parts will increase this year from 7.5% to 25%",
+      "url": "https://www.youtube.com/watch?v=MFT-KOrTJOo",
+      "chunk_id": "chunk_215c2664d88d3c21e6dd3a3e"
+    },
+    {
+      "claim_id": "claim_dd2cb3423f689d5e87535cf4",
+      "text": "Tariff rate on lithium ion EV batteries is increasing this year from 7.5% to 25%",
+      "url": "https://www.youtube.com/watch?v=MFT-KOrTJOo",
+      "chunk_id": "chunk_215c2664d88d3c21e6dd3a3e"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_1fde0113c49851106611218b",
+      "claim_dd2cb3423f689d5e87535cf4"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 20,
+  "synthesis_input_claim_count": 20
+}

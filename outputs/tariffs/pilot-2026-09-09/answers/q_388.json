@@ -1,0 +1,66 @@
+{
+  "query_id": "q_388",
+  "query": "Battery precursor cathode materials United States import duties",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_02aa02ebe89c3e359406c30b",
+    "claim_3a6941879bf395a31f80b534",
+    "claim_59d18d1ff90b514d0a0dbf57",
+    "claim_af24ec7e1bc28f018e3eb993",
+    "claim_e9f7d8a23c7c5582aa3523eb"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_02aa02ebe89c3e359406c30b",
+      "text": "cobalt sulfate (country of origin China)",
+      "url": "https://rulings.cbp.gov/ruling/N324313",
+      "chunk_id": "chunk_6c674dfe5c2b61a0e8e2bea4"
+    },
+    {
+      "claim_id": "claim_3a6941879bf395a31f80b534",
+      "text": "Ruling Date: Mar 4, 2022",
+      "url": "https://rulings.cbp.gov/ruling/N324313",
+      "chunk_id": "chunk_6c674dfe5c2b61a0e8e2bea4"
+    },
+    {
+      "claim_id": "claim_59d18d1ff90b514d0a0dbf57",
+      "text": "Starting April 2, 2025, the U.S. will implement broad-based tariffs ranging from 10% to 50%. China, South Korea, and Japan are among the countries most affected, particularly China.",
+      "url": "https://christopherchico.substack.com/p/trumps-tariff-hike-what-it-means",
+      "chunk_id": "chunk_7d32d3808b15749ea6516c3c"
+    },
+    {
+      "claim_id": "claim_af24ec7e1bc28f018e3eb993",
+      "text": "Altogether, this brings the total tariff on Chinese LFP cells to 64.9%, which is set to increase further to 82.4% in 2026 under pre-existing Section 301 tariff escalations introduced by the Biden Administration",
+      "url": "https://christopherchico.substack.com/p/trumps-tariff-hike-what-it-means",
+      "chunk_id": "chunk_7d32d3808b15749ea6516c3c"
+    },
+    {
+      "claim_id": "claim_e9f7d8a23c7c5582aa3523eb",
+      "text": "Key battery materials such as lithium carbonate, lithium hydroxide, cobalt sulphate, cobalt metal, manganese dioxide, and natural graphite (both powder and flakes) are exempt from these new tariffs.",
+      "url": "https://christopherchico.substack.com/p/trumps-tariff-hike-what-it-means",
+      "chunk_id": "chunk_7d32d3808b15749ea6516c3c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_59d18d1ff90b514d0a0dbf57",
+      "claim_af24ec7e1bc28f018e3eb993"
+    ],
+    [
+      "claim_e9f7d8a23c7c5582aa3523eb",
+      "claim_59d18d1ff90b514d0a0dbf57"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 16,
+  "synthesis_input_claim_count": 16
+}

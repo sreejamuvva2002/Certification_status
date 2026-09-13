@@ -1,0 +1,81 @@
+{
+  "query_id": "q_company_fc7c935e96c630b5d97e68a4_discovery",
+  "query": "\"Continental Automotive\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0ad54d761cb664d6df94dfdb",
+    "claim_315f67043239e3027e2eeac8",
+    "claim_4b868657a1f245fe2fd7aefc",
+    "claim_666be0a8be1c1029afc29a97",
+    "claim_9086038ea3a1818ca4406ae6",
+    "claim_ebc06f92ee908d592bae0650",
+    "claim_ec3a726ffb226790b25f1fa4"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0ad54d761cb664d6df94dfdb",
+      "text": "Continental enters final phase of realignment with strong second quarter. “We significantly increased our profitability and free cash flow. The main drivers for Tires were a higher share of tires measuring 18 inches and above, lower impacts from exchange rates and tariffs, and positive effects from raw-material prices,” said Continental CFO Roland Welzbacher.",
+      "url": "https://www.linkedin.com/posts/continental_continental-enters-final-phase-of-realignment-activity-7490278724932714496-TuUc",
+      "chunk_id": "chunk_38a432d772efa3202b5da982"
+    },
+    {
+      "claim_id": "claim_315f67043239e3027e2eeac8",
+      "text": "Continental said it expects its automotive division to face a limited impact from U.S. tariffs on auto parts due to a high share of imports",
+      "url": "https://www.facebook.com/WSJ/posts/continental-said-it-expects-its-automotive-division-to-face-a-limited-impact-fro/1106730967980166",
+      "chunk_id": "chunk_427fd1a1921f6a69312a5441"
+    },
+    {
+      "claim_id": "claim_4b868657a1f245fe2fd7aefc",
+      "text": "This week the US President has announced new 25% tariffs on imports from Canada and Mexico as well as a 20% tariff on imports from China.",
+      "url": "https://www.just-auto.com/news/continental-will-pass-on-tariff-costs-cfo",
+      "chunk_id": "chunk_60b1ae323823c94cd6ac618d"
+    },
+    {
+      "claim_id": "claim_666be0a8be1c1029afc29a97",
+      "text": "This week the US President has announced new 25% tariffs on imports from Canada and Mexico as well as a 20% tariff on imports from China.",
+      "url": "https://www.just-auto.com/news/continental-will-pass-on-tariff-costs-cfo",
+      "chunk_id": "chunk_60b1ae323823c94cd6ac618d"
+    },
+    {
+      "claim_id": "claim_9086038ea3a1818ca4406ae6",
+      "text": "This week the US President has announced new 25% tariffs on imports from Canada and Mexico as well as a 20% tariff on imports from China.",
+      "url": "https://www.just-auto.com/news/continental-will-pass-on-tariff-costs-cfo",
+      "chunk_id": "chunk_60b1ae323823c94cd6ac618d"
+    },
+    {
+      "claim_id": "claim_ebc06f92ee908d592bae0650",
+      "text": "This week the US President has announced new 25% tariffs on imports from Canada and Mexico as well as a 20% tariff on imports from China.",
+      "url": "https://www.just-auto.com/news/continental-will-pass-on-tariff-costs-cfo",
+      "chunk_id": "chunk_60b1ae323823c94cd6ac618d"
+    },
+    {
+      "claim_id": "claim_ec3a726ffb226790b25f1fa4",
+      "text": "The U.S. automotive industry is facing fresh uncertainty after President Trump threatened to raise tariffs on Canadian-made cars, trucks, and auto parts to 50% from January 1, 2027, following the breakdown of U.S.–Canada trade negotiations.",
+      "url": "https://www.linkedin.com/posts/continental_continental-enters-final-phase-of-realignment-activity-7490278724932714496-TuUc",
+      "chunk_id": "chunk_38a432d772efa3202b5da982"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_4b868657a1f245fe2fd7aefc",
+      "claim_666be0a8be1c1029afc29a97"
+    ],
+    [
+      "claim_4b868657a1f245fe2fd7aefc",
+      "claim_ebc06f92ee908d592bae0650"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

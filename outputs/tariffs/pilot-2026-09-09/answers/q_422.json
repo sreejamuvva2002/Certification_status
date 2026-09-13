@@ -1,0 +1,53 @@
+{
+  "query_id": "q_422",
+  "query": "Indonesia nickel United States import duties battery supply chain",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_26dd53d097011fcb280f1fac",
+    "claim_319aff0be694ca369afb6676",
+    "claim_7134eb17254834c4c6a052a1",
+    "claim_4b179f265bca19bd2e758325"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_26dd53d097011fcb280f1fac",
+      "text": "Indonesia’s decision did not have a direct or immediate impact on the production or importation of nickel in the United States.",
+      "url": "https://www.nbr.org/publication/indonesias-nickel-export-ban-impacts-on-supply-chains-and-the-energy-transition",
+      "chunk_id": "chunk_84172f53b162998dfa5f0f85"
+    },
+    {
+      "claim_id": "claim_319aff0be694ca369afb6676",
+      "text": "the United States will maintain a 19% reciprocal tariff rate on imports from Indonesia",
+      "url": "https://www.nusanickel.com/post/us-indonesia-trade-deal-finalized-what-it-signals-for-critical-minerals-and-nickel-flows",
+      "chunk_id": "chunk_525ddf1e76b18503a4468155"
+    },
+    {
+      "claim_id": "claim_7134eb17254834c4c6a052a1",
+      "text": "At present, Indonesia does not have a free trade agreement in place with the United States, meaning that nickel products processed in the country would not qualify for benefits from the Inflation Reduction Act (IRA).",
+      "url": "https://www.usitc.gov/publications/332/working_papers/ermm_indonesia_export_ban_of_nickel.pdf",
+      "chunk_id": "chunk_1af9ac3e0c270a57da609e7e"
+    },
+    {
+      "claim_id": "claim_4b179f265bca19bd2e758325",
+      "text": "The Inflation Reduction Act, signed into law in August 2022 by President Joseph R. Biden, Jr., offers tax credits for EV purchases where at least 80 percent (by 2027) of the lithium, cobalt, nickel, and manganese used in their batteries has been extracted or processed in the United",
+      "url": "https://www.usitc.gov/publications/332/working_papers/ermm_indonesia_export_ban_of_nickel.pdf",
+      "chunk_id": "chunk_1af9ac3e0c270a57da609e7e"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_26dd53d097011fcb280f1fac",
+      "claim_319aff0be694ca369afb6676"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

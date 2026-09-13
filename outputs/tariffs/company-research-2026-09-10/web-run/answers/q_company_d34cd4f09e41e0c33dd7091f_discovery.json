@@ -1,0 +1,50 @@
+{
+  "query_id": "q_company_d34cd4f09e41e0c33dd7091f_discovery",
+  "query": "\"Bonnell Aluminum\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_19f3c629eb4b7bf1ac31eae2",
+    "claim_637c20c27d79862b35373b36",
+    "claim_b3d2b6cb2496fb32fcc089e2"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_19f3c629eb4b7bf1ac31eae2",
+      "text": "Bonnell Aluminum, a subsidiary of Tredegar Corporation (NYSE: TG), is pleased with the U.S. Department of Commerce’s ruling to institute preliminary countervailing duties on unfairly traded imports of aluminum extrusions.",
+      "url": "https://bonnellaluminum.com/news-events/preliminary-countervailing-duty-ruling",
+      "chunk_id": "chunk_d23a6bc574260e0cbd2bcdeb"
+    },
+    {
+      "claim_id": "claim_637c20c27d79862b35373b36",
+      "text": "Bonnell Aluminum Commenting on Final Determinations in Trade ... duties on unfairly traded imports of aluminum extrusions from 14 countries.",
+      "url": "https://ir.tredegar.com/news-releases/news-release-details/bonnell-aluminum-commenting-final-determinations-trade-cases",
+      "chunk_id": "chunk_d9ec43dda3d3a78567fc7ad6"
+    },
+    {
+      "claim_id": "claim_b3d2b6cb2496fb32fcc089e2",
+      "text": "preliminary countervailing duties on unfairly traded imports of aluminum extrusions. Additional details are available in the March 5, 2024,",
+      "url": "https://www.businesswire.com/news/home/20240306198211/en/Bonnell-Aluminum-Commenting-on-Preliminary-Countervailing-Duty-Ruling",
+      "chunk_id": "chunk_9b42ec92bbb52a5edded8224"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_19f3c629eb4b7bf1ac31eae2",
+      "claim_b3d2b6cb2496fb32fcc089e2"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 3,
+  "synthesis_input_claim_count": 3
+}

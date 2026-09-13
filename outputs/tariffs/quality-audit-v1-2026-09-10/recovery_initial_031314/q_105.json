@@ -1,0 +1,129 @@
+{
+  "primary_cause": "missing_sources",
+  "contributing_causes": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "cause_explanation": "The original answer failed to establish a direct, named-company exposure for 'EV battery trays aluminum enclosures' under Section 232. While the source text contains an official Federal Register scope definition explicitly listing 'electric vehicle battery trays' as subject merchandise under Aluminum Extrusions AD/CVD orders (not Section 232), and mentions Section 232 steel/aluminum tariffs affecting EV costs, no passage links a specific company to these duties or confirms the current applicability of Section 232 specifically to aluminum enclosures for this product type. The evidence is fragmented between general industry impact reports and a",
+  "confidence": "high",
+  "remaining_gap": "The original answer did not distinguish between Section 232 (steel/aluminum) and AD/CVD (aluminum extrusions) regimes, nor did it identify the specific product scope inclusion for battery trays in the Federal Register text. The lack of a named company or facility in the evidence prevents establishing 'company applicability' as required.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_1b41adb6463d2a12a18c0a7f",
+      "supporting_excerpt": "The types of products that meet the definition of subject merchandise include but are not limited to, the aluminum extrusion portions of vehicle roof rails and sun/moon roof framing... electric vehicle battery trays, heat sinks...",
+      "relevance_explanation": "Explicitly lists 'electric vehicle battery trays' as subject merchandise under Aluminum Extrusions AD/CVD orders.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_d889e5f63231ac42f77f004a",
+      "supporting_excerpt": "Steel is an important component in motive power batteries, specifically for the trays that house the battery cells... The recent 25% tariff on imported steel has significant implications for battery manufacturing costs.",
+      "relevance_explanation": "Discusses steel tariffs affecting battery trays but does not confirm Section 232 applicability to aluminum enclosures or specific company exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_8f3a2329fc3907aa6ac08974",
+      "supporting_excerpt": "EV battery enclosures and structural components rely on aluminum extrusions... The 10% tariff on aluminum imports has increased costs for extrusions by 8-12%... OEMs are forced to source from a limited number of US-based extruders.",
+      "relevance_explanation": "Confirms cost impact of aluminum tariffs on EV battery enclosures but does not specify Section 232 applicability or named company exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_b91474aa1189d3c88248b42e",
+      "supporting_excerpt": "Section 232 metal tariffs (25% on steel, 10% on aluminum) also indirectly affect the EMS industry supply chain. Aluminum enclosures or steel chassis parts face higher costs unless exempted...",
+      "relevance_explanation": "Mentions Section 232 tariffs on aluminum but does not confirm applicability to 'battery trays' specifically or link to a named company.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_105",
+  "query": "EV battery trays aluminum enclosures Section 232 tariffs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 0,
+    "all_extracted_claims": 11,
+    "claims_presented_to_original_synthesis": 11,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 2,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "extraction_problems"
+  ],
+  "candidate_passage_ids": [
+    "passage_0a0125fb4c8983c741bb701b",
+    "passage_d889e5f63231ac42f77f004a",
+    "passage_b91474aa1189d3c88248b42e",
+    "passage_8f3a2329fc3907aa6ac08974",
+    "passage_8ce1c9d6888d927045296c34",
+    "passage_1b41adb6463d2a12a18c0a7f",
+    "passage_bdafc0f997fa362a966fba56",
+    "passage_6732fa2609b933405a996f9b"
+  ],
+  "candidate_document_ids": [
+    "document_2ed898a0b44943f3580f8f62",
+    "document_4cb631ab08e2fa66bed6c315",
+    "document_531d82c2d97c230d5b7209f8",
+    "document_5bdafc0268fd14b1234b879c",
+    "document_6cc1093d8905c24a6def6bbc",
+    "document_8d212fd8e3a67b475cb53764",
+    "document_949ab1cd3e2df0aebe59fbca",
+    "document_c3e2af5128feb40eaa7e64dd"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_1b41adb6463d2a12a18c0a7f",
+        "supporting_excerpt": "The types of products that meet the definition of subject merchandise include but are not limited to, the aluminum extrusion portions of vehicle roof rails and sun/moon roof framing... electric vehicle battery trays, heat sinks...",
+        "relevance_explanation": "Explicitly lists 'electric vehicle battery trays' as subject merchandise under Aluminum Extrusions AD/CVD orders.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_d889e5f63231ac42f77f004a",
+        "supporting_excerpt": "Steel is an important component in motive power batteries, specifically for the trays that house the battery cells... The recent 25% tariff on imported steel has significant implications for battery manufacturing costs.",
+        "relevance_explanation": "Discusses steel tariffs affecting battery trays but does not confirm Section 232 applicability to aluminum enclosures or specific company exposure.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_8f3a2329fc3907aa6ac08974",
+        "supporting_excerpt": "EV battery enclosures and structural components rely on aluminum extrusions... The 10% tariff on aluminum imports has increased costs for extrusions by 8-12%... OEMs are forced to source from a limited number of US-based extruders.",
+        "relevance_explanation": "Confirms cost impact of aluminum tariffs on EV battery enclosures but does not specify Section 232 applicability or named company exposure.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_b91474aa1189d3c88248b42e",
+        "supporting_excerpt": "Section 232 metal tariffs (25% on steel, 10% on aluminum) also indirectly affect the EMS industry supply chain. Aluminum enclosures or steel chassis parts face higher costs unless exempted...",
+        "relevance_explanation": "Mentions Section 232 tariffs on aluminum but does not confirm applicability to 'battery trays' specifically or link to a named company.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

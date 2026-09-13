@@ -1,0 +1,49 @@
+{
+  "query_id": "q_company_c637266c7de19e629af5b867_discovery",
+  "query": "\"DaeChang Seat Company\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_19df88a27dbc884b004885f7",
+    "claim_985ea99a9779f61da4823d10",
+    "claim_ef77df36b16e3509ae4692e9"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_19df88a27dbc884b004885f7",
+      "text": "Tariffs USD 1.79 M | 14.01% Daechang Seat Savannah Corporation mainly imports member, seat frame and seat parts.",
+      "url": "https://www.trademo.com/companies/daechang-seat-savannah-corporation/44699167",
+      "chunk_id": "chunk_e11953dca306c3552be54e1e"
+    },
+    {
+      "claim_id": "claim_985ea99a9779f61da4823d10",
+      "text": "Daechang Seat Savannah Corporation mainly imports member, seat frame and seat parts.",
+      "url": "https://www.trademo.com/companies/daechang-seat-savannah-corporation/44699167",
+      "chunk_id": "chunk_e11953dca306c3552be54e1e"
+    },
+    {
+      "claim_id": "claim_ef77df36b16e3509ae4692e9",
+      "text": "Consignee | DAECHANG SEAT SAVANNAH CORP 301 FOUR LAKES PARKWAY SAVANNAH GA 31302 USA ATTN YOOJIN CHOI",
+      "url": "https://www.seair.co.in/us-importers/daechang-seat-savannah-corp.aspx",
+      "chunk_id": "chunk_331b68df8071e056436d8a06"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_19df88a27dbc884b004885f7",
+      "claim_985ea99a9779f61da4823d10"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 3,
+  "synthesis_input_claim_count": 3
+}

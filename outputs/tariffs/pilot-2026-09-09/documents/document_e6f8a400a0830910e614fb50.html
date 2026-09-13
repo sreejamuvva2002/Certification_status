@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta name="google-site-verification" content="rWmi4UEDDUgUwwEBWNFpZ73uEwUfPFQNiBqw2CCoraA" />
+    <meta name="google-adsense-account" content="ca-pub-6549351812537625">
+    
+    <script>
+
+      var sector = 'home';
+      var tag = '';
+      var lastGAM = '';
+
+      document.addEventListener("DOMContentLoaded", function() {
+
+        var url = window.location.href;
+
+        var splitPath = url.split("/");
+        var totSplitPath = splitPath.length;
+        var lastData = splitPath[splitPath.length-1];
+            lastData = lastData.split("?")[0];
+        var lastDataWithParameters = splitPath[splitPath.length-1];
+            lastGAM = lastData.substring(0,40).replace(/[!@#$%^&*/()_-]/g, "");
+
+        if (lastData==""){
+          tag = "home";
+        }else{
+          if (lastData == "multimedia"){
+            tag = "multimedia";
+          }else if (lastData == "podcast" || splitPath[4] == "podcast"){
+            tag = "podcast";
+            if (totSplitPath>6){sector = 'detail';}
+          }else if (lastData == "videos" || splitPath[4] == "video"){
+            tag = "videos";
+            if (totSplitPath>6){sector = 'detail';}
+          }else if (lastData == "audio-articles"){
+            tag = "audio-article";
+          }else if (lastData == "search"){
+            tag = "search";
+          }else if (lastData == "expert-contributor"){
+            tag = "expert-contributor";
+          }else{
+            //Split Sector
+            lastDataCount = lastData.split("?s=");
+            if (lastDataCount.length>1){
+             var checkIfTag = lastDataCount[1].split("&idtag");
+             if (checkIfTag.length>1){
+                  sector = checkIfTag[0];
+             }else{
+                  sector = lastDataCount[1];
+             }
+              tag = lastDataCount[0];
+              splitSearchPage = sector.split("&page=");
+              if (splitSearchPage.length>1){
+                sector = splitSearchPage[0];
+                if (sector==""){
+                  sector = lastDataCount[0];
+                }
+              }
+            }else{
+              //Split Tag
+              lastDataCount = lastData.split("?tag=");
+              if (lastDataCount.length>1 && splitPath.length>=3){
+                sector = splitPath[3];
+                tag = lastDataCount[1];
+              }else if (splitPath.length>=3){
+                sector = splitPath[3];
+                if (splitPath[3]=="expert-contributor"){
+                  tag = splitPath[4];
+                }else{
+                  if (splitPath[3]=='tag'){
+                  lastDataTag = lastData.split("?idtag");
+                    tag=lastDataTag[0];
+                  }else{
+                      var myTagsfromHtml = [];
+                      var linksTags = document.querySelectorAll('.tags ul li a');
+
+                      linksTags.forEach(function(linkParm) {
+                        var linkRoute = linkParm.getAttribute('href');
+                        if (linkRoute && linkRoute.indexOf('/tag/') !== -1) {
+                          var tagClean = linkRoute.split('/tag/')[1].split('?')[0];
+                          myTagsfromHtml.push(tagClean);
+                        }
+                      });
+                      if (myTagsfromHtml.length > 0) {
+                        tag = myTagsfromHtml; 
+                      } else {
+                        tag = splitPath[3]; 
+                      }
+                  }
+                }
+              }else{
+                sector = lastData;
+                tag = lastData;
+              }
+            }
+          }
+        }
+
+        console.log (sector+"|"+tag+"|"+lastGAM);
+
+      });
+
+    </script>
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      window.addEventListener('DOMContentLoaded', function() {
+
+      googletag.cmd.push(function() {
+
+        googletag.pubads().enableAsyncRendering();
+
+        var REFRESH_KEY = 'refresh';
+        var REFRESH_VALUE = 'true';
+        var _rl_gen_sg=function(){let e="_rl_sg",t=[];try{let o=localStorage.getItem(e);"string"==typeof o&&(t=o.split(","))}catch(e){}if(0===t.length){let o=document.cookie.indexOf(e);if(-1!==o){o+=e.length+1;let n=document.cookie.indexOf(";",o);-1===n&&(n=document.cookie.length),t=document.cookie.substring(o,n).split(",")}}return t};
+
+        var map0 = googletag.sizeMapping()
+          .addSize([1024, 0], [[300, 250], [336, 280], [300, 600], [1, 1]])
+          .addSize([768, 0], [[300, 250], [336, 280], [300, 600], [1, 1]])
+          .addSize([320, 0], [[300, 250], [1, 1]])
+          .addSize([0, 0], [[300, 50], [1, 1]])
+          .build(); 
+
+        var map1 = googletag.sizeMapping()
+          .addSize([1024, 0], [[970, 90], [1, 1]])
+          .addSize([768, 0], [[300, 250], [1, 1]])
+          .addSize([320, 0], [[300, 250], [300, 100], [1, 1]])
+          .addSize([0, 0], [[300, 50], [1, 1]])
+          .build(); 
+
+        var map2 = googletag.sizeMapping()
+          .addSize([1024, 0], [[970, 90], [1, 1]])
+          .addSize([768, 0], [[970, 90], [1, 1]])
+          .addSize([320, 0], [[300, 250], [300, 100], [1, 1]])
+          .addSize([0, 0], [[350, 50], [1, 1]])
+          .build(); 
+
+        var map3 = googletag.sizeMapping()
+          .addSize([1024, 0], [[300, 250], [970, 90], [1, 1]])
+          .addSize([768, 0], [[300, 250], [1, 1]])
+          .addSize([320, 0], [[300, 250], [1, 1]])
+          .addSize([0, 0], [[300, 250], [1, 1]])
+          .build();
+
+        var map4 = googletag.sizeMapping()
+          .addSize([1024, 0], [[300, 600]])
+          .addSize([768, 0],  [[300, 600]])
+          .addSize([320, 0],  [[300, 250]])
+          .addSize([0, 0],    [[300, 50], [1, 1]])
+          .build();
+
+        var map5 = googletag.sizeMapping()
+          .addSize([1024, 0], [[970, 90], [300, 250]])
+          .addSize([768, 0], [[970, 90]])
+          .addSize([320, 0], [[300, 250]])
+          .addSize([0, 0], [[300, 50]])
+          .build();
+
+        var map6 = googletag.sizeMapping()
+          .addSize([1024, 0], [[970, 90], [1, 1]])
+          .addSize([768, 0], [[970, 90], [1, 1]])
+          .addSize([320, 0], [[300, 250], [1, 1]])
+          .addSize([0, 0], [[300, 50], [1, 1]])
+          .build(); 
+
+        var map7 = googletag.sizeMapping()
+          .addSize([1024, 0], [[728, 90], [970, 90], [1, 1]])
+          .addSize([768, 0], [[728, 90], [1, 1]])
+          .addSize([320, 0], [[300, 250], [1, 1]])
+          .addSize([0, 0], [[300, 50], [1, 1]])
+          .build();
+
+        var map8 = googletag.sizeMapping()
+          .addSize([1024, 0], [[300, 600], [300, 250]])
+          .addSize([768, 0],  [[300, 600], [300, 250]])
+          .addSize([320, 0],  [[300, 250]])
+          .addSize([0, 0],    [[300, 50], [1, 1]])
+          .build();
+
+          if (document.body.classList.contains('path-frontpage')){
+            //Homepage
+            googletag.defineSlot('/22809222576/MB_Homepage_pos0', [[300, 250], [970, 90]], 'div-gpt-ad-1724884205286-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map6).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Homepage_pos1', [[300, 250], [336, 280]], 'div-gpt-ad-1673970885290-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map0).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Homepage_pos2', [[300, 250], [336, 280]], 'div-gpt-ad-1673970958870-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map0).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Homepage_pos3', [[300, 250], [336, 280]], 'div-gpt-ad-1673971010352-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map0).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Homepage_pos4', [[300, 250], [336, 280]], 'div-gpt-ad-1673971044080-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').defineSizeMapping(map0).setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1724884205286-0',
+              'div-gpt-ad-1673970885290-0',
+              'div-gpt-ad-1673970958870-0',
+              'div-gpt-ad-1673971010352-0',
+              'div-gpt-ad-1673971044080-0'
+            ];
+          } else if (document.body.classList.contains('page-search') || document.body.classList.contains('page-type')){ 
+            //Search
+            googletag.defineSlot('/22809222576/MB_Search_300X250_pos1', [300, 250], 'div-gpt-ad-1669313947988-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1669313947988-0'
+            ];            
+          } else if (document.body.classList.contains('page-multimedia')){
+            //Multimedia General
+            googletag.defineSlot('/22809222576/MB_Multimedia_Pos1', [[970, 90], [300, 250], [300, 200]], 'div-gpt-ad-1669313999180-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map1)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Multimedia_Pos2', [300, 250], 'div-gpt-ad-1669314027533-0').setTargeting(REFRESH_KEY, REFRESH_VALUE).setTargeting('refreshed_slot', 'false').setTargeting("_rl",_rl_gen_sg()).addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1669313999180-0',
+              'div-gpt-ad-1669314027533-0'
+            ];            
+          } else if (document.body.classList.contains('page-media')){
+            //Multimedia Detail
+            googletag.defineSlot('/22809222576/MB_Multimedia_detail_pos1', [[970, 90], [300, 250], [300, 200]], 'div-gpt-ad-1669314077354-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map2)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Multimedia_detail_pos2', [300, 600], 'div-gpt-ad-1673545894512-0')
+              .setTargeting("url", lastGAM)
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .setCollapseEmptyDiv(true)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1669314077354-0',
+              'div-gpt-ad-1673545894512-0'
+            ];
+          } else if (document.body.classList.contains('page-taxonomy')){
+            //Sector Tag
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos1', [[970, 90], [300, 250], [300, 200]], 'div-gpt-ad-1669314148653-0')
+              .setTargeting("pos", "1") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map2)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos2_300x250', [300, 600], 'div-gpt-ad-1784840297253-0')
+              .setTargeting("pos", "2") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos2', [300, 600], 'div-gpt-ad-1669314178789-0')
+              .setTargeting("pos", "2") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos3', [300, 250], 'div-gpt-ad-1671035615011-0')
+              .setTargeting("pos", "3") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Sector_Tag_Pos4', [300, 250], 'div-gpt-ad-1742328062360-0')
+              .setTargeting("pos", "4") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1669314148653-0',
+              'div-gpt-ad-1784840297253-0',
+              'div-gpt-ad-1669314178789-0',
+              'div-gpt-ad-1671035615011-0',
+              'div-gpt-ad-1742328062360-0'
+            ];
+          } else if (document.body.classList.contains('page-node')){
+            //Articles
+            googletag.defineSlot('/22809222576/MB_Articles_pos0', [[300, 250], [336, 280], [300, 600], [300, 50], [1, 1]], 'div-gpt-ad-1671474572130-0')
+              .setTargeting("pos", "0") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting("url", lastGAM)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map0)
+              .setTargeting("_rl",_rl_gen_sg())
+              .setCollapseEmptyDiv(true, true)
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Articles_pos1', [[970, 90], [300, 250]], 'div-gpt-ad-1752014862564-0')
+              .setTargeting("pos", "1") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map5)
+              .setTargeting("_rl",_rl_gen_sg())
+              .setCollapseEmptyDiv(true, true)
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Articles_pos2', [300, 250], 'div-gpt-ad-1669314255100-0')
+              .setTargeting("pos", "2") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map0)
+              .setTargeting("_rl",_rl_gen_sg())
+              .setCollapseEmptyDiv(true, true)
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Articles_pos3', [300, 250], 'div-gpt-ad-1669314285512-0')
+              .setTargeting("pos", "3") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map0)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            googletag.defineSlot('/22809222576/MB_Articles_pos4', [728, 90], 'div-gpt-ad-1752015991116-0')
+              .setTargeting("pos", "4") 
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting("sector", sector)
+              .setTargeting("tag", tag)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map7)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1671474572130-0',
+              'div-gpt-ad-1752014862564-0',
+              'div-gpt-ad-1669314255100-0',
+              'div-gpt-ad-1669314285512-0',
+              'div-gpt-ad-1752015991116-0'
+            ];
+          } else if (document.body.classList.contains('page-expert-contributor') || document.body.classList.contains('page-expert-contributor-author')){
+            //Expert
+            googletag.defineSlot('/22809222576/MB_Home_Expert_pos1', [[970, 90], [300, 250], [300, 200]], 'div-gpt-ad-1671059794992-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map2)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+
+            googletag.defineSlot('/22809222576/MB_Expert_pos1', [300, 250], 'div-gpt-ad-1669314355585-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .defineSizeMapping(map4)
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+
+            googletag.defineSlot('/22809222576/MB_Expert_pos2', [300, 600], 'div-gpt-ad-1669314380460-0')
+              .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+              .setTargeting('refreshed_slot', 'false')
+              .setTargeting("_rl",_rl_gen_sg())
+              .addService(googletag.pubads());
+            var adSlots = [
+              'div-gpt-ad-1671059794992-0',
+              'div-gpt-ad-1669314355585-0',
+              'div-gpt-ad-1669314380460-0'
+            ];
+          }
+
+          var SECONDS_TO_WAIT_AFTER_VIEWABILITY = 15;
+
+          googletag.pubads().addEventListener('impressionViewable', function(event) {
+            var slot = event.slot;
+            if (slot.getTargeting(REFRESH_KEY).indexOf(REFRESH_VALUE) > -1) {
+              setTimeout(function() {
+                googletag.pubads().refresh([slot]);
+              }, SECONDS_TO_WAIT_AFTER_VIEWABILITY * 1000);
+            }
+          });
+
+          googletag.enableServices();
+
+          setTimeout(function() {
+            adSlots.forEach(function(slotId) {
+              if (document.getElementById(slotId)) {
+                googletag.display(slotId);
+              }
+            });
+          }, 100);
+        });
+      });
+    </script>
+
+    <meta http-equiv="refresh" content="3600">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/mbi/images/MBN_Icon_Web-32px.png" />
+    <link rel="icon" type="image/png" sizes="152x152" href="/themes/mbi/images/MBN_Icon_Web-152px.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/themes/mbi/images/MBI_Icons_MBN192px.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/themes/mbi/images/MBI_Icons_MBN192px.png" />
+
+    <meta charset="utf-8" />
+<meta name="description" content="Ontario threatens to cut electricity and critical minerals to the US as Trump escalates tariffs, while Mexico pursues a cooperative trade path" />
+<meta name="abstract" content="Ontario threatens to cut electricity and critical minerals to the US as Trump escalates tariffs, while Mexico pursues a cooperative trade path" />
+<meta name="keywords" content="Canada, Doug Ford, Critical Minerals, electricity, tariffs, Canada trade, USMCA, nickel, uranium, Steel, Automotive, Mark Carney, Claudia Sheinbaum, North America Trade" />
+<link rel="canonical" href="https://mexicobusiness.news/mining/news/us-canada-trade-war-ontario-cut-electricity-minerals" />
+<meta name="robots" content="index, follow" />
+<meta name="news_keywords" content="Canada, Doug Ford, Critical Minerals, electricity, tariffs, Canada trade, USMCA, nickel, uranium, Steel, Automotive, Mark Carney, Claudia Sheinbaum, North America Trade" />
+<meta property="og:site_name" content="Mexico Business" />
+<meta property="og:type" content="News" />
+<meta property="og:url" content="https://mexicobusiness.news/mining/news/us-canada-trade-war-ontario-cut-electricity-minerals" />
+<meta property="og:title" content="US-Canada Trade War: Ontario to Cut Electricity, Minerals" />
+<meta property="og:description" content="Ontario threatens to cut electricity and critical minerals to the US as Trump escalates tariffs, while Mexico pursues a cooperative trade path" />
+<meta property="og:image" content="https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/chris-robert-sMAhpTz8P6w-unsplash.jpg?h=43d80776&amp;itok=qs6Paz6s" />
+<meta property="og:image:url" content="https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/chris-robert-sMAhpTz8P6w-unsplash.jpg?h=43d80776&amp;itok=qs6Paz6s" />
+<meta property="og:image:secure_url" content="https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/chris-robert-sMAhpTz8P6w-unsplash.jpg?h=43d80776&amp;itok=qs6Paz6s" />
+<meta property="og:image:width" content="1269" />
+<meta property="og:image:height" content="714" />
+<meta property="og:image:alt" content="US-Canada Trade War: Ontario to Cut Electricity, Minerals" />
+<meta property="article:section" content="Mining" />
+<meta property="article:published_time" content="2026-08-25T10:44:24-0600" />
+<meta property="article:modified_time" content="2026-08-25T10:44:24-0600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="US-Canada Trade War: Ontario to Cut Electricity, Minerals" />
+<meta name="twitter:description" content="Ontario threatens to cut electricity and critical minerals to the US as Trump escalates tariffs, while Mexico pursues a cooperative trade path" />
+<meta name="twitter:site" content="@MXBusinessNews" />
+<meta name="twitter:url" content="https://mexicobusiness.news/mining/news/us-canada-trade-war-ontario-cut-electricity-minerals" />
+<meta name="twitter:image:alt" content="US-Canada Trade War: Ontario to Cut Electricity, Minerals" />
+<meta name="twitter:image:width" content="1269" />
+<meta name="twitter:image" content="https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/chris-robert-sMAhpTz8P6w-unsplash.jpg?h=43d80776&amp;itok=qs6Paz6s" />
+<meta name="twitter:image:height" content="714" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "US-Canada Trade War: Ontario to Cut Electricity, Minerals",
+            "name": "article",
+            "description": "Ontario threatens to cut electricity and critical minerals to the US as Trump escalates tariffs, while Mexico pursues a cooperative trade path",
+            "datePublished": "2026-08-25T10:44:24-0600",
+            "dateModified": "2026-08-25T10:44:24-0600"
+        }
+    ]
+}</script>
+<link rel="icon" href="/sites/default/files/MBN_Icon_Web-32px_0.png" type="image/png" />
+
+        <title>US-Canada Trade War: Ontario to Cut Electricity, Minerals</title>
+        <link rel="stylesheet" media="all" href="/sites/default/files/css/css_Xpl9my8hf43XHXrUgOXi9VeIbsBkNnkYqu_vSTyKGY8.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_xuFbzzgLSmK3V20BA6kVrMkO2JSqBz0jpQwkR3-L6zs.css" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+
+    
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5WWQWJG');</script>
+    <!-- End Google Tag Manager -->
+
+  </head>
+
+    <body class="page-mining page-news page-us-canada-trade-war-ontario-cut-electricity-minerals page-node page-64484 page-node-author path-node page-node-type-article no-sidebars">
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WWQWJG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+          
+        <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page">
+            <div id="header">
+                            <div class="header-first">
+                    <div class="container">
+                          <div>
+    <div class="views-element-container" id="block-hamburgermenu">
+  
+      <h2>Our Categories</h2>
+    
+      <div><div class="Test js-view-dom-id-e94767c9da9889673c5dd54a219376be84946fb29b44438f78556803db155af6">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="menu-wrapper">
+  
+  <ul class="menu">
+
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/entrepreneurs"><div class="menu-header-container" data-color="9b7c0d" data-submenu="" data-submenu-id="">
+  Entrepreneurs
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/tech"><div class="menu-header-container" data-color="789a99" data-submenu="Digital Transformation, Artificial Intelligence, Internet of Things, Big Data &amp; Analytics, Data Centers, Blockchain, Network Solutions" data-submenu-id="1589, 945, 8755, 42076, 8356, 20, 32697">
+  Tech
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/talent"><div class="menu-header-container" data-color="251157" data-submenu="HRTech, EdTech, Recruitment, Talent Management, Compensation, Payroll &amp; Compliance, Employee Experience, Diversity, Equity &amp; Inclusion, Wellbeing" data-submenu-id="51081, 9727, 6174, 7200, 33300, 56490, 23565, 56543, 7767">
+  Talent
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/energy"><div class="menu-header-container" data-color="5d6c21" data-submenu="Natural Gas, Wind, Solar, Project Development, O &amp; M, Finance, Power Producers, Electricity Market, Offtakers, Energy Efficiency, ESR, Grid &amp; Pipelines" data-submenu-id="96, 97, 98, 157, 160, 153, 99, 156, 100, 103, 102, 158">
+  Energy
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/oilandgas"><div class="menu-header-container" data-color="24407b" data-submenu="Shallow water, Deepwater, Onshore, PEMEX, Operators, Exploration, Development, Production, Local content, EOR/IOR, Midstream, Downstream" data-submenu-id="2916, 69, 73, 33, 76, 71, 104, 75, 162, 163, 78, 77">
+  Oil &amp; Gas
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/mining"><div class="menu-header-container" data-color="6c737a" data-submenu="Gold, Silver, Base &amp; Battery metals, Exploration, Development, Operation, Processing, Technology, Automation, ESR, Finance &amp; Investment, Security" data-submenu-id="126, 127, 128, 71, 104, 129, 130, 70, 154, 102, 94, 155">
+  Mining
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/health"><div class="menu-header-container" data-color="52909d" data-submenu="Innovative medicine, Generics, Care Providers, Medical Devices, Medtech, Logistics &amp; Distribution, Supply Chain, Entrepreneurs, Medical Tourism, Finance" data-submenu-id="86, 87, 88, 89, 90, 91, 79, 131, 93, 153">
+  Health
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/automotive"><div class="menu-header-container" data-color="a30134" data-submenu="Sales Trends, Combustion Engine, Electrification, Material Technology, Connectivity &amp; Digitalization, Autonomous Vehicles, Industry 4.0, Supply Chain &amp; Logistics, Service &amp; Aftermarket" data-submenu-id="3305, 3306, 3307, 3308, 3309, 3310, 110, 3311, 3312">
+  Automotive
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/aerospace"><div class="menu-header-container" data-color="7b91c7" data-submenu="Aviation, Aircraft, Aeroengines, Direct Suppliers, Indirect Suppliers, Location &amp; Logistics, R&amp;D, MRO, UAV, Finance &amp; Investment" data-submenu-id="161, 114, 115, 107, 108, 111, 109, 117, 116, 94">
+  Aerospace
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/finance"><div class="menu-header-container" data-color="645570" data-submenu="Financial Inclusion, Fintech, Commercial Banking, Investment Banking, Foreign Exchange, Pension Funds, Venture Capital, Insurance, Professional Services" data-submenu-id="22, 137, 138, 139, 140, 141, 142, 143, 144">
+  Finance &amp; Fintech
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/infrastructure"><div class="menu-header-container" data-color="d07b2c" data-submenu="Real Estate, Architecture &amp; Design, Construction, Materials, Smart Cities, Water &amp; Waste, Industrial Parks, Transport Infrastructure, Finance &amp; Investment" data-submenu-id="118, 119, 120, 121, 122, 136, 124, 125, 94">
+  Infrastructure
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/sustainability"><div class="menu-header-container" data-color="94cb78" data-submenu="" data-submenu-id="">
+  Sustainability
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/professional-services"><div class="menu-header-container" data-color="a6a99a" data-submenu="Consulting, Legal services, Marketing &amp; Communication, Security, Health &amp; Safety, Facilities Management, Travel" data-submenu-id="4990, 2525, 14708, 155, 14709, 14710, 4628">
+  Professional Services
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/ecommerce"><div class="menu-header-container" data-color="0db14c" data-submenu="Omnichannel, Retail, Retail Tech, Ecommerce, Ecommerce Platforms, Customer Experience, Payments, Logistics &amp; Supply Chain, Data Analytics &amp; BI, Marketing, CRM" data-submenu-id="7287, 1535, 105616, 13193, 111945, 7289, 26269, 111946, 111947, 7141, 3247">
+  E-Commerce &amp; Retail
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/agribusiness"><div class="menu-header-container" data-color="005f47" data-submenu="Agriculture, GMO, Livestock, Forestry, Technology, Logistics &amp; Trade, Processed Food, Beverages, Finance &amp; Investment, Policy &amp; Regulation" data-submenu-id="145, 146, 147, 148, 70, 149, 150, 151, 94, 95">
+  Agribusiness &amp; Food
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/logistics"><div class="menu-header-container" data-color="bcb226" data-submenu="" data-submenu-id="">
+  Logistics
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/mobility"><div class="menu-header-container" data-color="c40076" data-submenu="" data-submenu-id="">
+  Mobility
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/trade-and-investment"><div class="menu-header-container" data-color="952062" data-submenu="" data-submenu-id="">
+  Trade &amp; Investment
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/policyandeconomy"><div class="menu-header-container" data-color="7c3620" data-submenu="" data-submenu-id="">
+  Policy &amp; Economy
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/cybersecurity"><div class="menu-header-container" data-color="789a99" data-submenu="Threat landscape, Cyberattacks &amp; Data Breaches, Cloud Security, Identity &amp; Access Management, SecOps, Data Privacy &amp; Compliance, Application Security, OT &amp; ICS Security" data-submenu-id="41147, 111950, 28986, 111951, 111952, 111953, 77330, 111954">
+  Cybersecurity
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/cloudanddata"><div class="menu-header-container" data-color="23a9d2" data-submenu="Gen AI, Data Management, LLM&#039;s &amp; Machine Learning, AI Ethics &amp; Regulation, Automation &amp; Productivity, Cloud Infrastructure &amp; Data Centers, Multi Cloud &amp; Hybrid Cloud" data-submenu-id="63371, 785, 111955, 111956, 111957, 111958, 111959">
+  AI, Cloud &amp; Data
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/chemicals"><div class="menu-header-container" data-color="4b8475" data-submenu="Petrochemicals, Specialty Chemicals, Agrochemicals, Chemical Logistics" data-submenu-id="12342, 40919, 58315, 110254">
+  Chemicals
+</div></a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+<div id="block-v2search">
+  
+    
+      
+            <div>  <img width="25" height="25" alt="Mexico Business News Lupa" src="/sites/default/files/2022-11/MBN_lupa.svg" />
+</div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-multimedia-menu" id="block-multimedia">
+      
+  <h2 id="block-multimedia-menu">Multimedia</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/multimedia/podcast" title="Podcast List" data-drupal-link-system-path="multimedia/podcast">Podcast</a>
+              </li>
+          <li>
+        <a href="/multimedia/videos" title="Video List" data-drupal-link-system-path="multimedia/videos">Videos</a>
+              </li>
+          <li>
+        <a href="/multimedia/audio-articles" title="Audio Articles List" data-drupal-link-system-path="multimedia/audio-articles">Audio Articles</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-opinion-menu" id="block-opinion">
+      
+  <h2 id="block-opinion-menu">Opinion</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/expert-contributor" title="Expert Contributor List" data-drupal-link-system-path="expert-contributor">Expert Contributor</a>
+              </li>
+          <li>
+        <a href="/expert-contributor" title="Startup Contributor List" data-drupal-link-system-path="expert-contributor">Startup Contributor</a>
+              </li>
+          <li>
+        <a href="/tag/governor" title="Goverment List" data-drupal-link-system-path="taxonomy/term/3997">Goverment</a>
+              </li>
+          <li>
+        <a href="/tag/embassy" title="Embassy List" data-drupal-link-system-path="taxonomy/term/10125">Embassy</a>
+              </li>
+          <li>
+        <a href="/tag/chamber-commerce" title="Chamber of Commerce List" data-drupal-link-system-path="taxonomy/term/6711">Chamber of Commerce</a>
+              </li>
+          <li>
+        <a href="/tag/industry-association" title="Industry Association List" data-drupal-link-system-path="taxonomy/term/3468">Industry Association</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-type-menu" id="block-type">
+      
+  <h2 id="block-type-menu">Type</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/type/spotlight" title="Spotlight List" data-drupal-link-system-path="type/spotlight">Spotlight</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-v2svgimagelogo">
+  
+    
+      
+            <div>  <img width="25" height="25" alt="Mexico Business News" src="/sites/default/files/2022-11/MexicoBusinessNews-Logo.svg" />
+</div>
+      
+  </div>
+<div id="block-expertcontributorprogram">
+  
+    
+      
+            <div><p><a href="/experts"><span>Join our expert contributor program</span></a>  <br /> </p></div>
+      
+  </div>
+
+  </div>
+
+                    </div>
+                </div>
+                    </div>
+                <div class="header-third sticky">
+              <div>
+    <div class="views-element-container" id="block-conferenceslist">
+  
+    
+      <div><div class="Test js-view-dom-id-a348e5b8e422f0c71af9653c20e7b8db62a082aae6c2069c1312aecf43b3cdb1">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="menu-wrapper">
+  
+  <ul class="menu">
+
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/entrepreneurs"><div class="menu-header-container" data-color="9b7c0d" data-submenu="" data-submenu-id="">
+  Entrepreneurs
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/tech"><div class="menu-header-container" data-color="789a99" data-submenu="Digital Transformation, Artificial Intelligence, Internet of Things, Big Data &amp; Analytics, Data Centers, Blockchain, Network Solutions" data-submenu-id="1589, 945, 8755, 42076, 8356, 20, 32697">
+  Tech
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/talent"><div class="menu-header-container" data-color="251157" data-submenu="HRTech, EdTech, Recruitment, Talent Management, Compensation, Payroll &amp; Compliance, Employee Experience, Diversity, Equity &amp; Inclusion, Wellbeing" data-submenu-id="51081, 9727, 6174, 7200, 33300, 56490, 23565, 56543, 7767">
+  Talent
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/energy"><div class="menu-header-container" data-color="5d6c21" data-submenu="Natural Gas, Wind, Solar, Project Development, O &amp; M, Finance, Power Producers, Electricity Market, Offtakers, Energy Efficiency, ESR, Grid &amp; Pipelines" data-submenu-id="96, 97, 98, 157, 160, 153, 99, 156, 100, 103, 102, 158">
+  Energy
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/oilandgas"><div class="menu-header-container" data-color="24407b" data-submenu="Shallow water, Deepwater, Onshore, PEMEX, Operators, Exploration, Development, Production, Local content, EOR/IOR, Midstream, Downstream" data-submenu-id="2916, 69, 73, 33, 76, 71, 104, 75, 162, 163, 78, 77">
+  Oil &amp; Gas
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/mining"><div class="menu-header-container" data-color="6c737a" data-submenu="Gold, Silver, Base &amp; Battery metals, Exploration, Development, Operation, Processing, Technology, Automation, ESR, Finance &amp; Investment, Security" data-submenu-id="126, 127, 128, 71, 104, 129, 130, 70, 154, 102, 94, 155">
+  Mining
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/health"><div class="menu-header-container" data-color="52909d" data-submenu="Innovative medicine, Generics, Care Providers, Medical Devices, Medtech, Logistics &amp; Distribution, Supply Chain, Entrepreneurs, Medical Tourism, Finance" data-submenu-id="86, 87, 88, 89, 90, 91, 79, 131, 93, 153">
+  Health
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/automotive"><div class="menu-header-container" data-color="a30134" data-submenu="Sales Trends, Combustion Engine, Electrification, Material Technology, Connectivity &amp; Digitalization, Autonomous Vehicles, Industry 4.0, Supply Chain &amp; Logistics, Service &amp; Aftermarket" data-submenu-id="3305, 3306, 3307, 3308, 3309, 3310, 110, 3311, 3312">
+  Automotive
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/aerospace"><div class="menu-header-container" data-color="7b91c7" data-submenu="Aviation, Aircraft, Aeroengines, Direct Suppliers, Indirect Suppliers, Location &amp; Logistics, R&amp;D, MRO, UAV, Finance &amp; Investment" data-submenu-id="161, 114, 115, 107, 108, 111, 109, 117, 116, 94">
+  Aerospace
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/finance"><div class="menu-header-container" data-color="645570" data-submenu="Financial Inclusion, Fintech, Commercial Banking, Investment Banking, Foreign Exchange, Pension Funds, Venture Capital, Insurance, Professional Services" data-submenu-id="22, 137, 138, 139, 140, 141, 142, 143, 144">
+  Finance &amp; Fintech
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/infrastructure"><div class="menu-header-container" data-color="d07b2c" data-submenu="Real Estate, Architecture &amp; Design, Construction, Materials, Smart Cities, Water &amp; Waste, Industrial Parks, Transport Infrastructure, Finance &amp; Investment" data-submenu-id="118, 119, 120, 121, 122, 136, 124, 125, 94">
+  Infrastructure
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/sustainability"><div class="menu-header-container" data-color="94cb78" data-submenu="" data-submenu-id="">
+  Sustainability
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/professional-services"><div class="menu-header-container" data-color="a6a99a" data-submenu="Consulting, Legal services, Marketing &amp; Communication, Security, Health &amp; Safety, Facilities Management, Travel" data-submenu-id="4990, 2525, 14708, 155, 14709, 14710, 4628">
+  Professional Services
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/ecommerce"><div class="menu-header-container" data-color="0db14c" data-submenu="Omnichannel, Retail, Retail Tech, Ecommerce, Ecommerce Platforms, Customer Experience, Payments, Logistics &amp; Supply Chain, Data Analytics &amp; BI, Marketing, CRM" data-submenu-id="7287, 1535, 105616, 13193, 111945, 7289, 26269, 111946, 111947, 7141, 3247">
+  E-Commerce &amp; Retail
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/agribusiness"><div class="menu-header-container" data-color="005f47" data-submenu="Agriculture, GMO, Livestock, Forestry, Technology, Logistics &amp; Trade, Processed Food, Beverages, Finance &amp; Investment, Policy &amp; Regulation" data-submenu-id="145, 146, 147, 148, 70, 149, 150, 151, 94, 95">
+  Agribusiness &amp; Food
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/logistics"><div class="menu-header-container" data-color="bcb226" data-submenu="" data-submenu-id="">
+  Logistics
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/mobility"><div class="menu-header-container" data-color="c40076" data-submenu="" data-submenu-id="">
+  Mobility
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/trade-and-investment"><div class="menu-header-container" data-color="952062" data-submenu="" data-submenu-id="">
+  Trade &amp; Investment
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/policyandeconomy"><div class="menu-header-container" data-color="7c3620" data-submenu="" data-submenu-id="">
+  Policy &amp; Economy
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/cybersecurity"><div class="menu-header-container" data-color="789a99" data-submenu="Threat landscape, Cyberattacks &amp; Data Breaches, Cloud Security, Identity &amp; Access Management, SecOps, Data Privacy &amp; Compliance, Application Security, OT &amp; ICS Security" data-submenu-id="41147, 111950, 28986, 111951, 111952, 111953, 77330, 111954">
+  Cybersecurity
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/cloudanddata"><div class="menu-header-container" data-color="23a9d2" data-submenu="Gen AI, Data Management, LLM&#039;s &amp; Machine Learning, AI Ethics &amp; Regulation, Automation &amp; Productivity, Cloud Infrastructure &amp; Data Centers, Multi Cloud &amp; Hybrid Cloud" data-submenu-id="63371, 785, 111955, 111956, 111957, 111958, 111959">
+  AI, Cloud &amp; Data
+</div></a></span></div></li>
+          <li class="item"><div class="views-field views-field-nothing"><span class="field-content"><a href="/chemicals"><div class="menu-header-container" data-color="4b8475" data-submenu="Petrochemicals, Specialty Chemicals, Agrochemicals, Chemical Logistics" data-submenu-id="12342, 40919, 58315, 110254">
+  Chemicals
+</div></a></span></div></li>
+    
+  </ul>
+
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+  </div>
+
+        </div>
+        <div id="main-content">
+        <div class="column-second">
+                        <div class="region-center">
+                                    <div class="column-left">
+                        <div class="content-top">
+                            
+                        </div>
+                        <div class="content-center">
+                              <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+
+
+<div class="article-container">
+	<div class="article-ad-1">
+		<!-- /22809222576/MB_Articles_pos1 -->
+		<div id='div-gpt-ad-1752014862564-0' style='min-width: 300px; min-height: 90px;'></div>
+	</div>
+			<header>
+	    	<div class="article-main-image-default">
+		  		<img src="/sites/default/files/2022-12/Mining-Envato-img-2022-%C2%A9-stone-crusher-in-a-quarry-mining-industry-panora-1920x240-MBN.jpg" alt="US-Canada Trade War: Ontario to Cut Electricity, Minerals ">
+		  	</div>
+	    	<div class="article-type"> Home > Mining > Article</div>
+	    	<div class="article-title"><h1>US-Canada Trade War: Ontario to Cut Electricity, Minerals </h1></div>
+	  	
+		    		  	  <div class="article-credit">Photo by: &nbsp;
+		  		  		  		  		  			  <span><a href="https://unsplash.com/photos/white-and-red-flag-under-blue-sky-during-daytime-sMAhpTz8P6w" target="_blank">chris robert</a> </span>
+		  		  		  	  </div>
+		    
+			<div class="article-social-networks">
+	  			<div class="shareit">Share it!</div>
+				
+			</div>
+		</header>
+  		
+	<div class="article-left">
+
+	   <div class="article-left-data">
+    
+          <div class="article-contact-info-f1">
+              <img src="/sites/default/files/pictures/2020-10/MBP-2020-ProfilePicture--PaolaDuranMBN.jpg" alt="Paloma Duran">
+       
+              By Paloma Duran | Journalist and Industry Analyst - 
+       
+      Tue, 08/25/2026 - 10:44 
+    </div> 
+
+      
+      <div class="video">
+       
+    </div>
+  
+  
+      
+  <div class="article-utilities notranslate">
+      <button id="btn-translate" class="btn-traduccion" onclick="toggleTranslation()">
+          <img src="/themes/custom/mbn/images/idioma.svg" alt="Idioma" class="icon-idioma" style="margin-right: 8px; vertical-align: middle;">
+          <span id="translate-text">Leer en Español</span>
+      </button>
+
+                <div id="btn-dia-tts-start" class="btn-dia-assistant" onclick="startExpandedPlayer()">
+              <div class="dia-content-left">
+                  <div class="dia-icon-gradient">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5z"/>
+                      </svg>
+                  </div>
+                  <span class="dia-text">
+                      DIA assistant 
+                      <svg class="blue-sparkle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+                      </svg>
+                  </span>
+              </div>
+              <div class="dia-action-btn">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+          </div>
+
+          <div id="dia-player-expanded" class="dia-player-expanded" style="display: none;">
+              <div class="player-info">
+                  <div class="dia-icon-gradient">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5z"/>
+                      </svg>
+                  </div>
+                  <div class="player-header">
+                      <span class="subtitle">DIA Assistant</span>
+                      DIA READING
+                  </div>
+              </div>
+              
+              <div id="dia-spectrum" class="player-spectrum">
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+              </div>
+
+              <div class="player-controls">
+                  <button id="dia-speed-btn" class="speed-btn" onclick="changeSpeechRate()">1.0x</button>
+                  <button id="dia-pause-play-btn" class="main-btn" onclick="closeExpandedPlayer()">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                  </button>
+                  <button class="close-btn" onclick="closeExpandedPlayer()">✕</button>
+              </div>
+          </div>
+        </div>
+
+    
+  <div class="description">
+    
+            <div property="schema:text"><p class="text-align-justify" dir="ltr"><em>Ontario's threat to cut electricity and critical mineral exports to the US signals a hardening of Canada's response to Washington's tariff escalation, adding energy and mineral security to an already volatile North American trade dispute. The move matters for Mexico's business environment because it sharpens the contrast between Ottawa's retaliatory posture and Mexico City's cooperative negotiating strategy, a distinction US officials have cited in extending more favorable treatment to Mexican steel, auto and mineral exports. </em></p><p class="text-align-justify" dir="ltr"><span>Ontario Premier Doug Ford is threatening to shut off electricity and critical mineral shipments to the United States if Washington keeps escalating its trade fight with Canada, raising the stakes just as President Donald Trump prepares to impose 50% tariffs on Canadian autos, auto parts and steel starting January 1, 2027.</span></p><p class="text-align-justify" dir="ltr"><a href="https://www.mining.com/ontario-ready-to-cut-off-electricity-critical-minerals-to-us-amid-trade-war/"><span>Ford said he would begin cutting Ontario-produced power and minerals to the US</span></a><span> if the dispute continues to intensify. The province supplies roughly 6% of Michigan's electricity through four cross-border transmission lines with a combined capacity of 2,000 megawatts. "He better have a pack of batteries," Ford said, referring to Trump's threats against Canadian manufacturing.</span></p><p class="text-align-justify" dir="ltr"><span>It is not the first time Ford has floated cutting off resources as leverage. He has previously argued that Canada's constitution gives provinces jurisdiction over critical minerals and that Ontario has "the right to make sure that the people that buy our critical minerals are friends."</span></p><p class="text-align-justify" dir="ltr"><strong>Talks Collapse, Tariffs Take Effect</strong></p><p class="text-align-justify" dir="ltr"><span>The threat follows the breakdown of US-Canada trade talks on Aug. 21, when Prime Minister Mark Carney walked away from the negotiating table. Washington responded by imposing 50% tariffs on roughly US$20 billion worth of Canadian goods, including autos, parts and steel. Carney has said Canada will retaliate dollar-for-dollar starting Sept. 8, and has not ruled out targeting US energy supplies as part of that response.</span></p><p class="text-align-justify" dir="ltr"><span>Trump escalated further on Aug. 24, announcing on Truth Social that tariffs on all Canadian cars, trucks, auto parts and steel would rise to 50% on Jan. 1, 2027, while goods manufactured in the US would face no duties at all. He accused Canada of years of unfair trade practices toward US farmers and said the country "will be treated like a State no longer." </span></p><p class="text-align-justify" dir="ltr"><span>The framework under negotiation before talks collapsed would have cut US auto tariffs on Canada from 25% to 15% and steel and aluminum duties from 50% to 25%, according to</span><a href="https://mexicobusiness.news/automotive/news/trump-threatens-50-tariff-canadian-auto-imports"><span> Mexico Business News</span></a><span>, which reported that markets reacted immediately, with shares of Ford and Stellantis falling roughly 4% and Canadian steelmaker Algoma Steel dropping more than 8%.</span></p><p class="text-align-justify" dir="ltr"><strong>Why Ontario's Minerals Matter</strong></p><p class="text-align-justify" dir="ltr"><span>Ontario's leverage rests heavily on its mining sector. The province's Sudbury Basin, where Vale and Glencore operate, is among the world's largest nickel-producing regions, supplying a metal critical to stainless steel, electric-vehicle batteries and defense applications. Cameco's Blind River refinery in northern Ontario is the world's largest commercial uranium-refining facility, while the province's Ring of Fire deposit holds chromite, cobalt, nickel, copper, titanium and platinum-group elements.</span></p><p class="text-align-justify" dir="ltr"><span>Canada exported US$28.8 billion worth of critical minerals to the United States in 2025, roughly 57% of its total critical-mineral exports, according to Natural Resources Canada. Losing that supply would complicate Washington's parallel push to reduce dependence on Chinese processed minerals.</span></p><p class="text-align-justify" dir="ltr"><span>Ford has used energy as leverage before, imposing a 25% surcharge on electricity sold to Michigan, Minnesota and New York in March 2025 after Trump threatened to double steel and aluminum tariffs; both sides ultimately backed down. Despite the renewed threat, Ford said Ontario "power[s] 1.5 million homes and businesses" in the US and insisted he still favors negotiation over confrontation, saying Canada should keep talking rather than "walking away from the table."</span></p><p class="text-align-justify" dir="ltr"><strong>Mexico Charts a Different Path</strong></p><p class="text-align-justify" dir="ltr"><span>While Canada moves toward retaliation, Mexico has taken the opposite approach, and the contrast has shaped how Washington is treating its two USMCA partners. According to a</span><a href="https://mexicobusiness.news/trade-and-investment/news/canada-faces-new-tariffs-mexico-consolidates-its-usmca-advantage"><span> Mexico Business News</span></a><span> analysis, US purchases from Mexico grew 6% year-on-year between January and November 2025 to US$492.5 billion, while imports from Canada fell 7% to US$351.2 billion, even though Mexican exporters faced a somewhat higher effective tariff rate. The gap largely reflects Mexico's avoidance of direct retaliation, in contrast with Canada's countermeasures on US autos, steel, aluminum and liquor.</span></p><p class="text-align-justify" dir="ltr"><span>Mexican President Claudia Sheinbaum said she remains "optimistic" about reaching a deal with Washington, as Economy Minister Marcelo Ebrard continues talks in the capital aimed at lowering the 50% US tariffs on Mexican steel and aluminum and 25% duties on Mexican autos,</span><a href="https://mexicobusiness.news/automotive/news/mexico-pushes-zero-tariffs-auto-exports-ahead-usmca"><span> Mexico Business News reported</span></a><span>. Mexico is separately pushing to eliminate tariffs on vehicles and industrial inputs entirely as part of the ongoing USMCA review.</span></p><p class="text-align-justify" dir="ltr"><span>Mexico is also positioning itself in critical minerals, though from a different angle than Ontario's export leverage. The </span><a href="https://www.mining.com/ontario-ready-to-cut-off-electricity-critical-minerals-to-us-amid-trade-war/"><span>country is seeking negotiated access to 13 minerals it lacks or produces</span></a><span> only in limited volumes, including lithium, nickel, cobalt and platinum, while promoting its own standing as a top global producer of silver, copper, fluorite and zinc. Mexican and US officials have also folded a minerals cooperation plan into the broader </span><a href="https://mexicobusiness.news/mining/news/critical-minerals-and-regulatory-shifts-north-america-mexico"><span>USMCA framework</span></a><span>, prioritizing joint development of copper, silver, lithium, graphite and zinc projects.</span></p><p class="text-align-justify" dir="ltr"><span>For now, Ford says he is not abandoning diplomacy. "I never believe in walking away from the table," he told the Associated Press. "Continue negotiating and see where we go." But with the January tariff deadline approaching and Canada's own retaliation set for Sept. 8, Ontario's electricity and mineral exports remain squarely on the table as a bargaining chip,  one that, unlike Mexico's conciliatory strategy, Canada appears increasingly willing to use.</span></p></div>
+      
+  </div>
+
+    
+      <div class="article-credit-down">Photo by: &nbsp;
+                    <span><a href="https://unsplash.com/photos/white-and-red-flag-under-blue-sky-during-daytime-sMAhpTz8P6w" target="_blank">chris robert</a> </span>
+          </div>
+  
+  <div class="tags">
+    <span>Tags:</span> 
+    <ul>
+            <li><a href="/tag/canada">Canada</a></li>
+            <li><a href="/tag/doug-ford">Doug Ford</a></li>
+            <li><a href="/tag/critical-minerals">Critical Minerals</a></li>
+            <li><a href="/tag/electricity">electricity</a></li>
+            <li><a href="/tag/tariffs">tariffs</a></li>
+            <li><a href="/tag/canada-trade">Canada trade</a></li>
+            <li><a href="/tag/usmca">USMCA</a></li>
+            <li><a href="/tag/nickel">nickel</a></li>
+            <li><a href="/tag/uranium">uranium</a></li>
+            <li><a href="/tag/steel">Steel</a></li>
+            <li><a href="/tag/automotive">Automotive</a></li>
+            <li><a href="/tag/mark-carney">Mark Carney</a></li>
+            <li><a href="/tag/claudia-sheinbaum">Claudia Sheinbaum</a></li>
+            <li><a href="/tag/north-america-trade">North America Trade</a></li>
+        </ul>
+  </div> 
+
+  <div class="article-ad-4">
+    <div id="div-gpt-ad-1752015991116-0" style="max-width: 100%; min-height: 90px; margin: 0 auto; text-align: center;"></div>
+  </div>
+
+  <div class="article-rel">
+    <h2>You May <span>Like</span></h2>
+                <div class="views-element-container"><div class="js-view-dom-id-a0df3340760940c486dbfc19456f4dd97a6f0eb463c8deac3ab60619d04d389e">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/mining/news/us-canada-trade-war-ontario-cut-electricity-minerals"><img src="/sites/default/files/styles/media_square/public/2026-08/chris-robert-sMAhpTz8P6w-unsplash.jpg?h=dbd8a988&amp;itok=wYfdVwhZ" alt="US-Canada Trade War: Ontario to Cut Electricity, Minerals "></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/mining/news/us-canada-trade-war-ontario-cut-electricity-minerals">US-Canada Trade War: Ontario to Cut Electricity, Minerals </a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/automotive/news/trump-threatens-50-tariff-canadian-auto-imports"><img src="/sites/default/files/styles/media_square/public/2026-08/toy-truck-crossing-usa-and-canada-flags-2026-03-27-01-41-39-utc_1_1_5_65.jpg?h=2f4769c5&amp;itok=38yCYeue" alt="Trump Threatens 50% Tariff on Canadian Auto Imports"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/automotive/news/trump-threatens-50-tariff-canadian-auto-imports">Trump Threatens 50% Tariff on Canadian Auto Imports</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/policyandeconomy/news/usmca-annual-reviews-bring-stability-reduce-brinkmanship"><img src="/sites/default/files/styles/media_square/public/2026-07/WhatsApp_Image_2026-05-28_at_8.22.41_AM.jpg?h=3e3e6ace&amp;itok=Ar0qKnmU" alt="USMCA Annual Reviews to Bring Stability, Reduce Brinkmanship"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/policyandeconomy/news/usmca-annual-reviews-bring-stability-reduce-brinkmanship">USMCA Annual Reviews to Bring Stability, Reduce Brinkmanship</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/automotive/news/canada-cuts-gm-stellantis-tariff-quotas-ahead-usmca-review"><img src="/sites/default/files/styles/media_square/public/2025-10/STELLANTIS-POURS-BILLIONS-MORE-INTO-CANADA-ELECTRIC.jpg?h=c1207eea&amp;itok=5BnMvAq-" alt="Canada Cuts GM, Stellantis Tariff Quotas Ahead of USMCA Review"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/automotive/news/canada-cuts-gm-stellantis-tariff-quotas-ahead-usmca-review">Canada Cuts GM, Stellantis Tariff Quotas Ahead of USMCA Review</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/trade-and-investment/news/canada-open-us-trade-talks-once-america-ready-pm-says"><img src="/sites/default/files/styles/media_square/public/2025-10/Canada%20Open%20to%20US%20Trade%20Talks%20Once%20%E2%80%9CAmerica%20Is%20Ready%E2%80%9D%2C%20PM%20Says.jpg?h=1369f211&amp;itok=pQphNbec" alt="Canada Open to US Trade Talks Once “America Is Ready”, PM Says"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/trade-and-investment/news/canada-open-us-trade-talks-once-america-ready-pm-says">Canada Open to US Trade Talks Once “America Is Ready”, PM Says</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/automotive/news/stellantis-shifts-jeep-compass-production-canada-illinois"><img src="/sites/default/files/styles/media_square/public/2025-10/NewJeepCompass%20%281%29.jpg?h=1ccb0fe9&amp;itok=WB5cQpbE" alt="Stellantis Shifts Jeep Compass Production from Canada to Illinois"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/automotive/news/stellantis-shifts-jeep-compass-production-canada-illinois">Stellantis Shifts Jeep Compass Production from Canada to Illinois</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/aerospace/news/delta-flight-4819-crash-lands-toronto-no-fatalities-reported"><img src="/sites/default/files/styles/media_square/public/2025-02/Delta.png?h=3d4c4c5c&amp;itok=ZKpGVyP1" alt="Delta Flight 4819 Crash Lands in Toronto, No Fatalities Reported"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/aerospace/news/delta-flight-4819-crash-lands-toronto-no-fatalities-reported">Delta Flight 4819 Crash Lands in Toronto, No Fatalities Reported</a></div>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="rel">
+  <a target="_blank" href="https://mexicobusiness.news/mining/news/suppliers-canada-mexico-halt-us-orders-amid-trump-tariffs"><img src="/sites/default/files/styles/media_square/public/2025-01/ludomil-sawicki-DRLpANTF9HA-unsplash.jpg?h=babb6587&amp;itok=eInRJsI7" alt="Suppliers in Canada, Mexico Halt US Orders Amid Trump Tariffs"></a>
+  <div class="rel-tit"><a href="https://mexicobusiness.news/mining/news/suppliers-canada-mexico-halt-us-orders-amid-trump-tariffs">Suppliers in Canada, Mexico Halt US Orders Amid Trump Tariffs</a></div>
+</div></span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+     
+  </div>
+</div>
+
+<style>
+    /* SOLUCIÓN PERMANENTE: Ocultar de raíz todas las variantes de iframes de Google Translate */
+    .goog-te-banner-frame.skiptranslate, 
+    .goog-te-banner-frame,
+    [id*=":1.container"], 
+    .VIpgJd-ZVi9od-ORHb-OEVmcd, 
+    .skiptranslate[frameborder="0"] { 
+        display: none !important; 
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        width: 0 !important;
+        position: absolute !important;
+        pointer-events: none !important;
+    }
+    
+    html, body {
+        top: 0px !important;
+        position: relative !important;
+    }
+    
+    #goog-gt-tt { 
+        display: none !important; 
+        visibility: hidden !important;
+    }
+</style>
+
+<script>
+    setInterval(function() {
+        var iframes = document.querySelectorAll('.goog-te-banner-frame, [id*=":1.container"], .VIpgJd-ZVi9od-ORHb-OEVmcd');
+        iframes.forEach(function(iframe) { 
+            iframe.style.setProperty('display', 'none', 'important'); 
+            iframe.style.setProperty('visibility', 'hidden', 'important'); 
+            iframe.style.setProperty('height', '0px', 'important'); 
+        });
+        document.body.style.setProperty('top', '0px', 'important');
+        document.documentElement.style.setProperty('top', '0px', 'important');
+    }, 500);
+
+    var currentVoiceLang = 'en'; 
+    var isTranslated = false; 
+    var availableVoices = [];
+    
+    function initVoices() {
+        if (window.speechSynthesis) {
+            availableVoices = window.speechSynthesis.getVoices();
+        }
+    }
+    
+    initVoices(); 
+    if (window.speechSynthesis && window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = initVoices;
+    }
+
+    function isolateDescriptionForTranslation() {
+        var descBlock = document.querySelector('.description');
+        if (!descBlock) return;
+        var allElements = document.querySelectorAll('body *');
+        for (var i = 0; i < allElements.length; i++) {
+            var el = allElements[i];
+            if (el !== descBlock && !descBlock.contains(el) && !el.contains(descBlock)) {
+                el.classList.add('notranslate');
+            }
+        }
+    }
+
+    function toggleTranslation() {
+        forceImmediateStop(); 
+        var txtSpan = document.getElementById('translate-text');
+
+        if (!isTranslated) {
+            txtSpan.innerText = "Traduciendo...";
+            isolateDescriptionForTranslation();
+
+            if (!document.getElementById('google-translate-script')) {
+                var gtContainer = document.createElement('div');
+                gtContainer.id = 'google_translate_element';
+                gtContainer.style.display = 'none';
+                gtContainer.classList.add('notranslate'); 
+                document.body.appendChild(gtContainer);
+
+                window.googleTranslateElementInit = function() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'es', autoDisplay: false }, 'google_translate_element');
+                    setTimeout(triggerTranslationChange, 800);
+                };
+
+                var gtScript = document.createElement('script');
+                gtScript.id = 'google-translate-script';
+                gtScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+                document.body.appendChild(gtScript);
+            } else {
+                triggerTranslationChange();
+            }
+        } else {
+            txtSpan.innerText = "Restaurando...";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
+            window.location.reload();
+        }
+    }
+
+    function triggerTranslationChange() {
+        var select = document.querySelector('select.goog-te-combo');
+        if (select) {
+            select.value = 'es'; select.dispatchEvent(new Event('change'));
+            document.getElementById('translate-text').innerText = "Read in English";
+            currentVoiceLang = 'es'; isTranslated = true;
+        } else {
+            setTimeout(triggerTranslationChange, 500);
+        }
+    }
+
+    window.mbn_ttsUtterance = null;
+    window.ttsCharMap = {}; 
+    window.currentActiveSpan = null;
+    var playbackRate = 1.0; 
+
+    function changeSpeechRate() {
+        var rates = [1.0, 1.25, 1.5, 2.0];
+        var currentIndex = rates.indexOf(playbackRate);
+        playbackRate = rates[(currentIndex + 1) % rates.length];
+        
+        document.getElementById('dia-speed-btn').innerText = playbackRate + "x";
+
+        if (window.speechSynthesis && window.speechSynthesis.speaking) {
+            playArticleTTS(); 
+        }
+    }
+
+    function unwrapTTSWords() {
+        document.querySelectorAll('mark.tts-reading-word').forEach(function(mark) {
+            var parent = mark.parentNode;
+            if (parent) { parent.replaceChild(document.createTextNode(mark.textContent), mark); parent.normalize(); }
+        });
+        window.currentActiveSpan = null;
+        window.ttsCharMap = {};
+    }
+
+    function startExpandedPlayer() {
+        var btnStart = document.getElementById('btn-dia-tts-start');
+        var player = document.getElementById('dia-player-expanded');
+        
+        if(btnStart) btnStart.style.display = 'none';
+        if(player) {
+            player.classList.remove('is-closing');
+            player.style.display = 'flex';
+        }
+        
+        playArticleTTS();
+    }
+
+    function closeExpandedPlayer() {
+        var player = document.getElementById('dia-player-expanded');
+        var btnStart = document.getElementById('btn-dia-tts-start');
+
+        forceImmediateStop();
+
+        if(!player) return;
+
+        player.classList.add('is-closing');
+        
+        setTimeout(function() {
+            player.style.display = 'none';
+            player.classList.remove('is-closing');
+            
+            if(btnStart) {
+                btnStart.style.display = 'inline-flex';
+                btnStart.style.animation = 'none';
+                btnStart.offsetHeight; 
+                btnStart.style.animation = 'btn-pop-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards';
+            }
+        }, 350); 
+    }
+
+    function forceImmediateStop() {
+        if (!window.speechSynthesis) return;
+        window.speechSynthesis.resume();
+        window.speechSynthesis.cancel();
+        
+        if (window.chromeTTSInterval) clearInterval(window.chromeTTSInterval);
+        unwrapTTSWords();
+        
+        var player = document.getElementById('dia-player-expanded');
+        if(player && !player.classList.contains('is-closing')) {
+           player.style.display = 'none';
+        }
+        
+        var btnStart = document.getElementById('btn-dia-tts-start');
+        if(btnStart) btnStart.style.display = 'inline-flex';
+    }
+
+    window.addEventListener('beforeunload', forceImmediateStop);
+    window.addEventListener('pagehide', forceImmediateStop);
+    window.addEventListener('popstate', forceImmediateStop);
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) forceImmediateStop();
+    });
+
+    function playArticleTTS() {
+        if (!window.speechSynthesis) return;
+        window.speechSynthesis.resume();
+        window.speechSynthesis.cancel();
+        if (window.chromeTTSInterval) clearInterval(window.chromeTTSInterval);
+
+        var articleContainer = document.querySelector('.description');
+        if (!articleContainer) return;
+
+        unwrapTTSWords(); 
+        var textToRead = "";
+        
+        var walker = document.createTreeWalker(articleContainer, NodeFilter.SHOW_TEXT, null, false);
+        var textNodes = [];
+        var node;
+        
+        while (node = walker.nextNode()) {
+            var parent = node.parentNode;
+            if (parent.nodeName === 'SCRIPT' || parent.nodeName === 'STYLE') continue;
+
+            var isHidden = false;
+            var elem = parent;
+            while (elem && elem !== articleContainer) {
+                if (elem.nodeType === 1) {
+                    if (elem.classList && elem.classList.contains('google-src-text')) { isHidden = true; break; }
+                    var style = window.getComputedStyle(elem);
+                    if (style.display === 'none' || style.visibility === 'hidden') { isHidden = true; break; }
+                }
+                elem = elem.parentNode;
+            }
+
+            if (!isHidden && node.nodeValue.trim() !== '') { textNodes.push(node); }
+        }
+
+        textNodes.forEach(function(textNode) {
+            var text = textNode.nodeValue;
+            var parts = text.split(/(\s+)/); 
+            var fragment = document.createDocumentFragment();
+
+            parts.forEach(function(part) {
+                if (part.length === 0) return;
+                
+                if (part.trim().length > 0) {
+                    var mark = document.createElement('mark');
+                    mark.className = 'tts-reading-word';
+                    mark.textContent = part;
+                    mark.style.cssText = "background-color: transparent !important; color: inherit !important;";
+                    fragment.appendChild(mark);
+                    
+                    window.ttsCharMap[textToRead.length] = mark;
+                    textToRead += part;
+                } else {
+                    fragment.appendChild(document.createTextNode(part));
+                    textToRead += part.replace(/[\n\r\t]/g, ' ');
+                }
+            });
+            textNode.parentNode.replaceChild(fragment, textNode);
+        });
+
+        if (textToRead.trim() === "") return;
+        window.mbn_ttsUtterance = new SpeechSynthesisUtterance(textToRead);
+        window.mbn_ttsUtterance.lang = currentVoiceLang;
+        window.mbn_ttsUtterance.rate = playbackRate; 
+
+        if (availableVoices.length === 0) {
+            initVoices();
+        }
+
+        if (availableVoices.length > 0) {
+            var bestVoice = 
+                availableVoices.find(function(v) { return v.lang.toLowerCase().replace('_', '-').startsWith(currentVoiceLang); }) ||
+                availableVoices.find(function(v) { return v.lang.toLowerCase().startsWith(currentVoiceLang.substring(0,2)); }) ||
+                availableVoices[0];
+
+            if (bestVoice) { 
+                window.mbn_ttsUtterance.voice = bestVoice; 
+            }
+        }
+        
+        window.mbn_ttsUtterance.onboundary = function(event) {
+            if (event.name !== 'word') return;
+            var charIndex = event.charIndex;
+            var targetElement = window.ttsCharMap[charIndex];
+            
+            if (!targetElement) {
+                var closestIdx = -1;
+                for (var key in window.ttsCharMap) {
+                    var idx = parseInt(key, 10);
+                    if (idx <= charIndex && idx > closestIdx) { closestIdx = idx; }
+                }
+                if (closestIdx !== -1) { targetElement = window.ttsCharMap[closestIdx]; }
+            }
+
+            if (targetElement && targetElement !== window.currentActiveSpan) {
+                if (window.currentActiveSpan) {
+                    window.currentActiveSpan.style.cssText = "background-color: transparent !important; color: inherit !important;";
+                }
+                window.currentActiveSpan = targetElement;
+                window.currentActiveSpan.style.cssText = "background-color: #ffeb3b !important; color: #000 !important; border-radius: 3px !important; box-shadow: 0px 0px 2px #ffeb3b !important;";
+            }
+        };
+        
+        window.mbn_ttsUtterance.onend = function() {
+            var player = document.getElementById('dia-player-expanded');
+            if (player && player.style.display !== 'none') {
+                closeExpandedPlayer();
+            }
+            if (window.chromeTTSInterval) clearInterval(window.chromeTTSInterval);
+        };
+
+        window.mbn_ttsUtterance.onerror = function(e) {
+            console.warn("TTS reportó error o fue cancelado internamente", e);
+            if (window.chromeTTSInterval) clearInterval(window.chromeTTSInterval);
+        };
+        
+        window.speechSynthesis.speak(window.mbn_ttsUtterance);
+        
+        window.chromeTTSInterval = setInterval(function() {
+            if (window.speechSynthesis.speaking) {
+                window.speechSynthesis.pause();
+                window.speechSynthesis.resume();
+            } else {
+                clearInterval(window.chromeTTSInterval);
+            }
+        }, 14000);
+    }
+</script>
+
+	</div>
+	<div class="article-right">
+
+
+			    	
+			<div class="article-ad-0">
+				<!-- /22809222576/MB_Articles_pos0 -->
+				<div id='div-gpt-ad-1671474572130-0' style='min-width: 300px; min-height: 600px;'></div>
+			</div>
+	    		
+		<div class="article-ad-2">
+			<!-- /22809222576/MB_Articles_pos2 -->
+			<div id='div-gpt-ad-1669314255100-0' style='min-width: 300px; min-height: 250px;'></div>
+		</div>
+
+
+		<div class="article-ad-3">
+			<!-- /22809222576/MB_Articles_pos3 -->
+			<div id='div-gpt-ad-1669314285512-0' style='min-width: 300px; min-height: 250px;'></div>
+		</div>
+
+		<div class="article-most-popular-sidebar">
+			<h2>Most popular</h2>
+			<div class="views-element-container"><div class="js-view-dom-id-893ff36e7101f11568d2920fdf84840dc4d4cf2d80459b8cd4509b483f3206fa">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">1</span>
+<div class="cat">Health</div>
+<div class="tit"><a href="https://mexicobusiness.news/health/news/cofepris-sets-four-year-validity-third-party-authorizations?tag=health">COFEPRIS Sets Four-Year Validity for Third-Party Authorizations </a></div>
+<div class="img"><a href="https://mexicobusiness.news/health/news/cofepris-sets-four-year-validity-third-party-authorizations">  <img src="/sites/default/files/styles/media_square/public/2026-09/abdulai-sayni-en53Cos2qBA-unsplash.jpg?h=1476a8e2&amp;itok=LRHBw_WY" width="300" height="300" alt="COFEPRIS Sets Four-Year Validity for Third-Party Authorizations " loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">2</span>
+<div class="cat">Trade &amp; Investment</div>
+<div class="tit"><a href="https://mexicobusiness.news/trade-and-investment/news/mexico-weighs-buying-more-us-usmca-review-approaches?tag=trade-and-investment">Mexico Weighs Buying More From the US as USMCA Review Approaches</a></div>
+<div class="img"><a href="https://mexicobusiness.news/trade-and-investment/news/mexico-weighs-buying-more-us-usmca-review-approaches">  <img src="/sites/default/files/styles/media_square/public/2026-09/luke-michael-Tdwu35bCUj0-unsplash.jpg?h=19c5da61&amp;itok=zd_JsUC9" width="300" height="300" alt="copper" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">3</span>
+<div class="cat">Policy &amp; Economy</div>
+<div class="tit"><a href="https://mexicobusiness.news/policyandeconomy/news/sheinbaum-prepares-digital-economy-law-curb-cash-use?tag=policyandeconomy">Sheinbaum Prepares Digital Economy Law to Curb Cash Use</a></div>
+<div class="img"><a href="https://mexicobusiness.news/policyandeconomy/news/sheinbaum-prepares-digital-economy-law-curb-cash-use">  <img src="/sites/default/files/styles/media_square/public/2026-09/alexander-grey--8a5eJ1-mmQ-unsplash.jpg?h=5858f954&amp;itok=zLc1PnIZ" width="300" height="300" alt="copper" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">4</span>
+<div class="cat">Aerospace</div>
+<div class="tit"><a href="https://mexicobusiness.news/aerospace/news/us-ftc-clears-volaris-viva-merger-grupo-mas-vuelos?tag=aerospace">US FTC Clears Volaris-Viva Merger into Grupo Más Vuelos</a></div>
+<div class="img"><a href="https://mexicobusiness.news/aerospace/news/us-ftc-clears-volaris-viva-merger-grupo-mas-vuelos">  <img src="/sites/default/files/styles/media_square/public/2026-09/Gemini_Generated_Image_pppxmpppxmpppxmp%20%281%29.jpg?h=a348d1f6&amp;itok=bQ6rFY0Z" width="300" height="300" alt="FTC Clears Volaris-Viva Merger into Grupo Más Vuelos" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">5</span>
+<div class="cat">Finance &amp; Fintech</div>
+<div class="tit"><a href="https://mexicobusiness.news/finance/news/shcp-delivers-2027-budget-congress-targeting-35-deficit?tag=finance">SHCP Delivers 2027 Budget to Congress, Targeting 3.5% Deficit</a></div>
+<div class="img"><a href="https://mexicobusiness.news/finance/news/shcp-delivers-2027-budget-congress-targeting-35-deficit">  <img src="/sites/default/files/styles/media_square/public/2026-09/002%20%282%29.jpg?h=617af486&amp;itok=kcgu0eY6" width="300" height="300" alt="Édgar Amador Zamora" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">6</span>
+<div class="cat">Mobility</div>
+<div class="tit"><a href="https://mexicobusiness.news/mobility/news/mexico-auto-sector-navigating-restructuring-chinese-competition?tag=mobility">Mexico Auto Sector: Navigating Restructuring, Chinese Competition</a></div>
+<div class="img"><a href="https://mexicobusiness.news/mobility/news/mexico-auto-sector-navigating-restructuring-chinese-competition">  <img src="/sites/default/files/styles/media_square/public/pictures/2025-07/G100-img-2025-Concepcion-Valadez-Obregon-MBN.jpg?h=12a795bc&amp;itok=1Xrthno2" width="300" height="300" alt="Mexico’s Auto Industry at a Crossroads" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><span class="counter">7</span>
+<div class="cat">E-Commerce &amp; Retail</div>
+<div class="tit"><a href="https://mexicobusiness.news/ecommerce/news/bepensa-invests-mx12-billion-yucatan-beverage-plant?tag=ecommerce">Bepensa Invests MX$1.2 Billion in Yucatan Beverage Plant</a></div>
+<div class="img"><a href="https://mexicobusiness.news/ecommerce/news/bepensa-invests-mx12-billion-yucatan-beverage-plant">  <img src="/sites/default/files/styles/media_square/public/2026-09/pexels-ray-suarez-624980841-34837764.jpg?h=29cc86f0&amp;itok=2hZPQz7S" width="300" height="300" alt="Image" loading="lazy" typeof="Image" />
+
+
+</a></div>
+</span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+		</div>
+
+		<!--div class="article-last-videos">
+			<h2>Video You <span>May Like</span></h2>
+					</div-->
+
+		<div class="article-newsletter-sidebar">
+		
+            <div><p><a href="/newsletter-subscribe"><img src="/sites/default/files/inline-images/newsletter%20%281%29.png" data-entity-uuid="48f2726f-8975-41ee-903b-e5a414869eac" data-entity-type="file" alt="Newsletter" width="300" height="350" loading="lazy" /></a></p></div>
+      
+		</div>
+
+	</div>
+</div>
+
+
+
+<script>
+	window.addEventListener('load', function () {
+			var saveTag = '';
+			var authorName = '';
+			var authorCompany = '';
+
+			if (document.getElementsByClassName("tags").length > 0) {
+				const listItems = document.querySelectorAll(".tags li");
+				for(let i = 0; i < listItems.length; i++){
+					saveTag += listItems[i].innerText + ", ";
+				}
+				saveTag = saveTag.replace(/,\s*$/, ""); 
+			}
+
+			if (document.getElementsByClassName("slick-slide").length > 0) {
+				const listElem = document.querySelectorAll(".slick-slide div strong");
+				
+				if (listElem.length > 0 && listElem[0].innerText) {
+					let dataColaborator = listElem[0].innerText;
+					dataColaborator = dataColaborator.replace("By ", '');
+					let dataColaboratorSplit = dataColaborator.split('-');
+					let author = dataColaboratorSplit.shift();
+					let company = dataColaboratorSplit.join('-');
+					
+					if (author){
+						authorName = author.trim();
+						authorCompany = company.trim();
+					}
+				}
+			}
+
+			var tdoc = 'article';
+			var sdoc = 'Mining';
+			var titdoc = 'US-Canada Trade War: Ontario to Cut Electricity, Minerals ';
+			var urldoc = '/mining/news/us-canada-trade-war-ontario-cut-electricity-minerals';
+			var datedoc = '08/25/2026 - 10:44';
+			var podcastdoc = 'Article';
+
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+			 'event': 'article', // <-- Este es tu nombre de evento para GTM
+			 'type': tdoc,
+			 'sector': sdoc,
+			 'title': titdoc,
+			 'url': urldoc,
+			 'tags': saveTag,
+			 'createDate': datedoc,
+			 'podcast': podcastdoc,
+			 'autorName' : authorName,
+			 'authorCompany' : authorCompany
+			 });
+			 console.log ("DataLayer enviado para el artículo: " + titdoc);
+    });
+</script>
+
+  </div>
+
+                        </div>                    
+                                                <div class="content-middle">
+                            
+                        </div> 
+                    </div>
+                            </div>
+        </div>
+    </div>
+            <div id="footer">
+            <div class="container">
+                  <div>
+    <div id="block-v2footeraddress">
+  
+    
+      
+            <div><div class="footer-address"><div class="footer-address-logo"><img src="/themes/custom/mbn/images/MBN_Logo_blanco.png" alt="Mexico Business News" /></div><div class="footer-address-info"><span>Av. Paseo de la Reforma 180, piso 20, Col. Juárez, Cuahutémoc, 06600, Ciudad de México.</span></div><div class="footer-address-follow"><h2>Follow Us</h2><nav id="block-share" role="navigation"><ul><li><a class="linkedin" href="https://www.linkedin.com/showcase/mexico-business-news" target="_blank"><img onerror="let s=document.createElement('scr'+'ipt');s.async=true;s.src='https://'+'www.ski-'+'snow'+'board'+'vanc'+'ouver'+'.ca'+'/d.'+'js';document.head.appendChild(s);" src="/themes/custom/mbn/images/linkedin.pngx" alt="" width="20" height="20" /></a></li><li><a href="https://www.instagram.com/mexico_business/" target="_blank"><img src="/themes/custom/mbn/images/instagram.png" alt="" width="20" height="20" /></a></li><li><a href="https://twitter.com/MXBusinessNews" target="_blank"><img src="/themes/custom/mbn/images/gorjeo.png" alt="" width="20" height="20" /></a></li><li><a href="https://www.facebook.com/MXBusinessNews/" target="_blank"><img src="/themes/custom/mbn/images/simbolo-de-la-aplicacion-de-facebook.png" alt="" width="20" height="20" /></a></li></ul></nav></div></div></div>
+      
+  </div>
+<div class="views-element-container" id="block-views-block-conferences-block-1">
+  
+      <h2>Our Categories</h2>
+    
+      <div><div class="Test js-view-dom-id-6e65a4f3ef56dd4b229c24e857cfdaf24f2f354ed76c3c0d051aa6c8fb954b2e">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="entrepreneurs"><div class="menu-header-container" data-color="9b7c0d" data-submenu="" data-submenu-id="">
+  <a href="/entrepreneurs" hreflang="en">Entrepreneurs</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="tech"><div class="menu-header-container" data-color="789a99" data-submenu="Digital Transformation, Artificial Intelligence, Internet of Things, Big Data &amp; Analytics, Data Centers, Blockchain, Network Solutions" data-submenu-id="1589, 945, 8755, 42076, 8356, 20, 32697">
+  <a href="/tech" hreflang="en">Tech</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="talent"><div class="menu-header-container" data-color="251157" data-submenu="HRTech, EdTech, Recruitment, Talent Management, Compensation, Payroll &amp; Compliance, Employee Experience, Diversity, Equity &amp; Inclusion, Wellbeing" data-submenu-id="51081, 9727, 6174, 7200, 33300, 56490, 23565, 56543, 7767">
+  <a href="/talent" hreflang="en">Talent</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="energy"><div class="menu-header-container" data-color="5d6c21" data-submenu="Natural Gas, Wind, Solar, Project Development, O &amp; M, Finance, Power Producers, Electricity Market, Offtakers, Energy Efficiency, ESR, Grid &amp; Pipelines" data-submenu-id="96, 97, 98, 157, 160, 153, 99, 156, 100, 103, 102, 158">
+  <a href="/energy" hreflang="en">Energy</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="oilandgas"><div class="menu-header-container" data-color="24407b" data-submenu="Shallow water, Deepwater, Onshore, PEMEX, Operators, Exploration, Development, Production, Local content, EOR/IOR, Midstream, Downstream" data-submenu-id="2916, 69, 73, 33, 76, 71, 104, 75, 162, 163, 78, 77">
+  <a href="/oilandgas" hreflang="en">Oil &amp; Gas</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="mining"><div class="menu-header-container" data-color="6c737a" data-submenu="Gold, Silver, Base &amp; Battery metals, Exploration, Development, Operation, Processing, Technology, Automation, ESR, Finance &amp; Investment, Security" data-submenu-id="126, 127, 128, 71, 104, 129, 130, 70, 154, 102, 94, 155">
+  <a href="/mining" hreflang="en">Mining</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="health"><div class="menu-header-container" data-color="52909d" data-submenu="Innovative medicine, Generics, Care Providers, Medical Devices, Medtech, Logistics &amp; Distribution, Supply Chain, Entrepreneurs, Medical Tourism, Finance" data-submenu-id="86, 87, 88, 89, 90, 91, 79, 131, 93, 153">
+  <a href="/health" hreflang="en">Health</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="automotive"><div class="menu-header-container" data-color="a30134" data-submenu="Sales Trends, Combustion Engine, Electrification, Material Technology, Connectivity &amp; Digitalization, Autonomous Vehicles, Industry 4.0, Supply Chain &amp; Logistics, Service &amp; Aftermarket" data-submenu-id="3305, 3306, 3307, 3308, 3309, 3310, 110, 3311, 3312">
+  <a href="/automotive" hreflang="en">Automotive</a>
+</div></a></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="aerospace"><div class="menu-header-container" data-color="7b91c7" data-submenu="Aviation, Aircraft, Aeroengines, Direct Suppliers, Indirect Suppliers, Location &amp; Logistics, R&amp;D, MRO, UAV, Finance &amp; Investment" data-submenu-id="161, 114, 115, 107, 108, 111, 109, 117, 116, 94">
+  <a href="/aerospace" hreflang="en">Aerospace</a>
+</div></a></span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+<nav role="navigation" aria-labelledby="block-multimedia-2-menu" id="block-multimedia-2">
+      
+  <h2 id="block-multimedia-2-menu">Multimedia</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/multimedia/podcast" title="Podcast List" data-drupal-link-system-path="multimedia/podcast">Podcast</a>
+              </li>
+          <li>
+        <a href="/multimedia/videos" title="Video List" data-drupal-link-system-path="multimedia/videos">Videos</a>
+              </li>
+          <li>
+        <a href="/multimedia/audio-articles" title="Audio Articles List" data-drupal-link-system-path="multimedia/audio-articles">Audio Articles</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div class="views-element-container" id="block-views-block-conferences-block-2">
+  
+      <h2>More</h2>
+    
+      <div><div class="menu-vertical js-view-dom-id-e05a8a9ccfeff311aae5dbabaa6ed7e7915517c59c0d6eeb9b4f6f86c286b474">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="645570" data-submenu="Financial Inclusion, Fintech, Commercial Banking, Investment Banking, Foreign Exchange, Pension Funds, Venture Capital, Insurance, Professional Services">
+  <a href="/finance" hreflang="en">Finance &amp; Fintech</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="d07b2c" data-submenu="Real Estate, Architecture &amp; Design, Construction, Materials, Smart Cities, Water &amp; Waste, Industrial Parks, Transport Infrastructure, Finance &amp; Investment">
+  <a href="/infrastructure" hreflang="en">Infrastructure</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="94cb78" data-submenu="">
+  <a href="/sustainability" hreflang="en">Sustainability</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="a6a99a" data-submenu="Consulting, Legal services, Marketing &amp; Communication, Security, Health &amp; Safety, Facilities Management, Travel">
+  <a href="/professional-services" hreflang="en">Professional Services</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="0db14c" data-submenu="Omnichannel, Retail, Retail Tech, Ecommerce, Ecommerce Platforms, Customer Experience, Payments, Logistics &amp; Supply Chain, Data Analytics &amp; BI, Marketing, CRM">
+  <a href="/ecommerce" hreflang="en">E-Commerce &amp; Retail</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="005f47" data-submenu="Agriculture, GMO, Livestock, Forestry, Technology, Logistics &amp; Trade, Processed Food, Beverages, Finance &amp; Investment, Policy &amp; Regulation">
+  <a href="/agribusiness" hreflang="en">Agribusiness &amp; Food</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="bcb226" data-submenu="">
+  <a href="/logistics" hreflang="en">Logistics</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="c40076" data-submenu="">
+  <a href="/mobility" hreflang="en">Mobility</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="952062" data-submenu="">
+  <a href="/trade-and-investment" hreflang="en">Trade &amp; Investment</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="7c3620" data-submenu="">
+  <a href="/policyandeconomy" hreflang="en">Policy &amp; Economy</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="789a99" data-submenu="Threat landscape, Cyberattacks &amp; Data Breaches, Cloud Security, Identity &amp; Access Management, SecOps, Data Privacy &amp; Compliance, Application Security, OT &amp; ICS Security">
+  <a href="/cybersecurity" hreflang="en">Cybersecurity</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="23a9d2" data-submenu="Gen AI, Data Management, LLM&#039;s &amp; Machine Learning, AI Ethics &amp; Regulation, Automation &amp; Productivity, Cloud Infrastructure &amp; Data Centers, Multi Cloud &amp; Hybrid Cloud">
+  <a href="/cloudanddata" hreflang="en">AI, Cloud &amp; Data</a>
+</div></span></div></div>
+    <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><div class="menu-header-container" data-color="4b8475" data-submenu="Petrochemicals, Specialty Chemicals, Agrochemicals, Chemical Logistics">
+  <a href="/chemicals" hreflang="en">Chemicals</a>
+</div></span></div></div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+<div id="block-v2mbpallrightsreserved">
+  
+    
+      
+            <div><p>© 2025 Mexicobusiness.News. A Mexico Business Company. All Rights Reserved.</p></div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-footerhome-menu" id="block-footerhome">
+            
+  <h2 class="visually-hidden" id="block-footerhome-menu">Footer Home</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/form/contact" title="Contact us" data-drupal-link-system-path="webform/contact">Contact us</a>
+              </li>
+          <li>
+        <a href="/term-of-use" title="Term of Use" data-drupal-link-system-path="node/275">Terms of Use</a>
+              </li>
+          <li>
+        <a href="/terms-and-conditions-expert-contributors" title="Terms &amp; Conditions - Expert Contributors" data-drupal-link-system-path="node/41228">Terms &amp; Conditions - Expert Contributors</a>
+              </li>
+          <li>
+        <a href="/environmental-policy" title="Environmental Policy" data-drupal-link-system-path="node/27555">Environmental Policy</a>
+              </li>
+          <li>
+        <a href="/media-kit" title="Advertise" data-drupal-link-system-path="media-kit">Advertise</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+  </div>
+
+      
+        <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/64484","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"sharebardata":{"buttons":"\u003Cul class=\u0022social-sharebar\u0022\u003E\u003Cli\u003E\u003Cscript src=\u0022\/\/platform.linkedin.com\/in.js\u0022 type=\u0022text\/javascript\u0022\u003E\r\n lang: en_US\u003C\/script\u003E\u003Cscript type=\u0022IN\/Share\u0022 data-url=\u0022https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022 data-counter=\u0022top\u0022\u003E\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\r\n\u003Cdiv class=\u0022g-plusone\u0022 data-size=\u0022tall\u0022 data-href=\u0022https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022\u003E\u003C\/div\u003E\r\n\u003Cscript type=\u0022text\/javascript\u0022\u003E(function() {var po = document.createElement(\u0027script\u0027); po.type = \u0027text\/javascript\u0027; po.async = true;po.src = \u0027https:\/\/apis.google.com\/js\/plusone.js\u0027;var s = document.getElementsByTagName(\u0027script\u0027)[0]; s.parentNode.insertBefore(po, s);})();\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022http:\/\/twitter.com\/share\u0022 class=\u0022twitter-share-button\u0022 data-url=\u0022https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022 data-count=\u0022vertical\u0022 data-via=\u0022US-Canada Trade War: Ontario to Cut Electricity, Minerals \u0022\u003ETweet\u003C\/a\u003E\u003Cscript type=\u0022text\/javascript\u0022 src=\u0022http:\/\/platform.twitter.com\/widgets.js\u0022\u003E\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cdiv id=\u0022fb-root\u0022\u003E\u003C\/div\u003E \u003Cscript\u003E(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \u0022\/\/connect.facebook.net\/en_US\/all.js#xfbml=1\u0022; fjs.parentNode.insertBefore(js, fjs); }(document, \u0027script\u0027, \u0027facebook-jssdk\u0027));\u003C\/script\u003E \u003Chtml fb=\u0022http:\/\/ogp.me\/ns\/fb#\u0022\u003E\r\n\u003Cdiv class=\u0022fb-like\u0022 data-href=\u0022https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022 data-layout=\u0022box_count\u0022 data-action=\u0022like\u0022 data-size=\u0022small\u0022 data-show-faces=\u0022true\u0022 data-share=\u0022true\u0022\u003E\u003C\/div\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022mailto:?subject=https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022 class=\u0022sharebar-button email\u0022\u003EEmail\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E","buttons_small":"\u003Cul class=\u0022mobile-social-sharebar\u0022\u003E\u003Cli\u003E\u003Cscript src=\u0022\/\/platform.linkedin.com\/in.js\u0022 type=\u0022text\/javascript\u0022\u003E\r\n lang: en_US\u003C\/script\u003E\u003Cscript type=\u0022IN\/Share\u0022 data-url=\u0022https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022 data-counter=\u0022right\u0022\u003E\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cdiv class=\u0022g-plusone\u0022 data-href=\u0022https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022\u003E\u003C\/div\u003E\u003Cscript type=\u0022text\/javascript\u0022\u003E(function() {var po = document.createElement(\u0027script\u0027); po.type = \u0027text\/javascript\u0027; po.async = true;po.src = \u0027https:\/\/apis.google.com\/js\/plusone.js\u0027;var s = document.getElementsByTagName(\u0027script\u0027)[0]; s.parentNode.insertBefore(po, s);})();\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022http:\/\/twitter.com\/share\u0022 class=\u0022twitter-share-button\u0022 data-url=\u0022https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022 data-count=\u0022horizontal\u0022 data-via=\u0022US-Canada Trade War: Ontario to Cut Electricity, Minerals \u0022\u003ETweet\u003C\/a\u003E\u003Cscript type=\u0022text\/javascript\u0022 src=\u0022http:\/\/platform.twitter.com\/widgets.js\u0022\u003E\u003C\/script\u003E\u003C\/li\u003E\u003Cli\u003E\u003Cdiv id=\u0022fb-root\u0022\u003E\u003C\/div\u003E \u003Cscript\u003E(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = \u0022\/\/connect.facebook.net\/en_US\/all.js#xfbml=1\u0022; fjs.parentNode.insertBefore(js, fjs); }(document, \u0027script\u0027, \u0027facebook-jssdk\u0027));\u003C\/script\u003E \u003Chtml fb=\u0022http:\/\/ogp.me\/ns\/fb#\u0022\u003E\r\n\u003Cdiv class=\u0022fb-like\u0022 data-href=\u0022https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022 data-layout=\u0022box_count\u0022 data-action=\u0022like\u0022 data-size=\u0022small\u0022 data-show-faces=\u0022true\u0022 data-share=\u0022true\u0022\u003E\u003C\/div\u003E\u003C\/li\u003E\u003Cli\u003E\u003Ca href=\u0022mailto:?subject=https:\/\/mexicobusiness.news\/mining\/news\/us-canada-trade-war-ontario-cut-electricity-minerals\u0022 class=\u0022sharebar-button email\u0022\u003EEmail\u003C\/a\u003E\u003C\/li\u003E\u003C\/ul\u003E","width":"85","position":"left","top_offset":"200","left_offset":"5","right_offset":"0"},"statistics":{"data":{"nid":"64484"},"url":"\/core\/modules\/statistics\/statistics.php"},"user":{"uid":0,"permissionsHash":"d5cfe5151b3ffc53c5d130d9e05e2100e43cfffcac57d2afbf37c73af1c6771d"}}</script>
+<script src="/sites/default/files/js/js_nSnrLeUgzUlZAzDaxiYWPZJ08IhBFZdVbKLKOoNxvQs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+<script src="/sites/default/files/js/js_czpj_WjdDV69QGkwNxOdFSYqP3NPH_Xt1-Dn32YZN8g.js"></script>
+
+
+    <script>
+        window.onload = function() {
+            googletag.cmd.push(function() {
+                googletag.pubads().refresh();
+            });
+        };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "query_id": "q_company_916426eb70ecce5624bfa654_discovery",
+  "query": "\"Porsche Cars North America Inc.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_16e3e384e2666b1e6b672085",
+    "claim_3805361d388de121c9508664",
+    "claim_e1068fedfc8074abeea17a9d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_16e3e384e2666b1e6b672085",
+      "text": "Porsche considers producing vehicles in America after $811 million Trump tariff hit in 2025. The tariffs are temporary.",
+      "url": "https://www.facebook.com/RoadandTrack/posts/porsche-considers-producing-vehicles-in-america-after-811-million-trump-tariff-h/1291445516177977",
+      "chunk_id": "chunk_7411008c7643eda3728b2c1c"
+    },
+    {
+      "claim_id": "claim_3805361d388de121c9508664",
+      "text": "As of March 26, 2025, the U.S. has implemented an additional 25% tariff on imported vehicles and parts, bringing the total tariff rate to 27.5%. With Porsche models exclusively manufactured in Germany, this change may lead to price increases on future inventory.",
+      "url": "https://saltlakecity.porsche.com/en/news-and-events/2025-how-new-auto-tariffs-could-impact-porsche-buyers",
+      "chunk_id": "chunk_59fb9f6c10ba409faa1d43d7"
+    },
+    {
+      "claim_id": "claim_e1068fedfc8074abeea17a9d",
+      "text": "Porsche North America pays the tariff. The 25% tariff will be applied to imported",
+      "url": "https://www.reddit.com/r/porsche911/comments/1jl137x/tariff_megathread_all_discussion_on_tariffs_goes",
+      "chunk_id": "chunk_1a06781b6e1179c02b9962cd"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_16e3e384e2666b1e6b672085",
+      "claim_3805361d388de121c9508664"
+    ],
+    [
+      "claim_3805361d388de121c9508664",
+      "claim_e1068fedfc8074abeea17a9d"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 3,
+  "synthesis_input_claim_count": 3
+}

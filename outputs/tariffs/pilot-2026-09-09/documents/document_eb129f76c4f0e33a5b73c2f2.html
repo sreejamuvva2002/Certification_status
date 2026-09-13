@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Plus Pro Schema Assistant JSON-LD -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://georgiaftz.com/#/org","name":"Georgia Foreign-Trade Zone","url":"https://georgiaftz.com"},{"@type":"WebSite","@id":"https://georgiaftz.com/#website","url":"https://georgiaftz.com","name":"Georgia Foreign-Trade Zone","publisher":{"@id":"https://georgiaftz.com/#/org"},"potentialAction":{"@type":"SearchAction","target":"https://georgiaftz.com/?s=search_term_string","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://georgiaftz.com/benefits/#webpage","url":"https://georgiaftz.com/benefits/","name":"Benefits","isPartOf":{"@id":"https://georgiaftz.com/#website"},"about":{"@id":"https://georgiaftz.com/benefits/#primary"}},{"@type":"Article","@id":"https://georgiaftz.com/benefits/#primary","headline":"Benefits","url":"https://georgiaftz.com/benefits/","datePublished":"2025-12-11T20:57:38+00:00","dateModified":"2026-04-17T18:11:31+00:00","author":{"@type":"Person","name":"gftz_admin","url":"https://georgiaftz.com/author/gftz_admin/"},"publisher":{"@id":"https://georgiaftz.com/#/org"},"mainEntityOfPage":{"@id":"https://georgiaftz.com/benefits/#webpage"},"description":"Georgia Foreign-Trade Zone offers access to the only U.S. government program specifically designed to cut the cost of doing business. By statute, the FTZ program allows businesses to reduce, delay, or eliminate tariffs. Delaying or Eliminating Tariff Payments Hold onto your money longer by delaying duty payments until your imported merchandise leaves your factory or [\u0026hellip;]","wordCount":899}]}
+</script>
+<!-- /Plus Pro Schema Assistant JSON-LD -->
+	<meta description="This is my descriptor of the site.">
+	<meta name="referrer" content="unsafe-url">
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="robots" content="max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+<link rel="canonical" href="https://georgiaftz.com/benefits/" />
+<meta name="description" content="Georgia Foreign-Trade Zone offers access to the only U.S. government program specifically designed to cut the cost of doing business. By statute…" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Georgia Foreign-Trade Zone" />
+<meta property="og:title" content="Benefits" />
+<meta property="og:description" content="Georgia Foreign-Trade Zone offers access to the only U.S. government program specifically designed to cut the cost of doing business. By statute, the FTZ program allows businesses to reduce, delay…" />
+<meta property="og:url" content="https://georgiaftz.com/benefits/" />
+<meta property="og:image" content="https://georgiaftz.com/wp-content/uploads/2026/04/cropped-cropped-GFTZ-Feature-Image-1.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Benefits" />
+<meta name="twitter:description" content="Georgia Foreign-Trade Zone offers access to the only U.S. government program specifically designed to cut the cost of doing business. By statute, the FTZ program allows businesses to reduce, delay…" />
+<meta name="twitter:image" content="https://georgiaftz.com/wp-content/uploads/2026/04/cropped-cropped-GFTZ-Feature-Image-1.png" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://georgiaftz.com/#/schema/WebSite","url":"https://georgiaftz.com/","name":"Georgia Foreign-Trade Zone","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://georgiaftz.com/search/{search_term_string}/"},"query-input":"required name=search_term_string"},"publisher":{"@type":"Organization","@id":"https://georgiaftz.com/#/schema/Organization","name":"Georgia Foreign-Trade Zone","url":"https://georgiaftz.com/","logo":{"@type":"ImageObject","url":"https://georgiaftz.com/wp-content/uploads/2026/01/cropped-PNG_GFTZ-Logo_White-Full-Color.png","contentUrl":"https://georgiaftz.com/wp-content/uploads/2026/01/cropped-PNG_GFTZ-Logo_White-Full-Color.png","width":512,"height":512,"contentSize":"43688"}}},{"@type":"WebPage","@id":"https://georgiaftz.com/benefits/","url":"https://georgiaftz.com/benefits/","name":"Benefits - Georgia Foreign-Trade Zone","description":"Georgia Foreign-Trade Zone offers access to the only U.S. government program specifically designed to cut the cost of doing business. By statute…","inLanguage":"en-US","isPartOf":{"@id":"https://georgiaftz.com/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://georgiaftz.com/#/schema/BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https://georgiaftz.com/","name":"Georgia Foreign-Trade Zone"},{"@type":"ListItem","position":2,"name":"Benefits"}]},"potentialAction":{"@type":"ReadAction","target":"https://georgiaftz.com/benefits/"}}]}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 5.83ms meta | 0.17ms boot -->
+
+<title>Benefits - Georgia Foreign-Trade Zone</title>
+<link rel='dns-prefetch' href='//kit.fontawesome.com' />
+<link rel="alternate" type="application/rss+xml" title="Georgia Foreign-Trade Zone &raquo; Feed" href="https://georgiaftz.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Georgia Foreign-Trade Zone &raquo; Comments Feed" href="https://georgiaftz.com/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://georgiaftz.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgeorgiaftz.com%2Fbenefits%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://georgiaftz.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgeorgiaftz.com%2Fbenefits%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=https://georgiaftz.com/wp-includes/blocks/group/style.min.css */
+</style>
+<style id="plusfw-block-group-inline-css">
+.wp-block-group-is-layout-flex.is-style-two-wide:not(.is-vertical),
+.wp-block-group-is-layout-flex.is-style-three-wide:not(.is-vertical),
+.wp-block-group-is-layout-flex.is-style-four-wide:not(.is-vertical){gap:var(--wp--preset--spacing--05)}
+
+.wp-block-group-is-layout-flex.is-style-two-wide:not(.is-vertical) > *{flex:0 0 calc(50% - var(--wp--preset--spacing--05) / 2);min-width:16rem;}
+.wp-block-group-is-layout-flex.is-style-two-wide:not(.is-vertical).alignwide > *{min-width:24rem;}
+
+.wp-block-group-is-layout-flex.is-style-three-wide:not(.is-vertical) > *{flex:0 0 calc(33.33% - var(--wp--preset--spacing--05) * 2 / 3);min-width:12rem;}
+.wp-block-group-is-layout-flex.is-style-three-wide:not(.is-vertical).alignwide > *{min-width:20rem;}
+
+.wp-block-group-is-layout-flex.is-style-four-wide:not(.is-vertical) > *{flex:0 0 calc(25% - var(--wp--preset--spacing--05) * 3 / 4);min-width:8rem;}
+.wp-block-group-is-layout-flex.is-style-four-wide:not(.is-vertical).alignwide > *{min-width:16rem;}
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/resources/css/block-group.css */
+</style>
+<style id="pluspro-pro-logo-style-inline-css">
+.pro_logo{display:block;}
+.pro_logo[href="#"]{cursor:default;}
+.pro_logo__img{object-fit: contain;margin: 0 auto;}
+
+.pro_logo__img{display:none;}
+.pro_logo__img:first-child{display:block;}
+
+
+/* Conditons */
+  
+  /* Scrolled */
+	/* hide others, show scrolled */
+  .scrolled .pro_logo:has(.pro_logo__img--scrolled) .pro_logo__img:not(.pro_logo__img--scrolled){display:none;}
+  .scrolled .pro_logo:has(.pro_logo__img--scrolled) .pro_logo__img--scrolled{display:block;}
+
+  /* Tablet */
+  @media( min-width:601px ) and ( max-width:979px ){
+		
+		/* hide others, show tablet */
+    .pro_logo:has(.pro_logo__img--tablet) .pro_logo__img:not(.pro_logo__img--tablet){display:none;}
+    .pro_logo:has(.pro_logo__img--tablet) .pro_logo__img--tablet{display:block;}
+		
+		/* when scrolled but has tablet version, hide scrolled*/
+    .scrolled .pro_logo:has(.pro_logo__img--tablet) .pro_logo__img--scrolled{display:none;}
+    
+		/* when has tablet scrolled only show it */
+    .scrolled .pro_logo:has(.pro_logo__img--tabletscrolled) .pro_logo__img:not(.pro_logo__img--tabletscrolled){display:none;}
+    .scrolled .pro_logo:has(.pro_logo__img--tabletscrolled) .pro_logo__img--tabletscrolled{display:block;}
+  }
+  
+	/* Phone */
+  @media( max-width:600px ){
+    
+		/* hide others, show phone */
+    .pro_logo:has(.pro_logo__img--phone) .pro_logo__img:not(.pro_logo__img--phone){display:none;}
+    .pro_logo:has(.pro_logo__img--phone) .pro_logo__img--phone{display:block;}
+		
+		/* when scrolled but has phone version, hide scrolled*/
+		.scrolled .pro_logo:has(.pro_logo__img--phone) .pro_logo__img--scrolled{display:none;}
+    
+		/* when has phone scrolled only show it */
+    .scrolled .pro_logo:has(.pro_logo__img--scrolledphone) .pro_logo__img:not(.pro_logo__img--scrolledphone){display:none;}
+    .scrolled .pro_logo:has(.pro_logo__img--scrolledphone) .pro_logo__img--scrolledphone{display:block !important;}
+
+  }
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/blocks/pro-logo/pro-logo.css */
+</style>
+<style id="pluspro-pro-navbar-drawer-trigger-style-inline-css">
+/* layout:flex flow should work such that this isn't needed... but alas... */
+.wp-block-pluspro-pro-button{display:inline-flex;margin-block-start:0 !important;margin-block-end:0 !important;}
+
+.pro-button{border:2px solid transparent;border-radius:var(--wp--custom--border-radius);border-width:2px !important;display:inline-flex;gap:1em;padding:1em;align-items:center;transition:0.2s all;}
+/* container needs border radius to in case of drop shadow */
+.wp-block-pluspro-pro-button{border-radius:var(--wp--custom--border-radius);}
+
+.pro-navbar-drawer-trigger{padding:calc(0.667em + 2px) calc(0.667em + 2px) !important;}
+.pro-navbar-drawer-trigger span{line-height:100%;}
+
+/*Icon Default */
+.pro-navbar-drawer-trigger__icon--default{display: block;height: 1em;position:relative;width: 1em;transition: 0.2s all;}
+.pro-navbar-drawer-trigger__icon--default:before{border-top: 2px solid currentColor;border-bottom: 2px solid currentColor;content: '';display: block;height: calc(1em - 4px);position: absolute;width: 1em;top:0;transition: 0.2s all;}
+.pro-navbar-drawer-trigger__icon--default:after {background-color: currentColor;content: '';display: block;height: 2px;width: 1em;position: absolute;top:calc(50% - 1px);transition: 0.2s all;}
+
+
+.pro-navbar-drawer-trigger--open .pro-navbar-drawer-trigger__icon--default:before{border-top: 1px solid currentColor;border-bottom: 1px solid currentColor;height:0;top:calc(50% - 1px);transform: rotate(-45deg);}
+.pro-navbar-drawer-trigger--open .pro-navbar-drawer-trigger__icon--default:after {transform: rotate(45deg);}
+
+
+/*Icon Swap*/
+.pro-navbar-drawer-trigger .pro-navbar-drawer-trigger__icon--swap > *:last-child{display:none;}
+.pro-navbar-drawer-trigger--open .pro-navbar-drawer-trigger__icon--swap > *:first-child{display:none;}
+.pro-navbar-drawer-trigger--open .pro-navbar-drawer-trigger__icon--swap > *:last-child{display:block;}
+
+/*Icon Rotate*/
+.pro-navbar-drawer-trigger .pro-navbar-drawer-trigger__icon--rotate{transition:0.5s transform;}
+.pro-navbar-drawer-trigger .pro-navbar-drawer-trigger__icon--rotate{transform:rotate(var(--open-rotate));}
+
+                  .is-style-btn-orange .pro-navbar-drawer-trigger{background-color:rgba(236,161,68,0.8) !important;border-color:rgba(236,161,68,0.8) !important;color:rgba(255,255,255,1) !important;transform:scale(1);}
+                  .is-style-btn-orange .pro-navbar-drawer-trigger:hover{background-color:rgb(236,161,68) !important;border-color:rgb(236,161,68) !important;color:rgba(255,255,255,1) !important;transform:scale(1.1);}
+
+                  .is-style-btn-turqoise .pro-navbar-drawer-trigger{background-color:rgba(92,182,182,0.8) !important;border-color:rgba(92,182,182,0.8) !important;color:rgb(255,255,255) !important;transform:scale(1);}
+                  .is-style-btn-turqoise .pro-navbar-drawer-trigger:hover{background-color:rgb(92,182,182) !important;border-color:rgb(92,182,182) !important;color:rgba(255,255,255,1) !important;transform:scale(1.1);}
+/*# sourceURL=pluspro-pro-navbar-drawer-trigger-style-inline-css */
+</style>
+<style id="pluspro-pro-navbar-container-style-inline-css">
+header.wp-block-template-part{position: relative;z-index: 21;}
+header.wp-block-template-part:has(.is-position-sticky){top: calc(0px + var(--wp-admin--admin-bar--height, 0px));position: sticky;}
+
+
+/* Overlay Mode CSS */
+header.wp-block-template-part .has-property-overlay{transition:0.2s all;}
+header.wp-block-template-part:has(.has-property-overlay){height:0;}
+header.wp-block-template-part:not(.scrolled) .has-property-overlay{height:0;background-color:var(--pro-overlay-background) !important;color:var(--pro-overlay-text) !important;}
+
+header.wp-block-template-part:has(.is-position-sticky--auto){transition:0.2s all;}
+header.wp-block-template-part.scrolled--down:has(.is-position-sticky--auto){transform:translateY(-100%);}
+
+/* When in overlay mode, target the children for the -100% so it works*/
+header.wp-block-template-part.scrolled--down:has(.is-position-sticky--auto):has(.has-property-overlay) > *{transform:translateY(-100%);}
+
+
+.pro-navbar-container{position:relative;z-index:10;}
+.pro-navbar-container a:where(:not(.pro-button)) {color: inherit;}
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/blocks/pro-navbar-container/pro-navbar-container.css */
+</style>
+<style id="wp-block-navigation-link-inline-css">
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{outline:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
+
+                  .is-style-btn-orange .wp-block-navigation-item__content{background-color:rgba(236,161,68,0.8) !important;border-color:rgba(236,161,68,0.8) !important;color:rgba(255,255,255,1) !important;transform:scale(1);}
+                  .is-style-btn-orange .wp-block-navigation-item__content:hover{background-color:rgb(236,161,68) !important;border-color:rgb(236,161,68) !important;color:rgba(255,255,255,1) !important;transform:scale(1.1);}
+
+                  .is-style-btn-turqoise .wp-block-navigation-item__content{background-color:rgba(92,182,182,0.8) !important;border-color:rgba(92,182,182,0.8) !important;color:rgb(255,255,255) !important;transform:scale(1);}
+                  .is-style-btn-turqoise .wp-block-navigation-item__content:hover{background-color:rgb(92,182,182) !important;border-color:rgb(92,182,182) !important;color:rgba(255,255,255,1) !important;transform:scale(1.1);}
+/*# sourceURL=wp-block-navigation-link-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-navigation-css' href='https://georgiaftz.com/wp-includes/blocks/navigation/style.min.css?u=1788407152' media='all' />
+<style id="pluspro-pro-navbar-drawer-style-inline-css">
+.pro-navbar-drawer{background-color:white;position:fixed;z-index:22;top:calc(var(--pro-navbar-container--height) + var(--wp-admin--admin-bar--height, 0px));transition:0.2s all;pointer-events:none;overflow:auto;}
+
+
+
+.pro-navbar-drawer--full{display:flex;flex-direction:column;flex-wrap: nowrap !important;top:var(--wp-admin--admin-bar--height, 0px);left:0;right:0;height:calc(100dvh - var(--wp-admin--admin-bar--height, 0px))!important;max-width:100% !important;top:var(--wp-admin--admin-bar--height, 0px) !important;z-index:15;opacity:0;}
+.pro-navbar-drawer--full .pro-navbar-drawer__inner{margin:auto !important;padding-top:var(--wp--preset--spacing--05);padding-bottom:var(--wp--preset--spacing--05);}
+.pro-navbar-drawer__close{position:absolute;top:var(--wp--preset--spacing--05);right:var(--wp--preset--spacing--05);font-size:var(--wp--preset--font-size--h-4);}
+
+.pro-navbar-drawer--right{right:0;bottom:0;min-width:200px;transform:translate(100%,0) !important;height:calc(100dvh - var(--pro-navbar-container--height) - var(--wp-admin--admin-bar--height, 0px));}
+
+.pro-navbar-drawer--top{transform:translate(0, -150%) !important;right:0;left:0;max-height:calc(100dvh - var(--pro-navbar-container--height) - var(--wp-admin--admin-bar--height, 0px));}
+
+.pro-navbar-drawer--open{right:0;transform:translate(0,0) !important;opacity:1;pointer-events:auto;}
+
+/*in overlay mode top should be behind navbar when scrolled */
+header.wp-block-template-part.scrolled:has(.has-property-overlay) .pro-navbar-drawer--top{z-index:5;}
+
+/*in overlay mode right and top should extend to top*/
+header.wp-block-template-part:has(.has-property-overlay) .pro-navbar-drawer{
+  top:var(--wp-admin--admin-bar--height, 0px);
+  height:calc(100dvh - var(--wp-admin--admin-bar--height, 0px))
+}
+/*but should only be as tall as needed if "top"*/
+header.wp-block-template-part:has(.has-property-overlay) .pro-navbar-drawer--top{
+  height:auto
+}
+
+/*in overlay mode but when sticky add extra space up top again*/
+header.wp-block-template-part.scrolled .pro-navbar-drawer{top:calc(var(--pro-navbar-container--height) + var(--wp-admin--admin-bar--height, 0px));height:calc(100dvh - var(--pro-navbar-container--height) - var(--wp-admin--admin-bar--height, 0px));}
+
+/*in overlay mode but when sticky auto and menu is hiding remove extra space up top again*/
+header.wp-block-template-part.scrolled--down .pro-navbar-drawer{top:0;height:calc(100dvh - var(--wp-admin--admin-bar--height, 0px))}
+
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/blocks/pro-navbar-drawer/pro-navbar-drawer.css */
+</style>
+<style id="pluspro-pro-breadcrumbs-style-inline-css">
+/* Pro Breadcrumb Block Styles */
+
+.pro-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.pro-breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pro-breadcrumb__link {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.pro-breadcrumb__text {
+  display: flex;
+  align-items: center;
+}
+
+.pro-breadcrumb__separator {
+  user-select: none;
+}
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/blocks/pro-breadcrumbs/pro-breadcrumbs.css */
+</style>
+<style id="wp-block-post-title-inline-css">
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+/*# sourceURL=https://georgiaftz.com/wp-includes/blocks/post-title/style.min.css */
+</style>
+<style id="pluspro-pro-spacer-style-inline-css">
+/* not necesssary. interferes with margin-top .wp-block-pluspro-pro-spacer{margin-block-start:0 !important;}*/
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/blocks/pro-spacer/pro-spacer.css */
+</style>
+<link rel='stylesheet' id='wp-block-cover-css' href='https://georgiaftz.com/wp-includes/blocks/cover/style.min.css?u=1788407152' media='all' />
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://georgiaftz.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://georgiaftz.com/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-separator-inline-css">
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+/*# sourceURL=https://georgiaftz.com/wp-includes/blocks/separator/style.min.css */
+</style>
+<style id="plusfw-block-separator-inline-css">
+.wp-block-separator{border:none;background-color:rgba(0,0,0,0.1);width:100px;height:4px;}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots){transform: translateX( max(-0.5 * var(--wp--style--global--content-size) + 50px , -0.5 * 100vw + var(--wp--style--root--padding-left) + 50px ) )!important;}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignwide{transform: translateX( max(-0.5 * var(--wp--style--global--wide-size) + 50px , -0.5 * 100vw + var(--wp--style--root--padding-left) + 50px ) )!important;}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignfull{transform: none !important;}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots).aligncenter{max-width: 100px;transform: none !important;}
+.wp-block-separator.is-style-wide{width:auto;height:1px;border:none;}
+.wp-block-separator.is-style-dots{height:1em;width:auto;}
+.wp-block-separator.is-style-dots:before{}
+
+/* undo the translateX that doesn't work inside of a flex container */
+.is-layout-flex > .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {transform: none !important;}
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/resources/css/block-separator.css */
+</style>
+<style id="pluspro-pro-button-style-inline-css">
+/* layout:flex flow should work such that this isn't needed... but alas... */
+.wp-block-pluspro-pro-button{display:inline-flex;margin-block-start:0 !important;margin-block-end:0 !important;}
+
+.pro-button{border:2px solid transparent;border-radius:var(--wp--custom--border-radius);border-width:2px !important;display:inline-flex;gap:1em;padding:1em;align-items:center;transition:0.2s all;}
+/* container needs border radius to in case of drop shadow */
+.wp-block-pluspro-pro-button{border-radius:var(--wp--custom--border-radius);}
+
+.pro-button--icon-right{flex-direction:row;}
+.pro-button--icon-left{flex-direction:row-reverse;}
+
+.pro-button--align-flex-start{justify-content:flex-start;}
+.pro-button--align-space-between{justify-content:space-between;}
+.pro-button--align-center{justify-content:center;text-align:center;}
+.pro-button--align-flex-end{justify-content:flex-end;text-align:right;}
+
+/* space between text alignment changes with icon side */
+.pro-button--align-space-between.pro-button--icon-left{text-align:right;}
+
+.wp-block-pluspro-pro-button:has(.pro-button--width-full){width:100%;}
+.pro-button--width-full{width:100%;}
+
+/* wide width handling changes with align */
+.pro-button--width-wide.pro-button--align-flex-start{padding-right:4em;}
+.pro-button--width-wide.pro-button--align-flex-end{padding-left:4em;}
+.pro-button--width-wide.pro-button--align-center{padding-left:2em;padding-right:2em;}
+.pro-button--width-wide.pro-button--align-space-between{gap:4em;}
+
+.wp-element-button.pro-button--size-small{font-size:var(--wp--preset--font-size--small);gap:0.75em;padding:0.5em 0.75em;}
+.wp-element-button.pro-button--size-default{font-size:var(--wp--preset--font-size--base);}
+.wp-element-button.pro-button--size-large{font-size:var(--wp--preset--font-size--h-5);}
+
+.pro-button p{margin:0;line-height:100%;}
+
+/* ensure icon-only buttons have equal padding */
+.pro-button:has(p:empty){padding:calc(0.667em + 2px);}
+.pro-button--size-small:has(p:empty){padding:0.5em;}
+.pro-button:has(p:empty) p{display:none;}
+
+/* backend empty container should go away if icon is present */
+.wp-block-pluspro-pro-button:has(svg) .acf-innerblocks-container:empty{border:none;padding:0;}
+.wp-block-pluspro-pro-button:has(svg) .acf-innerblocks-container:empty:before{display:none;}
+
+                  .is-style-btn-orange .pro-button{background-color:rgba(236,161,68,0.8) !important;border-color:rgba(236,161,68,0.8) !important;color:rgba(255,255,255,1) !important;transform:scale(1);}
+                  .is-style-btn-orange .pro-button:hover{background-color:rgb(236,161,68) !important;border-color:rgb(236,161,68) !important;color:rgba(255,255,255,1) !important;transform:scale(1.1);}
+
+                  .is-style-btn-turqoise .pro-button{background-color:rgba(92,182,182,0.8) !important;border-color:rgba(92,182,182,0.8) !important;color:rgb(255,255,255) !important;transform:scale(1);}
+                  .is-style-btn-turqoise .pro-button:hover{background-color:rgb(92,182,182) !important;border-color:rgb(92,182,182) !important;color:rgba(255,255,255,1) !important;transform:scale(1.1);}
+/*# sourceURL=pluspro-pro-button-style-inline-css */
+</style>
+<style id="pluspro-pro-buttons-style-inline-css">
+/* Cannot use blockGap or vertical alignment because styles are dynamically generated 
+and it doesn't happen with our custom blocks */
+
+.wp-block-pluspro-pro-buttons{display:flex;gap:1em;align-items:center;}
+
+.wp-block-pluspro-pro-buttons:has(.pro-button--width-full){width:100%;}
+
+/* needed for backend to preview with extra container*/
+.wp-block-pluspro-pro-buttons:has(.is-content-justification-center){justify-content: center;}
+.wp-block-pluspro-pro-buttons:has(.is-content-justification-right){justify-content: right;}
+.wp-block-pluspro-pro-buttons:has(.is-content-justification-space-between){justify-content: space-between;width:100%;}
+.wp-block-pluspro-pro-buttons.is-content-justification-space-between{width:100%;}
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/blocks/pro-buttons/pro-buttons.css */
+</style>
+<style id="pluspro-pro-accordion-item-style-inline-css">
+.pro-accordion-item{}
+.pro-accordion-item__heading{cursor:pointer;padding:var(--wp--preset--spacing--05) 0 ;margin:0;display:flex;gap:0.5em;justify-content:space-between;align-items:center;}
+
+.pro-accordion-item > .acf-innerblocks-container{max-height:0px;overflow:hidden;transition:0.2s all;}
+.pro-accordion-item--open > .acf-innerblocks-container,
+.wp-block-pluspro-pro-accordion.is-selected .acf-innerblocks-container,
+.wp-block-pluspro-pro-accordion.has-child-selected .acf-innerblocks-container{max-height:1000px;}
+
+.pro-accordion-item .acf-innerblocks-container > *:first-child{margin-top:0;}
+.pro-accordion-item .acf-innerblocks-container > *:last-child{margin-bottom: var(--wp--preset--spacing--05);}
+
+
+/*Icon Default */
+.pro-accordion-item__icon--default{font-size: 24px;display: block;height: 16px;position:relative;width: 16px;transition: 0.2s all;}
+.pro-accordion-item__icon--default:before, 
+.pro-accordion-item__icon--default:after {background-color: currentColor;content: '';display: block;height: 2px;width: 13px;position: absolute;top: 0;transition: 0.2s all;}
+.pro-accordion-item__icon--default:before {left: 0;transform-origin: top left;transform: rotate(45deg);}
+.pro-accordion-item__icon--default:after {right: 0;transform-origin: top right;transform: rotate(-45deg);}
+
+.pro-accordion-item--open .pro-accordion-item__icon--default{transform: rotate(90deg);margin-top: -8px;}
+.pro-accordion-item--open .pro-accordion-item__icon--default:before, 
+.pro-accordion-item--open .pro-accordion-item__icon--default:after {width: 25px;}
+
+
+/*Icon Swap*/
+.pro-accordion-item .pro-accordion-item__icon--swap > *:last-child{display:none;}
+.pro-accordion-item--open .pro-accordion-item__icon--swap > *:first-child{display:none;}
+.pro-accordion-item--open .pro-accordion-item__icon--swap > *:last-child{display:block;}
+
+/*Icon Rotate*/
+.pro-accordion-item .pro-accordion-item__icon--rotate{transition:0.5s transform;}
+.pro-accordion-item--open .pro-accordion-item__icon--rotate{transform:rotate(var(--open-rotate));}
+
+
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/blocks/pro-accordion-item/pro-accordion-item.css */
+</style>
+<link rel='stylesheet' id='gf-css' href='https://georgiaftz.com/wp-content/themes/plus-pro/resources/css/gf.css?u=1788407152' media='print'  onload="this.media='all'; this.onload=null;" />
+<style id="pluspro-pro-accordion-style-inline-css">
+.pro-accordion--icon-left .pro-accordion-item__heading{flex-direction:row-reverse;justify-content:flex-end;}
+/*# sourceURL=https://georgiaftz.com/wp-content/themes/plus-pro/blocks/pro-accordion/pro-accordion.css */
+</style>
+<style id="wp-block-post-content-inline-css">
+.wp-block-post-content{display:flow-root}
+/*# sourceURL=https://georgiaftz.com/wp-includes/blocks/post-content/style.min.css */
+</style>
+<style id="wp-block-columns-inline-css">
+.wp-block-columns{box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns{align-items:normal!important}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+/*# sourceURL=https://georgiaftz.com/wp-includes/blocks/columns/style.min.css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<link rel='stylesheet' id='blocks-css' href='https://georgiaftz.com/wp-content/themes/plus-pro/resources/css/blocks.css?u=1788407152' media='all' />
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #ffffff;--wp--preset--color--contrast: #000000;--wp--preset--color--primary: #292f7b;--wp--preset--color--secondary: #5cb6b6;--wp--preset--color--tertiary: #eca144;--wp--preset--color--custom-orange: #eca144;--wp--preset--color--custom-pink: #e5a0c2;--wp--preset--color--custom-red: #ed2a37;--wp--preset--color--custom-green: #3e8551;--wp--preset--color--custom-blue: #292f7b;--wp--preset--color--custom-turquoise: #5cb6b6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--black-to-white: linear-gradient(#000000,#FFFFFF);--wp--preset--gradient--primary-to-secondary: linear-gradient(160deg, #292f7b, #5cb6b6);--wp--preset--gradient--primary-to-tertiary: linear-gradient(160deg, #292f7b, #eca144);--wp--preset--gradient--secondary-to-tertiary: linear-gradient(160deg, #5cb6b6, #eca144);--wp--preset--gradient--primary-to-transparent: linear-gradient(160deg, #292f7b, #292f7b00);--wp--preset--gradient--secondary-to-transparent: linear-gradient(160deg, #5cb6b6, #5cb6b600);--wp--preset--gradient--tertiary-to-transparent: linear-gradient(160deg, #eca144, #eca14400);--wp--preset--gradient--base-to-contrast: linear-gradient(160deg, #ffffff, #000000);--wp--preset--gradient--base-to-transparent: linear-gradient(160deg, #ffffff, #ffffff00);--wp--preset--gradient--contrast-to-transparent: linear-gradient(160deg, #000000, #00000000);--wp--preset--font-size--small: clamp(.75rem, 0.75rem + ((1vw - 0.2rem) * 0.455), 1rem);--wp--preset--font-size--medium: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.682), 20px);--wp--preset--font-size--large: clamp(22.041px, 1.378rem + ((1vw - 3.2px) * 1.586), 36px);--wp--preset--font-size--x-large: clamp(25.014px, 1.563rem + ((1vw - 3.2px) * 1.93), 42px);--wp--preset--font-size--tiny: clamp(.6rem, 0.6rem + ((1vw - 0.2rem) * 0.5), 0.875rem);--wp--preset--font-size--base: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.455), 1.125rem);--wp--preset--font-size--h-5: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.909), 1.5rem);--wp--preset--font-size--h-4: clamp(1.5rem, 1.5rem + ((1vw - 0.2rem) * 0.909), 2rem);--wp--preset--font-size--h-3: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 1.818), 2.75rem);--wp--preset--font-size--h-2: clamp(2.25rem, 2.25rem + ((1vw - 0.2rem) * 1.818), 3.25rem);--wp--preset--font-size--h-1: clamp(3rem, 3rem + ((1vw - 0.2rem) * 1.818), 4rem);--wp--preset--font-size--huge: clamp(4.5rem, 4.5rem + ((1vw - 0.2rem) * 2.727), 6rem);--wp--preset--font-size--gargantuan: clamp(6rem, 6rem + ((1vw - 0.2rem) * 3.636), 8rem);--wp--preset--font-family--dm-sans: "DM Sans", sans-serif;--wp--preset--font-family--lato: Lato, sans-serif;--wp--preset--spacing--20: calc(clamp(1.2rem, 5vw, 4rem) * 2.0);--wp--preset--spacing--30: calc(clamp(1.2rem, 5vw, 4rem) * 3.0);--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--spacing--05: calc(clamp(1.2rem, 5vw, 4rem) * 0.5);--wp--preset--spacing--10: clamp(1.2rem, 5vw, 4rem);--wp--preset--spacing--15: calc(clamp(1.2rem, 5vw, 4rem) * 1.5);--wp--preset--spacing--25: calc(clamp(1.2rem, 5vw, 4rem) * 2.5);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);--wp--preset--shadow--pro: 8px 8px 24px rgba(0, 0, 0, 0.1);--wp--preset--shadow--neon: 16px 16px 32px var(--wp--preset--color--secondary), -16px -16px 32px var(--wp--preset--color--primary);--wp--custom--border-radius: 24px;--wp--custom--button-font-family: inherit;}:root { --wp--style--global--content-size: 42rem;--wp--style--global--wide-size: 75rem; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: var(--wp--preset--spacing--05); margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: var(--wp--preset--spacing--05); }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--05);margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--05);margin-block-end: 0;}:root :where(.is-layout-flex){gap: var(--wp--preset--spacing--05);}:root :where(.is-layout-grid){gap: var(--wp--preset--spacing--05);}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--dm-sans);font-size: var(--wp--preset--font-size--base);line-height: 1.5;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--10);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--10);}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--primary);}:root :where(a:where(:not(.wp-element-button)):hover){color: var(--wp--preset--color--secondary);}h1, h2, h3, h4, h5, h6{font-family: var(--wp--preset--font-family--lato);font-style: normal;font-weight: 900;line-height: 1.1;}h1{font-size: var(--wp--preset--font-size--h-1);}h2{font-size: var(--wp--preset--font-size--h-2);}h3{font-size: var(--wp--preset--font-size--h-3);}h4{font-size: var(--wp--preset--font-size--h-4);}h5{font-size: var(--wp--preset--font-size--h-5);}h6{font-size: var(--wp--preset--font-size--base);}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--primary);border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: var(--wp--preset--color--secondary);color: #fff;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-custom-orange-color{color: var(--wp--preset--color--custom-orange) !important;}.has-custom-pink-color{color: var(--wp--preset--color--custom-pink) !important;}.has-custom-red-color{color: var(--wp--preset--color--custom-red) !important;}.has-custom-green-color{color: var(--wp--preset--color--custom-green) !important;}.has-custom-blue-color{color: var(--wp--preset--color--custom-blue) !important;}.has-custom-turquoise-color{color: var(--wp--preset--color--custom-turquoise) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-custom-orange-background-color{background-color: var(--wp--preset--color--custom-orange) !important;}.has-custom-pink-background-color{background-color: var(--wp--preset--color--custom-pink) !important;}.has-custom-red-background-color{background-color: var(--wp--preset--color--custom-red) !important;}.has-custom-green-background-color{background-color: var(--wp--preset--color--custom-green) !important;}.has-custom-blue-background-color{background-color: var(--wp--preset--color--custom-blue) !important;}.has-custom-turquoise-background-color{background-color: var(--wp--preset--color--custom-turquoise) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-custom-orange-border-color{border-color: var(--wp--preset--color--custom-orange) !important;}.has-custom-pink-border-color{border-color: var(--wp--preset--color--custom-pink) !important;}.has-custom-red-border-color{border-color: var(--wp--preset--color--custom-red) !important;}.has-custom-green-border-color{border-color: var(--wp--preset--color--custom-green) !important;}.has-custom-blue-border-color{border-color: var(--wp--preset--color--custom-blue) !important;}.has-custom-turquoise-border-color{border-color: var(--wp--preset--color--custom-turquoise) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-black-to-white-gradient-background{background: var(--wp--preset--gradient--black-to-white) !important;}.has-primary-to-secondary-gradient-background{background: var(--wp--preset--gradient--primary-to-secondary) !important;}.has-primary-to-tertiary-gradient-background{background: var(--wp--preset--gradient--primary-to-tertiary) !important;}.has-secondary-to-tertiary-gradient-background{background: var(--wp--preset--gradient--secondary-to-tertiary) !important;}.has-primary-to-transparent-gradient-background{background: var(--wp--preset--gradient--primary-to-transparent) !important;}.has-secondary-to-transparent-gradient-background{background: var(--wp--preset--gradient--secondary-to-transparent) !important;}.has-tertiary-to-transparent-gradient-background{background: var(--wp--preset--gradient--tertiary-to-transparent) !important;}.has-base-to-contrast-gradient-background{background: var(--wp--preset--gradient--base-to-contrast) !important;}.has-base-to-transparent-gradient-background{background: var(--wp--preset--gradient--base-to-transparent) !important;}.has-contrast-to-transparent-gradient-background{background: var(--wp--preset--gradient--contrast-to-transparent) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-tiny-font-size{font-size: var(--wp--preset--font-size--tiny) !important;}.has-base-font-size{font-size: var(--wp--preset--font-size--base) !important;}.has-h-5-font-size{font-size: var(--wp--preset--font-size--h-5) !important;}.has-h-4-font-size{font-size: var(--wp--preset--font-size--h-4) !important;}.has-h-3-font-size{font-size: var(--wp--preset--font-size--h-3) !important;}.has-h-2-font-size{font-size: var(--wp--preset--font-size--h-2) !important;}.has-h-1-font-size{font-size: var(--wp--preset--font-size--h-1) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}.has-gargantuan-font-size{font-size: var(--wp--preset--font-size--gargantuan) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-lato-font-family{font-family: var(--wp--preset--font-family--lato) !important;}
+:root :where(.wp-block-navigation){/*}:root :where(.wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content){color: revert-layer !important /* Until wordpress supports this */}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<style id="core-block-supports-inline-css">
+.wp-container-content-759e20a8{flex-basis:100px;}.wp-container-content-9cfa9a5a{flex-grow:1;}.wp-container-core-group-is-layout-93881e12{flex-wrap:nowrap;justify-content:flex-end;}.wp-container-core-group-is-layout-3eace43e{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-navigation-is-layout-91258ae4{flex-direction:column;align-items:center;}.wp-elements-22c8b1f956709c1be9327b6f71e35326 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--base);}.wp-container-core-group-is-layout-fef3a205 > .alignfull{margin-right:calc(var(--wp--preset--spacing--05) * -1);margin-left:calc(var(--wp--preset--spacing--05) * -1);}.wp-elements-0341dbf889762471ba9aadb5ef4b1868 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--tertiary);}.wp-container-core-navigation-is-layout-e417207c{gap:var(--wp--preset--spacing--05);justify-content:flex-end;}.wp-container-core-columns-is-layout-fa874333{flex-wrap:nowrap;}.wp-container-core-group-is-layout-350bd9dd > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-350bd9dd > * + *{margin-block-start:var(--wp--preset--spacing--10);margin-block-end:0;}
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+/*! This file is auto-generated */
+.skip-link.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal!important}.skip-link.screen-reader-text:focus{background-color:#eee;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+/*# sourceURL=/wp-includes/css/wp-block-template-skip-link.min.css */
+</style>
+<link rel='stylesheet' id='gfi-css' href='https://georgiaftz.com/wp-content/plugins/gravity-forms-iterable/public/css/gfi-public.css?u=1788407152' media='all' />
+<link rel='stylesheet' id='base-css' href='https://georgiaftz.com/wp-content/themes/plus-pro/resources/css/base.css?u=1788407152' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://georgiaftz.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?u=1788407152' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://georgiaftz.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?u=1788407152' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://georgiaftz.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?u=1788407152' media='all' />
+<link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://georgiaftz.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?u=1788407152' media='all' />
+<script id="jquery-core-js" src="https://georgiaftz.com/wp-includes/js/jquery/jquery.min.js?u=1788407152"></script>
+<script id="gform_json-js" defer='defer' src="https://georgiaftz.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?u=1788407152"></script>
+<script id="gform_gravityforms-js-extra">
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://georgiaftz.com/wp-content/plugins/gravityforms","number_formats":[],"version_hash":"bad1e6064f8132e2ccabf58261a88cc7","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://georgiaftz.com/wp-content/plugins/gravityforms","number_formats":[],"version_hash":"bad1e6064f8132e2ccabf58261a88cc7","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gform_i18n = {"datepicker":{"helpTextShort":"Press F1 for help","helpText":"Press the arrow keys to navigate by day, PageUp and PageDown to navigate by month, Alt+PageUp and Alt+PageDown to navigate by year, or Escape to cancel.","openOnFocusHelpText":"Press Down arrow to browse the calendar, or Escape to close.","tooltipTxt":"Press Escape to cancel","disabledTxt":"Disabled","markedTxt":"Selected","prevTxt":"Previous","nextTxt":"Next","monthTxt":"Month","yearTxt":"Year","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"days":[{"s":"S","l":"Sunday"},{"s":"M","l":"Monday"},{"s":"T","l":"Tuesday"},{"s":"W","l":"Wednesday"},{"s":"T","l":"Thursday"},{"s":"F","l":"Friday"},{"s":"S","l":"Saturday"}]}};
+var gf_legacy_multi = {"1":""};
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","file_uploaded":"File uploaded","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https://georgiaftz.com/wp-content/plugins/gravityforms/images"}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js" defer='defer' src="https://georgiaftz.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?u=1788407152"></script>
+<script id="gform_gravityforms_utils-js" defer='defer' src="https://georgiaftz.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?u=1788407152"></script>
+<script id="list-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/resources/js/list.js?u=1788407152"></script>
+<script id="pluspro-pro-accordion-script-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/blocks/pro-accordion/pro-accordion.js?u=1788407152"></script>
+<script id="media-text-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/resources/js/media-text.js?u=1788407152"></script>
+<script id="post-template-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/resources/js/post-template.js?u=1788407152"></script>
+<script id="fontawesome-js" src="https://kit.fontawesome.com/2eb4cb07cd.js"></script>
+<script id="gfi-js" src="https://georgiaftz.com/wp-content/plugins/gravity-forms-iterable/public/js/gfi-public.js?u=1788407152"></script>
+<script id="rellax-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/resources/js/rellax.js?u=1788407152"></script>
+<script id="photoswipe.umd.min-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/resources/js/photoswipe.umd.min.js?u=1788407152"></script>
+<script id="photoswipe-lightbox.umd.min-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/resources/js/photoswipe-lightbox.umd.min.js?u=1788407152"></script>
+<script id="photoswipe-dynamic-caption-plugin.umd.min-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/resources/js/photoswipe-dynamic-caption-plugin.umd.min.js?u=1788407152"></script>
+<script id="count-up-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/resources/js/count-up.js?u=1788407152"></script>
+<link rel="https://api.w.org/" href="https://georgiaftz.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://georgiaftz.com/wp-json/wp/v2/pages/48" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://georgiaftz.com/xmlrpc.php?rsd" />
+<!-- Stream WordPress user activity plugin v4.3.0 -->
+<style class="wp-fonts-local">
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:300;font-display:fallback;src:url('https://georgiaftz.com/wp-content/uploads/fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwA_JxhS2f3ZGMZpg.woff2') format('woff2');}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:500;font-display:fallback;src:url('https://georgiaftz.com/wp-content/uploads/fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhS2f3ZGMZpg.woff2') format('woff2');}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:800;font-display:fallback;src:url('https://georgiaftz.com/wp-content/uploads/fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAIpthS2f3ZGMZpg.woff2') format('woff2');}
+@font-face{font-family:"DM Sans";font-style:italic;font-weight:300;font-display:fallback;src:url('https://georgiaftz.com/wp-content/uploads/fonts/rP2rp2ywxg089UriCZaSExd86J3t9jz86Mvy4qCRAL19DksVat_XDW32RmYJpso5.woff2') format('woff2');}
+@font-face{font-family:"DM Sans";font-style:italic;font-weight:500;font-display:fallback;src:url('https://georgiaftz.com/wp-content/uploads/fonts/rP2rp2ywxg089UriCZaSExd86J3t9jz86Mvy4qCRAL19DksVat-7DW32RmYJpso5.woff2') format('woff2');}
+@font-face{font-family:"DM Sans";font-style:italic;font-weight:800;font-display:fallback;src:url('https://georgiaftz.com/wp-content/uploads/fonts/rP2rp2ywxg089UriCZaSExd86J3t9jz86Mvy4qCRAL19DksVat8JCm32RmYJpso5.woff2') format('woff2');}
+@font-face{font-family:Lato;font-style:normal;font-weight:900;font-display:fallback;src:url('https://georgiaftz.com/wp-content/uploads/fonts/S6u9w4BMUTPHh50XewqFGC_p9dw.woff2') format('woff2');}
+</style>
+<link rel="icon" href="https://georgiaftz.com/wp-content/uploads/2026/01/cropped-PNG_GFTZ-Logo_White-Full-Color-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://georgiaftz.com/wp-content/uploads/2026/01/cropped-PNG_GFTZ-Logo_White-Full-Color-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://georgiaftz.com/wp-content/uploads/2026/01/cropped-PNG_GFTZ-Logo_White-Full-Color-180x180.png" />
+<meta name="msapplication-TileImage" content="https://georgiaftz.com/wp-content/uploads/2026/01/cropped-PNG_GFTZ-Logo_White-Full-Color-270x270.png" />
+<svg width='0' height='0' version='1.1' xmlns='http://www.w3.org/2000/svg' style='position:absolute;'>
+            <defs>
+              <linearGradient id='primary-to-secondary' x1='0' x2='1' y1='0' y2='1'>
+                <stop offset='0%' stop-color='#292f7b' />
+                <stop offset='100%' stop-color='#5cb6b6' />
+              </linearGradient>
+              <linearGradient id='primary-to-tertiary' x1='0' x2='1' y1='0' y2='1'>
+                <stop offset='0%' stop-color='#292f7b' />
+                <stop offset='100%' stop-color='#eca144' />
+              </linearGradient>
+              <linearGradient id='secondary-to-tertiary'' x1='0' x2='1' y1='0' y2='1'>
+                <stop offset='0%' stop-color='#5cb6b6' />
+                <stop offset='100%' stop-color='#eca144' />
+              </linearGradient>
+            </defs>
+          </svg><svg width='0' height='0' version='1.1' xmlns='http://www.w3.org/2000/svg' style='position:absolute;'>
+            <defs>
+              <linearGradient id='primary-to-secondary' x1='0' x2='1' y1='0' y2='1'>
+                <stop offset='0%' stop-color='#292f7b' />
+                <stop offset='100%' stop-color='#5cb6b6' />
+              </linearGradient>
+              <linearGradient id='primary-to-tertiary' x1='0' x2='1' y1='0' y2='1'>
+                <stop offset='0%' stop-color='#292f7b' />
+                <stop offset='100%' stop-color='#eca144' />
+              </linearGradient>
+              <linearGradient id='secondary-to-tertiary'' x1='0' x2='1' y1='0' y2='1'>
+                <stop offset='0%' stop-color='#5cb6b6' />
+                <stop offset='100%' stop-color='#eca144' />
+              </linearGradient>
+            </defs>
+          </svg></head>
+
+<body class="wp-singular page-template-default page page-id-48 wp-embed-responsive wp-theme-plus-framework wp-child-theme-plus-pro">
+
+<a class="skip-link screen-reader-text" id="wp-skip-link" href="#wp--skip-link--target">Skip to content</a><div class="wp-site-blocks"><header class="wp-block-template-part"><div style="padding-top:var(--wp--preset--spacing--05);padding-bottom:var(--wp--preset--spacing--05);--pro-overlay-text:#ffffff" class="alignfull has-global-padding pro-navbar-container is-position-sticky is-position-sticky--auto has-property-overlay align wp-block-pluspro-pro-navbar-container has-background has-base-background-color is-layout-constrained wp-block-pluspro-pro-navbar-container-is-layout-constrained">
+
+  
+
+<div class="wp-block-group alignwide is-style-default is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-3eace43e wp-block-group-is-layout-flex" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+<div class="wp-block-group wp-container-content-759e20a8 is-layout-flow wp-block-group-is-layout-flow"></div>
+
+
+
+<div class="wp-block-group wp-container-content-9cfa9a5a is-layout-flow wp-block-group-is-layout-flow"><div class="align wp-block-pluspro-pro-logo">
+  <a href='/' class="pro_logo" title="Georgia Foreign-Trade Zone Home" >
+          <img decoding="async" class="pro_logo__img" alt="Georgia Foreign-Trade Zone" src="https://georgiaftz.com/wp-content/uploads/2025/12/PNG_GFTZ-Logo_White-Full-Color-e1776364401573-768x232.png" alt="" height="100" style="height:100px;width:auto;">
+        <img class='pro_logo__img  pro_logo__img--scrolled' alt='Georgia Foreign-Trade Zone' src='https://georgiaftz.com/wp-content/uploads/2025/12/PNG_GFTZ-Logo_Full-Color-e1776364367534-768x230.png' height='56' style='height:56px;width:auto;'><img class='pro_logo__img  pro_logo__img--phone' alt='Georgia Foreign-Trade Zone' src='https://georgiaftz.com/wp-content/uploads/2025/12/PNG_GFTZ-Logo_White-Full-Color-e1776364401573-768x232.png' height='56' style='height:56px;width:auto;'><img class='pro_logo__img  pro_logo__img--scrolledphone' alt='Georgia Foreign-Trade Zone' src='https://georgiaftz.com/wp-content/uploads/2025/12/PNG_GFTZ-Logo_Full-Color-e1776364367534-768x230.png' height='56' style='height:56px;width:auto;'>  </a>
+</div>
+</div>
+
+
+
+<div class="wp-block-group wp-container-content-759e20a8 is-content-justification-right is-nowrap is-layout-flex wp-container-core-group-is-layout-93881e12 wp-block-group-is-layout-flex"><div class="align wp-block-pluspro-pro-navbar-drawer-trigger">
+  <a class="pro-navbar-drawer-trigger pro-button wp-element-button"><span class='pro-navbar-drawer-trigger__icon'><i class='pro-navbar-drawer-trigger__icon--default'></i></span></a></div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+	    const trigger = document.querySelector(".pro-navbar-drawer-trigger");
+	    const drawer = document.querySelector(".pro-navbar-drawer");
+			
+			const drawerclose = document.querySelector(".pro-navbar-drawer__close");
+
+	    if ( trigger && drawer ) {
+	        trigger.addEventListener("click", () => {
+	            drawer.classList.toggle("pro-navbar-drawer--open");
+							trigger.classList.toggle("pro-navbar-drawer-trigger--open");
+	        });
+					
+					if ( drawerclose ) {
+		        drawerclose.addEventListener("click", () => {
+		            drawer.classList.remove("pro-navbar-drawer--open");
+								trigger.classList.remove("pro-navbar-drawer-trigger--open");
+		        });
+					}
+	    }
+	});
+</script></div>
+</div>
+
+
+
+</div>
+
+<script>
+	
+	
+	function watchElementHeight(element, callback) {
+
+	    // Create a new ResizeObserver instance
+	    const resizeObserver = new ResizeObserver(entries => {
+	        for (let entry of entries) {
+						if ( entry.target.classList.contains('has-property-overlay') && !entry.target.parentElement.classList.contains('scrolled') ){
+							callback(entry.borderBoxSize[0].blockSize + entry.target.firstElementChild.clientHeight);
+						} else {
+							callback(entry.borderBoxSize[0].blockSize);
+						}
+	        	
+	        }
+	    });
+
+	    // Start observing the element
+	    resizeObserver.observe(element);
+
+	    // Return a function to stop observing when needed
+	    return () => resizeObserver.unobserve(element);
+	}
+
+	// Example usage:
+	const element = document.querySelector(".pro-navbar-container");
+
+	const stopObserving = watchElementHeight(element, newHeight => {
+	    const root = document.documentElement;
+			
+			root.style.setProperty('--pro-navbar-container--height', newHeight+'px');
+	});
+
+	// To stop observing later, call:
+	// stopObserving();
+	
+</script>
+
+
+<div style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)" class="pro-navbar-drawer pro-navbar-drawer--top align wp-block-pluspro-pro-navbar-drawer is-layout-flow wp-block-pluspro-pro-navbar-drawer-is-layout-flow">
+	<a href='#' class='pro-navbar-drawer__close'><i class='fa-light fa-close'></i></a>
+	<div class="pro-navbar-drawer__inner">
+  	
+<nav class="items-justified-center is-vertical wp-block-navigation is-content-justification-center is-layout-flex wp-container-core-navigation-is-layout-91258ae4 wp-block-navigation-is-layout-flex" aria-label="Navigation"><ul class="wp-block-navigation__container items-justified-center is-vertical wp-block-navigation"><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/"><span class="wp-block-navigation-item__label">Home</span></a></li><li class="wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/benefits/" aria-current="page"><span class="wp-block-navigation-item__label">Benefits</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/service-area-member-companies/"><span class="wp-block-navigation-item__label">Service Area &amp; Member Companies</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/industries/"><span class="wp-block-navigation-item__label">Industries</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/get-started/"><span class="wp-block-navigation-item__label">Get Started</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/fast-facts/"><span class="wp-block-navigation-item__label">About Us</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/board-of-directors/"><span class="wp-block-navigation-item__label">Board of Directors</span></a></li></ul></nav>
+
+	</div>
+</div></header>
+
+
+<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center has-base-color has-text-color has-link-color wp-elements-22c8b1f956709c1be9327b6f71e35326" style="margin-top:0;margin-bottom:0"><img width="1024" height="683" class="wp-block-cover__image-background wp-image-214 size-large" alt="" src="https://georgiaftz.com/wp-content/uploads/2026/01/image-from-rawpixel-id-3259566-jpeg-1024x683.webp" style="object-position:38% 85%" data-object-fit="cover" data-object-position="38% 85%" srcset="https://georgiaftz.com/wp-content/uploads/2026/01/image-from-rawpixel-id-3259566-jpeg-1024x683.webp 1024w, https://georgiaftz.com/wp-content/uploads/2026/01/image-from-rawpixel-id-3259566-jpeg-300x200.webp 300w, https://georgiaftz.com/wp-content/uploads/2026/01/image-from-rawpixel-id-3259566-jpeg-768x512.webp 768w, https://georgiaftz.com/wp-content/uploads/2026/01/image-from-rawpixel-id-3259566-jpeg.webp 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /><span aria-hidden="true" class="wp-block-cover__background has-custom-blue-background-color has-background-dim"></span><div class="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-block-cover-is-layout-constrained"><div class="aligncenter wp-block-pluspro-pro-breadcrumbs has-text-align-center is-layout-flow wp-block-pluspro-pro-breadcrumbs-is-layout-flow">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://georgiaftz.com/"},{"@type":"ListItem","position":2,"name":"Benefits"}]}</script>  
+  </div>
+
+<h1 class="has-text-align-center wp-block-post-title has-h-1-font-size">Benefits</h1>
+
+<div class="align wp-block-pluspro-pro-spacer" style="margin-top:calc(3vw + 32px) !important">
+
+  </div>
+</div></div>
+
+
+
+<main id="wp--skip-link--target" class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0"><div class="align wp-block-pluspro-pro-spacer" style="margin-top:calc(3vw + 32px) !important">
+
+  </div>
+
+
+<div class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<p class="wp-block-paragraph">Georgia Foreign-Trade Zone offers access to the only U.S. government program specifically designed to cut the cost of doing business. By statute, the FTZ program allows businesses to reduce, delay, or eliminate tariffs.</p>
+
+
+
+<h4 class="wp-block-heading">Delaying or Eliminating Tariff Payments</h4>
+
+
+
+<p class="wp-block-paragraph">Hold onto your money longer by delaying duty payments until your imported merchandise leaves your factory or warehouse and enters the U.S. market.</p>
+
+
+
+<p class="wp-block-paragraph">Withhold payment on duties on merchandise that is rejected, scrapped, exported, or consumed within an FTZ.</p>
+
+
+
+<hr class="wp-block-separator aligncenter has-text-color has-secondary-color has-alpha-channel-opacity has-secondary-background-color has-background"/>
+
+
+
+<h4 class="wp-block-heading">Saving Time</h4>
+
+
+
+<p class="wp-block-paragraph">Shorten your supply chains by bypassing the need for a customs entry before receiving your merchandise from a port of entry.</p>
+
+
+
+<p class="wp-block-paragraph">Start filing a consolidated weekly entry with U.S. Customs and Border Protection (CBP) rather than reporting individual shipments.</p>
+
+
+
+<p class="wp-block-paragraph">There is no cost and no obligation to find out if the FTZ program is right for your company. Georgia Foreign-Trade Zone offers all businesses the opportunity to have our team analyze the savings you can expect to realize on an annual basis based on your specific business operations. It’s free, confidential, and easy to get started.</p>
+
+
+
+    <div class="align wp-block-pluspro-pro-buttons is-content-justification-center is-layout-flow wp-block-pluspro-pro-buttons-is-layout-flow">
+  
+
+  <div class="align wp-block-pluspro-pro-button has-text-align-center">
+  
+  <a class="pro-button pro-button--icon-right pro-button--align-center pro-button--width-default pro-button--size-default wp-element-button" href='https://georgiaftz.com/get-started/' target='false'">
+    
+
+<p class="has-text-align-center wp-block-paragraph">Let&#8217;s Find Out How Much You Can Save!</p>
+
+
+      </a>
+  
+  </div>
+
+
+    </div>
+
+
+
+<p class="wp-block-paragraph">In addition, Georgia Foreign-Trade Zone offers its member companies exclusive additional benefits at no additional cost including access to the nation’s leading experts in FTZ procedures and compliance, trade attorneys, and to both the National Association of Foreign-Trade Zones (NAFTZ), the industry’s largest association, and the World Free Zone’s Organization, which advises free and special economic zones globally.</p>
+
+
+
+<p class="wp-block-paragraph">Georgia Foreign-Trade Zone is a partner you can trust. Many of our state’s largest and most iconic employers have worked with us for years, and so too have many small businesses. If you’re not sure the program is right for you, send us your questions. Our expert team will respond quickly and advise you of your options and the best way to move your business forward.</p>
+
+
+
+<hr class="wp-block-separator aligncenter has-text-color has-secondary-color has-alpha-channel-opacity has-secondary-background-color has-background"/>
+
+
+
+<h4 class="wp-block-heading">FAQs</h4>
+
+
+
+<div class="align wp-block-pluspro-pro-accordion" data-block="pro_accordion_1">
+    
+  <div class="pro-accordion pro-accordion--manual pro-accordion--icon-right">
+<div style="border-bottom-width:1px;border-bottom-color:var(--wp--preset--color--tertiary)" class="pro-accordion-item align wp-block-pluspro-pro-accordion-item">
+  <h5 class="pro-accordion-item__heading">
+        <span>Where is the zone? And what is it?</span><span class='pro-accordion-item__icon'><i class='pro-accordion-item__icon--default'></i></span>
+      </h5>  <div class="acf-innerblocks-container">
+
+<p class="wp-block-paragraph">The most frequently asked question about foreign-trade zones is where they’re located. And the answer is that they’re everywhere. In fact, if you’re anywhere in Georgia, you’re potentially in a foreign-trade zone.</p>
+
+
+
+<p class="wp-block-paragraph">Unlike free trade zones in other parts of the world, the U.S. does not require a business to relocate their operations to a specific area as a condition for accessing federal benefits.</p>
+
+
+
+<p class="wp-block-paragraph">Participating in the program confers a legal status onto the business conducted at a company’s place of operations – whether that’s a factory, warehouse, or distribution center.</p>
+
+
+
+<p class="wp-block-paragraph">That status is valuable. It puts that site outside the territory of the U.S. Customs and Border Protection (CBP) for the purposes of tariff laws and entry procedures. A wide-range of economic benefits and supply chain optimizations opens up, allowing companies to better compete in their industries.</p>
+
+</div>
+</div>
+
+
+<div style="border-bottom-width:1px;border-bottom-color:var(--wp--preset--color--custom-pink)" class="pro-accordion-item align wp-block-pluspro-pro-accordion-item">
+  <h5 class="pro-accordion-item__heading">
+        <span>Where does Georgia Foreign-Trade Zone operate?</span><span class='pro-accordion-item__icon'><i class='pro-accordion-item__icon--default'></i></span>
+      </h5>  <div class="acf-innerblocks-container">
+
+<p class="wp-block-paragraph">A list of counties in which we are able to operate is listed <a href="https://georgiaftz.com/service-area-member-companies/" data-type="page" data-id="62">here</a>. If your company’s sites fall outside of our geographic service area, we can connect you with officials in charge of Georgia’s two other foreign-trade zones, based out of Savannah and Brunswick.</p>
+
+</div>
+</div>
+
+
+<div style="border-bottom-width:1px;border-bottom-color:var(--wp--preset--color--custom-red)" class="pro-accordion-item align wp-block-pluspro-pro-accordion-item">
+  <h5 class="pro-accordion-item__heading">
+        <span>What are the benefits of participating in the FTZ program?</span><span class='pro-accordion-item__icon'><i class='pro-accordion-item__icon--default'></i></span>
+      </h5>  <div class="acf-innerblocks-container">
+
+<p class="wp-block-paragraph">In short, participating in the program lowers the cost of doing business for companies that have a global supply chain.</p>
+
+
+
+<p class="wp-block-paragraph">Participating companies can benefit from improved cash flow since tariffs are delayed until merchandise is released into commerce within the United States.</p>
+
+
+
+<p class="wp-block-paragraph">Subject to executive orders that modify regulations governing tariffs, the statute authorizing the FTZ program allows businesses to use merchandise to create a more finished product, opening the possibility of significantly reducing or even fully eliminating the tariffs that would otherwise be assessed.</p>
+
+
+
+<p class="wp-block-paragraph">Here’s how this has historically been done: if the tariff rate on imported merchandise used in the production of a finished product is higher than the duty rate of the finished product, the lower rate is applied. This helps level the playing field for U.S. manufacturers competing globally. Whilst the program cannot practically be applied in most circumstances to reduce or eliminate tariffs as of November 2025, merchandise that is never released, or is exported to a foreign market even as part of a finished product, will never be assessed duties or tariffs.</p>
+
+
+
+<p class="wp-block-paragraph">All companies can also take advantage of faster, more streamlined movement of merchandise and hard caps on processing fees. Many companies are eligible to take advantage of special procedures such as direct delivery and weekly entry that expedite the movement of cargo, thereby supporting just-in-time delivery. Merchandise Processing Fees (MPF) are reliably set at a lower cost than is oftentimes otherwise paid.</p>
+
+</div>
+</div>
+
+
+<div style="border-bottom-width:1px;border-bottom-color:var(--wp--preset--color--primary)" class="pro-accordion-item align wp-block-pluspro-pro-accordion-item">
+  <h5 class="pro-accordion-item__heading">
+        <span>How does a company obtain FTZ status?</span><span class='pro-accordion-item__icon'><i class='pro-accordion-item__icon--default'></i></span>
+      </h5>  <div class="acf-innerblocks-container">
+
+<p class="wp-block-paragraph">Georgia Foreign-Trade Zone and its trade experts are here to help guide companies through the application process. Gathering the information required to apply is simple and straightforward. After all, the FTZ program exists to increase efficiencies, not slow them down.</p>
+
+
+
+<p class="wp-block-paragraph">Once an application is complete, Georgia Foreign-Trade Zone will submit it on your behalf to the U.S. Foreign-Trade Zones Board in Washington, DC. The FTZ Board&nbsp;staff reviews and processes all applications, typically within six months.</p>
+
+
+
+<p class="wp-block-paragraph">If your application is approved, your company may begin using FTZ procedures&nbsp;at the factory, warehouse, or distribution center after “activation” is granted from&nbsp;U.S. Customs and Border Protection (CBP).</p>
+
+</div>
+</div>
+
+
+<div style="border-bottom-width:1px;border-bottom-color:var(--wp--preset--color--secondary)" class="pro-accordion-item align wp-block-pluspro-pro-accordion-item">
+  <h5 class="pro-accordion-item__heading">
+        <span>Where can I find duty rates for specific products?</span><span class='pro-accordion-item__icon'><i class='pro-accordion-item__icon--default'></i></span>
+      </h5>  <div class="acf-innerblocks-container">
+
+<p class="wp-block-paragraph">Duty rates are listed by product and country of origin in the U.S. Customs Harmonized Tariff Schedule available <a href="https://hts.usitc.gov/">online here</a>. Because product categories are very specific, a licensed customs broker should be contacted for assistance.</p>
+
+</div>
+</div>
+
+
+<div class="pro-accordion-item align wp-block-pluspro-pro-accordion-item">
+  <h5 class="pro-accordion-item__heading">
+        <span>How does my company get started?</span><span class='pro-accordion-item__icon'><i class='pro-accordion-item__icon--default'></i></span>
+      </h5>  <div class="acf-innerblocks-container">
+
+<div class="wp-block-group has-secondary-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-fef3a205 wp-block-group-is-layout-constrained" style="border-style:none;border-width:0px;border-top-left-radius:40px;border-top-right-radius:40px;border-bottom-left-radius:40px;border-bottom-right-radius:40px;padding-top:var(--wp--preset--spacing--05);padding-right:var(--wp--preset--spacing--05);padding-bottom:var(--wp--preset--spacing--05);padding-left:var(--wp--preset--spacing--05);box-shadow:6px 6px 9px rgba(0, 0, 0, 0.2)">
+<h4 class="wp-block-heading has-text-align-center is-style-default">Contact Us!</h4>
+
+
+
+                <div class='gf_browser_chrome gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_1' ><style>#gform_wrapper_1[data-form-index="0"].gform-theme{--gf-color-primary: #292f7b;--gf-color-primary-rgb: 41, 47, 123;--gf-color-primary-contrast: #ffffff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #000049;--gf-color-primary-lighter: #5B61AD;--gf-color-secondary: #ffffff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #000000;--gf-color-secondary-contrast-rgb: 0, 0, 0;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(0, 0, 0, 0.1);--gf-color-out-ctrl-light-rgb: 0, 0, 0;--gf-color-out-ctrl-light-darker: rgba(221, 221, 221, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #000000;--gf-color-out-ctrl-dark-rgb: 0, 0, 0;--gf-color-out-ctrl-dark-darker: #000000;--gf-color-out-ctrl-dark-lighter: rgba(0, 0, 0, 0.65);--gf-color-in-ctrl: #ffffff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #000000;--gf-color-in-ctrl-contrast-rgb: 0, 0, 0;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #292f7b;--gf-color-in-ctrl-primary-rgb: 41, 47, 123;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #000049;--gf-color-in-ctrl-primary-lighter: #5B61AD;--gf-color-in-ctrl-light: rgba(0, 0, 0, 0.1);--gf-color-in-ctrl-light-rgb: 0, 0, 0;--gf-color-in-ctrl-light-darker: rgba(221, 221, 221, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #000000;--gf-color-in-ctrl-dark-rgb: 0, 0, 0;--gf-color-in-ctrl-dark-darker: #000000;--gf-color-in-ctrl-dark-lighter: rgba(0, 0, 0, 0.65);--gf-radius: 24px;--gf-font-size-secondary: 16px;--gf-font-size-tertiary: 14px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(0, 0, 0, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(0, 0, 0, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg width='640' height='640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(0, 0, 0, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #DDDDDD;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #000000;--gf-ctrl-label-color-secondary: #000000;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #DDDDDD;--gf-ctrl-btn-bg-color-hover-tertiary: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(0, 0, 0, 0.8);}</style>
+                        <div class='gform_heading'>
+							<p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                        </div><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/benefits/' data-formid='1' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_1_13" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_13'><span class='gform-field-label__text'>Instagram</span></label><div class='ginput_container'><input name='input_13' id='input_1_13' type='text' value='' autocomplete='new-password'/></div><div class='gfield_description' id='gfield_description_1_13'>This field is for validation purposes and should be left unchanged.</div></div><div id="field_1_1" class="gfield gfield--type-text gfield--input-type-text gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_1'><span class='gform-field-label__text'>First Name</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_1_1' type='text' value='' class='large'    placeholder='First Name' aria-required="true" aria-invalid="false"   /></div></div><div id="field_1_2" class="gfield gfield--type-text gfield--input-type-text gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_2'><span class='gform-field-label__text'>Last Name</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_2' id='input_1_2' type='text' value='' class='large'    placeholder='Last Name' aria-required="true" aria-invalid="false"   /></div></div><div id="field_1_3" class="gfield gfield--type-email gfield--input-type-email gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_3'><span class='gform-field-label__text'>Email</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_3' id='input_1_3' type='email' value='' class='large'   placeholder='Email' aria-required="true" aria-invalid="false"  />
+                        </div></div><div id="field_1_8" class="gfield gfield--type-phone gfield--input-type-phone gfield--phone-format-international gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_8'><span class='gform-field-label__text'>Phone</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_phone'><input name='input_8' id='input_1_8' type='tel' value='' class='large'  placeholder='Phone' aria-required="true" aria-invalid="false"    /></div></div><div id="field_1_9" class="gfield gfield--type-text gfield--input-type-text gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_9'><span class='gform-field-label__text'>Company</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_9' id='input_1_9' type='text' value='' class='large'    placeholder='Company' aria-required="true" aria-invalid="false"   /></div></div><div id="field_1_11" class="gfield gfield--type-text gfield--input-type-text gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_11'><span class='gform-field-label__text'>Country</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_11' id='input_1_11' type='text' value='' class='large'    placeholder='Country' aria-required="true" aria-invalid="false"   /></div></div><div id="field_1_10" class="gfield gfield--type-post_content gfield--input-type-post_content gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_1_10'><span class='gform-field-label__text'>Message</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_10' id='input_1_10' class='textarea large'    placeholder='Message' aria-required="true" aria-invalid="false"   rows='10' cols='50'></textarea></div></div><div id="field_1_5" class="gfield gfield--type-basic_data gfield--input-type-basic_data field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible gform_hidden"  data-field-class="gform_hidden" ><label class='gfield_label gform-field-label gfield_label_before_complex' for='input_1_5_1'><span class='gform-field-label__text'>GFI Tracking: Basic Data</span></label><div class='ginput_complex ginput_container ginput_container_basic_data gfield_trigger_change' id='input_input_1_5'>
+						<span id='input_5_1_container' class='origin_url'>
+							<label for='input_5_1'>Origin URL</label>
+							<input type='text' name='input_5.1' id='input_5_1' value='https://georgiaftz.com/benefits' aria-label='Origin URL'   autocomplete='off'>
+						</span>
+					
+						<span id='input_5_2_container' class='page_title'>
+							<label for='input_5_2'>Page Title</label>
+							<input type='text' name='input_5.2' id='input_5_2' value='Benefits' aria-label='Page Title'   autocomplete='off'>
+						</span>
+					
+						<span id='input_5_3_container' class='source_url'>
+							<label for='input_5_3'>Source URL</label>
+							<input type='text' name='input_5.3' id='input_5_3' value='https://georgiaftz.com/benefits/' aria-label='Source URL'   autocomplete='off'>
+						</span>
+					
+						<span id='input_5_4_container' class='query_string'>
+							<label for='input_5_4'>Query String</label>
+							<input type='text' name='input_5.4' id='input_5_4' value='' aria-label='Query String'   autocomplete='off'>
+						</span>
+					
+						<span id='input_5_5_container' class='date'>
+							<label for='input_5_5'>Date</label>
+							<input type='text' name='input_5.5' id='input_5_5' value='09/03/2026' aria-label='Date'   autocomplete='off'>
+						</span>
+					
+						<span id='input_5_6_container' class='time'>
+							<label for='input_5_6'>Time</label>
+							<input type='text' name='input_5.6' id='input_5_6' value='11:34 pm GMT+0000' aria-label='Time'   autocomplete='off'>
+						</span>
+					<div class="gf_clear gf_clear_complex"></div></div></div><div id="field_1_7" class="gfield gfield--type-utm gfield--input-type-utm gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible gform_hidden"  data-field-class="gform_hidden" ><label class='gfield_label gform-field-label gfield_label_before_complex' for='input_1_7_1'><span class='gform-field-label__text'>GFI Tracking: UTM Data</span></label><div class='ginput_complex ginput_container ginput_container_utm gfield_trigger_change' id='input_input_1_7'>
+						<span id='input_7_1_container' class='utm_source'>
+							<label for='input_7_1'>UTM Source</label>
+							<input type='text' name='input_7.1' id='input_7_1' value='' aria-label='UTM Source'   autocomplete='off'>
+						</span>
+					
+						<span id='input_7_2_container' class='utm_medium'>
+							<label for='input_7_2'>UTM Medium</label>
+							<input type='text' name='input_7.2' id='input_7_2' value='' aria-label='UTM Medium'   autocomplete='off'>
+						</span>
+					
+						<span id='input_7_3_container' class='utm_campaign'>
+							<label for='input_7_3'>UTM Campaign</label>
+							<input type='text' name='input_7.3' id='input_7_3' value='' aria-label='UTM Campaign'   autocomplete='off'>
+						</span>
+					
+						<span id='input_7_4_container' class='utm_content'>
+							<label for='input_7_4'>UTM Content</label>
+							<input type='text' name='input_7.4' id='input_7_4' value='' aria-label='UTM Content'   autocomplete='off'>
+						</span>
+					
+						<span id='input_7_5_container' class='utm_term'>
+							<label for='input_7_5'>UTM Term</label>
+							<input type='text' name='input_7.5' id='input_7_5' value='' aria-label='UTM Term'   autocomplete='off'>
+						</span>
+					<div class="gf_clear gf_clear_complex"></div></div></div><div id="field_1_12" class="gfield gfield--type-turnstile gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><div class='ginput_container ginput_container_turnstile'><div class="cf-turnstile" id="cf-turnstile_1" data-js-turnstile data-response-field-name="cf-turnstile-response_1" data-theme="auto" data-size="normal" data-sitekey="0x4AAAAAAETIFJ2rZ6jHX87o"></div></div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <button type='submit' id='gform_submit_button_1' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' >SEND</button> 
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_1' value='postback' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_1' id='gform_theme_1' value='orbital' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_1' id='gform_style_settings_1' value='{&quot;inputPrimaryColor&quot;:&quot;#292f7b&quot;,&quot;buttonPrimaryBackgroundColor&quot;:&quot;#292f7b&quot;}' />
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='CjEUIx9yTaUsjVEyC0o8JqIZORJaxA/7EYBmu1HK7l27NaeFRPsgrvRajB5962RK5vD2ZaNJXlX5H/J9l+DAh3YtewgLZeKWdlqvuOVoLQPKSVA=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcImQ2NjI3ZGJhY2I5ZTBlNDA1MjVmYThmMTk1OTc5MjAwXCIsXCI2YWQ4NWM1OWYzNGFjYjA0NDU5YmI4OTAxOWE3ZGFiOVwiXSxcImdmb3JtX3RoZW1lXCI6XCJmZTNmMjAzN2RjZDAyN2I5NGNiZThiNmI3ZjE1NGEzY1wiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImNjYjJjMzViNTU5YWVmZTU4MWZhMDc4ZjA1YzIwZjRlXCIsXCJmb3JtX2lkXCI6XCJhYTNkMTRjYzZmZmU1Njg5Y2I3MTU4YTQzYzk2Y2U5M1wiLFwidXJsXCI6XCJlOTQxMjAwOTBkMGJjZDQxMGIwMGNjYzdiZDJlOWNlY1wiLFwic3RhdGVfdGltZXN0YW1wXCI6XCI3NjIyYTI5YzcwODUxYzViODZkZWQ1YjY4YTc2YzhiOFwifSIsImQyNjIwMDA1NGYzZWYxNmNmZWFhYzkyZjczZTIxMjJhIiwxNzg4NDc4NDc5XQ==' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div></div>
+
+</div>
+</div>
+
+</div>
+  
+      <script>
+      let pro_accordion_1;
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        pro_accordion_1 = new proAccordion('pro_accordion_1', {"behavior":"manual","search_filter":false,"type_filter":false,"heading_size":"h5","icon_type":"default","icon_side":"right"});
+      });
+    </script>
+  </div>
+</div>
+
+<div class="align wp-block-pluspro-pro-spacer" style="margin-top:calc(3vw + 32px) !important">
+
+  </div>
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group alignfull has-base-color has-text-color has-background has-link-color wp-elements-0341dbf889762471ba9aadb5ef4b1868 has-global-padding is-layout-constrained wp-container-core-group-is-layout-350bd9dd wp-block-group-is-layout-constrained" style="background-color:#15183f;padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)">
+<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-fa874333 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25%"><div class="align wp-block-pluspro-pro-logo">
+  <a href='/' class="pro_logo" title="Georgia Foreign-Trade Zone Home" >
+          <img decoding="async" class="pro_logo__img" alt="Georgia Foreign-Trade Zone" src="https://georgiaftz.com/wp-content/uploads/2025/12/PNG_GFTZ-Logo_White-Full-Color-e1776364401573-768x232.png" alt="" height="70" style="height:70px;width:auto;">
+          </a>
+</div>
+
+
+
+<p class="has-text-align-center wp-block-paragraph"><a href="/cdn-cgi/l/email-protection#531a3d353c1314363c21343a321507097d303c3e"><span class="__cf_email__" data-cfemail="763f1810193631131904111f1730222c5815191b">[email&#160;protected]</span></a><br><a href="tel:404-223-2297">404-223-2296</a></p>
+
+
+
+<p class="has-text-align-center opacity50 has-tiny-font-size wp-block-paragraph" style="margin-top:var(--wp--preset--spacing--05);margin-bottom:0"><a href="/privacy-policy">Privacy Policy</a></p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><nav class="items-justified-right is-style-columns wp-block-navigation is-horizontal is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-e417207c wp-block-navigation-is-layout-flex" aria-label="Navigation 2"><ul class="wp-block-navigation__container items-justified-right is-style-columns wp-block-navigation"><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/"><span class="wp-block-navigation-item__label">Home</span></a></li><li class="wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/benefits/" aria-current="page"><span class="wp-block-navigation-item__label">Benefits</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/service-area-member-companies/"><span class="wp-block-navigation-item__label">Service Area &amp; Member Companies</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/industries/"><span class="wp-block-navigation-item__label">Industries</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/get-started/"><span class="wp-block-navigation-item__label">Get Started</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/fast-facts/"><span class="wp-block-navigation-item__label">About Us</span></a></li><li class="wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://georgiaftz.com/board-of-directors/"><span class="wp-block-navigation-item__label">Board of Directors</span></a></li></ul></nav></div>
+</div>
+</div>
+</footer></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/plus-pro/*","/wp-content/themes/plus-framework/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-dom-ready-js" src="https://georgiaftz.com/wp-includes/js/dist/dom-ready.min.js?u=1788407152"></script>
+<script id="wp-hooks-js" src="https://georgiaftz.com/wp-includes/js/dist/hooks.min.js?u=1788407152"></script>
+<script id="wp-i18n-js" src="https://georgiaftz.com/wp-includes/js/dist/i18n.min.js?u=1788407152"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="wp-a11y-js" src="https://georgiaftz.com/wp-includes/js/dist/a11y.min.js?u=1788407152"></script>
+<script id="gform_placeholder-js" defer='defer' src="https://georgiaftz.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?u=1788407152"></script>
+<script id="gform_gravityforms_theme_vendors-js" defer='defer' src="https://georgiaftz.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?u=1788407152"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"bad1e6064f8132e2ccabf58261a88cc7"},"ajax":{"ajaxurl":"https://georgiaftz.com/wp-admin/admin-ajax.php","ajax_submission_nonce":"ff13d9e334","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}},"product_meta":[],"pagination":{"1":""}}},"hmr_dev":"","public_path":"https://georgiaftz.com/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"37a07204db"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script id="gform_gravityforms_theme-js" defer='defer' src="https://georgiaftz.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?u=1788407152"></script>
+<script id="gform_turnstile_vendor_theme-js" defer='defer' src="https://georgiaftz.com/wp-content/plugins/gravityformsturnstile/assets/js/dist/vendor-theme.min.js?u=1788407152"></script>
+<script id="gform_turnstile_vendor_script-js" defer='defer' src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+<script id="gform_turnstile_theme-js" defer='defer' src="https://georgiaftz.com/wp-content/plugins/gravityformsturnstile/assets/js/dist/scripts-theme.min.js?u=1788407152"></script>
+<script id="site-js" src="https://georgiaftz.com/wp-content/themes/plus-pro/resources/js/site.js?u=1788407152" async="true"></script>
+<script id="revv-form-autofill-js" src="https://georgiaftz.com/wp-content/plugins/gravity-forms-iterable/public/js/revv.js?u=1788407152"></script>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"38352b32dde64330b8ab630e2f4dd2ae","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

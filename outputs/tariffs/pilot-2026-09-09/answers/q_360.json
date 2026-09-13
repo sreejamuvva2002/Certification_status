@@ -1,0 +1,64 @@
+{
+  "query_id": "q_360",
+  "query": "Automotive steel imports Mexico United States tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0afbc6d2945e12fe30b04349",
+    "claim_dbc2cd7b24ee3b902df3124b",
+    "claim_0e63a116e33c3628da158714",
+    "claim_f0af0e583aded5831280925f",
+    "claim_26edf7c3219d2015ecf3d3c9"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0afbc6d2945e12fe30b04349",
+      "text": "As of February 1, 2025, the United States reactivated Section 232 tariffs: - 25% on steel imports - 10% on aluminum imports",
+      "url": "https://www.ilscompany.com/automotive-tariffs-mexico-us",
+      "chunk_id": "chunk_a65bc80d27a764966055a8a5"
+    },
+    {
+      "claim_id": "claim_dbc2cd7b24ee3b902df3124b",
+      "text": "Effective June 4, 2025, the Section 232 tariff on metal content doubled to 50%, applying across almost all steel and aluminum imports—including those from Mexico.",
+      "url": "https://www.prodensa.com/insights/blog/how-tariffs-are-shaping-automotive-manufacturers-in-mexico",
+      "chunk_id": "chunk_8329e5e67507d6a2f6b417e6"
+    },
+    {
+      "claim_id": "claim_0e63a116e33c3628da158714",
+      "text": "The US Department of Commerce opened a process to reduce Section 232 tariffs on eligible steel and aluminum imports from Mexico and Canada, linking relief to USMCA compliance and commitments to expand US production capacity.",
+      "url": "https://mexicobusiness.news/mining/news/us-opens-path-cut-mexicos-steel-aluminum-tariffs",
+      "chunk_id": "chunk_66e5692d713f9ac656133141"
+    },
+    {
+      "claim_id": "claim_f0af0e583aded5831280925f",
+      "text": "Under the mechanism, the US Department of Commerce may reduce steel and aluminum tariffs by up to half the otherwise applicable rate. However, the adjusted rate cannot fall below 25%.",
+      "url": "https://mexicobusiness.news/mining/news/us-opens-path-cut-mexicos-steel-aluminum-tariffs",
+      "chunk_id": "chunk_66e5692d713f9ac656133141"
+    },
+    {
+      "claim_id": "claim_26edf7c3219d2015ecf3d3c9",
+      "text": "Mexico is exempt from U.S. automotive tariffs under the USMCA. Automotive products manufactured in Mexico that meet origin requirements can be exported to the U.S. without additional duties.",
+      "url": "https://www.ilscompany.com/automotive-tariffs-mexico-us",
+      "chunk_id": "chunk_a65bc80d27a764966055a8a5"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0afbc6d2945e12fe30b04349",
+      "claim_dbc2cd7b24ee3b902df3124b"
+    ],
+    [
+      "claim_0e63a116e33c3628da158714",
+      "claim_f0af0e583aded5831280925f"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

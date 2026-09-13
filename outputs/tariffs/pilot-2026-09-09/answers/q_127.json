@@ -1,0 +1,40 @@
+{
+  "query_id": "q_127",
+  "query": "Synthetic graphite United States import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_54569a9f9c3187ea4f1ea135",
+    "claim_affa707db57513b0e3796a3a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_54569a9f9c3187ea4f1ea135",
+      "text": "The graphite industry in 2025 faces major challenges, including trade wars, high US tariffs on synthetic graphite and policy changes affecting EV manufacturing and tax credits.",
+      "url": "https://www.fastmarkets.com/insights/navigating-china-graphite-import-tariffs",
+      "chunk_id": "chunk_13a0f2bc3c4248fc445e7455"
+    },
+    {
+      "claim_id": "claim_affa707db57513b0e3796a3a",
+      "text": "Until August 12, when the 90-day pause ends, US import tariffs on Chinese synthetic graphite will stand at 55%. This comprises the 25% Section 301 tariff, the 20% IEEPA tariffs, and the 10% universal tariff.",
+      "url": "https://www.fastmarkets.com/insights/navigating-china-graphite-import-tariffs",
+      "chunk_id": "chunk_13a0f2bc3c4248fc445e7455"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_54569a9f9c3187ea4f1ea135",
+      "claim_affa707db57513b0e3796a3a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

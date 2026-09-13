@@ -1,0 +1,88 @@
+{
+  "query_id": "q_297",
+  "query": "Hyundai Steel Georgia automotive steel tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1dc3d7d9d530ccc7155608b1",
+    "claim_1e12720db2a589c2cd4bc00f",
+    "claim_4eae5564ea3331360cddaf93",
+    "claim_527fac4bbc21f9b411622c21",
+    "claim_8d181378560e6bbaf8deff60",
+    "claim_ca2c699ab76721d6ece05bba",
+    "claim_ce986aa363a97e10c290f08c",
+    "claim_f23cdbb154359e566856ab49"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1dc3d7d9d530ccc7155608b1",
+      "text": "The new round of import taxes could potentially target Hyundai's home country South Korea, which has a large trade surplus with the US.",
+      "url": "https://www.bbc.com/news/articles/cgkmvdz144vo",
+      "chunk_id": "chunk_54430f4bc5f4bcb02247e7fb"
+    },
+    {
+      "claim_id": "claim_1e12720db2a589c2cd4bc00f",
+      "text": "It is expected to make steel for Hyundai's plants in Alabama and Georgia.",
+      "url": "https://www.bbc.com/news/articles/cgkmvdz144vo",
+      "chunk_id": "chunk_54430f4bc5f4bcb02247e7fb"
+    },
+    {
+      "claim_id": "claim_4eae5564ea3331360cddaf93",
+      "text": "\"This investment is a clear demonstration that tariffs very strongly work,\" Trump said. \"Hyundai will be producing steel in America and making its cars in America and as a result they will not have to pay any tariffs.",
+      "url": "https://www.manufacturingdive.com/news/hyundai-investment-us-tariffs-trump-steel-louisiana/743377",
+      "chunk_id": "chunk_84cfb18d00020b38a8c58cde"
+    },
+    {
+      "claim_id": "claim_527fac4bbc21f9b411622c21",
+      "text": "The facility is slated to create more than 1,300 jobs and will supply Hyundai's electric vehicle production at plants in Georgia and Alabama.",
+      "url": "https://www.manufacturingdive.com/news/hyundai-investment-us-tariffs-trump-steel-louisiana/743377",
+      "chunk_id": "chunk_84cfb18d00020b38a8c58cde"
+    },
+    {
+      "claim_id": "claim_8d181378560e6bbaf8deff60",
+      "text": "South Korea is hoping to negotiate a reduction in the 25% tariffs Trump has imposed on South Korean goods (since suspended for 90 days) or give exemptions to a separate 25% levy imposed on imported vehicles and steel.",
+      "url": "https://www.reuters.com/business/autos-transportation/hyundai-steels-6-bln-us-investment-draws-investor-ire-tests-seouls-tariff-2025-04-22",
+      "chunk_id": "chunk_5c758a951870375c24874f3c"
+    },
+    {
+      "claim_id": "claim_ca2c699ab76721d6ece05bba",
+      "text": "Last month, Trump ordered a 25% import tax on all steel and aluminium entering the US.",
+      "url": "https://www.bbc.com/news/articles/cgkmvdz144vo",
+      "chunk_id": "chunk_54430f4bc5f4bcb02247e7fb"
+    },
+    {
+      "claim_id": "claim_ce986aa363a97e10c290f08c",
+      "text": "South Korea is hoping to negotiate a reduction in the 25% tariffs Trump has imposed on South Korean goods (since suspended for 90 days) or give exemptions to a separate 25% levy imposed on imported vehicles and steel.",
+      "url": "https://www.reuters.com/business/autos-transportation/hyundai-steels-6-bln-us-investment-draws-investor-ire-tests-seouls-tariff-2025-04-22",
+      "chunk_id": "chunk_5c758a951870375c24874f3c"
+    },
+    {
+      "claim_id": "claim_f23cdbb154359e566856ab49",
+      "text": "For Hyundai Motor Group, the investment plan has not gone any further beyond the flashy announcement for now, as South Korea is hoping to negotiate a reduction in the 25% tariffs Trump has imposed on South Korean goods (since suspended for 90 days) or give exemptions to a separate 25% levy imposed on imported vehicles and steel.",
+      "url": "https://www.reuters.com/business/autos-transportation/hyundai-steels-6-bln-us-investment-draws-investor-ire-tests-seouls-tariff-2025-04-22",
+      "chunk_id": "chunk_5c758a951870375c24874f3c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_8d181378560e6bbaf8deff60",
+      "claim_ce986aa363a97e10c290f08c"
+    ],
+    [
+      "claim_4eae5564ea3331360cddaf93",
+      "claim_f23cdbb154359e566856ab49"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

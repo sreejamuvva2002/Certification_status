@@ -1,0 +1,69 @@
+{
+  "query_id": "q_340",
+  "query": "Automotive glass windshields United States import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_5ca102c63bb782437b16a753",
+    "claim_6b63b579827058d4de302c1b",
+    "claim_a5d1c6eb98f577308e8298fb",
+    "claim_cd08fc85d4da8f651a49107f",
+    "claim_67118654217fc1397879452e",
+    "claim_d372b61a10c43b0dae784a7a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_5ca102c63bb782437b16a753",
+      "text": "original equipment manufacturers (OEMs) like General Motors, Ford, Toyota, Nissan and Volkswagen “rely heavily” on Canada and Mexico for OEM and replacement parts.",
+      "url": "https://glassbytes.com/2025/04/expert-breaks-down-tariffs-windshields-are-a-big-one",
+      "chunk_id": "chunk_5d84310e3c826c0e3eefda35"
+    },
+    {
+      "claim_id": "claim_6b63b579827058d4de302c1b",
+      "text": "With many aftermarket windshields sourced from China, auto glass is directly in the crosshairs.",
+      "url": "https://www.facebook.com/autoglassassociation/posts/us-tariffs-hit-the-us-auto-glass-industry-hardas-the-25-import-tariff-on-vehicle/1289247546534014",
+      "chunk_id": "chunk_dd0bc7348b44432ee4423d6f"
+    },
+    {
+      "claim_id": "claim_a5d1c6eb98f577308e8298fb",
+      "text": "The tariff on imports from China is currently 145%, but windshields and other automotive items imported from China will just be subject to a 25% tariff.",
+      "url": "https://glassbytes.com/2025/04/expert-breaks-down-tariffs-windshields-are-a-big-one",
+      "chunk_id": "chunk_5d84310e3c826c0e3eefda35"
+    },
+    {
+      "claim_id": "claim_cd08fc85d4da8f651a49107f",
+      "text": "China faces a more unique situation. In January, President Trump imposed a 20 percent tariff on all goods from China. That means that a windshield wiper manufactured in China will face a 45 percent import tariff starting on May 3.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_67118654217fc1397879452e",
+      "text": "On March 26, the Trump Administration announced a 25 percent tariff on imports of automobiles and certain automotive parts. The tariff went into effect for fully assembled vehicles on April 3. The tariff on auto parts will go into effect on May 3.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_d372b61a10c43b0dae784a7a",
+      "text": "Mandell explained that, under the United States-Mexico-Canada Agreement (USMCA), most imports from Canada or Mexico are not tariffed.",
+      "url": "https://glassbytes.com/2025/04/expert-breaks-down-tariffs-windshields-are-a-big-one",
+      "chunk_id": "chunk_5d84310e3c826c0e3eefda35"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_a5d1c6eb98f577308e8298fb",
+      "claim_cd08fc85d4da8f651a49107f"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

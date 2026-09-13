@@ -1,0 +1,135 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "Original answer insufficient due to unverified tariff status (proposed vs current) and lack of specific machinery duty data.",
+  "confidence": "high",
+  "remaining_gap": "No explicit named-company effect on machinery import duties found in evidence.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_754848c636ca8e4bfaccdd4b",
+      "supporting_excerpt": "Building American-made EVs helps to protect export-dependent Hyundai from President Donald Trump's proposed 25% tariffs on imported cars and parts.",
+      "relevance_explanation": "Indicates tariff status is 'proposed', conflicting with claims of current law.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_6d749fc7f1dd2ca25e86395b",
+      "supporting_excerpt": "Tollison said not relying on shipments outside the country is a win for the Hyundai Metaplant due to the current 25% tariffs put in place by President Donald Trump.",
+      "relevance_explanation": "Contradicts 'proposed' status, showing conflicting evidence on tariff applicability.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_754848c636ca8e4bfaccdd4b",
+      "supporting_excerpt": "Automated platforms roam the floor carrying components, partially assembled cars and even completed ones from place to place. Boston Dynamics' robotic dog, Spot, roams around performing quality checks on vehicle welds.",
+      "relevance_explanation": "Confirms machinery presence but provides no data on import duties for such equipment.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_34",
+  "query": "Hyundai Metaplant imported machinery customs duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 1,
+    "full_text_sources": 0,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 2,
+    "all_extracted_claims": 5,
+    "claims_presented_to_original_synthesis": 5,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_only"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 4,
+    "facility_label_claims": 1
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_754848c636ca8e4bfaccdd4b",
+    "passage_6d749fc7f1dd2ca25e86395b",
+    "passage_5b3440d9b016256d403865b9",
+    "passage_fbdd6b934bb82e88280852f4",
+    "passage_4b5612604c9a00cf92058dd9",
+    "passage_19ad7ef90f869d624b71adf4",
+    "passage_7c07098b18e6bae52f24704c",
+    "passage_3a004899070fc001b4f616b3"
+  ],
+  "candidate_document_ids": [
+    "document_079b4ba6ee636e62b14b4271",
+    "document_0b45fff63df0bdd4c1a90393",
+    "document_0d54f8a5683c9dab2f81d509",
+    "document_150a243c03e39787abea51cf",
+    "document_3255c41857c6cbbfa7ee8d86",
+    "document_6639c375dd8589aa6f7a5717",
+    "document_f9476e65504a25d75d94b0cf"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_754848c636ca8e4bfaccdd4b",
+      "supporting_excerpt": "Building American-made EVs helps to protect export-dependent Hyundai from President Donald Trump's proposed 25% tariffs on imported cars and parts.",
+      "relevance_explanation": "Indicates tariff status is 'proposed', conflicting with claims of current law.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_98f65d6c404a0c7e7506e3d9",
+      "query_id": "q_34",
+      "chunk_id": "chunk_43225a005b217e9e4d94fd42",
+      "document_id": "document_0d54f8a5683c9dab2f81d509",
+      "source_url": "https://insideevs.com/news/755058/hyundai-metaplant-georgia-ioniq-tariffs",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2f670805853744b61b9c0ec3197ccef07e59d0224ef7c26e19e2734af79c474c.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_6d749fc7f1dd2ca25e86395b",
+      "supporting_excerpt": "Tollison said not relying on shipments outside the country is a win for the Hyundai Metaplant due to the current 25% tariffs put in place by President Donald Trump.",
+      "relevance_explanation": "Contradicts 'proposed' status, showing conflicting evidence on tariff applicability.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_3b6591838dedd568b01ea0d2",
+      "query_id": "q_34",
+      "chunk_id": "chunk_e7c5aaacf2fceb4b706a6700",
+      "document_id": "document_079b4ba6ee636e62b14b4271",
+      "source_url": "https://www.wjcl.com/article/hyundai-20-billion-positive-impact-hyundai-metaplant-bryan-county/64290033",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2145120b013461f75c2dca6a9b8a29c0e4599d490f3156241b9771a76f761785.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_754848c636ca8e4bfaccdd4b",
+      "supporting_excerpt": "Automated platforms roam the floor carrying components, partially assembled cars and even completed ones from place to place. Boston Dynamics' robotic dog, Spot, roams around performing quality checks on vehicle welds.",
+      "relevance_explanation": "Confirms machinery presence but provides no data on import duties for such equipment.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_e043711cc1d0aeadbd021c93",
+      "query_id": "q_34",
+      "chunk_id": "chunk_43225a005b217e9e4d94fd42",
+      "document_id": "document_0d54f8a5683c9dab2f81d509",
+      "source_url": "https://insideevs.com/news/755058/hyundai-metaplant-georgia-ioniq-tariffs",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2f670805853744b61b9c0ec3197ccef07e59d0224ef7c26e19e2734af79c474c.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

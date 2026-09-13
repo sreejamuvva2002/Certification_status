@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FR Notice Details - FTZ</title>
+
+    <link rel='stylesheet' href='https://ftzstorageaccount.blob.core.windows.net/publicsiteassets/headerfooter.css' />
+    
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/jquery/dist/jqueryui/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/rowgroup/1.1.1/css/rowGroup.dataTables.min.css">
+    <link rel="stylesheet" href="/css/site.css" />
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jquery/dist/jqueryui/jquery-ui.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=giHXE1c9NFFEdSHpDjEVfP-4X-Dvw5dfu_Vp2LXhN_w"></script>
+
+
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.15/dataRender/datetime.js"></script>
+    <script src="https://cdn.datatables.net/rowgroup/1.1.1/js/dataTables.rowGroup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/2f44c7f436.js"></script>
+
+</head>
+<body>
+    <div id="header" style="height:125px"></div>
+
+<script type="text/javascript">
+    $("#header").load('https://itab2cfiles.blob.core.windows.net/publicsiteassets/itaheader.html', () => {
+
+        $('.header__menu-link--toggle').on('click', function (e) {
+            menuExpand(e);
+        });
+
+        // Toggles Header Dropdown Menu.
+        $('.header__menu-link--toggle').on('keydown', menuExpand);
+
+        // Shows/Hides Mobile Accordion Menu.
+        $('.header__menu-btn').on('click', function (e) {
+            var mhTarget = $(e.currentTarget);
+
+            if (mhTarget.attr('aria-expanded') === true) {
+                mhTarget.attr('aria-expanded', false);
+            }
+            else {
+                mhTarget.attr('aria-expanded', true);
+            }
+
+            mhTarget.toggleClass('active');
+            $('.header__menu--mobile').toggleClass('active');
+        });
+
+        // Toggles Mobile Accordion Inner Menus.
+        $('.header__accordion-link--toggle').on('click', function (e) {
+            e.preventDefault();
+
+            var mhTarget = $(e.currentTarget);
+            var mhTargetIcons = mhTarget.children('.header__accordion-icon--toggle');
+            var mhTargetMenu = mhTarget.next('.header__accordion-menu');
+            var mhToggleLinks = mhTarget.parent().siblings('.header__accordion-item--expanded').find('.header__accordion-link--toggle');
+            var mhToggleOpenIcons = mhToggleLinks.children('.header__accordion-icon--open');
+            var mhToggleCloseIcons = mhToggleLinks.children('.header__accordion-icon--close');
+            var mhToggleLinksMenu = mhToggleLinks.next('.header__accordion-menu');
+
+            if (mhTarget.hasClass('active')) {
+                mhTarget.removeClass('active').attr('aria-expanded', false);
+                mhTargetMenu.removeClass('active');
+                mhTargetIcons.toggleClass('active');
+            }
+            else {
+                mhTarget.addClass('active').attr('aria-expanded', true);
+                mhTargetMenu.addClass('active');
+                mhTargetIcons.toggleClass('active');
+            }
+
+            if (mhToggleLinks.hasClass('active')) {
+                mhToggleLinks.removeClass('active').attr('aria-expanded', false);
+                mhToggleLinksMenu.removeClass('active');
+                mhToggleOpenIcons.addClass('active');
+                mhToggleCloseIcons.removeClass('active');
+            }
+        });
+        //SEARCH
+        $("#site-search").attr("action","https://development.trade.gov/trade-search")
+
+
+    });
+    function menuExpand(e) {
+
+        if (e.type === "click" || (e.type === "keydown" && (e.key === "Enter" || e.keyCode === 13))) {
+            e.preventDefault();
+            var hTarget = $(e.currentTarget);
+            var hTargetIcons = hTarget.children('.header__menu-icon--toggle');
+            var hTargetMenuItem = hTarget.parent('.header__menu-item--expanded');
+            var hTargetMenu = hTarget.next('ul');
+            var hOtherMenuItems = hTargetMenuItem.siblings('.header__menu-item--expanded');
+            var hOtherLinks = hOtherMenuItems.find('.header__menu-link--toggle');
+            var hOtherOpenIcons = hOtherLinks.children('.header__menu-icon--open');
+            var hOtherCloseIcons = hOtherLinks.children('.header__menu-icon--close');
+            var hOtherMenu = hOtherLinks.next('ul');
+
+            if (hTarget.hasClass('header__menu-link--active')) {
+                hTarget.removeClass('header__menu-link--active').attr('aria-expanded', false);
+                hTargetMenu.removeClass('active');
+
+                // Only removing `.active` class to second level menu items.
+                if (hTargetMenuItem.attr('aria-level') === '2') {
+                    hTargetMenuItem.removeClass('active');
+                    hTargetIcons.toggleClass('active');
+                }
+            }
+            else {
+                hTarget.addClass('header__menu-link--active').attr('aria-expanded', true);
+                hTargetMenu.addClass('active');
+
+                // Only adding `.active` class to second level menu item.
+                if (hTargetMenuItem.attr('aria-level') === '2') {
+                    hTargetMenuItem.addClass('active');
+                    hTargetIcons.toggleClass('active');
+                }
+            }
+
+            if (hOtherLinks.hasClass('header__menu-link--active')) {
+                hOtherLinks.removeClass('header__menu-link--active').attr('aria-expanded', false);
+                hOtherMenu.removeClass('active');
+                hOtherMenuItems.removeClass('active');
+                hOtherOpenIcons.addClass('active');
+                hOtherCloseIcons.removeClass('active');
+            }
+        }
+    }
+</script>
+    <nav class="navbar navbar-expand-sm navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                
+
+
+<ul class="navbar-nav">
+        <li class="nav-item header__menu-title">
+            <a class="nav-link text-dark header__menu-link" style="line-height: 1.22; font-size: 15px; font-weight:400;" href="/MicrosoftIdentity/Account/SignIn">Sign in</a>
+        </li>
+</ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2" id="headerx">
+                <div class="card">
+                    <div class="card-header">
+                        Public Information
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Homepage</a>
+                            <a class="nav-link" href="/Zones">Zone &amp; Site Information</a>
+                            <a class="nav-link" href="/FRNotices">Federal Register Notices</a>
+                            <a class="nav-link" href="/ManufacturingDB">Production Database</a>
+                            <a class="nav-link" href="/Search">Search</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-10">
+                <main role="main" class="pb-3">
+                    
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="bg-info card card-header h5 text-white">FR Notice Details</div>
+        <hr />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="dropdown dropdown mb-1 float-end">
+            <a class="btn btn-info" onclick="window.history.back()" href="#">Close</a>
+        </div>
+    </div>
+</div>
+<form method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-12 mb-2">
+            <div class="card">
+                <div class="card-header">
+                    Application Information
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">Zone Number</label>
+                <div>222</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">Subzone Number</label>
+                <div>00A</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">Publication Date</label>
+                <div>12/09/2002</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">City</label>
+                <div>Montgomery</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">State</label>
+                <div>AL</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">Company</label>
+                <div>Hyundai Motor Manufacturing Alabama, LLC</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">Status</label>
+                <div>Completed</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">Docket Number</label>
+                <div>55-2002</div>
+            </div>
+        </div>
+        <div class="col-md-4" id="cbpsection">
+            <div class="mb-3">
+                <label class="control-label">CBPCommentsReceived</label>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">Applications</label>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="mb-3">
+                <label class="control-label">Comments</label>
+                <div>
+                </div>
+            </div>
+        </div>
+        </div>
+<div class="row">
+        <div class="col-12">
+            <div class="mb-3">
+                <label class="control-label">Subject</label>
+                <div>Foreign-Trade Zone 222--Montgomery, AL, Application for Subzone Status, Hyundai Motor Manufacturing Alabama, LLC, Plant (Motor Vehicles)</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3">
+                <label class="control-label">Body</label>
+                <div><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content=
+"text/html; charset=utf-16" />
+<title></title>
+</head>
+<body>
+<div style="width:100%">
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3">[Federal Register: December
+9, 2002 (Volume 67, Number 236)]<br />
+[Notices]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+
+[Page 72914]<br />
+From the Federal Register Online via GPO Access
+[wais.access.gpo.gov]<br />
+[DOCID:fr09de02-28]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size=
+"3">=======================================================================<br />
+
+-----------------------------------------------------------------------</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3">DEPARTMENT OF
+COMMERCE</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3">Foreign-Trade Zones
+Board</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3">[Docket 55-2002]</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3"><br />
+Foreign-Trade Zone 222--Montgomery, AL, Application for
+Subzone<br />
+Status, Hyundai Motor Manufacturing Alabama, LLC, Plant
+(Motor<br />
+Vehicles), Montgomery, AL</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3">&nbsp;&nbsp;&nbsp; An
+application has been submitted to the Foreign-Trade Zones
+Board<br />
+(the Board) by the Montgomery Area Chamber of Commerce, grantee of
+FTZ<br />
+222, requesting special-purpose subzone status for the motor
+vehicle<br />
+manufacturing plant of Hyundai Motor Manufacturing Alabama,
+LLC,<br />
+(HMM)(a subsidiary of Hyundai Motor Co., of South Korea) located
+in<br />
+Montgomery, Alabama. The application was submitted pursuant to
+the<br />
+provisions of the Foreign-Trade Zones Act, as amended (19 U.S.C.
+81a-<br />
+81u), and the regulations of the Board (15 CFR part 400). It
+was<br />
+formally filed on November 27, 2002.<br />
+&nbsp;&nbsp;&nbsp; The HMM plant (1,752 acres/2.1 million sq.ft.)
+is to be located at<br />
+1500 Montgomery County Road 42 (Teague Road), between Interstate 65
+and<br />
+the main line of the CSX Railroad, in Montgomery (Montgomery
+County),<br />
+Alabama. The facility, currently under construction, will be used
+to<br />
+produce light-duty passenger vehicles (sedans, sport utility
+vehicles,<br />
+minivans) for export and the domestic market. At full capacity,
+the<br />
+facility (about 2,000 employees) will manufacture up to
+approximately</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3">250,000 vehicles annually.
+Components to be purchased from abroad<br />
+(representing approximately 45% of vehicle material value)
+would<br />
+include: diesel and gasoline engines and parts thereof, pumps,
+oils,<br />
+compressors, air conditioner components, filters, paint,
+flexible<br />
+tubes/hoses, self-adhesive plastic or polyurethane
+sheets/foil/film,<br />
+labels, rubber belts, tires, seats, safety glass, engines and parts
+of<br />
+engines, mirrors, flat-rolled steel (would be admitted under
+privileged<br />
+foreign status (19 CFR 146.41)), stranded wire of steel and
+copper,<br />
+body parts and trim, fasteners, cotter pins, catalytic
+converters,<br />
+parts of steering systems, half shafts, transmissions and parts
+of<br />
+transmissions, differentials, bearings and parts thereof,
+compasses,<br />
+thermometers, motors, batteries, ignition parts, lighting
+equipment,<br />
+horns, windshield wipers, audio components, antennas, wiring
+harnesses,<br />
+handles/knobs, gaskets/seals, carpet sets, seat belts, airbag
+modules/<br />
+inflators, brake components, wheels, shock absorbers,
+radiators,</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3">exhaust systems, hinges,
+pneumatic dampeners, speedometers,<br />
+tachometers, flow meters, regulators/controllers, windshields
+and<br />
+windows, springs, valves, resistors, relays, clocks, and switches
+(duty<br />
+rate range: free--9.0%).<br />
+&nbsp;&nbsp;&nbsp; FTZ procedures would exempt HMM from Customs
+duty payments on the<br />
+foreign components used in export production. On its domestic sales
+and<br />
+exports to NAFTA countries, HMM would be able to choose the duty
+rate<br />
+that applies to finished passenger vehicles (2.5%) for the
+foreign<br />
+inputs noted above that have higher rates. Customs duties would
+be<br />
+deferred and possibly reduced on foreign status production
+equipment.<br />
+The application indicates that subzone status would help improve
+the<br />
+plant's international competitiveness.<br />
+&nbsp;&nbsp;&nbsp; In accordance with the Board's regulations, a
+member of the FTZ<br />
+Staff has been designated examiner to investigate the application
+and<br />
+report to the Board.<br />
+&nbsp;&nbsp;&nbsp; Public comment on the application is invited
+from interested<br />
+parties. Submissions (original and three copies) shall be addressed
+to</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3">the Board's Executive
+Secretary at the following addresses:<br />
+&nbsp;&nbsp;&nbsp; 1. Submissions via Express/Package Delivery
+Services: Foreign-Trade<br />
+Zones Board, U.S. Department of Commerce, Franklin Court
+Building--<br />
+Suite 4100W, 1099 14th Street, NW., Washington, DC 20005; or,<br />
+&nbsp;&nbsp;&nbsp; 2. Submissions via the U.S. Postal Service:
+Foreign-Trade Zones<br />
+Board, U.S. Department of Commerce, FCB-4100W, 1401 Constitution
+Ave.,<br />
+NW., Washington, DC 20230.<br />
+&nbsp;&nbsp;&nbsp; The closing period for their receipt is February
+7, 2003. Rebuttal<br />
+comments in response to material submitted during the foregoing
+period<br />
+may be submitted during the subsequent 15-day period (to February
+24,<br />
+2003).<br />
+&nbsp;&nbsp;&nbsp; A copy of the application will be available for
+public inspection<br />
+at the Office of the Foreign-Trade Zones Board's Executive
+Secretary at<br />
+address No.1 listed above and at the U.S. Department of Commerce
+Export<br />
+Assistance Center, Suite 707, Medical Forum Building, 950 22nd
+Street<br />
+North, Birmingham, AL 35203.</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr"><font face="Arial" size="3">&nbsp;&nbsp;&nbsp; Dated:
+November 27, 2002.<br />
+Dennis Puccinelli,<br />
+Executive Secretary.<br />
+[FR Doc. 02-31036 Filed 12-6-02; 8:45 am]<br />
+BILLING CODE 3510-DS-P</font></p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+<p style=
+"margin-left: 4px;line-height:normal;margin-top:0.00;margin-bottom:0.00;text-align:auto;"
+dir="ltr">&nbsp;</p>
+</div>
+</body>
+</html>
+</div>
+
+            </div>
+        </div>
+    </div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8ESXF6gK309Eqkb09i8-DgTd0jQNio33zlE8UXIP4danOqNrOyo0Gp7w_9l0DjHaxDIv3gaJ4DXIcJkHg801g0vs_sYqlo12lp7_-EfsV6gqTy6-J0NYEIL-8JwDpaRwqzKz3To05rziKv2PlDRXuXg" /></form>
+
+                </main>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+<script type="text/javascript">
+    $("#footer").load('https://itab2cfiles.blob.core.windows.net/publicsiteassets/itafooter.html', () => {});
+</script>
+    
+<script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+         var caseGeneralInformationId = '';
+            if (!caseGeneralInformationId || caseGeneralInformationId === "0") {
+                $("#cbpsection").hide();
+            }
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+{
+  "query_id": "q_company_5fd1cdbb7f4fedfb0fc5ec73_targeted",
+  "query": "\"Flambeau Inc.\" automotive vehicles auto parts steel aluminum copper tariffs tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_6ff61cf9e3aaed6db9d9a91b",
+    "claim_41c16ac91af5a877c4949d08",
+    "claim_93a9fe5e94de3a55fe4f24a9",
+    "claim_b0ff163caee6a2ee7daff2c2",
+    "claim_e8a959b206e155f24d2177ff",
+    "claim_46aeb5824eda87940445ec4d",
+    "claim_f28b2f29c3240c99d9f8236b",
+    "claim_eb99eb7d816b88c3853bd978"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_6ff61cf9e3aaed6db9d9a91b",
+      "text": "On March 26, President Trump signed a proclamation to impose a 25% tariff on all imported automobiles and certain automobile parts to address “a critical threat to U.S. national security,” according to a White House Fact Sheet.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0969af449067d814a4142531"
+    },
+    {
+      "claim_id": "claim_41c16ac91af5a877c4949d08",
+      "text": "The 25% tariff will be applied to imported passenger vehicles (sedans, SUVs, crossovers, minivans, cargo vans) and light trucks, as well as key automobile parts (engines, transmissions, powertrain parts, and electrical components), with processes to expand tariffs on additional parts “if necessary.”",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0969af449067d814a4142531"
+    },
+    {
+      "claim_id": "claim_93a9fe5e94de3a55fe4f24a9",
+      "text": "A new 25% tariff on imported auto parts officially took effect at 12:01 a.m. EDT on May 3.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_5c5c8c1128134c895d5d95df"
+    },
+    {
+      "claim_id": "claim_b0ff163caee6a2ee7daff2c2",
+      "text": "Trump imposed sweeping 25% tariffs on all steel and aluminum imports on March 12, which could potentially boost America’s steel and aluminum industries or raise prices on crucial ingredients used by U.S. manufacturers.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_28807caf1809cf89455cbfb6"
+    },
+    {
+      "claim_id": "claim_e8a959b206e155f24d2177ff",
+      "text": "Trump has imposed new 20% duties on Chinese imports, reinstated 25% tariffs on global steel and aluminum, and applied 25% tariffs on certain imports from Canada and Mexico that do not comply with a North American trade agreement over the U.S. fentanyl overdose crisis.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_28807caf1809cf89455cbfb6"
+    },
+    {
+      "claim_id": "claim_46aeb5824eda87940445ec4d",
+      "text": "The 25% Section 301 tariff and most favored nations rates stack, so a commodity with a 5% duty would be subject to the additional 25% for a total rate of 30%. The document’s language also expressly provides for other applicable Chapter 99 duties to stack, along with AD/CVDs.",
+      "url": "https://usacustomsclearance.com/import-tariffs-updates",
+      "chunk_id": "chunk_40a5765cb4c034e67d74c217"
+    },
+    {
+      "claim_id": "claim_f28b2f29c3240c99d9f8236b",
+      "text": "Trump said in February that he intended to impose auto tariffs but later agreed to delay some auto tariffs after a push by the three largest U.S. automakers for a waiver.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_28807caf1809cf89455cbfb6"
+    },
+    {
+      "claim_id": "claim_eb99eb7d816b88c3853bd978",
+      "text": "March 13: One-Month Exemption for Automakers, Steel and Aluminum Tariffs in Place\nLast week, President Trump granted a one-month exemption on recent tariffs on imports from Mexico and Canada for U.S. automakers.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_28807caf1809cf89455cbfb6"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_6ff61cf9e3aaed6db9d9a91b",
+      "claim_41c16ac91af5a877c4949d08"
+    ],
+    [
+      "claim_93a9fe5e94de3a55fe4f24a9",
+      "claim_b0ff163caee6a2ee7daff2c2"
+    ],
+    [
+      "claim_e8a959b206e155f24d2177ff",
+      "claim_46aeb5824eda87940445ec4d"
+    ],
+    [
+      "claim_f28b2f29c3240c99d9f8236b",
+      "claim_eb99eb7d816b88c3853bd978"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 23,
+  "synthesis_input_claim_count": 23
+}

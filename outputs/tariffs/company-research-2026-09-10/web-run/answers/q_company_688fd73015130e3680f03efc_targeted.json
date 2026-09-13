@@ -1,0 +1,48 @@
+{
+  "query_id": "q_company_688fd73015130e3680f03efc_targeted",
+  "query": "\"IMS Gear Georgia Inc.\" LCD OLED displays PCBs printed circuit boards electronics tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_752b309f65f933ddecebb726",
+    "claim_ed8ddda9f7188087f9e9dfa8",
+    "claim_fa2cb28377375f538de6e663"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_752b309f65f933ddecebb726",
+      "text": "| LCD Screen | 8524.11.10.00 | 55% |",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_ed8ddda9f7188087f9e9dfa8",
+      "text": "In April 2025, the United States has implemented new tariffs on Chinese imports, including printed circuit boards (PCBs) and custom-made technical parts.",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_fa2cb28377375f538de6e663",
+      "text": "| China | 30% DS/4Layer, 55% other | 14/05/25 | Until 12/11/25 | Interim deal; 90-day truce. |",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_752b309f65f933ddecebb726",
+      "claim_fa2cb28377375f538de6e663"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 4,
+  "synthesis_input_claim_count": 4
+}

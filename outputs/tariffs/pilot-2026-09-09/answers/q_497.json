@@ -1,0 +1,102 @@
+{
+  "query_id": "q_497",
+  "query": "site:georgia.org automotive manufacturers tariff impact",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_3c71820a311414b80f388fc0",
+    "claim_59c397e08148e66be6af57f2",
+    "claim_5e9d8b08f984c9d0eb23f9c5",
+    "claim_804e12f9883915c013191358",
+    "claim_94488b782650669bc0e765c2",
+    "claim_c2ccfefbe038ad5fb3af8bb4",
+    "claim_e675a65645835828da332089",
+    "claim_ef089d77d296d929c1f9e41a",
+    "claim_f2b37b094badcb63c89ddef4",
+    "claim_f4987ba8a69906e9dd1ff48f"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_3c71820a311414b80f388fc0",
+      "text": "Uncertainty surrounding tariffs and the economy is driving manufacturing CEOs to prioritize supply chain resilience and AI investments, according to a 2025 CEO Outlook survey conducted by KPMG in September.",
+      "url": "https://georgia.org/sites/default/files/2025-10/october_snapshot_pdf.pdf",
+      "chunk_id": "chunk_81596fd5b39e58cdb8f4f469"
+    },
+    {
+      "claim_id": "claim_59c397e08148e66be6af57f2",
+      "text": "by persistent uncertainty around tariff policies in Q3.",
+      "url": "https://georgia.org/sites/default/files/2025-10/october_snapshot_pdf.pdf",
+      "chunk_id": "chunk_81596fd5b39e58cdb8f4f469"
+    },
+    {
+      "claim_id": "claim_5e9d8b08f984c9d0eb23f9c5",
+      "text": "Auto tariffs have caused vehicle-production shifts and disruptions.",
+      "url": "https://georgia.org/sites/default/files/2025-07/july_2025_snapshot_pdf.pdf",
+      "chunk_id": "chunk_bb7a3e4afdbeb4c37fd8ea06"
+    },
+    {
+      "claim_id": "claim_804e12f9883915c013191358",
+      "text": "customers rushed to dealer lots to purchase vehicles before the 25% tariffs on imported vehicles took effect.",
+      "url": "https://georgia.org/sites/default/files/2025-04/april_2025_snapshot_pdf_updated.pdf",
+      "chunk_id": "chunk_55d9801335bf33942e9ea9bb"
+    },
+    {
+      "claim_id": "claim_94488b782650669bc0e765c2",
+      "text": "According to J.D. Power, roughly 173,000 sales were pulled ahead into March and April 2025 as consumers flocked to dealerships to purchase new vehicles before auto tariffs took effect.",
+      "url": "https://georgia.org/sites/default/files/2025-07/july_2025_snapshot_pdf.pdf",
+      "chunk_id": "chunk_bb7a3e4afdbeb4c37fd8ea06"
+    },
+    {
+      "claim_id": "claim_c2ccfefbe038ad5fb3af8bb4",
+      "text": "In September 2025, preliminary net orders for North American Class 8 trucks and tractors reached 20,500 units – up 60% month-over-month but 41% below September last year.",
+      "url": "https://georgia.org/sites/default/files/2025-10/october_snapshot_pdf.pdf",
+      "chunk_id": "chunk_81596fd5b39e58cdb8f4f469"
+    },
+    {
+      "claim_id": "claim_e675a65645835828da332089",
+      "text": "Without these tariff-induced pre-buy purchases, June 2025 sales results likely would have been closer to a 16.0 million-unit SAAR.",
+      "url": "https://georgia.org/sites/default/files/2025-07/july_2025_snapshot_pdf.pdf",
+      "chunk_id": "chunk_bb7a3e4afdbeb4c37fd8ea06"
+    },
+    {
+      "claim_id": "claim_ef089d77d296d929c1f9e41a",
+      "text": "price increases from new trade duties likely push new-vehicle prices significantly higher.",
+      "url": "https://georgia.org/sites/default/files/2025-04/april_2025_snapshot_pdf_updated.pdf",
+      "chunk_id": "chunk_55d9801335bf33942e9ea9bb"
+    },
+    {
+      "claim_id": "claim_f2b37b094badcb63c89ddef4",
+      "text": "This marks the ninth straight month of year-over-year declines, a concerning trend as order boards open for 2026 production.",
+      "url": "https://georgia.org/sites/default/files/2025-10/october_snapshot_pdf.pdf",
+      "chunk_id": "chunk_81596fd5b39e58cdb8f4f469"
+    },
+    {
+      "claim_id": "claim_f4987ba8a69906e9dd1ff48f",
+      "text": "Orders also fell well short of the 10-year September average of 29,499 units, underscoring fleet hesitancy amid trade tensions, tariff uncertainty, and broader economic headwinds",
+      "url": "https://georgia.org/sites/default/files/2025-10/october_snapshot_pdf.pdf",
+      "chunk_id": "chunk_81596fd5b39e58cdb8f4f469"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_804e12f9883915c013191358",
+      "claim_94488b782650669bc0e765c2"
+    ],
+    [
+      "claim_3c71820a311414b80f388fc0",
+      "claim_f4987ba8a69906e9dd1ff48f"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

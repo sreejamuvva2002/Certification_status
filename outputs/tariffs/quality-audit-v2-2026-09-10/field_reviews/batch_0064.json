@@ -1,0 +1,58 @@
+{
+  "status": "reviewed",
+  "reviews": {
+    "claim_4f04a081a260314422673b82": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'China' is a country, not a named business entity. The audit rules explicitly prohibit using countries as company values."
+      }
+    },
+    "claim_4f7eeb9cdf08a0b66ee9b7bf": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'United States' is a country, not a named business entity. The audit rules explicitly prohibit using countries as company values."
+      }
+    },
+    "claim_4fdcb44e127eb6e2b095d5d8": {
+      "city": {
+        "decision": "clear",
+        "reason": "The value 'Bryan County' is a county, not a city. The audit rules explicitly state that a county in a city is misclassified."
+      }
+    },
+    "claim_505cf8c4edd6809346b1c566": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "The value 'Today' is a relative date without an absolute anchor. The audit rules state that relative dates like 'now/today' are insufficient for effective dates."
+      }
+    },
+    "claim_5692cfcdc4f6a97e8edef3fd": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'U.S. Trade Representative' refers to a government agency/official role, not a named business entity. The audit rules prohibit using agencies or officials as company values."
+      }
+    },
+    "claim_57921431eddb27260b2b83d5": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'United States' is a country, not a named business entity. The audit rules explicitly prohibit using countries as company values."
+      }
+    },
+    "claim_5da937fa50feaffbd64696b5": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+        "original_model_decision": {
+          "decision": "retain",
+          "reason": "The value '6/13/2025' is an absolute date. The audit date is September 10, 2026, making this a historical date (2025) which is valid for the audit context."
+        },
+        "review_method": "assistant_direct_cached_source_review"
+      }
+    },
+    "claim_5dc8f75bae521650cd1ef96f": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'Japan' is a country, not a named business entity. The audit rules explicitly prohibit using countries as company values."
+      }
+    }
+  }
+}

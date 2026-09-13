@@ -1,0 +1,62 @@
+{
+  "query_id": "q_278",
+  "query": "Bryan County Georgia automotive suppliers tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_095e704f924af4663dc38e3c",
+    "claim_bb1aedd6cb3862dc515485db",
+    "claim_2952eb5998b54e390d0fd606",
+    "claim_8994bd56e90d8ba7ecae28e4",
+    "claim_caaa39026c7db9d8c810274f"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_095e704f924af4663dc38e3c",
+      "text": "Tollison said not relying on shipments outside the country is a win for the Hyundai Metaplant due to the current 25% tariffs put in place by President Donald Trump.",
+      "url": "https://www.wjcl.com/article/hyundai-20-billion-positive-impact-hyundai-metaplant-bryan-county/64290033",
+      "chunk_id": "chunk_e7c5aaacf2fceb4b706a6700"
+    },
+    {
+      "claim_id": "claim_bb1aedd6cb3862dc515485db",
+      "text": "President Donald Trump announced steep tariffs on automobile imports Wednesday, an economic punishment intended to push more cars down American assembly lines.",
+      "url": "https://www.ajc.com/news/business/georgias-auto-plants-wont-protect-from-tariff-price-hikes-experts-say/NNSAAH2QXNEGRHG5NU4SGTQLWE",
+      "chunk_id": "chunk_521e7a529c03da5eac682837"
+    },
+    {
+      "claim_id": "claim_2952eb5998b54e390d0fd606",
+      "text": "Hyundai is weighing a massive expansion of its Georgia car plant, citing tariffs: CEO José Muñoz told CNBC the move would make the Bryan County facility the largest vehicle assembly plant by capacity in the U.S.",
+      "url": "https://www.linkedin.com/posts/quartzmedia_hyundai-is-weighing-a-massive-expansion-of-activity-7496529152984903680-wIW-",
+      "chunk_id": "chunk_c57aba5f6982abdfcddca499"
+    },
+    {
+      "claim_id": "claim_8994bd56e90d8ba7ecae28e4",
+      "text": "It will supply steel for auto parts and auto plants in Bryan County and Alabama.",
+      "url": "https://www.wjcl.com/article/hyundai-20-billion-positive-impact-hyundai-metaplant-bryan-county/64290033",
+      "chunk_id": "chunk_e7c5aaacf2fceb4b706a6700"
+    },
+    {
+      "claim_id": "claim_caaa39026c7db9d8c810274f",
+      "text": "It thrusts consumers in Georgia and across the country onto the front lines of a potential trade war, asking car buyers to endure higher prices for the potential of more factories on American soil, which could take years to be built.",
+      "url": "https://www.ajc.com/news/business/georgias-auto-plants-wont-protect-from-tariff-price-hikes-experts-say/NNSAAH2QXNEGRHG5NU4SGTQLWE",
+      "chunk_id": "chunk_521e7a529c03da5eac682837"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_095e704f924af4663dc38e3c",
+      "claim_bb1aedd6cb3862dc515485db"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

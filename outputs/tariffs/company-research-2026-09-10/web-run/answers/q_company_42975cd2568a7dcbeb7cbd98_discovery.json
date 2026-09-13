@@ -1,0 +1,55 @@
+{
+  "query_id": "q_company_42975cd2568a7dcbeb7cbd98_discovery",
+  "query": "\"Aurubis\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_170142629c595ba635399502",
+    "claim_6c3841480aabbea7a9d803a7",
+    "claim_7f333adcf90ac8e6c328fbdc",
+    "claim_ff1eb4b8d999d8ef3e0af058"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_170142629c595ba635399502",
+      "text": "Copper not affected by the reciprocal tariffs announced by President Trump on April 2, 2025.",
+      "url": "https://www.aurubis.com/en/dam/jcr:7240f4e0-dfa7-4901-8891-552bdb70184b/Aurubis_Conference%20Call_Q2_2024_25.pdf",
+      "chunk_id": "chunk_6deb5c194fb8d015981a3961"
+    },
+    {
+      "claim_id": "claim_6c3841480aabbea7a9d803a7",
+      "text": "On June 30, the White House announced tariffs on all copper products, excluding copper cathodes, which the market needs.",
+      "url": "https://www.k2castings.com/aurubis-opens-new-smelter-in-augusta-ga",
+      "chunk_id": "chunk_7c6e8e452de22dc037b0c95e"
+    },
+    {
+      "claim_id": "claim_7f333adcf90ac8e6c328fbdc",
+      "text": "Copper was not included in a list of reciprocal tariffs announced by the U.S. in April but U.S. President Donald Trump ordered a probe into copper imports in February.",
+      "url": "https://www.reuters.com/markets/europe/aurubis-posts-half-year-core-profit-above-estimates-confirms-guidance-2025-05-08",
+      "chunk_id": "chunk_0b7b12fa197ded7155fd34e0"
+    },
+    {
+      "claim_id": "claim_ff1eb4b8d999d8ef3e0af058",
+      "text": "Europe's largest copper producer Aurubis (NAFG.DE) is looking to increase its sales to the U.S. while there are no import tariffs on the metal, CEO Toralf Haag told analysts on Thursday.",
+      "url": "https://www.reuters.com/markets/europe/aurubis-posts-half-year-core-profit-above-estimates-confirms-guidance-2025-05-08",
+      "chunk_id": "chunk_0b7b12fa197ded7155fd34e0"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_170142629c595ba635399502",
+      "claim_ff1eb4b8d999d8ef3e0af058"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

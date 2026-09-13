@@ -1,0 +1,56 @@
+{
+  "query_id": "q_company_8f5291e2a5a64e6a8f7f09e2_discovery",
+  "query": "\"Nile Automotive\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_b8a55cabc0969c5231c8f767",
+    "claim_c5b055accfd3958bc3845ac0",
+    "claim_cd2f76a196fa3c29f9bb1026",
+    "claim_d6cacbf4a8963c065f7ba723"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_b8a55cabc0969c5231c8f767",
+      "text": "View Nile Automotive (www.nileautomotive.com) location in Georgia, United States , revenue, industry and description.",
+      "url": "https://www.zoominfo.com/c/nile-automotive-inc/1111312970",
+      "chunk_id": "chunk_1c77849175c8670adb84d70d"
+    },
+    {
+      "claim_id": "claim_c5b055accfd3958bc3845ac0",
+      "text": "In August, the US administration extended the scope of the 50% import tariffs for steel and aluminium goods, adding more than 400 additional items to the levy, including car parts such as chassis components, axles, steel wiring, brackets and mounts, and parts of heavy vehicles.",
+      "url": "https://www.automotivelogistics.media/supply-chain/tariff-analysis-deep-dive-the-most-important-changes-for-the-auto-industry/663875",
+      "chunk_id": "chunk_aadfedec0b4209946c7e44f7"
+    },
+    {
+      "claim_id": "claim_cd2f76a196fa3c29f9bb1026",
+      "text": "Since August 11, the tariff on Chinese graphite imports was reduced to 30%, due to the tariff truce between the two countries which is in place until November 10.",
+      "url": "https://www.automotivelogistics.media/supply-chain/tariff-analysis-deep-dive-the-most-important-changes-for-the-auto-industry/663875",
+      "chunk_id": "chunk_f3ccfe227af4fcf53abe2616"
+    },
+    {
+      "claim_id": "claim_d6cacbf4a8963c065f7ba723",
+      "text": "In July, the US Commerce Department imposed preliminary anti-dumping tariffs of 93.5% on Chinese graphite imports, with tariffs potentially going up to 700% for specific companies.",
+      "url": "https://www.automotivelogistics.media/supply-chain/tariff-analysis-deep-dive-the-most-important-changes-for-the-auto-industry/663875",
+      "chunk_id": "chunk_f3ccfe227af4fcf53abe2616"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_cd2f76a196fa3c29f9bb1026",
+      "claim_d6cacbf4a8963c065f7ba723"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

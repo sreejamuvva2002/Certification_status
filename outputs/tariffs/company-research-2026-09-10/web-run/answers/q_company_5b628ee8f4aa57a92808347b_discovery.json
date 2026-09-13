@@ -1,0 +1,65 @@
+{
+  "query_id": "q_company_5b628ee8f4aa57a92808347b_discovery",
+  "query": "\"Denso Manufacturing Georgia\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_192ffbcc37f0a45093c9cdb0",
+    "claim_401644cb13bb7ce8a081c304",
+    "claim_a61fa15f22d3751b85c75481",
+    "claim_f2cdbcd0d72f8d297e53a675",
+    "claim_f3395ef40b8bd7639ce21e35"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_192ffbcc37f0a45093c9cdb0",
+      "text": "In a sweeping display of executive power, President Donald Trump announced a new baseline 10% tariff against all trading partners, in addition to a sliding scale reciprocal tariff he argued will combat the “asymmetries in trade relationships that have contributed to the atrophy of domestic production capacity.”",
+      "url": "https://www.thedailytimes.com/news/denso-staying-flexible-amid-tariff-talk/article_8ffbccc3-9f00-4311-bd30-a4e8eba623fb.html",
+      "chunk_id": "chunk_73411c76864c579b8645f702"
+    },
+    {
+      "claim_id": "claim_401644cb13bb7ce8a081c304",
+      "text": "As a result of both its location and business model, the corporation faces two sets of import duties: the 25% tariff levied against all steel and aluminum, and the newly announced 24% reciprocal tariff planned against all Japanese exports.",
+      "url": "https://www.thedailytimes.com/news/denso-staying-flexible-amid-tariff-talk/article_8ffbccc3-9f00-4311-bd30-a4e8eba623fb.html",
+      "chunk_id": "chunk_73411c76864c579b8645f702"
+    },
+    {
+      "claim_id": "claim_a61fa15f22d3751b85c75481",
+      "text": "As a result of both its location and business model, the corporation faces two sets of import duties: the 25% tariff levied against all steel and aluminum, and the newly announced 24% reciprocal tariff planned against all Japanese exports.",
+      "url": "https://www.thedailytimes.com/news/denso-staying-flexible-amid-tariff-talk/article_8ffbccc3-9f00-4311-bd30-a4e8eba623fb.html",
+      "chunk_id": "chunk_73411c76864c579b8645f702"
+    },
+    {
+      "claim_id": "claim_f2cdbcd0d72f8d297e53a675",
+      "text": "Trump has set a Saturday deadline to impose 25% tariffs on imports from Mexico and Canada to pressure the two largest U.S. trading partners into taking action to prevent illegal migrants and shipments of fentanyl from crossing their borders into the U.S.",
+      "url": "https://ca.finance.yahoo.com/news/denso-eyes-price-negotiations-not-122300395.html",
+      "chunk_id": "chunk_f5925432a516fec5becaa62d"
+    },
+    {
+      "claim_id": "claim_f3395ef40b8bd7639ce21e35",
+      "text": "The world's second-largest car parts maker is not unduly worried about U.S. President Donald Trump's looming tariffs on Mexico and Canada, and may seek to manage increased costs by raising prices, a top executive at Japan's Denso said on Friday.",
+      "url": "https://ca.finance.yahoo.com/news/denso-eyes-price-negotiations-not-122300395.html",
+      "chunk_id": "chunk_f5925432a516fec5becaa62d"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_401644cb13bb7ce8a081c304",
+      "claim_a61fa15f22d3751b85c75481"
+    ],
+    [
+      "claim_f2cdbcd0d72f8d297e53a675",
+      "claim_f3395ef40b8bd7639ce21e35"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

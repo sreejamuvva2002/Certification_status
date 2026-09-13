@@ -1,0 +1,1435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Company | Daehan Solution</title>
+<link rel="stylesheet" href="http://dhsol.com/theme/dhsol/css/default.css?ver=191202">
+<link rel="stylesheet" href="http://dhsol.com/js/font-awesome/css/font-awesome.min.css?ver=191202">
+<link rel="stylesheet" href="http://dhsol.com/theme/dhsol/css/layout.css?ver=191202">
+<link rel="stylesheet" href="http://dhsol.com/theme/dhsol/css/content.css?ver=191202">
+<link rel="stylesheet" href="http://dhsol.com/theme/dhsol/css/table.css?ver=191202">
+<link rel="stylesheet" href="http://dhsol.com/theme/dhsol/css/jarallax.css?ver=191202">
+<link rel="stylesheet" href="http://dhsol.com/theme/dhsol/css/lightslider.min.css?ver=191202">
+<link rel="stylesheet" href="http://dhsol.com/theme/dhsol/css/owl.carousel.css?ver=191202">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css?ver=191202">
+<!--[if lte IE 8]>
+<script src="http://dhsol.com/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://dhsol.com";
+var g5_bbs_url   = "http://dhsol.com/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="http://dhsol.com/js/jquery-3.7.1.min.js?ver=191202"></script>
+<script src="http://dhsol.com/js/jquery-migrate-3.4.1.min.js?ver=191202"></script>
+<script src="http://dhsol.com/js/jquery.menu.js?ver=191202"></script>
+<script src="http://dhsol.com/js/common.js?ver=191202"></script>
+<script src="http://dhsol.com/js/wrest.js?ver=191202"></script>
+<script src="http://dhsol.com/js/placeholders.min.js?ver=191202"></script>
+<script src="http://dhsol.com/theme/dhsol/js/jquery.bpopup.min.js?ver=191202"></script>
+<script src="http://dhsol.com/theme/dhsol/js/gsap.min.js?ver=191202"></script>
+<script src="http://dhsol.com/theme/dhsol/js/owl.carousel.js?ver=191202"></script>
+<script src="http://dhsol.com/theme/dhsol/js/jarallax.js?ver=191202"></script>
+<script src="http://dhsol.com/theme/dhsol/js/jarallax-video.js?ver=191202"></script>
+<script src="http://dhsol.com/theme/dhsol/js/jarallax-element.js?ver=191202"></script>
+<script src="http://dhsol.com/theme/dhsol/js/lightslider.min.js?ver=191202"></script>
+<script src="http://dhsol.com/theme/dhsol/js/sns.js?ver=191202"></script>
+<script src="http://dhsol.com/theme/dhsol/js/subnavi.js?ver=191202"></script>
+</head>
+<body>
+<script>
+
+$(function() {
+	$('#open-button').click(function(e) {
+         e.preventDefault();
+		 var $btn = $(this);
+		 if($btn.hasClass('on')) {
+		 	$('body').removeClass('right-side-on');
+			$btn.removeClass('on');
+			$btn.addClass('off');
+		 } else {
+		 	$('body').addClass('right-side-on');
+			$btn.removeClass('off');
+			$btn.addClass('on');
+		 }
+    	return false;
+	});
+	
+    $('.gnb > li').mouseenter(function(e) {
+        $(this).find('.snb').stop().slideDown(200);
+		$('#header #gnb-bg').height($('.gnb').height()).show();
+    });
+	$('.gnb > li').mouseleave(function(e) {
+        $(this).find('.snb').stop().slideUp(200);
+		$('#header #gnb-bg').height($('.gnb').height()).show();
+    });
+	
+	$(window).scroll(function(e) {
+        if($(this).scrollTop() > 5) {
+			$('body').addClass('scrolled');
+		}
+		else {
+			$('body').removeClass('scrolled');		
+		}
+    });
+	
+	
+	//사이드 메뉴 열림 닫힘	{{{=========================================
+	$('.menu-list > li > a').click(function(e) {
+    	e.preventDefault();
+		var $this = $(this);
+	  	$('.menu-list > li > a').each(function(index, element) {
+        	if($this[0] == $(this)[0]) {
+				if(!$(this).parent().hasClass('on')) {
+					$(this).parent().addClass('on');
+					$(this).next().stop().slideDown(300);
+				}
+				else {
+					$(this).parent().removeClass('on');
+					$(this).next().stop().slideUp(300);
+				
+				}
+			}
+			else {
+				if($(this).parent().hasClass('on')) {
+					$(this).parent().removeClass('on');
+					$(this).next().stop().slideUp(300);
+				}
+			}
+		});
+    });
+	//사이드 메뉴 열림 닫힘	}}}=========================================
+	
+	
+});
+
+</script>
+
+<div id="right-side">
+	<a href="/index.php" style="font-size: 12px;color: #f00000;border: 1px solid #f00000;padding: 5px;width: 55px;font-weight: 500">Korean</a>
+    <nav class="side_gnb">
+        <ul class="menu-list">
+                        <li class=""> 
+                <a href="/content/company.php" target="_self"> Company </a>
+                                <ul class="depth-2">
+                                        <li><a href="/content/companye.php#sec01" target="_self"> CEO Greetings</a></li>
+                                        <li><a href="/content/companye.php#sec02" target="_self"> Management Philosophy</a></li>
+                                        <li><a href="/content/companye.php#sec03" target="_self"> History</a></li>
+                                        <li><a href="/content/companye.php#sec04" target="_self"> CI</a></li>
+                                        <li><a href="/content/companye.php#sec05" target="_self"> Location</a></li>
+                                    </ul>
+                            </li>
+                        <li class=""> 
+                <a href="/content/product.php" target="_self"> Product </a>
+                                <ul class="depth-2">
+                                        <li><a href="/content/producte.php#sec01" target="_self"> ANTI-NOISE INSULATION PARTS</a></li>
+                                        <li><a href="/content/producte.php#sec02" target="_self"> INTERIOR TRIM PARTS</a></li>
+                                        <li><a href="/content/producte.php#sec03" target="_self"> TRUNK TRIM PARTS</a></li>
+                                        <li><a href="/content/producte.php#sec04" target="_self"> ANTI-ENGINE NOISE PARTS</a></li>
+                                    </ul>
+                            </li>
+                        <li class=""> 
+                <a href="/content/rnd.php" target="_self"> R & D </a>
+                                <ul class="depth-2">
+                                        <li><a href="/content/rnde.php#sec01" target="_self"> R&D Crnter</a></li>
+                                        <li><a href="/content/rnde.php#sec02" target="_self"> Reaserch Areas/Achievements</a></li>
+                                    </ul>
+                            </li>
+                        <li class=""> 
+                <a href="/content/sustainability.php" target="_self"> Management </a>
+                                <ul class="depth-2">
+                                        <li><a href="/content/sustainabilitye.php#sec01" target="_self"> Safe Environment</a></li>
+                                        <li><a href="/content/sustainabilitye.php#sec02" target="_self"> Quality management</a></li>
+                                        <li><a href="/content/sustainabilitye.php#sec03" target="_self"> Social Contribution</a></li>
+                                    </ul>
+                            </li>
+                        <li class=""> 
+                <a href="/content/recruit.php" target="_self"> Recruitment </a>
+                                <ul class="depth-2">
+                                        <li><a href="/content/recruite.php#sec01" target="_self"> Ideal candidates</a></li>
+                                        <li><a href="/content/recruite.php#sec02" target="_self"> Recruitment process</a></li>
+                                        <li><a href="/content/recruite.php#sec03" target="_self"> Welfare Benefits</a></li>
+                                        <li><a href="http://recruit.dhsc.co.kr/#sec04" target="_blank">Recruit Site</a></li>
+                                    </ul>
+                            </li>
+                    </ul>
+    </nav>
+</div>
+<!--right-side끝--> 
+
+
+
+
+
+<!-- {{{ #wrapper -->
+<div id="wrap">
+    <header id="header">
+        <div class="header-inner">
+            <div id="logo"><a href="/indexe.php">Home</a></div>
+            <ul class="gnb">
+                                <li class="lm"> 
+                    <a href="/content/companye.php" target="_self"> Company</a>
+                                    </li>
+                                <li class="lm"> 
+                    <a href="/content/producte.php" target="_self"> Product</a>
+                                    </li>
+                                <li class="lm"> 
+                    <a href="/content/rnde.php" target="_self"> R & D</a>
+                                    </li>
+                                <li class="lm"> 
+                    <a href="/content/sustainabilitye.php" target="_self"> Management</a>
+                                    </li>
+                                <li class="lm"> 
+                    <a href="/content/recruite.php" target="_self"> Recruitment</a>
+                                    </li>
+                <li><a href="/index.php" style="font-size: 12px;color: #f00000;border: 1px solid #f00000;padding: 5px;width: 55px;font-weight: 500">Korean</a></li>                
+            </ul>
+           </div>
+       <div id="gnb-bg"></div>
+    </header>     
+
+         
+    <div id="open-button">
+        <div style="position:relative;">
+            <div class="navicon-line nl1"></div>
+            <div class="navicon-line nl2"></div>
+            <div class="navicon-line nl3"></div>
+        </div>
+    </div>
+<div class="sub_visual visual01">
+    <div class="title_warp">
+        <h3>Company</h3>
+		<p class="sub_title">Company</p>
+	</div>
+    <p class="cover"></p>
+    <p class="bg"></p>
+</div>
+	
+<section id="container-box" class="clearfix" style="position: relative; top: 0px; width: 100%; border-top: 1px solid #dcdddc;border-bottom: 1px solid #dcdddc;background-color: #ffffff">
+     <!--section class="sub_navI_warp"></section>-->
+	<div style="max-width:1300px;margin: auto;">
+	    <div class="sub_location" style="width:100%;text-align: center;">
+	        <ul>
+                                      <li style='width:19.5%'><a href="#" id="1" class="on" onclick="fnMove('01')">CEO Greetings</a></li>
+
+                      <li style='width:19.5%'><a href="#" id="2" class="" onclick="fnMove('02')">Philosophy</a></li>
+
+                      <li style='width:19.5%'><a href="#" id="3" class="" onclick="fnMove('03')">History</a></li>
+
+                      <li style='width:19.5%'><a href="#" id="4" class="" onclick="fnMove('04')">CI</a></li>
+
+                      <li style='width:19.5%'><a href="#" id="5" class="" onclick="fnMove('05')">Location</a></li>
+
+	        </ul>
+        </div>
+	</div>
+  </section><section class="content_wrap" id="sec01">
+    <div class="txtCon">
+        <h1>CEO인사말</h1>
+        <div class="cont46">
+            <div class="colum">
+                <div class="left">
+				<img src="http://dhsol.com/theme/dhsol/img/ceo.jpg">
+				</div>
+                <div class="right" style="line-height:170%;">
+One question mark was the starting point of today's Daehan Solution.<br><br> 
+<span style="font-weight:600;font-size:1.1em;font-style: italic">"Why should people talk louder in cars driving at over 100km/h than those who are walking?"</span><br><br><br>
+
+Welcome to Daehan Solution hompage.<br><br>
+Since its foundation in 1982, Daehan Solution prioritized human, environment, and customer satisfaction to provide Total System Engineering, which includes N.V.H. of automobiles, ranging from testing, diagnosis and prescribed design to production for reducing internal and external noise in relation to automobile noise and vibration.<br><br>
+We are not satisfied with the improvement of ride quality by simply reducing internal and external noise of automobiles, but we continue endless research and development in order to present satisfaction beyond comfort to all customers by redesigning rough noise into pleasant sound. 
+<br><br><br>
+<p class="sign sign01" style="text-align:right;padding-right:100px;">President <span class="name">Kwon Hoehyeon</span><img src="http://dhsol.com/theme/dhsol/img/khysign.png"></p>				
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--sec02-->
+<section class="content_wrap" id="sec02">
+    <div class="txtCon">
+        <h1>Management Philosophy</h1>
+        
+        <div style="text-align:center; margin-top:40px; margin-bottom:40px;">
+            <img src="http://dhsol.com/theme/dhsol/img/philosophy(e).png" alt="Daehan Solution Management Philosophy" style="width:100%; max-width:1283px;">
+        </div>
+        
+    </div>
+</section>
+
+<!--sec03-->
+<section class="content_wrap" id="sec03">
+    <div class="txtCon">
+        <h1>History</h1>
+		<div id="history" class="history">
+		<div class="history-section">
+		    <!-- List-->
+			<div class="history-list">
+				<!--  연혁 -->
+				<div class="history-page">
+					<span class="history-line"></span>
+                            <div class="tit">&nbsp;</div>
+                            <div class="history-box">
+                                <ol class="history-list-wr">
+                                    <li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>2020</h4>
+                                        <ol class="history">
+                                            <li>
+                                                <div class="day">11</div><div class="txt"><p>Quality Competitive Enterprise Hall of Fame Dedicated</p></div>
+                                             </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp</p></div> 
+                                              </li>
+                                         </ol>
+                                     </li>
+                                     <li class="history-list showAni5">
+                                         <h4 class="year"><span class="dot"></span>2019</h4>
+                                         <ol class="history">
+                                              <li>
+                                                    <div class="day">10</div><div class="txt"><p>ISO45001</p></div>
+                                              </li>
+											  <li>
+                                                   <div class="day">11</div><div class="txt"><p>Selection of companies with excellent quality competitiveness (10 times)</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp</p></div> 
+                                              </li>
+                                         </ol>
+                                      </li>
+                                      <li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>2018</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">02</div><div class="txt"><p>IATF16949 Certified</p></div>
+                                              </li>
+											  <li>
+                                                 <div class="day">11</div><div class="txt"><p>Selection of companies with excellent quality competitiveness (9times)</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp</p></div> 
+                                              </li>
+                                           </ol>
+									  </li>
+                                      <li class="history-list showAni5" style="background-image: url('./img/2016.png');background-repeat: no-repeat ;background-position:650px 60px;">
+                                        <h4 class="year"><span class="dot"></span>2016</h4>
+                                           <ol class="history">
+                                               <li>
+                                                 <div class="day">01</div><div class="txt"><p>R&D center construction</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day">01</div><div class="txt"><p>AEO Certified</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day">06</div><div class="txt"><p>ISO22301 Certified</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day">08</div><div class="txt"><p>Awarded the grand prize for CEO of a mid-sized company in Korea</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day">09</div><div class="txt"><p>Established a factory in Nevada, USA</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day">09</div><div class="txt"><p>Established a factory in Michigan, USA</p></div>
+                                              </li>
+											  <li>
+                                                 <div class="day">11</div><div class="txt"><p>Selection of companies with excellent quality competitiveness(7times)</p></div> 
+                                              </li>
+											  <li>
+                                                 <div class="day">11</div><div class="txt"><p>ISO18001, OHSAS18001 Certified</p></div> 
+                                              </li>
+											  <li>
+                                                 <div class="day">11</div><div class="txt"><p>Selection of companies with excellent quality competitiveness(8times)</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>                                              
+                                           </ol>
+									  </li>
+                                      <li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>2015</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">11</div><div class="txt"><p>Selection of companies with excellent quality competitiveness(6times)</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>                                              
+                                           </ol>
+									  </li>
+                                      <li class="history-list showAni5" style="background-image: url('./img/2014.png');background-repeat: no-repeat ;background-position:650px 60px;">
+                                        <h4 class="year" ><span class="dot"></span>2014</h4>
+                                           <ol class="history"  >
+                                              <li>
+                                                 <div class="day">07</div><div class="txt"><p>Selected as one of the 50 companies that will brighten up Quality Korea</p></div>
+                                              </li>								
+                                               <li>
+                                                 <div class="day">10</div><div class="txt"><p>Awarded the grand prize for global quality management</p></div>
+                                              </li>	
+                                              <li>
+                                                 <div class="day">11</div><div class="txt"><p>Selection of companies with excellent quality competitiveness(5times)</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day">11</div><div class="txt"><p>Awarded the National Quality Award</p></div>
+                                              </li>	
+                                              <li>
+                                                 <div class="day">12</div><div class="txt"><p>Awarded 200 million dollar export tower</p></div>
+                                              </li>											  
+											  <li>
+                                                 <div class="day">12</div><div class="txt"><p>Established factory in Monterrey, Mexico</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp</p></div> 
+                                              </li>
+											  </ol>
+                                      <li class="history-list showAni5" style="background-image: url('./img/2013.png');background-repeat: no-repeat ;background-position:120px 45px;">
+                                        <h4 class="year"><span class="dot"></span>2013</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">07</div><div class="txt"><p>Established Gwangju Factory</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day">11</div><div class="txt"><p>Selection of companies with excellent quality competitiveness(4times)</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>   
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>                                                                                                                            
+                                           </ol>
+									  </li>	
+                                      <li class="history-list showAni5" style="background-image: url('./img/2012.png');background-repeat: no-repeat ;background-position:650px 45px;">
+                                        <h4 class="year"><span class="dot"></span>2012</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">07</div><div class="txt"><p>Headquarters and R&D Center extension</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>Selection of companies with excellent quality competitiveness(3times)</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>                                              
+                                           </ol>
+									  </li>	
+                                      <li class="history-list showAni5" style="background-image: url('./img/2011.png');background-repeat: no-repeat ;background-position:120px 45px;">
+                                        <h4 class="year"><span class="dot"></span>2011</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">08</div><div class="txt"><p>Entrepreneur Hall of Fame (IBK Industrial Bank of Korea)</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                                                                          
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                              <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                            
+                                           </ol>
+									  </li>	
+								<!--/ol>	
+                            </div>
+                            <div class="tit">&nbsp;</div>
+                            <div class="history-box">
+                                <ol class="history-list-wr"-->
+                                     <li class="history-list showAni5" style="background-image: url('./img/2008.png');background-repeat: no-repeat ;background-position:650px 60px;">
+                                        <h4 class="year"><span class="dot"></span>2008</h4>
+                                        <ol class="history">
+                                            <li>
+                                                <div class="day">06</div><div class="txt"><p>Established a plant in Georgia, USA</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                                                                          
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li> 
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li> 
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                                                                             
+										 </ol>
+                                     </li>
+									<li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>2006</h4>
+                                        <ol class="history">
+                                            <li>
+                                                <div class="day">10</div><div class="txt"><p>Selected as a company specializing in parts and materials (Ministry of Commerce, Industry and Energy)</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day">11</div><div class="txt"><p>Awarded 100 million dollar export tower</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                             
+										 </ol>
+                                     </li>
+									 <li class="history-list showAni5" style="background-image: url('./img/2004.png');background-repeat: no-repeat ;background-position:650px 45px;">
+                                        <h4 class="year"><span class="dot"></span>2004</h4>
+                                        <ol class="history">
+                                            <li>
+                                                <div class="day">05</div><div class="txt"><p>Established Poseung Factory</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day">11</div><div class="txt"><p>Established Gyeongsan Factory</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li> 
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li>                                                                                            
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li>  
+											</ol>
+                                     </li>
+                                     <li class="history-list showAni5" style="background-image: url('./img/2003.png');background-repeat: no-repeat ;background-position:50px 50px">
+                                         <h4 class="year"><span class="dot"></span>2003</h4>
+                                         <ol class="history">
+                                              <li>
+                                                   <div class="day">04</div><div class="txt"><p>Established a factory in Alabama, USA</p></div>
+                                              </li>
+                                              <li>
+                                                   <div class="day">10</div><div class="txt"><p>Awarded the National Industrial Standardization Award</p></div>
+                                              </li>
+                                              <li>
+                                                    <div class="day"></div><div class="txt"><p>Selection of companies with excellent quality competitiveness(2times)</p></div>
+                                              </li>
+                                              <li>
+                                                   <div class="day"></div><div class="txt"><p>Acquired ISO/TS 16949 certification</p></div>
+                                              </li>
+                                              <li>
+                                                    <div class="day">11</div><div class="txt"><p>Awarded Gold Tower Order of Industrial Service Merit</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li>   
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li>   
+                                             <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                                                                                                                                                               
+										 </ol>
+                                      </li>
+                                      <li class="history-list showAni5" style="background-image: url('./img/2002.png');background-repeat: no-repeat ;background-position:650px 45px;">
+                                        <h4 class="year"><span class="dot"></span>2002</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">08</div><div class="txt"><p>품질경쟁력 50대 기업 선정 (산업통상 자원부)</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day">11</div><div class="txt"><p>Selected as one of the 50 companies with quality competitiveness (Ministry of Trade, Industry and Energy)</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>Selection of companies with excellent quality competitiveness(1time)</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day">12</div><div class="txt"><p>Awarded the Environment Grand Prize (Ministry of Environment)</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li>                                                                                            
+                                           </ol>
+									  </li>
+                                      <li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>2001</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>Acquired ISO 14001 certification</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>                                              
+                                           </ol>
+									  </li>
+                                      <li class="history-list showAni5" style="background-image: url('./img/2000.png');background-repeat: no-repeat ;background-position:650px 45px;">
+                                        <h4 class="year"><span class="dot"></span>2000</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">04</div><div class="txt"><p>Changed company name to Daehan Solution Co., Ltd (4/13)</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>    
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>   
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>  
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>  
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>  
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li> 
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>  
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>										  
+                                           </ol>
+									  </li>
+								<!--/ol>	
+                            </div>
+                            <div class="tit">&nbsp;</div>
+                            <div class="history-box">
+                                <ol class="history-list-wr"-->
+                                    <li class="history-list showAni5" style="background-image: url('./img/1999.png');background-repeat: no-repeat ;background-position:120px 45px">
+                                        <h4 class="year"><span class="dot"></span>1999</h4>
+                                        <ol class="history">
+                                            <li>
+                                                <div class="day">08</div><div class="txt"><p>100PPM Quality Innovation Presidential Award</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>  
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>  
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>	
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>  
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>	                                                                                           
+                                         </ol>
+                                     </li>
+                                     <li class="history-list showAni5" style="background-image: url('./img/1998.png');background-repeat: no-repeat ;background-position:650px 45px">
+                                         <h4 class="year"><span class="dot"></span>1998</h4>
+                                         <ol class="history">
+                                              <li>
+                                                    <div class="day"> </div><div class="txt"><p>Obtained QS 9000 certification</p></div>
+                                              </li>
+                                              <li>
+                                                   <div class="day">12</div><div class="txt"><p>Technical cooperation with UK Hyperlast</p></div>
+                                              </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                             
+                                         </ol>
+                                      </li>
+                                      <li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>1996</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">05</div><div class="txt"><p>Incheon 2nd factory established</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                              </li>                                              
+                                           </ol>
+									  </li>
+                                      <li class="history-list showAni5" style="background-image: url('./img/1995.png');background-repeat: no-repeat ;background-position:650px 45px">
+                                        <h4 class="year"><span class="dot"></span>1995</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day"> </div><div class="txt"><p>Acquired ISO 9001 certification</p></div>
+                                              </li>
+                                              <li>
+                                                 <div class="day"> </div><div class="txt"><p>New Materials Research Center established (in KAIST)</p></div>
+                                              </li>
+											  <li>
+                                                 <div class="day">11</div><div class="txt"><p>Established Dangjin Factory</p></div> 
+                                              </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>  
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>  
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li> 
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                                                                                                                                                                     
+                                            </ol>
+									  </li>
+                                      <li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>1994</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">11</div><div class="txt"><p>Awarded Gold Prize in National Quality Circle Contest</p></div> 
+                                              </li>
+                                           </ol>
+									  </li>
+                                      <li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>1993</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day"> </div><div class="txt"><p>Swiss Richter and NVH Technology Cooperation</p></div> 
+                                              </li>
+											  <li>
+                                                 <div class="day"> </div><div class="txt"><p>Received a silver prize in the National Quality Circle Contest</p></div>
+                                              </li>
+                                             <li>
+                                                 <div class="day"> </div><div class="txt"><p>Received the Presidential Award at the New Technology Contest</p></div> 
+                                              </li> 
+                                           </ol>
+									  </li>
+                                      <li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>1993</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">12</div><div class="txt"><p>Received the Presidential Award at the New Technology Contest</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day">11</div><div class="txt"><p>Received a silver prize in the National Quality Circle Contest</p></div>
+                                              </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                                 
+                                           </ol>
+									  </li>
+                                      <li class="history-list showAni5" style="background-image: url('./img/1991.png');background-repeat: no-repeat ;background-position:650px 45px">
+                                        <h4 class="year"><span class="dot"></span>1991</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">05</div><div class="txt"><p>Central R&D Center established</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>NVH package applied to Kia Motors Sepia for the first time</p></div>
+                                              </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>Began exporting urethane raw materials for the first time in Korea</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>  
+                                           <li>
+                                                <div class="day"></div><div class="txt"><p>&nbsp;</p></div>
+                                             </li>                                                                                         
+                                           </ol>
+									  </li>								
+                                      <li class="history-list showAni5" style="background-image: url('./img/1989.png');background-repeat: no-repeat ;background-position:120px 45px;">
+                                        <h4 class="year"><span class="dot"></span>1989</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">10</div><div class="txt"><p>Incheon Namdong Industrial Complex Headquarters Construction and Relocation</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>                                                                                            
+                                           </ol>
+									  </li>								
+								
+								<!--/ol>	
+                            </div>
+                            <div class="tit">&nbsp</div>
+                            <div class="history-box">
+                                <ol class="history-list-wr"-->
+                                    <li class="history-list showAni5">
+                                        <h4 class="year"><span class="dot"></span>1985</h4>
+                                        <ol class="history">
+                                            <li>
+                                                <div class="day">01</div><div class="txt"><p>Development of NVH package technology for the first time in Korea</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day">01</div><div class="txt"><p>The first development, production and construction of polyurethane insulated double pipe in Korea</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day">01</div><div class="txt"><p>Developed Korea’s first polyurethane insulation for cigarette dryer</p></div>
+                                             </li>
+                                            <li>
+                                                <div class="day">01</div><div class="txt"><p>Developed for the first time in Korea as a raw material for polyurethane spray insulation for housing construction</p></div>
+                                             </li>
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>
+
+                                         </ol>
+                                     </li>
+                                     <li class="history-list showAni5">
+                                         <h4 class="year"><span class="dot"></span>1983</h4>
+                                         <ol class="history">
+                                              <li>
+                                                   <div class="day"> </div><div class="txt"><p>Developed polyurethane integral skin foam for the first time in Korea</p></div>
+                                              </li>
+                                              <li>
+                                                    <div class="day"> </div><div class="txt"><p>Developed and delivered polyurethane insulation products for the first time in Korea (applied to Daewoo Motors Royal)</p></div>
+                                              </li>
+                                         </ol>
+                                      </li>
+                                      <li class="history-list showAni5" style="background-image: url('./img/1982.png');background-repeat: no-repeat ;background-position:650px 45px;">
+                                        <h4 class="year"><span class="dot"></span>1982</h4>
+                                           <ol class="history">
+                                              <li>
+                                                 <div class="day">04</div><div class="txt"><p>Established Daehan Chemical Industry (Hakik-dong, Inha University)</p></div> 
+                                              </li>
+                                               <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>    
+											  <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>   
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li> 
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>    
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>    
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>    
+                                              <li>
+                                                 <div class="day"></div><div class="txt"><p>&nbsp;</p></div> 
+                                              </li>    											  
+											</ol>
+									  </li>
+								</ol>	
+                            </div>
+        			</div>
+			        <!--//  연혁 -->
+			</div>
+			<!-- // List -->
+	</div>
+</div>
+
+</div>
+</section>
+<!--sec04-->
+<section class="content_wrap" id="sec04">
+    <div class="txtCon">
+        <h1>CI</h1>
+        <div class="ci" style="padding-top:20px">
+            <div class="colum" style="border-top:1px solid gray">
+                <div class="left"><span style="color:red">01</span>Symbol Mark</div>
+                <div class="cont">
+					<table width=100%><tr><td width="25%">
+					<img src="http://dhsol.com/theme/dhsol/img/cilogo.jpg" width=100%></td>
+					<td style="font-size:22px;line-height:190%;padding-left:30px;">The symbol mark is a design representing Corporate Identity, which plays the most important role in creating a unified image as the public symbol that integrates the corporate image of Daehan Solution.</td>
+				    </tr><tr><td colspan="2" style="padding-top:20px;">
+					The first letter of English ‘D’ and ‘arrow (→)’ are combined to form a figure. It contains the will of Daehan Solutions to develop based on harmony and stability amid the changes and growth of the global economy in the 21st century.<BR>
+				Arrows signify challenge and creation for the future. The letter 'D' is used to express the development in stability and symbolizes harmony. Red symbolizes initiative and black symbolizes excellence and dignity.
+					</td></tr></table>
+				</div>
+            </div>
+            <div class="colum" style="border-top:1px solid gray">
+                <div class="left"><span style="color:red">02</span> Logo Type</div>
+                <div class="cont">
+					<img src="http://dhsol.com/theme/dhsol/img/company/logotype.jpg" style="width:100%;max-width:464px"><br>
+					The symbol mark is a design representing Corporate Identity, which plays the most important role in creating a unified image as the public symbol that integrates the corporate image of Daehan Solution.<br><br>
+					<table width=100%> 
+					<tr>
+					<td>English Logo Type</td>
+					<td>Grid Logo Type</td>
+					</tr>
+					<tr>
+					<td><img src="http://dhsol.com/theme/dhsol/img/company/english.jpg" style="border:1px solid lightgray;width:100%"></td>
+					<td><img src="http://dhsol.com/theme/dhsol/img/company/grid.jpg" style="border:1px solid lightgray;width:100%"></td>
+					</tr>					
+					</table>
+                </div>
+            </div>
+            <div class="colum" style="border-top:1px solid gray">
+                <div class="left"><span style="color:red">03</span> Signature</div>
+                <div class="cont">
+				The signature is a combination of symbol mark and logo type in an ideal proportion.<br>Since it is a combination of the two most representative visual elements of Daehan Solution's Corporate Identity, the combinations of the appointed design can only be used, and cannot be changed.<br>The signature is designed in Korean, English, vertical and horizontal combinations, and the appropriate design can be selected depending on the situation. Use the provided image file after zooming it or out. <br><br>
+<img src="http://dhsol.com/theme/dhsol/img/company/esigniture.jpg" style="width:100%;max-width:996px">
+
+				</div>
+            </div>
+            <div class="colum" style="border-top:1px solid gray">
+                <div class="left"><span style="color:red">04</span> Identity Color</div>
+                <div class="cont">
+				    The identity color is one of the important elements of Corporate Identity that cannot be disregarded.<br>It is used to express unique color of symbol mark and signature of Daehan Solution.<br> The standard color in the manual should be applied after reviewing the printing method, ink concentration, and paper quality.
+				    <div style="float:left;padding-right:120px;padding-top:20px;"> <span style="padding:12px;">Main color</span><br><img src="http://dhsol.com/theme/dhsol/img/company/maincolor.jpg" style="width:100%;max-width:450px;"></div>
+					<div style="float:left;padding-top:20px">  <span style="padding:12px;">Sub color</span><br><img src="http://dhsol.com/theme/dhsol/img/company/subcolor.jpg" style="width:100%;max-width:450px;"></div>	
+					<div style="clear:both;padding-top:30px;">					
+The utilization of color is a regulation that exemplifies the ideal color image according to various media in consideration of clarity and aesthetic impression of signature. 
+<br><br>
+<img src="http://dhsol.com/theme/dhsol/img/company/color.jpg"  style="width:100%;max-width:1022px;">
+				    </div>
+				</div>
+            </div>
+            <div class="colum" style="border-top:1px solid gray">
+                <div class="left"><span style="color:red">05</span> CI Download</div>
+                <div class="cont">
+				    <div style="float:left;padding:3px 20px;border:2px solid gray;margin-right:20px;"><a href='../signature.zip'>Download [Logo/Signature]</a></div>
+				    <!--div style="float:left;padding:3px 20px;border:2px solid gray;"><a href='#'>다운로드 [시그니처]</a></div-->
+				</div>
+            </div>
+		
+		</div>
+    </div>
+</section>
+<!--sec05 end-->
+
+<!--sec06-->
+<link rel="stylesheet" href="/theme/dhsol/css/colorbox.css" />
+<style type="text/css">
+img[usemap] {border: none;height: auto;max-width: 100%;width: auto;}
+.companybox{position:relative; font-size:15px; max-width:600px;}
+.companybox .colum { padding:50px 20px 70px 20px;  max-width:250px; margin:0 auto}
+.companybox .colum:after{clear:both; content:""; display:block;}
+.companybox .colum .left{float:left; width:40%; line-height:1.5em;  text-align:justify; text-align:center }
+.companybox .colum .right{float:right;padding-right:10px;; width:60%; line-height:1.5em; text-align:justify;}
+</style>
+<script src="/theme/dhsol/js/jquery.rwdImageMaps.min.js"></script>
+<script src="/theme/dhsol/js/jquery.colorbox-min.js"></script>
+<script>
+			$(document).ready(function(){
+				$(".inline").colorbox({inline:true, width:"650px"});
+				$('img[usemap]').rwdImageMaps();
+				$("#img").width("100%");
+			});
+</script>
+<section class="content_wrap" id="sec05">
+    <div class="txtCon">
+        <h1>Location</h1>
+        <br>
+        
+<div style="text-align:center;max-width: 1300px;">
+
+<div style="float: left"><img src="http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg" usemap="#koreaplant" name="koreaplant" style="width:100%"></div>
+<div style="float: left"><img src="http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg" usemap="#worldplant" name="worldplant" style="width:100%" ></div>
+
+
+<map id="koreaplant" name="koreaplant">
+<area shape="rect" alt="Headquarters/Incheon Factory/R&D Center" title="Headquarters/Incheon Factory/R&D Center" coords="215,178,293,208" href="javascript:fnMove('11')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant1.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+<area shape="rect" alt="Headquarters/Incheon Factory/R&D Center" title="Headquarters/Incheon Factory/R&D Center" coords="142,221,159,237" href="javascript:fnMove('11')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant1.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+<area shape="rect" alt="
+Poseung Factory" title="Poseung Factory" coords="253,256,331,285" href="javascript:fnMove('12')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant2.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+<area shape="rect" alt="Poseung Factory" title="Poseung Factory" coords="169,264,185,281" href="javascript:fnMove('12')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant2.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+<area shape="rect" alt="Dangjin Factory" title="Dangjin Factory" coords="85,352,163,377" href="javascript:fnMove('13')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant3.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+<area shape="rect" alt="Dangjin Factory" title="Dangjin Factory" coords="152,302,169,321" href="javascript:fnMove('13')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant3.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+<area shape="rect" alt="Gwangju Factory" title="Gwangju Factory" coords="203,378,288,405" href="javascript:fnMove('15')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant4.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+<area shape="rect" alt="Gwangju Factory" title="Gwangju Factory" coords="158,448,179,467" href="javascript:fnMove('15')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant4.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+<area shape="rect" alt="Gyeongsan Factory" title="Gyeongsan Factory" coords="347,323,424,354" href="javascript:fnMove('14')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant5.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+<area shape="rect" alt="Gyeongsan Factory" title="Gyeongsan Factory" coords="316,393,333,413" href="javascript:fnMove('14')" onmouseover="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant5.jpg'" onmouseout="if(document.images) koreaplant.src='http://dhsol.com/theme/dhsol/img/company/ekoreaplant.jpg'"/>
+</map>
+<map id="worldplant" name="worldplant">
+<area shape="rect" alt="네바다,미국" title="네바다,미국" coords="138,264,215,292" href="javascript:fnMove('16')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant1.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+<area shape="rect" alt="네바다,미국" title="네바다,미국" coords="265,304,282,320" href="javascript:fnMove('16')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant1.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+<area shape="rect" alt="몬테레이,멕시코" title="몬테레이,멕시코" coords="197,396,275,422" href="javascript:fnMove('17')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant2.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+<area shape="rect" alt="몬테레이,멕시코" title="몬테레이,멕시코" coords="323,362,341,378" href="javascript:fnMove('17')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant2.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+<area shape="rect" alt="알라바마,미국" title="알라바마,미국" coords="455,411,528,434" href="javascript:fnMove('18')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant3.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+<area shape="rect" alt="알라바마,미국" title="알라바마,미국" coords="364,335,377,351" href="javascript:fnMove('18')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant3.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+<area shape="rect" alt="조지아, 미국" title="조지아, 미국" coords="452,371,528,395" href="javascript:fnMove('19')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant4.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+<area shape="rect" alt="조지아, 미국" title="조지아, 미국" coords="380,336,393,351" href="javascript:fnMove('19')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant4.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+<area shape="rect" alt="미시간,미국" title="미시간,미국" coords="454,236,527,262" href="javascript:fnMove('20')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant5.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+<area shape="rect" alt="미시간,미국" title="미시간,미국" coords="365,296,379,313" href="javascript:fnMove('20')" onmouseover="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant5.jpg'" onmouseout="if(document.images) worldplant.src='http://dhsol.com/theme/dhsol/img/company/eworldplant.jpg'"/>
+</map>
+</div>
+<div style="clear: both;"></div>
+<h5>Korea</h5> 
+<div id="bo_gall" style="width:100%;">
+    <ul id="gall_ul" class="gall_row"> 
+         <li class="gall_li"  id="sec11">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#hq"  class="inline"><img src="./img/hq.jpg" alt="본사/인천공장"></a></div>
+                    <div class="gall_text_href" >
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Headquarters/Incheon Factory</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 30, Namdong-daero 369beon-gil, Namdong-gu, Incheon, Korea<br>
+								<div class="maptit">Phone</div> 82-32-812-7781~4<br> 
+								<div class="maptit">FAX</div> 82-32-812-7785<br><br>
+								<div class="maptit">Product</div> NVH Related Parts
+								<span class="mapbtn"><a href="#hq"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>
+							 </td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 
+         <li class="gall_li"  id="sec11">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#hq"  class="inline"><img src="./img/rndcenter.jpg" alt="R&D센터"></a></div>
+                    <div class="gall_text_href" >
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>R&D Center</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 30, Namdong-daero 369beon-gil, Namdong-gu, Incheon, Korea<br>
+								<div class="maptit">Phone</div> 82-32-819-7231~6<br> 
+								<div class="maptit">FAX</div> 82-32-819-7237<br><br>
+								<div class="maptit"></div>  
+								<span class="mapbtn"><a href="#hq"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>							 
+							 </td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+		 <li class="gall_li"  id="sec12">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#ps"  class="inline"><img src="./img/ps.jpg" alt="포승공장"></a></div>
+                    <div class="gall_text_href">
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Poseung Factory</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 424, Pyeongtaekhangman-gil, Poseung-eup, Pyeongtaek-si, Gyeonggi-do, Korea<br>
+								<div class="maptit">Phone</div> 82-31-683-4083~6<br> 
+								<div class="maptit">FAX</div> 82-31-683-9614<br><br>
+								<div class="maptit">Product</div> Module Headliner 
+								<span class="mapbtn"><a href="#ps"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>
+							 </td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 
+         <li class="gall_li"  id="sec13">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#dj"  class="inline"><img src="./img/dj.jpg" alt="당진공장"></a></div>
+                    <div class="gall_text_href">
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Dangjin Factory</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 77, Samseondong-gil, Myeoncheon-myeon, Dangjin-si, Chungcheongnam-do, Korea<br>
+								<div class="maptit">Phone</div> 82-41-356-0281<br> 
+								<div class="maptit">FAX</div> 82-41-356-0282<br><br>
+								<div class="maptit">Product</div> Module Headliner, Carpet 
+								<span class="mapbtn"><a href="#dj"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>							 
+							 </td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 
+         <li class="gall_li" id="sec14">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#ks"  class="inline"><img src="./img/ks.jpg" alt="경산공장"></a></div>
+                    <div class="gall_text_href">
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Gyeongsan Factory</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 34, Gongdan 4-ro, Jillyang-eup, Gyeongsan-si, Gyeongsangbuk-do, Korea<br>
+								<div class="maptit">Phone</div> 82-53-857-9150<br> 
+								<div class="maptit">FAX</div> 82-53-857-9156<br><br>
+								<div class="maptit">Product</div> Module Headliner, NVH Related Parts
+								<span class="mapbtn"><a href="#ks"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>						 
+							</td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 
+         <li class="gall_li" id="sec15">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#gj"  class="inline"><img src="./img/gj.jpg" alt="광주공장"></a></div>
+                    <div class="gall_text_href">
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Gwangju Factory</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 8, Wondu-ro, Gwangsan-gu, Gwangju, Korea<br>
+								<div class="maptit">Phone</div> 82-62-943-9500<br> 
+								<div class="maptit">FAX</div> 82-62-943-9501<br><br>
+								<div class="maptit">Product</div> Module Headliner, NVH Related Parts
+								<span class="mapbtn"><a href="#gj"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>							 
+							</td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 		
+	</ul>
+</div>					
+<h5>International</h5> 
+<div id="bo_gall" style="width:100%">
+    <ul id="gall_ul" class="gall_row" > 
+         <li class="gall_li"  id="sec18">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#al"  class="inline"><img src="./img/al.jpg" alt="알라바마"></a></div>
+                    <div class="gall_text_href">
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Alabama Factory (USA)</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 9101 Country Rd. 26, Hope hull, AL 36043, USA<br>
+								<div class="maptit">Phone</div> +1(334)404-5000<br> 
+								<div class="maptit">FAX</div> +1(334)404-5040<br><br>
+								<div class="maptit">Product</div> Module Headliner, NVH Related Parts
+								<span class="mapbtn"><a href="#al"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>							 
+						</td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 
+         <li class="gall_li" id="sec19">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#jo"  class="inline"><img src="./img/jo.jpg" alt="조지아"></a></div>
+                    <div class="gall_text_href">
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Georgia Factory (USA)</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 791 Progress Parkway, WestPoint,GA 31833, USA<br>
+								<div class="maptit">Phone</div> +1(706)902-5200<br> 
+								<div class="maptit">FAX</div> +1(706)902-5209<br><br>
+								<div class="maptit">Product</div> Module Headliner, NVH Related Parts
+								<span class="mapbtn"><a href="#jo"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>							 
+							 </td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 
+         <li class="gall_li"  id="sec16">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#ne"  class="inline"><img src="./img/ne.jpg" alt="네바다"></a></div>
+                    <div class="gall_text_href" >
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Nevada Factory (USA)</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 1600 E Newlands Road, Fernley, NV 89408 USA<br>
+								<div class="maptit">Phone</div> +1(775)372-9911<br> 
+								<div class="maptit">FAX</div> +1(775)372-9912<br><br>
+								<div class="maptit">Product</div> Electronic Vehicle NVH Related Parts
+								<span class="mapbtn"><a href="#ne"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>							 
+							 </td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 
+
+         <li class="gall_li" id="sec20">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#mi"  class="inline"><img src="./img/mi.jpg" alt="미시간"></a></div>
+                    <div class="gall_text_href">
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Michigan Factory (USA)</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> 10401 Harrison Road, Romulus, MI 48174, USA<br>
+								<div class="maptit">Phone</div> +1(734)857-1430<br> 
+								<div class="maptit">FAX</div> +1(734)857-1405<br><br>
+								<div class="maptit">Product</div> Module Headliner, NVH Related Parts
+								<span class="mapbtn"><a href="#mi"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>							 
+							 </td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> 
+		 <li class="gall_li" id="sec17">
+            <div class="gall_box">
+                <div class="gall_con">
+                    <div class="gall_img"><a href="#me"  class="inline"><img src="./img/me.jpg" alt="몬테레이"></a></div>
+                    <div class="gall_text_href">
+						<div class="list-spec2">
+					     <table>
+						 <tr><th>Monterey Factory (Mexico)</th>
+						 </tr>
+						 <tr>
+                             <td>
+							    <div class="maptit">Address</div> Carrentera Pesquen a-LosRamonesKm. 13al 15interior 11 col. LaArena, Pesqueri a, N.L.C.P 66679 Mexico<br>
+								<div class="maptit">Phone</div> +52(81)8852-6230<br> 
+								<div class="maptit">FAX</div> +52(81)683-9614<br><br>
+								<div class="maptit">Product</div> Module Headliner, NVH Related Parts
+								<span class="mapbtn"><a href="#me"  class="inline" style="color:#FFF;font-weight:300;font-size:15px;border-radius: 10px;">Map View</a></span>							 
+							 </td></tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>		
+	</ul>
+</div>	
+
+
+</section>
+<!--sec06 end-->
+
+
+		<div style='display:none'>
+			<div id='hq' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.8321846047947!2d126.70020081552113!3d37.41744124040981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7a221520fa19%3A0x24cf45d0c76e2c10!2zKOyjvCnrjIDtlZzshpTro6jshZg!5e0!3m2!1sko!2skr!4v1631067641842!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id='ps' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.164909760733!2d126.83158891551204!3d36.98199666514434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b1b865b81352f%3A0x841d1e6094d8a3e8!2z64yA7ZWc7IaU66Oo7IWY7Y-s7Iq56rO17J6l!5e0!3m2!1sko!2skr!4v1631067690162!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id='dj' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.4904818718533!2d126.66152145112211!3d36.80676497493089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357af7655610b9c9%3A0x3e5ee62dc34d29d5!2z64yA7ZWc7IaU66Oo7IWY64u57KeE6rO17J6l!5e0!3m2!1sko!2skr!4v1631067742854!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id='ks' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.445864757897!2d128.82018745110307!3d35.86258902751374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356612a9b0d65535%3A0x7cfc0171cc3499c!2zKOyjvCnrjIDtlZzshpTro6jshZg!5e0!3m2!1sko!2skr!4v1631067782714!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id='gj' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13053.701100545677!2d126.76383818110487!3d35.121059434826996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357187f98a984163%3A0x21296d49fbc6e9a1!2z64yA7ZWc7IaU66Oo7IWY6rSR7KO86rO17J6l!5e0!3m2!1sko!2skr!4v1631067810184!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id='ne' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3073.747189509207!2d-119.21471968494191!3d39.61037711220739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8098e819a56e75f3%3A0xc60645fe401d4553!2sDaehan%20Solution%20Nevada%2C%20LLC!5e0!3m2!1sko!2skr!4v1630897033038!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id='me' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119093.90499971653!2d-100.08258856582609!3d25.776668801251194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662e1327ca9effb%3A0x2b8463d472c922d8!2sDaehan%20Solution!5e0!3m2!1sko!2skr!4v1630897130177!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id='mi' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.31405214204!2d-83.31893818486125!3d42.2291031513547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b48dd2bd3d0f7%3A0x70d04cd8e29ba261!2sDaehan%20Solution!5e0!3m2!1sko!2skr!4v1630897187825!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id='jo' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.6170026358213!2d-85.12288888512644!3d32.855390987292836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888ca59eacbb9059%3A0xfa0af5d04cda0e63!2sDaehan%20Solution!5e0!3m2!1sko!2skr!4v1630897228821!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div id='al' class="companybox">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864303.8692037618!2d-86.44039323221048!3d32.19919172724468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf41ce12afae848ad!2sDaehan%20Solutions%20Alabama%20LLC!5e0!3m2!1sko!2skr!4v1630897353446!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+
+		</div>
+
+<script src="/theme/dhsol/js/history.js"></script>
+<script>
+$(function() {	
+	$('#mail_popup').bind('click', function(e) {
+		e.preventDefault();
+		// Triggering bPopup when click event is fired
+		$('#mail_bpopup_form').bPopup();
+		//alert('준비중비니다.');
+	});
+});
+
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+</div> 
+<footer>
+
+
+       <div class="inner">
+	    <div class="lg02">
+			<img src="http://dhsol.com/theme/dhsol/img/footlogo.png">
+		</div>		<div class="siteInfo" style="padding:10px;">
+			<p class="addr">30, Namdong-daero 369beon-gil, Namdong-gu, Incheon, Korea | Tel.82-32-812-7781 | Fax.82-32-812-7785</p>
+			<p class="copyright">COPYRIGHT ©2026 Daehan Solution Co. All Rights Reserved.</p>
+	    </div>
+</div>
+</footer>
+
+</body>
+</html>

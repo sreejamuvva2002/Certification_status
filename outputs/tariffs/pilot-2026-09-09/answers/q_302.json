@@ -1,0 +1,47 @@
+{
+  "query_id": "q_302",
+  "query": "Georgia Hyundai suppliers tariff surcharge contracts",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_28f2ae9b191a1b85855c0786",
+    "claim_388815c909f649b5d8b40400",
+    "claim_bcd4f8f9df02215f2ed9926b"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_28f2ae9b191a1b85855c0786",
+      "text": "The tariffs will still affect Hyundai, like other auto companies producing in the U.S., to the degree that parts are imported.",
+      "url": "https://www.csmonitor.com/Business/2025/0408/tariffs-hyundai-auto-factory-jobs-georgia",
+      "chunk_id": "chunk_1bb739b5b8aa2461228dbeee"
+    },
+    {
+      "claim_id": "claim_388815c909f649b5d8b40400",
+      "text": "Hyundai Motor Group $HYMTF ( ▼ 7.44% ) is widening the scope of its manufacturing footprint in the U.S. as the industry braces for the 25% auto tariffs scheduled to go into effect on April 3.",
+      "url": "https://news.dealershipguy.com/p/hyundai-s-new-georgia-megaplant-opens-as-u-s-tariffs-loom-2025-03-31",
+      "chunk_id": "chunk_9301cf17e1206662c94b760c"
+    },
+    {
+      "claim_id": "claim_bcd4f8f9df02215f2ed9926b",
+      "text": "This plant couldn’t come at a better time than now…because definitely all the cars that we would produce here are going to be exempted from any tariffs,” stated Euisun Chung, Hyundai Motor Group’s Executive Chairman.",
+      "url": "https://news.dealershipguy.com/p/hyundai-s-new-georgia-megaplant-opens-as-u-s-tariffs-loom-2025-03-31",
+      "chunk_id": "chunk_9301cf17e1206662c94b760c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_388815c909f649b5d8b40400",
+      "claim_bcd4f8f9df02215f2ed9926b"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

@@ -1,0 +1,55 @@
+{
+  "query_id": "q_company_8d222dd0a0807029704fdce6_targeted",
+  "query": "\"ZF Gainesville LLC\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0303f5915d4fa392a10060f1",
+    "claim_31deffdbf39e051c30299f5a",
+    "claim_453e6f90b9230ce7bd4bede0",
+    "claim_a7f83beefc045b538e22c988"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0303f5915d4fa392a10060f1",
+      "text": "President Trump’s tariffs on imported vehicles and auto parts are projected to increase U.S. car prices by nearly $2,000 per vehicle, according to AlixPartners.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_e64fc3d84b6efb93481b3a67"
+    },
+    {
+      "claim_id": "claim_31deffdbf39e051c30299f5a",
+      "text": "President Donald Trump has announced a 25 percent tariff on goods imported from Japan and South Korea, alongside new import taxes on 12 other nations, set to take effect on August 1.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_e64fc3d84b6efb93481b3a67"
+    },
+    {
+      "claim_id": "claim_453e6f90b9230ce7bd4bede0",
+      "text": "President Donald Trump announced he will be increasing tariffs on South Korean goods from 15% to 25%, citing South Korea’s failure to enact a trade agreement signed in July 2025. The tariffs will affect a wide range of goods, including automobiles, lumber, and pharmaceuticals",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_f3acc3ddb27ff46874313455"
+    },
+    {
+      "claim_id": "claim_a7f83beefc045b538e22c988",
+      "text": "Kia Motors reported a significant 49% drop in its Q3 operating profit, primarily due to a $842 million impact from U.S. tariffs on imported vehicles.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_4dd34d22b4ec1ee472f18fb9"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_31deffdbf39e051c30299f5a",
+      "claim_453e6f90b9230ce7bd4bede0"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

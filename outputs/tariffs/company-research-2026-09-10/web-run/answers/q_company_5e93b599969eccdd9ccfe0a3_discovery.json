@@ -1,0 +1,35 @@
+{
+  "query_id": "q_company_5e93b599969eccdd9ccfe0a3_discovery",
+  "query": "\"Jefferson Southern Corp.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0d25e59ccef0d28fc96c331f",
+    "claim_497a3ded1bd953ffe974871a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0d25e59ccef0d28fc96c331f",
+      "text": "Jefferson Southern Corporation, a Tier 1 supplier of structural steel parts to Honda, is in the middle of a expansion of its production facility.",
+      "url": "http://www.jsc-ga.com/About.aspx",
+      "chunk_id": "chunk_104a2dfe7a1aaf72b9e29037"
+    },
+    {
+      "claim_id": "claim_497a3ded1bd953ffe974871a",
+      "text": "Jefferson Southern Corporation is a Tier One automotive supplier. This means that we produce and sell parts that are ready to be installed in automobiles.",
+      "url": "https://www.facebook.com/jeffersonsoutherncorp",
+      "chunk_id": "chunk_698f354155f6f33c85a338d0"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 2,
+  "synthesis_input_claim_count": 2
+}

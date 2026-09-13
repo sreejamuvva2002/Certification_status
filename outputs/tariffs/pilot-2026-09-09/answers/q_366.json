@@ -1,0 +1,61 @@
+{
+  "query_id": "q_366",
+  "query": "Copper tubing automotive thermal systems tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0b042d4bad9b83f6d0bc2610",
+    "claim_1d58c69cb33c4b203f9a5066",
+    "claim_2cd6333a7fb0a1407567948a",
+    "claim_c578083023c3f264b148813d",
+    "claim_fe5ef641fa1846978cfcda0a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0b042d4bad9b83f6d0bc2610",
+      "text": "Starting August 1, 2025, President Trump imposed 50% tariffs on global imports of semi-finished copper products (e.g., copper pipes, wires, rods, sheets, and tubes) and copper-intensive derivative products",
+      "url": "https://www.congress.gov/crs-product/IN12614",
+      "chunk_id": "chunk_90a60bebb72eb154f9f8065d"
+    },
+    {
+      "claim_id": "claim_1d58c69cb33c4b203f9a5066",
+      "text": "Heading 9903.78.01:50 percent additional ad valorem rate of duty on the copper content of semi-finished copper and intensive copper derivative products",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3ebf0e0",
+      "chunk_id": "chunk_ae6d19a89d1c7e5a300ecd55"
+    },
+    {
+      "claim_id": "claim_2cd6333a7fb0a1407567948a",
+      "text": "Heading 9903.78.02:0 percent additional ad valorem rate of duty on: the non-copper content of semi-finished copper and intensive copper derivative products",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3ebf0e0",
+      "chunk_id": "chunk_ae6d19a89d1c7e5a300ecd55"
+    },
+    {
+      "claim_id": "claim_c578083023c3f264b148813d",
+      "text": "imposing an ad valorem tariff of 50 percent on all imports of semi-finished copper products and intensive copper derivative products, from all countries.",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3ebf0e0",
+      "chunk_id": "chunk_ae6d19a89d1c7e5a300ecd55"
+    },
+    {
+      "claim_id": "claim_fe5ef641fa1846978cfcda0a",
+      "text": "Effective April 6, 2026, President Trump imposed a _50% tariff on the full value_ of semi-finished copper products and _25% on the full value_ of copper-intensive derivative products (10% if at least 95% of the copper, steel, and aluminum in the product is U.S.-sourced)",
+      "url": "https://www.congress.gov/crs-product/IN12614",
+      "chunk_id": "chunk_90a60bebb72eb154f9f8065d"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_0b042d4bad9b83f6d0bc2610",
+      "claim_fe5ef641fa1846978cfcda0a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 13,
+  "synthesis_input_claim_count": 13
+}

@@ -1,0 +1,62 @@
+{
+  "query_id": "q_company_b7b4dc548795424b83c672ad_discovery",
+  "query": "\"Goodyear Tire & Rubber Co.\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0915940818f0d6467efc6247",
+    "claim_1233cc7fee718a36ebeaa471",
+    "claim_5c4f42e0a76879b6f0b9b975",
+    "claim_f272e9820fe65604d145f671",
+    "claim_b942f75650325a32e585d1e3"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0915940818f0d6467efc6247",
+      "text": "The looming tariffs on Mexico and Canada could reduce the company’s flexibility to use its global manufacturing facilities to meet tire demand, according to Goodyear’s securities filing.",
+      "url": "https://www.manufacturingdive.com/news/goodyear-forward-q4-2024-sales-rebound-looming-tariffs-canada-mexico/740370",
+      "chunk_id": "chunk_b0fa7db018ebbaf51b5a8dca"
+    },
+    {
+      "claim_id": "claim_1233cc7fee718a36ebeaa471",
+      "text": "Goodyear and other Tier 1 tire makers source their volumes from factories located in Canada and Mexico, Stewart said.",
+      "url": "https://www.manufacturingdive.com/news/goodyear-forward-q4-2024-sales-rebound-looming-tariffs-canada-mexico/740370",
+      "chunk_id": "chunk_b0fa7db018ebbaf51b5a8dca"
+    },
+    {
+      "claim_id": "claim_5c4f42e0a76879b6f0b9b975",
+      "text": "In the meantime, we're working across our operations to mitigate any potential near-term impacts of tariffs,related to our Canadian and Mexican supply.",
+      "url": "https://www.manufacturingdive.com/news/goodyear-forward-q4-2024-sales-rebound-looming-tariffs-canada-mexico/740370",
+      "chunk_id": "chunk_b0fa7db018ebbaf51b5a8dca"
+    },
+    {
+      "claim_id": "claim_f272e9820fe65604d145f671",
+      "text": "Stewart said. He added that Goodyear is in talks with government officials about the issue.",
+      "url": "https://www.manufacturingdive.com/news/goodyear-forward-q4-2024-sales-rebound-looming-tariffs-canada-mexico/740370",
+      "chunk_id": "chunk_b0fa7db018ebbaf51b5a8dca"
+    },
+    {
+      "claim_id": "claim_b942f75650325a32e585d1e3",
+      "text": "The company said that it expected to receive $46 million in refunds after the Supreme Court ruled Trump's sweeping \"emergency\" tariffs to be unlawful.",
+      "url": "https://reason.com/2026/05/15/a-north-carolina-goodyear-plant-is-the-latest-victim-of-trumps-misguided-tariffs-and-costly-iran-war",
+      "chunk_id": "chunk_fd93a281832748f0e7396fa0"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_0915940818f0d6467efc6247",
+      "claim_b942f75650325a32e585d1e3"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 18,
+  "synthesis_input_claim_count": 18
+}

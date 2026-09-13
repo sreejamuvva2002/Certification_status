@@ -1,0 +1,37 @@
+{
+  "query_id": "q_18",
+  "query": "Chatham County automotive suppliers tariff exposure",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_4fdcb44e127eb6e2b095d5d8",
+    "claim_b13b1389002edc562a39a3d0"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_4fdcb44e127eb6e2b095d5d8",
+      "text": "Tariff threat casts shadow over Hyundai's plant-opening party in Bryan County.",
+      "url": "https://thecurrentga.org/2025/03/31/tariff-threat-casts-shadow-over-hyundais-plant-opening-party-in-bryan-county",
+      "chunk_id": "chunk_bcfcb46bd6564ff6477cb37b"
+    },
+    {
+      "claim_id": "claim_b13b1389002edc562a39a3d0",
+      "text": "Suppliers have been explicit in saying the tariffs ― now suspended until March 1 ― would create dire implications for the North American",
+      "url": "https://www.crainsdetroit.com/automotive/auto-suppliers-speak-out-trump-tariff-concerns",
+      "chunk_id": "chunk_d63d0d0b6004d54a571fe596"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 8,
+  "synthesis_input_claim_count": 8
+}

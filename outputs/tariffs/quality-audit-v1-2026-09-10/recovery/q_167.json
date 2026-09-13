@@ -1,0 +1,148 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer lacks specific tariff data for Insulated Metal Substrate (IMS) automotive PCBs, relying on general PCB or wire harness classifications that may not apply to IMS.",
+  "confidence": "high",
+  "remaining_gap": "Specific HTS classification and duty rate for IMS automotive PCBs is not established in the provided evidence.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_86c26f166fa343c31a6554fa",
+      "supporting_excerpt": "HTS 7410.21.3040 applies due to plastics-impregnated glass base with copper on both surfaces.",
+      "relevance_explanation": "Identifies HTS for FR4 laminates but not IMS substrates.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_9854e1007f99f3af30a9bc34",
+      "supporting_excerpt": "flex, rigid-flex, and specialty substrate boards are excluded from these exemptions.",
+      "relevance_explanation": "Notes exclusions for specialty substrates but does not confirm IMS status or rates.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_5716614074ddd149c7506531",
+      "supporting_excerpt": "Does it include switches, fuses, relays, or PCBs? | Ask a customs broker to review the full assembly",
+      "relevance_explanation": "Indicates classification uncertainty for assemblies containing PCBs.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_679116c75c1db0eb0f374fa1",
+      "supporting_excerpt": "Facing higher barriers to the US market, Chinese PCB companies actively explored diversified markets...",
+      "relevance_explanation": "Discusses general tariff impacts on Chinese PCB exports without IMS specifics.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_167",
+  "query": "Insulated metal substrate automotive PCBs import tariffs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 1,
+    "full_text_sources": 1,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 2,
+    "all_extracted_claims": 5,
+    "claims_presented_to_original_synthesis": 5,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 2,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_86c26f166fa343c31a6554fa",
+    "passage_679116c75c1db0eb0f374fa1",
+    "passage_9854e1007f99f3af30a9bc34",
+    "passage_c1b4f1f0bec16052ddebc75e",
+    "passage_ebe5acf94d9ed97f72abc0fe",
+    "passage_3118d6ca7d5c562665297bd6",
+    "passage_5716614074ddd149c7506531",
+    "passage_2fc0f051f98f70d040fa4230"
+  ],
+  "candidate_document_ids": [
+    "document_76e3dd7e96ebfcf483ebb218",
+    "document_abcc372c7d136699cf80b62d",
+    "document_c904f98e6711a99203a9720a",
+    "document_dafe3c8df4485dc97087bf53",
+    "document_deed7bcba7c578fe6ec11be4",
+    "document_f54b0d22c62373a210da7794"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_86c26f166fa343c31a6554fa",
+      "supporting_excerpt": "HTS 7410.21.3040 applies due to plastics-impregnated glass base with copper on both surfaces.",
+      "relevance_explanation": "Identifies HTS for FR4 laminates but not IMS substrates.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_b1d2b9671ea5b83ccd8696ed",
+      "query_id": "q_167",
+      "chunk_id": "chunk_4067de052589cb7b91145c3e",
+      "document_id": "document_c904f98e6711a99203a9720a",
+      "source_url": "https://tariffs.wove.com/us/tariff/7410.21.30.40/2-layer-pcb-copper-clad-laminate-panel",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/7b1f39bb3211819b0d0b8767fc7c746011828eadc99726bb9c1dfc21619a3be8.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_9854e1007f99f3af30a9bc34",
+      "supporting_excerpt": "flex, rigid-flex, and specialty substrate boards are excluded from these exemptions.",
+      "relevance_explanation": "Notes exclusions for specialty substrates but does not confirm IMS status or rates.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_23ade754c58bfaf7a28b3021",
+      "query_id": "q_167",
+      "chunk_id": "chunk_ec23520aa49864a008ca43ef",
+      "document_id": "document_deed7bcba7c578fe6ec11be4",
+      "source_url": "https://www.bestfpc.com/news/the-ultimate-guide-to-flex-pcb-pricing-in-2026.html",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/89c1f4e93c3eea27ae8a5c3eb032a978fc7bcd5fa3b7546af515b6d89456c2dc.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_5716614074ddd149c7506531",
+      "supporting_excerpt": "Does it include switches, fuses, relays, or PCBs? | Ask a customs broker to review the full assembly",
+      "relevance_explanation": "Indicates classification uncertainty for assemblies containing PCBs.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_eb5a9b6eabebb2fc55d3152c",
+      "query_id": "q_167",
+      "chunk_id": "chunk_2080cf14a26d63961be50eda",
+      "document_id": "document_76e3dd7e96ebfcf483ebb218",
+      "source_url": "https://www.ourpcb.com/blog/china-us-wire-harness-tariffs-2026",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/8bd31c068649b24bfb05be510b84d152866a90da7497f38f95dce09f461f0de5.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_679116c75c1db0eb0f374fa1",
+        "supporting_excerpt": "Facing higher barriers to the US market, Chinese PCB companies actively explored diversified markets...",
+        "relevance_explanation": "Discusses general tariff impacts on Chinese PCB exports without IMS specifics.",
+        "company_applicability": "not_established",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

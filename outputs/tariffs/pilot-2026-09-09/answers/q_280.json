@@ -1,0 +1,55 @@
+{
+  "query_id": "q_280",
+  "query": "Effingham County Georgia automotive manufacturing tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_10299d9ec8e7837e1ac23c9e",
+    "claim_4850ee8660d2809092f0d50b",
+    "claim_4fdcb44e127eb6e2b095d5d8",
+    "claim_d9021dcc7320bd5b8a989d52"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_10299d9ec8e7837e1ac23c9e",
+      "text": "On April 3, the chamber published a report outlining the impacts local industries may experience from the tariffs, including higher prices for car parts and steel",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_4850ee8660d2809092f0d50b",
+      "text": "The White House initially established 10% tariffs on imports from all countries, along with higher “reciprocal” tariffs targeting nations such as China, Vietnam and members of the European Union",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_4fdcb44e127eb6e2b095d5d8",
+      "text": "Tariff threat casts shadow over Hyundai's plant-opening party in Bryan County.",
+      "url": "https://thecurrentga.org/2025/03/31/tariff-threat-casts-shadow-over-hyundais-plant-opening-party-in-bryan-county",
+      "chunk_id": "chunk_bcfcb46bd6564ff6477cb37b"
+    },
+    {
+      "claim_id": "claim_d9021dcc7320bd5b8a989d52",
+      "text": "The 25% auto tariff could pose a major threat to automobile titans like Hyundai and Kia that have production plants in the state",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_4850ee8660d2809092f0d50b",
+      "claim_d9021dcc7320bd5b8a989d52"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

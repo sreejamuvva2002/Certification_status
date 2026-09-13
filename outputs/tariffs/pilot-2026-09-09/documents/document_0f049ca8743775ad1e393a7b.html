@@ -1,0 +1,816 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+<script type="text/javascript">
+/* <![CDATA[ */
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+/* ]]> */
+</script>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://www.buckland.com/xmlrpc.php" />
+		<link rel="shortcut icon" href="https://www.buckland.com/wp-content/themes/buckland/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="https://www.buckland.com/wp-content/themes/buckland/icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="https://www.buckland.com/wp-content/themes/buckland/icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="https://www.buckland.com/wp-content/themes/buckland/icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://www.buckland.com/wp-content/themes/buckland/icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://www.buckland.com/wp-content/themes/buckland/icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://www.buckland.com/wp-content/themes/buckland/icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://www.buckland.com/wp-content/themes/buckland/icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://www.buckland.com/wp-content/themes/buckland/icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://www.buckland.com/wp-content/themes/buckland/icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="https://www.buckland.com/wp-content/themes/buckland/icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://www.buckland.com/wp-content/themes/buckland/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="https://www.buckland.com/wp-content/themes/buckland/icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://www.buckland.com/wp-content/themes/buckland/icons/favicon-16x16.png">
+		<link rel="manifest" href="https://www.buckland.com/wp-content/themes/buckland/icons/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="https://www.buckland.com/wp-content/themes/buckland/icons/ms-icon-144x144.png">
+		<script>
+				dataLayer = [];
+			</script>		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-599J33G');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager GA4-->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TQS9C52');</script>
+<!-- End Google Tag Manager -->		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v26.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Harmonized System Update (HSU) - Import Duties on Auto Parts | Buckland Customs</title>
+	<meta name="description" content="&nbsp; Background - On March 26, the President issued Proclamation 10908, which adjusts the importation of automobiles and automobile parts into the" />
+	<link rel="canonical" href="https://www.buckland.com/news/harmonized-system-update-hsu-import-duties-on-auto-parts/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Harmonized System Update (HSU) - Import Duties on Auto Parts | Buckland Customs" />
+	<meta property="og:description" content="&nbsp; Background - On March 26, the President issued Proclamation 10908, which adjusts the importation of automobiles and automobile parts into the" />
+	<meta property="og:url" content="https://www.buckland.com/news/harmonized-system-update-hsu-import-duties-on-auto-parts/" />
+	<meta property="og:site_name" content="Buckland Customs" />
+	<meta property="article:publisher" content="https://www.facebook.com/Buckland-168391656509086" />
+	<meta property="article:modified_time" content="2025-05-02T18:53:48+00:00" />
+	<meta property="og:image" content="https://www.buckland.com/wp-content/uploads/2015/11/og-default.jpg" />
+	<meta property="og:image:width" content="200" />
+	<meta property="og:image:height" content="200" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@bucklandtweets" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.buckland.com/news/harmonized-system-update-hsu-import-duties-on-auto-parts/","url":"https://www.buckland.com/news/harmonized-system-update-hsu-import-duties-on-auto-parts/","name":"Harmonized System Update (HSU) - Import Duties on Auto Parts | Buckland Customs","isPartOf":{"@id":"https://www.buckland.com/#website"},"datePublished":"2025-05-02T13:50:20+00:00","dateModified":"2025-05-02T18:53:48+00:00","description":"&nbsp; Background - On March 26, the President issued Proclamation 10908, which adjusts the importation of automobiles and automobile parts into the","breadcrumb":{"@id":"https://www.buckland.com/news/harmonized-system-update-hsu-import-duties-on-auto-parts/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.buckland.com/news/harmonized-system-update-hsu-import-duties-on-auto-parts/"]}]},{"@type":"BreadcrumbList","@id":"https://www.buckland.com/news/harmonized-system-update-hsu-import-duties-on-auto-parts/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.buckland.com/"},{"@type":"ListItem","position":2,"name":"News","item":"https://www.buckland.com/news/"},{"@type":"ListItem","position":3,"name":"Harmonized System Update (HSU) &#8211; Import Duties on Auto Parts"}]},{"@type":"WebSite","@id":"https://www.buckland.com/#website","url":"https://www.buckland.com/","name":"Buckland Customs","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.buckland.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.buckland.com' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.buckland.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel='stylesheet' id='dashicons-css' href='https://www.buckland.com/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-my-login-css' href='https://www.buckland.com/wp-content/plugins/theme-my-login/theme-my-login.css' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.buckland.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpml-legacy-dropdown-0-css' href='https://www.buckland.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/style.min.css' type='text/css' media='all' />
+<style id='wpml-legacy-dropdown-0-inline-css' type='text/css'>
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#cdcdcd;}.wpml-ls-statics-shortcode_actions a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link:link {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:hover,.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:focus, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:hover, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}
+</style>
+<link rel='stylesheet' id='wpml-menu-item-0-css' href='https://www.buckland.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://www.buckland.com/wp-content/plugins/elementor/assets/css/frontend.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-4899-css' href='https://www.buckland.com/wp-content/uploads/elementor/css/post-4899.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-tabs-frontend-css' href='https://www.buckland.com/wp-content/plugins/jet-tabs/assets/css/jet-tabs-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-main-css' href='https://www.buckland.com/wp-content/plugins/masterslider/public/assets/css/masterslider.main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-custom-css' href='https://www.buckland.com/wp-content/uploads/masterslider/custom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tbk-careers-css' href='https://www.buckland.com/wp-content/plugins/tbk-careers/css/careers.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tbk-learning-css' href='https://www.buckland.com/wp-content/plugins/tbk-learning/css/learning.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mainstyle-css' href='https://www.buckland.com/wp-content/themes/buckland/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hot-fix-css' href='https://www.buckland.com/wp-content/themes/buckland/css/hotfix.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bless-3-css' href='https://www.buckland.com/wp-content/themes/buckland/css/blessed/styles-blessed3.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bless-2-css' href='https://www.buckland.com/wp-content/themes/buckland/css/blessed/styles-blessed2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bless-1-css' href='https://www.buckland.com/wp-content/themes/buckland/css/blessed/styles-blessed1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bless-0-css' href='https://www.buckland.com/wp-content/themes/buckland/css/blessed/styles.css' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.buckland.com/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/plugins/masterslider/includes/modules/elementor/assets/js/elementor-widgets.js" id="masterslider-elementor-widgets-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/script.min.js" id="wpml-legacy-dropdown-0-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/sticky-footer.js" id="sticky-footer-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/jquery.cookie.js" id="jquery-cookie-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/modernizr.js" id="modernizr-js"></script>
+<script type="text/javascript" src="//use.typekit.net/yzf1dva.js" id="typekit-js"></script>
+<script></script><link rel="https://api.w.org/" href="https://www.buckland.com/wp-json/" /><link rel='shortlink' href='https://www.buckland.com/?p=5938' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.buckland.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.buckland.com%2Fnews%2Fharmonized-system-update-hsu-import-duties-on-auto-parts%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.buckland.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.buckland.com%2Fnews%2Fharmonized-system-update-hsu-import-duties-on-auto-parts%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.8.5 stt:1,4,2;" />
+<script>var ms_grabbing_curosr='https://www.buckland.com/wp-content/plugins/masterslider/public/assets/css/common/grabbing.cur',ms_grab_curosr='https://www.buckland.com/wp-content/plugins/masterslider/public/assets/css/common/grab.cur';</script>
+<meta name="generator" content="MasterSlider 3.7.8 - Responsive Touch Image Slider" />
+<script type="text/javascript">var ajaxurl = "https://www.buckland.com/wp-admin/admin-ajax.php";</script><!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> <script src="https://www.buckland.com/wp-content/themes/buckland/js/respond.js"></script> <link rel='stylesheet' id='ws-ltie9-css'  href='https://www.buckland.com/wp-content/themes/buckland/ltie9.css' type='text/css' media='all' /><![endif]--><meta name="generator" content="Elementor 3.33.0; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1741854946631613');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1741854946631613&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "oyl56iwa20");
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR58TWQ1G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CR58TWQ1G4');
+</script>
+<script type="text/javascript">
+_linkedin_partner_id = "6642274";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=6642274&fmt=gif" />
+</noscript>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-922476085"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-922476085');
+</script>
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	</head>
+		
+<body class="wp-singular news-template-default single single-news postid-5938 wp-theme-buckland harmonized-system-update-hsu-import-duties-on-auto-parts lang-en _masterslider _msp_version_3.7.8 is_desktop wpb-js-composer js-comp-ver-8.3.1 vc_responsive elementor-default elementor-kit-4899">
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-599J33G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) GA4-->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQS9C52"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<header class="banner navbar navbar-default navbar-static-top" role="banner">
+			<nav class="accessibility-menu-nav">
+				<ul class="accessibility-menu">
+					<li>
+						<a class="skip-to-content" href="#main">
+							Skip to content						</a>
+					</li>
+					<li>
+						<a href="https://www.buckland.com/sitemap">
+							Sitemap						</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="navbar-top" role="navigation">
+				<div class="navbar-top-inner">
+					<div class="container">
+						<ul id="menu-top-left-navigation" class="nav navbar-nav navbar-top-left"><li id="menu-item-1428" class="top-menu-social-linkedin menu-item menu-item-type-custom menu-item-object-custom menu-social_linkedin menu-item-1428"><span class="menu-item-text"><a class="footer-social-icon" title="Follow us on Linkedin" href="https://www.linkedin.com/company/buckland"><span class="icon icon-linkedin"></span></a></span></li>
+<li id="menu-item-45" class="menu-item menu-item-type-custom menu-item-object-custom menu-hours menu-item-45"><span class="menu-item-text"></span></li>
+<li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-toll-free menu-item-46"><span class="menu-item-text"><a href="tel:1-800-991-4944">1-800-991-4944</a></span></li>
+</ul>						<ul id="menu-top-right-navigation" class="nav navbar-nav navbar-top-right"><li id="menu-item-1289" class="menu-item menu-item-type-post_type menu-item-object-page menu-careers menu-item-1289"><a href="https://www.buckland.com/careers/"><span class="menu-item-text">Careers</span></a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-help-centre menu-item-48"><a href="https://www.buckland.com/help/"><span class="menu-item-text">Help Centre</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-732" class="menu-item menu-item-type-custom menu-item-object-custom menu-help-centre-common menu-item-732"><span class="menu-item-text"><div class="visit-help">
+	<a href="https://www.buckland.com/help/">
+		Visit the Help Centre	</a>
+</div>
+	<ul class="menu-common-questions">
+					<li>
+				<a href="https://www.buckland.com/help-categories/common-questions/?question=what-services-does-buckland-offer">
+					What services does Buckland offer?				</a>
+			</li>
+					<li>
+				<a href="https://www.buckland.com/help-categories/common-questions/?question=does-the-hs-code-need-to-be-on-the-customs-invoice">
+					Does the HS code need to be on the Customs invoice?				</a>
+			</li>
+					<li>
+				<a href="https://www.buckland.com/help-categories/common-questions/?question=why-do-i-need-to-ensure-there-is-a-10-digit-hs-code-supplied-at-the-time-of-release">
+					Why do I need to ensure there is a 10-digit HS code supplied at the time of release?				</a>
+			</li>
+					<li>
+				<a href="https://www.buckland.com/help-categories/common-questions/?question=what-is-a-harmonized-code-hs-code">
+					What is a Harmonized Code (HS Code)?				</a>
+			</li>
+					<li>
+				<a href="https://www.buckland.com/help-categories/common-questions/?question=what-are-incoterms">
+					What are Incoterms?				</a>
+			</li>
+			</ul></span></li>
+</ul>
+</li>
+<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-learning menu-item-49"><a href="https://www.buckland.com/learning/"><span class="menu-item-text">Learning</span></a></li>
+<li id="menu-item-4247" class="menu-item menu-item-type-post_type menu-item-object-post menu-carm menu-item-4247"><a href="https://www.buckland.com/carm/"><span class="menu-item-text">CARM</span></a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-news menu-item-50"><a href="https://www.buckland.com/news/"><span class="menu-item-text">News</span></a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-contact menu-item-51"><a href="https://www.buckland.com/contact/"><span class="menu-item-text">Contact</span></a></li>
+<li id="menu-item-804" class="menu-item menu-item-type-custom menu-item-object-custom menu-log-in menu-item-804"><a href="https://portal.buckland.com"><span class="menu-item-text">Log In</span></a></li>
+<li id="menu-item-wpml-ls-3-en" class="menu-item-language menu-item-language-current menu-item wpml-ls-slot-3 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-english menu-item-wpml-ls-3-en"><a href="https://www.buckland.com/news/harmonized-system-update-hsu-import-duties-on-auto-parts/" role="menuitem"><span class="menu-item-text"><img
+            class="wpml-ls-flag"
+            src="https://www.buckland.com/wp-content/uploads/flags/canusa.JPG"
+            alt=""
+            
+            
+    /><span class="wpml-ls-native" lang="en">English</span></span></a></li>
+</ul>					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<div class="hamburger">
+							<span class="hamburger-bar"></span>
+							<span class="hamburger-bar"></span>
+							<span class="hamburger-bar"></span>
+						</div>
+						<span class="btn-text">Menu</span>
+					</button>
+					<a href="https://www.buckland.com/cargo-tracking" class="navbar-tracking">
+						<i class="icon-tracking"></i>
+						<span class="btn-text">Tracking</span>
+					</a>
+					<a class="navbar-brand" href="https://www.buckland.com/">
+						<img class="logo" src="https://www.buckland.com/wp-content/themes/buckland/images/logo.png" alt="Buckland Customs">
+					</a>
+				</div>
+				<nav class="navbar-main" role="navigation">
+					<ul id="menu-main-navigation" class="nav navbar-nav"><li id="menu-item-59" class="menu-megamenu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-services menu-services menu-item-59"><a href="https://www.buckland.com/services/" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="true"><span class="menu-item-text">Services</span></a>
+<ul class="dropdown-menu" role="menu">
+	<li id="menu-item-259" class="menu-item menu-item-type-post_type menu-item-object-templatera dropdown-inner menu-services-megamenu menu-services-megamenu menu-item-259"><div class="vc_row wpb_row vc_row-fluid container"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner"><div class="wpb_wrapper">			<ul id="menu-" class="menu">
+			<li class="menu-item">
+				<a href="https://www.buckland.com">
+					Services				</a>
+				<ul class="sub-menu">
+											<li>
+							<a href="https://www.buckland.com/services/customs-brokerage-services/">
+																<div class="menu-item-image" style="background-image: url('https://www.buckland.com/wp-content/uploads/2015/06/lit-bridge-150x150.jpg');"></div>
+								<span class="menu-item-text">
+									Customs Brokerage Services								</span>
+							</a>
+						</li>
+											<li>
+							<a href="https://www.buckland.com/services/freight-forwarding-logistics/">
+																<div class="menu-item-image" style="background-image: url('https://www.buckland.com/wp-content/uploads/2015/06/shutterstock_20909139411-150x150.jpg');"></div>
+								<span class="menu-item-text">
+									International Freight Forwarding & Logistics								</span>
+							</a>
+						</li>
+											<li>
+							<a href="https://www.buckland.com/services/buckland-transportation/">
+																<div class="menu-item-image" style="background-image: url('https://www.buckland.com/wp-content/uploads/2015/08/shutterstock_24101725-150x150.jpg');"></div>
+								<span class="menu-item-text">
+									Buckland Transportation								</span>
+							</a>
+						</li>
+											<li>
+							<a href="https://www.buckland.com/services/international-trade-compliance-consulting/">
+																<div class="menu-item-image" style="background-image: url('https://www.buckland.com/wp-content/uploads/2015/06/desk-talk1-150x150.jpg');"></div>
+								<span class="menu-item-text">
+									International Trade Compliance & Consulting								</span>
+							</a>
+						</li>
+											<li>
+							<a href="https://www.buckland.com/services/trade-technology-solutions/">
+																<div class="menu-item-image" style="background-image: url('https://www.buckland.com/wp-content/uploads/2015/06/firin-my-lazer-150x150.jpg');"></div>
+								<span class="menu-item-text">
+									Trade Technology Solutions								</span>
+							</a>
+						</li>
+											<li>
+							<a href="https://www.buckland.com/services/warehousing-distribution/">
+																<div class="menu-item-image" style="background-image: url('https://www.buckland.com/wp-content/uploads/2015/06/Untitled-1-150x150.jpg');"></div>
+								<span class="menu-item-text">
+									Warehousing & Distribution								</span>
+							</a>
+						</li>
+											<li>
+							<a href="https://www.buckland.com/services/mexican-trade-lane/">
+																<div class="menu-item-image" style="background-image: url('https://www.buckland.com/wp-content/uploads/2015/09/shutterstock_1699737051-150x150.jpg');"></div>
+								<span class="menu-item-text">
+									Mexican Trade Lane								</span>
+							</a>
+						</li>
+									</ul>
+			</li>
+		</ul>
+	</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="mega-menu-cta-box">
+	<a class="mega-menu-cta-box-link" href="http://www.buckland.com/contact/" title="Help Centre" target="">
+		<div class="mega-menu-cta-box-inner">
+			<img src="https://www.buckland.com/wp-content/uploads/2015/06/helper.jpg" class="mega-menu-cta-box-image" alt="">
+			<div class="mega-menu-cta-box-content">
+				<p>We have team members waiting to assist you with your next move.</p>
+				<span class="btn mega-menu-cta-box-button">
+					<span class="btn-text">Let's Connect</span>
+					<i class="icon-chevron-right"></i>
+				</span>
+			</div>
+		</div>
+	</a>
+</div>
+</div></div></div></div></li>
+</ul>
+</li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-industries menu-industries menu-item-60"><a href="https://www.buckland.com/industries/" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="true"><span class="menu-item-text">Industries</span></a>
+<ul class="dropdown-menu" role="menu">
+	<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-automotive menu-automotive menu-item-22"><a href="https://www.buckland.com/industries/automotive/"><span class="menu-item-text">Automotive</span></a></li>
+	<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-food-beverage menu-food-beverage menu-item-34"><a href="https://www.buckland.com/industries/food-beverage/"><span class="menu-item-text">Food &#038; Beverage</span></a></li>
+	<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-manufacturing menu-manufacturing menu-item-32"><a href="https://www.buckland.com/industries/manufacturing/"><span class="menu-item-text">Manufacturing</span></a></li>
+</ul>
+</li>
+<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-about menu-about menu-item-61"><a href="https://www.buckland.com/about/"><span class="menu-item-text">About</span></a></li>
+<li id="menu-item-478" class="menu-item menu-item-type-post_type menu-item-object-page menu-forms menu-forms menu-item-478"><a href="https://www.buckland.com/forms-documents/"><span class="menu-item-text">Forms</span></a></li>
+<li id="menu-item-563" class="menu-item menu-item-type-post_type menu-item-object-page menu-tracking menu-tracking menu-item-563"><a href="https://www.buckland.com/cargo-tracking/"><span class="menu-item-text">Tracking</span></a></li>
+<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-request-a-quote menu-request-a-quote menu-item-63"><a href="https://www.buckland.com/request-a-quote/"><span class="menu-item-text">Request a Quote</span></a></li>
+</ul>				</nav>
+			</div>
+		</header>
+		<nav class="mobile-menu">
+			<div class="mobile-menu-inner">
+				<button class="btn btn-close-menu">
+					<i class="icon-x"></i>
+					<span class="btn-text">Close</span>
+				</button>
+				<ul id="menu-mobile" class="nav navbar-nav navbar-mobile"><li id="menu-item-1159" class="menu-item menu-item-type-custom menu-item-object-custom menu-log-in menu-item-1159"><a href="https://portal.buckland.com/"><span class="menu-item-text">Log In</span></a></li>
+<li id="menu-item-588" class="menu-tracking menu-item menu-item-type-post_type menu-item-object-page menu-tracking menu-item-588"><a href="https://www.buckland.com/cargo-tracking/"><span class="menu-item-text">Tracking</span></a></li>
+<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-request-a-quote menu-item-65"><a href="https://www.buckland.com/request-a-quote/"><span class="menu-item-text">Request a Quote</span></a></li>
+<li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-hours menu-item-66"><span class="menu-item-text"></span></li>
+<li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-toll-free menu-item-67"><span class="menu-item-text"><a href="tel:1-800-991-4944">1-800-991-4944</a></span></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-services menu-item-68"><a href="https://www.buckland.com/services/" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="true"><span class="menu-item-text">Services</span></a>
+<ul class="sub-menu">
+<li class="menu-back"><a href="#" title="Exit this submenu">Back</a></li>	<li id="menu-item-593" class="menu-item menu-item-type-post_type menu-item-object-service menu-customs-brokerage-services menu-item-593"><a href="https://www.buckland.com/services/customs-brokerage-services/"><span class="menu-item-text">Customs Brokerage Services</span></a></li>
+	<li id="menu-item-592" class="menu-item menu-item-type-post_type menu-item-object-service menu-international-freight-forwarding-logistics menu-item-592"><a href="https://www.buckland.com/services/freight-forwarding-logistics/"><span class="menu-item-text">International Freight Forwarding &#038; Logistics</span></a></li>
+	<li id="menu-item-853" class="menu-item menu-item-type-post_type menu-item-object-service menu-buckland-transportation menu-item-853"><a href="https://www.buckland.com/services/buckland-transportation/"><span class="menu-item-text">Buckland Transportation</span></a></li>
+	<li id="menu-item-591" class="menu-item menu-item-type-post_type menu-item-object-service menu-international-trade-compliance-consulting menu-item-591"><a href="https://www.buckland.com/services/international-trade-compliance-consulting/"><span class="menu-item-text">International Trade Compliance &#038; Consulting</span></a></li>
+	<li id="menu-item-590" class="menu-item menu-item-type-post_type menu-item-object-service menu-trade-technology-solutions menu-item-590"><a href="https://www.buckland.com/services/trade-technology-solutions/"><span class="menu-item-text">Trade Technology Solutions</span></a></li>
+	<li id="menu-item-589" class="menu-item menu-item-type-post_type menu-item-object-service menu-warehousing-distribution menu-item-589"><a href="https://www.buckland.com/services/warehousing-distribution/"><span class="menu-item-text">Warehousing &#038; Distribution</span></a></li>
+	<li id="menu-item-962" class="menu-item menu-item-type-post_type menu-item-object-service menu-mexican-trade-lane menu-item-962"><a href="https://www.buckland.com/services/mexican-trade-lane/"><span class="menu-item-text">Mexican Trade Lane</span></a></li>
+</ul>
+</li>
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-industries menu-item-69"><a href="https://www.buckland.com/industries/" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="true"><span class="menu-item-text">Industries</span></a>
+<ul class="sub-menu">
+<li class="menu-back"><a href="#" title="Exit this submenu">Back</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-automotive menu-item-22"><a href="https://www.buckland.com/industries/automotive/"><span class="menu-item-text">Automotive</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-food-beverage menu-item-34"><a href="https://www.buckland.com/industries/food-beverage/"><span class="menu-item-text">Food &#038; Beverage</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-manufacturing menu-item-32"><a href="https://www.buckland.com/industries/manufacturing/"><span class="menu-item-text">Manufacturing</span></a></li>
+</ul>
+</li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-about menu-item-70"><a href="https://www.buckland.com/about/"><span class="menu-item-text">About</span></a></li>
+<li id="menu-item-1316" class="menu-item menu-item-type-post_type menu-item-object-page menu-careers menu-item-1316"><a href="https://www.buckland.com/careers/"><span class="menu-item-text">Careers</span></a></li>
+<li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom menu-nav-language menu-item-73"><span class="menu-item-text"><div class="language-selector dropdown">
+		<button id="charNameListHeader" class="dropdown-toggle single"
+		        type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span id="selectedLanguage" class="btn-text item-text-desktop">
+					English				</span>
+				<i class="icon-chevron-down"></i>
+				<input type="hidden" id="selected-language" value="en">
+					</button>
+			</div></span></li>
+<li id="menu-item-931" class="menu-item menu-item-type-post_type menu-item-object-page menu-forms-documents menu-item-931"><a href="https://www.buckland.com/forms-documents/"><span class="menu-item-text">Forms &#038; Documents</span></a></li>
+<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-help-centre menu-item-74"><a href="https://www.buckland.com/help/"><span class="menu-item-text">Help Centre</span></a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-learning menu-item-75"><a href="https://www.buckland.com/learning/"><span class="menu-item-text">Learning</span></a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-news menu-item-76"><a href="https://www.buckland.com/news/"><span class="menu-item-text">News</span></a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-contact menu-item-77"><a href="https://www.buckland.com/contact/"><span class="menu-item-text">Contact</span></a></li>
+<li id="menu-item-wpml-ls-5-en" class="menu-item-language menu-item-language-current menu-item wpml-ls-slot-5 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-english menu-item-wpml-ls-5-en"><a href="https://www.buckland.com/news/harmonized-system-update-hsu-import-duties-on-auto-parts/" role="menuitem"><span class="menu-item-text"><img
+            class="wpml-ls-flag"
+            src="https://www.buckland.com/wp-content/uploads/flags/canusa.JPG"
+            alt=""
+            
+            
+    /><span class="wpml-ls-native" lang="en">English</span></span></a></li>
+</ul>			</div>
+		</nav>
+		<main id="main" class="main">
+<div class="page-banner " data-parallax="scroll" data-image-src="https://www.buckland.com/wp-content/uploads/2015/06/shelves.jpg" data-position="top center">
+	<div class="page-banner-inner">
+		<h1 class="page-banner-heading">Harmonized System Update (HSU) &#8211; Import Duties on Auto Parts</h1>			</div>
+</div><div class="breadcrumb"><div class="container breadcrumb-container"><span><span><a href="https://www.buckland.com/">Home</a></span> &gt; <span><a href="https://www.buckland.com/news/">News</a></span> &gt; <span class="breadcrumb_last" aria-current="page">Harmonized System Update (HSU) &#8211; Import Duties on Auto Parts</span></span></div></div><div class="container container-narrow">
+			<table class="mcnTextBlock" border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody class="mcnTextBlockOuter">
+<tr>
+<td class="mcnTextBlockInner" valign="top"></td>
+</tr>
+</tbody>
+</table>
+<table class="mcnTextBlock" border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody class="mcnTextBlockOuter">
+<tr>
+<td class="mcnTextBlockInner" valign="top">
+<table class="mcnTextContentContainer" border="0" width="100%" cellspacing="0" cellpadding="0" align="left">
+<tbody>
+<tr>
+<td class="mcnTextContent" valign="top">&nbsp;</p>
+<p><strong>Background</strong> &#8211; On March 26, the President issued <a href="https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-autombile-parts-into-the-united-states/" target="_blank" rel="noopener">Proclamation 10908</a>, which adjusts the importation of automobiles and automobile parts into the United States. This proclamation imposes a 25 percent ad valorem tariff on parts of passenger vehicles (including sedans, sport utility vehicles, crossover utility vehicles, minivans, and cargo vans) and light trucks from all countries. This action is taken under Section 232 of the Trade Expansion Act of 1962, as amended (19 U.S.C. 1862), and will be effective starting May 3, 2025 at 12:01am ET.</p>
+<p>Customs and Border Protection (CBP) has provided guidance on the 25 percent duty on imports of certain automobile parts from all countries with Harmonized System Update 2517, issued on April 29, 2025. This update includes the following:</p>
+<ul>
+<li>Section 232 Auto parts updates: HTS 9903.94.05 and 9903.94.06 and Partner Government Agency updates. For additional information on the Section 232 Auto Part Updates, please refer to <a href="https://www.federalregister.gov/documents/2025/04/03/2025-05930/adjusting-imports-of-automobiles-and-automobile-parts-into-the-united-states" target="_blank" rel="noopener">FRN 90 FR 14705</a>.</li>
+<li>In support of the PGA Message Set, Partner Government Agency (PGA), APHIS has performed a review of their HTS flagging and has removed 4 flags, made 17 additions, and changed 29 flags from AQ1 to AQX (warning). These updates will be reflected on the APHIS ACE website’s <a href="https://www.aphis.usda.gov/ace/harmonized-tariff-code-master-correlation-table-aphis-core-message-set" target="_blank" rel="noopener"><em>HTS Master Correlation Table</em></a>.</li>
+</ul>
+<p>The 25 percent tariff will take effect with respect to goods entered for consumption, or withdrawn from warehouse for consumption, on or after 12:01 a.m. ET on May 3.</p>
+<p><strong>Additional Details: </strong></p>
+<p><strong>Foreign Trade Zone</strong> &#8211; CBP stated that any auto parts, except those eligible for admission to a foreign trade zone under &#8220;domestic status&#8221; as defined in 19 CFR 146.43, and admitted into a U.S. foreign trade zone on or after 12:01 a.m. ET on May 3, must be admitted as &#8220;privileged foreign status&#8221; as defined in 19 CFR 146.41. These articles will be subject to the duties imposed by Presidential Proclamation 10908 and the applicable HTSUS subheading rates of duty in effect at the time of admission into the U.S. foreign trade zone, upon entry for consumption.</p>
+<p><strong>Drawback</strong> &#8211; No drawback is available with respect to the additional duties imposed pursuant to the Presidential Proclamation 10908, as implemented in the FRN <a href="https://www.federalregister.gov/documents/2025/04/03/2025-05930/adjusting-imports-of-automobiles-and-automobile-parts-into-the-united-states" target="_blank" rel="noopener noreferrer">90 FR 14705</a>.</p>
+<p><strong>Special Tariff Treatment </strong>&#8211; The duty provided in heading 9903.94.05 is in addition to any special rate of duty under a free trade agreement or preference program listed in general note 3(c)(i) to the tariff schedule, except as provided for in subdivision (h) of U.S. note 33 to subchapter III of chapter 99 of the HTSUS.</p>
+<p><strong>Chapter 98 Provision</strong> &#8211; Goods for which entry is claimed under a provision of chapter 98, and which are subject to the additional duties prescribed herein shall be eligible for and subject to the terms of such provision and applicable CBP regulations, except that duties under subheading 9802.00.60 shall be assessed based upon the full value of the imported article.</p>
+<p>No claim for entry or for any duty exemption or reduction shall be allowed for the automobile parts in subdivision (g) of this note under a provision of chapter 99 that may set forth a lower rate of duty or provide duty-free treatment, taking into account information supplied by CBP, but any additional duty prescribed in any provision of this subchapter or subchapter IV of chapter 99 shall be imposed in addition to the duty in heading 9903.94.05.</p>
+<p>All antidumping, countervailing, or other duties and charges applicable to such goods shall continue to be imposed in addition to the duty in heading 9903.94.05.</p>
+<p><strong>For more information:</strong></p>
+<ul>
+<li><a href="https://content.govdelivery.com/bulletins/gd/USDHSCBP-3d0d7e3?wgt_ref=USDHSCBP_WIDGET_2" target="_blank" rel="noopener">CSMS # 64018403 </a>&#8211; Updated &#8211; Entry Summary Order of Reporting For Multiple Harmonized Tariff System (HTS) in ACE</li>
+<li><a href="https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3de8a27" target="_blank" rel="noopener">CSMS # 64916007</a> &#8211; Harmonized System Update (HSU) 2517</li>
+<li><a href="https://content.govdelivery.com/bulletins/gd/USDHSCBP-3de8cac">CSMS # 64916652</a> &#8211; UPDATE to CSMS # 64913145:D GUIDANCE: Import Duties on Certain Automobile Parts
+<ul>
+<li><a href="https://live-buckland-2025.pantheonsite.io/wp-content/uploads/2025/05/Attachment-2_Auto-Parts-HTS-List.pdf">Attachment 2_Auto Parts HTS List</a></li>
+</ul>
+</li>
+</ul>
+<p><em>The information provided herein represents our current position on the subject matter. However, it is the responsibility of the importers to ensure compliance with all applicable laws and regulations. This information should not be relied upon as legal advice or as a substitute for professional consultation. We disclaim any liability for actions taken based on the information provided.</em></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="social-share-container">
+	<div class="social-share">
+		<button class="social-share-activate">
+			<span class="social-share-activate-icon icon-plus"></span>
+			<span class="social-share-activate-text">Share</span>
+			<span
+				class="social-share-activate-text social-share-activate-text-desktop">
+				this page			</span>
+		</button>
+		<ul class="social-share-options">
+											<li class="social-share-option facebook">
+					<a class="social-share-option-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.buckland.com%2Fnews%2Fharmonized-system-update-hsu-import-duties-on-auto-parts%2F&title=Harmonized+System+Update+%28HSU%29+%26%238211%3B+Import+Duties+on+Auto+Parts&p[images][0]=https%3A%2F%2Fwww.buckland.com%2Fwp-content%2Fuploads%2F2015%2F06%2Fshelves-500x300.jpg"
+					   title="Share Harmonized System Update (HSU) &#8211; Import Duties on Auto Parts via Facebook"
+					   target="_blank">
+						<span class="social-share-option-icon icon-facebook"></span>
+					</a>
+				</li>
+											<li class="social-share-option twitter">
+					<a class="social-share-option-link" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.buckland.com%2Fnews%2Fharmonized-system-update-hsu-import-duties-on-auto-parts%2F&text=Harmonized+System+Update+%28HSU%29+%26%238211%3B+Import+Duties+on+Auto+Parts"
+					   title="Share Harmonized System Update (HSU) &#8211; Import Duties on Auto Parts via Twitter"
+					   target="_blank">
+						<span class="social-share-option-icon icon-twitter"></span>
+					</a>
+				</li>
+											<li class="social-share-option pinterest">
+					<a class="social-share-option-link" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.buckland.com%2Fnews%2Fharmonized-system-update-hsu-import-duties-on-auto-parts%2F&media=https%3A%2F%2Fwww.buckland.com%2Fwp-content%2Fuploads%2F2015%2F06%2Fshelves-500x300.jpg&description=Harmonized+System+Update+%28HSU%29+%26%238211%3B+Import+Duties+on+Auto+Parts"
+					   title="Share Harmonized System Update (HSU) &#8211; Import Duties on Auto Parts via Pinterest"
+					   target="_blank">
+						<span class="social-share-option-icon icon-pinterest"></span>
+					</a>
+				</li>
+											<li class="social-share-option google-plus">
+					<a class="social-share-option-link" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.buckland.com%2Fnews%2Fharmonized-system-update-hsu-import-duties-on-auto-parts%2F"
+					   title="Share Harmonized System Update (HSU) &#8211; Import Duties on Auto Parts via Google Plus"
+					   target="_blank">
+						<span class="social-share-option-icon icon-google-plus"></span>
+					</a>
+				</li>
+											<li class="social-share-option linkedin">
+					<a class="social-share-option-link" href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.buckland.com%2Fnews%2Fharmonized-system-update-hsu-import-duties-on-auto-parts%2F&title=Harmonized+System+Update+%28HSU%29+%26%238211%3B+Import+Duties+on+Auto+Parts"
+					   title="Share Harmonized System Update (HSU) &#8211; Import Duties on Auto Parts via Linkedin"
+					   target="_blank">
+						<span class="social-share-option-icon icon-linkedin"></span>
+					</a>
+				</li>
+											<li class="social-share-option email">
+					<a class="social-share-option-link" href="mailto:?subject=Harmonized%20System%20Update%20%28HSU%29%20%E2%80%93%20Import%20Duties%20on%20Auto%20Parts&body=Harmonized%20System%20Update%20%28HSU%29%20%E2%80%93%20Import%20Duties%20on%20Auto%20Parts%0A%0Ahttps%3A%2F%2Fwww.buckland.com%2Fnews%2Fharmonized-system-update-hsu-import-duties-on-auto-parts%2F"
+					   title="Share Harmonized System Update (HSU) &#8211; Import Duties on Auto Parts via Email"
+					   >
+						<span class="social-share-option-icon icon-email"></span>
+					</a>
+				</li>
+					</ul>
+	</div>
+</div>	</div>
+			</main>
+
+			
+			<footer class="page-footer">
+				<nav class="nav-footer">
+					<div class="container">
+						<div class="col-lg-9" >
+							<ul id="menu-services-navigation" class="nav navbar-nav"><li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-services menu-item-143"><a href="https://www.buckland.com/services/" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="true"><span class="menu-item-text">Services</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-453" class="menu-item menu-item-type-custom menu-item-object-custom menu-services-menu menu-item-453"><span class="menu-item-text"><ul class="menu subpage-menu"><li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-customs-brokerage-services menu-item-25"><a href="https://www.buckland.com/services/customs-brokerage-services/">Customs Brokerage Services</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-freight-forwarding-logistics menu-item-28"><a href="https://www.buckland.com/services/freight-forwarding-logistics/">International Freight Forwarding &#038; Logistics</a></li>
+<li id="menu-item-800" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-buckland-transportation menu-item-800"><a href="https://www.buckland.com/services/buckland-transportation/">Buckland Transportation</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-international-trade-compliance-consulting menu-item-33"><a href="https://www.buckland.com/services/international-trade-compliance-consulting/">International Trade Compliance &#038; Consulting</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-trade-technology-solutions menu-item-41"><a href="https://www.buckland.com/services/trade-technology-solutions/">Trade Technology Solutions</a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-warehousing-distribution menu-item-43"><a href="https://www.buckland.com/services/warehousing-distribution/">Warehousing &#038; Distribution</a></li>
+<li id="menu-item-863" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-mexican-trade-lane menu-item-863"><a href="https://www.buckland.com/services/mexican-trade-lane/">Mexican Trade Lane</a></li>
+</ul></span></li>
+</ul>
+</li>
+</ul><ul id="menu-tracking-navigation" class="nav navbar-nav"><li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-about menu-item-146"><a href="https://www.buckland.com/about/"><span class="menu-item-text">About</span></a></li>
+<li id="menu-item-626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-industries menu-item-626"><a href="https://www.buckland.com/industries/" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="true"><span class="menu-item-text">Industries</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-automotive menu-item-22"><a href="https://www.buckland.com/industries/automotive/"><span class="menu-item-text">Automotive</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-food-beverage menu-item-34"><a href="https://www.buckland.com/industries/food-beverage/"><span class="menu-item-text">Food &#038; Beverage</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-manufacturing menu-item-32"><a href="https://www.buckland.com/industries/manufacturing/"><span class="menu-item-text">Manufacturing</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1430" class="menu-item menu-item-type-post_type menu-item-object-page menu-forms-documents menu-item-1430"><a href="https://www.buckland.com/forms-documents/"><span class="menu-item-text">Forms &#038; Documents</span></a></li>
+<li id="menu-item-1431" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-learning menu-item-1431"><a href="https://www.buckland.com/learning/"><span class="menu-item-text">Learning</span></a></li>
+<li id="menu-item-4565" class="menu-item menu-item-type-post_type menu-item-object-page menu-supplier-sustainability-policy menu-item-4565"><a href="https://www.buckland.com/supplier-sustainability-policy/"><span class="menu-item-text">Supplier Sustainability Policy </span></a></li>
+<li id="menu-item-4819" class="menu-item menu-item-type-post_type menu-item-object-page menu-compliance-requirements menu-item-4819"><a href="https://www.buckland.com/information-security-at-buckland/"><span class="menu-item-text">Compliance Requirements</span></a></li>
+</ul><ul id="menu-misc-links-navigation" class="nav navbar-nav"><li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-careers menu-item-149"><a href="https://www.buckland.com/careers/"><span class="menu-item-text">Careers</span></a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-help-centre menu-item-150"><a href="https://www.buckland.com/help/"><span class="menu-item-text">Help Centre</span></a></li>
+<li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-news menu-item-151"><a href="https://www.buckland.com/news/"><span class="menu-item-text">News</span></a></li>
+<li id="menu-item-152" class="menu-item menu-item-type-post_type menu-item-object-page menu-contact menu-item-152"><a href="https://www.buckland.com/contact/"><span class="menu-item-text">Contact</span></a></li>
+<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-request-a-quote menu-item-153"><a href="https://www.buckland.com/request-a-quote/"><span class="menu-item-text">Request a Quote</span></a></li>
+</ul><ul id="menu-footer-contact" class="nav navbar-nav"><li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-contact_usa menu-item-154"><span class="menu-item-text"><h2>USA Office:</h2><p><a href="tel:(810) 966-1480">(810) 966-1480</a><br><a href="tel:(888) 806-1156">(888) 806-1156</a></p></span></li>
+<li id="menu-item-155" class="menu-item menu-item-type-custom menu-item-object-custom menu-contact_canada menu-item-155"><span class="menu-item-text"><h2>Canadian Office:</h2><p><a href="tel:(519) 631-4944">(519) 631-4944</a><br><a href="tel:(800) 991- 4944">(800) 991- 4944</a></p></span></li>
+<li id="menu-item-1432" class="menu-item menu-item-type-custom menu-item-object-custom menu-social_twitter menu-item-1432"><span class="menu-item-text"><a class="footer-social-icon" title="Follow us on Twitter" href=""><span class="icon icon-twitter"></span></a></span></li>
+<li id="menu-item-1433" class="menu-item menu-item-type-custom menu-item-object-custom menu-social_linkedin menu-item-1433"><span class="menu-item-text"><a class="footer-social-icon" title="Follow us on Linkedin" href="https://www.linkedin.com/company/buckland"><span class="icon icon-linkedin"></span></a></span></li>
+<li id="menu-item-3376" class="menu-item menu-item-type-custom menu-item-object-custom menu-social_instagram menu-item-3376"><span class="menu-item-text"><a class="footer-social-icon" title="Follow us on Instagram" href=""><span class="icon icon-instagram"></span></a></span></li>
+<li id="menu-item-4063" class="menu-item menu-item-type-custom menu-item-object-custom menu-social_facebook menu-item-4063"><span class="menu-item-text"><a class="footer-social-icon" title="Follow us on Facebook" href=""><span class="icon icon-facebook"></span></a></span></li>
+</ul>						</div>
+													<div class="col-lg-3">
+								<div class="newsletter-form hidden-xs hidden-sm hidden-md">
+									<h2>Subscribe to Our Newsletter:</h2>
+									
+                <div class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_10' ><div id='gf_10' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_10' id='gform_10'  action='/news/harmonized-system-update-hsu-import-duties-on-auto-parts/#gf_10' data-formid='10' novalidate>
+                        <div class='gform-body gform_body'><ul id='gform_fields_10' class='gform_fields top_label form_sublabel_below description_below validation_below'><li id="field_10_1" class="gfield gfield--type-text first-name gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_10_1'>First Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk"> * <span class='sr-only'> Required</span></span></span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_10_1' type='text' value='' class='medium'    placeholder='First Name' aria-required="true" aria-invalid="false"   /></div></li><li id="field_10_4" class="gfield gfield--type-text last-name gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_10_4'>Last Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk"> * <span class='sr-only'> Required</span></span></span></label><div class='ginput_container ginput_container_text'><input name='input_4' id='input_10_4' type='text' value='' class='medium'    placeholder='Last Name' aria-required="true" aria-invalid="false"   /></div></li><li id="field_10_2" class="gfield gfield--type-email email-address gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_10_2'>Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk"> * <span class='sr-only'> Required</span></span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_2' id='input_10_2' type='email' value='' class='medium'   placeholder='Email' aria-required="true" aria-invalid="false"  />
+                        </div></li><li id="field_10_5" class="gfield gfield--type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  >By filling out this form, you are providing Buckland consent to email you educational and commercial electronic messages. You may unsubscribe at any time.
+
+73 Gaylord Rd, St. Thomas, Ontario N5P 3R9 Canada (519) 631-4944 marketing@buckland.com </li><li id="field_10_6" class="gfield gfield--type-captcha gfield--width-full field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_10_6'>CAPTCHA</label><div id='input_10_6' class='ginput_container ginput_recaptcha' data-sitekey='6LfHGeUbAAAAAHYyzVx_UeEtDXdN6awzDNzR6M-1'  data-theme='light' data-tabindex='-1' data-size='invisible' data-badge='bottomright'></div></li></ul></div>
+        <div class='gform-footer gform_footer top_label'> <button class="button" id="gform_submit_button_10"><span>Submit</span><i class="fa fa-angle-right"></i></button> <input type='hidden' name='gform_ajax' value='form_id=10&amp;title=&amp;description=&amp;tabindex=0&amp;theme=legacy&amp;styles=[]&amp;hash=36270ce8e1cc83c99158bbcc92959830' />
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_10' value='iframe' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_10' id='gform_theme_10' value='legacy' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_10' id='gform_style_settings_10' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_10' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='10' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_10' value='WyJbXSIsIjdlZmYwNjU1NzlmZjE3ZGRmYjIzMTg5NzdlZWM2N2Q1Il0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_10' id='gform_target_page_number_10' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_10' id='gform_source_page_number_10' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="99"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_10' id='gform_ajax_frame_10' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+		                <script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {gformInitSpinner( 10, 'https://www.buckland.com/wp-content/themes/buckland/images/loader.gif', true );jQuery('#gform_ajax_frame_10').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_10');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_10').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_10').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_10').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_10').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_10').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_10').val();gformInitSpinner( 10, 'https://www.buckland.com/wp-content/themes/buckland/images/loader.gif', true );jQuery(document).trigger('gform_page_loaded', [10, current_page]);window['gf_submitting_10'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_10').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_10').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [10]);window['gf_submitting_10'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_10').text());}else{jQuery('#gform_10').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "10", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_10" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_10";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_10" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 10, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} ); 
+/* ]]> */
+</script>
+								</div>
+								<div class="btn-newsletter-container hidden-lg">
+									<a class="btn btn-newsletter" href="https://live-buckland-2025.pantheonsite.io/newsletter/">Newsletter Sign Up</a>
+								</div>
+							</div>
+											</div>
+				</nav>
+				<div class="footer-info">
+					<div class="container">
+						<div class="footer-legal">
+							<span class="footer-copyright">
+								&copy; 2026&nbsp;
+								<strong>
+									Buckland Customs Brokers Ltd.								</strong>
+							</span>
+							<a href="https://www.buckland.com/privacy-policy">
+								<span class="link-text">Privacy Policy</span>
+							</a>
+							<a href="https://www.buckland.com/login">
+								<span class="link-text">|</span>
+								<span class="link-text-hidden sr-only">Login</span>
+							</a>
+							<a href="https://www.buckland.com/terms-conditions">
+								<span class="link-text">Terms & Conditions</span>
+							</a>
+							<a href="https://www.buckland.com/logout">
+								<span class="link-text">|</span>
+								<span class="link-text-hidden sr-only">Log out</span>
+							</a>
+							<a href="https://www.buckland.com/accessibility">
+								<span class="link-text">Accessibility</span>
+							</a>
+							<span class="link-divider">|</span>
+							<a href="https://www.buckland.com/sitemap">
+								<span class="link-text">Sitemap</span>
+							</a>
+							<div class="footer-credit">
+								<a target="_blank" href="http://www.tbkcreative.com">
+									tbk | Web Design & Digital Marketing								</a>
+							</div>
+						</div>
+						<div class="footer-aoda">
+							<a href="http://aodaonline.com/" class="aoda-link" target="_blank">
+								<i class="icon-aoda"></i>
+								<span class="sr-only">AODA Online WCAG 2.0 Monitored</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+			<div id="cookie-notice">
+		<div class="container">
+			This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies.					</div>
+		<button id="cookie-notice-dismiss" title="Dismiss this notice" type="button"><i class="icon-x"></i></button>
+	</div>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/buckland\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div class="sticky-footer closed ctas">
+	<div class="sticky-footer-content">
+		<a class="btn btn-tracking" title="Tracking" href="https://live-buckland-2025.pantheonsite.io/cargo-tracking/">Tracking</a> <a class="btn btn-quote" title="Request a Quote" href="https://live-buckland-2025.pantheonsite.io/request-a-quote/">Request a Quote</a>
+	</div>
+	<button role="button" class="btn btn-close btn-close-sticky-footer">
+		<i class="icon-x"></i>
+		<span class="btn-text sr-only">Close</span>
+	</button>
+</div>
+<button role="button" class="btn-activate-sticky-footer">
+	<span>Get Started</span>
+	<span class="icon-chevron-down"></span>
+</button>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='gravity-forms-wcag-20-form-fields-css-css' href='https://www.buckland.com/wp-content/plugins/gravity-forms-wcag-20-form-fields/css/gf_wcag20_form_fields.min.css' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/bootstrap.min.js" id="tbk-bootstrap-js-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/bootstrap-tabcollapse.js" id="tab-collapse-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/equalize.js" id="equalize-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/owl.carousel.min.js" id="owl-carousel-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-includes/js/masonry.min.js" id="masonry-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/smoothscroll.min.js" id="smoothscroll-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/headroom.js" id="headroom-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/jquery.nicescroll.min.js" id="nicescroll-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/search.js" id="search-modal-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/timezone.js" id="timezone-detect-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-includes/js/dist/vendor/moment.min.js" id="moment-js"></script>
+<script type="text/javascript" id="moment-js-after">
+/* <![CDATA[ */
+moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":0},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/moment-timezone.js" id="moment-timezone-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/plugins/anyway-feedback/dist/js/js.cookie.min.js" id="js-cookie-js"></script>
+<script type="text/javascript" id="main-scripts-js-extra">
+/* <![CDATA[ */
+var baseURL = "https:\/\/www.buckland.com";
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/scripts.js" id="main-scripts-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/intro.js" id="intro-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/navigation.js" id="navigation-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/team.js" id="team-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/themes/buckland/js/parallax.js" id="parallax-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-includes/js/dist/dom-ready.min.js" id="wp-dom-ready-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.buckland.com/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.buckland.com/wp-includes/js/dist/a11y.min.js" id="wp-a11y-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.buckland.com/wp-content/plugins/gravityforms/js/jquery.json.min.js" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra">
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":0,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https:\/\/www.buckland.com\/wp-content\/plugins\/gravityforms\/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/www.buckland.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.buckland.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"b6a32818b3889257f6b0cb31a1568a27","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+/* ]]> */
+</script>
+<script type="text/javascript" defer='defer' src="https://www.buckland.com/wp-content/plugins/gravityforms/js/gravityforms.min.js" id="gform_gravityforms-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.google.com/recaptcha/api.js?hl=en#038;render=explicit" id="gform_recaptcha-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.buckland.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js" id="gform_placeholder-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.buckland.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js" id="gform_gravityforms_utils-js"></script>
+<script type="text/javascript" defer='defer' src="https://www.buckland.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js" id="gform_gravityforms_theme_vendors-js"></script>
+<script type="text/javascript" id="gform_gravityforms_theme-js-extra">
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"b6a32818b3889257f6b0cb31a1568a27"},"ajax":{"ajaxurl":"https:\/\/www.buckland.com\/wp-admin\/admin-ajax.php","ajax_submission_nonce":"0847a7647a","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again."}}}},"hmr_dev":"","public_path":"https:\/\/www.buckland.com\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/","config_nonce":"63893583a5"};
+/* ]]> */
+</script>
+<script type="text/javascript" defer='defer' src="https://www.buckland.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js" id="gform_gravityforms_theme-js"></script>
+<script type="text/javascript" id="gf_wcag20_form_fields_js-js-extra">
+/* <![CDATA[ */
+var gf_wcag20_form_fields_settings = {"new_window_text":"this link will open in a new window","failed_validation":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.buckland.com/wp-content/plugins/gravity-forms-wcag-20-form-fields/js/gf_wcag20_form_fields.min.js" id="gf_wcag20_form_fields_js-js"></script>
+<script defer type="text/javascript" src="https://www.buckland.com/wp-content/plugins/akismet/_inc/akismet-frontend.js" id="akismet-frontend-js"></script>
+<script></script><script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 10) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } ); 
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+ gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "10", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_10" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_10";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_10" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 10, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } ); 
+/* ]]> */
+</script>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+Reshoring electronics in 2026: what it means for hardware teams
+For hardware companies in 2026, reshoring is not simply about moving production back to the U.S. It means deciding which parts of the manufacturing process should happen closer to home and which still make more sense offshore.
+- Offshore production still works well for commodity, high-volume products where low labor costs, mature supplier networks, and tooling economics remain hard to beat.
+- Domestic manufacturing is usually more relevant for regulated devices, IP-sensitive products, heavy hardware, and high-mix or low-volume programs that change frequently.
+In practice, reshoring is rarely an all-or-nothing move. At AJProTech, our strongest decisions usually start with a clear process map: separate the build into major steps, then evaluate the true cost, risk, speed, and quality impact of each one.
+Realistic per-unit cost deltas by product type
+Reshoring in 2026 does not come with one universal price premium. The cost difference depends on how much manual labor the product requires, how dense the supplier base is, how much automation can be used, how tooling costs are spread across units, and how often defects or rework occur.
+PCB bare-board pricing often shows one of the biggest gaps, with domestic quotes sometimes coming in several times higher than offshore quotes for standard boards. But PCB fabrication is only one part of the total landed cost, so the ranges below should be treated as planning estimates rather than final pricing.
+| Product type | Typical U.S. cost gap vs Asia | Main reason | 
+| Low-volume industrial electronics | +5-20% | Better test control and lower MOQs | 
+| Medical/wellness device | 0-25% | Traceability, documentation, controlled changes | 
+| Connected wearable | +15-45% | Small parts and manual assembly | 
+| Smart home device | +20-50% | Tooling cost and offshore supplier density | 
+| Large/heavy hardware | -10% to +20% | Freight, damage, and returns can erase offshore savings | 
+| Commodity consumer IoT | +40-100%+ | Labor cost and Asia’s mature supply base | 
+Tariff scenarios that change the reshoring math
+Tariffs can change the reshoring calculation quickly, but building a manufacturing strategy around policy predictions is risky. A better approach is to model several scenarios based on the product’s customs classification, component origin, final assembly location, and any category-specific rules.
+Before running the tariff model, teams should check two official U.S. sources: the U.S. International Trade Commission’s Harmonized Tariff Schedule for duty exposure, and the Bureau of Labor Statistics Producer Price Index for broader domestic production-price trends. These sources will not replace supplier RFQs, but they give hardware teams a more reliable baseline than headlines or vendor assumptions.
+The example below shows how the calculation often works. The numbers are illustrative, but the structure is useful for comparing landed offshore cost with a domestic alternative.
+Assumption: offshore unit price starts at $42, with $3 freight and $2 inspection/rework.
+| Scenario | Landed Asia cost | Domestic equivalent | Break-even | 
+| No tariff | $47 | $58 | Offshore remains cheaper | 
+| Moderate tariff | $53.30 | $58 | Offshore still wins, but narrowly | 
+| High tariff | $61.70 | $58 | Reshoring can become cheaper | 
+| Category-specific | model by HS code | $58 | Depends on the category | 
+In some categories, stacked duties on Chinese electronics can rise well above the headline tariff rate. Even when tariffs make reshoring look attractive on paper, companies still need to answer a practical question: is there enough domestic capacity to support the build at the required quality and volume?
+Product categories closest to reshoring viability
+The strongest reshoring candidates are products where control matters more than the lowest possible labor cost. This often includes high-mix electronics, regulated devices, IP-sensitive hardware, heavy products, and systems where downtime or field failure is especially expensive.
+Good reshoring candidates often include:
+- Industrial sensors and specialized IoT gateways that require frequent firmware updates, test adjustments, or field-specific customization.
+- EV subsystems and automotive electronics where quality issues can create expensive failures after deployment.
+- Medical-adjacent devices that need tighter revision control, traceability, documentation, and testing oversight.
+- Public-sector or defense-adjacent hardware where supply-chain visibility and IP protection are especially important.
+- Large or heavy devices where freight, damage risk, and service returns can erase the savings of offshore production.
+These products often benefit from faster engineering feedback, better quality control, and closer coordination between design, testing, and manufacturing.
+Products that usually remain offshore include commodity smart plugs, basic BLE accessories, display-heavy consumer devices, high-volume wearables, and low-margin gadgets. Reshoring only makes sense when local production reduces enough risk, delay, or operational cost to justify the premium.
+If you’re weighing whether domestic production fits your business case, AJProTech’s feasibility study can help scope cost, supplier options, and your overall manufacturing strategy before you send out RFQs.
+A practical reshoring decision framework
+The most useful way to evaluate reshoring is step by step. Start by mapping the supply chain, modeling landed costs, adding tariff scenarios, identifying the biggest risks, and comparing U.S., Mexico, and Asia options with real supplier quotes and a pilot run.
+Before shifting production, use this framework to ground your decisions in reality:
+| Factor | Why it matters | 
+| Unit economics | Determines whether reshoring can survive margin pressure | 
+| Lead times | Matters when demand changes quickly | 
+| MOQ flexibility | Helps startups and high-mix products avoid excess inventory | 
+| Supplier quality | Reduces field failures and costly returns | 
+| Engineering-change speed | Speeds up EVT, DVT, and PVT iterations | 
+| Tariff exposure | Can quickly change the landed-cost comparison | 
+| Geopolitical risk | Matters when key parts come from one region | 
+| IP sensitivity | Protects custom firmware, sensing, and product know-how | 
+| Labor availability | Affects manual assembly cost and scalability | 
+| Automation potential | Makes domestic production more competitive | 
+| Certification requirements | Supports regulated, medical, FCC, or industrial products | 
+| Service and repair | Improves turnaround time and customer experience | 
+At AJProTech, the clearest reshoring decisions come from breaking the device into key manufacturing steps: PCB fabrication, PCB assembly, firmware flashing, final assembly, testing and packaging.
+Each step should be judged by cost, risk, speed and its impact on the customer experience. For teams planning to use this structure for their next project, our hardware development work is usually the right starting point.
+FAQ
+What is the meaning of reshoring?
+Reshoring means moving manufacturing, assembly, or sourcing back to a company’s home country after producing offshore. In electronics, this can mean full domestic production, but more often it applies to selected steps such as PCBA, testing, final assembly, repair, or packaging.
+Is reshoring actually happening?
+Yes, but not across every product category. Reshoring is strongest when supply-chain risk, tariffs, compliance needs, IP protection, or faster lead times matter more than the lowest offshore quote.
+Is reshoring good or bad?
+Reshoring is valuable when it improves total cost, resilience, quality, lead times, or process control. It becomes a poor trade-off when it raises costs without reducing risk or improving operations.
+What is an example of reshoring?
+For connected industrial devices, AJProTech may keep batteries and commodity components offshore while moving PCBA, final assembly, and functional testing to the U.S. This hybrid approach can shorten lead times, catch failures earlier, and avoid the disruption of relocating the entire supply chain.
+How does reshoring work?
+Start by calculating the true cost of offshoring, including unit price, freight, tariffs, inventory, scrap, delays, and engineering support. Then identify which steps are worth moving, qualify local or nearshore suppliers, transfer documentation and test fixtures, run a pilot build, and scale only after quality targets are met.
+What are the main barriers to reshoring electronics?
+The main barriers are limited domestic capacity, higher labor costs, weaker supplier ecosystems, tooling constraints, skilled-labor gaps, and qualification time. In AJProTech’s experience, the most common mistake is moving too much at once, which is why a hybrid approach often works better than full relocation.

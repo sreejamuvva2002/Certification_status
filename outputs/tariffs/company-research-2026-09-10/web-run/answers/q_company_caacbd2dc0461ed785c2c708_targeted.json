@@ -1,0 +1,73 @@
+{
+  "query_id": "q_company_caacbd2dc0461ed785c2c708_targeted",
+  "query": "\"Toyota Industries Group (TACG-TICA)\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2ddf17a9c5c86e709b0de90f",
+    "claim_710869e792ad095b9b32745d",
+    "claim_7901070510c92ae8b5f9e926",
+    "claim_8a681aa064c9efb349a7b780",
+    "claim_c8ec8c36aa77877cbdf13e09",
+    "claim_d9d55afdda2bd186dbc88337"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2ddf17a9c5c86e709b0de90f",
+      "text": "Toyota Motor told CNBC in an email that automakers are not affected by the tariffs imposed under the International Emergency Economic Powers Act, or IEEPA, which the court struck down Friday.",
+      "url": "https://www.cnbc.com/2026/02/24/automakers-tariffs-prices.html",
+      "chunk_id": "chunk_4bd342fb0c43e6d783de11f2"
+    },
+    {
+      "claim_id": "claim_710869e792ad095b9b32745d",
+      "text": "Every Lexus model, except the TX SUV, is made either in Canada or Japan. Both the Lexus brand and the Tacoma sold in record numbers in the U.S. in 2025.",
+      "url": "https://www.cnbc.com/2026/02/24/automakers-tariffs-prices.html",
+      "chunk_id": "chunk_4bd342fb0c43e6d783de11f2"
+    },
+    {
+      "claim_id": "claim_7901070510c92ae8b5f9e926",
+      "text": "Toyota, the world's largest automaker by volume, saw net income fall 25% in the first nine months of its fiscal year 2026, according to a filing. Tariffs were a major driver — costing the company about 1.2 trillion yen, or roughly $8 billion.",
+      "url": "https://www.cnbc.com/2026/02/24/automakers-tariffs-prices.html",
+      "chunk_id": "chunk_4bd342fb0c43e6d783de11f2"
+    },
+    {
+      "claim_id": "claim_8a681aa064c9efb349a7b780",
+      "text": "Toyota told CNBC in an email that the tariffs are \"highly disruptive\" and \"cannot be sustained.\" The company has 11 U.S. factories — one co-owned with Mazda — where it built about 55% of the vehicles it sold in the country in 2025.",
+      "url": "https://www.cnbc.com/2026/02/24/automakers-tariffs-prices.html",
+      "chunk_id": "chunk_4bd342fb0c43e6d783de11f2"
+    },
+    {
+      "claim_id": "claim_c8ec8c36aa77877cbdf13e09",
+      "text": "Toyota appears poised to receive the biggest tariff bill of any automaker, projecting ¥1.45 trillion ($9.1 billion) in costs in its 2026 fiscal year, which ends March 31.",
+      "url": "https://www.facebook.com/AutoNews/posts/us-tariffs-have-cost-automakers-at-least-354-billion-since-2025-an-enormous-sum-/1534634715188923",
+      "chunk_id": "chunk_ff96ad0a82f6ecfd30b77898"
+    },
+    {
+      "claim_id": "claim_d9d55afdda2bd186dbc88337",
+      "text": "Toyota appears poised to receive the biggest tariff bill of any automaker, projecting ¥1.45 trillion ($9.1 billion) in costs in its 2026 fiscal year, which ends March 31.",
+      "url": "https://www.instagram.com/reel/DWOTNbykRcM?hl=en",
+      "chunk_id": "chunk_0e6f445258f3235ed827c273"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_2ddf17a9c5c86e709b0de90f",
+      "claim_7901070510c92ae8b5f9e926"
+    ],
+    [
+      "claim_c8ec8c36aa77877cbdf13e09",
+      "claim_d9d55afdda2bd186dbc88337"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 8,
+  "synthesis_input_claim_count": 8
+}

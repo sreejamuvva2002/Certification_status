@@ -1,0 +1,136 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer fails to provide a specific tariff classification for copper busbars in EV battery packs because the available evidence contains conflicting HS code assignments (7407.21 vs 8538.90) and outdated or non-specific rulings that do not address the exact product configuration of 'copper busbars' within an 'EV battery pack' context. The cached passages show a historical ruling for medical battery packs (passage_d42063c7f6e7656ff88ec136) and a generic export guide with conflicting codes (passage_d3733c9c0256876d9243e527), while the 2026 tariff impact analysis (passage_c8c4aa7f130dba0d3c42316c) discusses copper generally but does n",
+  "confidence": "high",
+  "remaining_gap": "No cached source explicitly classifies 'copper busbars' specifically as components of an 'EV battery pack' with a definitive HTSUS subheading and applicable duty rate for the research date. The evidence either provides conflicting codes, applies to different product types (medical, power tools), or discusses general tariff impacts without specific classification for the queried item.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_d3733c9c0256876d9243e527",
+      "supporting_excerpt": "Under the Harmonized System (HS), most busbars fall under:HS Code: 7407.21 — Bars, rods, and profiles of refined copper. Alternate: 8538.90 — Parts suitable for electrical apparatus or battery connectors.",
+      "relevance_explanation": "This passage provides conflicting HS codes (7407.21 vs 8538.90) for copper busbars without resolving which applies to EV battery packs, creating uncertainty in classification.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_d42063c7f6e7656ff88ec136",
+      "supporting_excerpt": "The items being imported are two types of battery pack assemblies that are used to power medical devices... The applicable subheading for the non-rechargeable battery packs comprised of Manganese Dioxide battery cells will be 8506.10.0000... The applicable subheading for the rechargeable battery packs of Lithium-ion battery cells will be 8507.60.0020",
+      "relevance_explanation": "This is a historical ruling (2017) for medical battery packs, not EV battery packs containing copper busbars, making it insufficient for the specific query.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_c8c4aa7f130dba0d3c42316c",
+      "supporting_excerpt": "Copper (busbars, wiring) | 50% | Electrical interconnects, connectors | Yes – US and Chilean sources",
+      "relevance_explanation": "This passage confirms copper busbars are affected by tariffs but does not provide the specific HTS classification code required for the query.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_677ae9121e4c3542c127beb7",
+      "supporting_excerpt": "Every battery pack includes plastic housing, lithium-ion cells, cell brackets, nickel or copper sheets that connect the cells... The products at issue are battery packs to be used in power tools...",
+      "relevance_explanation": "This ruling concerns power tool battery packs and discusses copper sheets as components but does not classify standalone copper busbars for EV applications.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_historical"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_110",
+  "query": "Copper busbars EV battery packs tariff classification",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 2,
+    "all_extracted_claims": 21,
+    "claims_presented_to_original_synthesis": 21,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 11,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_d3733c9c0256876d9243e527",
+    "passage_c8c4aa7f130dba0d3c42316c",
+    "passage_d42063c7f6e7656ff88ec136",
+    "passage_677ae9121e4c3542c127beb7",
+    "passage_04be3b37fb2a0e3f65fb7760",
+    "passage_b61903f485c5dd7a391ca3fc",
+    "passage_ac85d4ac6f341d092b90e7ea",
+    "passage_c3d09debfecca660410cd0ce"
+  ],
+  "candidate_document_ids": [
+    "document_147239c45e4c492f0232dcd8",
+    "document_28a8d8ff9b5b446f64c24996",
+    "document_6080287f7a45bacc95fb830c",
+    "document_78d5f38ea11227317f5a972a",
+    "document_8185c31a82b4844e6b61f7ac",
+    "document_8695ef4b56febfbbc209df65",
+    "document_89094d2db2a6b11cc65c862c",
+    "document_aa63779c91edab79cc4cb329"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_c8c4aa7f130dba0d3c42316c",
+      "supporting_excerpt": "Copper (busbars, wiring) | 50% | Electrical interconnects, connectors | Yes – US and Chilean sources",
+      "relevance_explanation": "This passage confirms copper busbars are affected by tariffs but does not provide the specific HTS classification code required for the query.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_abafe9d95ff91f70d1620359",
+      "query_id": "q_110",
+      "chunk_id": "chunk_d625c75d6d3fc6f5cf2f6a0a",
+      "document_id": "document_78d5f38ea11227317f5a972a",
+      "source_url": "https://www.totexmfg.com/battery-pack-tariffs-oem-2026",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e0ba04e755583e765ed98ccd9a41c4332f768101b26871fe34c5c660b1c84fdb.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_d3733c9c0256876d9243e527",
+        "supporting_excerpt": "Under the Harmonized System (HS), most busbars fall under:HS Code: 7407.21 — Bars, rods, and profiles of refined copper. Alternate: 8538.90 — Parts suitable for electrical apparatus or battery connectors.",
+        "relevance_explanation": "This passage provides conflicting HS codes (7407.21 vs 8538.90) for copper busbars without resolving which applies to EV battery packs, creating uncertainty in classification.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_d42063c7f6e7656ff88ec136",
+        "supporting_excerpt": "The items being imported are two types of battery pack assemblies that are used to power medical devices... The applicable subheading for the non-rechargeable battery packs comprised of Manganese Dioxide battery cells will be 8506.10.0000... The applicable subheading for the rechargeable battery packs of Lithium-ion battery cells will be 8507.60.0020",
+        "relevance_explanation": "This is a historical ruling (2017) for medical battery packs, not EV battery packs containing copper busbars, making it insufficient for the specific query.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_677ae9121e4c3542c127beb7",
+        "supporting_excerpt": "Every battery pack includes plastic housing, lithium-ion cells, cell brackets, nickel or copper sheets that connect the cells... The products at issue are battery packs to be used in power tools...",
+        "relevance_explanation": "This ruling concerns power tool battery packs and discusses copper sheets as components but does not classify standalone copper busbars for EV applications.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_historical"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

@@ -1,0 +1,69 @@
+{
+  "query_id": "q_company_b1eb8328a45bb51000d1ecaa_discovery",
+  "query": "\"IMMI\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_10bd6a2f2b3b13b42515d648",
+    "claim_27155ba6ad6f15635039a7c8",
+    "claim_431be743d80eabe8cd720df0",
+    "claim_4eb3150f51262ea81008e3cd",
+    "claim_b05e86b6df1fbc6efe13c51d",
+    "claim_e79535e7c11e50bec2dafd8a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_10bd6a2f2b3b13b42515d648",
+      "text": "With the possible imposition of new tariffs on goods from Canada, Mexico and China — and the further risk of retaliatory tariffs — our national supply chains are in a state of disruption.",
+      "url": "https://www.cbh.com/insights/alerts/protect-your-supply-chain-from-new-tariffs",
+      "chunk_id": "chunk_e589017cae0b310033766a27"
+    },
+    {
+      "claim_id": "claim_27155ba6ad6f15635039a7c8",
+      "text": "Many states offer incentives and credits for an increase in port activities, such as port grants in Virginia and South Carolina and a port bonus credit in Georgia.",
+      "url": "https://www.cbh.com/insights/alerts/protect-your-supply-chain-from-new-tariffs",
+      "chunk_id": "chunk_e589017cae0b310033766a27"
+    },
+    {
+      "claim_id": "claim_431be743d80eabe8cd720df0",
+      "text": "Georgia small businesses continue to struggle with tariffs. A federal appeals court ruled Thursday to keep import taxes in place after a ruling that blocked President Donald Trump’s sweeping tariffs, which were paused by the Court of International Trade for less than a day.",
+      "url": "https://www.wabe.org/georgia-small-businesses-face-economic-uncertainty-as-tariffs-flip-flop-in-courts",
+      "chunk_id": "chunk_df5b369d81e0b910adcef54e"
+    },
+    {
+      "claim_id": "claim_4eb3150f51262ea81008e3cd",
+      "text": "Small businesses throughout the state have continued to face increased prices, difficulty sourcing goods and economic uncertainty over the past few months.",
+      "url": "https://www.wabe.org/georgia-small-businesses-face-economic-uncertainty-as-tariffs-flip-flop-in-courts",
+      "chunk_id": "chunk_df5b369d81e0b910adcef54e"
+    },
+    {
+      "claim_id": "claim_b05e86b6df1fbc6efe13c51d",
+      "text": "Georgia set new records for international trade activity last year, with over $53 billion in exported goods and imports exceeding $145 billion.",
+      "url": "https://www.wabe.org/georgia-small-businesses-face-economic-uncertainty-as-tariffs-flip-flop-in-courts",
+      "chunk_id": "chunk_df5b369d81e0b910adcef54e"
+    },
+    {
+      "claim_id": "claim_e79535e7c11e50bec2dafd8a",
+      "text": "Georgia Port officials say in April, Savannah experienced increased activity as businesses rushed to stock up ahead of President Trump’s sweeping tariffs.",
+      "url": "https://www.wabe.org/georgia-small-businesses-face-economic-uncertainty-as-tariffs-flip-flop-in-courts",
+      "chunk_id": "chunk_df5b369d81e0b910adcef54e"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_431be743d80eabe8cd720df0",
+      "claim_e79535e7c11e50bec2dafd8a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

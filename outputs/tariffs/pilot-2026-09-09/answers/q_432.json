@@ -1,0 +1,60 @@
+{
+  "query_id": "q_432",
+  "query": "Metal-core PCBs EV power electronics import duties",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_06da0067cc57256440c2fba7",
+    "claim_c6f03d7789eff4e34d8c945a",
+    "claim_6895fc2376c9a257563df81d",
+    "claim_fa2cb28377375f538de6e663",
+    "claim_ceb322a0f126a3e8c22c9c72"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_06da0067cc57256440c2fba7",
+      "text": "CBP has issued rulings where a bare PCB from China was classified under 8534.00.0040, with the base duty listed as free and an additional China Section 301 duty noted unless excluded.",
+      "url": "https://www.queenems.com/blog/pcb-tariff-china-2026-how-to-reduce-import-duties-by-70",
+      "chunk_id": "chunk_04d0a324753a6aefbfd1873e"
+    },
+    {
+      "claim_id": "claim_c6f03d7789eff4e34d8c945a",
+      "text": "For example, CBP ruling language for a China-origin bare PCB under 8534.00.0040 referenced an additional 25 percent ad valorem duty under Chapter 99 unless excluded",
+      "url": "https://www.queenems.com/blog/pcb-tariff-china-2026-how-to-reduce-import-duties-by-70",
+      "chunk_id": "chunk_04d0a324753a6aefbfd1873e"
+    },
+    {
+      "claim_id": "claim_6895fc2376c9a257563df81d",
+      "text": "In April 2025, the United States has implemented new tariffs on Chinese imports, including printed circuit boards (PCBs) and custom-made technical parts.",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_fa2cb28377375f538de6e663",
+      "text": "| China | 30% DS/4Layer, 55% other | 14/05/25 | Until 12/11/25 | Interim deal; 90-day truce. |",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_ceb322a0f126a3e8c22c9c72",
+      "text": "Is there one fixed PCB tariff China 2026 rate? No. The rate depends on product classification, country of origin, entry date, Chapter 99 treatment, and whether a valid exclusion applies.",
+      "url": "https://www.queenems.com/blog/pcb-tariff-china-2026-how-to-reduce-import-duties-by-70",
+      "chunk_id": "chunk_5fffe3adf32ba11bbc6185fa"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_6895fc2376c9a257563df81d",
+      "claim_fa2cb28377375f538de6e663"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 13,
+  "synthesis_input_claim_count": 13
+}

@@ -1,0 +1,67 @@
+{
+  "query_id": "q_company_c5fcc97bfb2974073676415c_targeted",
+  "query": "\"Bosch (Automotive Division)\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_030ef6fab6c8784dfaff1fab",
+    "claim_6a19b706f46a2773bff05f1f",
+    "claim_5660f160c83adcce52497d18",
+    "claim_ce71e21636d34271fdf51af5",
+    "claim_c634da232ee0fb8e829413b2"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_030ef6fab6c8784dfaff1fab",
+      "text": "President Trump has implemented a 25% tariff on foreign-made auto parts, including powertrain components, seats, and airbags, while introducing some key exemptions to reduce the strain on automakers.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_9f82b7462f46a2f16899791a"
+    },
+    {
+      "claim_id": "claim_6a19b706f46a2773bff05f1f",
+      "text": "Bosch workers discuss electronic stability control product at the company's facility in South Carolina.",
+      "url": "https://www.autonews.com/manufacturing/suppliers/an-supplier-tariffs-relationships-0728",
+      "chunk_id": "chunk_b68a512287e24d0e157a7e99"
+    },
+    {
+      "claim_id": "claim_5660f160c83adcce52497d18",
+      "text": "The White House announced that passenger vehicles, certain trucks, and auto parts will be exempt from the new 10% global tariff set to take effect on February 24, 2026.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_e8a1ffd62f7b512ed56a6a50"
+    },
+    {
+      "claim_id": "claim_ce71e21636d34271fdf51af5",
+      "text": "The U.S. government has confirmed the implementation of a 15 percent tariff on European Union (EU) autos and auto parts, effective retroactively from August 1, 2025.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_a58187ff4611e6159670dd83"
+    },
+    {
+      "claim_id": "claim_c634da232ee0fb8e829413b2",
+      "text": "President Donald Trump announced a 25 percent tariff on all medium- and heavy-duty trucks imported into the United States, set to take effect on November 1, 2025.",
+      "url": "https://digitaldealer.com/news/us-tariff-tracker-impact-automaker-response/164521",
+      "chunk_id": "chunk_a58187ff4611e6159670dd83"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_030ef6fab6c8784dfaff1fab",
+      "claim_5660f160c83adcce52497d18"
+    ],
+    [
+      "claim_ce71e21636d34271fdf51af5",
+      "claim_c634da232ee0fb8e829413b2"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 31,
+  "synthesis_input_claim_count": 31
+}

@@ -1,0 +1,30 @@
+{
+  "status": "reviewed",
+  "pairs": {
+    "conflict_a173bf6f31ede0e87f94696c": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 cites a specific 153.4% tariff on Chinese battery imports effective April 2025, while Claim 2 references a general maximum of 34% for lithium-ion batteries without specifying origin or date. The rates and scopes differ significantly, suggesting distinct programs or product categories rather than a direct contradiction.",
+      "verification_question": "Does the 153.4% rate apply to a specific subset of Chinese battery imports (e.g., energy storage systems) distinct from the general lithium-ion batteries referenced in the 34% claim?"
+    },
+    "conflict_e841fecf14adc0eb1d1ec1bb": {
+      "classification": "complementary_or_no_conflict",
+      "reason": "Both claims originate from the same source text and context. Claim 1 states the total tariff is 28.7% (3.7% base + 25% Section 301), while Claim 2 clarifies that lithium hydroxide is unaffected by the *new* reciprocal tariff but subject to existing duties. These statements are consistent: the product is exempt from the new baseline but subject to pre-existing specific duties.",
+      "verification_question": "None required; the texts explicitly explain the relationship between the new tariff exemption and existing Section 301 duties."
+    },
+    "conflict_efc910c7821b5843976dae5e": {
+      "classification": "complementary_or_no_conflict",
+      "reason": "Both claims address the classification of Lithium Hexafluorophosphate (LiPF6). Claim 1 states LiPF6 is classified under 2826.90.9010 but *may also* be classified under other subheadings for formulations. Claim 2 confirms the primary classification as 2826.90.9010 and lists the same alternative subheadings. They are identical in scope and intent.",
+      "verification_question": "None required; the texts are consistent regarding primary and alternative HTSUS classifications."
+    },
+    "conflict_59666e336ece0cd58f984732": {
+      "classification": "apparent_same_scope_conflict",
+      "reason": "Claim 1 lists HTSUS subheading 7607.11.6000 for aluminum foil under Orders, while Claim 2 lists 7607.11.6090 for the same product under investigation. The specific subheadings differ (6000 vs 6090) within the same scope description, creating a direct conflict on the precise classification code.",
+      "verification_question": "Which HTSUS subheading is correct for aluminum foil subject to these Orders: 7607.11.6000 or 7607.11.6090?"
+    },
+    "conflict_49ca2d9c9f452f0213620213": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 states rare earth products including magnets were exempt by omission from the March list of HTS codes. Claim 2 clarifies that while REE metals/compounds are in an exemption annex, specific permanent magnets (NdFeB, SmCo) are *not* in that annex, implying they are subject to tariffs. The claims distinguish between upstream products (exempt) and finished magnets (subject), resolving the apparent contradiction.",
+      "verification_question": "Does the exemption list specifically exclude neodymium-iron-boron and samarium-cobalt magnets from the tariff relief granted to upstream rare earth products?"
+    }
+  }
+}

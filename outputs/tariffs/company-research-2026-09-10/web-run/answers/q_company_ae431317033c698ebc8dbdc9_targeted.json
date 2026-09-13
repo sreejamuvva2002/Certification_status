@@ -1,0 +1,39 @@
+{
+  "query_id": "q_company_ae431317033c698ebc8dbdc9_targeted",
+  "query": "\"Bridgestone Bandag\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_009c7e0b9d5a93dcd1495cec",
+    "claim_8fbf1da80f96e1c2a94540d4"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_009c7e0b9d5a93dcd1495cec",
+      "text": "Section 232 metals tariffs apply to auto components: after the April 6, 2026 restructure, articles wholly of steel/aluminum/copper carry 50% while derivative components substantially made of those metals carry 25%",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    },
+    {
+      "claim_id": "claim_8fbf1da80f96e1c2a94540d4",
+      "text": "EU-built vehicles and auto parts fall under the EU-US trade deal's flat 15% all-inclusive rate, which applies in lieu of the 27.5% Section 232 auto regime.",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_009c7e0b9d5a93dcd1495cec",
+      "claim_8fbf1da80f96e1c2a94540d4"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

@@ -1,0 +1,96 @@
+{
+  "query_id": "q_104",
+  "query": "Automotive aluminum castings import tariff classification",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1442868f58ad1e767d1c1d84",
+    "claim_166f1aac956478a646394d27",
+    "claim_170a08b818b56ce241e7bf24",
+    "claim_4bc4bf78921bfd29cbf4a278",
+    "claim_5014b60d0863423448b3b8ea",
+    "claim_590e76f73f2a39a83a8b5cb8",
+    "claim_cf28b1f98af9d64e838c6813"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1442868f58ad1e767d1c1d84",
+      "text": "16 | Castings and forgings | 7616995160 | Aluminum castings | Castings and Forgings (7616)",
+      "url": "https://www.trade.gov/aluminum-products-hts-codes",
+      "chunk_id": "chunk_5b7bcfa9c1cfe682fce0d7b9"
+    },
+    {
+      "claim_id": "claim_166f1aac956478a646394d27",
+      "text": "A client declared low-pressure die-cast automotive steering knuckles under HS code 7616.99, but after inspection by U.S. CBP, the classification was reclassified to 8708.99 (although the tax rate was the same at 2.5%, it triggered the 25% additional duty under USTR Section 301 against China), resulting in a total of $11,800 in back taxes and penalties.",
+      "url": "https://www.hexinmusu.com/en/hs-code-for-aluminum-castings.html",
+      "chunk_id": "chunk_2d39eb9a40b10f6b7b769af5"
+    },
+    {
+      "claim_id": "claim_170a08b818b56ce241e7bf24",
+      "text": "Last year, I handled a shipment of LED heat sink castings destined for Los Angeles for a die-casting factory in Zhejiang. The client originally declared the goods under HS code 8539.90 (parts of lighting fixtures), but CBP reclassified them to 7616.99.5160 on the grounds that they were \"unmachined and not specifically identified,\" resulting in a total of $18,700",
+      "url": "https://www.hexinmusu.com/en/hs-code-for-aluminum-castings.html",
+      "chunk_id": "chunk_2d39eb9a40b10f6b7b769af5"
+    },
+    {
+      "claim_id": "claim_4bc4bf78921bfd29cbf4a278",
+      "text": "A Ningbo-based exporter declared transmission housings under HS code 7616.99 with a declared value of $5 million. Customs determined that they should be classified under HS code 8708.40 (a tariff rate difference of approximately 41% vs. 3%), resulting in a total of $280,000 in back taxes and late payment penalties.",
+      "url": "https://www.hexinmusu.com/en/hs-code-for-aluminum-castings.html",
+      "chunk_id": "chunk_f211331386f42cd5815ce994"
+    },
+    {
+      "claim_id": "claim_5014b60d0863423448b3b8ea",
+      "text": "HTS 7616.99.5160 is the 10-digit tariff code established by U.S. Customs for \"other aluminum castings,\" with a base MFN rate of 2.5%However, with the additional tariffs imposed on China under Section 301, the actual comprehensive landed cost for aluminum castings originating in China is typically around 27.5%(approximately 2.51 TP3T + 251 TP3T). In addition, there may be an additional 101 TP3T surcharge on aluminum products under Section 232, as well as reciprocal tariffs imposed under certain new policies in 2025.",
+      "url": "https://www.hexinmusu.com/en/hs-code-for-aluminum-castings.html",
+      "chunk_id": "chunk_2d39eb9a40b10f6b7b769af5"
+    },
+    {
+      "claim_id": "claim_590e76f73f2a39a83a8b5cb8",
+      "text": "Taking the HS code for aluminum castings (7616.99) as an example, the combined tariff rate for Chinese exports to the United States can reach 27.51%–32.51% (base rate of 2.51% + Section 301 duty of 251% + potential anti-dumping duties)",
+      "url": "https://www.hexinmusu.com/en/hs-code-for-aluminum-castings.html",
+      "chunk_id": "chunk_f211331386f42cd5815ce994"
+    },
+    {
+      "claim_id": "claim_cf28b1f98af9d64e838c6813",
+      "text": "Aluminum castings (HS code 7616.9990) currently qualify for a 13.1% export tax rebate rate, which is a significant source of profit for enterprises.",
+      "url": "https://www.hexinmusu.com/en/hs-code-for-aluminum-castings.html",
+      "chunk_id": "chunk_b1ef922f67eb1450b9217f79"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_1442868f58ad1e767d1c1d84",
+      "claim_166f1aac956478a646394d27"
+    ],
+    [
+      "claim_1442868f58ad1e767d1c1d84",
+      "claim_170a08b818b56ce241e7bf24"
+    ],
+    [
+      "claim_1442868f58ad1e767d1c1d84",
+      "claim_4bc4bf78921bfd29cbf4a278"
+    ],
+    [
+      "claim_166f1aac956478a646394d27",
+      "claim_170a08b818b56ce241e7bf24"
+    ],
+    [
+      "claim_166f1aac956478a646394d27",
+      "claim_4bc4bf78921bfd29cbf4a278"
+    ],
+    [
+      "claim_170a08b818b56ce241e7bf24",
+      "claim_4bc4bf78921bfd29cbf4a278"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 25,
+  "synthesis_input_claim_count": 25
+}

@@ -1,0 +1,159 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original answer lacks specific evidence linking Georgia EV projects to construction equipment tariff costs for named entities. Available Georgia-specific text discusses general sector impacts rather than project-level exposure.",
+  "confidence": "high",
+  "remaining_gap": "No explicit named-company effect on Georgia EV project construction equipment costs found in accessible full-text passages.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_f554b591215632fd52d77f37",
+      "supporting_excerpt": "Key Georgia Impacts by Sector\nLocal perspective:\nAutomotive\n- Imported vehicle parts will face a 25% tariff, potentially raising production costs at Georgia’s auto plants.",
+      "relevance_explanation": "Confirms geographic relevance but lacks specific EV project construction equipment cost data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_f554b591215632fd52d77f37",
+      "supporting_excerpt": "Construction and Manufacturing\n- New tariffs on steel and aluminum will raise the price of materials, squeezing builders and manufacturers alike.",
+      "relevance_explanation": "Confirms construction industry impact but does not isolate EV projects or equipment costs.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_a9db809b9cffd5b0e3684b15",
+      "supporting_excerpt": "Mitigating tariff risk in battery energy storage system (BESS) projects is crucial for ensuring project financial viability, as tariff changes can significantly affect cost structures and overall project economics.",
+      "relevance_explanation": "Confirms BESS/EV relevance but lacks Georgia geographic specificity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_5d40de13f66dda95907700d6",
+      "supporting_excerpt": "Tariffs are government-imposed taxes on imported goods designed to protect domestic industries and reduce reliance on foreign manufacturers.",
+      "relevance_explanation": "Provides generic tariff definition without specific cost or project data.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_233",
+  "query": "Georgia EV projects tariffs construction equipment costs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 7,
+    "all_extracted_claims": 16,
+    "claims_presented_to_original_synthesis": 16,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 6,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents"
+  ],
+  "candidate_passage_ids": [
+    "passage_5d40de13f66dda95907700d6",
+    "passage_6d357aea4ee334d1a99a8597",
+    "passage_a9db809b9cffd5b0e3684b15",
+    "passage_302f2a5d36035a488f420edc",
+    "passage_f554b591215632fd52d77f37",
+    "passage_f3a61f81fe92e4e35da9f2e4",
+    "passage_212dbca456d1f0cb0f623679",
+    "passage_0b73643935d7524d2cc5fb5c"
+  ],
+  "candidate_document_ids": [
+    "document_2a21d352f1a50bcd779cd0f1",
+    "document_509f150d033f6e532a9c598a",
+    "document_559b3471aaf08c46cc157b1e",
+    "document_6458c173cfeebfa1bd4c968e",
+    "document_654f8b4eeeba318eea5a0f8d",
+    "document_c4e0ccdc8d539e40e8821d7d",
+    "document_ccbf5c8421b44abbe94d6ac7",
+    "document_cce1bd845f07d2a2808f4f24"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_f554b591215632fd52d77f37",
+      "supporting_excerpt": "Key Georgia Impacts by Sector\nLocal perspective:\nAutomotive\n- Imported vehicle parts will face a 25% tariff, potentially raising production costs at Georgia’s auto plants.",
+      "relevance_explanation": "Confirms geographic relevance but lacks specific EV project construction equipment cost data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_636702445708e1b8b0ae4d73",
+      "query_id": "q_233",
+      "chunk_id": "chunk_abda6832d4708e9d28a77631",
+      "document_id": "document_559b3471aaf08c46cc157b1e",
+      "source_url": "https://www.fox5atlanta.com/news/trumps-tariff-plan-sparks-economic-uncertainty-georgia",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/ef33853c979fb661a9dcb2e3e85e09fe15a9e6319df730c244999701a6e5c05f.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_f554b591215632fd52d77f37",
+      "supporting_excerpt": "Construction and Manufacturing\n- New tariffs on steel and aluminum will raise the price of materials, squeezing builders and manufacturers alike.",
+      "relevance_explanation": "Confirms construction industry impact but does not isolate EV projects or equipment costs.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_86a2b5095c7154d1f679d2e9",
+      "query_id": "q_233",
+      "chunk_id": "chunk_abda6832d4708e9d28a77631",
+      "document_id": "document_559b3471aaf08c46cc157b1e",
+      "source_url": "https://www.fox5atlanta.com/news/trumps-tariff-plan-sparks-economic-uncertainty-georgia",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/ef33853c979fb661a9dcb2e3e85e09fe15a9e6319df730c244999701a6e5c05f.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_a9db809b9cffd5b0e3684b15",
+      "supporting_excerpt": "Mitigating tariff risk in battery energy storage system (BESS) projects is crucial for ensuring project financial viability, as tariff changes can significantly affect cost structures and overall project economics.",
+      "relevance_explanation": "Confirms BESS/EV relevance but lacks Georgia geographic specificity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_8409561576c45eca2f1a36a0",
+      "query_id": "q_233",
+      "chunk_id": "chunk_2a4f5d0e895bf34e2a657492",
+      "document_id": "document_509f150d033f6e532a9c598a",
+      "source_url": "https://www.morganlewis.com/pubs/2025/03/addressing-tariffs-and-trade-in-energy-storage-projects",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/23c6f86416709384a8b7cdbdd2153b7b092eef27ad50b9ac2e115e463a934291.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_5d40de13f66dda95907700d6",
+      "supporting_excerpt": "Tariffs are government-imposed taxes on imported goods designed to protect domestic industries and reduce reliance on foreign manufacturers.",
+      "relevance_explanation": "Provides generic tariff definition without specific cost or project data.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_6bd7e615f4041db5234fc5e0",
+      "query_id": "q_233",
+      "chunk_id": "chunk_3c2083cb4e7566712de2de36",
+      "document_id": "document_cce1bd845f07d2a2808f4f24",
+      "source_url": "https://ahearnequipment.com/how-will-tariffs-affect-heavy-construction-equipment",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": true,
+      "source_text_path": "text/b535c9ff333c6f096cd99a8204cd1e458b9e96a26a67ec04698cc93aae6dd992.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

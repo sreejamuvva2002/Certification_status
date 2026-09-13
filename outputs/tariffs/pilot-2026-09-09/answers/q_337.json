@@ -1,0 +1,39 @@
+{
+  "query_id": "q_337",
+  "query": "EV thermal management systems import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_65916cbabc7edeeacee9cdd8",
+    "claim_e7a6f3a0545d1c70493df8ed"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_65916cbabc7edeeacee9cdd8",
+      "text": "The tariff rate is set to surge from 25% to 100% starting in 2024.",
+      "url": "https://www.batterytechonline.com/battery-news/new-us-tariffs-designed-to-protect-ev-battery-industries-from-china-trade-practices",
+      "chunk_id": "chunk_a6549019524b274c97289b0d"
+    },
+    {
+      "claim_id": "claim_e7a6f3a0545d1c70493df8ed",
+      "text": "Anticipate a hike from 7.5% to 25% by 2024.",
+      "url": "https://www.batterytechonline.com/battery-news/new-us-tariffs-designed-to-protect-ev-battery-industries-from-china-trade-practices",
+      "chunk_id": "chunk_a6549019524b274c97289b0d"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_65916cbabc7edeeacee9cdd8",
+      "claim_e7a6f3a0545d1c70493df8ed"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

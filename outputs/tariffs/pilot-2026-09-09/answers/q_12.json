@@ -1,0 +1,76 @@
+{
+  "query_id": "q_12",
+  "query": "Georgia automotive suppliers tariff-related price increases",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1ad021a5d2385f779992fda0",
+    "claim_4715c0403ceaec4aec5004a8",
+    "claim_684dfe700713760f33823555",
+    "claim_8070a8a1cb3688e2071e6f5c",
+    "claim_a0a1474a00d3dbcfaeb2bd87",
+    "claim_cb5be87f846c52492a7da16f",
+    "claim_d159b476889d9577d5bc73bb"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1ad021a5d2385f779992fda0",
+      "text": "A new 25% tariff on imported auto parts officially took effect at 12:01 a.m. EDT on May 3.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0e904fe2cb92be0365d8e6dc"
+    },
+    {
+      "claim_id": "claim_4715c0403ceaec4aec5004a8",
+      "text": "General Motors (GM.N) said it will face up to $5 billion in gross tariff-related costs this year",
+      "url": "https://www.reuters.com/business/media-telecom/automakers-have-resisted-raising-car-prices-because-tariffs-that-might-not-last-2025-09-18",
+      "chunk_id": "chunk_90f922ec6c4cb6b427523bdf"
+    },
+    {
+      "claim_id": "claim_684dfe700713760f33823555",
+      "text": "Ford cited tariff costs of roughly $800 million in Q2 and is expecting a total impact this year of nearly $3 billion.",
+      "url": "https://www.coxautoinc.com/insights-hub/the-trump-tariff-stance-has-shifted-where-are-we-now",
+      "chunk_id": "chunk_c70d0065a7c97ff634980ede"
+    },
+    {
+      "claim_id": "claim_8070a8a1cb3688e2071e6f5c",
+      "text": "On March 26, President Trump signed a proclamation to impose a 25% tariff on all imported automobiles and certain automobile parts to address “a critical threat to U.S. national security,” according to a White House Fact Sheet.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_992039700d3841546dbaf35a"
+    },
+    {
+      "claim_id": "claim_a0a1474a00d3dbcfaeb2bd87",
+      "text": "General Motors reported that it had absorbed $1.1 billion in tariff costs last quarter but prioritized maintaining imports to support customers and dealers.",
+      "url": "https://www.coxautoinc.com/insights-hub/the-trump-tariff-stance-has-shifted-where-are-we-now",
+      "chunk_id": "chunk_c70d0065a7c97ff634980ede"
+    },
+    {
+      "claim_id": "claim_cb5be87f846c52492a7da16f",
+      "text": "Tariff-related costs amounted to nearly $2,300 in added cost per vehicle in June on an annualized basis",
+      "url": "https://www.reuters.com/business/media-telecom/automakers-have-resisted-raising-car-prices-because-tariffs-that-might-not-last-2025-09-18",
+      "chunk_id": "chunk_90f922ec6c4cb6b427523bdf"
+    },
+    {
+      "claim_id": "claim_d159b476889d9577d5bc73bb",
+      "text": "Ford F.N cited a $3 billion gross hit",
+      "url": "https://www.reuters.com/business/media-telecom/automakers-have-resisted-raising-car-prices-because-tariffs-that-might-not-last-2025-09-18",
+      "chunk_id": "chunk_90f922ec6c4cb6b427523bdf"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_4715c0403ceaec4aec5004a8",
+      "claim_a0a1474a00d3dbcfaeb2bd87"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 23,
+  "synthesis_input_claim_count": 23
+}

@@ -1,0 +1,148 @@
+{
+  "primary_cause": "inaccessible_documents",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer relies on a single search snippet claiming a 15% tax on batteries, but the audit metrics indicate zero full-text sources were retained or accessible for verification. The only available full-text passages (passage_79580228a9a2592c468f512b, passage_de79601d6bb967580c9f5347, etc.) discuss market dynamics, thermal management technology, and general tariff contexts (like Section 301 on Chinese components) without explicitly confirming the specific 15% duty rate for EV battery cooling plates or establishing its current legal applicability to the queried product. The lack of accessible full-text documents prevents verification, ",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly confirms a 15% import duty specifically for 'EV battery cooling plates' as a distinct line item with current effective status. The available text discusses general Section 301 tariffs on Chinese components or material costs but does not link the specific 15% rate to the product in question.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_79580228a9a2592c468f512b",
+      "supporting_excerpt": "The current state of the U.S. market is a result of the \"Fortress\" supply chain strategy that was ushered in by the updates to Section 301 tariffs and the Inflation Reduction Act for 2024 and 2025. Specifically, the 25% tariff on battery components that originate in China created an economic challenge for high-volume OEMs to source imported thermal plates and manifolds.",
+      "relevance_explanation": "Mentions tariffs on 'thermal plates' but cites a 25% rate on Chinese components, not the 15% rate claimed in the original answer, and does not establish current applicability to all cooling plates regardless of origin.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_9ba1b973109e1da9d8da8c2e",
+      "supporting_excerpt": "Heat exchanger plates, cores, finned tubes, cones, shells, bonnets, flanges and baffles (described in statistical reporting number 8419.90.3000)",
+      "relevance_explanation": "Lists 'heat exchanger plates' as a category subject to tariff exclusions or classifications but does not specify the duty rate for EV cooling plates or confirm the 15% figure.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_64e45218d0d33c1adfa771d1",
+      "supporting_excerpt": "Aluminum alloy, plates/sheets/strip... 25% 2024",
+      "relevance_explanation": "Shows a 25% tariff rate for aluminum plates in 2024, which contradicts the 15% figure in the original answer and does not confirm the specific classification or rate for cooling plates.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_de79601d6bb967580c9f5347",
+      "supporting_excerpt": "The amount that must be paid for thermal management systems will be determined mostly by the costs associated with high-grade aluminium and certain specialised chemicals. High-grade aluminium, which has many applications in heat exchangers and cooling plates, has a volatile price that fluctuates based on energy costs related to smelting.",
+      "relevance_explanation": "Discusses cost drivers for cooling plates but provides no information regarding import duties or tariff rates.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_147",
+  "query": "EV battery cooling plates import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 1,
+    "full_text_sources": 0,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 1,
+    "all_extracted_claims": 1,
+    "claims_presented_to_original_synthesis": 1,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "insufficient_evidence",
+      "snippet_only"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 1,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents"
+  ],
+  "candidate_passage_ids": [
+    "passage_79580228a9a2592c468f512b",
+    "passage_de79601d6bb967580c9f5347",
+    "passage_9ba1b973109e1da9d8da8c2e",
+    "passage_5aaff52a4d7a0cd37f621c6b",
+    "passage_4642d228fdfabc83e29d05a5",
+    "passage_fb3fef935d0781124217fa38",
+    "passage_e758ebdaaa5deac8a6e3920e",
+    "passage_64e45218d0d33c1adfa771d1"
+  ],
+  "candidate_document_ids": [
+    "document_28709eec39cb30f520c83992",
+    "document_2beb5cfa7ed3f2a14db36015",
+    "document_7a71fe4233b2d98039d51584",
+    "document_abcc372c7d136699cf80b62d",
+    "document_ad93dad44a3957f100180855",
+    "document_bc72c6112a68baec615b0c32",
+    "document_fa95f5701bd94c20dfa77c42"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_79580228a9a2592c468f512b",
+      "supporting_excerpt": "The current state of the U.S. market is a result of the \"Fortress\" supply chain strategy that was ushered in by the updates to Section 301 tariffs and the Inflation Reduction Act for 2024 and 2025. Specifically, the 25% tariff on battery components that originate in China created an economic challenge for high-volume OEMs to source imported thermal plates and manifolds.",
+      "relevance_explanation": "Mentions tariffs on 'thermal plates' but cites a 25% rate on Chinese components, not the 15% rate claimed in the original answer, and does not establish current applicability to all cooling plates regardless of origin.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_1bc3fc4b77168f2aa289ac62",
+      "query_id": "q_147",
+      "chunk_id": "chunk_814f44495c1c96e0a01b53a4",
+      "document_id": "document_28709eec39cb30f520c83992",
+      "source_url": "https://www.knowledge-sourcing.com/report/ev-thermal-management-systems-market",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/a82ffe69feeb7340441720498ed9617924704127f985416acf6e5893a2809d5f.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_9ba1b973109e1da9d8da8c2e",
+      "supporting_excerpt": "Heat exchanger plates, cores, finned tubes, cones, shells, bonnets, flanges and baffles (described in statistical reporting number 8419.90.3000)",
+      "relevance_explanation": "Lists 'heat exchanger plates' as a category subject to tariff exclusions or classifications but does not specify the duty rate for EV cooling plates or confirm the 15% figure.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_historical",
+      "recovery_claim_id": "recovered_bd81ac258089cf6e897f98f1",
+      "query_id": "q_147",
+      "chunk_id": "chunk_577c492525b111185f4f142e",
+      "document_id": "document_2beb5cfa7ed3f2a14db36015",
+      "source_url": "https://ustr.gov/sites/default/files/Section%20301%20Exclusion%20Extension%20FRN.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/35b4eb18238fb4924d683ec87b230fffa2916121e6eb26e1cb32fec7f77bc141.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_de79601d6bb967580c9f5347",
+      "supporting_excerpt": "The amount that must be paid for thermal management systems will be determined mostly by the costs associated with high-grade aluminium and certain specialised chemicals. High-grade aluminium, which has many applications in heat exchangers and cooling plates, has a volatile price that fluctuates based on energy costs related to smelting.",
+      "relevance_explanation": "Discusses cost drivers for cooling plates but provides no information regarding import duties or tariff rates.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_abe1190e9b8925fb8b2cbd16",
+      "query_id": "q_147",
+      "chunk_id": "chunk_cc5bc5145b79b3e87723e120",
+      "document_id": "document_28709eec39cb30f520c83992",
+      "source_url": "https://www.knowledge-sourcing.com/report/ev-thermal-management-systems-market",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/a82ffe69feeb7340441720498ed9617924704127f985416acf6e5893a2809d5f.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_64e45218d0d33c1adfa771d1",
+        "supporting_excerpt": "Aluminum alloy, plates/sheets/strip... 25% 2024",
+        "relevance_explanation": "Shows a 25% tariff rate for aluminum plates in 2024, which contradicts the 15% figure in the original answer and does not confirm the specific classification or rate for cooling plates.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

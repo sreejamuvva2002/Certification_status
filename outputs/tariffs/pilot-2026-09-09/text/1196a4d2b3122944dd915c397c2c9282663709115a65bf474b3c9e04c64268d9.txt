@@ -1,0 +1,59 @@
+Entry Summary Order of Reporting Multiple HTS in ACE
+Check out this week's Customs Corner to read about reporting multiple HTS in ACE, De Minimis Shipments, and more.
+Trade and Customs Updates
+1) Entry Summary Order of Reporting Multiple HTS in ACE
+CBP provided an update on the order of reporting in ACE for multiple HTS when a Chapter 98 or 99 HTS is required.
+CSMS # 64018403 provides an update on the order of reporting in ACE for multiple HTS. The update includes the reporting of Chapter 99 HTS for products of China and Hong Kong which were implemented February 1, 2025, in the Executive Order to the Internal Emergency Economic Powers Act (IEEPA).
+GUIDANCE: When submitting an entry summary in which a heading or subheading in Chapter 98 and/or 99 is claimed on imported merchandise, the following instructions will apply for the order of reporting the HTS on an entry summary line.
+HTS SEQUENCE:
+Chapter 98 (if applicable)
+Chapter 99 number(s) for additional duties (if applicable)
+For trade remedies,
+first report the Chapter 99 HTS for Section 301,
+followed by the Chapter 99 HTS for IEEPA (i.e., products of China and Hong Kong),
+followed by the Chapter 99 HTS for Section 232 or 201 duties (if applicable),
+followed by the Chapter 99 HTS for Section 201 or 232 quota (if applicable).
+Chapter 99 number(s) for REPLACEMENT duty or other use (i.e., MTB or other provisions)
+Chapter 99 number for other quota (not covered by #3) (if applicable)
+Chapter 1 to 97 Commodity Tariff
+ENTERED VALUE: The entered value of the commodity being imported on the entry summary line should be reported on the Chapter 1-97 HTS classification for the commodity being imported, except if Chapter 98 reporting provisions require the entered value to be reported differently.
+2) ACE Processing of De Minimis Shipments Per Executive Order issued February 1, 2025
+De minimis has been revoked for most products from China and Hong Kong effective February 4, 2025.
+Effective February 4, 2025, most products from China, including Hong Kong, will no longer qualify for the "de minimis" exemption, meaning they cannot enter the U.S. duty- and tax-free under 19 U.S.C. § 1321(a)(2)(C). This change follows Executive Orders issued on February 1, 2025, targeting the synthetic opioid supply chain. Importers must file formal or informal entries and pay all applicable duties, taxes, and fees.
+Shipments manifested or entered under Entry Type 86 before 12:01 a.m. EST on February 4, 2025, but arriving afterward, will not be eligible for the exemption, and any pre-arrival clearance will be canceled. Importers must monitor shipment status and comply with the new requirements. This policy does not apply to postal shipments, only those processed through the Automated Commercial Environment (ACE).
+CSMS # 63992482 provides the guidance on how the Executive Order will be enforced in ACE by mode of transportation and clearance type.
+Air Manifest:
+New Air EDI validations for bills of lading with a CED line to release off the manifest [i.e. a disposition type 86 is posted to the bill].
+If the filer receives the following error codes for an air manifest shipment, it means that de minimis clearance will not be granted and the filer must take the appropriate action to bring the shipment into compliance under the auspices of the Executive Order.
+181 COUNTRY OF ORIGIN CODE INVALID
+110 CBP ENTRY LINE IGNORED
+188 EXPRESS RECORD INCOMPLETE
+All messages will be sent in the form of an FER response message by ACE.
+Truck Manifest:
+If the filer receives a message using the 470 (Inv Ctry of Orig for Shp) error code, it means that the shipment cannot receive de minimis clearance, and the filer must take the appropriate action to bring the shipment into compliance under the auspices of the Executive Order.
+For any bills filed prior to, but arriving after the actions in the Executive Order takes effect, ACE will generate a 350 notification, using an existing disposition code for “Entry Not on File.” If the filer receives this message, it means that the shipment will be rejected at Primary and the filer must take the appropriate action to bring the shipment into compliance under the auspices of the Executive Order.
+Manifest – All Modes:
+In situations where a manifest was filed before the actions outlined in the Executive Order become effective, but the conveyance will arrive after, the carrier will receive a 1M message notifying them that the shipment is not eligible for de minimis clearance, and the filer must take the appropriate action to bring it into compliance.
+For all modes where a 1C release message was already sent to the carrier/manifest filer, but the conveyance has not yet arrived ACE will generate and send a 4E (cancel entry message) to cancel the release upon conveyance arrival.
+Cargo Release / Entry Type 86 (ET86): All Modes
+For ineligible ET86 transactions, ACE will return a “Reject” status with an additional error code of 200: COUNTRY OF ORIGIN NOT ALLOWED FOR IMPORT. This is an existing error code, being re-used for this purpose, so the trade should be aware of the new use.
+In any instance where the ET86 in released status before the arrival of the bill, the filer will receive an SO disposition message of “Release-Suspended” with an error code 29: 29~NOT RELEASED. This is an existing error code, being re-used for this purpose, so the trade should be aware of the new use.
+If these error messages are received, the filer must take the appropriate action to bring the shipments into compliance with the Executive Order.
+3) ACE Portal Modernization: ACE Portal User Access Management Functionality
+CBP will be migrating ACE account user management functionality to the modernized Ace Portal.
+On February 22, 2025, CBP will complete its ACE Portal modernization by migrating user access management functions to the updated platform. This change affects only Trade Account Owners (TAOs) and Proxy Trade Account Owners (PTAOs), while Trade Account Users remain unaffected.
+TAOs and PTAOs must stop making user access changes in the legacy ACE Portal by 10:00 p.m. ET on February 19 to ensure a smooth transition. After February 23, all user access management will take place exclusively in the modernized ACE Portal, as the legacy system will no longer support this functionality.
+CBSA will be hosting several webinars around CARM topics.
+CARM (CBSA Assessment and Revenue Management) is mandatory for all importers of commercial goods into Canada. In October 2024, Canada required importers to pay customs fees exclusively through CARM.
+The list of webinars is below and registration information can be found here.
+Did You Know? Registering on the CARM client portal – step-by-step overview to create a personal profile and register a business account in CARM client portal
+Did You Know? Release Prior to Payment Program – explains the benefits for importers enrolling in the RPP program
+What You Need to Know About CARM – provides key information for trade chain partners who need to conduct business in CARM client portal
+Carriers, Freight Forwarders and the CARM Client Portal – helps carriers and freight forwarders register in the CARM Client Portal and enroll in the CBSA Transporter Program
+5) De Minimis Exemption Temporarily Reinstated for China and Hong Kong
+On February 5, 2025, President Donald Trump issued an Executive Order amending a previous order from February 1, 2025, which had removed the de minimis exemption for goods of China and Hong Kong valued under $800.
+The amendment reinstates the de minimis exemption temporarily, allowing duty-free entry for eligible low-value packages until the Secretary of Commerce confirms that adequate systems are in place to efficiently process and collect the applicable tariffs.
+This move aims to provide time for the Commerce Department to establish procedures to manage inspections and levy collections on these shipments.
+EVENT: CBP’s Trade Facilitation and Cargo Security Summit
+May 6 - 8, 2025 | Hilton New Orleans Riverside, Two Poydras St, New Orleans, LA 70130
+This event will be hosted in person and webcasted. Event and registration details will be available soon and posted to the TFCS Summit web page. Click here for more information.

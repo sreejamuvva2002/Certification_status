@@ -1,0 +1,55 @@
+{
+  "query_id": "q_company_284421b36ec8283988c17894_discovery",
+  "query": "\"Kia Georgia Inc.\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_23d5f59e30926b298e331920",
+    "claim_4afa100f3caa53c746061f73",
+    "claim_79766e64c54fb1fe735a8b13",
+    "claim_ff2e046d05e14ee890984e04"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_23d5f59e30926b298e331920",
+      "text": "WE JUST STARTED BUILDING COMPLIANT EVS HERE. SO THE EV9, THE EV6 WERE BUILT IN GEORGIA AS WELL",
+      "url": "https://www.youtube.com/watch?v=wWzZYMAbgJw",
+      "chunk_id": "chunk_1623f4a2d1b48d720caf33ef"
+    },
+    {
+      "claim_id": "claim_4afa100f3caa53c746061f73",
+      "text": "U.S. dealers will rely more heavily on inventory from Kia’s Georgia plant going forward.",
+      "url": "https://www.facebook.com/CarBizToday/posts/kia-slashes-us-incentives-reroutes-inventory-to-dodge-tariffskia-is-revamping-it/1344085104384364",
+      "chunk_id": "chunk_d43d0453612cbab26519d5bc"
+    },
+    {
+      "claim_id": "claim_79766e64c54fb1fe735a8b13",
+      "text": "Kia slashes U.S. incentives, reroutes inventory to dodge tariffs Kia is revamping its U.S. sales strategy to reduce the impact of 25% tariffs on imported vehicles.",
+      "url": "https://www.facebook.com/CarBizToday/posts/kia-slashes-us-incentives-reroutes-inventory-to-dodge-tariffskia-is-revamping-it/1344085104384364",
+      "chunk_id": "chunk_d43d0453612cbab26519d5bc"
+    },
+    {
+      "claim_id": "claim_ff2e046d05e14ee890984e04",
+      "text": "HERE IN THE U.S. AT A MANUFACTURING PLANT IN WEST POINT IN GEORGIA, WHERE THE CARS ARE ASSEMBLED WOULD OF COURSE BE EXEMPT FROM TARIFFS",
+      "url": "https://www.youtube.com/watch?v=wWzZYMAbgJw",
+      "chunk_id": "chunk_1623f4a2d1b48d720caf33ef"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_79766e64c54fb1fe735a8b13",
+      "claim_ff2e046d05e14ee890984e04"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

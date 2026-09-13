@@ -1,0 +1,140 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer failed to establish import duties for battery recycling equipment in Georgia because the available evidence discusses general tariffs or facility operations without linking specific equipment import rates to the state. While a facility exists in Covington, Georgia (Passage 8), and tariff discussions exist generally (Passage 2), no source explicitly states applicable duties for equipment imports into that location.",
+  "confidence": "high",
+  "remaining_gap": "No explicit named-company effect or duty rate found for Georgia equipment imports.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_f87c2c077a0a2883a7ac2dbd",
+      "supporting_excerpt": "In a recycling facility in Covington, Georgia, workers grind up dead batteries into a fine, dark powder.",
+      "relevance_explanation": "Confirms facility location but does not mention import duties for equipment.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_f87c2c077a0a2883a7ac2dbd",
+      "supporting_excerpt": "Since January, President Donald Trump has taken a sledgehammer to the Biden administration’s efforts to grow America’s clean energy industry.",
+      "relevance_explanation": "Mentions policy changes affecting industry but does not specify equipment import tariffs.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_0be687f69e5cefdd6b00c4bb",
+      "supporting_excerpt": "The rise in vehicle costs due to new tariffs and supply chain disruptions will make electric vehicles more expensive, potentially slowing adoption.",
+      "relevance_explanation": "References general tariff impacts on EV market but lacks specific equipment duty data for Georgia.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_1e25166d568eb359b4f89de5",
+      "supporting_excerpt": "However, the U.S. currently has no federal recycling mandate or recycled content requirements for lithium-ion batteries.",
+      "relevance_explanation": "Indicates lack of federal mandates which may imply absence of specific duty frameworks for equipment.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_401",
+  "query": "Georgia battery recycling equipment import duties",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 0,
+    "full_text_sources": 0,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 0,
+    "all_extracted_claims": 0,
+    "claims_presented_to_original_synthesis": 0,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 0,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance"
+  ],
+  "candidate_passage_ids": [
+    "passage_10ae5d6724bc64fcc4ef8909",
+    "passage_0be687f69e5cefdd6b00c4bb",
+    "passage_1e25166d568eb359b4f89de5",
+    "passage_9fd189bda388ee62d41baf2c",
+    "passage_692f429a9c12e2db8306721c",
+    "passage_f87c2c077a0a2883a7ac2dbd",
+    "passage_ce01ee77ed21dd0fff06c6ef",
+    "passage_7086e5b106fd5633cb987167"
+  ],
+  "candidate_document_ids": [
+    "document_27e2075485b5076be57d3d08",
+    "document_33d43105f10f1fafa68e416d",
+    "document_6f9b33447339803b24b72748",
+    "document_8a8c8a8b2e0fff43bf50eea8",
+    "document_bc72c6112a68baec615b0c32",
+    "document_fa95f5701bd94c20dfa77c42"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_0be687f69e5cefdd6b00c4bb",
+      "supporting_excerpt": "The rise in vehicle costs due to new tariffs and supply chain disruptions will make electric vehicles more expensive, potentially slowing adoption.",
+      "relevance_explanation": "References general tariff impacts on EV market but lacks specific equipment duty data for Georgia.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_bb2778ec900d720420894c16",
+      "query_id": "q_401",
+      "chunk_id": "chunk_7d32d3808b15749ea6516c3c",
+      "document_id": "document_6f9b33447339803b24b72748",
+      "source_url": "https://christopherchico.substack.com/p/trumps-tariff-hike-what-it-means",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/9698187ec77cc7c3be5a57185f6865adc50227576cf7e21e5797449bfd2b2ef4.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_1e25166d568eb359b4f89de5",
+      "supporting_excerpt": "However, the U.S. currently has no federal recycling mandate or recycled content requirements for lithium-ion batteries.",
+      "relevance_explanation": "Indicates lack of federal mandates which may imply absence of specific duty frameworks for equipment.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_107bd877d2c9c5d45cee51b2",
+      "query_id": "q_401",
+      "chunk_id": "chunk_b4ffbe6a57496a6441675223",
+      "document_id": "document_bc72c6112a68baec615b0c32",
+      "source_url": "https://www.coxautoinc.com/mobility/wp-content/uploads/sites/11/2022/09/EV_Battery_Whitepaper.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/a559a1296f365400581e79ce6fd97063eb0b6a64565c47a0f9e86e471d1fd14d.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_f87c2c077a0a2883a7ac2dbd",
+        "supporting_excerpt": "In a recycling facility in Covington, Georgia, workers grind up dead batteries into a fine, dark powder.",
+        "relevance_explanation": "Confirms facility location but does not mention import duties for equipment.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_f87c2c077a0a2883a7ac2dbd",
+        "supporting_excerpt": "Since January, President Donald Trump has taken a sledgehammer to the Biden administration’s efforts to grow America’s clean energy industry.",
+        "relevance_explanation": "Mentions policy changes affecting industry but does not specify equipment import tariffs.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

@@ -1,0 +1,409 @@
+The new US administration has introduced a series of new tariffs that have been both numerous and fluid, with frequent changes in a short period of time. To date, two main types of tariffs have been announced: country-level “reciprocal tariffs,” and sector-specific tariffs targeting particular products.
+However, announced tariffs do not necessarily reflect effective tariff rates (ETRs). Reciprocal tariff announcements have been accompanied by product exemption lists, meaning that two countries facing the same announced reciprocal tariff—adjusted even for sectoral tariffs—may still face different ETRs in practice.
+While information on announced reciprocal and sectoral tariffs is publicly available, data on ETRs remains limited. Our goal is to fill this gap with an ETR tracker, which estimates effective tariff rates using country- and product-level trade data from the US Census Bureau’s USA Trade Online platform.
+Starting with this update, we are introducing a new aggregated column: “Exposure measure.” This measure is calculated by multiplying a country’s ETR by the share of that country’s total exports destined for the US. This reflects the idea that the potential impact of US-imposed tariffs on a country depends not only on the tariff rate itself but also on how reliant a country is on the US as an export market.
+The tracker is being updated with new data as significant changes in tariff policy occur. The arrows in the interactive map and table below let you see the changing effective tariff rates at different points in time.
+Methodology for calculating the estimated Effective Tariff Rate (ETR)
+We developed a system that measures the estimated Effective Tariff Rate (ETR) implied by the most recent new tariffs imposed by the US government. This system accounts for variations in tariffs by country of origin and product classification. For each country, products are categorized into one of the following tariff groups:
+- “Reciprocal” (country-level tariffs): Applied to general US imports, excluding those covered by sector-specific tariffs or exempted products. Canada, China, and Mexico have their own country-specific tariffs.
+- Sector-specific tariffs: Targeted tariffs applied to imports within particular sectors.
+- Exemptions: Imports explicitly exempted from new tariffs (zero tariffs)
+The ETR for each country is calculated as a trade-weighted average of the tariff rates applied to US imports from that country. The weights for each of the three categories are based on the share of 2024 US imports from that country that fall into each category, relative to the total value of US imports from that country.
+Thus, the ETR for each country is estimated as follows:
+Where:
+- TR: Reciprocal tariffs
+- TS: Tariff rate applied for specific sectors
+- MR: Value of imports subject only to reciprocal tariffs (i.e., excluding products under sector-specific tariffs or exemptions)
+- MS: Value of imports subject to sectoral tariffs
+- ME: Value of exempt imports
+- MT: Total value of US imports from the country
+This approach enables us to estimate the effective reciprocal tariff for each country, factoring in both sector-specific tariffs and exemptions.
+The process is straightforward. We began with US import data from 2024, which reflects trade patterns before the new tariffs were announced. This data is detailed at the 10-digit product level, according to the Harmonized Tariff Schedule of the United States (HTSUS). We then matched each product code with the most recent information on whether it is subject to a tariff or exempt. By combining detailed trade data with the latest tariff measures, we can closely estimate the effective tariff burden countries face on their exports to the US. This analysis will be updated as new US tariff changes are announced.
+Current value of variables as of
+The ETR estimates are based on the most recent announcements by the US government:
+TR: Canada, China and Mexico have their own country-specific tariffs. As of February 23, 2026, the US administration has announced new tariffs for countries as described below. This excludes goods not covered by sector-specific tariffs (e.g., aluminum, steel, copper and auto parts), or exempted goods (e.g., semiconductors for now)
+TS:
+- Steel and aluminum products are subject to a 50% tariff, except for imports from the UK, where the tariff remains at 25%. The list of steel and aluminum products subject to tariffs was expanded in August 2025
+- 
+        Medium- and heavy-duty vehicle tariffs
+        
+  - 25% duty on medium- and heavy-duty vehicles and designated parts.
+  - 10% duty on buses.
+- Auto parts and automobiles are subject to a 25% tariff.
+- 
+        Copper products:
+        
+  - Semi-finished copper products (e.g., copper pipes, wires and tubs) are subject to a 50% tariff
+  - These tariffs don’t stack with auto tariffs. If a product is subject to auto tariffs, then the auto tariffs apply, not the copper tariffs
+  - Copper input material (e.g., copper ores, mattes, cathodes and anodes) and copper scrap are not subject to the tariffs.
+- 
+        Lumber and Timber:
+        
+  - 10% duty on softwood timber and lumber.
+  - 25% on upholstered wooden products.
+  - 25% on kitchen cabinets and vanities
+Exemptions:
+- A wide range of products have been explicitly exempted from the new tariffs and are assigned a tariff rate of 0% in the estimation.
+- On November 14, 2025, this list was expanded with the addition of a series of products, particularly food and agricultural products via Executive Order.
+- On February 20, 2026, a new exemption list was published. There were very few changes from the previous lists.
+- De Minimis imports: As of August 1, 2025, are no longer excepted. This decision was ratified on February 20, 2026.The duty will be charged according to the reciprocal tariff imposed on a country, which on February 20 was temporarily set at 10 percent worldwide
+China: Imports from China are currently subject to:
+- 54% tariffs on US imports of low-valued transactions (De Minimis imports)
+- 10% tariffs on non- de minimis imports. Exemptions apply
+- Cancelation of additional 10% tariffs (synthetic opium-related).
+Canada:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted
+- Steel and aluminum products non-USMCA-compliant are subject to 50% tariff
+- Energy and potash products are subject to a 10% tariff
+- All other goods are subject to a 10% tariff (announced February 20, 2026),
+Mexico:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted
+- Steel and aluminum products non-USMCA-compliant are subject to 50% tariff
+- Energy and potash products are subject to a 10% tariff
+- All other goods are subject to a 10% tariff (announced February 20, 2026)
+United Kingdom:
+- 10% reciprocal tariff.
+- First 100,000 automobiles produced in the UK and exported to the US per year are subject to 10% tariff. Any additional automobiles exported to the US is subject to 25% tariffs.
+- Steel and aluminum: 25%
+Brazil:
+- 10% reciprocal tariff.
+- Additional tariffs set in the Executive Order of July 30, 2025 were canceled.
+European Union:
+- 10% reciprocal tariffs
+- Automobiles are also subject to 15% tariffs, implying that although finished cars are made of steel and aluminum, they are only subject to 15% and not the 50% tariffs on steel and aluminum.
+- Steel and aluminum remain at 50% as for the rest of the world
+Japan:
+- 10% reciprocal tariffs
+- Automobiles also subject to 15% tariffs
+- Steel and aluminum remain at 50% as for the rest of the world
+South Korea:
+- 10% reciprocal tariffs
+- Automobiles also subject to 15% tariffs.
+- Steel and aluminum remain at 50% as for the rest of the world
+Indonesia, Malaysia, Cambodia:
+- Reciprocal tariff of 10%
+- Exceptions negotiated through Trade Deals
+India:
+- Reciprocal tariff of 10%
+- Canceled: Additional tariff of 25% imposed for the purchase of Russian oil
+Rest of the World:
+- By Executive Order signed on February 20, 2026, reciprocal tariffs around the world were set at 10 percent.
+The ETR estimates are based on the most recent announcements by the US government:
+TR: Canada, China and Mexico have their own country-specific tariffs. As of August 1, the US administration has announced new tariffs for countries as described below. This excludes goods not covered by sector-specific tariffs (e.g., aluminum, steel, copper and auto parts), or exempted goods (e.g., semiconductors for now)
+TS:
+- Steel and aluminum products are subject to a 50% tariff, except for imports from the UK, where the tariff remains at 25%. The list of steel and aluminum products subject to tariffs was expanded in August 2025
+- 
+                Medium- and heavy-duty vehicle tariffs
+                
+  - 25% duty on medium- and heavy-duty vehicles and designated parts.
+  - 10% duty on buses.
+- Auto parts and automobiles are subject to a 25% tariff.
+- 
+                Copper products:
+                
+  - Semi-finished copper products (e.g., copper pipes, wires and tubs) are subject to a 50% tariff
+  - These tariffs don’t stack with auto tariffs. If a product is subject to auto tariffs, then the auto tariffs apply, not the copper tariffs
+  - Copper input material (e.g., copper ores, mattes, cathodes and anodes) and copper scrap are not subject to the tariffs.
+- 
+                Lumber and Timber:
+                
+  - 10% duty on softwood timber and lumber.
+  - 25% on upholstered wooden products.
+  - 25% on kitchen cabinets and vanities
+Exemptions:
+- A wide range of products have been explicitly exempted from the new tariffs and are assigned a tariff rate of 0% in the estimation.
+- On November 14, 2025, this list was expanded with the addition of a series of products, particularly food and agricultural products via Executive Order.
+- 
+                De Minimis imports: As of August 1, 2025, are no longer excepted and the duty will be charged according to the reciprocal tariff imposed on a country:
+                
+  - Countries with an effective IEEPA (International Emergency Economic Powers Act) tariff rate of less than 16 percent: $80 per item.
+  - Countries with an effective IEEPA tariff rate between 16 and 25 percent (inclusive): $160 per item; and
+  - Countries with an effective IEEPA rate above 25 percent: $200 per item.
+China: Imports from China are currently subject to:
+- 54% tariffs on US imports of low-valued transactions (De Minimis imports)
+- 10% tariffs on non- de minimis imports. Exemptions apply
+- Additional 10% tariffs (synthetic opium-related). Exemptions do not apply (reduced from 20%, effective November 10, 2025)
+Canada:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted
+- Steel and aluminum products non-USMCA-compliant are subject to 50% tariff
+- Energy and potash products are subject to a 10% tariff
+- All other goods are subject to a 35% tariff (announced July 10, effective August 1st)
+Mexico:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted
+- Steel and aluminum products non-USMCA-compliant are subject to 50% tariff
+- Energy and potash products are subject to a 10% tariff
+- All other goods are subject to a 25% tariff (a tariff of 30% announced on July 12 to be effective on August 1st was postponed for 90 days
+United Kingdom:
+- 10% reciprocal tariff.
+- First 100,000 automobiles produced in the UK and exported to the US per year are subject to 10% tariff. Any additional automobiles exported to the US is subject to 25% tariffs.
+- Steel and aluminum: 25%
+Brazil:
+- 10% reciprocal tariffs, but an additional 40% for a number of products announced in the Executive Order of July 30, 2025, and detailed in an Annex.
+- 
+                Products are categorized by:
+                
+  - Those subject to 10% tariff and exempt from additional 40%
+  - Those subject to 50% (10% plus additional 40%)
+- Tariffs to be effective on August 6, 2025
+- On November 21, 2025, a series of products, particularly foodstuffs and agricultural products were exempted from the 40% additional tariff and are now subject to 10%.
+European Union:
+- 15% reciprocal tariffs
+- Automobiles are also subject to 15% tariffs, implying that although finished cars are made of steel and aluminum, they are only subject to 15% and not the 50% tariffs on steel and aluminum.
+- Steel and aluminum remain at 50% as for the rest of the world
+Japan:
+- 15% reciprocal tariffs
+- Automobiles also subject to 15% tariffs
+- Steel and aluminum remain at 50% as for the rest of the world
+South Korea:
+- 15% reciprocal tariffs
+- Automobiles also subject to 15% tariffs.
+- Steel and aluminum remain at 50% as for the rest of the world
+Indonesia: Reciprocal tariff of 19%
+India:
+- Reciprocal tariff of 25%
+- Additional tariff of 25% imposed for the purchase of Russian oil
+Rest of the World:
+- 
+                Countries listed in Annex I of the Executive Order signed on July 31, 2025 are subject to the tariff specified therein. Excluding those countries already discussed above, other countries and their respective tariffs are:
+                
+  - Afghanistan (15%); Algeria (30%); Angola (15%); Bangladesh (20%); Bolivia (15%); Bosnia and Herzegovina (30%); Botswana (15%); Brunei (25%); Cambodia (19%); Cameroon (15%); Chad (15%); Costa Rica (15%); Cote d’Ivoire (15%); DRC (15%); Ecuador (15%); Equatorial Guinea (15%); Falkland Island (10%); Fiji (15%); Ghana (15%); Guyana (15%); Iceland (15%); Iraq (35%); Israel (15%); Jordan (15%); Kazakhstan (25%); Laos (40%); Lesotho (15%); Libya (30%); Liechtenstein (15%); Madagascar (15%); Malawi (15%); Malaysia (19%); Mauritius (15%); Moldova (25%); Mozambique (15%); Myanmar (40%); Namibia (15%); Nauru (15%); New Zealand (15%); Nicaragua (18%); Nigeria (15%); North Macedonia (15%); Pakistan (19%); Papua New Guinea (15%); Philippines (19%); Serbia (35%); South Africa (30%); Sri Lanka (20%); Switzerland (39%); Syria (41%); Taiwan (20%); Thailand (19%); Trinidad and Tobago (15%); Tunisia (25%); Turkey (15%); Uganda (15%); Vanuatu (15%); Venezuela (15%); Vietnam (20%); Zambia (15%); Zimbabwe (15%).
+- The rest of countries (those not listed in Annex I) are subject to a reciprocal tariff of 10%
+- These tariffs have been in effect since August 7, 2025
+This update estimates the added ETR based on the US government’s reciprocal and sector-specific tariffs in place by early August 2025 following a series of announcements of new trade deals with specific countries and the publication of the official list of products subject to the new copper tariff. Compared to the July 12 Tracker Update, there were country-specific changes--detailed below--which include country-specific “reciprocal tariffs” as well as country-specific reductions of sectoral tariffs for the auto industry. The list of products affected by the new copper tariff was also much narrower than the assumption list used in the July 12 Tracker Update, focusing more on refined products, explaining the sizeable fall in estimated ETR for copper-exporting countries.
+TR: Canada, China and Mexico have their own country-specific tariffs. As of August 1, the US administration has announced new tariffs for countries as described below. This excludes goods not covered by sector-specific tariffs (e.g., aluminum, steel, copper and auto parts), or exempted goods (e.g., semiconductors for now)
+TS:
+- Steel and aluminum products are subject to a 50% tariff, except for imports from the UK, where the tariff remains at 25%.
+- Auto parts and automobiles are subject to a 25% tariff.
+- 
+                Copper products:
+                
+  - Semi-finished copper products (e.g., copper pipes, wires and tubs) are subject to a 50% tariff
+  - These tariffs don’t stack with auto tariffs. If a product is subject to auto tariffs, then the auto tariffs apply, not the copper tariffs
+  - Copper input material (e.g., copper ores, mattes, cathodes and anodes) and copper scrap are not subject to the tariffs.
+Exemptions:
+- A wide range of products have been explicitly exempted from the new tariffs and are assigned a tariff rate of 0% in the estimation.
+- 
+                De Minimis imports: As of August 1, 2025, are no longer excepted and the duty will be charged according to the reciprocal tariff imposed on a country:
+                
+  - Countries with an effective IEEPA (International Emergency Economic Powers Act) tariff rate of less than 16 percent: $80 per item.
+  - Countries with an effective IEEPA tariff rate between 16 and 25 percent (inclusive): $160 per item; and
+  - Countries with an effective IEEPA rate above 25 percent: $200 per item.
+China: Imports from China are currently subject to:
+- 54% tariffs on US imports of low-valued transactions (De Minimis imports)
+- 10% tariffs on non- de minimis imports. Exemptions apply
+- Additional 20% tariffs (synthetic opium-related). Exemptions do not apply
+Canada:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted
+- Steel and aluminum products non-USMCA-compliant are subject to 50% tariff
+- Energy and potash products are subject to a 10% tariff
+- 
+                All other goods are subject to a 35% tariff (announced July 10, effective August 1st)
+                
+  - All products imported from these countries for consumption into the United States through duty free mechanisms (including through USCMA and other arrangements), were considered as exempted of any new added tariffs, in line with the treatment of products from these countries throughout 2025.
+Mexico:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted
+- Steel and aluminum products non-USMCA-compliant are subject to 50% tariff
+- Energy and potash products are subject to a 10% tariff
+- 
+                All other goods are subject to a 25% tariff (a tariff of 30% announced on July 12 to be effective on August 1st was postponed for 90 days            
+                
+  - All products imported from these countries for consumption into the United States through duty free mechanisms (including through USCMA and other arrangements), were considered as exempted of any new added tariffs, in line with the treatment of products from these countries throughout 2025.
+United Kingdom:
+- 10% reciprocal tariff.
+- First 100,000 automobiles produced in the UK and exported to the US per year are subject to 10% tariff. Any additional automobiles exported to the US is subject to 25% tariffs.
+- Steel and aluminum: 25%
+Brazil:
+- 10% reciprocal tariffs, with an additional 40% for products not listed in the Annex of the Executive Order of July 30, 2025.
+- 
+                Products are categorized by:
+                
+  - Those subject to 10% tariff and exempt from additional 40%
+  - Those subject to 50% (10% plus additional 40%)
+- Tariffs to be effective on August 6, 2025
+European Union:
+- 15% reciprocal tariffs
+- Automobiles are also subject to 15% tariffs, implying that although finished cars are made of steel and aluminum, they are only subject to 15% and not the 50% tariffs on steel and aluminum.
+- Steel and aluminum remain at 50% as for the rest of the world
+Japan:
+- 15% reciprocal tariffs
+- Automobiles also subject to 15% tariffs
+- Steel and aluminum remain at 50% as for the rest of the world
+South Korea:
+- 15% reciprocal tariffs
+- Automobiles also subject to 15% tariffs.
+- Steel and aluminum remain at 50% as for the rest of the world
+Indonesia: Reciprocal tariff of 19%
+India:
+- Reciprocal tariff of 25%
+- Additional tariff of 25% imposed for the purchase of Russian oil
+Rest of the World:
+- 
+                Countries listed in Annex I of the Executive Order signed on July 31, 2025 are subject to the tariff specified therein. Excluding those countries already discussed above, other countries and their respective tariffs are:
+                
+  - Afghanistan (15%); Algeria (30%); Angola (15%); Bangladesh (20%); Bolivia (15%); Bosnia and Herzegovina (30%); Botswana (15%); Brunei (25%); Cambodia (19%); Cameroon (15%); Chad (15%); Costa Rica (15%); Cote d’Ivoire (15%); DRC (15%); Ecuador (15%); Equatorial Guinea (15%); Falkland Island (10%); Fiji (15%); Ghana (15%); Guyana (15%); Iceland (15%); Iraq (35%); Israel (15%); Jordan (15%); Kazakhstan (25%); Laos (40%); Lesotho (15%); Libya (30%); Liechtenstein (15%); Madagascar (15%); Malawi (15%); Malaysia (19%); Mauritius (15%); Moldova (25%); Mozambique (15%); Myanmar (40%); Namibia (15%); Nauru (15%); New Zealand (15%); Nicaragua (18%); Nigeria (15%); North Macedonia (15%); Pakistan (19%); Papua New Guinea (15%); Philippines (19%); Serbia (35%); South Africa (30%); Sri Lanka (20%); Switzerland (39%); Syria (41%); Taiwan (20%); Thailand (19%); Trinidad and Tobago (15%); Tunisia (25%); Turkey (15%); Uganda (15%); Vanuatu (15%); Venezuela (15%); Vietnam (20%); Zambia (15%); Zimbabwe (15%).
+- The rest of countries (those not listed in Annex I) are subject to a reciprocal tariff of 10%
+- These tariffs are in effect on August 7, 2025
+The ETR estimates are based on the most recent announcements by the US government:
+TR: Canada, China and Mexico have their own country-specific tariffs. As of July 10, the US administration made a series of tariff threats against a group of countries mentioned below, to be effective on August 1st. Goods imported from all other countries remain subject to a 10% reciprocal tariff. This excludes goods not covered by sector-specific tariffs (e.g., aluminum, steel, copper and auto parts), or exempted goods (e.g., semiconductors).
+TS:
+- Steel and aluminum products are subject to a 50% tariff, except for imports from the UK, where the tariff remains at 25%.
+- Auto parts and automobiles are subject to a 25% tariff.
+- Copper products are subject to a 50% tariff (effective August 1st), which is applied in this calculation by categorizing all products under Chapter 74: Copper and articles thereof of the Harmonized Tariff Schedule of the US as affected.
+Exemptions: A wide range of products have been explicitly exempted from the new tariffs and are assigned a tariff rate of 0% in the estimation.
+China: Imports from China are currently subject to:
+- 54% tariffs on US imports of low-valued transactions (De Minimis imports)
+- 10% tariffs on non- de minimis imports. Exemptions apply
+- Additional 20% tariffs (synthetic opium-related). Exemptions do not apply
+Canada:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted
+- Steel and aluminum products non-USMCA-compliant are subject to 50% tariff
+- Energy and potash products are subject to a 10% tariff
+- 
+                All other goods are subject to a 35% tariff (announced July 10, effective August 1st)
+                
+  - All products imported from these countries for consumption into the United States through duty free mechanisms (including through USCMA and other arrangements), were considered as exempted of any new added tariffs, in line with the treatment of products from these countries throughout 2025.
+Mexico:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted
+- Steel and aluminum products non-USMCA-compliant are subject to 50% tariff
+- Energy and potash products are subject to a 10% tariff
+- 
+                All other goods are subject to a 30% tariff (announced July 12, effective August 1st)
+                
+  - All products imported from these countries for consumption into the United States through duty free mechanisms (including through USCMA and other arrangements), were considered as exempted of any new added tariffs, in line with the treatment of products from these countries throughout 2025.
+Other group of countries threatened with new tariff actions by July 12th (effective August 1st)
+- As of July 12, the following countries have been assigned differential reciprocal tariff rates, scheduled for implementation on August 1st. The respective rates are listed below:
+- Algeria (30%); Bangladesh (35%); Bosnia and Herzegovina (30%); Brazil (50%); Brunei (25%); Cambodia (36%); European Union (30%) Indonesia (32%); Iraq (30%); Japan (25%); Kazakhstan (25%); Laos (40%); Libya (30%); Malaysia (25%); Moldova (25%); Myanmar (40%); Philippines (20%); Serbia (35%); South Africa (30%); South Korea (25%); Sri Lanka (30%); Thailand (36%); Tunisia (25%); Vietnam (20%)
+The ETR estimates are based on the most recent announcements by the US government as of June 4:
+TR: Excluding Canada, China, and Mexico, which have their own country-specific tariffs, goods imported from all countries are currently subject to a 10% reciprocal tariff. This excludes goods not covered by sector-specific tariffs (e.g., aluminum, steel, and auto parts), or exempted goods (e.g., copper or semiconductors)
+TS: Steel and aluminum products are subject to a 50% tariff, except for imports from the UK, where the tariff remains at 25%.
+Auto parts and automobiles are subject to a 25% tariff.
+Exemptions: A wide range of products have been explicitly exempted from the new tariffs and are assigned a tariff rate of 0% in the estimation.
+China: Imports from China are currently subject to:
+- 54% tariffs on US imports of low-valued transactions (de minimis imports)
+- 10% tariffs on non- de minimis imports. Exemptions apply.
+- Additional 20% tariffs (synthetic opium-related). Exemptions do not apply.
+Canada and Mexico:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted.
+- Steel and aluminum products non-USMCA-compliant are subject to 50% tariff.
+- Energy and potash products are subject to a 10% tariff.
+- 
+                All other goods are subject to a 25% tariff.
+                
+  - All products imported from these countries for consumption into the United States through duty free mechanisms (including through USCMA and other arrangements), were considered as exempted of any new added tariffs, in line with the treatment of products from these countries throughout 2025.
+The ETR estimates are based on tariff policies by the US government as of May 22:
+TR: Excluding Canada, China, and Mexico, which have their own country-specific tariffs, goods imported from all countries are currently subject to a 10% reciprocal tariff. This excludes goods not covered by sector-specific tariffs (e.g., aluminum, steel, and auto parts), or exempted goods (e.g., copper or semiconductors). On May 12, a 90-day pause with China was announced, implying a reduction of the additional duty on most Chinese products (reciprocal plus synthetic opium-related tariffs) from 125% to 30%.
+TS: Steel and aluminum products are subject to a 25% tariff.
+Auto parts and automobiles are subject to a 25% tariff.
+Exemptions: A wide range of products have been explicitly exempted from the new tariffs and are assigned a tariff rate of 0% in the estimation.
+China: Imports from China are currently subject to:
+- 54% tariffs on US imports of low-valued transactions (de minimis imports).
+- 10% tariffs on non-de minimis imports. Exemptions apply.
+- Additional 20% tariffs (synthetic opium-related). Exemptions do not apply.
+Canada and Mexico:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted.
+- Energy and potash products are subject to a 10% tariff.
+- 
+                All other goods are subject to a 25% tariff.
+                
+  - All products imported from these countries for consumption into the United States through duty free mechanisms (including through USCMA and other arrangements), were considered as exempted of any new added tariffs, in line with the treatment of products from these countries throughout 2025.
+The ETR estimates are based on tariff policies by the US government as of April 29:
+TR: Excluding Canada, China, and Mexico, which have their own country-specific tariffs, goods imported from all countries are currently subject to a 10% reciprocal tariff. This excludes goods not covered by sector-specific tariffs (e.g., aluminum, steel, and auto parts), or exempted goods (e.g., copper or semiconductors)
+TS: Steel and aluminum products are subject to a 25% tariff. Auto parts and automobiles are subject to a 25% tariff.
+Exemptions: A wide range of products have been explicitly exempted from the new tariffs and are assigned a tariff rate of 0% in the estimation.
+China: Imports from China are currently subject to:
+- 125% tariffs. Exemptions apply
+- Additional 20% tariffs (synthetic opium-related). Exemptions do not apply
+Canada and Mexico:
+- United States-Mexico-Canada Agreement (USMCA)-compliant goods are excepted
+- Energy and potash products are subject to a 10% tariff
+- 
+                All other goods are subject to a 25% tariff
+                
+  - All products imported from these countries for consumption into the United States through duty free mechanisms (including through USCMA and other arrangements), were considered as exempted of any new added tariffs, in line with the treatment of products from these countries throughout 2025.
+Sources
+The ETR estimations are based on publicly available trade data, official US government policy announcements and social media announcements by the President in 2025. The primary sources used include:
+Trade Data
+Historical import data (“imports for consumption”) for 2024, broken down by country and product code, were sourced from the US Census Bureau’s USA Trade Online database. The data reflect the customs value of US imports intended for domestic consumption (excluding imports that remain in bonded warehouses), listed by the Census Bureau as “Customs Value (Cons) ($US)”. Imports are classified according to the Harmonized Tariff Schedule of the United States (HTSUS), and we use the 10-digit level of the HTSUS to capture the highest level of detail in our calculations.
+The value of imports of low-value transactions (de minimis imports) are taken from the HTSUS code 9999950000: Estimated Imports of Low Valued Transactions
+Incorporated Tariff Policy Announcements:
+- 
+        Reciprocal Tariffs (vary by country)
+        
+  - 
+                Tariffs on China
+                
+    - Fentanyl Tariffs-- Presidential Action (10% on all goods imported from China), February 01, 2025
+    - Additional Fentanyl Tariffs—Presidential Action (additional 10% on all good imported from China), March 03, 2025
+    - Increase in tariffs on goods imported from China from 34% to 84%, Presidential Action, April 8, 2025
+    - Tariff increase on goods imported from China to 125%. Presidential Action, April 9, 2025. Replaced by Presidential Action of May 12, 2025
+    - 
+                        Tariffs on China modified by Presidential Action on May 12, 2025:
+                        
+      - Imports subject to 125% tariffs are subject to 10% (change valid for 90 days)
+      - Low-valued imports (de minimis imports) are subject to 54%(indefinitely)
+    - 
+                        US-China November Trade Deal, Fact Sheet, November 1, 2025
+                        
+      - US lowers tariffs on Chinese imports related to fentanyl by 10 percentage points, effective November 10, 2025.
+      - US maintains current 10% reciprocal tariffs during suspension period until November 10, 2026.
+    - Fentanyl-related tariffs were canceled on February 20, 2026 through Executive Order
+  - 
+                Tariffs on Mexico and Canada
+                
+    - Fact Sheet, April 2, 2025
+    - Letter to Canada, July 10, 2025
+    - Letter to Mexico, July 12, 2025
+  - Tariffs on the United Kingdom
+  - 
+                Tariffs on Brazil
+                
+    - Executive Order, July 30, 2025
+    - Executive Order: Modifying the scope of tariffs on the government of Brazil, November 20, 2025
+    - Executive Order, February 20, 2026, canceling IIEPA tariffs
+  - Tariffs on the European Union
+  - Tariffs on Japan:
+  - Tariffs on South Korea
+  - Tariffs on Indonesia:
+  - Tariffs on Malaysia
+  - Tariffs on Cambodia
+  - 
+                Tariffs on India
+                
+    - Executive Order – July 31, 2025
+    - Executive Order, August 6, 2025, Canceled by Executive Order February 20, 2026
+  - Reciprocal Tariffs on Other Countries
+- 
+                Tariffs on China
+                
+- Tariff Exemptions
+- De minimis Tariffs
+- 
+        Aluminum Tariffs (25% first, then 50%)
+        
+  - Presidential Action – Feb. 11, 2025
+  - Official Product List – Mar. 5, 2025
+  - Presidential Action – June 4, 2025
+  - Expansion of List of Products - August 19, 2025
+  - Following the expansion, the Presidential Proclamation on Adjusting Imports of Medium- and Heavy-Duty Vehicles, Medium- and Heavy-Duty Vehicle Parts, and Buses into the United States from October 17, 2025 has reclassified products into other categories such as, medium- and Heavy-Duty Vehicles, Medium- and Heavy-Duty Vehicle Parts, and Buses (see below).
+- 
+        Steel Tariffs (25% first, then 50%)
+        
+  - Presidential Action – Feb. 11, 2025
+  - Official Product List – Mar. 5, 2025
+  - Presidential Action – June 4, 2025
+  - Expansion of List of Products - August 19, 2025
+  - Following the expansion, the Presidential Proclamation on Adjusting Imports of Medium- and Heavy-Duty Vehicles, Medium- and Heavy-Duty Vehicle Parts, and Buses into the United States from October 17, 2025 has reclassified products into other categories such as, medium- and Heavy-Duty Vehicles, Medium- and Heavy-Duty Vehicle Parts, and Buses (see below).
+- 
+        Medium- and heavy-duty vehicle tariffs
+        
+  - Proclamation: Adjusting Imports of Medium- and Heavy-Duty Vehicles, Medium- and Heavy-Duty Vehicle Parts, and Buses into the United States, October 17, 2025
+- Automobiles and Auto Parts Tariffs (25%)
+- Copper Tariffs (50% for semi-finished copper products)
+- 
+        Lumber and Timber Tariffs
+        
+  - Proclamation—September 29, 2025: Adjusting imports of timber, lumber, and their derivative products into the United States, September 29, 2025
+- 
+        Exports to the US as % of Total Exports
+        
+  - The tracker includes data on “Exports to the US as % of Total Exports in 2024”. The data is primarily sourced from the IMF’s International Trade in Goods (by partner country) (IMTS), based on figures reported by each country in its own trade submissions.

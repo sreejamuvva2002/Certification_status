@@ -1,0 +1,78 @@
+{
+  "query_id": "q_298",
+  "query": "Kia Georgia imported auto parts tariff exposure",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_22db82fb02b873f711749b9f",
+    "claim_3a3a2a76ebe2a0c7ae3d23a0",
+    "claim_3d72bb3f09894ba8583d30df",
+    "claim_42b0cc400d3076046cc32cf5",
+    "claim_9fd4dbf380f168f762fdd8a6",
+    "claim_c70e2134c171b53d9b2b5242"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_22db82fb02b873f711749b9f",
+      "text": "KIA HAS ANOTHER PLANT IN SLOVAKIA, AND HERE IN THE U.S. AT A MANUFACTURING PLANT IN WEST POINT IN GEORGIA, WHERE THE CARS ARE ASSEMBLED WOULD OF COURSE BE EXEMPT FROM TARIFFS.",
+      "url": "https://www.youtube.com/watch?v=wWzZYMAbgJw",
+      "chunk_id": "chunk_c0fc3b71e9894c14bd7de6bf"
+    },
+    {
+      "claim_id": "claim_3a3a2a76ebe2a0c7ae3d23a0",
+      "text": "Kia says it has invested $1.6 billion in the 2,200-acre West Point plant and surrounding community.",
+      "url": "https://www.kuaf.com/2018-07-27/trumps-proposed-auto-tariffs-threaten-kia-plant-in-georgia",
+      "chunk_id": "chunk_9b2d5f3854aeaed3a2e2a6d2"
+    },
+    {
+      "claim_id": "claim_3d72bb3f09894ba8583d30df",
+      "text": "THE CARS IN THE U.S. ARE NOT ARE. NOT TARIFF. THE ENGINES ARE BUILT HERE. THE CARS ARE ASSEMBLED HERE.",
+      "url": "https://www.youtube.com/watch?v=wWzZYMAbgJw",
+      "chunk_id": "chunk_c0fc3b71e9894c14bd7de6bf"
+    },
+    {
+      "claim_id": "claim_42b0cc400d3076046cc32cf5",
+      "text": "Those tariffs would hit Asian companies like South Korea-based Kia especially hard, and put jobs at risk in communities like West Point.",
+      "url": "https://www.kuaf.com/2018-07-27/trumps-proposed-auto-tariffs-threaten-kia-plant-in-georgia",
+      "chunk_id": "chunk_9b2d5f3854aeaed3a2e2a6d2"
+    },
+    {
+      "claim_id": "claim_9fd4dbf380f168f762fdd8a6",
+      "text": "PRESIDENT TRUMP'S 25% AUTO TARIFFS AND THE JAPANESE CAR MAKER IS IT'LL MOVE PRODUCTION OF FIVE DOOR CIVIC HYBRID FROM JAPAN TO INDIANA.",
+      "url": "https://www.youtube.com/watch?v=wWzZYMAbgJw",
+      "chunk_id": "chunk_c0fc3b71e9894c14bd7de6bf"
+    },
+    {
+      "claim_id": "claim_c70e2134c171b53d9b2b5242",
+      "text": "While import duties on South Korean-built vehicles fell from 25% to 15% as part of a November 2025 trade deal, there's no doubt that tariffs expose companies like Hyundai and Kia to major cost disadvantages.",
+      "url": "https://www.military.com/how-kia-quietly-built-the-most-tariff-proof-car-factory-in-america",
+      "chunk_id": "chunk_263eb34a2bfb8f4ca6a5507f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_22db82fb02b873f711749b9f",
+      "claim_42b0cc400d3076046cc32cf5"
+    ],
+    [
+      "claim_3d72bb3f09894ba8583d30df",
+      "claim_42b0cc400d3076046cc32cf5"
+    ],
+    [
+      "claim_9fd4dbf380f168f762fdd8a6",
+      "claim_c70e2134c171b53d9b2b5242"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 13,
+  "synthesis_input_claim_count": 13
+}

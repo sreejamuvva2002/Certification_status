@@ -1,0 +1,156 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "cause_explanation": "The retrieved evidence discusses general tariff policies and supply chain strategies but lacks explicit linkage between a named company's Georgia EV facility and specific tariff avoidance mechanisms or exposure.",
+  "confidence": "high",
+  "remaining_gap": "No source confirms current applicability of tariffs to the specific Georgia EV supply chain context requested.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_7f5d72504a3e51290943d7ac",
+      "supporting_excerpt": "In addition, the administration may impose tariffs on foreign trade zone entries of automobiles and parts unless they meet strict domestic status requirements, closing another potential loophole for tariff avoidance.",
+      "relevance_explanation": "Shows general auto tariff policy without Georgia company specificity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_a10fb0bb6c98f18468e8c850",
+      "supporting_excerpt": "Consider domestic manufacturing to reduce tariff risk and boost CHIPS Act eligibility",
+      "relevance_explanation": "General strategy advice, not specific Georgia EV supply chain evidence.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_b7553157d429e033748b70e6",
+      "supporting_excerpt": "Manufacturers and EMS providers are employing a variety of strategies to soften the impact of tariffs and optimize their operations.",
+      "relevance_explanation": "General OEM strategy, no Georgia EV company link.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_fb89e0fe5c8b0afccdeb86c2",
+      "supporting_excerpt": "While the range across estimates is wide, the direction is the same: the Great Transshipment Scam is far larger than conservative shipment-level measures alone would suggest.",
+      "relevance_explanation": "Discusses transshipment generally, not Georgia EV specific avoidance.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_13",
+  "query": "Georgia EV supply chain domestic sourcing tariff avoidance",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 14,
+    "all_extracted_claims": 14,
+    "claims_presented_to_original_synthesis": 14,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 4,
+    "company_named_claims": 6,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_b7553157d429e033748b70e6",
+    "passage_460182e3e1bf1a7b7d91acb6",
+    "passage_7f5d72504a3e51290943d7ac",
+    "passage_fb89e0fe5c8b0afccdeb86c2",
+    "passage_f777164ed64cbb1822cfda39",
+    "passage_7ac29ccc93ed31566b679a4c",
+    "passage_a10fb0bb6c98f18468e8c850",
+    "passage_8bf3b82a00a8f1ed9feb5a08"
+  ],
+  "candidate_document_ids": [
+    "document_2294c1c083216b35007658e2",
+    "document_255e5df411464974f9bd069b",
+    "document_2ed898a0b44943f3580f8f62",
+    "document_49bc2dcf6e5a033d371bfd60",
+    "document_deed7bcba7c578fe6ec11be4",
+    "document_e25e5185a5ef17776467b1d1",
+    "document_e2b13035fa0102975f68109b"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_7f5d72504a3e51290943d7ac",
+      "supporting_excerpt": "In addition, the administration may impose tariffs on foreign trade zone entries of automobiles and parts unless they meet strict domestic status requirements, closing another potential loophole for tariff avoidance.",
+      "relevance_explanation": "Shows general auto tariff policy without Georgia company specificity.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_7b0fd9b6bd6733dad12d819c",
+      "query_id": "q_13",
+      "chunk_id": "chunk_648d3ba6b4d5472bbfcc8a3b",
+      "document_id": "document_2294c1c083216b35007658e2",
+      "source_url": "https://www.ghy.com/trade-compliance/us-to-apply-a-25-tariff-on-imports-of-autos-and-parts",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/9a45951c87478bb0c5924863f8a4cd16779e743b7142d4425e25420095a0cc69.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_b7553157d429e033748b70e6",
+      "supporting_excerpt": "Manufacturers and EMS providers are employing a variety of strategies to soften the impact of tariffs and optimize their operations.",
+      "relevance_explanation": "General OEM strategy, no Georgia EV company link.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_85dff0e592a7f2c21aa76884",
+      "query_id": "q_13",
+      "chunk_id": "chunk_ad58826859992d0e70850a3a",
+      "document_id": "document_2ed898a0b44943f3580f8f62",
+      "source_url": "https://www.teamsmt.com/blog/2025-tariffs-reshoring-ems-industry",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2566eb7981016a97449487c9ac123d2f7633ef0d6a5c0a702054f0d1552c677f.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_fb89e0fe5c8b0afccdeb86c2",
+      "supporting_excerpt": "While the range across estimates is wide, the direction is the same: the Great Transshipment Scam is far larger than conservative shipment-level measures alone would suggest.",
+      "relevance_explanation": "Discusses transshipment generally, not Georgia EV specific avoidance.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_e140b5b53e24335a809cb86e",
+      "query_id": "q_13",
+      "chunk_id": "chunk_9f74705968b80f708ac6382b",
+      "document_id": "document_e25e5185a5ef17776467b1d1",
+      "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/08/The-Great-Transshipment-Scam.pdf",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2595a094085b56e1998f37cc92dbc3170e4de2147abf1e3ef86f52ca7227675e.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_a10fb0bb6c98f18468e8c850",
+        "supporting_excerpt": "Consider domestic manufacturing to reduce tariff risk and boost CHIPS Act eligibility",
+        "relevance_explanation": "General strategy advice, not specific Georgia EV supply chain evidence.",
+        "company_applicability": "not_established",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

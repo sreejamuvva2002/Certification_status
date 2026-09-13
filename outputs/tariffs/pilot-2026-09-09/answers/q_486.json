@@ -1,0 +1,92 @@
+{
+  "query_id": "q_486",
+  "query": "site:usitc.gov automotive components tariff classification",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_020e2353c3140c52acd2f0d9",
+    "claim_24be38f9496aa9b11f79049b",
+    "claim_3929573b6b08d78016963bdd",
+    "claim_42e053f183b704e09769672d",
+    "claim_651a20565e9f0dbfbaf640da",
+    "claim_8050d371d345da457f34d3ca",
+    "claim_be4fde196a6c4289b97c13c8",
+    "claim_d6d55974fe53878b58e6483c"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_020e2353c3140c52acd2f0d9",
+      "text": "this report identifies components and processes related to the production of electric vehicles, such as e-axles and new battery chemistries, that create more tariff classification or tariff treatment divergences.",
+      "url": "https://www.usitc.gov/press_room/news_release/2025/er0701_67239.htm",
+      "chunk_id": "chunk_e757fb10b36e1deb85f5a652"
+    },
+    {
+      "claim_id": "claim_24be38f9496aa9b11f79049b",
+      "text": "Technological changes covered in the Commission’s 2023 report that continue to create divergences include new production processes related to aluminum vehicle bodies and increased production of electric pickup trucks.",
+      "url": "https://www.usitc.gov/press_room/news_release/2025/er0701_67239.htm",
+      "chunk_id": "chunk_e757fb10b36e1deb85f5a652"
+    },
+    {
+      "claim_id": "claim_3929573b6b08d78016963bdd",
+      "text": "Automobiles, automobile chassis, automobile bodies, cutaway portions of any of the foregoing and parts for any of the foregoing, finished, unfinished or cutaway, when intended solely for show purposes",
+      "url": "https://hts.usitc.gov/search?query=automobile",
+      "chunk_id": "chunk_30ac58f99dea6234500b32f1"
+    },
+    {
+      "claim_id": "claim_42e053f183b704e09769672d",
+      "text": "The complaint alleges violations of section 337 of the Tariff Act of 1930 in the importation into the United States and sale of certain semiconductors and devices and products containing the same, including printed circuit boards, automotive parts, and automobiles that infringe patents asserted by the complainant.",
+      "url": "https://www.usitc.gov/keywords/automobiles",
+      "chunk_id": "chunk_8a8a31967575d61fa8b2ce54"
+    },
+    {
+      "claim_id": "claim_651a20565e9f0dbfbaf640da",
+      "text": "The investigation is based on a complaint filed by Daedalus Prime LLC of Bronxville, NY on August 23, 2022 and supplemented on September 12, 2022.",
+      "url": "https://www.usitc.gov/keywords/automobiles",
+      "chunk_id": "chunk_8a8a31967575d61fa8b2ce54"
+    },
+    {
+      "claim_id": "claim_8050d371d345da457f34d3ca",
+      "text": "In addition to these technologies, this report identifies components and processes related to the production of electric vehicles, such as e-axles and new battery chemistries, that create more tariff classification or tariff treatment divergences.",
+      "url": "https://www.usitc.gov/keywords/automobiles",
+      "chunk_id": "chunk_8a8a31967575d61fa8b2ce54"
+    },
+    {
+      "claim_id": "claim_be4fde196a6c4289b97c13c8",
+      "text": "Technological changes covered in the Commission’s 2023 report that continue to create divergences include new production processes related to aluminum vehicle bodies and increased production of electric pickup trucks.",
+      "url": "https://www.usitc.gov/keywords/automobiles",
+      "chunk_id": "chunk_8a8a31967575d61fa8b2ce54"
+    },
+    {
+      "claim_id": "claim_d6d55974fe53878b58e6483c",
+      "text": "The investigation is based on a complaint filed by Daedalus Prime LLC of Bronxville, NY on August 23, 2022 and supplemented on September 12, 2022.",
+      "url": "https://www.usitc.gov/keywords/automobiles",
+      "chunk_id": "chunk_8a8a31967575d61fa8b2ce54"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_020e2353c3140c52acd2f0d9",
+      "claim_8050d371d345da457f34d3ca"
+    ],
+    [
+      "claim_24be38f9496aa9b11f79049b",
+      "claim_be4fde196a6c4289b97c13c8"
+    ],
+    [
+      "claim_651a20565e9f0dbfbaf640da",
+      "claim_d6d55974fe53878b58e6483c"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 8,
+  "synthesis_input_claim_count": 8
+}

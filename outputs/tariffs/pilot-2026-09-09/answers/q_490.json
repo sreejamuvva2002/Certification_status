@@ -1,0 +1,40 @@
+{
+  "query_id": "q_490",
+  "query": "site:commerce.gov critical minerals Section 232",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_00aa4a18eb449df42503f441",
+    "claim_b4fda96f7b0c71e72ec5b024"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_00aa4a18eb449df42503f441",
+      "text": "E&C is conducting technical reviews of the requests for product-specific exclusions from the Section 232 tariffs on imported steel and aluminum, for which U.S. producers submit objections.",
+      "url": "http://www.commerce.gov/sites/default/files/2022-03/FY2023-ITA-Congressional-Budget-Submission.pdf",
+      "chunk_id": "chunk_18c16f5dace9845a121078f4"
+    },
+    {
+      "claim_id": "claim_b4fda96f7b0c71e72ec5b024",
+      "text": "Section 232: Aluminum Section 232: Steel Weather and satellites ・ 31 of the 35 minerals designated as critical ・ mineral criticality issues;",
+      "url": "https://www.commerce.gov/data-and-reports/reports/2019/06/federal-strategy-ensure-secure-and-reliable-supplies-critical-minerals",
+      "chunk_id": "chunk_f6053a0bb1c6fb1bbedf32da"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_00aa4a18eb449df42503f441",
+      "claim_b4fda96f7b0c71e72ec5b024"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 6,
+  "synthesis_input_claim_count": 6
+}

@@ -1,0 +1,47 @@
+{
+  "query_id": "q_71",
+  "query": "Electric vehicle knockdown kits United States tariff classification",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0f7ff76728bf26231de08c7d",
+    "claim_557ee40e5cd3c02ebe650f5b",
+    "claim_ec058bd08205616138bb5d26"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0f7ff76728bf26231de08c7d",
+      "text": "9903.94.06: Applies to all entries of articles classifiable under HTSUS provisions listed in subdivision (g) that are eligible for special tariff treatment under the United States-Mexico-Canada Agreement (USMCA), other than automobile knock-down kits or parts compilations; or that are not passenger vehicles (sedans, sport utility vehicles, crossover utility vehicles, minivans, and cargo vans) and light trucks. 0 percent additional ad valorem rate of duty",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/3de7ef9",
+      "chunk_id": "chunk_c65758ee04c2ceeb23366172"
+    },
+    {
+      "claim_id": "claim_557ee40e5cd3c02ebe650f5b",
+      "text": "Knock-down kits or other equivalent parts compilations will remain subject to the 25 percent tariff even if they meet USMCA requirements.",
+      "url": "https://www.asashop.org/2025/10/22/new-tariffs-announced-on-medium-and-heavy-duty-vehicles-buses-and-parts",
+      "chunk_id": "chunk_3ecf337030177a045fedc129"
+    },
+    {
+      "claim_id": "claim_ec058bd08205616138bb5d26",
+      "text": "Articles that are eligible for special tariff treatment under the United States-Mexico-Canada Agreement (USMCA), other than automobile knock-down kits or",
+      "url": "https://rulings.cbp.gov/ruling/N348886",
+      "chunk_id": "chunk_e7d2771398bce503fe16e896"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_0f7ff76728bf26231de08c7d",
+      "claim_557ee40e5cd3c02ebe650f5b"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

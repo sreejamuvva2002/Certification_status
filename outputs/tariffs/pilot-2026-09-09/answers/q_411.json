@@ -1,0 +1,53 @@
+{
+  "query_id": "q_411",
+  "query": "Mixed hydroxide precipitate United States tariff classification",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_628fd44e85cae9d7105322bd",
+    "claim_ce2f82e0af213895c3c89979",
+    "claim_68d5cfb04eeea7d3f6d74ef7",
+    "claim_dc5e20c617849c64e31f5fd9"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_628fd44e85cae9d7105322bd",
+      "text": "The merchandise in question is characterized as a mixed hydroxide precipitate. Based on the documentation provided with this submission, it appears to be primarily a combination of nickel dihydroxide, and cobaltic hydroxide, with small amounts of manganese, magnesium, aluminum, and trace amounts of other elements as well.",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+N353878&highlight=3824.99.39%2A",
+      "chunk_id": "chunk_fe5fc2e92c378d688670042c"
+    },
+    {
+      "claim_id": "claim_ce2f82e0af213895c3c89979",
+      "text": "The applicable subheading for the mixed hydroxide precipitate will be 3824.99.3990, HTSUS) which provides for Prepared binders for foundry molds or cores; chemical products and preparations of the chemical or allied industries (including those consisting of mixtures of natural products), not elsewhere specified or included:.Other: Other: Other: Mixtures of two or more inorganic compounds: Other: Other. The general rate of duty will be Free",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+N353878&highlight=3824.99.39%2A",
+      "chunk_id": "chunk_fe5fc2e92c378d688670042c"
+    },
+    {
+      "claim_id": "claim_68d5cfb04eeea7d3f6d74ef7",
+      "text": "At this time, products of Indonesia will be subject to an additional ad valorem rate of duty of 19 percent. At the time of entry, you must report the Chapter 99 heading applicable to your product classification, 9903.02.27, in addition to subheading 3824.99.3990, HTSUS, listed above.",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+N353878&highlight=3824.99.39%2A",
+      "chunk_id": "chunk_fe5fc2e92c378d688670042c"
+    },
+    {
+      "claim_id": "claim_dc5e20c617849c64e31f5fd9",
+      "text": "At this time, products of Turkey will be subject to an additional ad valorem rate of duty of 15 percent. At the time of entry, you must report the Chapter 99 heading applicable to your product classification, 9903.02.64, in addition to subheading 3824.99.3990, HTSUS, listed above.",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+N353878&highlight=3824.99.39%2A",
+      "chunk_id": "chunk_fe5fc2e92c378d688670042c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_68d5cfb04eeea7d3f6d74ef7",
+      "claim_dc5e20c617849c64e31f5fd9"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

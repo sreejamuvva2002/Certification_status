@@ -1,0 +1,73 @@
+{
+  "query_id": "q_company_8df8745aa77e1b6d38397a4e_discovery",
+  "query": "\"SKF USA Inc.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0429d137d1fb1fb9163293f3",
+    "claim_3bfd3f77aafacdec1557f876",
+    "claim_a757c685ff8e90fa05002c12",
+    "claim_b97fbeb6af2a2f925c40de3e",
+    "claim_4a16ea1e92f621812173bc66",
+    "claim_f94a734e8dd05c3af44cf802"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0429d137d1fb1fb9163293f3",
+      "text": "President Trump announced today that the United States will impose a 25% tariff on imported medium- and heavy-duty trucks, effective November 1, 2025.",
+      "url": "https://www.linkedin.com/posts/chlo%C3%A9-meley-95186a152_skf-works-to-reroute-trade-flows-and-plans-activity-7321483294481551360-Qu9j",
+      "chunk_id": "chunk_b58112142d2e6221f8d066df"
+    },
+    {
+      "claim_id": "claim_3bfd3f77aafacdec1557f876",
+      "text": "The recent tariff escalation on October 10, 2025 (especially the proposed 100% tariffs on Chinese goods, export controls on rare earths, etc.) affected several industries across the world.",
+      "url": "https://www.linkedin.com/posts/chlo%C3%A9-meley-95186a152_skf-works-to-reroute-trade-flows-and-plans-activity-7321483294481551360-Qu9j",
+      "chunk_id": "chunk_b58112142d2e6221f8d066df"
+    },
+    {
+      "claim_id": "claim_a757c685ff8e90fa05002c12",
+      "text": "The EU has increased its import quota from 47% to 50%, allowing slightly more non-EU steel into the market. Yet, tariff protections still apply once the quota cap is reached, meaning importers from India and the US continue to face tariff rates of around 25% beyond those limits.",
+      "url": "https://www.linkedin.com/posts/chlo%C3%A9-meley-95186a152_skf-works-to-reroute-trade-flows-and-plans-activity-7321483294481551360-Qu9j",
+      "chunk_id": "chunk_b58112142d2e6221f8d066df"
+    },
+    {
+      "claim_id": "claim_b97fbeb6af2a2f925c40de3e",
+      "text": "The European Commission has announced plans to cut steel import quotas by nearly 50% and introduce tariffs of up to 50% on volumes exceeding the new limit.",
+      "url": "https://www.linkedin.com/posts/chlo%C3%A9-meley-95186a152_skf-works-to-reroute-trade-flows-and-plans-activity-7321483294481551360-Qu9j",
+      "chunk_id": "chunk_b58112142d2e6221f8d066df"
+    },
+    {
+      "claim_id": "claim_4a16ea1e92f621812173bc66",
+      "text": "Rickard Gustafson, SKF CEO, told investor analysts in mid-July that SKF is compensating for tariffs with price increases that should keep the financial impact of tariffs neutral to the company's financial standing.",
+      "url": "https://www.post-journal.com/news/top-stories/2025/08/tariffs-costing-local-companies-resources-time",
+      "chunk_id": "chunk_c8d99d9a0f6622cfad4b061c"
+    },
+    {
+      "claim_id": "claim_f94a734e8dd05c3af44cf802",
+      "text": "SKF officials say their customers will see price increases that reflect the increased costs of tariffs on the goods SKF manufactures and sells around the globe.",
+      "url": "https://www.post-journal.com/news/top-stories/2025/08/tariffs-costing-local-companies-resources-time",
+      "chunk_id": "chunk_c8d99d9a0f6622cfad4b061c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_0429d137d1fb1fb9163293f3",
+      "claim_3bfd3f77aafacdec1557f876"
+    ],
+    [
+      "claim_a757c685ff8e90fa05002c12",
+      "claim_b97fbeb6af2a2f925c40de3e"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

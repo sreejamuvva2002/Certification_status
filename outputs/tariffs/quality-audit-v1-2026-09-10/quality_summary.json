@@ -1,0 +1,150 @@
+{
+  "version": "quality-v1-2026-09-10",
+  "base_queries": 510,
+  "base_claims": 10217,
+  "insufficient_queries": 125,
+  "primary_causes": {
+    "weak_geographic_or_company_relevance": 58,
+    "conflicting_or_outdated_evidence": 52,
+    "missing_sources": 4,
+    "inaccessible_documents": 11
+  },
+  "primary_or_contributing_causes": {
+    "weak_geographic_or_company_relevance": 64,
+    "conflicting_or_outdated_evidence": 84,
+    "inaccessible_documents": 64,
+    "missing_sources": 4,
+    "extraction_problems": 4
+  },
+  "local_review_failures": 0,
+  "missing_query_reviews": 0,
+  "missing_conflict_pairs": 0,
+  "recovery_quotes": 356,
+  "queries_with_recovery_quotes": 112,
+  "recovery_quotes_already_extracted": 11,
+  "rejected_recovery_quotes": 140,
+  "insufficiencies_fully_resolved": 0,
+  "manual_claim_sample": 30,
+  "manual_conflict_pairs": 8,
+  "claims_with_manual_field_corrections": 26,
+  "claims_with_manual_review": 46,
+  "manual_patch_records": 36,
+  "claims_with_cleared_unsupported_fields": 24,
+  "conflict_pairs": 753,
+  "conflict_classifications": {
+    "complementary_or_no_conflict": 420,
+    "different_products_origins_or_programs": 139,
+    "apparent_same_scope_conflict": 55,
+    "different_dates_or_policy_stages": 137,
+    "insufficient_scope": 2
+  },
+  "model_label_reason_flags": 0,
+  "screening_flagged_claims": 173,
+  "screening_flag_counts": {
+    "company_field_non_company_candidate": 128,
+    "effective_date_may_be_publication_update": 9,
+    "county_in_city_field": 22,
+    "effective_date_relative_without_anchor": 12,
+    "hts_jurisdiction_unverified": 2
+  },
+  "targeted_drafts_not_executed": 125,
+  "tavily_calls": 0,
+  "coverage": [
+    {
+      "dimension": "sector",
+      "group": "automotive_and_trade",
+      "queries": 230,
+      "with_selected_evidence": 219,
+      "with_full_text_citation": 198,
+      "with_trade_authority_citation": 83,
+      "with_topic_location_term": 166,
+      "with_named_company_field": 121,
+      "insufficient": 56,
+      "with_recovery_quotes": 52
+    },
+    {
+      "dimension": "sector",
+      "group": "metals",
+      "queries": 79,
+      "with_selected_evidence": 77,
+      "with_full_text_citation": 76,
+      "with_trade_authority_citation": 35,
+      "with_topic_location_term": 65,
+      "with_named_company_field": 30,
+      "insufficient": 14,
+      "with_recovery_quotes": 11
+    },
+    {
+      "dimension": "sector",
+      "group": "batteries_and_minerals",
+      "queries": 136,
+      "with_selected_evidence": 125,
+      "with_full_text_citation": 106,
+      "with_trade_authority_citation": 39,
+      "with_topic_location_term": 113,
+      "with_named_company_field": 55,
+      "insufficient": 37,
+      "with_recovery_quotes": 35
+    },
+    {
+      "dimension": "sector",
+      "group": "pcbs_and_electronics",
+      "queries": 50,
+      "with_selected_evidence": 47,
+      "with_full_text_citation": 41,
+      "with_trade_authority_citation": 16,
+      "with_topic_location_term": 32,
+      "with_named_company_field": 21,
+      "insufficient": 14,
+      "with_recovery_quotes": 12
+    },
+    {
+      "dimension": "sector",
+      "group": "displays",
+      "queries": 37,
+      "with_selected_evidence": 34,
+      "with_full_text_citation": 27,
+      "with_trade_authority_citation": 13,
+      "with_topic_location_term": 23,
+      "with_named_company_field": 14,
+      "insufficient": 14,
+      "with_recovery_quotes": 12
+    },
+    {
+      "dimension": "geography",
+      "group": "national_international_context",
+      "queries": 362,
+      "with_selected_evidence": 347,
+      "with_full_text_citation": 313,
+      "with_trade_authority_citation": 171,
+      "with_topic_location_term": "not_applicable",
+      "with_named_company_field": 116,
+      "insufficient": 68,
+      "with_recovery_quotes": 59
+    },
+    {
+      "dimension": "geography",
+      "group": "southeast_georgia",
+      "queries": 64,
+      "with_selected_evidence": 57,
+      "with_full_text_citation": 50,
+      "with_trade_authority_citation": 6,
+      "with_topic_location_term": 32,
+      "with_named_company_field": 51,
+      "insufficient": 27,
+      "with_recovery_quotes": 24
+    },
+    {
+      "dimension": "geography",
+      "group": "statewide_georgia",
+      "queries": 84,
+      "with_selected_evidence": 77,
+      "with_full_text_citation": 67,
+      "with_trade_authority_citation": 3,
+      "with_topic_location_term": 46,
+      "with_named_company_field": 65,
+      "insufficient": 30,
+      "with_recovery_quotes": 29
+    }
+  ]
+}

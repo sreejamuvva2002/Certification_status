@@ -1,0 +1,92 @@
+[
+  {
+    "claim_id": "claim_56645736c71e8be73fa2e20b",
+    "sample_id": "additional_conflict_review",
+    "clear_fields": [
+      "hts_code"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "manual_conflict_review_field_error"
+    ],
+    "audit_verdict": "field_misclassification",
+    "reason": "The cached heading explicitly identifies Schedule B export codes, not an import HTS classification.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_0d2878f8ec3c6660b1cb52ff",
+    "sample_id": "additional_conflict_review",
+    "clear_fields": [
+      "effective_date"
+    ],
+    "set_fields": {
+      "expiration_date": {
+        "value": "Dec. 31, 2027",
+        "excerpt": "through Dec. 31, 2027"
+      }
+    },
+    "audit_flags": [
+      "manual_conflict_review_field_error"
+    ],
+    "audit_verdict": "field_misclassification",
+    "reason": "The date is the end of a reported relief period.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_6edeba07cb0873e118bb5b78",
+    "sample_id": "additional_conflict_review",
+    "clear_fields": [
+      "company"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "manual_conflict_review_field_error"
+    ],
+    "audit_verdict": "field_misclassification",
+    "reason": "The named individual is the ruling signatory, not the importer/company.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_d1fd8b73c4da9a6e55cf051d",
+    "sample_id": "additional_conflict_review",
+    "clear_fields": [
+      "company",
+      "duty_rate"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "manual_conflict_review_field_error"
+    ],
+    "audit_verdict": "field_misclassification",
+    "reason": "CBP is the deciding agency. The free general rate in this ruling\u2019s holding refers to the subject LCD module, not the heads-up-display comparator.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_a79d12636c8b91a8d8f5b549",
+    "sample_id": "additional_conflict_review",
+    "clear_fields": [
+      "origin_rules"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "manual_conflict_review_field_error"
+    ],
+    "audit_verdict": "field_misclassification",
+    "reason": "National-security rationale is not a legal origin test.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_a117a3e855f756d50fa2203c",
+    "sample_id": "additional_conflict_review",
+    "clear_fields": [
+      "hts_code"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "schedule_b_export_code_not_import_hts"
+    ],
+    "audit_verdict": "field_misclassification",
+    "reason": "The second code listing also occurs after the Schedule B Codes for Exports heading in the full cached Trade.gov document; it does not support an import HTS field.",
+    "current_applicability_verified": false
+  }
+]

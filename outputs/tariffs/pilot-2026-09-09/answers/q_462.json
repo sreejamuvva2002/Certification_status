@@ -1,0 +1,66 @@
+{
+  "query_id": "q_462",
+  "query": "Port of Savannah steel aluminum imports tariff impact",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1b7b3a82e37059091e7a528e",
+    "claim_3dbcb8ec34fc2460f9d304a4",
+    "claim_9507b2ed667bed6966dbb4dd",
+    "claim_fea885ff3d312f68ef00ca9f",
+    "claim_4f98815ec2ce197ebbd2fd7f"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1b7b3a82e37059091e7a528e",
+      "text": "Right now, the tariffs on steel and aluminum imports into the US have doubled to 50% for all countries except the UK. The tariffs, which took effect on June 4, include derivative products that contain a proportion of those metals.",
+      "url": "https://www.bcg.com/publications/2025/june-2025-update-impact-us-tariffs-50-percent-on-steel-aluminum",
+      "chunk_id": "chunk_05daab6ec961eeb1d685d6a0"
+    },
+    {
+      "claim_id": "claim_3dbcb8ec34fc2460f9d304a4",
+      "text": "BCG estimates that the new tariffs will add $50 billion in tariff costs, doubling the estimated impact of the 25% tariffs introduced in March.",
+      "url": "https://www.bcg.com/publications/2025/june-2025-update-impact-us-tariffs-50-percent-on-steel-aluminum",
+      "chunk_id": "chunk_05daab6ec961eeb1d685d6a0"
+    },
+    {
+      "claim_id": "claim_9507b2ed667bed6966dbb4dd",
+      "text": "Yesterday, President Donald J. Trump signed proclamations to close existing loopholes and exemptions to restore a true 25% tariff on steel and elevate the tariff to 25% on aluminum.",
+      "url": "https://www.whitehouse.gov/fact-sheets/2025/02/fact-sheet-president-donald-j-trump-restores-section-232-tariffs",
+      "chunk_id": "chunk_ff4d340358d1978cd0d2adc4"
+    },
+    {
+      "claim_id": "claim_fea885ff3d312f68ef00ca9f",
+      "text": "In March 2018, President Trump invoked authority under Section 232 of the Trade Expansion Act of 1962 (19 U.S.C. § 1862) to impose 25% tariffs on steel imports and 10% tariffs on aluminum.",
+      "url": "https://www.whitehouse.gov/fact-sheets/2025/02/fact-sheet-president-donald-j-trump-restores-section-232-tariffs",
+      "chunk_id": "chunk_ff4d340358d1978cd0d2adc4"
+    },
+    {
+      "claim_id": "claim_4f98815ec2ce197ebbd2fd7f",
+      "text": "In March 2018, President Trump imposed 25 percent tariffs on steel and 10 percent on aluminum imports.",
+      "url": "https://trerc.tamu.edu/blog/steel-and-aluminum-tariffs-comparing-2018-to-2025",
+      "chunk_id": "chunk_ebdf1410c46a892bf71fd9f1"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_1b7b3a82e37059091e7a528e",
+      "claim_9507b2ed667bed6966dbb4dd"
+    ],
+    [
+      "claim_1b7b3a82e37059091e7a528e",
+      "claim_fea885ff3d312f68ef00ca9f"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

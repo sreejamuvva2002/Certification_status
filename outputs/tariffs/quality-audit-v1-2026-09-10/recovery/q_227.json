@@ -1,0 +1,141 @@
+{
+  "primary_cause": "inaccessible_documents",
+  "contributing_causes": [],
+  "cause_explanation": "The original query seeks a specific CBP binding ruling for EV components, but the available evidence consists only of general procedural descriptions of the eRulings program and generic classification examples (e.g., LCD modules from 2008 or auto parts). No cached full-text passage contains an actual binding ruling decision addressing EV component tariffs, nor does any source explicitly link a specific named company to a current EV tariff outcome. The metrics indicate one inaccessible source and that the retained sources are procedural or general guidance rather than specific rulings.",
+  "confidence": "high",
+  "remaining_gap": "No specific CBP binding ruling for EV components is present in the cached evidence; only general rules on how to request rulings and historical examples for unrelated products (LCDs, auto parts) exist. The gap remains a lack of explicit company-specific tariff classification data for EV components.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_74a8c5e6afa14eb6061a3299",
+      "supporting_excerpt": "The procedures under this rulings program apply to requests for binding classification rulings under the Harmonized Tariff Schedule (HTS) and certain marking, origin, NAFTA and applicability of Trade Program rulings. Under the newly enhanced eRulings program, the importing community may submit an electronic request for a binding ruling by accessing the new eRulings Template.",
+      "relevance_explanation": "This passage confirms the existence of the eRulings program but provides no specific tariff classification or ruling for EV components, only the mechanism for requesting one.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_2da053a3ab6eeffe60d76cf7",
+      "supporting_excerpt": "Get a binding ruling for high-volume parts. CBP offers binding rulings that lock in the classification for future shipments. For parts you import repeatedly, a binding ruling is cheap insurance against reclassification disputes.",
+      "relevance_explanation": "This text advises on the utility of binding rulings but does not contain an actual ruling or specific tariff data for EV components.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_21936816c98e129df617b9dc",
+      "supporting_excerpt": "CLA-2 OT:RR:CTF:TCM H049555 RM... RE: Tariff Classification of LCD Modules... This is in response to your letter, dated December 02, 2008, to the National Commodity Specialists Division... on behalf of Optrex America, Inc., on the tariff classification of certain liquid crystal display (LCD) modules...",
+      "relevance_explanation": "This is a historical ruling for LCD modules from 2008, not an EV component ruling, and does not establish current applicability for EV tariffs.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_69ca12f8cc8c46bbbf41e045",
+      "supporting_excerpt": "binding ruling is a written determination from CBP that locks in the correct HTS classification for a specific part on future entries... CBP typically issues one within 30 calendar days of a complete request. That timeline can stretch to 60 or 90 days if the part requires lab testing...",
+      "relevance_explanation": "This passage describes the general process and timeline for binding rulings but does not provide a specific ruling result for EV components.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_227",
+  "query": "CBP binding ruling request EV component tariff classification",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 9,
+    "all_extracted_claims": 11,
+    "claims_presented_to_original_synthesis": 11,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 1,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "inaccessible_documents"
+  ],
+  "candidate_passage_ids": [
+    "passage_74a8c5e6afa14eb6061a3299",
+    "passage_e13104da6a26b17d1fe59115",
+    "passage_ae54b70195efab2c1207695a",
+    "passage_04be3b37fb2a0e3f65fb7760",
+    "passage_2da053a3ab6eeffe60d76cf7",
+    "passage_69ca12f8cc8c46bbbf41e045",
+    "passage_afa546b26f5b4e34be598ee1",
+    "passage_21936816c98e129df617b9dc"
+  ],
+  "candidate_document_ids": [
+    "document_6080287f7a45bacc95fb830c",
+    "document_6354be1b41bfaa3e4b62462b",
+    "document_76722c4ec54fe87b40d7e21a",
+    "document_78ce02fc248dd4443842f53a",
+    "document_99f137edb804b4add8554e5b",
+    "document_a67c429dbbc07140b6bd3c65",
+    "document_efaaf65da5c6a0a40a8281df"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_74a8c5e6afa14eb6061a3299",
+      "supporting_excerpt": "The procedures under this rulings program apply to requests for binding classification rulings under the Harmonized Tariff Schedule (HTS) and certain marking, origin, NAFTA and applicability of Trade Program rulings. Under the newly enhanced eRulings program, the importing community may submit an electronic request for a binding ruling by accessing the new eRulings Template.",
+      "relevance_explanation": "This passage confirms the existence of the eRulings program but provides no specific tariff classification or ruling for EV components, only the mechanism for requesting one.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_42cf6db12fa90dc3645c7d85",
+      "query_id": "q_227",
+      "chunk_id": "chunk_d8a16b71c06dfe1b8b9ef82c",
+      "document_id": "document_99f137edb804b4add8554e5b",
+      "source_url": "https://www.cbp.gov/trade/rulings/eruling-requirements",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2c9ac20dc11b63e1fe52c56cef253ce4d93f3dd4b243db7ad585e82c3acf508c.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_2da053a3ab6eeffe60d76cf7",
+      "supporting_excerpt": "Get a binding ruling for high-volume parts. CBP offers binding rulings that lock in the classification for future shipments. For parts you import repeatedly, a binding ruling is cheap insurance against reclassification disputes.",
+      "relevance_explanation": "This text advises on the utility of binding rulings but does not contain an actual ruling or specific tariff data for EV components.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_2cc9f89996a7d4aa96ce52f7",
+      "query_id": "q_227",
+      "chunk_id": "chunk_26f8806bb0e28694d38120ab",
+      "document_id": "document_78ce02fc248dd4443842f53a",
+      "source_url": "https://tglobeconsultants.com/importing-auto-parts-into-us",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/82d7a951e6dccb21cab3deec3a1f5c83abe144215bcb465c9e928418a7ade5ba.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_21936816c98e129df617b9dc",
+        "supporting_excerpt": "CLA-2 OT:RR:CTF:TCM H049555 RM... RE: Tariff Classification of LCD Modules... This is in response to your letter, dated December 02, 2008, to the National Commodity Specialists Division... on behalf of Optrex America, Inc., on the tariff classification of certain liquid crystal display (LCD) modules...",
+        "relevance_explanation": "This is a historical ruling for LCD modules from 2008, not an EV component ruling, and does not establish current applicability for EV tariffs.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_69ca12f8cc8c46bbbf41e045",
+        "supporting_excerpt": "binding ruling is a written determination from CBP that locks in the correct HTS classification for a specific part on future entries... CBP typically issues one within 30 calendar days of a complete request. That timeline can stretch to 60 or 90 days if the part requires lab testing...",
+        "relevance_explanation": "This passage describes the general process and timeline for binding rulings but does not provide a specific ruling result for EV components.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

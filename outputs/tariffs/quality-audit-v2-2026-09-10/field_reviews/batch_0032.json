@@ -1,0 +1,63 @@
+{
+  "status": "reviewed",
+  "reviews": {
+    "claim_27548adcbcb9423f770ff0b8": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'Japan' is a country, not a named business. The text describes a bilateral agreement between nations, not a specific company entity."
+      }
+    },
+    "claim_29e168b94c04d3036927e38d": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'The White House' is a government entity/agency, not a named business. The text describes an Executive Order issued by the President."
+      }
+    },
+    "claim_2c77af6d6538bf2ed192e529": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+        "original_model_decision": {
+          "decision": "retain",
+          "reason": "The source explicitly states 'Updated 6/13/2025' in the context of Section 232 duties applying to specific HTS codes. This is a historical date relative to the audit date of September 10, 2026."
+        },
+        "review_method": "assistant_direct_cached_source_review"
+      }
+    },
+    "claim_2ce6b61cdea9aa4b90e1f64b": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'we' is a pronoun, not a named business. Although the document is from Hyundai, the specific field assignment uses the pronoun which violates the requirement for a named business."
+      }
+    },
+    "claim_2eda2da615c740183015c423": {
+      "hts_code": {
+        "decision": "clear",
+        "reason": "The cached Zauba snippet identifies an HS code but does not establish US HTS jurisdiction. Clear the US-specific field; preserve the quoted foreign/unspecified code as evidence.",
+        "original_model_decision": {
+          "decision": "retain",
+          "reason": "The source text explicitly cites 'HS Code 85049090' in the context of import data for 'inverter pcb assy'. The field assignment matches the evidence provided."
+        },
+        "review_method": "assistant_direct_cached_source_review"
+      }
+    },
+    "claim_2ffd57c7c35e6a5ac9101be5": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'President Trump' is an official/person, not a named business. The text discusses a threat to impose tariffs on imports, not a company's exposure."
+      }
+    },
+    "claim_30afc77b804a94ff961d7d62": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'U.S. Trade Representative' is a government agency/official title, not a named business. The text describes the USTR modifying actions under Section 301."
+      }
+    },
+    "claim_30ff734629c86cf97ece229a": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'President Donald Trump' is an official/person, not a named business. The text describes the President imposing tariffs, not a specific company entity."
+      }
+    }
+  }
+}

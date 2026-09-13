@@ -1,0 +1,101 @@
+{
+  "query_id": "q_company_b77873acd655b85203123334_targeted",
+  "query": "\"FOX Factory\" automotive vehicles auto parts steel aluminum copper tariffs tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_459b6df33b0bb123b2905c8d",
+    "claim_6879c06191e7681a0f977117",
+    "claim_941435a2d14bc422c0d17139",
+    "claim_b2596c891996cf2d15add688",
+    "claim_bb6320ece0ef83e92a30e7f6",
+    "claim_c646a106118e9aac6dabe4c7",
+    "claim_cf68b625074e9769a23f04e1",
+    "claim_d6f9af424ded059e45cf4452",
+    "claim_dab3336a480638c307dcf06d",
+    "claim_f9b6724624f0976408592b2e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_459b6df33b0bb123b2905c8d",
+      "text": "June updates introduced reduced rates for certain products, temporary 25% treatment for specified steel and aluminum articles, and a lower threshold for qualifying US-origin metal.",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    },
+    {
+      "claim_id": "claim_6879c06191e7681a0f977117",
+      "text": "Articles and derivatives subject to Section 232 metals will now face an additional tariff on the full customs value of goods.",
+      "url": "https://www.chrobinson.com/de-de/resources/blog/section-232-changes-for-aluminum-copper-steel",
+      "chunk_id": "chunk_e11d6694bac881e1885ebde0"
+    },
+    {
+      "claim_id": "claim_941435a2d14bc422c0d17139",
+      "text": "additional tariffs on certain Canadian goods took effect in August 2026; however, steel and aluminum products already covered by Section 232 are generally",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    },
+    {
+      "claim_id": "claim_b2596c891996cf2d15add688",
+      "text": "Annex 1B – 25% tariff rate: These goods contain a substantial amount of metal or are a derivative article.",
+      "url": "https://www.chrobinson.com/de-de/resources/blog/section-232-changes-for-aluminum-copper-steel",
+      "chunk_id": "chunk_e11d6694bac881e1885ebde0"
+    },
+    {
+      "claim_id": "claim_bb6320ece0ef83e92a30e7f6",
+      "text": "US Section 232 tariffs on steel and aluminum continue to evolve, with recent changes affecting how certain products and materials are treated.",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    },
+    {
+      "claim_id": "claim_c646a106118e9aac6dabe4c7",
+      "text": "The automotive sector is among the most significantly affected industries by the recent 25% tariffs on steel and aluminum imports.",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    },
+    {
+      "claim_id": "claim_cf68b625074e9769a23f04e1",
+      "text": "These metals are essential for vehicle production, used in everything from chassis and engine components to body panels and structural reinforcements.",
+      "url": "https://materialsplus.com/resources/knowledge-hub/articles/steel-and-aluminum-tariffs-guide-us-manufacturers",
+      "chunk_id": "chunk_72a05694b8402bf3a546e212"
+    },
+    {
+      "claim_id": "claim_d6f9af424ded059e45cf4452",
+      "text": "On April 2, 2026, the White House issued a presidential proclamation that significantly changes how Section 232 tariffs will be applied to aluminum, steel, and copper goods.",
+      "url": "https://www.chrobinson.com/de-de/resources/blog/section-232-changes-for-aluminum-copper-steel",
+      "chunk_id": "chunk_e11d6694bac881e1885ebde0"
+    },
+    {
+      "claim_id": "claim_dab3336a480638c307dcf06d",
+      "text": "Annex 1A – 50% tariff rate: These goods are either entirely or almost entirely made of metal.",
+      "url": "https://www.chrobinson.com/de-de/resources/blog/section-232-changes-for-aluminum-copper-steel",
+      "chunk_id": "chunk_e11d6694bac881e1885ebde0"
+    },
+    {
+      "claim_id": "claim_f9b6724624f0976408592b2e",
+      "text": "United States: Goods manufactured abroad with 95% or higher amounts of U.S. origin steel, aluminum or copper will be subject to a 10% tariff.",
+      "url": "https://www.chrobinson.com/de-de/resources/blog/section-232-changes-for-aluminum-copper-steel",
+      "chunk_id": "chunk_e11d6694bac881e1885ebde0"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_459b6df33b0bb123b2905c8d",
+      "claim_f9b6724624f0976408592b2e"
+    ],
+    [
+      "claim_b2596c891996cf2d15add688",
+      "claim_dab3336a480638c307dcf06d"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

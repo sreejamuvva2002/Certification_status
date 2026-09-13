@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="en-US">
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.5",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),this},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||!t.src||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e=window){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();
+</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Google Tag Manager -->
+	<script type="text/rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-53C94ZQW');</script>
+	<!-- End Google Tag Manager -->
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<link rel="canonical" href="https://clearit.com/usa/blog/first-sale-rule-us-imports/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.3 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>The First Sale Rule Explained: Reduce U.S. Import Duties in 2025</title><link rel="preload" data-rocket-preload as="image" href="https://clearit.com/wp-content/uploads/2025/10/The-first-sale-rule-explained.png" fetchpriority="high">
+	<meta name="description" content="Learn how the First Sale Rule helps U.S. importers cut duty costs legally in 2025. Understand CBP requirements, documentation, and compliance tips." />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="The First Sale Rule Explained: Reduce U.S. Import Duties in 2025" />
+	<meta property="og:description" content="Learn how the First Sale Rule helps U.S. importers cut duty costs legally in 2025. Understand CBP requirements, documentation, and compliance tips." />
+	<meta property="og:url" content="https://clearit.com/usa/blog/first-sale-rule-us-imports/" />
+	<meta property="og:site_name" content="clearit" />
+	<meta property="article:published_time" content="2025-10-27T16:58:52+00:00" />
+	<meta property="og:image" content="https://clearit.com/wp-content/uploads/2025/10/The-first-sale-rule-explained.png" />
+	<meta property="og:image:width" content="1" />
+	<meta property="og:image:height" content="1" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="author" content="Andrew Findlay" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Andrew Findlay" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="6 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/#article","isPartOf":{"@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/"},"author":{"name":"Andrew Findlay","@id":"https:\/\/clearit.com\/#\/schema\/person\/71308460b20251442157944df9b9e319"},"headline":"The First Sale Rule Explained: A Smart Way to Reduce Duties in 2025","datePublished":"2025-10-27T16:58:52+00:00","mainEntityOfPage":{"@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/"},"wordCount":1166,"image":{"@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/#primaryimage"},"thumbnailUrl":"https:\/\/clearit.com\/wp-content\/uploads\/2025\/10\/The-first-sale-rule-explained.png","articleSection":["Imports"],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/","url":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/","name":"The First Sale Rule Explained: Reduce U.S. Import Duties in 2025","isPartOf":{"@id":"https:\/\/clearit.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/#primaryimage"},"image":{"@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/#primaryimage"},"thumbnailUrl":"https:\/\/clearit.com\/wp-content\/uploads\/2025\/10\/The-first-sale-rule-explained.png","datePublished":"2025-10-27T16:58:52+00:00","author":{"@id":"https:\/\/clearit.com\/#\/schema\/person\/71308460b20251442157944df9b9e319"},"description":"Learn how the First Sale Rule helps U.S. importers cut duty costs legally in 2025. Understand CBP requirements, documentation, and compliance tips.","breadcrumb":{"@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/#primaryimage","url":"https:\/\/clearit.com\/wp-content\/uploads\/2025\/10\/The-first-sale-rule-explained.png","contentUrl":"https:\/\/clearit.com\/wp-content\/uploads\/2025\/10\/The-first-sale-rule-explained.png"},{"@type":"BreadcrumbList","@id":"https:\/\/clearit.com\/usa\/blog\/first-sale-rule-us-imports\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/clearit.com\/"},{"@type":"ListItem","position":2,"name":"The First Sale Rule Explained: A Smart Way to Reduce Duties in 2025"}]},{"@type":"WebSite","@id":"https:\/\/clearit.com\/#website","url":"https:\/\/clearit.com\/","name":"clearit","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/clearit.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Person","@id":"https:\/\/clearit.com\/#\/schema\/person\/71308460b20251442157944df9b9e319","name":"Andrew Findlay","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/secure.gravatar.com\/avatar\/ccf5dbef58f9eca4db9500dfb430eabf34ecc79b9a94ce781abf98fa09b89d88?s=96&d=mm&r=g","url":"https:\/\/secure.gravatar.com\/avatar\/ccf5dbef58f9eca4db9500dfb430eabf34ecc79b9a94ce781abf98fa09b89d88?s=96&d=mm&r=g","contentUrl":"https:\/\/secure.gravatar.com\/avatar\/ccf5dbef58f9eca4db9500dfb430eabf34ecc79b9a94ce781abf98fa09b89d88?s=96&d=mm&r=g","caption":"Andrew Findlay"},"url":"https:\/\/clearit.com\/author\/muhammada\/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://clearit.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclearit.com%2Fusa%2Fblog%2Ffirst-sale-rule-us-imports%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://clearit.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclearit.com%2Fusa%2Fblog%2Ffirst-sale-rule-us-imports%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="clearit-tw-vars-inline-css">
+:root{ }
+/*# sourceURL=clearit-tw-vars-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFFFFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary-blue: #001a3b;--wp--preset--color--primary-green: #62D09E;--wp--preset--color--primary-teal: #005A67;--wp--preset--color--accent-peach: #FEBB86;--wp--preset--color--gray-100: #F5F5F5;--wp--preset--color--slate-500: #79829F;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--green-to-teal: linear-gradient(90deg, #62D09E 0%, #005A67 100%);--wp--preset--gradient--teal-to-blue: linear-gradient(135deg, #005A67 0%, #001a3b 100%);--wp--preset--gradient--blue-to-teal: linear-gradient(135deg, #001a3b 0%, #005A67 100%);--wp--preset--gradient--green-accent: linear-gradient(135deg, #62D09E 0%, #005A67 100%);--wp--preset--gradient--peach-to-teal: linear-gradient(90deg, #FEBB86 0%, #005A67 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--h-1: clamp(2rem, calc(2rem + 1.5 * ((100vw - 22.5rem) / 57.5)), 3.5rem);--wp--preset--font-size--h-2: clamp(1.875rem, calc(1.875rem + 1.125 * ((100vw - 22.5rem) / 57.5)), 3rem);--wp--preset--font-size--h-3: clamp(1.5rem, calc(1.5rem + 1 * ((100vw - 22.5rem) / 57.5)), 2.5rem);--wp--preset--font-size--h-4: clamp(1.125rem, calc(1.125rem + 0.375 * ((100vw - 22.5rem) / 57.5)), 1.5rem);--wp--preset--font-size--h-5: clamp(1rem, calc(1rem + 0.25 * ((100vw - 22.5rem) / 57.5)), 1.25rem);--wp--preset--font-size--body: clamp(1rem, calc(1rem + 0.25 * ((100vw - 22.5rem) / 57.5)), 1.25rem);--wp--preset--font-size--body-small: clamp(0.875rem, calc(0.875rem + 0.125 * ((100vw - 22.5rem) / 57.5)), 1rem);--wp--preset--font-size--button-text: clamp(1.125rem, calc(1.125rem + 0.125 * ((100vw - 22.5rem) / 57.5)), 1.25rem);--wp--preset--font-family--inter: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--spacing--max: 240px;--wp--preset--spacing--xxl: 120px;--wp--preset--spacing--xl: 64px;--wp--preset--spacing--l: 48px;--wp--preset--spacing--m: 32px;--wp--preset--spacing--s: 24px;--wp--preset--spacing--xs: 16px;--wp--preset--spacing--xxs: 8px;--wp--preset--spacing--min: 4px;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:root { --wp--style--global--content-size: 720px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 0; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 0; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 0;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 0;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 0;}:root :where(.is-layout-grid){gap: 0;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--white);color: var(--wp--preset--color--primary-blue);font-family: var(--wp--preset--font-family--inter);font-size: var(--wp--preset--font-size--base);padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-blue-color{color: var(--wp--preset--color--primary-blue) !important;}.has-primary-green-color{color: var(--wp--preset--color--primary-green) !important;}.has-primary-teal-color{color: var(--wp--preset--color--primary-teal) !important;}.has-accent-peach-color{color: var(--wp--preset--color--accent-peach) !important;}.has-gray-100-color{color: var(--wp--preset--color--gray-100) !important;}.has-slate-500-color{color: var(--wp--preset--color--slate-500) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-blue-background-color{background-color: var(--wp--preset--color--primary-blue) !important;}.has-primary-green-background-color{background-color: var(--wp--preset--color--primary-green) !important;}.has-primary-teal-background-color{background-color: var(--wp--preset--color--primary-teal) !important;}.has-accent-peach-background-color{background-color: var(--wp--preset--color--accent-peach) !important;}.has-gray-100-background-color{background-color: var(--wp--preset--color--gray-100) !important;}.has-slate-500-background-color{background-color: var(--wp--preset--color--slate-500) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-blue-border-color{border-color: var(--wp--preset--color--primary-blue) !important;}.has-primary-green-border-color{border-color: var(--wp--preset--color--primary-green) !important;}.has-primary-teal-border-color{border-color: var(--wp--preset--color--primary-teal) !important;}.has-accent-peach-border-color{border-color: var(--wp--preset--color--accent-peach) !important;}.has-gray-100-border-color{border-color: var(--wp--preset--color--gray-100) !important;}.has-slate-500-border-color{border-color: var(--wp--preset--color--slate-500) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-green-to-teal-gradient-background{background: var(--wp--preset--gradient--green-to-teal) !important;}.has-teal-to-blue-gradient-background{background: var(--wp--preset--gradient--teal-to-blue) !important;}.has-blue-to-teal-gradient-background{background: var(--wp--preset--gradient--blue-to-teal) !important;}.has-green-accent-gradient-background{background: var(--wp--preset--gradient--green-accent) !important;}.has-peach-to-teal-gradient-background{background: var(--wp--preset--gradient--peach-to-teal) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-h-1-font-size{font-size: var(--wp--preset--font-size--h-1) !important;}.has-h-2-font-size{font-size: var(--wp--preset--font-size--h-2) !important;}.has-h-3-font-size{font-size: var(--wp--preset--font-size--h-3) !important;}.has-h-4-font-size{font-size: var(--wp--preset--font-size--h-4) !important;}.has-h-5-font-size{font-size: var(--wp--preset--font-size--h-5) !important;}.has-body-font-size{font-size: var(--wp--preset--font-size--body) !important;}.has-body-small-font-size{font-size: var(--wp--preset--font-size--body-small) !important;}.has-button-text-font-size{font-size: var(--wp--preset--font-size--button-text) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link data-minify="1" rel='stylesheet' id='clearit-gutenberg-frontend-css' href='https://clearit.com/wp-content/cache/min/1/wp-content/plugins/clearit-gutenberg-setup/build/frontend.css?ver=1787746433' media='all' />
+<link data-minify="1" rel='stylesheet' id='clearit-tw-main-css' href='https://clearit.com/wp-content/cache/min/1/wp-content/themes/clearit/dist/main.css?ver=1787746433' media='all' />
+<style id="clearit-tw-main-inline-css">
+
+        /* Only apply default styling to completely generic buttons */
+        .wp-element-button:not([class*="is-style-"]), 
+        .wp-block-button:not([class*="is-style-"]) .wp-block-button__link.wp-element-button {
+            background-color: var(--btn-primary-bg);
+            border: 1px solid var(--btn-primary-border);
+            color: var(--btn-primary-text);
+            padding: calc(0.75rem + 2px) calc(2rem + 2px);
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+    
+/*# sourceURL=clearit-tw-main-inline-css */
+</style>
+<link rel='shortlink' href='https://clearit.com/?p=11017' />
+<link rel="preconnect" href="//code.tidio.co"><link rel="icon" href="https://clearit.com/wp-content/uploads/2026/07/clearit-site-icon-512.png" sizes="32x32" />
+<link rel="icon" href="https://clearit.com/wp-content/uploads/2026/07/clearit-site-icon-512.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://clearit.com/wp-content/uploads/2026/07/clearit-site-icon-512.png" />
+<meta name="msapplication-TileImage" content="https://clearit.com/wp-content/uploads/2026/07/clearit-site-icon-512.png" />
+<meta name="generator" content="WP Rocket 3.21.3" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_oci wpr_image_dimensions wpr_minify_css wpr_preload_links wpr_host_fonts_locally wpr_desktop" /></head>
+<body class="wp-singular post-template-default single single-post postid-11017 single-format-standard wp-embed-responsive wp-theme-clearit">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53C94ZQW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header  class="site-header w-full bg-white">
+	<!-- Desktop: Top bar with links and login -->
+	<div  class="site-header-top w-full bg-white desktop-only">
+		<div  class="container max-w-container mx-auto pt-5 flex justify-between items-end">
+			<nav class="site-header-top-nav flex justify-start items-start gap-8">
+				<ul id="menu-top-links" class="site-menu flex justify-start items-center gap-8"><li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a data-country-popup="3" href="#"><span class="text-slate-500 body-small leading-normal">Payment</span></a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a data-country-popup="2" href="#"><span class="text-slate-500 body-small leading-normal">Start Your Clearance</span></a></li>
+</ul>			</nav>
+			<div class="site-header-actions flex justify-start items-start gap-8">
+				<a href="#" data-country-popup="login" class="site-header-login text-slate-500 body-small leading-normal">
+					Login				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mobile & Desktop: Main header -->
+	<div  class="site-header-main w-full bg-white">
+		<div  class="container max-w-container mx-auto py-12 lg:py-12 py-4 flex justify-between items-center">
+			<!-- Logo -->
+			<a href="https://clearit.com/" class="site-logo flex items-center">
+				<img width="181" height="49"
+					src="https://clearit.com/wp-content/themes/clearit/src/images/clearit-logo.svg"
+					alt="ClearIT"
+					class="site-logo-dark h-12 lg:h-12 h-8 w-auto"
+				/>
+				<img width="181" height="49"
+					src="https://clearit.com/wp-content/themes/clearit/src/images/clearit-logo-white.svg"
+					alt="ClearIT"
+					class="site-logo-white h-12 lg:h-12 h-8 w-auto"
+				/>
+			</a>
+
+			<!-- Desktop Menu -->
+			<nav class="site-nav desktop-menu flex items-center gap-20">
+				<ul id="menu-main-menu" class="site-menu flex justify-end items-center gap-12"><li id="menu-item-13118" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13118 mega-menu"><a href="#" id="header-main-services" aria-haspopup="true" aria-expanded="false" role="menuitem">Services <span class="menu-arrow" aria-hidden="true"><svg width="16" height="10" viewBox="0 0 57 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.236 30.439c-1.699-1.772-1.64-4.585 0.132-6.284l23.901-22.918c1.719-1.649 4.433-1.649 6.152 0l23.901 22.918c1.772 1.699 1.831 4.512 0.132 6.284s-4.512 1.831-6.284 0.132l-20.825-19.969-20.825 19.969c-1.772 1.699-4.585 1.64-6.284-0.132z" fill="currentColor"/></svg></span></a>
+<ul class="sub-menu" role="menu">
+	<li id="menu-item-143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-143"><a href="#" id="header-main-canadian-services" aria-haspopup="true" aria-expanded="false"><img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />Canadian Services</a>
+	<ul class="sub-menu" role="menu">
+		<li id="menu-item-13409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13409"><a href="https://clearit.com/canada/services/customs-brokerage/" id="header-main-custom-clearance">Custom Clearance</a></li>
+		<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://clearit.com/canada/services/import-bonds/" id="header-main-import-bonds">Import Bonds</a></li>
+		<li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://clearit.com/canada/services/vehicle-imports/" id="header-main-vehicle-imports">Vehicle Imports</a></li>
+		<li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154"><a href="https://clearit.com/canada/services/itn-number-for-aes/" id="header-main-itn-aes-export-numbers">ITN/AES Export numbers</a></li>
+		<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="https://clearit.com/canada/services/non-resident-importing/" id="header-main-non-resident-importer-services">Non-Resident Importer Services</a></li>
+		<li id="menu-item-152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152"><a href="https://clearit.com/canada/partner-with-clearit/" id="header-main-partner-with-clearit">Partner with Clearit</a></li>
+	</ul>
+</li>
+	<li id="menu-item-144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-144"><a href="#" id="header-main-us-services" aria-haspopup="true" aria-expanded="false"><img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />US Services</a>
+	<ul class="sub-menu" role="menu">
+		<li id="menu-item-13408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13408"><a href="https://clearit.com/usa/services/customs-brokerage/" id="header-main-custom-clearance">Custom Clearance</a></li>
+		<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://clearit.com/usa/services/isf-filing/" id="header-main-isf-filing">ISF FIling</a></li>
+		<li id="menu-item-156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-156"><a href="https://clearit.com/usa/services/import-bonds/" id="header-main-import-bonds" aria-haspopup="true" aria-expanded="false">Import Bonds</a>
+		<ul class="sub-menu" role="menu">
+			<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://clearit.com/usa/services/non-resident-importing/" id="header-main-non-resident-importer-services">Non-Resident Importer Services</a></li>
+		</ul>
+</li>
+		<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://clearit.com/usa/partner-with-clearit/" id="header-main-partner-with-clearit">Partner with Clearit</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-13119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13119"><a href="#" id="header-main-pricing" aria-haspopup="true" aria-expanded="false" role="menuitem">Pricing <span class="menu-arrow" aria-hidden="true"><svg width="16" height="10" viewBox="0 0 57 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.236 30.439c-1.699-1.772-1.64-4.585 0.132-6.284l23.901-22.918c1.719-1.649 4.433-1.649 6.152 0l23.901 22.918c1.772 1.699 1.831 4.512 0.132 6.284s-4.512 1.831-6.284 0.132l-20.825-19.969-20.825 19.969c-1.772 1.699-4.585 1.64-6.284-0.132z" fill="currentColor"/></svg></span></a>
+<ul class="sub-menu" role="menu">
+	<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://clearit.com/usa/pricing/" id="header-main-pricing"><img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />Pricing</a></li>
+	<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="https://clearit.com/canada/pricing/" id="header-main-pricing"><img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />Pricing</a></li>
+</ul>
+</li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://clearit.com/about-us/" id="header-main-about-us" role="menuitem">About us</a></li>
+<li id="menu-item-13120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13120 mega-menu"><a href="#" id="header-main-resources" aria-haspopup="true" aria-expanded="false" role="menuitem">Resources <span class="menu-arrow" aria-hidden="true"><svg width="16" height="10" viewBox="0 0 57 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.236 30.439c-1.699-1.772-1.64-4.585 0.132-6.284l23.901-22.918c1.719-1.649 4.433-1.649 6.152 0l23.901 22.918c1.772 1.699 1.831 4.512 0.132 6.284s-4.512 1.831-6.284 0.132l-20.825-19.969-20.825 19.969c-1.772 1.699-4.585 1.64-6.284-0.132z" fill="currentColor"/></svg></span></a>
+<ul class="sub-menu" role="menu">
+	<li id="menu-item-348" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-348"><a href="#" id="header-main-canadian-resources" aria-haspopup="true" aria-expanded="false"><img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />Canadian Resources</a>
+	<ul class="sub-menu" role="menu">
+		<li id="menu-item-13013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13013"><a href="https://clearit.com/canada/ca-importing-guides/" id="header-main-importing-guides">Importing Guides</a></li>
+		<li id="menu-item-12780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12780"><a href="https://clearit.com/canada/resources/vehicle-import-guide/" id="header-main-vehicle-import-guide-calculator">Vehicle Import Guide &amp; Calculator</a></li>
+		<li id="menu-item-12794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12794"><a href="https://clearit.com/canada/resources/carm-guide/" id="header-main-carm-guide">CARM Guide</a></li>
+		<li id="menu-item-13276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13276"><a href="https://clearit.com/canada/resources/car-calculator/" id="header-main-car-import-calculator">Car Import Calculator</a></li>
+		<li id="menu-item-13067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13067"><a href="https://clearit.com/canada/resources/useful-links/" id="header-main-useful-links">Useful Links</a></li>
+		<li id="menu-item-13068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13068"><a href="https://clearit.com/canada/resources/forms-documents/" id="header-main-forms-documents">Forms &#038; Documents</a></li>
+		<li id="menu-item-354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="https://clearit.com/canada/blog/" id="header-main-ca-blog">CA Blog</a></li>
+	</ul>
+</li>
+	<li id="menu-item-349" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-349"><a href="#" id="header-main-us-resources" aria-haspopup="true" aria-expanded="false"><img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />US Resources</a>
+	<ul class="sub-menu" role="menu">
+		<li id="menu-item-13006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13006"><a href="https://clearit.com/usa/resources/importing-guides/" id="header-main-importing-guides">Importing Guides</a></li>
+		<li id="menu-item-14071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14071"><a href="https://clearit.com/usa/resources/duty-and-tax-calculator/" id="header-main-duty-and-tax-calculator">Duty and Tax Calculator</a></li>
+		<li id="menu-item-13065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13065"><a href="https://clearit.com/usa/resources/useful-links/" id="header-main-useful-links">Useful Links</a></li>
+		<li id="menu-item-13066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13066"><a href="https://clearit.com/usa/resources/forms-documents/" id="header-main-forms-documents">Forms &#038; Documents</a></li>
+		<li id="menu-item-355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="https://clearit.com/usa/blog/" id="header-main-us-blog">US Blog</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://clearit.com/contact-us/" id="header-main-contact-us" role="menuitem">Contact us</a></li>
+</ul>
+					<div class="shipment-tracker-wrapper menu-item-has-children">
+		<a href="#" class="shipment-tracker-link inline-flex items-center gap-2 text-primary-blue font-semibold" aria-haspopup="true" aria-expanded="false">
+			<span>Shipment Tracker</span>
+			<svg class="tracker-arrow" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M7.9043 0.955078L14.2499 7.30073L7.9043 13.6464" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M14.2499 7.30078L0.75 7.30078" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</a>
+		<ul class="shipment-tracker-submenu sub-menu" role="menu">
+			<li>
+				<a href="https://clearit.itm.descartes.com/parstracker/" class="flex items-center gap-2">
+					<img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="Canada" class="w-7 h-7" />
+					<span>PARS Tracker</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://admin.clearitusa.com/papstracker" class="flex items-center gap-2" data-paps-popup="true">
+					<img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="United States" class="w-7 h-7" />
+					<span>PAPS Tracker</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+				</nav>
+
+			<!-- Mobile: Language/Login + Hamburger -->
+			<div class="mobile-header-actions flex items-center gap-4 lg:hidden">
+				<!-- Language/Login Options -->
+				<div class="flex items-center gap-3">
+					<a href="#" data-country-popup="login" class="mobile-header-login text-slate-500 text-sm">
+						Login					</a>
+				</div>
+
+				<!-- Hamburger Button -->
+				<button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+					<span class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div  class="mobile-menu-overlay"></div>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" aria-label="Mobile navigation">
+	<!-- Mobile Menu Header -->
+	<div class="mobile-menu-header">
+		<a href="https://clearit.com/" class="mobile-menu-logo">
+			<img width="181" height="49" src="https://clearit.com/wp-content/themes/clearit/src/images/clearit-logo.svg" alt="ClearIT" />
+		</a>
+
+		<div class="mobile-menu-actions">
+			<!-- Login (single link → country-selection popup) -->
+			<div class="mobile-lang-item">
+				<a href="#" data-country-popup="login">Login</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mobile Navigation Menu -->
+	<ul id="menu-main-menu-1" class="mobile-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13118 mega-menu"><a href="#" id="header-main-services" aria-haspopup="true" aria-expanded="false" role="menuitem">Services <span class="menu-arrow" aria-hidden="true"><svg width="16" height="10" viewBox="0 0 57 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.236 30.439c-1.699-1.772-1.64-4.585 0.132-6.284l23.901-22.918c1.719-1.649 4.433-1.649 6.152 0l23.901 22.918c1.772 1.699 1.831 4.512 0.132 6.284s-4.512 1.831-6.284 0.132l-20.825-19.969-20.825 19.969c-1.772 1.699-4.585 1.64-6.284-0.132z" fill="currentColor"/></svg></span></a>
+<ul class="sub-menu" role="menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-143"><a href="#" id="header-main-canadian-services" aria-haspopup="true" aria-expanded="false"><img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />Canadian Services</a>
+	<ul class="sub-menu" role="menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13409"><a href="https://clearit.com/canada/services/customs-brokerage/" id="header-main-custom-clearance">Custom Clearance</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://clearit.com/canada/services/import-bonds/" id="header-main-import-bonds">Import Bonds</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://clearit.com/canada/services/vehicle-imports/" id="header-main-vehicle-imports">Vehicle Imports</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154"><a href="https://clearit.com/canada/services/itn-number-for-aes/" id="header-main-itn-aes-export-numbers">ITN/AES Export numbers</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="https://clearit.com/canada/services/non-resident-importing/" id="header-main-non-resident-importer-services">Non-Resident Importer Services</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152"><a href="https://clearit.com/canada/partner-with-clearit/" id="header-main-partner-with-clearit">Partner with Clearit</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-144"><a href="#" id="header-main-us-services" aria-haspopup="true" aria-expanded="false"><img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />US Services</a>
+	<ul class="sub-menu" role="menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13408"><a href="https://clearit.com/usa/services/customs-brokerage/" id="header-main-custom-clearance">Custom Clearance</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://clearit.com/usa/services/isf-filing/" id="header-main-isf-filing">ISF FIling</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-156"><a href="https://clearit.com/usa/services/import-bonds/" id="header-main-import-bonds" aria-haspopup="true" aria-expanded="false">Import Bonds</a>
+		<ul class="sub-menu" role="menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://clearit.com/usa/services/non-resident-importing/" id="header-main-non-resident-importer-services">Non-Resident Importer Services</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://clearit.com/usa/partner-with-clearit/" id="header-main-partner-with-clearit">Partner with Clearit</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13119"><a href="#" id="header-main-pricing" aria-haspopup="true" aria-expanded="false" role="menuitem">Pricing <span class="menu-arrow" aria-hidden="true"><svg width="16" height="10" viewBox="0 0 57 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.236 30.439c-1.699-1.772-1.64-4.585 0.132-6.284l23.901-22.918c1.719-1.649 4.433-1.649 6.152 0l23.901 22.918c1.772 1.699 1.831 4.512 0.132 6.284s-4.512 1.831-6.284 0.132l-20.825-19.969-20.825 19.969c-1.772 1.699-4.585 1.64-6.284-0.132z" fill="currentColor"/></svg></span></a>
+<ul class="sub-menu" role="menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a href="https://clearit.com/usa/pricing/" id="header-main-pricing"><img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />Pricing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="https://clearit.com/canada/pricing/" id="header-main-pricing"><img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />Pricing</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://clearit.com/about-us/" id="header-main-about-us" role="menuitem">About us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13120 mega-menu"><a href="#" id="header-main-resources" aria-haspopup="true" aria-expanded="false" role="menuitem">Resources <span class="menu-arrow" aria-hidden="true"><svg width="16" height="10" viewBox="0 0 57 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.236 30.439c-1.699-1.772-1.64-4.585 0.132-6.284l23.901-22.918c1.719-1.649 4.433-1.649 6.152 0l23.901 22.918c1.772 1.699 1.831 4.512 0.132 6.284s-4.512 1.831-6.284 0.132l-20.825-19.969-20.825 19.969c-1.772 1.699-4.585 1.64-6.284-0.132z" fill="currentColor"/></svg></span></a>
+<ul class="sub-menu" role="menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-348"><a href="#" id="header-main-canadian-resources" aria-haspopup="true" aria-expanded="false"><img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />Canadian Resources</a>
+	<ul class="sub-menu" role="menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13013"><a href="https://clearit.com/canada/ca-importing-guides/" id="header-main-importing-guides">Importing Guides</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12780"><a href="https://clearit.com/canada/resources/vehicle-import-guide/" id="header-main-vehicle-import-guide-calculator">Vehicle Import Guide &amp; Calculator</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12794"><a href="https://clearit.com/canada/resources/carm-guide/" id="header-main-carm-guide">CARM Guide</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13276"><a href="https://clearit.com/canada/resources/car-calculator/" id="header-main-car-import-calculator">Car Import Calculator</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13067"><a href="https://clearit.com/canada/resources/useful-links/" id="header-main-useful-links">Useful Links</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13068"><a href="https://clearit.com/canada/resources/forms-documents/" id="header-main-forms-documents">Forms &#038; Documents</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="https://clearit.com/canada/blog/" id="header-main-ca-blog">CA Blog</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-349"><a href="#" id="header-main-us-resources" aria-haspopup="true" aria-expanded="false"><img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="menu-item-flag" aria-hidden="true" />US Resources</a>
+	<ul class="sub-menu" role="menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13006"><a href="https://clearit.com/usa/resources/importing-guides/" id="header-main-importing-guides">Importing Guides</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14071"><a href="https://clearit.com/usa/resources/duty-and-tax-calculator/" id="header-main-duty-and-tax-calculator">Duty and Tax Calculator</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13065"><a href="https://clearit.com/usa/resources/useful-links/" id="header-main-useful-links">Useful Links</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13066"><a href="https://clearit.com/usa/resources/forms-documents/" id="header-main-forms-documents">Forms &#038; Documents</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="https://clearit.com/usa/blog/" id="header-main-us-blog">US Blog</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://clearit.com/contact-us/" id="header-main-contact-us" role="menuitem">Contact us</a></li>
+</ul>
+	<!-- Shipment Tracker in Mobile Menu -->
+		<ul class="mobile-nav-last">
+		<li class="menu-item menu-item-has-children">
+			<a href="#" class="inline-flex items-center justify-between w-full">
+				<span>Shipment Tracker</span>
+				<span class="menu-arrow" aria-hidden="true">
+					<svg width="16" height="10" viewBox="0 0 57 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.236 30.439c-1.699-1.772-1.64-4.585 0.132-6.284l23.901-22.918c1.719-1.649 4.433-1.649 6.152 0l23.901 22.918c1.772 1.699 1.831 4.512 0.132 6.284s-4.512 1.831-6.284 0.132l-20.825-19.969-20.825 19.969c-1.772 1.699-4.585 1.64-6.284-0.132z" fill="currentColor"/>
+					</svg>
+				</span>
+			</a>
+			<ul class="sub-menu">
+				<li>
+					<a href="https://clearit.itm.descartes.com/parstracker/" class="flex items-center gap-2">
+						<img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="Canada" class="w-6 h-6" />
+						<span>PARS Tracker</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://admin.clearitusa.com/papstracker" class="flex items-center gap-2" data-paps-popup="true">
+						<img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="United States" class="w-6 h-6" />
+						<span>PAPS Tracker</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	
+	<!-- Get Started Button (from Figma) -->
+	<div class="mobile-menu-cta">
+		<a href="#" class="wp-block-button__link wp-element-button has-arrow">
+			Get started		</a>
+	</div>
+
+	<!-- Bottom Links (from Figma) -->
+	<div class="mobile-menu-footer">
+		<a href="#">
+			Payment		</a>
+		<a href="#">
+			Start Your Clearance		</a>
+	</div>
+</nav>
+
+<main class="single-post">
+	
+		<!-- Hero Section -->
+		<section class="single-post__hero">
+			<div class="single-post__hero-container container max-w-container mx-auto px-4 py-28">
+				<div class="single-post__hero-content">
+					<!-- Breadcrumbs -->
+					<div class="single-post__breadcrumbs body-small"><span><span><a href="https://clearit.com/">Home</a></span> » <span><a href="https://clearit.com/usa/blog/">Blog US</a></span> &raquo; <span class="breadcrumb_last" aria-current="page">The First Sale Rule Explained: A Smart Way to Reduce Duties in 2025</span></span></div>
+					<!-- Title -->
+					<h1 class="h2 single-post__title">The First Sale Rule Explained: A Smart Way to Reduce Duties in 2025</h1>
+
+					<!-- Post Meta -->
+					
+<div class="post-meta body">
+	<address class="post-meta__author">
+		By Andrew Findlay	</address>
+	<time class="post-meta__date" datetime="2025-10-27T16:58:52+00:00">
+		Published on: October 27, 2025	</time>
+</div>
+				</div>
+
+				<!-- Featured Image -->
+									<div class="single-post__hero-image">
+						<img fetchpriority="high" width="1" height="1" src="https://clearit.com/wp-content/uploads/2025/10/The-first-sale-rule-explained.png" class="attachment-large size-large wp-post-image" alt="" decoding="async" />					</div>
+							</div>
+		</section>
+
+		<!-- Content Section -->
+		<section class="single-post__content-wrapper pb-28">
+			<div class="container max-w-container mx-auto px-4">
+				<div class="single-post__layout">
+					<!-- Table of Contents (Sidebar) -->
+						<aside class="single-post__toc">
+		<div class="single-post__toc-inner">
+			<h2 class="h4 single-post__toc-title">Table of Content</h2>
+
+			<nav class="single-post__toc-nav">
+									<a href="#what-is-the-first-sale-rule"
+					   class="single-post__toc-link">
+						What Is the First Sale Rule?					</a>
+									<a href="#why-the-first-sale-rule-matters-more-than-ever-in-2025"
+					   class="single-post__toc-link">
+						Why the First Sale Rule Matters More Than Ever in 2025					</a>
+									<a href="#real-world-benefits-of-using-the-first-sale-rule"
+					   class="single-post__toc-link">
+						Real-World Benefits of Using the First Sale Rule					</a>
+									<a href="#key-compliance-considerations"
+					   class="single-post__toc-link">
+						Key Compliance Considerations					</a>
+									<a href="#common-pitfalls-importers-should-avoid"
+					   class="single-post__toc-link">
+						Common Pitfalls Importers Should Avoid					</a>
+									<a href="#how-to-implement-the-first-sale-rule-successfully"
+					   class="single-post__toc-link">
+						How to Implement the First Sale Rule Successfully					</a>
+									<a href="#conclusion"
+					   class="single-post__toc-link">
+						Conclusion					</a>
+									<a href="#faqs"
+					   class="single-post__toc-link">
+						FAQs					</a>
+							</nav>
+		</div>
+	</aside>
+	
+					<!-- Main Content Area -->
+					<article class="single-post__content">
+						<!-- Block Section: Post Top -->
+						
+						<!-- Post Categories -->
+						
+						<!-- Post Content -->
+						<div class="single-post__body body">
+							<p><span style="font-weight: 400;">As global trade costs rise and the U.S. prepares to eliminate the $800 De Minimis threshold, importers are looking for every possible way to lower landed costs without cutting corners. One strategy that’s gaining new attention in 2025 is the First Sale Rule, a long-standing but often misunderstood customs valuation method that can legally reduce import duties on qualifying transactions.</span></p>
+<p><span style="font-weight: 400;">For businesses importing through multi-tiered supply chains, mastering this rule could mean the difference between shrinking profit margins and staying competitive.</span></p>
+<p><span style="font-weight: 400;">Here’s what the First Sale Rule is, how it works, and how U.S. importers can take advantage of it.</span></p>
+<h2><span style="font-weight: 400;">What Is the First Sale Rule?</span></h2>
+<p><a href="https://www.cbp.gov/trade/programs-administration/entry-summary/first-sale-declaration"><span style="font-weight: 400;">The First Sale Rule (FSR)</span></a><span style="font-weight: 400;"> allows U.S. importers to calculate customs duties based on the price paid in the first sale of goods intended for export to the United States, instead of the higher resale price paid by a middleman or distributor.</span></p>
+<p><span style="font-weight: 400;">In simple terms, this means you can declare the manufacturer’s selling price as the dutiable value, rather than the markup added by intermediaries in your supply chain.</span></p>
+<p><b>Example:</b></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">A factory in Vietnam sells a product to a trading company in Hong Kong for $50.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">That trading company then sells it to your U.S. business for $75.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Under the First Sale Rule, you can declare the $50 factory price, saving duties on the $25 markup.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Although the First Sale Rule has existed for decades, recent tariff changes and the end of De Minimis exemptions have made it one of the most effective cost-saving strategies for importers in 2025.</span></p>
+<h2><span style="font-weight: 400;">Why the First Sale Rule Matters More Than Ever in 2025</span></h2>
+<p><span style="font-weight: 400;">With the upcoming elimination of Section 321’s $800 De Minimis threshold, even low-value shipments will require formal customs entry and duty assessment. That means higher administrative costs and, potentially, millions in new tariff expenses across industries.</span></p>
+<p><span style="font-weight: 400;">Importers who learn to apply the First Sale Rule correctly can offset these costs by reducing the taxable value of each import.</span></p>
+<p><span style="font-weight: 400;">In today’s global supply chains, especially those involving multiple sales before goods reach the U.S., the opportunity for savings is substantial.</span></p>
+<p><span style="font-weight: 400;">To understand the broader impact of these trade policy shifts, check out </span><a href="https://clearit.com/us-import-tariffs-2025-guide-business-impact/">U.S. Import Tariffs 2025: A Complete Guide to Business Impact</a><span style="font-weight: 400;">.</span></p>
+<h2><span style="font-weight: 400;">How the First Sale Rule Works</span><span style="font-weight: 400;"><br />
+</span></h2>
+<p><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-11023" src="https://clearit.com/wp-content/uploads/2025/10/How-the-First-Sale-Rule-Works.png" alt="Working of the First Sale Rule" width="1024" height="535" /></p>
+<p><span style="font-weight: 400;">To qualify for First Sale valuation, importers must prove three key conditions to U.S. Customs and Border Protection (CBP):</span></p>
+<h3><span style="font-weight: 400;">Legal Conditions for Eligibility</span></h3>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">A bona fide sale occurred between the manufacturer and the middleman.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The goods were clearly destined for export to the U.S. at the time of that first sale.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The price was negotiated at arm’s</span> <span style="font-weight: 400;">length, meaning it reflects fair market value, not artificial underpricing.</span></li>
+</ol>
+<h3><span style="font-weight: 400;">Documentation You’ll Need</span></h3>
+<p><span style="font-weight: 400;">Documentation is everything. Importers must maintain detailed proof of the transaction chain, including:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Sales contracts between the factory and the middleman</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Commercial invoices</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Proof of payment (bank records or letters of credit)</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Shipping documentation and purchase orders linking the transaction to the U.S. importer</span></li>
+</ul>
+<p><span style="font-weight: 400;">CBP may audit these documents, so maintaining accurate records is critical for compliance.</span></p>
+<h2><span style="font-weight: 400;">Real-World Benefits of Using the First Sale Rule</span></h2>
+<p><span style="font-weight: 400;">When implemented properly, the First Sale Rule can:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Reduce duty liability by 10–25% on average, depending on the markup structure.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Improve competitiveness for importers of high-volume, low-margin goods (like apparel, electronics, and consumer products).</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Offset the additional costs introduced by the end of De Minimis exemptions and new tariff regulations.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Strengthen supply chain transparency, since importers must document each transaction clearly.</span></li>
+</ul>
+<p><span style="font-weight: 400;">These savings can be especially meaningful for small and mid-sized importers trying to stay competitive after </span><a href="https://clearit.com/hidden-costs-importing-small-business/"><span style="font-weight: 400;">Section 321 elimination</span></a><span style="font-weight: 400;"> forces formal entry for every shipment.</span></p>
+<h2><span style="font-weight: 400;">Key Compliance Considerations</span></h2>
+<p><span style="font-weight: 400;">The First Sale Rule isn’t a loophole, it’s a legitimate but strictly regulated valuation method. To use it successfully:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Ensure all transaction documentation is traceable and verifiable.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Confirm the goods are clearly earmarked for U.S. export from the start.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Conduct periodic internal audits or partner with a customs broker familiar with FSR filings.</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Avoid “price padding” or inconsistent invoices between supplier tiers.</span></li>
+</ul>
+<p><span style="font-weight: 400;">If CBP determines that documentation doesn’t support the declared first-sale price, the importer may be liable for back duties, penalties, and interest.</span></p>
+<p><span style="font-weight: 400;">Understanding the broader customs environment can also help. Review </span><a href="https://clearit.com/tariff-pass-through-inflation-impact-us-importers/">Tariff Pass-Through: How Duties Impact Inflation for U.S. Importers</a><span style="font-weight: 400;"> to see how duty valuation ties into your pricing and compliance strategy.</span></p>
+<h2><span style="font-weight: 400;">Common Pitfalls Importers Should Avoid</span></h2>
+<p><span style="font-weight: 400;">Many businesses miss out on First Sale savings, or worse, apply it incorrectly, due to avoidable errors such as:</span></p>
+<ul>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Missing proof of payment between factory and intermediary</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Lack of export intent documentation</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Relying on verbal pricing agreements</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Inconsistent shipping and invoicing details</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Applying FSR to transactions that involve non-U.S. final destinations</span></li>
+</ul>
+<p><span style="font-weight: 400;">Proper coordination between purchasing, logistics, and customs teams is essential. Importers should also review their supplier relationships to identify where First Sale pricing structures are feasible.</span></p>
+<h2><span style="font-weight: 400;">How to Implement the First Sale Rule Successfully</span></h2>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><b>Map Your Supply Chain:</b><span style="font-weight: 400;"> Identify all parties involved in each import transaction.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Evaluate Qualification:</b><span style="font-weight: 400;"> Determine if goods are destined for the U.S. from the first sale.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Document Every Step:</b><span style="font-weight: 400;"> Keep detailed records linking manufacturer to importer.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Work With a Broker:</b><span style="font-weight: 400;"> A </span><b>digital customs broker</b><span style="font-weight: 400;"> can file entries using the First Sale value, manage audits, and ensure ACE filing accuracy.</span></li>
+<li style="font-weight: 400;" aria-level="1"><b>Monitor Tariff Changes:</b><span style="font-weight: 400;"> The U.S. trade landscape continues to evolve. Staying current ensures ongoing compliance and savings.</span></li>
+</ol>
+<p><span style="font-weight: 400;">For example, our article </span><a href="https://clearit.com/u-s-china-tariffs-explained-what-importers-need-to-know-in-2025/">U.S.–China Tariffs Explained: What Importers Need to Know in 2025</a><span style="font-weight: 400;"> outlines how certain duties may interact with valuation methods like FSR.</span></p>
+<h2><span style="font-weight: 400;">Conclusion</span></h2>
+<p><span style="font-weight: 400;">In 2025, as formal customs entry becomes the norm for every import, the First Sale Rule stands out as one of the smartest, most compliant ways to reduce duty costs.</span></p>
+<p><span style="font-weight: 400;">By documenting your supply chain, coordinating with suppliers, and leveraging expert customs support, you can turn complex regulations into a competitive advantage.</span></p>
+<p>Start preparing now, review your import documentation, identify eligible First Sale opportunities. You can Partner with <a href="https://clearit.com/">clearit.local/</a> to simplify First Sale Rule filings and stay compliant with every U.S. customs change in 2025.</p>
+<h2><span style="font-weight: 400;">FAQs</span></h2>
+<h3><span style="font-weight: 400;">Q1: Does the First Sale Rule apply to all products?</span></h3>
+<p><span style="font-weight: 400;">It applies to most goods imported into the U.S., provided the importer can document each sale in the supply chain and meet CBP’s requirements.</span></p>
+<h3><span style="font-weight: 400;">Q2: Can small businesses use the First Sale Rule?</span></h3>
+<p><span style="font-weight: 400;">Yes. SMBs importing through trading companies or buying agents can benefit significantly, especially as duties rise post-De Minimis.</span></p>
+<h3><span style="font-weight: 400;">Q3: Is the First Sale Rule the same as transfer pricing?</span></h3>
+<p><span style="font-weight: 400;">No. FSR relates to customs valuation for import duties, while transfer pricing applies to income tax reporting. They must align, but they serve different functions.</span></p>
+<h3><span style="font-weight: 400;">Q4: How much can I realistically save?</span></h3>
+<p><span style="font-weight: 400;">Savings vary, but importers commonly see 10–25% duty reductions, depending on product type and supply chain complexity.</span></p>
+<h3><span style="font-weight: 400;">Q5: How often do I need to prove eligibility?</span></h3>
+<p><span style="font-weight: 400;">Documentation must be available for every import entry where the First Sale Rule is used. CBP may audit records at any time.</span></p>
+						</div>
+
+						<!-- Share Section -->
+						<div class="single-post__share">
+							<div class="share-icons">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fclearit.com%2Fusa%2Fblog%2Ffirst-sale-rule-us-imports%2F" 
+								   target="_blank" 
+								   rel="noopener noreferrer" 
+								   class="share-icon share-icon--facebook" 
+								   aria-label="Share on Facebook">
+									<svg class="icon icon-Facebook-share">
+										<use xlink:href="#icon-Facebook-share"></use>
+									</svg>
+								</a>
+								<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fclearit.com%2Fusa%2Fblog%2Ffirst-sale-rule-us-imports%2F&text=The+First+Sale+Rule+Explained%3A+A+Smart+Way+to+Reduce+Duties+in+2025" 
+								   target="_blank" 
+								   rel="noopener noreferrer" 
+								   class="share-icon share-icon--twitter" 
+								   aria-label="Share on Twitter">
+									<svg class="icon icon-Twitter-share">
+										<use xlink:href="#icon-Twitter-share"></use>
+									</svg>
+								</a>
+								<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fclearit.com%2Fusa%2Fblog%2Ffirst-sale-rule-us-imports%2F&title=The+First+Sale+Rule+Explained%3A+A+Smart+Way+to+Reduce+Duties+in+2025" 
+								   target="_blank" 
+								   rel="noopener noreferrer" 
+								   class="share-icon share-icon--linkedin" 
+								   aria-label="Share on LinkedIn">
+									<svg class="icon icon-LinkedIn-share">
+										<use xlink:href="#icon-LinkedIn-share"></use>
+									</svg>
+								</a>
+								<button onclick="navigator.clipboard.writeText('https://clearit.com/usa/blog/first-sale-rule-us-imports/').then(() => { this.classList.add('copied'); setTimeout(() => this.classList.remove('copied'), 2000); })" 
+										class="share-icon share-icon--copy" 
+										aria-label="Copy link to clipboard">
+									<svg class="icon icon-link">
+										<use xlink:href="#icon-link"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- Block Section: Post Bottom (Full Width) -->
+		<div class="block-section block-section-post-bottom block-section--full-width">
+<section class="clearit-related-posts alignfull wp-block-clearit-blocks-related-posts" data-animate-block="related-posts">
+    <div class="container max-w-container mx-auto pt-28 pb-28  ">
+        <div class="clearit-related-posts-inner">
+            <!-- Section Title -->
+            <h2 class="h4 text-white text-left uppercase related-posts-title">
+                Discover more from ClearIT            </h2>
+
+            <!-- Posts Grid -->
+            <div class="related-posts-grid">
+                                    <article class="related-post-card flex flex-col gap-6">
+                        <!-- Featured Image -->
+                        <div class="related-post-image">
+                            <a href="https://clearit.com/usa/blog/customs-hold-detention-seizure/" aria-label="Read more about What Happens if U.S. Customs Holds, Detains, or Seizes Your Shipment: A 2026 Importer’s Guide">
+                                                                    <img decoding="async" width="1" height="1" src="https://clearit.com/wp-content/uploads/2026/09/image-1.png" class="attachment-medium_large size-medium_large wp-post-image" alt="What Happens if U.S. Customs Holds, Detains, or Seizes Your Shipment: A 2026 Importer’s Guide" loading="lazy" />                                                            </a>
+                        </div>
+
+                        <!-- Categories -->
+                                                    <div class="related-post-categories">
+                                                                    <span class="category-tag">Customs Compliance &amp; Enforcement</span>
+                                                            </div>
+                        
+                        <div class="related-post-content flex flex-col gap-6">
+                            <!-- Meta Information -->
+                            <div class="related-post-meta">
+                                <span class="post-author">
+                                    By Andrew Findlay                                </span>
+                                <span class="post-separator">|</span>
+                                <time class="post-date" datetime="2026-08-31T21:04:35+00:00">
+                                    Aug 31, 2026                                </time>
+                            </div>
+
+                            <!-- Title -->
+                            <h5 class="h5 related-post-title">
+                                <a href="https://clearit.com/usa/blog/customs-hold-detention-seizure/">
+                                    What Happens if U.S. Customs Holds, Detains, or Seizes Your Shipment: A 2026 Importer’s Guide                                </a>
+                            </h5>
+
+                            <!-- Excerpt (Optional) -->
+                            
+                            <!-- Read More Link -->
+                            <div class="related-post-link">
+                                <a href="https://clearit.com/usa/blog/customs-hold-detention-seizure/" class="read-more-link" aria-label="Read more about What Happens if U.S. Customs Holds, Detains, or Seizes Your Shipment: A 2026 Importer’s Guide">
+                                    <span class="read-more-text">Read More</span>
+                                    <span class="read-more-arrow" aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                                    <article class="related-post-card flex flex-col gap-6">
+                        <!-- Featured Image -->
+                        <div class="related-post-image">
+                            <a href="https://clearit.com/usa/blog/importing-food-into-united-states/" aria-label="Read more about Importing Food and Beverages into the United States: A 2026 FDA, FSMA, and Customs Guide">
+                                                                    <img decoding="async" width="1" height="1" src="https://clearit.com/wp-content/uploads/2026/08/image-1.png" class="attachment-medium_large size-medium_large wp-post-image" alt="Importing Food and Beverages into the United States: A 2026 FDA, FSMA, and Customs Guide" loading="lazy" />                                                            </a>
+                        </div>
+
+                        <!-- Categories -->
+                                                    <div class="related-post-categories">
+                                                                    <span class="category-tag">Uncategorized</span>
+                                                            </div>
+                        
+                        <div class="related-post-content flex flex-col gap-6">
+                            <!-- Meta Information -->
+                            <div class="related-post-meta">
+                                <span class="post-author">
+                                    By Andrew Findlay                                </span>
+                                <span class="post-separator">|</span>
+                                <time class="post-date" datetime="2026-08-24T23:26:34+00:00">
+                                    Aug 24, 2026                                </time>
+                            </div>
+
+                            <!-- Title -->
+                            <h5 class="h5 related-post-title">
+                                <a href="https://clearit.com/usa/blog/importing-food-into-united-states/">
+                                    Importing Food and Beverages into the United States: A 2026 FDA, FSMA, and Customs Guide                                </a>
+                            </h5>
+
+                            <!-- Excerpt (Optional) -->
+                            
+                            <!-- Read More Link -->
+                            <div class="related-post-link">
+                                <a href="https://clearit.com/usa/blog/importing-food-into-united-states/" class="read-more-link" aria-label="Read more about Importing Food and Beverages into the United States: A 2026 FDA, FSMA, and Customs Guide">
+                                    <span class="read-more-text">Read More</span>
+                                    <span class="read-more-arrow" aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                                    <article class="related-post-card flex flex-col gap-6">
+                        <!-- Featured Image -->
+                        <div class="related-post-image">
+                            <a href="https://clearit.com/usa/blog/importing-hemp-into-united-states/" aria-label="Read more about Importing Hemp into the United States: A 2026 Guide to USDA, FDA, DEA, and CBP Compliance">
+                                                                    <img decoding="async" width="1" height="1" src="https://clearit.com/wp-content/uploads/2026/08/Importing-Hemp-into-the-United-States-A-2026-Guide-to-USDA-FDA-DEA-and-CBP-Compliance-.png" class="attachment-medium_large size-medium_large wp-post-image" alt="Importing Hemp into the United States: A 2026 Guide to USDA, FDA, DEA, and CBP Compliance" loading="lazy" />                                                            </a>
+                        </div>
+
+                        <!-- Categories -->
+                                                    <div class="related-post-categories">
+                                                                    <span class="category-tag">Importing Hemp</span>
+                                                            </div>
+                        
+                        <div class="related-post-content flex flex-col gap-6">
+                            <!-- Meta Information -->
+                            <div class="related-post-meta">
+                                <span class="post-author">
+                                    By Andrew Findlay                                </span>
+                                <span class="post-separator">|</span>
+                                <time class="post-date" datetime="2026-08-17T07:58:14+00:00">
+                                    Aug 17, 2026                                </time>
+                            </div>
+
+                            <!-- Title -->
+                            <h5 class="h5 related-post-title">
+                                <a href="https://clearit.com/usa/blog/importing-hemp-into-united-states/">
+                                    Importing Hemp into the United States: A 2026 Guide to USDA, FDA, DEA, and CBP Compliance                                </a>
+                            </h5>
+
+                            <!-- Excerpt (Optional) -->
+                            
+                            <!-- Read More Link -->
+                            <div class="related-post-link">
+                                <a href="https://clearit.com/usa/blog/importing-hemp-into-united-states/" class="read-more-link" aria-label="Read more about Importing Hemp into the United States: A 2026 Guide to USDA, FDA, DEA, and CBP Compliance">
+                                    <span class="read-more-text">Read More</span>
+                                    <span class="read-more-arrow" aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                            </div>
+        </div>
+    </div>
+</section>
+
+
+<section style="--cta-title-color: #FFFFFF;background-image: url(https://clearit.com/wp-content/uploads/2025/11/CTA-bar-dark-bg.jpg);background-size: cover;background-position: center" class="clearit-cta clearit-cta--hero dark-mode alignfull wp-block-clearit-cta" data-animate-block="cta">
+	<div class="clearit-cta-container container max-w-container mx-auto pt-28 pb-28  ">
+		<div class="clearit-cta-inner " style="">
+			<div class="clearit-cta-content flex flex-col gap-8 items-center">
+									<div class="clearit-cta-content-wrapper">
+						<h3 class="h3 text-center">
+							Start clearing customs now.						</h3>
+
+											</div>
+				
+									<div class="clearit-cta-button-wrapper">
+						<div class="wp-block-button is-style-clearit-primary has-arrow dark-mode">
+															<a
+									href="https://www.freightos.com/enterprise/risk-management/"
+									class="wp-block-button__link wp-element-button"
+																	>
+									Import now								</a>
+													</div>
+					</div>
+							</div>
+		</div>
+	</div>
+</section>
+</div>
+		<!-- Block Section: Before Related Posts -->
+		
+		<!-- Related Posts -->
+		
+		</main>
+
+<footer class="site-footer w-full bg-slate-900 text-white">
+	<div class="container max-w-container mx-auto py-12 lg:py-28">
+
+		<!-- Mobile: Accordion Menus First -->
+		<div class="footer-mobile-menus lg:hidden">
+			<!-- Canadian Services Accordion -->
+			<div class="footer-accordion">
+				<button class="footer-accordion-trigger" aria-expanded="false">
+					<span class="h4 text-white uppercase">Canadian Services</span>
+					<svg class="footer-accordion-icon" width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.5 0.5L6.5 6.5L0.5 0.500001" stroke="white" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+				<div class="footer-accordion-content">
+					<ul id="menu-footer-canadian-services" class="footer-menu flex flex-col gap-4"><li id="menu-item-13473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13473"><a href="https://clearit.com/canada/services/customs-brokerage/"><span class="body-small text-white">Customs Clearance</span></a></li>
+<li id="menu-item-14666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14666"><a href="https://clearit.com/canada/services/import-bonds/"><span class="body-small text-white">Import Bonds</span></a></li>
+<li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://clearit.com/canada/services/non-resident-importing/"><span class="body-small text-white">Non-Resident Importer Services</span></a></li>
+<li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162"><a href="https://clearit.com/canada/services/vehicle-imports/"><span class="body-small text-white">Vehicle Imports</span></a></li>
+</ul>				</div>
+			</div>
+
+			<!-- US Services Accordion -->
+			<div class="footer-accordion">
+				<button class="footer-accordion-trigger" aria-expanded="false">
+					<span class="h4 text-white uppercase">US Services</span>
+					<svg class="footer-accordion-icon" width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.5 0.5L6.5 6.5L0.5 0.500001" stroke="white" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+				<div class="footer-accordion-content">
+					<ul id="menu-footer-us-services" class="footer-menu flex flex-col gap-4"><li id="menu-item-13474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13474"><a href="https://clearit.com/usa/services/customs-brokerage/"><span class="body-small text-white">Customs Clearance</span></a></li>
+<li id="menu-item-14668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14668"><a href="https://clearit.com/usa/services/import-bonds/"><span class="body-small text-white">Import Bonds</span></a></li>
+<li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="https://clearit.com/usa/services/non-resident-importing/"><span class="body-small text-white">Non-Resident Importer Services</span></a></li>
+<li id="menu-item-14669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14669"><a href="https://clearit.com/usa/partner-with-clearit/"><span class="body-small text-white">Partner with Clearit</span></a></li>
+</ul>				</div>
+			</div>
+
+			<!-- Company Accordion -->
+			<div class="footer-accordion">
+				<button class="footer-accordion-trigger" aria-expanded="false">
+					<span class="h4 text-white uppercase">Company</span>
+					<svg class="footer-accordion-icon" width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.5 0.5L6.5 6.5L0.5 0.500001" stroke="white" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+				<div class="footer-accordion-content">
+					<ul id="menu-footer-company" class="footer-menu flex flex-col gap-4"><li id="menu-item-13475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13475"><a href="https://clearit.com/about-us/"><span class="body-small text-white">About us</span></a></li>
+<li id="menu-item-13477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13477"><a href="https://clearit.com/contact-us/"><span class="body-small text-white">Contact us</span></a></li>
+</ul>				</div>
+			</div>
+
+			<!-- Legal/Contact Links -->
+			<div class="footer-direct-links">
+							</div>
+
+			<!-- Mobile: Logo, License, Social, Certification -->
+			<div class="footer-mobile-brand">
+				<a href="https://clearit.com/" class="site-logo flex items-center justify-center mb-4">
+					<img width="181" height="49" src="https://clearit.com/wp-content/themes/clearit/src/images/clearit-logo-white.svg" alt="ClearIT" class="w-48" />
+				</a>
+				<p class="footer-license text-white body-small font-normal leading-normal text-center mb-6">
+					United States: License #32477<br />
+					Canada: Licensed under the <a href="https://www.cbsa-asfc.gc.ca/services/cb-cd/cb-cd-eng.html" target="_blank" rel="noopener noreferrer">Canada Border Services Agency (CBSA)</a>				</p>
+				<div class="footer-mobile-bottom">
+										<nav class="footer-social flex justify-center items-center gap-4" aria-label="Social media links">
+												<a href="https://www.linkedin.com/company/clearit-customs-brokers" class="w-9 h-9 flex items-center justify-center text-white hover:opacity-80 transition-opacity" aria-label="LinkedIn" target="_blank" rel="noopener">
+							<svg class="icon icon-LinkedIn w-9 h-9">
+								<use xlink:href="#icon-LinkedIn"></use>
+							</svg>
+						</a>
+																		<a href="https://www.facebook.com/clearitcustoms/" class="w-9 h-9 flex items-center justify-center text-white hover:opacity-80 transition-opacity" aria-label="Facebook" target="_blank" rel="noopener">
+							<svg class="icon icon-Facebook w-9 h-9">
+								<use xlink:href="#icon-Facebook"></use>
+							</svg>
+						</a>
+																		<a href="https://x.com/clearitcustoms" class="w-9 h-9 flex items-center justify-center text-white hover:opacity-80 transition-opacity" aria-label="Twitter" target="_blank" rel="noopener">
+							<svg class="icon icon-Twitter w-9 h-9">
+								<use xlink:href="#icon-Twitter"></use>
+							</svg>
+						</a>
+																		<a href="https://www.instagram.com/clearitcustoms/" class="w-9 h-9 flex items-center justify-center text-white hover:opacity-80 transition-opacity" aria-label="Instagram" target="_blank" rel="noopener">
+							<svg class="icon icon-Instagram w-9 h-9">
+								<use xlink:href="#icon-Instagram"></use>
+							</svg>
+						</a>
+											</nav>
+					<figure class="footer-certifications flex justify-center items-center mt-6">
+						<img width="87" height="96" class="w-16 h-20" src="https://clearit.com/wp-content/themes/clearit/src/images/ISO27001_2022-ENG-all%20white.png" alt="ISO 27001" />
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<!-- Desktop Layout (hidden on mobile) -->
+		<div class="footer-desktop hidden lg:block">
+			<div class="w-full flex justify-start items-start gap-7">
+				<!-- Logo and Social Column -->
+				<section class="footer-brand w-72 h-96 flex flex-col justify-between items-start">
+					<div class="footer-brand-content">
+						<a href="https://clearit.com/" class="site-logo flex items-center mb-6">
+							<img width="181" height="49" src="https://clearit.com/wp-content/themes/clearit/src/images/clearit-logo-white.svg" alt="ClearIT" style="width: 231px; height: auto;" />
+						</a>
+						<p class="footer-license text-white body-small font-normal leading-normal">
+							United States: License #32477<br />
+					Canada: Licensed under the <a href="https://www.cbsa-asfc.gc.ca/services/cb-cd/cb-cd-eng.html" target="_blank" rel="noopener noreferrer">Canada Border Services Agency (CBSA)</a>						</p>
+					</div>
+						<nav class="footer-social flex justify-start items-start gap-4" aria-label="Social media links">
+												<a href="https://www.facebook.com/clearitcustoms/" class="w-9 h-9 flex items-center justify-center text-white hover:opacity-80 transition-opacity" aria-label="Facebook" target="_blank" rel="noopener">
+							<svg class="icon icon-Facebook w-9 h-9">
+								<use xlink:href="#icon-Facebook"></use>
+							</svg>
+						</a>
+																		<a href="https://www.instagram.com/clearitcustoms/" class="w-9 h-9 flex items-center justify-center text-white hover:opacity-80 transition-opacity" aria-label="Instagram" target="_blank" rel="noopener">
+							<svg class="icon icon-Instagram w-9 h-9">
+								<use xlink:href="#icon-Instagram"></use>
+							</svg>
+						</a>
+																		<a href="https://www.linkedin.com/company/clearit-customs-brokers" class="w-9 h-9 flex items-center justify-center text-white hover:opacity-80 transition-opacity" aria-label="LinkedIn" target="_blank" rel="noopener">
+							<svg class="icon icon-LinkedIn w-9 h-9">
+								<use xlink:href="#icon-LinkedIn"></use>
+							</svg>
+						</a>
+																		<a href="https://x.com/clearitcustoms" class="w-9 h-9 flex items-center justify-center text-white hover:opacity-80 transition-opacity" aria-label="Twitter" target="_blank" rel="noopener">
+							<svg class="icon icon-Twitter w-9 h-9">
+								<use xlink:href="#icon-Twitter"></use>
+							</svg>
+						</a>
+											</nav>
+				</section>
+
+				<!-- Menu Columns -->
+				<nav class="footer-menus h-96 flex flex-col justify-start items-start gap-7" aria-label="Footer navigation">
+					<div class="w-full flex justify-start items-start gap-7">
+						<!-- Canadian Services -->
+						<div class="footer-menu-column w-52 flex flex-col justify-start items-start gap-4">
+							<h4 class="h4 text-white uppercase">Canadian Services</h4>
+							<ul id="menu-footer-canadian-services-1" class="footer-menu flex flex-col gap-4"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13473"><a href="https://clearit.com/canada/services/customs-brokerage/"><span class="body-small text-white">Customs Clearance</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14666"><a href="https://clearit.com/canada/services/import-bonds/"><span class="body-small text-white">Import Bonds</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="https://clearit.com/canada/services/non-resident-importing/"><span class="body-small text-white">Non-Resident Importer Services</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162"><a href="https://clearit.com/canada/services/vehicle-imports/"><span class="body-small text-white">Vehicle Imports</span></a></li>
+</ul>						</div>
+
+						<!-- US Services -->
+						<div class="footer-menu-column w-52 flex flex-col justify-start items-start gap-4">
+							<h4 class="h4 text-white uppercase">US Services</h4>
+							<ul id="menu-footer-us-services-1" class="footer-menu flex flex-col gap-4"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13474"><a href="https://clearit.com/usa/services/customs-brokerage/"><span class="body-small text-white">Customs Clearance</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14668"><a href="https://clearit.com/usa/services/import-bonds/"><span class="body-small text-white">Import Bonds</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="https://clearit.com/usa/services/non-resident-importing/"><span class="body-small text-white">Non-Resident Importer Services</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14669"><a href="https://clearit.com/usa/partner-with-clearit/"><span class="body-small text-white">Partner with Clearit</span></a></li>
+</ul>						</div>
+
+						<!-- Company -->
+						<div class="footer-menu-column w-52 flex flex-col justify-start items-start gap-4">
+							<h4 class="h4 text-white uppercase">Company</h4>
+							<ul id="menu-footer-company-1" class="footer-menu flex flex-col gap-4"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13475"><a href="https://clearit.com/about-us/"><span class="body-small text-white">About us</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13477"><a href="https://clearit.com/contact-us/"><span class="body-small text-white">Contact us</span></a></li>
+</ul>						</div>
+
+						<!-- Legal/Contact -->
+						<div class="footer-menu-column w-52 h-96 flex flex-col justify-between items-start">
+														<figure class="footer-certifications flex justify-end items-end gap-4 w-full">
+								<img width="87" height="96" class="w-20 h-24" src="https://clearit.com/wp-content/themes/clearit/src/images/ISO27001_2022-ENG-all%20white.png" alt="ISO 27001" />
+							</figure>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+				<div class="footer-copyright w-full mt-8">
+			<div class="flex flex-wrap items-center justify-start lg:justify-start justify-center gap-4 text-white">
+				<span class="copyright-text">
+					ClearIT &copy; 2011-2026				</span>
+									<span class="copyright-separator">|</span>
+					<nav class="copyright-links flex flex-wrap items-center justify-center lg:justify-start gap-4" aria-label="Legal links">
+																				<a href="https://clearit.com/privacy-policy/" class="copyright-link hover:opacity-80 transition-opacity">
+								Privacy Policy							</a>
+																					<span class="copyright-separator">|</span>
+														<a href="https://clearit.com/terms-of-service/" class="copyright-link hover:opacity-80 transition-opacity">
+								Service Agreement							</a>
+																					<span class="copyright-separator">|</span>
+														<a href="https://clearit.com/cookie-notice/" class="copyright-link hover:opacity-80 transition-opacity">
+								Cookie Notice							</a>
+											</nav>
+							</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Country Popup 1: Triggered by data-country-popup="1" -->
+<dialog id="country-popup" class="country-popup" aria-labelledby="country-popup-title">
+	<div class="country-popup__content">
+		<button type="button" class="country-popup__close" aria-label="Close">
+			<svg class="icon icon-close" aria-hidden="true">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+
+		<h2 id="country-popup-title" class="country-popup__title">
+			Where is your shipment going to?		</h2>
+
+		<div class="country-popup__options">
+			<a href="https://clearit.com/contact-us/" class="country-popup__option">
+				<img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="country-popup__flag" aria-hidden="true" />
+				<span class="country-popup__link">
+					Canada					<svg class="country-popup__arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<path d="M7.9043 0.654297L13.2499 6.00004L7.9043 11.3458" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M13.25 6L0.75 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</span>
+			</a>
+
+			<a href="https://clearit.com/usa/resources/duty-and-tax-calculator/" class="country-popup__option">
+				<img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="country-popup__flag" aria-hidden="true" />
+				<span class="country-popup__link">
+					United States					<svg class="country-popup__arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<path d="M7.9043 0.654297L13.2499 6.00004L7.9043 11.3458" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M13.25 6L0.75 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
+</dialog>
+
+<!-- Login Popup: Triggered by data-country-popup="login" (reuses the per-country login URLs) -->
+<dialog id="country-popup-login" class="country-popup" aria-labelledby="country-popup-login-title">
+	<div class="country-popup__content">
+		<button type="button" class="country-popup__close" aria-label="Close">
+			<svg class="icon icon-close" aria-hidden="true">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+
+		<h2 id="country-popup-login-title" class="country-popup__title">
+			Shipments going to:		</h2>
+
+		<div class="country-popup__options">
+			<a href="https://app.clearit.ca/user/login" class="country-popup__option">
+				<img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="country-popup__flag" aria-hidden="true" />
+				<span class="country-popup__link">
+					Canada					<svg class="country-popup__arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<path d="M7.9043 0.654297L13.2499 6.00004L7.9043 11.3458" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M13.25 6L0.75 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</span>
+			</a>
+
+			<a href="https://user.clearit.com/auth/login" class="country-popup__option">
+				<img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="country-popup__flag" aria-hidden="true" />
+				<span class="country-popup__link">
+					United States					<svg class="country-popup__arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<path d="M7.9043 0.654297L13.2499 6.00004L7.9043 11.3458" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M13.25 6L0.75 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
+</dialog>
+
+<!-- Country Popup 2: Triggered by data-country-popup="2" -->
+<dialog id="country-popup-2" class="country-popup" aria-labelledby="country-popup-2-title">
+	<div class="country-popup__content">
+		<button type="button" class="country-popup__close" aria-label="Close">
+			<svg class="icon icon-close" aria-hidden="true">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+
+		<h2 id="country-popup-2-title" class="country-popup__title">
+			Where is your shipment going to?		</h2>
+
+		<div class="country-popup__options">
+			<a href="https://app.clearit.ca/user/login" class="country-popup__option">
+				<img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="country-popup__flag" aria-hidden="true" />
+				<span class="country-popup__link">
+					Canada					<svg class="country-popup__arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<path d="M7.9043 0.654297L13.2499 6.00004L7.9043 11.3458" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M13.25 6L0.75 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</span>
+			</a>
+
+			<a href="https://user.clearit.com/auth/login" class="country-popup__option">
+				<img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="country-popup__flag" aria-hidden="true" />
+				<span class="country-popup__link">
+					United States					<svg class="country-popup__arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<path d="M7.9043 0.654297L13.2499 6.00004L7.9043 11.3458" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M13.25 6L0.75 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
+</dialog>
+
+<!-- Country Popup 3 (Payment): Triggered by data-country-popup="3" -->
+<dialog id="country-popup-3" class="country-popup country-popup--payment" aria-labelledby="country-popup-3-title">
+	<div class="country-popup__content">
+		<button type="button" class="country-popup__close" aria-label="Close">
+			<svg class="icon icon-close" aria-hidden="true">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+
+		<h2 id="country-popup-3-title" class="country-popup__title">
+			Make a payment		</h2>
+
+		<div class="country-popup__options">
+			<a href="https://app.clearit.ca/page/one_time_payment" target="_blank" rel="noopener noreferrer" class="country-popup__card">
+				<img width="28" height="28" src="https://clearit.com/wp-content/themes/clearit/src/images/canada-circle.svg" alt="" class="country-popup__card-flag" aria-hidden="true" />
+				<span class="country-popup__card-text">Make a payment for a Canadian clearance</span>
+				<svg class="country-popup__card-arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<path d="M7.9043 0.654297L13.2499 6.00004L7.9043 11.3458" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M13.25 6L0.75 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+
+			<a href="https://admin.clearitusa.com/page/one_time_payment" target="_blank" rel="noopener noreferrer" class="country-popup__card">
+				<img width="28" height="29" src="https://clearit.com/wp-content/themes/clearit/src/images/en-circle.svg" alt="" class="country-popup__card-flag" aria-hidden="true" />
+				<span class="country-popup__card-text">Make a payment for a US clearance</span>
+				<svg class="country-popup__card-arrow" width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<path d="M7.9043 0.654297L13.2499 6.00004L7.9043 11.3458" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M13.25 6L0.75 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+		</div>
+	</div>
+</dialog>
+
+<!-- HubSpot Form Popup: Triggered by data-hubspot-popup attribute -->
+<dialog id="hubspot-popup" class="hubspot-popup" aria-label="HubSpot">
+	<div class="hubspot-popup__content">
+		<button type="button" class="hubspot-popup__close" aria-label="Close">
+			<svg class="icon icon-close" aria-hidden="true">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<div class="hubspot-popup__form-wrap">
+			<script type="text/rocketlazyloadscript" data-rocket-src="https://js.hsforms.net/forms/embed/developer/23522202.js" defer></script>
+			<div class="hs-form-html" data-region="na1" data-form-id="f26bfc12-be39-41f5-b75b-981999daf100" data-portal-id="23522202"></div>
+		</div>
+	</div>
+</dialog>
+
+<!-- PAPS Tracker Popup: Triggered by data-paps-popup links -->
+<dialog id="paps-tracker-popup" class="paps-tracker-popup" aria-labelledby="paps-tracker-popup-title">
+	<div class="paps-tracker-popup__content">
+		<button type="button" class="paps-tracker-popup__close" aria-label="Close">
+			<svg class="icon icon-close" aria-hidden="true">
+				<use xlink:href="#icon-close"></use>
+			</svg>
+		</button>
+		<h2 id="paps-tracker-popup-title" class="paps-tracker-popup__title">
+			PAPS Tracker		</h2>
+		<div class="paps-tracker-popup__iframe-wrap">
+			<iframe
+				id="paps-tracker-iframe"
+				src=""
+				title="PAPS Tracker"
+				class="paps-tracker-popup__iframe"
+				loading="lazy"
+			></iframe>
+		</div>
+	</div>
+</dialog>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/clearit/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="gsap-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/ajax/libs/gsap/3.12.5/gsap.min.js?ver=1787746433" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="gsap-scrolltrigger-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js?ver=1787746434" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/usa/resources/calculator/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://clearit.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="text/rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="clearit-mobile-menu-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/wp-content/themes/clearit/dist/js/mobile-menu.js?ver=1787746434" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="clearit-single-post-toc-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/wp-content/themes/clearit/dist/js/single-post-toc.js?ver=1787746467" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="clearit-scroll-animations-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/wp-content/themes/clearit/src/js/scroll-animations.js?ver=1787746434" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="clearit-menu-accessibility-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/wp-content/themes/clearit/src/js/menu-accessibility.js?ver=1787746434" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="clearit-menu-positioning-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/wp-content/themes/clearit/src/js/menu-positioning.js?ver=1787746434" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="clearit-country-popup-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/wp-content/themes/clearit/src/js/country-popup.js?ver=1787746434" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="clearit-paps-tracker-popup-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/wp-content/themes/clearit/src/js/paps-tracker-popup.js?ver=1787746434" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-minify="1" id="clearit-hubspot-popup-js" data-rocket-src="https://clearit.com/wp-content/cache/min/1/wp-content/themes/clearit/src/js/hubspot-popup.js?ver=1787746434" data-rocket-defer defer></script>
+<div  style="display: none;"><svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-arrow-left" viewBox="0 0 24 24">
+<path fill="none" stroke="#005a67" style="stroke: var(--color1, #005a67)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.5217" d="M23.478 12.136c0 6.339-5.139 11.478-11.478 11.478s-11.478-5.139-11.478-11.478c0-6.339 5.139-11.478 11.478-11.478s11.478 5.139 11.478 11.478z"></path>
+<path fill="#005a67" style="fill: var(--color1, #005a67)" d="M13.364 16.389c-0.26 0.249-0.673 0.241-0.922-0.019l-3.363-3.507c-0.242-0.252-0.242-0.65 0-0.903l3.363-3.507c0.249-0.26 0.662-0.269 0.922-0.019s0.269 0.662 0.019 0.922l-2.93 3.056 2.93 3.056c0.249 0.26 0.241 0.673-0.019 0.922z"></path>
+</symbol>
+<symbol id="icon-arrow-right" viewBox="0 0 24 24">
+<path fill="none" stroke="#005a67" style="stroke: var(--color1, #005a67)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.5217" d="M0.522 12.136c0-6.339 5.139-11.478 11.478-11.478s11.478 5.139 11.478 11.478c0 6.339-5.139 11.478-11.478 11.478s-11.478-5.139-11.478-11.478z"></path>
+<path fill="#005a67" style="fill: var(--color1, #005a67)" d="M10.636 7.882c0.26-0.249 0.673-0.241 0.922 0.019l3.363 3.507c0.242 0.252 0.242 0.65 0 0.903l-3.363 3.507c-0.249 0.26-0.662 0.269-0.922 0.019s-0.269-0.662-0.019-0.922l2.93-3.056-2.93-3.056c-0.249-0.26-0.241-0.673 0.019-0.922z"></path>
+</symbol>
+<symbol id="icon-Facebook" viewBox="0 0 23 24">
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M5.189 0.338h12.973c2.866 0 5.189 2.323 5.189 5.189v12.973c0 2.866-2.323 5.189-5.189 5.189h-12.973c-2.866 0-5.189-2.323-5.189-5.189v-12.973c0-2.866 2.323-5.189 5.189-5.189z"></path>
+<path fill="#001a3b" style="fill: var(--color3, #001a3b)" d="M12.625 17.851v-5.326h1.878l0.281-2.076h-2.159v-1.325c0-0.601 0.175-1.010 1.080-1.010l1.154-0.001v-1.856c-0.2-0.025-0.885-0.082-1.682-0.082-1.664 0-2.804 0.967-2.804 2.744v1.531h-1.882v2.076h1.882v5.326l2.251 0z"></path>
+</symbol>
+<symbol id="icon-Instagram" viewBox="0 0 23 24">
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M5.189 0.338h12.973c2.866 0 5.189 2.323 5.189 5.189v12.973c0 2.866-2.323 5.189-5.189 5.189h-12.973c-2.866 0-5.189-2.323-5.189-5.189v-12.973c0-2.866 2.323-5.189 5.189-5.189z"></path>
+<path fill="#001a3b" style="fill: var(--color3, #001a3b)" d="M11.676 6.175c2.332 0 3.498-0 4.338 0.556 0.375 0.248 0.696 0.569 0.945 0.944 0.556 0.84 0.555 2.006 0.555 4.338s0 3.498-0.555 4.338c-0.248 0.375-0.569 0.696-0.945 0.945-0.84 0.556-2.006 0.555-4.338 0.555s-3.498 0-4.338-0.555c-0.375-0.248-0.696-0.569-0.944-0.945-0.556-0.84-0.556-2.006-0.556-4.338s-0-3.498 0.556-4.338c0.248-0.375 0.569-0.696 0.944-0.944 0.84-0.556 2.006-0.556 4.338-0.556zM11.676 8.991c-1.669 0-3.022 1.353-3.022 3.022s1.353 3.022 3.022 3.022c1.669-0 3.022-1.353 3.022-3.022s-1.353-3.022-3.022-3.022zM11.676 10.014c1.104 0 2 0.895 2 2s-0.895 2-2 2c-1.104 0-2-0.895-2-2s0.895-2 2-2zM14.818 8.129c-0.392 0-0.711 0.318-0.711 0.71s0.319 0.71 0.711 0.71c0.392-0 0.71-0.318 0.71-0.71s-0.318-0.71-0.71-0.71z"></path>
+</symbol>
+<symbol id="icon-LinkedIn" viewBox="0 0 23 24">
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M5.189 0.338h12.973c2.866 0 5.189 2.323 5.189 5.189v12.973c0 2.866-2.323 5.189-5.189 5.189h-12.973c-2.866 0-5.189-2.323-5.189-5.189v-12.973c0-2.866 2.323-5.189 5.189-5.189z"></path>
+<path fill="#001a3b" style="fill: var(--color3, #001a3b)" d="M5.838 7.745c0-0.374 0.131-0.683 0.394-0.927s0.605-0.365 1.026-0.365c0.413 0 0.748 0.12 1.003 0.359 0.263 0.247 0.394 0.569 0.394 0.966 0 0.359-0.128 0.659-0.383 0.899-0.263 0.247-0.609 0.371-1.037 0.371h-0.011c-0.413 0-0.748-0.124-1.003-0.371s-0.383-0.558-0.383-0.932zM5.984 17.573v-7.503h2.502v7.503h-2.502zM9.873 17.573h2.502v-4.19c0-0.262 0.030-0.464 0.090-0.607 0.105-0.255 0.265-0.47 0.479-0.646s0.483-0.264 0.806-0.264c0.841 0 1.262 0.565 1.262 1.696v4.010h2.502v-4.302c0-1.108-0.263-1.949-0.789-2.522s-1.221-0.859-2.085-0.859c-0.969 0-1.724 0.416-2.265 1.247v0.022h-0.011l0.011-0.022v-1.067h-2.502c0.015 0.24 0.023 0.985 0.023 2.235s-0.008 3.006-0.023 5.268z"></path>
+</symbol>
+<symbol id="icon-Twitter" viewBox="0 0 23 24">
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M5.189 0.338h12.973c2.866 0 5.189 2.323 5.189 5.189v12.973c0 2.866-2.323 5.189-5.189 5.189h-12.973c-2.866 0-5.189-2.323-5.189-5.189v-12.973c0-2.866 2.323-5.189 5.189-5.189z"></path>
+<path fill="#001a3b" style="fill: var(--color3, #001a3b)" d="M17.514 18.162l-4.566-6.805 0.008 0.006 4.117-4.877h-1.376l-3.354 3.97-2.663-3.97h-3.608l4.262 6.353-4.496 5.323h1.376l3.729-4.417 2.963 4.417h3.608zM9.134 7.548l6.406 9.553h-1.090l-6.411-9.553h1.095z"></path>
+</symbol>
+<symbol id="icon-Facebook-share" viewBox="0 0 10 18">
+<path fill="currentColor" d="M6.37296 18V9.78936H9.26765L9.70104 6.5895H6.37288V4.54653C6.37288 3.6201 6.64305 2.98879 8.0385 2.98879L9.81819 2.98799V0.126072C9.51038 0.0871459 8.45386 0 7.22488 0C4.65886 0 2.90212 1.49118 2.90212 4.22972V6.5895H0V9.78936H2.90212V17.9999H6.37296V18Z"></path>
+</symbol>
+<symbol id="icon-LinkedIn-share" viewBox="0 0 18 18">
+<path fill="currentColor" d="M0 1.99134C0 1.41413 0.202708 0.937939 0.608108 0.56277C1.01351 0.187584 1.54055 0 2.18919 0C2.82626 0 3.34169 0.184693 3.73552 0.554112C4.14092 0.935065 4.34363 1.43145 4.34363 2.04329C4.34363 2.5974 4.14672 3.05915 3.7529 3.42857C3.3475 3.80952 2.81467 4 2.15444 4H2.13707C1.49999 4 0.984562 3.80952 0.590734 3.42857C0.196905 3.04762 0 2.56854 0 1.99134ZM0.225869 17.1429V5.57576H4.08301V17.1429H0.225869ZM6.22008 17.1429H10.0772V10.684C10.0772 10.2799 10.1236 9.96824 10.2162 9.74891C10.3784 9.35641 10.6245 9.02452 10.9546 8.75324C11.2847 8.48195 11.6988 8.34632 12.1969 8.34632C13.4942 8.34632 14.1429 9.21788 14.1429 10.961V17.1429H18V10.5108C18 8.8023 17.5946 7.50649 16.7838 6.62337C15.973 5.74026 14.9015 5.2987 13.5695 5.2987C12.0753 5.2987 10.9112 5.93939 10.0772 7.22078V7.25541H10.0598L10.0772 7.22078V5.57576H6.22008C6.24324 5.94516 6.25483 7.09378 6.25483 9.02164C6.25483 10.9495 6.24324 13.6565 6.22008 17.1429Z"></path>
+</symbol>
+<symbol id="icon-Twitter-share" viewBox="0 0 18 18">
+<path fill="currentColor" d="M18 18L10.9609 7.50927L10.9729 7.51909L17.3197 0H15.1988L10.0285 6.12L5.92263 0H0.36016L6.93188 9.79445L6.93108 9.79364L0 18H2.12094L7.8691 11.1911L12.4375 18H18ZM5.08226 1.63636L14.9586 16.3636H13.2779L3.39351 1.63636H5.08226Z"></path>
+</symbol>
+<symbol id="icon-clearit-icon" viewBox="0 0 21 24">
+<path fill="#62d09e" style="fill: var(--color1, #62d09e)" d="M21.127 5.779l-10.044-5.365c-0.214-0.114-0.479-0.114-0.693 0l-10.044 5.365c-0.214 0.114-0.346 0.326-0.346 0.555v10.728c0 0.229 0.132 0.441 0.346 0.555l3.358 1.793v-11.105c0-0.229 0.132-0.44 0.345-0.555l3.582-1.925-1.065-0.623c-0.226-0.132-0.135-0.455 0.132-0.468l5.754-0.157c0.239-0.012 0.431 0.179 0.4 0.399l-0.475 3.38c-0.017 0.127-0.169 0.195-0.288 0.131l-1.757-0.942-3.142 1.853c-0.215 0.115-0.347 0.327-0.347 0.556v11.108l3.549 1.919c0.214 0.114 0.479 0.114 0.693 0l10.044-5.364c0.214-0.114 0.346-0.326 0.346-0.555v-10.728c0-0.229-0.132-0.441-0.346-0.555h-0.001z"></path>
+</symbol>
+<symbol id="icon-arrow-down" viewBox="0 0 57 32">
+<path d="M1.236 30.439c-1.699-1.772-1.64-4.585 0.132-6.284l23.901-22.918c1.719-1.649 4.433-1.649 6.152 0l23.901 22.918c1.772 1.699 1.831 4.512 0.132 6.284s-4.512 1.831-6.284 0.132l-20.825-19.969-20.825 19.969c-1.772 1.699-4.585 1.64-6.284-0.132z"></path>
+</symbol>
+<symbol id="icon-search" viewBox="0 0 16 16">
+<circle cx="7" cy="7" r="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m13 13 3 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="icon-link" viewBox="0 0 24 24">
+<path d="M14.9922 17.5H16.5022C19.5222 17.5 22.0022 15.03 22.0022 12C22.0022 8.98 19.5322 6.5 16.5022 6.5H14.9922" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 6.5H7.5C4.47 6.5 2 8.97 2 12C2 15.02 4.47 17.5 7.5 17.5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="icon-close" viewBox="0 0 24 24">
+<path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</defs>
+
+</svg>
+
+</div><script type="text/rocketlazyloadscript" data-rocket-type='text/javascript'>
+document.tidioChatCode = "ol6emgl7g0irrrsgpxwxlypyq7pvrmhx";
+(function() {
+  function asyncLoad() {
+    var tidioScript = document.createElement("script");
+    tidioScript.type = "text/javascript";
+    tidioScript.async = true;
+    tidioScript.src = "//code.tidio.co/ol6emgl7g0irrrsgpxwxlypyq7pvrmhx.js";
+    document.body.appendChild(tidioScript);
+  }
+  if (window.attachEvent) {
+    window.attachEvent("onload", asyncLoad);
+  } else {
+    window.addEventListener("load", asyncLoad, false);
+  }
+})();
+</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
+<!-- plugin=object-cache-pro client=phpredis metric#hits=5024 metric#misses=13 metric#hit-ratio=99.7 metric#bytes=941788 metric#prefetches=210 metric#store-reads=25 metric#store-writes=5 metric#store-hits=221 metric#store-misses=6 metric#sql-queries=10 metric#ms-total=321.40 metric#ms-cache=8.66 metric#ms-cache-avg=0.2986 metric#ms-cache-ratio=2.7 sample#redis-hits=7289330 sample#redis-misses=286751 sample#redis-hit-ratio=96.2 sample#redis-ops-per-sec=13 sample#redis-evicted-keys=0 sample#redis-used-memory=196193744 sample#redis-used-memory-rss=152875008 sample#redis-memory-fragmentation-ratio=0.8 sample#redis-connected-clients=1 sample#redis-tracking-clients=0 sample#redis-rejected-connections=0 sample#redis-keys=300644 -->

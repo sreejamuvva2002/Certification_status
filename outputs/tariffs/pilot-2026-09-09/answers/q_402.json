@@ -1,0 +1,61 @@
+{
+  "query_id": "q_402",
+  "query": "United States critical mineral tariffs EV supply chain",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_20757d44690c675bcd4aa917",
+    "claim_e57b9514a500b29163c0212b",
+    "claim_ac05bc06c5b0e61bfa26fa54",
+    "claim_9319ecf0b0175b224b46cc22",
+    "claim_df3cd9ef2740f79333af45ce"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_20757d44690c675bcd4aa917",
+      "text": "Mainland China initially imposed export restrictions in early April 2025, which required companies to obtain special government approval for exporting seven categories of medium and heavy rare earth metals: samarium, gadolinium, terbium, dysprosium, lutetium, scandium, and yttrium.",
+      "url": "https://www.mobilityglobal.com/en-us/automotive-insights/blog/critical-minerals-shortages-looming-threat-ev-industry",
+      "chunk_id": "chunk_ba4ab04d519e6fea18099fa9"
+    },
+    {
+      "claim_id": "claim_e57b9514a500b29163c0212b",
+      "text": "China has gone as far as placing export controls on five critical minerals: tungsten, tellurium, bismuth, indium, and molybdenum, to the US active February 4, 2025",
+      "url": "https://www.techpolicy.press/trumps-tariffs-are-harming-us-critical-mineral-supply-chains",
+      "chunk_id": "chunk_c76bcef538d6038f93e84084"
+    },
+    {
+      "claim_id": "claim_ac05bc06c5b0e61bfa26fa54",
+      "text": "The tariffs introduced on April 2, 2025, include, but are not limited to, a 35% tariff rate on China, 10% on Brazil, 10% on Argentina, 10% on Peru, and 10% on Australia",
+      "url": "https://www.techpolicy.press/trumps-tariffs-are-harming-us-critical-mineral-supply-chains",
+      "chunk_id": "chunk_c76bcef538d6038f93e84084"
+    },
+    {
+      "claim_id": "claim_9319ecf0b0175b224b46cc22",
+      "text": "Critical minerals for the EV and battery supply chain will be hit by latest US tariffs on Chinese imports",
+      "url": "https://source.benchmarkminerals.com/article/trumps-ev-minerals-tariffs-spark-fears-of-new-rare-earths-like-crisis",
+      "chunk_id": "chunk_6ad1ee1160f7f5c7cacb0e8d"
+    },
+    {
+      "claim_id": "claim_df3cd9ef2740f79333af45ce",
+      "text": "Besides, President Trump has ordered a probe into the potential imposition of new tariffs on all critical mineral imports to the US.",
+      "url": "https://www.mobilityglobal.com/en-us/automotive-insights/blog/critical-minerals-shortages-looming-threat-ev-industry",
+      "chunk_id": "chunk_ba4ab04d519e6fea18099fa9"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_20757d44690c675bcd4aa917",
+      "claim_e57b9514a500b29163c0212b"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 13,
+  "synthesis_input_claim_count": 13
+}

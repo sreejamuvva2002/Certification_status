@@ -1,0 +1,66 @@
+{
+  "query_id": "q_295",
+  "query": "Hyundai Georgia plant tariff costs earnings disclosure",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0f7c77129786fba1bc07d1db",
+    "claim_80b72d86bc5d5e788b15567f",
+    "claim_9128d74760ff6c07fd73eb9c",
+    "claim_a21b5ab11c948e265a308585",
+    "claim_f220f942c7976b8b947afe61"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0f7c77129786fba1bc07d1db",
+      "text": "Hyundai and sister brand Kia have paid almost 5 million won ($3,600) as tariff per vehicle exported in the second quarter",
+      "url": "https://www.koreajoongangdaily.com/business/hyundai-in-a-catch-22-as-it-absorbs-us-tariffs-while-toyota-volkswagen-benefit-from-deals/12005889",
+      "chunk_id": "chunk_c57b637c46216750bf628105"
+    },
+    {
+      "claim_id": "claim_80b72d86bc5d5e788b15567f",
+      "text": "In July, Hyundai Motor said U.S. tariffs cost the company 828 billion won ($606.37 million) in the second quarter",
+      "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-ramp-up-us-output-trims-profit-margin-goal-tariff-hit-2025-09-18",
+      "chunk_id": "chunk_38109f51b068a939112c9aec"
+    },
+    {
+      "claim_id": "claim_9128d74760ff6c07fd73eb9c",
+      "text": "Hyundai reported a tariff hit of KRW 860 billion in the first quarter of 2026 and roughly KRW 900 billion in the second, per the company’s own earnings call. That is KRW 1.76 trillion in six months",
+      "url": "https://businessmodelanalyst.com/hyundai-localization-margin-recovery-26-billion",
+      "chunk_id": "chunk_b01cdca1db7f94c95abcd293"
+    },
+    {
+      "claim_id": "claim_a21b5ab11c948e265a308585",
+      "text": "The sticker price of Tucson SUV, Hyundai’s best-selling model in the U.S. market, starts at $28,705. When applying a 25 percent tariff based on a simple calculation, the tariff would be roughly $7,200",
+      "url": "https://www.koreajoongangdaily.com/business/hyundai-in-a-catch-22-as-it-absorbs-us-tariffs-while-toyota-volkswagen-benefit-from-deals/12005889",
+      "chunk_id": "chunk_c57b637c46216750bf628105"
+    },
+    {
+      "claim_id": "claim_f220f942c7976b8b947afe61",
+      "text": "Hyundai Motor is bearing mounting costs on an unprecedented scale due to the hefty 25 percent tariff imposed by the Donald Trump administration",
+      "url": "https://www.koreajoongangdaily.com/business/hyundai-in-a-catch-22-as-it-absorbs-us-tariffs-while-toyota-volkswagen-benefit-from-deals/12005889",
+      "chunk_id": "chunk_c57b637c46216750bf628105"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_0f7c77129786fba1bc07d1db",
+      "claim_f220f942c7976b8b947afe61"
+    ],
+    [
+      "claim_a21b5ab11c948e265a308585",
+      "claim_f220f942c7976b8b947afe61"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 16,
+  "synthesis_input_claim_count": 16
+}

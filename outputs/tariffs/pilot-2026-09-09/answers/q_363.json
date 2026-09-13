@@ -1,0 +1,73 @@
+{
+  "query_id": "q_363",
+  "query": "Aluminum automotive body sheet United States tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_128ca8fb1b7f1fda53cc6c48",
+    "claim_1bcc336dddb3f1b23343432b",
+    "claim_372b0eaace850ba53a3cb083",
+    "claim_470bb6d5902764607b8694d8",
+    "claim_53932f7008f97665bd846060",
+    "claim_78d6a048affff55be46f3e63"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_128ca8fb1b7f1fda53cc6c48",
+      "text": "Annex I-B [...] (reduced tariffs for certain steel derivatives until December 31, 2027)",
+      "url": "https://www.congress.gov/crs-product/IN12519",
+      "chunk_id": "chunk_551e1a084a839bec3df4eb3f"
+    },
+    {
+      "claim_id": "claim_1bcc336dddb3f1b23343432b",
+      "text": "10% tariff on full value of derivatives composed of at least 85% U.S.-sourced steel, aluminum, and copper",
+      "url": "https://www.congress.gov/crs-product/IN12519",
+      "chunk_id": "chunk_551e1a084a839bec3df4eb3f"
+    },
+    {
+      "claim_id": "claim_372b0eaace850ba53a3cb083",
+      "text": "IEEPA Reciprocal Tariffs and Section 232\nArticles and derivatives of steel and aluminum subject to Section 232 duties are excluded from the reciprocal tariffs; pursuant to heading 9903.01.33, HTSUS.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/232-tariffs-aluminum-and-steel-faqs",
+      "chunk_id": "chunk_5a80266b0a024b1d4b5adce2"
+    },
+    {
+      "claim_id": "claim_470bb6d5902764607b8694d8",
+      "text": "Updated 6/13/2025. Per Presidential Proclamations 9704 and 10895, HTS 7616.99.51.30, 7616.99.51.40, 7616.99.51.60, 7616.99.51.70 and 7616.99.51.90 are subject to the Section 232 duties.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/232-tariffs-aluminum-and-steel-faqs",
+      "chunk_id": "chunk_5a80266b0a024b1d4b5adce2"
+    },
+    {
+      "claim_id": "claim_53932f7008f97665bd846060",
+      "text": "The additional duties imposed by headings 9903.01.25, 9903.01.35, 9903.01.39, and 9903.01.43-9903.01.77 shall not apply to derivative aluminum products provided for in headings 9903.85.04, 9903.85.07, 9903.85.08 and 9903.85.09.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/232-tariffs-aluminum-and-steel-faqs",
+      "chunk_id": "chunk_ff4dc80a6cc70c638ee17e0b"
+    },
+    {
+      "claim_id": "claim_78d6a048affff55be46f3e63",
+      "text": "If the steel and/or aluminum derivative is classified in one of the new HTS classifications subject to Section 232 steel and/or aluminum derivatives duties on or after March 12, 2025, and the good is made exclusively from steel melted and poured in the United States, or exclusively made from aluminum smelted and cast in the United States, then the good is not subject to Section 232 steel and/or aluminum duties.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/232-tariffs-aluminum-and-steel-faqs",
+      "chunk_id": "chunk_ff4dc80a6cc70c638ee17e0b"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_128ca8fb1b7f1fda53cc6c48",
+      "claim_1bcc336dddb3f1b23343432b"
+    ],
+    [
+      "claim_372b0eaace850ba53a3cb083",
+      "claim_53932f7008f97665bd846060"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

@@ -1,0 +1,86 @@
+What changed, and why it matters now
+For most of the period since 2018, permanent magnets sat outside the main Section 301 tariff lists. That ended on 1 January 2026, when a long-scheduled increase took effect adding 25% additional duty to permanent magnets of metal imported from China. The action was announced in the Federal Register notice of 18 September 2024 (89 FR 76581) following the Section 301 four-year review, and it was the last of a series of phased strategic-sector increases that also covered lithium-ion batteries, natural graphite and medical gloves.
+That single change is significant on its own. What makes it consequential is that it landed on top of an executive tariff layer imposed under emergency economic powers during 2025, and alongside an export licensing regime on the Chinese side. The result is a stack rather than a rate — and the stack differs by material.
+Read this before you rely on any number here
+Tariff rates, exclusions and carve-outs in this area have changed repeatedly and on short notice, and several components currently in force carry scheduled expiry dates. Everything below is a structural explanation reviewed as of July 2026, not a rate table you should enter into a costing model without checking. Radial Magnets is not a licensed customs broker. Confirm classification and applicable rates with your broker and against the current Harmonized Tariff Schedule at hts.usitc.gov before you commit to a landed cost.
+Classification: getting the HTS code right
+Classification determines the rate. It is the first place money is won or lost, and it is decided by material composition and article form — not by application, brand, or what the purchase order calls the part.
+| The two subheadings that cover most permanent magnets. Statistical suffixes below the eight-digit level vary; confirm the full ten-digit code with your broker. |  |  |  | 
+|---|---|---|---|
+| Subheading | Covers | Typical magnet types | MFN base rate | 
+|---|---|---|---|
+| 8505.11.00 | Permanent magnets and articles intended to become permanent magnets after magnetization, of metal | Sintered NdFeB, samarium cobalt, alnico — all metallic alloys | 2.1% | 
+| 8505.19.00 | The same articles, other than of metal | Ceramic / ferrite magnets, plastic-bonded magnets, flexible magnetic sheet | 4.9% | 
+U.S. Customs has been explicit on the dividing line. In ruling H314738, ceramic suspension magnets were held not to be “of metal” — because ferrite is composed of strontium or barium carbonate and iron oxide rather than a metal alloy — and were classified under 8505.19 accordingly. Sintered NdFeB, by contrast, is a metallic alloy and falls in 8505.11.
+The distinction that matters commercially
+The January 2026 Section 301 increase was applied to 8505.11.00. Ferrite and bonded magnets classified in 8505.19 were not part of that particular action. Where an application has genuine thermal and field headroom, a redesign from a small neodymium magnet to a larger ferrite one can change the applicable subheading as a side effect. That is legitimate tariff engineering — the article really is different — but it is an engineering decision first. The performance trade is set out in the material comparison, and the redesign method is in the value engineering guide.
+When a magnet stops being a magnet
+Classification follows the article as presented at the border. A bare magnet is classified as a magnet. A magnet that has been assembled into something else frequently is not:
+- Pot and mounting assemblies — magnet in a steel cup with a threaded stud — are usually still within heading 8505 as magnetic holding devices, but the subheading can shift.
+- Magnetic couplings and torque-transmitting assemblies have been ruled into heading 8483 as transmission parts (CBP ruling N299871), at a different rate entirely.
+- Rotor assemblies, sensor sub-assemblies and encoder rings on hubs are frequently classified as parts of the machine they belong to, not as magnets.
+- Unmagnetized blanks are explicitly captured by the heading text — “articles intended to become permanent magnets after magnetization” — so shipping unmagnetized does not change the classification.
+This cuts both ways. It is a real planning variable when deciding where in your supply chain assembly occurs, and it is a real audit risk if entries have been filed on autopilot under 8505 for something that is properly a machine part. If you import assemblies, a binding ruling request is cheap insurance.
+The duty stack, layer by layer
+Duty on a China-origin magnet is assembled from independent layers that apply cumulatively to the customs value. Understanding them separately is what allows you to model the effect when any one of them changes — which several are scheduled to.
+Why we are not printing a single combined rate
+The executive tariff layer has been modified, litigated, carved out and rescheduled repeatedly since 2025, and carve-outs have been applied at the ten-digit statistical level rather than uniformly across a subheading. A combined percentage published today would be wrong for some magnet types immediately and for all of them eventually. Model the layers separately and take current rates from your broker or the HTSUS at the time of entry — that structure survives the next change; a single number does not.
+Building a landed cost that finance will accept
+Country of origin and substantial transformation
+Origin, not the shipping address, determines which tariff layers apply. This is the area where buyers are most often given comfortable answers that do not survive an audit.
+The governing test for non-preferential origin is substantial transformation: the country of origin is the last country in which the article was transformed into a new and different article of commerce, with a name, character and use distinct from what went in. Applied to magnets, this is a question about where the metallurgy happened, not where the final packaging happened.
+| Illustrative application of the substantial transformation principle. Facts govern in any specific case; a binding ruling is the only authoritative answer. |  |  | 
+|---|---|---|
+| Scenario | Likely origin outcome | Reasoning | 
+|---|---|---|
+| Chinese rare earth oxide → alloy, pressed, sintered, ground, plated and magnetized in a third country | Third country | Sintering creates the magnet; a new article of commerce clearly emerges | 
+| Chinese sintered blanks → ground to final size, plated and magnetized in a third country | Contested | The magnetic article already existed; finishing operations may not transform it. Fact-specific and a common audit target | 
+| Finished Chinese magnets → inspected, sorted and repacked in a third country | China | Repackaging is never substantial transformation | 
+| Finished Chinese magnets → assembled into a rotor or housing in a third country | Depends on the assembly | Complex assembly creating a new article may transform; simple insertion generally does not | 
+Transshipment is fraud, not a sourcing strategy
+Offers to route China-origin magnets through a third country with new paperwork and no manufacturing operation are illegal. The importer of record — almost always you, not the supplier — carries the liability for a false origin declaration, and penalties under the customs statutes can reach the domestic value of the merchandise, alongside the unpaid duty. If a price looks impossible given the published duty stack, the explanation is usually origin, and the exposure sits on your side of the transaction.
+Documentation that supports an origin claim
+- Manufacturer’s affidavit of origin naming the actual production facility and address — not a trading company letterhead.
+- Description of the operations performed at that facility, sufficient to demonstrate transformation.
+- Material certificate tying the finished lot to the alloy lot, with composition — the same document that determines export licensing exposure.
+- Production records traceable to your lot, retained for the five-year customs record-keeping period.
+- Consistency across documents. Invoice, packing list, certificate of origin and mill certificate naming three different entities is the pattern that triggers a request for information.
+The export control overlay
+Tariffs decide what you pay. Export controls decide whether the shipment moves at all — and the two are routinely confused in commercial conversation.
+China placed seven medium and heavy rare earth element categories under dual-use export licensing in April 2025, including dysprosium, terbium and samarium alongside gadolinium, lutetium, scandium and yttrium-related items. A significantly broader expansion announced in October 2025 was suspended in November 2025 under the bilateral framework — MOFCOM Announcements 70 and 72 — for approximately one year. The critical point for planning: the April 2025 regime was not suspended. The licensing requirement that affects ordinary commercial magnet shipments remains fully operative.
+The measurable effect is that supply has not normalised. CSIS analysis published in 2026 found magnet and rare earth flows well below pre-restriction levels a year on, and Bloomberg reported in July 2026 that China’s magnet exports to the United States in the first half of 2026 ran roughly 20% below the 2022–2024 average despite the truce. New non-Chinese magnet capacity began coming online during 2026, but displacement measured in actual output remains modest against demand.
+The procurement consequence is that grade selection is now a supply-risk decision as much as an engineering one. Specifying an SH grade where an H grade meets the thermal duty adds licence exposure, lead time and price for no functional gain. The load-line method for making that call properly is in the temperature guide, and the scheduling consequences are in lead times and MOQs.
+Legitimate ways to reduce duty exposure
+Every item below is a recognised customs mechanism or an engineering change. None of them involves misdescribing goods or their origin.
+| Mechanism | How it works | Best suited to | 
+|---|---|---|
+| Material substitution | Redesign from NdFeB to ferrite or bonded material changes the article and therefore its classification | Applications with size and field headroom — holding, latching, separation, low-duty motors | 
+| Grade right-sizing | Removing unnecessary heavy rare earth content lowers unit price and licence exposure; duty is a percentage of a smaller number | Almost every over-specified thermal requirement | 
+| Non-China sourcing | Origin outside China removes the China-specific layers entirely | Programs that can absorb a unit-price premium for duty and risk relief | 
+| Buying domestically held inventory | Duty already paid and settled by the importer; you buy a landed price with no border risk or timing exposure | Buyers who want cost and schedule certainty over the lowest theoretical unit price | 
+| Foreign trade zone | Duty deferred until goods leave the zone for domestic consumption; not owed at all on re-exports | High-volume importers with warehousing scale | 
+| Duty drawback | Recovery of a large share of duty paid on imported components subsequently exported, in the goods or as substituted merchandise | Manufacturers exporting finished assemblies containing imported magnets | 
+| First sale valuation | Where a genuine multi-tier transaction exists, duty may be assessed on the first sale price rather than the price you pay | Structured programs with documented middleman transactions; requires specialist advice | 
+| Assembly location review | Where assembly occurs can change classification and origin for the article as presented | Importers of rotors, couplings and sensor sub-assemblies | 
+The highest-return action for most buyers
+Not a customs mechanism at all — it is reviewing your magnet specifications against actual operating requirements. Duty is charged as a percentage of value, so every dollar removed from the unit price removes duty with it, and grade right-sizing removes licence exposure at the same time. A specification review typically returns more, faster, and with less compliance risk than any valuation strategy. The method is in cost reduction and value engineering.
+Reading a magnet quote for tariff exposure
+Incoterms decide who carries the duty risk and, crucially, whether a rate change lands on your budget or your supplier’s.
+| Common terms in magnet purchasing. Importer of record status — and therefore compliance liability — follows the term. |  |  |  | 
+|---|---|---|---|
+| Term | Who pays duty | Who is importer of record | What to watch | 
+|---|---|---|---|
+| EXW | You | You | Maximum exposure and maximum visibility; you own every downstream cost and every compliance obligation | 
+| FOB origin port | You | You | The common production term. Duty changes hit your budget directly | 
+| CIF / CFR | You | You | Freight is bundled into the price; duty is still yours and is calculated on a value that may include freight elements | 
+| DDP | Supplier | Supplier or their agent | Clean single number, but verify the term is firm against tariff changes — many DDP quotes carry a clause reopening price if rates move | 
+| Domestic stock purchase | Already paid | The stocking distributor | No border exposure at all; the duty is embedded and settled | 
+Questions worth asking on every quote
+- What HTS classification are you using, at ten digits? If the answer is vague, the landed cost is a guess.
+- What is the country of origin, and which facility performs the sintering? Origin is a metallurgical question.
+- Is this grade subject to export licensing, and has the application been filed? Applies to any SH, UH, EH, AH or SmCo part.
+- If the quote is DDP, is the price firm against tariff changes, and for how long?
+- Does the price include a duty component, and is it separable? Necessary to re-model when a layer expires or changes.
+- What documentation ships with the goods? See certificates and compliance documents.
+Keeping current
+The three primary sources worth checking directly rather than through commentary: the Harmonized Tariff Schedule at hts.usitc.gov for current rates and Chapter 99 notes, the Federal Register for USTR modification notices, and CBP’s CROSS database for classification rulings on articles like yours. For the supply-side picture, our industry updates track the magnetics market specifically.

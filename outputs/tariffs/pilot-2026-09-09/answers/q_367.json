@@ -1,0 +1,56 @@
+{
+  "query_id": "q_367",
+  "query": "Georgia metal stamping companies imported steel tariff costs",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_02bceaef24c1730fb7dc65c4",
+    "claim_74c22eeaf172d7c59264f8f8",
+    "claim_29943c2f26936fecc1ff95de",
+    "claim_1b8ffde74f05af6e816289e9"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_02bceaef24c1730fb7dc65c4",
+      "text": "Construction companies, automakers and beverage manufacturers in the state are caught in the middle of a trade war filled with plenty of back-and-forths.",
+      "url": "https://www.wabe.org/steel-and-aluminum-tariffs-doubled-as-georgia-businesses-face-price-increases",
+      "chunk_id": "chunk_5a34479cb37d64c2d2508919"
+    },
+    {
+      "claim_id": "claim_74c22eeaf172d7c59264f8f8",
+      "text": "Georgia businesses that rely on steel and aluminum will face higher costs after import taxes on these metals were doubled to 50% on Wednesday.",
+      "url": "https://www.wabe.org/steel-and-aluminum-tariffs-doubled-as-georgia-businesses-face-price-increases",
+      "chunk_id": "chunk_5a34479cb37d64c2d2508919"
+    },
+    {
+      "claim_id": "claim_29943c2f26936fecc1ff95de",
+      "text": "A 25% tariff on all steel and aluminium imports went into effect on March 12, under the umbrella of Section 232 of the 1962 Trade Expansion Act.",
+      "url": "https://www.fastmarkets.com/insights/ghost-of-steel-past-a-timeline-of-2025-in-the-americas-steel-industry",
+      "chunk_id": "chunk_dd366872482fb523eaf7b3ab"
+    },
+    {
+      "claim_id": "claim_1b8ffde74f05af6e816289e9",
+      "text": "On August 15, the US Department of Commerce expanded the list of goods subject to these 50% tariffs, adding 407 product categories of steel and aluminium derivative products",
+      "url": "https://www.fastmarkets.com/insights/ghost-of-steel-past-a-timeline-of-2025-in-the-americas-steel-industry",
+      "chunk_id": "chunk_dd366872482fb523eaf7b3ab"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_29943c2f26936fecc1ff95de",
+      "claim_74c22eeaf172d7c59264f8f8"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

@@ -1,0 +1,105 @@
+{
+  "query_id": "q_503",
+  "query": "Georgia automotive metals supplier tariff earnings call",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0962f0b4158ec97a8f1858be",
+    "claim_1ad021a5d2385f779992fda0",
+    "claim_3be5a89ebdb681750e6ea628",
+    "claim_5b4e7227fa2b4b5d88dc2438",
+    "claim_8597a0f5f1601ad8a432c31e",
+    "claim_8b933ef0e670f3572750d9e6",
+    "claim_a02af2f424a4156460c373cd",
+    "claim_bb5d8bd3aa9e77fb802c6220",
+    "claim_d4cdbba8690ec9dec19cb849",
+    "claim_fdcaa15013a748c6d2bdade0"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0962f0b4158ec97a8f1858be",
+      "text": "Safety-critical components, including airbags, windshields, mirrors, and seat belts, are among the targeted items.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0e904fe2cb92be0365d8e6dc"
+    },
+    {
+      "claim_id": "claim_1ad021a5d2385f779992fda0",
+      "text": "A new 25% tariff on imported auto parts officially took effect at 12:01 a.m. EDT on May 3.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0e904fe2cb92be0365d8e6dc"
+    },
+    {
+      "claim_id": "claim_3be5a89ebdb681750e6ea628",
+      "text": "IT'S A DIRECT HIT TO THEIR MATERIAL COSTS A STRAIN THAT HE SAYS WILL LIKELY HURT AUTO SUPPLIERS MORE THAN AUTOMAKERS.",
+      "url": "https://www.youtube.com/watch?v=35hkflOV0Hg",
+      "chunk_id": "chunk_e58c0c3f8cc56a7e670d9e55"
+    },
+    {
+      "claim_id": "claim_5b4e7227fa2b4b5d88dc2438",
+      "text": "On May 29, a U.S. Court of Appeals temporarily reinstated certain tariffs after conflicting rulings created uncertainty in the auto industry.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_0e904fe2cb92be0365d8e6dc"
+    },
+    {
+      "claim_id": "claim_8597a0f5f1601ad8a432c31e",
+      "text": "WABE Radio reports Mercedes-Benz USA this month opened its new North American headquarters in Sandy Springs, Georgia, for 1,000 employees.",
+      "url": "https://aldailynews.com/fear-steel-tariff-hurt-auto-industry-south",
+      "chunk_id": "chunk_266a70c3921e68607b72d98f"
+    },
+    {
+      "claim_id": "claim_8b933ef0e670f3572750d9e6",
+      "text": "25% TARIFFS ON CANADIAN STEEL AND ALUMINUM PRODUCTS WILL GO INTO EFFECT.",
+      "url": "https://www.youtube.com/watch?v=35hkflOV0Hg",
+      "chunk_id": "chunk_e58c0c3f8cc56a7e670d9e55"
+    },
+    {
+      "claim_id": "claim_a02af2f424a4156460c373cd",
+      "text": "A 25% TARIFF ON STEEL AND ALUMINUM IS SET TO GO INTO PLACE ON WEDNESDAY.",
+      "url": "https://www.youtube.com/watch?v=35hkflOV0Hg",
+      "chunk_id": "chunk_e58c0c3f8cc56a7e670d9e55"
+    },
+    {
+      "claim_id": "claim_bb5d8bd3aa9e77fb802c6220",
+      "text": "Trump has imposed new 20% duties on Chinese imports, reinstated 25% tariffs on global steel and aluminum, and applied 25% tariffs on certain imports from Canada and Mexico that do not comply with a North American trade agreement over the U.S. fentanyl overdose crisis.",
+      "url": "https://www.automotive-fleet.com/news/tariff-update-may-30-tariff-shifts-shake-up-auto-industry-as-legal-trade-battles-evolve",
+      "chunk_id": "chunk_09fb3ff6c8701f55f5872069"
+    },
+    {
+      "claim_id": "claim_d4cdbba8690ec9dec19cb849",
+      "text": "Trump signed a proclamation last week to impose a 25 percent tariff on steel from every country except Canada and Mexico.",
+      "url": "https://aldailynews.com/fear-steel-tariff-hurt-auto-industry-south",
+      "chunk_id": "chunk_266a70c3921e68607b72d98f"
+    },
+    {
+      "claim_id": "claim_fdcaa15013a748c6d2bdade0",
+      "text": "German business leaders are expressing concerns that President Donald Trump’s 25 percent tariff on imported steel could affect the auto industry in the South.",
+      "url": "https://aldailynews.com/fear-steel-tariff-hurt-auto-industry-south",
+      "chunk_id": "chunk_266a70c3921e68607b72d98f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_1ad021a5d2385f779992fda0",
+      "claim_5b4e7227fa2b4b5d88dc2438"
+    ],
+    [
+      "claim_8b933ef0e670f3572750d9e6",
+      "claim_a02af2f424a4156460c373cd"
+    ],
+    [
+      "claim_bb5d8bd3aa9e77fb802c6220",
+      "claim_d4cdbba8690ec9dec19cb849"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 19,
+  "synthesis_input_claim_count": 19
+}

@@ -1,0 +1,149 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence",
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original answer relies on generic risk disclosures and facility location mentions without establishing specific tariff exposure for Georgia automotive suppliers. Evidence shows imports and supply chain presence but lacks explicit named-company tariff effects or verified rates.",
+  "confidence": "high",
+  "remaining_gap": "No SEC filing explicitly links a named company's Georgia manufacturing facility to specific tariff rates or liabilities in the retrieved text.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_73ea86215377dbbcd348d9b9",
+      "supporting_excerpt": "Kia’s growth in Georgia has spurred an expanding local and regional supply chain, with suppliers building or expanding production locally.",
+      "relevance_explanation": "Confirms facility location but does not quantify tariff exposure.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_73ea86215377dbbcd348d9b9",
+      "supporting_excerpt": "However, with a significant base of South Korean and Asia-based suppliers, and vehicles built on global platforms in West Point, the carmaker also has a significant amount of imported material that arrives at the plant by sea.",
+      "relevance_explanation": "Indicates import reliance but lacks specific tariff rates or legal liability details.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_f2a76355c72befbdefc093c2",
+      "supporting_excerpt": "The regulations set out a purpose “to aid potential purchasers in the selection of new passenger motor vehicles by providing them with information about the value of the U.S./Canadian and foreign parts content of each vehicle...",
+      "relevance_explanation": "Describes labeling requirements rather than tariff imposition or rates.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_5127ba6ab854787ad3d3a379",
+      "supporting_excerpt": "This site displays a prototype of a “Web 2.0” version of the daily Federal Register. It is not an official legal edition... does not provide legal notice to the public or judicial notice to the courts.",
+      "relevance_explanation": "Indicates source unreliability for verifying current legal status of trade measures.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_270",
+  "query": "site:sec.gov automotive suppliers tariffs Georgia manufacturing",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 0,
+    "snippet_sources": 3,
+    "inaccessible_source_count": 3,
+    "selected_claims": 6,
+    "all_extracted_claims": 6,
+    "claims_presented_to_original_synthesis": 6,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_only"
+    ],
+    "conflict_groups": 1,
+    "company_named_claims": 3,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_f2a76355c72befbdefc093c2",
+    "passage_929a372df20b9346d59673b0",
+    "passage_19d247a5217f5463606156b8",
+    "passage_ce403dd22b145cd42d490522",
+    "passage_5127ba6ab854787ad3d3a379",
+    "passage_459d0763f23fac6c832cb67e",
+    "passage_73ea86215377dbbcd348d9b9",
+    "passage_a190fd152636fc9e2943abd4"
+  ],
+  "candidate_document_ids": [
+    "document_13a235e16dd5db7bb078bb6e",
+    "document_35e37010a1a34d0ce7c9d267",
+    "document_70a43178ff70f52ebcf3a808",
+    "document_7146f1134de6243ab405b9c6",
+    "document_c02ade84d479879c16b7d65a",
+    "document_fa95f5701bd94c20dfa77c42"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_73ea86215377dbbcd348d9b9",
+      "supporting_excerpt": "Kia’s growth in Georgia has spurred an expanding local and regional supply chain, with suppliers building or expanding production locally.",
+      "relevance_explanation": "Confirms facility location but does not quantify tariff exposure.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_8ed2f5b5192c3d4fbfb0af1b",
+      "query_id": "q_270",
+      "chunk_id": "chunk_656dfde63b930dcb23db68c2",
+      "document_id": "document_c02ade84d479879c16b7d65a",
+      "source_url": "https://www.automotivelogistics.media/supply-chain/kia-west-point-midnight-freight-trains-to-georgia/210654",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e57a6443ba53287c69a273badca5be3c44968c660b9bede5928c4054a99a07bf.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_73ea86215377dbbcd348d9b9",
+      "supporting_excerpt": "However, with a significant base of South Korean and Asia-based suppliers, and vehicles built on global platforms in West Point, the carmaker also has a significant amount of imported material that arrives at the plant by sea.",
+      "relevance_explanation": "Indicates import reliance but lacks specific tariff rates or legal liability details.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_7dc1325cbac1621bed3a53da",
+      "query_id": "q_270",
+      "chunk_id": "chunk_656dfde63b930dcb23db68c2",
+      "document_id": "document_c02ade84d479879c16b7d65a",
+      "source_url": "https://www.automotivelogistics.media/supply-chain/kia-west-point-midnight-freight-trains-to-georgia/210654",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e57a6443ba53287c69a273badca5be3c44968c660b9bede5928c4054a99a07bf.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_f2a76355c72befbdefc093c2",
+        "supporting_excerpt": "The regulations set out a purpose “to aid potential purchasers in the selection of new passenger motor vehicles by providing them with information about the value of the U.S./Canadian and foreign parts content of each vehicle...",
+        "relevance_explanation": "Describes labeling requirements rather than tariff imposition or rates.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_5127ba6ab854787ad3d3a379",
+        "supporting_excerpt": "This site displays a prototype of a “Web 2.0” version of the daily Federal Register. It is not an official legal edition... does not provide legal notice to the public or judicial notice to the courts.",
+        "relevance_explanation": "Indicates source unreliability for verifying current legal status of trade measures.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

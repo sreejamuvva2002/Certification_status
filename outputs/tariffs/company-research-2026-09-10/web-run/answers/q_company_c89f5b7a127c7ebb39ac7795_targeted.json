@@ -1,0 +1,53 @@
+{
+  "query_id": "q_company_c89f5b7a127c7ebb39ac7795_targeted",
+  "query": "\"Seoyon E-HWA\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_39b31efd3f593a110df702d1",
+    "claim_7da457f8d020529ad3ed80bd",
+    "claim_9107d4c0c6732d5cfb8de49a",
+    "claim_c913340cdf9409275ed2aca5"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_39b31efd3f593a110df702d1",
+      "text": "The 10% Section 122 base tariff expired at its 150-day limit on July 24, 2026 and was replaced the same day by the Section 301 forced-labor tariff — 10% or 12.5% depending on the economy",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    },
+    {
+      "claim_id": "claim_7da457f8d020529ad3ed80bd",
+      "text": "EU-origin goods instead pay a 15% all-inclusive ceiling under the EU-US deal effective July 1, 2026; Section 301 and Section 232 surcharges raise the effective rate further on covered goods",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    },
+    {
+      "claim_id": "claim_9107d4c0c6732d5cfb8de49a",
+      "text": "China remains the most heavily penalized, with Chinese-made electric vehicles facing a combined tariff rate exceeding 100% due to Section 301 surcharges (which were unaffected by the SCOTUS ruling) layered on top of the 12.5% forced-labor tariff",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    },
+    {
+      "claim_id": "claim_c913340cdf9409275ed2aca5",
+      "text": "The base layer is the 2.5% MFN rate plus the Section 301 forced-labor tariff (10% or 12.5% by tier) for most countries — EU-origin goods instead pay a 15% all-inclusive ceiling under the EU-US deal effective July 1, 2026",
+      "url": "https://www.tariffstool.com/tariffs-on-automobiles-parts",
+      "chunk_id": "chunk_6e50f5cf8ace5204b95d56e6"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_39b31efd3f593a110df702d1",
+      "claim_c913340cdf9409275ed2aca5"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 4,
+  "synthesis_input_claim_count": 4
+}

@@ -1,0 +1,70 @@
+{
+  "query_id": "q_240",
+  "query": "Port of Savannah automotive parts frontloading tariff deadlines",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_01abe3d338ba846e5bd03d61",
+    "claim_1a98b6b7db033faf80b9d39d",
+    "claim_5bb5d449626fbc4790742ef5",
+    "claim_aeec262d58c34f96687a4bd4",
+    "claim_b00cb7bf2918000baa0b196e",
+    "claim_e25599f00db9837e9741cc31"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_01abe3d338ba846e5bd03d61",
+      "text": "some companies have stated publicly that they have pulled forward their inventory to get ahead of new tariffs.",
+      "url": "https://www.ajot.com/premium/ajot-china-imports-surge-ahead-of-tariff-deadlines",
+      "chunk_id": "chunk_50cc228966ef3f83e57bff26"
+    },
+    {
+      "claim_id": "claim_1a98b6b7db033faf80b9d39d",
+      "text": "China imports surged in July, according to the August Global Shipping Report from Descartes Systems Group, showing imports from China increasing to 923,075 TEUs last month",
+      "url": "https://www.ajot.com/premium/ajot-china-imports-surge-ahead-of-tariff-deadlines",
+      "chunk_id": "chunk_50cc228966ef3f83e57bff26"
+    },
+    {
+      "claim_id": "claim_5bb5d449626fbc4790742ef5",
+      "text": "the expected October 15 end of the tariff truce between the US and China that temporarily brought rates down from the staggering peak of 145% to a more reasonable 30%.",
+      "url": "https://www.ajot.com/premium/ajot-china-imports-surge-ahead-of-tariff-deadlines",
+      "chunk_id": "chunk_50cc228966ef3f83e57bff26"
+    },
+    {
+      "claim_id": "claim_aeec262d58c34f96687a4bd4",
+      "text": "frontloading in response to the 30% temporary tariff rate on Chinese imports set to expire in mid-October.",
+      "url": "https://www.ajot.com/premium/ajot-china-imports-surge-ahead-of-tariff-deadlines",
+      "chunk_id": "chunk_50cc228966ef3f83e57bff26"
+    },
+    {
+      "claim_id": "claim_b00cb7bf2918000baa0b196e",
+      "text": "The growth was anchored by record months in February, March and April due to customers frontloading cargo in anticipation of tariffs.",
+      "url": "https://www.savannahnow.com/story/news/local/2025/10/01/port-of-savannah-cruises-to-strong-august-continues-resilient-year/86443214007",
+      "chunk_id": "chunk_566c9ad6acc733187aab3ca4"
+    },
+    {
+      "claim_id": "claim_e25599f00db9837e9741cc31",
+      "text": "The Port of Savannah saw a 9% year-over-year increase in cargo volume in August, marking its third-busiest month ever.",
+      "url": "https://www.savannahnow.com/story/news/local/2025/10/01/port-of-savannah-cruises-to-strong-august-continues-resilient-year/86443214007",
+      "chunk_id": "chunk_566c9ad6acc733187aab3ca4"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_5bb5d449626fbc4790742ef5",
+      "claim_aeec262d58c34f96687a4bd4"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

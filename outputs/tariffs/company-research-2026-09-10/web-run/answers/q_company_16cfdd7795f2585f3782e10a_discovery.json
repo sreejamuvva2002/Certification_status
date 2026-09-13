@@ -1,0 +1,62 @@
+{
+  "query_id": "q_company_16cfdd7795f2585f3782e10a_discovery",
+  "query": "\"Fanello Industries Inc.\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_518c7dfd19d5576196b35429",
+    "claim_6a3ec0a0601ef345bf03d9b0",
+    "claim_d640a6059fff06e9e02bd599",
+    "claim_de2fc5c73a2959b718995d35",
+    "claim_f18503bb9ed143c45962c5b8"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_518c7dfd19d5576196b35429",
+      "text": "Remaining in effect, thus far, are a 25% tariff on imported cars and car parts and a 125% tariff on all Chinese goods",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_6a3ec0a0601ef345bf03d9b0",
+      "text": "On April 3, the chamber published a report outlining the impacts local industries may experience from the tariffs, including higher prices for car parts and steel",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_d640a6059fff06e9e02bd599",
+      "text": "President Donald Trump’s newly unveiled tariffs have sent shockwaves through the manufacturing, technology and agricultural sectors across the country — particularly in Georgia.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_de2fc5c73a2959b718995d35",
+      "text": "The 25% auto tariff could pose a major threat to automobile titans like Hyundai and Kia that have production plants in the state",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_f18503bb9ed143c45962c5b8",
+      "text": "Lockheed Martin Corp., which contributes to the local manufacturing of aircraft parts that topped Georgia’s exports at $12.6 billion last year.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_518c7dfd19d5576196b35429",
+      "claim_de2fc5c73a2959b718995d35"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

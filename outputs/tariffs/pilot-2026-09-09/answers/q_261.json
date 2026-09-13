@@ -1,0 +1,60 @@
+{
+  "query_id": "q_261",
+  "query": "site:rulings.cbp.gov electric vehicle battery pack country of origin",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_6c9dc3fcb772212ca77c2e8d",
+    "claim_7cc7343ff77dee95cbb1e727",
+    "claim_981795600f10a474ec6966a5",
+    "claim_e2ab032169044afe27433d77"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_6c9dc3fcb772212ca77c2e8d",
+      "text": "the body shell, battery pack, and electric drive unit imported from China cannot operate as an electric vehicle and will need to be assembled in Country A with other necessary components",
+      "url": "https://rulings.cbp.gov/ruling/H330647",
+      "chunk_id": "chunk_f46d6df150925efe2fe85d79"
+    },
+    {
+      "claim_id": "claim_7cc7343ff77dee95cbb1e727",
+      "text": "the country of origin of the subject battery module, part number 41000000, and the battery pack, part number 40007000, for the purposes of Section 301 is China, Japan, or Korea, dependent upon where the battery cells are manufactured.",
+      "url": "https://rulings.cbp.gov/ruling/N329847",
+      "chunk_id": "chunk_d3b3ee0dbafac4f948376332"
+    },
+    {
+      "claim_id": "claim_981795600f10a474ec6966a5",
+      "text": "of an electric vehicle (the battery pack, motor, electronics, wiring assemblies, and charger) were of U.S. origin. Based upon these facts, we found that the country of origin of the electric vehicles was the United States.",
+      "url": "https://rulings.cbp.gov/ruling/H229157",
+      "chunk_id": "chunk_2ba167b862e9c7fccd078f14"
+    },
+    {
+      "claim_id": "claim_e2ab032169044afe27433d77",
+      "text": "of an electric vehicle (the batteries, motor, instrument cluster, wiring assemblies, and heater core) are of U.S. origin. We conclude, based upon these specific facts, that the country of origin of the VVI electric trucks and vans for purposes of U.S. Government procurement is the United States.",
+      "url": "https://rulings.cbp.gov/ruling/H229157",
+      "chunk_id": "chunk_2ba167b862e9c7fccd078f14"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_6c9dc3fcb772212ca77c2e8d",
+      "claim_7cc7343ff77dee95cbb1e727"
+    ],
+    [
+      "claim_981795600f10a474ec6966a5",
+      "claim_e2ab032169044afe27433d77"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 4,
+  "synthesis_input_claim_count": 4
+}

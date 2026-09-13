@@ -1,0 +1,88 @@
+{
+  "query_id": "q_36",
+  "query": "Hyundai Georgia suppliers South Korea import duties",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_117a160ac4455f95df00b998",
+    "claim_5f8caf338c689621af3cc8f1",
+    "claim_76f6fc362b5cd8bde5e9bcea",
+    "claim_792cd3fecce66dea42d0f69d",
+    "claim_8caa6e1d25fadd1d3a394238",
+    "claim_b9a2b9265186b48538bb1395"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_117a160ac4455f95df00b998",
+      "text": "The Trump administration this past week confirmed plans to lower tariffs on certain products, including vehicles, to 15% from South Korea. A notice about the implementation of the trade deal was posted Wednesday on the Federal Register.",
+      "url": "https://www.cnbc.com/2025/12/03/trump-south-korea-tariffs-vehicles-hyundai-gm.html",
+      "chunk_id": "chunk_45214f8d0a4404346d5e8abb"
+    },
+    {
+      "claim_id": "claim_5f8caf338c689621af3cc8f1",
+      "text": "The agreement cuts tariffs on South Korean autos exported to the United States from 25% to 15%, prompting Hyundai and its affiliate Kia Corp to expand domestic production and exports.",
+      "url": "https://www.cbtnews.com/hyundai-to-invest-86-5b-in-south-korea-after-us-tariff-cut",
+      "chunk_id": "chunk_87f4a12f4efb000cc4d7a5bb"
+    },
+    {
+      "claim_id": "claim_76f6fc362b5cd8bde5e9bcea",
+      "text": "The South Korean-based automaker is the largest U.S. importer of new vehicles from the country, followed by GM. Both automakers have paid billions of dollars in levies so far this year after President Donald Trump placed 25% tariffs on imported vehicles from South Korea and other countries in the spring.",
+      "url": "https://www.cnbc.com/2025/12/03/trump-south-korea-tariffs-vehicles-hyundai-gm.html",
+      "chunk_id": "chunk_45214f8d0a4404346d5e8abb"
+    },
+    {
+      "claim_id": "claim_792cd3fecce66dea42d0f69d",
+      "text": "U.S.-South Korea trade deal, reducing tariffs to 15% enables Hyundai to diversify exports and support suppliers.",
+      "url": "https://www.cbtnews.com/hyundai-to-invest-86-5b-in-south-korea-after-us-tariff-cut",
+      "chunk_id": "chunk_87f4a12f4efb000cc4d7a5bb"
+    },
+    {
+      "claim_id": "claim_8caa6e1d25fadd1d3a394238",
+      "text": "Prior to the reduction, Hyundai reported U.S. tariffs costed the company 1.8 trillion won ($1.2 billion) in the third quarter, up from 828 billion won ($565 million) in the previous quarter.",
+      "url": "https://www.cnbc.com/2025/12/03/trump-south-korea-tariffs-vehicles-hyundai-gm.html",
+      "chunk_id": "chunk_45214f8d0a4404346d5e8abb"
+    },
+    {
+      "claim_id": "claim_b9a2b9265186b48538bb1395",
+      "text": "Hyundai executives emphasized that the investment will also help support South Korean auto parts suppliers impacted by U.S. tariffs.",
+      "url": "https://www.cbtnews.com/hyundai-to-invest-86-5b-in-south-korea-after-us-tariff-cut",
+      "chunk_id": "chunk_87f4a12f4efb000cc4d7a5bb"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_76f6fc362b5cd8bde5e9bcea",
+      "claim_117a160ac4455f95df00b998"
+    ],
+    [
+      "claim_76f6fc362b5cd8bde5e9bcea",
+      "claim_5f8caf338c689621af3cc8f1"
+    ],
+    [
+      "claim_76f6fc362b5cd8bde5e9bcea",
+      "claim_792cd3fecce66dea42d0f69d"
+    ],
+    [
+      "claim_117a160ac4455f95df00b998",
+      "claim_5f8caf338c689621af3cc8f1"
+    ],
+    [
+      "claim_117a160ac4455f95df00b998",
+      "claim_792cd3fecce66dea42d0f69d"
+    ],
+    [
+      "claim_5f8caf338c689621af3cc8f1",
+      "claim_792cd3fecce66dea42d0f69d"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 13,
+  "synthesis_input_claim_count": 13
+}

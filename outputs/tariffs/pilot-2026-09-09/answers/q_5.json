@@ -1,0 +1,63 @@
+{
+  "query_id": "q_5",
+  "query": "Georgia EV manufacturers imported components tariff costs",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2c459b3e25009d9ef46099bb",
+    "claim_5249819c48260b3d2bf50522",
+    "claim_75699b58d4a4a2ba52a18d45",
+    "claim_c285a022a64271a2eab3d11a",
+    "claim_e1578b8044f522c2f4142bd1"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2c459b3e25009d9ef46099bb",
+      "text": "Tariffs on EVs under Section 301 will rise from 25% to 100% in 2024.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_5249819c48260b3d2bf50522",
+      "text": "China controls >80% of certain segments of the EV battery supply chain, seen as a risk to U.S. supply chains and national security.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_75699b58d4a4a2ba52a18d45",
+      "text": "Natural graphite will face tariffs of 25%, as will permanent magnets, starting 2026.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_c285a022a64271a2eab3d11a",
+      "text": "Natural graphite will face tariffs of 25%, as will permanent magnets, starting 2026.",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    },
+    {
+      "claim_id": "claim_e1578b8044f522c2f4142bd1",
+      "text": "Tariffs on lithium-ion EV batteries will rise from 7.5% to 25% in 2024",
+      "url": "https://mobilitynotes.com/summary-of-ev-related-u-s-tariffs-on-chinese-imports",
+      "chunk_id": "chunk_e60cc1d280f9bb8c7a820c82"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_75699b58d4a4a2ba52a18d45",
+      "claim_c285a022a64271a2eab3d11a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

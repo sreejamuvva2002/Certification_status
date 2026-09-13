@@ -1,0 +1,40 @@
+{
+  "query_id": "q_488",
+  "query": "site:commerce.gov automotive Section 232 tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_7a31e58fca072ced804e006e",
+    "claim_908eff1e71305591162948b7"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_7a31e58fca072ced804e006e",
+      "text": "Twelve232 investigations launched—the most of any administration in history, including auto, lumber, pharmaceuticals, and semiconductors, to drive investments.",
+      "url": "https://www.commerce.gov/news/press-releases/2026/01/first-year-accomplishments-under-secretary-howard-w-lutnick",
+      "chunk_id": "chunk_f98bfa8620ba7c6a6eba9536"
+    },
+    {
+      "claim_id": "claim_908eff1e71305591162948b7",
+      "text": "+ The U.S. Section 232 duties applied to Taiwanese auto parts, timber, lumber, and wood derivative products will total no more than 15 percent.",
+      "url": "https://www.commerce.gov/news/fact-sheets/2026/01/fact-sheet-restoring-american-semiconductor-manufacturing-leadership",
+      "chunk_id": "chunk_4deaf4cfa6c1c3accb222995"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_7a31e58fca072ced804e006e",
+      "claim_908eff1e71305591162948b7"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

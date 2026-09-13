@@ -1,0 +1,152 @@
+{
+  "primary_cause": "missing_sources",
+  "contributing_causes": [
+    "weak_geographic_or_company_relevance"
+  ],
+  "cause_explanation": "Original metrics show zero retrieved candidates and claims, indicating a complete lack of source material in the initial search. Available cached passages discuss port volumes and tariff impacts generally but do not specify country of origin for automotive component imports.",
+  "confidence": "high",
+  "remaining_gap": "Specific import origin data for automotive components is absent from all retrieved text, preventing verification of supply chain origins.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_a08e178830a84fb811ece61f",
+      "supporting_excerpt": "Savannah rides a tariff-fueled surge while Brunswick’s auto trade hits the brakes.",
+      "relevance_explanation": "Confirms automotive trade context but lacks origin data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_356ddb80fd921c044fcd8a39",
+      "supporting_excerpt": "The growth was caused in part by a surge in cargo since President Donald Trump returned to office in January promising heavy tariffs on China and other U.S. trading partners.",
+      "relevance_explanation": "Mentions China as tariff target, not confirmed import origin for components.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_f13002ca2c3f116a22f27f27",
+      "supporting_excerpt": "Kia worked together with the Georgia Ports Authority (GPA), which runs the port of Savannah, to come up with proposals to improve the carmaker’s imported supply chain.",
+      "relevance_explanation": "Identifies Kia and imports but does not specify component origin country.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_86d392a7474b932a20bf7a6b",
+      "supporting_excerpt": "Lynch says their auto exports dropped considerably when it comes to China.",
+      "relevance_explanation": "Discusses auto exports to China, not import origins for components.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_460",
+  "query": "Port of Savannah automotive component imports country of origin",
+  "metrics": {
+    "retrieved_candidates": 0,
+    "retained_sources": 0,
+    "full_text_sources": 0,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 0,
+    "all_extracted_claims": 0,
+    "claims_presented_to_original_synthesis": 0,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 0,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "missing_sources",
+    "weak_geographic_or_company_relevance"
+  ],
+  "candidate_passage_ids": [
+    "passage_a08e178830a84fb811ece61f",
+    "passage_d8d1b2a3755e5083638a7e45",
+    "passage_356ddb80fd921c044fcd8a39",
+    "passage_077bbab44aa920bdaecb500d",
+    "passage_86d392a7474b932a20bf7a6b",
+    "passage_f077824813169de5bb8ed0a7",
+    "passage_f13002ca2c3f116a22f27f27",
+    "passage_423f8d2d128993ddbc1db46f"
+  ],
+  "candidate_document_ids": [
+    "document_0fe93b485392284e2758944b",
+    "document_559b3471aaf08c46cc157b1e",
+    "document_716d5cd5b79e31399e3c087f",
+    "document_9121c02d44063faf4fda1009",
+    "document_bb7e1653225ee87a21621bf4",
+    "document_c02ade84d479879c16b7d65a",
+    "document_e2985c868e85600c1822d156",
+    "document_f63dbb303528c7ec86003af3"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_a08e178830a84fb811ece61f",
+      "supporting_excerpt": "Savannah rides a tariff-fueled surge while Brunswick’s auto trade hits the brakes.",
+      "relevance_explanation": "Confirms automotive trade context but lacks origin data.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_d689c1b3520ebd932fb50910",
+      "query_id": "q_460",
+      "chunk_id": "chunk_67b54c12332bc0e7881e3edb",
+      "document_id": "document_9121c02d44063faf4fda1009",
+      "source_url": "https://valdostadailytimes.com/2025/11/03/gary-wisenbaker-georgia-ports-weather-tariff-turbulence",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/ca9ceb838489392234a867eaf1ce8f7555ed7983d963cca40d280e5e9e9fd22a.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_f13002ca2c3f116a22f27f27",
+      "supporting_excerpt": "Kia worked together with the Georgia Ports Authority (GPA), which runs the port of Savannah, to come up with proposals to improve the carmaker’s imported supply chain.",
+      "relevance_explanation": "Identifies Kia and imports but does not specify component origin country.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_50301cd03fc5e612c1eaafb7",
+      "query_id": "q_460",
+      "chunk_id": "chunk_656dfde63b930dcb23db68c2",
+      "document_id": "document_c02ade84d479879c16b7d65a",
+      "source_url": "https://www.automotivelogistics.media/supply-chain/kia-west-point-midnight-freight-trains-to-georgia/210654",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e57a6443ba53287c69a273badca5be3c44968c660b9bede5928c4054a99a07bf.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_86d392a7474b932a20bf7a6b",
+      "supporting_excerpt": "Lynch says their auto exports dropped considerably when it comes to China.",
+      "relevance_explanation": "Discusses auto exports to China, not import origins for components.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_2db819db4e89bcd14b01c351",
+      "query_id": "q_460",
+      "chunk_id": "chunk_9d4288832720253c0c3df619",
+      "document_id": "document_e2985c868e85600c1822d156",
+      "source_url": "https://www.wtoc.com/2026/01/28/port-savannah-tracks-tariff-impacts-following-second-busiest-year-record",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/d93fef2eb459e6085577b97aa4dd5c804c3ccec7b8d5f9b328347aa8995a48ed.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_356ddb80fd921c044fcd8a39",
+        "supporting_excerpt": "The growth was caused in part by a surge in cargo since President Donald Trump returned to office in January promising heavy tariffs on China and other U.S. trading partners.",
+        "relevance_explanation": "Mentions China as tariff target, not confirmed import origin for components.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

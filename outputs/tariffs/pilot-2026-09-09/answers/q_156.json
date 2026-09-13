@@ -1,0 +1,101 @@
+{
+  "query_id": "q_156",
+  "query": "Printed circuit boards United States import tariffs current rates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0af0eec1652d261deea40549",
+    "claim_3730f1b64c2335f057b01a6f",
+    "claim_37de17ae58010a5e737ab437",
+    "claim_41b60d62f8f7cabbdfa56ee0",
+    "claim_9913e94372cbed7a84caf8b3",
+    "claim_c5abe13683506282c371019f",
+    "claim_d1db7eda41a0a5387880f59b",
+    "claim_dd7d118d71a29ce531213fd1"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0af0eec1652d261deea40549",
+      "text": "Taiwan remains at 10%",
+      "url": "https://www.mclpcb.com/blog/important-tariff-update",
+      "chunk_id": "chunk_bd5b124c929ced51695d707b"
+    },
+    {
+      "claim_id": "claim_3730f1b64c2335f057b01a6f",
+      "text": "Updated U.S. PCB tariff rates took effect. China (2 & 4-layer FR-4), Thailand, and Vietnam are now subject to a 12.5% tariff, China-origin PCBs other than 2 & 4-layer FR-4 are now 37.5%, and Taiwan remains at 10%.",
+      "url": "https://www.mclpcb.com/blog/important-tariff-update",
+      "chunk_id": "chunk_bd5b124c929ced51695d707b"
+    },
+    {
+      "claim_id": "claim_37de17ae58010a5e737ab437",
+      "text": "| Country | Type | Standard Rate | Exemption | Section 301 | Total | \n|---|---|---|---|---|---|\n| China | 2L and 4L FR4 PCBs | 25% | -25% | 12.5% | 12.5% |",
+      "url": "https://www.sunshinepcbgroup.com/resources/tariff-rates",
+      "chunk_id": "chunk_a73efa901dcdf5106e26a4e0"
+    },
+    {
+      "claim_id": "claim_41b60d62f8f7cabbdfa56ee0",
+      "text": "125% tariff on 2- and 4-layer rigid PCBs from China.",
+      "url": "https://www.mclpcb.com/blog/important-tariff-update",
+      "chunk_id": "chunk_bd5b124c929ced51695d707b"
+    },
+    {
+      "claim_id": "claim_9913e94372cbed7a84caf8b3",
+      "text": "In April 2025, the United States has implemented new tariffs on Chinese imports, including printed circuit boards (PCBs) and custom-made technical parts.",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_c5abe13683506282c371019f",
+      "text": "| PCB Type | HS Code | Updated Tariff |\n| Single-sided PCBs | 8534.00.00 | 55% |",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_d1db7eda41a0a5387880f59b",
+      "text": "| China | 30% DS/4Layer, 55% other | 14/05/25 | Until 12/11/25 | Interim deal; 90-day truce. |",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_dd7d118d71a29ce531213fd1",
+      "text": "China-origin PCBs other than 2 & 4-layer FR-4 are now 37.5%",
+      "url": "https://www.mclpcb.com/blog/important-tariff-update",
+      "chunk_id": "chunk_bd5b124c929ced51695d707b"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0af0eec1652d261deea40549",
+      "claim_3730f1b64c2335f057b01a6f"
+    ],
+    [
+      "claim_3730f1b64c2335f057b01a6f",
+      "claim_37de17ae58010a5e737ab437"
+    ],
+    [
+      "claim_3730f1b64c2335f057b01a6f",
+      "claim_41b60d62f8f7cabbdfa56ee0"
+    ],
+    [
+      "claim_37de17ae58010a5e737ab437",
+      "claim_41b60d62f8f7cabbdfa56ee0"
+    ],
+    [
+      "claim_9913e94372cbed7a84caf8b3",
+      "claim_d1db7eda41a0a5387880f59b"
+    ],
+    [
+      "claim_c5abe13683506282c371019f",
+      "claim_d1db7eda41a0a5387880f59b"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

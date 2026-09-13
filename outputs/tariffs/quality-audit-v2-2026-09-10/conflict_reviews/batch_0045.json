@@ -1,0 +1,30 @@
+{
+  "status": "reviewed",
+  "pairs": {
+    "conflict_a0f836fa23d0743f5cf75e82": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "The first claim specifies a 10% Section 232 rate for 'Buses' (HTSUS Heading 8702), while the second claim specifies a 25% Section 232 rate for 'MHDVs' (Medium- and Heavy-Duty Vehicles). The text explicitly distinguishes these as separate categories with different baseline rates and exclusion rules, indicating they apply to different product definitions rather than conflicting on the same scope.",
+      "verification_question": "Does the source text confirm that Buses are strictly excluded from the 25% MHDV rate and subject only to the specific 10% Bus rate?"
+    },
+    "conflict_684009c9528de36d70306d4d": {
+      "classification": "complementary_or_no_conflict",
+      "reason": "The first claim states Section 232 tariffs on steel, aluminum, copper, and automobiles are NOT eligible for drawback. The second claim states duty drawback is available for exported vehicles and parts up to 99% of eligible duties, but explicitly notes 'Section 232 is NOT recoverable.' These statements are consistent: the general program exists (up to 99%), but Section 232 duties are an excluded category within that program.",
+      "verification_question": "Does the source text clarify if any specific non-automotive Section 232 products (e.g., steel) have different drawback eligibility than automobiles?"
+    },
+    "conflict_8788acb7d4cc558734a440ba": {
+      "classification": "complementary_or_no_conflict",
+      "reason": "Both claims originate from the same source (lightsource.ai) and present identical information: Section 232 tariffs on steel, aluminum, copper, and automobiles are NOT eligible for drawback. The repetition confirms the rule rather than creating a conflict.",
+      "verification_question": "Is there any nuance in the source text regarding 'copper' or 'aluminum' that differs from the general exclusion statement?"
+    },
+    "conflict_a91366c72e889e5caa555644": {
+      "classification": "complementary_or_no_conflict",
+      "reason": "The first claim (Ginger Control) states Section 232 is NOT recoverable for vehicles/parts. The second claim (Lightsource) states Section 232 tariffs on automobiles are NOT eligible. Both sources agree that Section 232 duties are excluded from drawback eligibility, making them complementary statements of the same policy.",
+      "verification_question": "Does the source text distinguish between 'automobiles' and 'automobile parts' regarding their specific exclusion status under Section 232?"
+    },
+    "conflict_5af024d586eeb5444946f790": {
+      "classification": "complementary_or_no_conflict",
+      "reason": "The first claim (Ginger Control) states Section 232 is NOT recoverable. The second claim quotes a Federal Register proclamation stating 'No drawback shall be available with respect to the duties imposed pursuant to this proclamation.' Since the context identifies the proclamation as imposing Section 232 tariffs on automobiles, the specific prohibition in the proclamation aligns with the general statement that Section 232 is not recoverable.",
+      "verification_question": "Does the Federal Register text specify if 'this proclamation' covers all Section 232 duties or only those specifically listed in the March 2025 document?"
+    }
+  }
+}

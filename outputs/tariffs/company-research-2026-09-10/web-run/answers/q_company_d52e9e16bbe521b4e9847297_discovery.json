@@ -1,0 +1,46 @@
+{
+  "query_id": "q_company_d52e9e16bbe521b4e9847297_discovery",
+  "query": "\"PPG Industries Inc.\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0f160fcef3faa0cb565a68b9",
+    "claim_ffd3f342970ada3a68f28c25",
+    "claim_377d6540d516b3a3b2ed2f8b"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0f160fcef3faa0cb565a68b9",
+      "text": "If you look at our U.S. businesses, our top 30 suppliers for our U.S. businesses, 0 of them are Chinese,” Knavish told analysts.",
+      "url": "https://fortune.com/article/ppg-ceo-says-company-is-ready-to-navigate-trump-tariff-uncertainty-our-top-30-suppliers-for-our-u-s-businesses-0-of-them-are-chinese",
+      "chunk_id": "chunk_b925b3cd964d273989ee4303"
+    },
+    {
+      "claim_id": "claim_ffd3f342970ada3a68f28c25",
+      "text": "Knivish said PPG should be resilient in the face of Trump’s recent tariff threats because it doesn’t rely on any single country, region, or end market, and primarily buys, makes, and sells locally.",
+      "url": "https://fortune.com/article/ppg-ceo-says-company-is-ready-to-navigate-trump-tariff-uncertainty-our-top-30-suppliers-for-our-u-s-businesses-0-of-them-are-chinese",
+      "chunk_id": "chunk_b925b3cd964d273989ee4303"
+    },
+    {
+      "claim_id": "claim_377d6540d516b3a3b2ed2f8b",
+      "text": "PPG Industries reported first-quarter 2025 earnings that fell across most major metrics, but CEO Tim Knavish struck an optimistic tone, pointing to early momentum from the company’s long-term growth strategy—and to its history of navigating through economic upheaval like that unleashed by U.S. President Donald Trump’s aggressive tariff regime.",
+      "url": "https://fortune.com/article/ppg-ceo-says-company-is-ready-to-navigate-trump-tariff-uncertainty-our-top-30-suppliers-for-our-u-s-businesses-0-of-them-are-chinese",
+      "chunk_id": "chunk_b925b3cd964d273989ee4303"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established"
+  ],
+  "conflicts": [
+    [
+      "claim_0f160fcef3faa0cb565a68b9",
+      "claim_ffd3f342970ada3a68f28c25"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

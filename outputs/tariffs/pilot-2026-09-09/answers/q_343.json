@@ -1,0 +1,67 @@
+{
+  "query_id": "q_343",
+  "query": "Automotive stamped metal parts Section 232 coverage",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0658809aeb784c1ae775c459",
+    "claim_07d5e0bb2e07c99f8859e7c0",
+    "claim_3f3e4b8ac8a0140a41527a70",
+    "claim_412020137629721ca450ce54",
+    "claim_5d62d9016dcf25a481776a20",
+    "claim_60bd21591628a7a8e4991de3"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0658809aeb784c1ae775c459",
+      "text": "On April 2, 2026, the federal administration modified Section 232 tariffs on steel, aluminum, and copper imports through a presidential proclamation, with new rules taking effect for goods entered on or after April 6, 2026.",
+      "url": "https://manortool.com/post/april-2026-section-232-tariff-metal-stamping-sourcing",
+      "chunk_id": "chunk_ba0e1d680adc83446a7c3c2f"
+    },
+    {
+      "claim_id": "claim_07d5e0bb2e07c99f8859e7c0",
+      "text": "A 50 percent tariff applies to most covered steel and aluminum derivative products listed in Annex 1A of the proclamation.",
+      "url": "https://manortool.com/post/april-2026-section-232-tariff-metal-stamping-sourcing",
+      "chunk_id": "chunk_ba0e1d680adc83446a7c3c2f"
+    },
+    {
+      "claim_id": "claim_3f3e4b8ac8a0140a41527a70",
+      "text": "Light trucks classified in subheadings 8704.21.01, 8704.31.01, 8704.41.00, 8704.51.00, and 8704.60.00 are subject to the duties.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_df1c0b3d40b66bc09c852e25"
+    },
+    {
+      "claim_id": "claim_412020137629721ca450ce54",
+      "text": "Only auto parts for passenger vehicles and light trucks, as defined by Executive Order 14257, issued April 2, 2025, and subject to Section 232 duties as of May 3, 2025, are not subject to the reciprocal duties effective April 5, 2025, pursuant to heading 9903.01.33, HTSUS.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_df1c0b3d40b66bc09c852e25"
+    },
+    {
+      "claim_id": "claim_5d62d9016dcf25a481776a20",
+      "text": "Articles where the qualifying metal weighs less than 15 percent of total weight are excluded from Section 232 duties unless they fall into a previously listed category.",
+      "url": "https://manortool.com/post/april-2026-section-232-tariff-metal-stamping-sourcing",
+      "chunk_id": "chunk_ba0e1d680adc83446a7c3c2f"
+    },
+    {
+      "claim_id": "claim_60bd21591628a7a8e4991de3",
+      "text": "Commercial vehicles, such as sedans, sport utility vehicles, crossover utility vehicles, minivans, cargo vans and light trucks, provided for in heading 9903.94.01, HTSUS, are subject to the Section 232 duties pursuant to the Proclamation.",
+      "url": "https://www.cbp.gov/trade/programs-administration/entry-summary/section-232-additional-faqs-autos",
+      "chunk_id": "chunk_df1c0b3d40b66bc09c852e25"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0658809aeb784c1ae775c459",
+      "claim_412020137629721ca450ce54"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 13,
+  "synthesis_input_claim_count": 13
+}

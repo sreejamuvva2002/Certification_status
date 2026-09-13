@@ -1,0 +1,80 @@
+{
+  "query_id": "q_381",
+  "query": "Mexican assembled EV batteries country of origin tariffs",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0001f2f51a2cf2b2e9ef5a49",
+    "claim_2bb05a8ccc2c50f41325edd5",
+    "claim_4530f8e30c770a7d8fbf9738",
+    "claim_4e65ff315fdff7255fd0d4cd",
+    "claim_528766bda5a218babe52d8d9",
+    "claim_d4fc3d390b9aae8826879177",
+    "claim_e3c7338c0337e4a1c68f4cb5"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0001f2f51a2cf2b2e9ef5a49",
+      "text": "As noted above, the country of origin determines whether an EV imported into the United States is subject to the general tariff, the unilateral tariffs imposed under Section 301 or the IEEPA, or whether it qualifies for a reduced dutiable base",
+      "url": "https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1618&context=djcil",
+      "chunk_id": "chunk_8b8f2b6812b345670b3d5828"
+    },
+    {
+      "claim_id": "claim_2bb05a8ccc2c50f41325edd5",
+      "text": "The EV battery in particular must qualify in order for the vehicle to enjoy USMCA tariff-free entry into the United States.",
+      "url": "https://digitalcommons.wcl.american.edu/cgi/viewcontent.cgi?article=2167&context=auilr",
+      "chunk_id": "chunk_c44cda6b792c35806d87beed"
+    },
+    {
+      "claim_id": "claim_4530f8e30c770a7d8fbf9738",
+      "text": "if the vehicle were not fully compliant, either because the requirements for EV batteries and components are not met (as is the case with some other EVs currently being imported into the United States from Mexico) or because of a failure to meet the 75% regional value component and/or the $16 per hour requirements, the vehicles would normally enter the United States at the 2.5% MFN tariff rate",
+      "url": "https://digitalcommons.wcl.american.edu/cgi/viewcontent.cgi?article=2167&context=auilr",
+      "chunk_id": "chunk_c44cda6b792c35806d87beed"
+    },
+    {
+      "claim_id": "claim_4e65ff315fdff7255fd0d4cd",
+      "text": "automakers produce EVs outside China—such as in Mexico or elsewhere—where the STT is satisfied. In such cases, the 100 percent tariff under Section 301 may be avoided, although the vehicle would remain subject to the 25 percent tariff under Section 232.",
+      "url": "https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1618&context=djcil",
+      "chunk_id": "chunk_8b8f2b6812b345670b3d5828"
+    },
+    {
+      "claim_id": "claim_528766bda5a218babe52d8d9",
+      "text": "In practical terms, it appears that an OEM assembling vehicles in Mexico (or any other country) may source components from Chinese suppliers without triggering Section 301 tariffs, as long as those components are not imported under a CKD logistics structure.",
+      "url": "https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1618&context=djcil",
+      "chunk_id": "chunk_8b8f2b6812b345670b3d5828"
+    },
+    {
+      "claim_id": "claim_d4fc3d390b9aae8826879177",
+      "text": "Increased U.S. tariffs on vehicles imported from China or Chinese vehicles assembled in Mexico and imported into the United States could be imposed in a relatively brief period of time, without regard to whether any Chinese-owned car producers were currently exporting cars from Mexico in anticipation of possible future imports.",
+      "url": "https://digitalcommons.wcl.american.edu/cgi/viewcontent.cgi?article=2167&context=auilr",
+      "chunk_id": "chunk_c44cda6b792c35806d87beed"
+    },
+    {
+      "claim_id": "claim_e3c7338c0337e4a1c68f4cb5",
+      "text": "If assembly takes place in Mexico, an additional 25 percent tariff under the IEEPA would apply unless the EVs qualify as USMCA-originating goods.",
+      "url": "https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1618&context=djcil",
+      "chunk_id": "chunk_8b8f2b6812b345670b3d5828"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_4e65ff315fdff7255fd0d4cd",
+      "claim_e3c7338c0337e4a1c68f4cb5"
+    ],
+    [
+      "claim_4530f8e30c770a7d8fbf9738",
+      "claim_d4fc3d390b9aae8826879177"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

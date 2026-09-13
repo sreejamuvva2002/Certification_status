@@ -1,0 +1,67 @@
+{
+  "query_id": "q_company_87068da9d6a4b546bd557609_discovery",
+  "query": "\"Great Dane LP\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_123ca8a59a2ad1fa05eeae96",
+    "claim_6b11b563d60bdea5d9ce7e5d",
+    "claim_6055f040b8f54d5d3ee31f39",
+    "claim_bc32113406f11429a03ad908",
+    "claim_de9bd3d6a155cc9f0f2418a6"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_123ca8a59a2ad1fa05eeae96",
+      "text": "Those antidumping duties were set at 130% in a preliminary decision that is expected to be finalized later this summer.",
+      "url": "https://americantrailercoalition.com/savannahs-great-dane-wins-chinese-tariff-battle",
+      "chunk_id": "chunk_66c86bdd09d1be0b150c3b4f"
+    },
+    {
+      "claim_id": "claim_6b11b563d60bdea5d9ce7e5d",
+      "text": "In a second decision, the Department of Commerce set additional duties on specific Chinese companies intended to offset the amount by which a product is sold at less than fair value — or “dumped” — in America.. Those antidumping duties were set at 130% in a preliminary decision that is expected to be finalized later this summer.",
+      "url": "https://thecurrentga.org/2026/06/12/savannahs-great-dane-wins-chinese-tariff-battle",
+      "chunk_id": "chunk_3f3d71d6091dc6054fd23654"
+    },
+    {
+      "claim_id": "claim_6055f040b8f54d5d3ee31f39",
+      "text": "U.S. customs officials are poised to levy new duties on semitruck trailers made in China and Mexico after a yearlong legal battle fought by Savannah’s Great Dane LLC",
+      "url": "https://americantrailercoalition.com/savannahs-great-dane-wins-chinese-tariff-battle",
+      "chunk_id": "chunk_66c86bdd09d1be0b150c3b4f"
+    },
+    {
+      "claim_id": "claim_bc32113406f11429a03ad908",
+      "text": "the Commerce Department last week instructed customs authorities to add duties ranging from 82.3% to 128.7% for trailers from China and 1.9% to 1.95% for trailers from Mexico.",
+      "url": "https://americantrailercoalition.com/savannahs-great-dane-wins-chinese-tariff-battle",
+      "chunk_id": "chunk_66c86bdd09d1be0b150c3b4f"
+    },
+    {
+      "claim_id": "claim_de9bd3d6a155cc9f0f2418a6",
+      "text": "U.S. customs officials are poised to levy new duties on semitruck trailers made in China and Mexico after a yearlong legal battle fought by Savannah’s Great Dane LLC",
+      "url": "https://thecurrentga.org/2026/06/12/savannahs-great-dane-wins-chinese-tariff-battle",
+      "chunk_id": "chunk_3f3d71d6091dc6054fd23654"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_123ca8a59a2ad1fa05eeae96",
+      "claim_6b11b563d60bdea5d9ce7e5d"
+    ],
+    [
+      "claim_6055f040b8f54d5d3ee31f39",
+      "claim_bc32113406f11429a03ad908",
+      "claim_de9bd3d6a155cc9f0f2418a6"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 8,
+  "synthesis_input_claim_count": 8
+}

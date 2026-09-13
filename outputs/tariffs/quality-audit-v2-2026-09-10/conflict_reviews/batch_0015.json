@@ -1,0 +1,30 @@
+{
+  "status": "reviewed",
+  "pairs": {
+    "conflict_df41aa8d1b82b59a5ece55aa": {
+      "classification": "different_dates_or_policy_stages",
+      "reason": "Claim 1 cites a preliminary anti-dumping duty rate of 26.67% for Doosan Corporation, while Claim 2 cites a dumping margin (D.M.%) of 29.49% for the same entity. The context indicates these are sequential stages of an investigation: preliminary findings followed by final determinations or adjustments based on facts available, not contradictory simultaneous rates.",
+      "verification_question": "Does the 29.49% rate represent the final anti-dumping duty determination replacing the preliminary 26.67% rate for Doosan Corporation?"
+    },
+    "conflict_9b3d8bafd4b4589696a468db": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 describes a substantial transformation via assembly in the United States resulting in US origin for marking. Claim 2 describes a simple assembly process in China that does not change the character of the PCBA, retaining Taiwan as the origin. The claims address different geographic locations of assembly (US vs. China) and different levels of processing complexity.",
+      "verification_question": "Are the specific assembly processes described in the two claims identical in nature and location, or do they refer to distinct manufacturing scenarios?"
+    },
+    "conflict_e60e68bdbfa7599973b821c2": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 states a general 25% tariff on all vehicle imports effective April 2025. Claim 2 states that duties of 15% remain in force for cars from Europe, South Korea, and Japan. The text explicitly notes exemptions and specific deals (e.g., UK at 10%, EU/Japan/Korea at 15%) which create a differentiated rate structure rather than a direct conflict.",
+      "verification_question": "Do the 15% rates for specific regions constitute an exception to the general 25% tariff, or are they separate existing duties under Section 232?"
+    },
+    "conflict_3ea8a5f4da0f5b37dee7498f": {
+      "classification": "complementary_or_no_conflict",
+      "reason": "Claim 1 establishes a general 25% tariff on vehicle imports. Claim 2 specifies that auto imports from the EU, Japan, and South Korea face a 15% total rate. These statements are complementary as the specific rate for certain partners acts as an exception or negotiated reduction within the broader policy framework.",
+      "verification_question": "Is the 15% rate for EU, Japan, and South Korea a permanent exemption from the general 25% tariff or a temporary measure?"
+    },
+    "conflict_035cd4ff4930cadb8a6e79e7": {
+      "classification": "different_products_origins_or_programs",
+      "reason": "Claim 1 refers to existing duties of 15% on cars from Europe, South Korea, and Japan. Claim 2 refers to a new announcement of a 25% tariff on all cars built outside the US. The text distinguishes between 'remaining' duties and 'announced' tariffs, suggesting a policy update or addition rather than a contradiction.",
+      "verification_question": "Does the announced 25% tariff supersede the existing 15% duties for specific regions, or do they apply to different sets of vehicles?"
+    }
+  }
+}

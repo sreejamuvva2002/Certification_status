@@ -1,0 +1,95 @@
+{
+  "scope": "Five direct source-context reviews; separate addendum preserves original and v2 outputs.",
+  "corrections": [
+    {
+      "pair_id": "conflict_a173bf6f31ede0e87f94696c",
+      "claim_ids": [
+        "claim_2668eff389267c477943b028",
+        "claim_80006a6480521b25c8392356"
+      ],
+      "source_urls": [
+        "https://manlybattery.com/battery-tools-and-resources/usa-import-duty-calculator",
+        "https://manlybattery.com/battery-tools-and-resources/usa-import-duty-calculator"
+      ],
+      "previous_classification": "different_products_origins_or_programs",
+      "classification": "insufficient_scope",
+      "reason": "The same vendor page juxtaposes 153.4% for Chinese batteries in April 2025 with a generic as-high-as-34% statement lacking origin, date, and rate components. Missing scope does not demonstrate different valid tariff programs. Both rates need verification.",
+      "verification_question": "Identify product/HTS, origin, entry date and rate components for each reported total.",
+      "review_method": "assistant_direct_cached_source_review",
+      "review_date": "2026-09-12",
+      "current_legal_status_verified": false
+    },
+    {
+      "pair_id": "conflict_59666e336ece0cd58f984732",
+      "claim_ids": [
+        "claim_04853cc6a0188f55f6d0e175",
+        "claim_48ccb3cab78042423847ea3a"
+      ],
+      "source_urls": [
+        "https://www.federalregister.gov/documents/2023/10/02/2023-21653/certain-aluminum-foil-from-the-peoples-republic-of-china-continuation-of-antidumping-and",
+        "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/2a75b2c"
+      ],
+      "previous_classification": "apparent_same_scope_conflict",
+      "classification": "different_products_origins_or_programs",
+      "reason": "Direct review of the full cached CBP bulletin identifies October 19, 2020 investigations for Armenia, Brazil, Oman, Russia and Turkey. The Federal Register item continues China orders in October 2023. Different countries, proceedings and dates explain why these are not competing same-scope code lists; written scope controls.",
+      "verification_question": "Verify current HTS nomenclature and written scope for the specific country/order before applying either list.",
+      "review_method": "assistant_direct_cached_source_review",
+      "review_date": "2026-09-12",
+      "current_legal_status_verified": false
+    },
+    {
+      "pair_id": "conflict_49ca2d9c9f452f0213620213",
+      "claim_ids": [
+        "claim_037023c4288b85a36ba166e2",
+        "claim_c6fce8e77a05612154c22bc4"
+      ],
+      "source_urls": [
+        "https://www.adamasintel.com/us-reciprocal-tariffs-to-hit-rare-earth-magnets-upstream-products-exempt",
+        "https://www.adamasintel.com/us-reciprocal-tariffs-to-hit-rare-earth-magnets-upstream-products-exempt"
+      ],
+      "previous_classification": "different_products_origins_or_programs",
+      "classification": "different_dates_or_policy_stages",
+      "reason": "The same source distinguishes February/March China tariff actions and a March HTS list from the later April reciprocal-tariff annex. The first quotation already includes magnets; the model\u2019s upstream-versus-finished-products explanation alone did not accurately describe it.",
+      "verification_question": "Verify separate programs and exemption annexes for the precise magnet HTS code.",
+      "review_method": "assistant_direct_cached_source_review",
+      "review_date": "2026-09-12",
+      "current_legal_status_verified": false
+    },
+    {
+      "pair_id": "conflict_8d360fb03a35b17a5b366f44",
+      "claim_ids": [
+        "claim_3730f1b64c2335f057b01a6f",
+        "claim_41b60d62f8f7cabbdfa56ee0"
+      ],
+      "source_urls": [
+        "https://www.mclpcb.com/blog/important-tariff-update",
+        "https://www.mclpcb.com/blog/important-tariff-update"
+      ],
+      "previous_classification": "different_dates_or_policy_stages",
+      "classification": "different_dates_or_policy_stages",
+      "reason": "The cached MCL timeline explicitly dates 12.5% to July 24, 2026 and 125% to April 9, 2025. This is a source-reported progression, not simultaneous rates. Current legal validity remains unverified.",
+      "verification_question": "Find primary authority for each dated change and confirm PCB exclusion scope.",
+      "review_method": "assistant_direct_cached_source_review",
+      "review_date": "2026-09-12",
+      "current_legal_status_verified": false
+    },
+    {
+      "pair_id": "conflict_676cf3ce8f58b09d096c5891",
+      "claim_ids": [
+        "claim_37de17ae58010a5e737ab437",
+        "claim_41b60d62f8f7cabbdfa56ee0"
+      ],
+      "source_urls": [
+        "https://www.sunshinepcbgroup.com/resources/tariff-rates",
+        "https://www.mclpcb.com/blog/important-tariff-update"
+      ],
+      "previous_classification": "different_dates_or_policy_stages",
+      "classification": "insufficient_scope",
+      "reason": "The Sunshine table gives 12.5% without a date in the cited context and its component headings need verification. The other source explicitly dates 125% to April 2025. A later date for the undated table cannot be assumed from matching numbers on another page.",
+      "verification_question": "Establish the Sunshine table date and component labels against primary authority.",
+      "review_method": "assistant_direct_cached_source_review",
+      "review_date": "2026-09-12",
+      "current_legal_status_verified": false
+    }
+  ]
+}

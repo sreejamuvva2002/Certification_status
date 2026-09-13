@@ -1,0 +1,35 @@
+{
+  "query_id": "q_company_afab7be1621b5bafcfb7f0b4_discovery",
+  "query": "\"Daesol Material Georgia, LLC\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1893e8eb35be8489599b401b",
+    "claim_6698b98168320f560f2ddb67"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1893e8eb35be8489599b401b",
+      "text": "Governor Brian P. Kemp today announced that Daesol Ausys Georgia will establish a new manufacturing facility in West Point.",
+      "url": "https://gov.georgia.gov/press-releases/2023-08-29/gov-kemp-automotive-supplier-daesol-ausys-georgia-invest-72-million",
+      "chunk_id": "chunk_e184eb3f65dfa0f242dc43ee"
+    },
+    {
+      "claim_id": "claim_6698b98168320f560f2ddb67",
+      "text": "Daesol Material Georgia, LLC has completed the construction of their new Harris County manufacturing facility, creating 110 jobs.",
+      "url": "https://www.harriscountyga.gov/daesol-material-georgia-llc-creates-110-jobs-in-harris-county",
+      "chunk_id": "chunk_8517aed1cd6dcd49f75374e2"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

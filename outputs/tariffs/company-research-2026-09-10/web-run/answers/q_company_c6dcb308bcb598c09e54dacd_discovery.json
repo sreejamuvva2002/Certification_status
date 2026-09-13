@@ -1,0 +1,65 @@
+{
+  "query_id": "q_company_c6dcb308bcb598c09e54dacd_discovery",
+  "query": "\"Teklas USA\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0a1b1ba8d0cb100232305e5b",
+    "claim_281bf8a83c99b0f93c29e3d7",
+    "claim_4dd2bc1294bcb957f61a6e80",
+    "claim_60d149edd22b0f2bfee284c0",
+    "claim_c69f1ce3d083702bc7e4ab3b"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0a1b1ba8d0cb100232305e5b",
+      "text": "The U.S. just announced plans for 100% tariffs on Chinese imports, set to take effect November 1.",
+      "url": "https://www.linkedin.com/posts/sinagolara_georgia-and-tariffs-georgia-is-a-critical-activity-7327480102080962560-gT6J",
+      "chunk_id": "chunk_4e0d95e3f03bb64c4e1b9e30"
+    },
+    {
+      "claim_id": "claim_281bf8a83c99b0f93c29e3d7",
+      "text": "President Donald Trump has announced a 25% import tariff on medium- and heavy-duty trucks citing national security concerns, as posted on Truth Social. 🔹Effective Date: November 1, 2025",
+      "url": "https://www.linkedin.com/posts/sinagolara_georgia-and-tariffs-georgia-is-a-critical-activity-7327480102080962560-gT6J",
+      "chunk_id": "chunk_4e0d95e3f03bb64c4e1b9e30"
+    },
+    {
+      "claim_id": "claim_4dd2bc1294bcb957f61a6e80",
+      "text": "Beginning November 1, 2025, all medium and heavy-duty trucks entering the United States from other countries will face a 25% tariff.",
+      "url": "https://www.linkedin.com/posts/sinagolara_georgia-and-tariffs-georgia-is-a-critical-activity-7327480102080962560-gT6J",
+      "chunk_id": "chunk_4e0d95e3f03bb64c4e1b9e30"
+    },
+    {
+      "claim_id": "claim_60d149edd22b0f2bfee284c0",
+      "text": "🚨 News Update: US announces 25% Tariffs on Medium & Heavy-Duty Truck Imports President Donald Trump has announced a 25% import tariff on medium- and heavy-duty trucks citing national security concerns, as posted on Truth Social. 🔹Effective Date: November 1, 2025",
+      "url": "https://www.linkedin.com/posts/sinagolara_georgia-and-tariffs-georgia-is-a-critical-activity-7327480102080962560-gT6J",
+      "chunk_id": "chunk_82e7de1c5a82a59834c5dd6a"
+    },
+    {
+      "claim_id": "claim_c69f1ce3d083702bc7e4ab3b",
+      "text": "Georgia is a critical supply chain hub. It is one of the most trade-dependent states in the U.S., serving as a major logistics, import, and export hub.",
+      "url": "https://www.linkedin.com/posts/sinagolara_georgia-and-tariffs-georgia-is-a-critical-activity-7327480102080962560-gT6J",
+      "chunk_id": "chunk_82e7de1c5a82a59834c5dd6a"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_281bf8a83c99b0f93c29e3d7",
+      "claim_4dd2bc1294bcb957f61a6e80"
+    ],
+    [
+      "claim_281bf8a83c99b0f93c29e3d7",
+      "claim_60d149edd22b0f2bfee284c0"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

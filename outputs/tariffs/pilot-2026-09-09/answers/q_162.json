@@ -1,0 +1,48 @@
+{
+  "query_id": "q_162",
+  "query": "Automotive PCB assemblies Vietnam country of origin rules",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_4ee77d74b721d074cc5067a8",
+    "claim_94b574800a3e1ff93fabb44b",
+    "claim_b2e01bbd6a5248c9fc09f565",
+    "claim_ec93caf7302e041f7bbfa38d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_4ee77d74b721d074cc5067a8",
+      "text": "Generally, CBP has determined that where complex surface mount technology is used to load a raw printed circuit board with diodes, transistors, capacitors, memory chips, and task-specific integrated circuits, there is a substantial transformation of the components into the PCBA.",
+      "url": "https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2022/bloomberg-insights-tariffs-origin-story%203-24-20.pdf",
+      "chunk_id": "chunk_a681b580a9d0cdbede77f126"
+    },
+    {
+      "claim_id": "claim_94b574800a3e1ff93fabb44b",
+      "text": "If “assembly” = back-end packaging/test in Vietnam (after front-end wafer fabrication in China): CBP’s recent rulings make origin where front-end fab occurs; back-end work usually does not substantially transform the die. Origin → China.",
+      "url": "https://schulzlaw.us/2025-us-tariffs-vietnam-transshipment-country-of-origin",
+      "chunk_id": "chunk_c931de67bd5fafcee063a38d"
+    },
+    {
+      "claim_id": "claim_b2e01bbd6a5248c9fc09f565",
+      "text": "CBP rulings have found Vietnamese SMT/PCBA population and complex subassembly work to be “meaningful/complex,” conferring Vietnam as COO for the finished device (e.g., trackers, adapters, vacuums with key subassemblies made and integrated in Vietnam).",
+      "url": "https://schulzlaw.us/2025-us-tariffs-vietnam-transshipment-country-of-origin",
+      "chunk_id": "chunk_c931de67bd5fafcee063a38d"
+    },
+    {
+      "claim_id": "claim_ec93caf7302e041f7bbfa38d",
+      "text": "CBP has repeatedly found that building PCB assemblies (SMT/wave solder) from numerous components is a substantial transformation of those parts; in multi-country devices, where the operative PCBA(s) are created often drives overall origin.",
+      "url": "https://schulzlaw.us/2025-us-tariffs-vietnam-transshipment-country-of-origin",
+      "chunk_id": "chunk_c931de67bd5fafcee063a38d"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 12,
+  "synthesis_input_claim_count": 12
+}

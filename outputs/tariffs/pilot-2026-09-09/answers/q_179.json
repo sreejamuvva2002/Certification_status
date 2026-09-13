@@ -1,0 +1,83 @@
+{
+  "query_id": "q_179",
+  "query": "PCB assembly substantial transformation CBP country of origin rulings",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_01cc555f56e9afada5f4c603",
+    "claim_1814f1486ad1db5ee5a4fb75",
+    "claim_2120743ff412a376c1f7c036",
+    "claim_3c4de2c412b39d8cd81eb5e3",
+    "claim_4dfcf864b7bd49a740be88ae",
+    "claim_65cefb82d904f3667b8924e6",
+    "claim_b0344a057eac355517a359d1",
+    "claim_d7257772241373ce80698b6e"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_01cc555f56e9afada5f4c603",
+      "text": "HQ H304124, dated November 19, 2019, CBP determined the country of origin of a cardiac monitoring strip to be Finland, the country of origin of the device's PCBA",
+      "url": "https://www.regulations.gov/document/USCBP-2024-0016-0001",
+      "chunk_id": "chunk_1111d2386ec8a0b451f2c49d"
+    },
+    {
+      "claim_id": "claim_1814f1486ad1db5ee5a4fb75",
+      "text": "Distributed Processing Technology assembles all the components onto the foreign raw printed circuit board in the United States, and thus the same rationale applies. The board would be substantially transformed.",
+      "url": "https://rulings.cbp.gov/ruling/735306",
+      "chunk_id": "chunk_31af6ae30380b95c84ecd575"
+    },
+    {
+      "claim_id": "claim_2120743ff412a376c1f7c036",
+      "text": "In ruling HQ H327997, CBP concludes that the imported components undergo a substantial transformation when made into the subject systems. CBP states that the major components are sourced from a variety of countries and that no single country’s operations dominate the manufacturing operations of the finished system. Further, assembly in the U.S. fully integrates the subassemblies and component parts into the complete system.",
+      "url": "https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/april/imported-components-substantially-transformed-in-u-s-cbp-ruling-finds",
+      "chunk_id": "chunk_84681ee095b67c4079bcf21c"
+    },
+    {
+      "claim_id": "claim_3c4de2c412b39d8cd81eb5e3",
+      "text": "With respect to printed circuit boards, Customs has ruled that the complete assembly of all the components onto a printed circuit board was a substantial transformation of the printed circuit board because the assembly process was complex and involved a considerable amount of skill and time.",
+      "url": "https://rulings.cbp.gov/ruling/735306",
+      "chunk_id": "chunk_31af6ae30380b95c84ecd575"
+    },
+    {
+      "claim_id": "claim_4dfcf864b7bd49a740be88ae",
+      "text": "the PCBA does not undergo a change in name, character, and use during the final assembly process occurring in China, which is comparatively simple in nature.",
+      "url": "https://www.regulations.gov/document/USCBP-2024-0016-0001",
+      "chunk_id": "chunk_1111d2386ec8a0b451f2c49d"
+    },
+    {
+      "claim_id": "claim_65cefb82d904f3667b8924e6",
+      "text": "HQ H322417, dated February 23, 2022 (finding the [...] Based on the information and analysis provided above, the imported PCBA components undergo a substantial transformation when manufactured into the subject PCBA in Taiwan.",
+      "url": "https://www.regulations.gov/document/USCBP-2024-0016-0001",
+      "chunk_id": "chunk_1111d2386ec8a0b451f2c49d"
+    },
+    {
+      "claim_id": "claim_b0344a057eac355517a359d1",
+      "text": "the country of origin for marking purposes of the subject DisplayPort male to female adapter is Taiwan, where the PCBA is manufactured.",
+      "url": "https://www.regulations.gov/document/USCBP-2024-0016-0001",
+      "chunk_id": "chunk_1111d2386ec8a0b451f2c49d"
+    },
+    {
+      "claim_id": "claim_d7257772241373ce80698b6e",
+      "text": "According to CBP, the system at issue consists of a camera array and central computer system designed to conduct and manage video surveillance operations that is capable of handling up to 64 cameras per server simultaneously and can be used to power hundreds of servers within a single, centrally administered system. It comprises components from China, Taiwan, Vietnam, Malaysia, Singapore, Thailand and Costa Rica that are assembled in the U.S. to create hardware that is then combined with U.S.-origin software.",
+      "url": "https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/april/imported-components-substantially-transformed-in-u-s-cbp-ruling-finds",
+      "chunk_id": "chunk_84681ee095b67c4079bcf21c"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_1814f1486ad1db5ee5a4fb75",
+      "claim_4dfcf864b7bd49a740be88ae"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 9,
+  "synthesis_input_claim_count": 9
+}

@@ -1,0 +1,84 @@
+{
+  "query_id": "q_428",
+  "query": "Georgia battery recyclers critical mineral sourcing tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_163f88f02975243915aaad4a",
+    "claim_1a5f4568e3afde1a30039a15",
+    "claim_2767af460bb9c438458f5a2f",
+    "claim_505679b9ee2283b7c8c1c5e9",
+    "claim_a1354c51f6e218ae754ef4a8",
+    "claim_afce45c44fe75fbac7bfe5b7",
+    "claim_b2f26f5ef84491fdf86bf0ec",
+    "claim_b3ec399e409f0886698d5b84"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_163f88f02975243915aaad4a",
+      "text": "As Ascend Elements ramps up lithium production in Georgia, it has lined up at least one buyer outside the battery supply chain.",
+      "url": "https://grist.org/technology/trump-battery-recycling-lithium-grants-funding-tariffs-ira-tax-credits",
+      "chunk_id": "chunk_d5189d4512d2ad7e3f27baaf"
+    },
+    {
+      "claim_id": "claim_1a5f4568e3afde1a30039a15",
+      "text": "In the past, the factory shipped that powder, known in the battery recycling industry as black mass, overseas to refineries that extracted valuable metals like cobalt and nickel.",
+      "url": "https://grist.org/technology/trump-battery-recycling-lithium-grants-funding-tariffs-ira-tax-credits",
+      "chunk_id": "chunk_b242f51333f553004ad7abed"
+    },
+    {
+      "claim_id": "claim_2767af460bb9c438458f5a2f",
+      "text": "A site in a small town in Georgia has been selected as a $500 million investment in securing domestic critical mineral and battery supply",
+      "url": "https://www.facebook.com/atlbizchron/posts/a-site-in-a-small-town-in-georgia-has-been-selected-as-a-part-of-the-trump-admin/1528344879307004",
+      "chunk_id": "chunk_35242cc29781f9f4bda31548"
+    },
+    {
+      "claim_id": "claim_505679b9ee2283b7c8c1c5e9",
+      "text": "Recent trade actions have increased the cost of critical, imported materials and components, including those linked to lithium battery production.",
+      "url": "https://www.stryten.com/a-year-of-energy-storage-supply-chain-tariffs-tech-and-transformation",
+      "chunk_id": "chunk_da0f99ded170dd282813d8b1"
+    },
+    {
+      "claim_id": "claim_a1354c51f6e218ae754ef4a8",
+      "text": "In a recycling facility in Covington, Georgia, workers grind up dead batteries into a fine, dark powder.",
+      "url": "https://grist.org/technology/trump-battery-recycling-lithium-grants-funding-tariffs-ira-tax-credits",
+      "chunk_id": "chunk_b242f51333f553004ad7abed"
+    },
+    {
+      "claim_id": "claim_afce45c44fe75fbac7bfe5b7",
+      "text": "Trump imposed 25 percent tariffs on Korean imports in April, before placing them on a 90-day pause. If South Korea were to implement retaliatory tariffs in response, it could cut off a key revenue stream for the U.S. industry.",
+      "url": "https://grist.org/technology/trump-battery-recycling-lithium-grants-funding-tariffs-ira-tax-credits",
+      "chunk_id": "chunk_b242f51333f553004ad7abed"
+    },
+    {
+      "claim_id": "claim_b2f26f5ef84491fdf86bf0ec",
+      "text": "Trump imposed 25 percent tariffs on Korean imports in April, before placing them on a 90-day pause.",
+      "url": "https://grist.org/technology/trump-battery-recycling-lithium-grants-funding-tariffs-ira-tax-credits",
+      "chunk_id": "chunk_b242f51333f553004ad7abed"
+    },
+    {
+      "claim_id": "claim_b3ec399e409f0886698d5b84",
+      "text": "Additionally, the Critical Mineral Transparency and Reporting in Advanced Clean Energy (TRACE) Act, known to many as H.R. 8187, is a proposed U.S. bill that aims to increase accountability in the sourcing and use of critical minerals.",
+      "url": "https://www.stryten.com/a-year-of-energy-storage-supply-chain-tariffs-tech-and-transformation",
+      "chunk_id": "chunk_da0f99ded170dd282813d8b1"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_afce45c44fe75fbac7bfe5b7",
+      "claim_b2f26f5ef84491fdf86bf0ec"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 15,
+  "synthesis_input_claim_count": 15
+}

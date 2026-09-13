@@ -1,0 +1,150 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer fails to establish a specific company's tariff exposure because the available evidence contains only general rules of origin and classification guidance without any named-company applicability. The metrics indicate 'company_named_claims' is 1, but the source text for that claim (claim_1144f42f3304b41df4428ad2) describes a hypothetical scenario ('A Mexican-assembled ECU...') rather than a specific entity. Furthermore, the evidence regarding tariff rates and exemptions is fragmented: one passage discusses Section 301 tariffs on PCBs from China (passage_aef36e3b0e4f5880053fa5ae) while another discusses USMCA RVC thresholds (9",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly links a named company to the specific tariff outcome for automotive PCB assemblies under USMCA or Section 301. The evidence provides general eligibility criteria (75% RVC) and classification rules but lacks the specific application to a particular firm's supply chain configuration.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_979b4bc207c00a861ef891bc",
+      "supporting_excerpt": "A Mexican-assembled ECU populated with ICs fabricated and packaged in Taiwan, capacitors manufactured in Japan, and PCBs fabricated in China contains very little North American-origin material by value. The assembly labor, the solder, and the conformal coating are North American. The silicon, passives, and substrates - typically 60% to 80% of material cost in a dense electronics assembly - are not.",
+      "relevance_explanation": "This passage explains the difficulty in meeting USMCA RVC thresholds for automotive electronics but uses a hypothetical example rather than identifying a specific company or facility, failing to establish named-company effect.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_aef36e3b0e4f5880053fa5ae",
+      "supporting_excerpt": "Despite advocacy from industry groups, relief for PCBs and PCBAs remains limited. The following products are still subject to the full 170% tariff burden when imported from China: - 6+ layer rigid PCBs - All other bare PCB types - Fully assembled PCBAs",
+      "relevance_explanation": "This passage details specific tariff burdens for PCBs and PCBAs but does not link these rates to a named company or facility, only providing general sector context.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_b99aa0fe0cbfa662b537c101",
+      "supporting_excerpt": "The USMCA requires new criteria for automotive goods that are not present in NAFTA, including: - Increased Regional Value Content from 62.5% to 75%, increased in stages over a period three years.",
+      "relevance_explanation": "This passage confirms the regulatory framework and thresholds but does not apply them to a specific company's operations or confirm their current compliance status.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_9fde74d1e403654bc4efe28c",
+      "supporting_excerpt": "The Main PCB consists of a printed circuit board (PCB) that has capacitors, diodes, transistors, resistors, terminal strips, connectors, integrated circuits, and zener diodes mounted upon it. As such, it is a printed circuit assembly... It coordinates communications between the various printed circuit assemblies in the Hitachi Series SJ300 inverter",
+      "relevance_explanation": "This passage describes product classification for a specific component (Hitachi) but does not establish the tariff exposure or USMCA eligibility status for a named company importing these goods.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_historical"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_163",
+  "query": "Automotive PCB assemblies Mexico USMCA eligibility",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 4,
+    "all_extracted_claims": 21,
+    "claims_presented_to_original_synthesis": 21,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 1,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_aef36e3b0e4f5880053fa5ae",
+    "passage_7875a21be850bade55b9cbe3",
+    "passage_99aed8814154ea5a888b3330",
+    "passage_979b4bc207c00a861ef891bc",
+    "passage_b99aa0fe0cbfa662b537c101",
+    "passage_9fde74d1e403654bc4efe28c",
+    "passage_106a17474c1e5bef1a2c12c6",
+    "passage_636997682cf02b0b4ea3981f"
+  ],
+  "candidate_document_ids": [
+    "document_08f49fc2382e0fd108cba980",
+    "document_27e3a0e66da76768360492df",
+    "document_31136dc9b87c8ce846720df9",
+    "document_3f09b598fda8d162189bcc9c",
+    "document_910e8caebf059c5c9ae02939",
+    "document_b826b531526ee3f6af685e75",
+    "document_e0c3a67645d2e2c460e82d84",
+    "document_e2b13035fa0102975f68109b"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_979b4bc207c00a861ef891bc",
+      "supporting_excerpt": "A Mexican-assembled ECU populated with ICs fabricated and packaged in Taiwan, capacitors manufactured in Japan, and PCBs fabricated in China contains very little North American-origin material by value. The assembly labor, the solder, and the conformal coating are North American. The silicon, passives, and substrates - typically 60% to 80% of material cost in a dense electronics assembly - are not.",
+      "relevance_explanation": "This passage explains the difficulty in meeting USMCA RVC thresholds for automotive electronics but uses a hypothetical example rather than identifying a specific company or facility, failing to establish named-company effect.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_4d1dab029c467d5f18214a45",
+      "query_id": "q_163",
+      "chunk_id": "chunk_3268a1e3e567297006f62d36",
+      "document_id": "document_08f49fc2382e0fd108cba980",
+      "source_url": "https://www.markzetter.com/usmca-rules-of-origin-and-automotive-electronics-tariff-implications-for-cross-border-sourcing",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/69f3dda80729099d1c44a150c0b73e1fd99cfeb457d8825e4cfde4f2d93c8011.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_aef36e3b0e4f5880053fa5ae",
+      "supporting_excerpt": "Despite advocacy from industry groups, relief for PCBs and PCBAs remains limited. The following products are still subject to the full 170% tariff burden when imported from China: - 6+ layer rigid PCBs - All other bare PCB types - Fully assembled PCBAs",
+      "relevance_explanation": "This passage details specific tariff burdens for PCBs and PCBAs but does not link these rates to a named company or facility, only providing general sector context.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_0e18a41eca599948632e5bb3",
+      "query_id": "q_163",
+      "chunk_id": "chunk_b31ba67163064beae88b14b6",
+      "document_id": "document_e2b13035fa0102975f68109b",
+      "source_url": "https://www.teamsmt.com/blog/tariffs-on-electronics-whats-exempt-and-whats-not",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/e52d55d55235783744018b6f3fa28a2a0ee10f559f07e7a5718120c608c43821.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_b99aa0fe0cbfa662b537c101",
+      "supporting_excerpt": "The USMCA requires new criteria for automotive goods that are not present in NAFTA, including: - Increased Regional Value Content from 62.5% to 75%, increased in stages over a period three years.",
+      "relevance_explanation": "This passage confirms the regulatory framework and thresholds but does not apply them to a specific company's operations or confirm their current compliance status.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_e3680ad3493d32978a3d70d7",
+      "query_id": "q_163",
+      "chunk_id": "chunk_3c5569ec6caaafb4db982fd1",
+      "document_id": "document_910e8caebf059c5c9ae02939",
+      "source_url": "https://www.cbp.gov/trade/priority-issues/trade-agreements/free-trade-agreements/USMCA/FAQs",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/f912114be03b031f137160224bc31c6cc112cbf0a3cc47f21d377a9edb205e07.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_9fde74d1e403654bc4efe28c",
+        "supporting_excerpt": "The Main PCB consists of a printed circuit board (PCB) that has capacitors, diodes, transistors, resistors, terminal strips, connectors, integrated circuits, and zener diodes mounted upon it. As such, it is a printed circuit assembly... It coordinates communications between the various printed circuit assemblies in the Hitachi Series SJ300 inverter",
+        "relevance_explanation": "This passage describes product classification for a specific component (Hitachi) but does not establish the tariff exposure or USMCA eligibility status for a named company importing these goods.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "source_reports_historical"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

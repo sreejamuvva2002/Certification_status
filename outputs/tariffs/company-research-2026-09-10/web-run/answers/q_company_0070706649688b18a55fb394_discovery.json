@@ -1,0 +1,79 @@
+{
+  "query_id": "q_company_0070706649688b18a55fb394_discovery",
+  "query": "\"Kumho Tire USA Inc.\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0915091748e629db7a409711",
+    "claim_192921b42a95f749773e0435",
+    "claim_4fe033b36839b650ecc7b703",
+    "claim_8a744570dfc3b5175b85ceb5",
+    "claim_c264c7ee286aa87a8becbd07",
+    "claim_dfe262a3cf452756cdd32fed",
+    "claim_fa38b8310cf8ac3c22ef8192"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0915091748e629db7a409711",
+      "text": "Kumho Tire produces approximately 3.3 million tires at its Georgia plant in the U.S., but most of the tires sold in the U.S. are exported from its Binh Duong plant in Vietnam (13.5 million tires).",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=239145",
+      "chunk_id": "chunk_75edbd46bcaa9cecb1e46ddc"
+    },
+    {
+      "claim_id": "claim_192921b42a95f749773e0435",
+      "text": "Particularly, 95% of its exports to the U.S. are manufactured in Vietnam, previously subject to only a 7.89% tariff. If the tire tariff rate rises to 25%, the importer's burden will increase by 178 billion won, which Kumho Tire may have to absorb significantly.",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=239145",
+      "chunk_id": "chunk_75edbd46bcaa9cecb1e46ddc"
+    },
+    {
+      "claim_id": "claim_4fe033b36839b650ecc7b703",
+      "text": "The U.S. has announced a 25% tariff on automotive parts, including tires, starting from April 3, which will result in higher tariffs on export volumes to the U.S.",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=239145",
+      "chunk_id": "chunk_75edbd46bcaa9cecb1e46ddc"
+    },
+    {
+      "claim_id": "claim_8a744570dfc3b5175b85ceb5",
+      "text": "Kumho Tire is adjusting its global production bases. If reciprocal tariffs are imposed on Vietnamese export products, it plans to replace U.S. export volumes using its plants in Korea and Europe.",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=239145",
+      "chunk_id": "chunk_75edbd46bcaa9cecb1e46ddc"
+    },
+    {
+      "claim_id": "claim_c264c7ee286aa87a8becbd07",
+      "text": "South Korean tire makers such as Hankook Tire & Technology Co., Kumho Tire Co. and Nexen Tire Corp. are expected to post new record-high revenue in 2024 thanks to a drastic cut in tariffs on their US exports",
+      "url": "https://www.kedglobal.com/automobiles/newsView/ked202402060006",
+      "chunk_id": "chunk_19b93b3d1889636833f537b7"
+    },
+    {
+      "claim_id": "claim_dfe262a3cf452756cdd32fed",
+      "text": "It reduced tariffs on Hankook Tire’s products from 27.05% to 6.3% and cut those on Kumho tires from 21.74% to 5.4%. Customs duties on Nexen tires were lowered to 4.2% versus 14.72%.",
+      "url": "https://www.kedglobal.com/automobiles/newsView/ked202402060006",
+      "chunk_id": "chunk_19b93b3d1889636833f537b7"
+    },
+    {
+      "claim_id": "claim_fa38b8310cf8ac3c22ef8192",
+      "text": "Kumho Tire has been exporting tires produced in Vietnam, and Hankook Tire from Indonesia, to the U.S., achieving record performance. However, with high tariffs looming, both companies are establishing emergency measures such as expanding U.S. factories and adjusting global supply chains to minimize tariff damage.",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=239145",
+      "chunk_id": "chunk_75edbd46bcaa9cecb1e46ddc"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_192921b42a95f749773e0435",
+      "claim_4fe033b36839b650ecc7b703"
+    ],
+    [
+      "claim_c264c7ee286aa87a8becbd07",
+      "claim_dfe262a3cf452756cdd32fed"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

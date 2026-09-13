@@ -1,0 +1,56 @@
+{
+  "query_id": "q_132",
+  "query": "Lithium hydroxide United States import duties",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0120f1b8a49bc9f86ad63f51",
+    "claim_7442a48a11c806e874ca0a59",
+    "claim_93926e3b8743a34b0850d46a",
+    "claim_ae8bae53524c9b38bee9fc7c"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0120f1b8a49bc9f86ad63f51",
+      "text": "This brings the total tariff on Chinese lithium hydroxide to 28.7%.",
+      "url": "https://www.criticalmb.com/p/reciprocal-tariffs-exemptions-and",
+      "chunk_id": "chunk_f2ecd25cee044a85197238bc"
+    },
+    {
+      "claim_id": "claim_7442a48a11c806e874ca0a59",
+      "text": "The base tariff on lithium hydroxide is 3.7%, but if imported from China, an additional 25% tariff applies under 19 U.S.C. 2411, part of the Section 301 action authorized by the Trade Act of 1974.",
+      "url": "https://www.criticalmb.com/p/reciprocal-tariffs-exemptions-and",
+      "chunk_id": "chunk_f2ecd25cee044a85197238bc"
+    },
+    {
+      "claim_id": "claim_93926e3b8743a34b0850d46a",
+      "text": "Lithium hydroxide (HS Code 2825.20.00) remains unaffected by the new tariff. The base tariff on lithium hydroxide is 3.7%, but if imported from China, an additional 25% tariff applies under 19 U.S.C. 2411, part of the Section 301 action authorized by the Trade Act of 1974.",
+      "url": "https://www.criticalmb.com/p/reciprocal-tariffs-exemptions-and",
+      "chunk_id": "chunk_f2ecd25cee044a85197238bc"
+    },
+    {
+      "claim_id": "claim_ae8bae53524c9b38bee9fc7c",
+      "text": "Lithium hydroxide (HS Code 2825.20.00) remains unaffected by the new tariff.",
+      "url": "https://www.criticalmb.com/p/reciprocal-tariffs-exemptions-and",
+      "chunk_id": "chunk_f2ecd25cee044a85197238bc"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established"
+  ],
+  "conflicts": [
+    [
+      "claim_0120f1b8a49bc9f86ad63f51",
+      "claim_ae8bae53524c9b38bee9fc7c"
+    ],
+    [
+      "claim_93926e3b8743a34b0850d46a",
+      "claim_ae8bae53524c9b38bee9fc7c"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

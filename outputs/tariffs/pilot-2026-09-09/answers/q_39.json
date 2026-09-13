@@ -1,0 +1,48 @@
+{
+  "query_id": "q_39",
+  "query": "Hyundai Transys Georgia imported automotive parts tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_656c2224370896d2f64b4418",
+    "claim_bc6d0f9330d7a2271ce3e104",
+    "claim_e5e28e245c5160b97fb24fad"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_656c2224370896d2f64b4418",
+      "text": "Because definitely all the cars that we would produce here are going to be exempted from any tariffs,” said Hyundai Motor Company CEO Jose Munoz.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    },
+    {
+      "claim_id": "claim_bc6d0f9330d7a2271ce3e104",
+      "text": "Hyundai’s $7.6 billion Georgia plant dodged U.S. President Donald Trump’s recently announced tariffs on imported vehicles and auto parts.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    },
+    {
+      "claim_id": "claim_e5e28e245c5160b97fb24fad",
+      "text": "Hyundai Motor Group would not be required to pay tariffs on any cars it will import into the States.",
+      "url": "https://www.thestreet.com/automotive/hyundai-makes-multi-billion-dollar-power-play-to-avoid-tariffs",
+      "chunk_id": "chunk_280553213c14f72d1ff48165"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_656c2224370896d2f64b4418",
+      "claim_bc6d0f9330d7a2271ce3e104"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

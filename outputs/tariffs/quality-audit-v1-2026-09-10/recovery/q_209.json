@@ -1,0 +1,157 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "extraction_problems"
+  ],
+  "cause_explanation": "Original answer insufficient due to unresolved date conflicts in tariff exclusion extensions and lack of specific company applicability data.",
+  "confidence": "high",
+  "remaining_gap": "current_policy_status_not_established",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_9f591a73b75e1f8e9fdb49f1",
+      "supporting_excerpt": "The extension applies to goods entered for consumption, or withdrawn from warehouse for consumption, on or after 12:01 a.m. EDT on June 1, 2025, and before 11:59 p.m. EDT on August 31, 2025.",
+      "relevance_explanation": "Establishes one expiration date (Aug 31, 2025) conflicting with other sources.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_e73baf74d2ad4cfaaf795792",
+      "supporting_excerpt": "On November 26, 2025, USTR further extended certain exclusions from the China Section 301 tariffs through November 10, 2026.",
+      "relevance_explanation": "Establishes a conflicting expiration date (Nov 10, 2026).",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_c38d54db14fd4a7e07bc8383",
+      "supporting_excerpt": "the U.S. Trade Representative has determined to extend the exclusions in the Annexes to this notice for less than 12 months—through December 31, 2020.",
+      "relevance_explanation": "Establishes an outdated expiration date (Dec 31, 2020).",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_e73baf74d2ad4cfaaf795792",
+      "supporting_excerpt": "These exclusions are available for any product that meets the specified HTSUS numbers and product descriptions, regardless of whether the importer filed an exclusion request.",
+      "relevance_explanation": "Indicates general applicability without specific company or facility linkage.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_209",
+  "query": "Tariff exclusions expiration extensions automotive components",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 6,
+    "all_extracted_claims": 59,
+    "claims_presented_to_original_synthesis": 45,
+    "synthesis_claims_omitted": 14,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 0,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "conflicting_or_outdated_evidence",
+    "extraction_problems"
+  ],
+  "candidate_passage_ids": [
+    "passage_9f591a73b75e1f8e9fdb49f1",
+    "passage_c38d54db14fd4a7e07bc8383",
+    "passage_05fe429b33865bc6147b17df",
+    "passage_260f2545ca8f848b14c9d91e",
+    "passage_25f313b0337426a82349ef3c",
+    "passage_68d2f9096d28807967799540",
+    "passage_311de146fd084a174d3c5f7c",
+    "passage_e73baf74d2ad4cfaaf795792"
+  ],
+  "candidate_document_ids": [
+    "document_7b406f46382005e6bb711bb0",
+    "document_7eea6496a2b896b11d139ce9",
+    "document_8c25ec8891d76c31404514be",
+    "document_8d2e72e6ea0f8fbffb8bf05e",
+    "document_b0ff68eb1e0c1959a4b7a325",
+    "document_ffc9e1b1fb5f90204124b0d9"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_9f591a73b75e1f8e9fdb49f1",
+      "supporting_excerpt": "The extension applies to goods entered for consumption, or withdrawn from warehouse for consumption, on or after 12:01 a.m. EDT on June 1, 2025, and before 11:59 p.m. EDT on August 31, 2025.",
+      "relevance_explanation": "Establishes one expiration date (Aug 31, 2025) conflicting with other sources.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_ffc1fe2f3c80096c42dddd88",
+      "query_id": "q_209",
+      "chunk_id": "chunk_a691c0964304c772b11abae6",
+      "document_id": "document_7eea6496a2b896b11d139ce9",
+      "source_url": "https://www.troutman.com/insights/ustr-issues-3-month-extension-for-certain-section-301-tariff-exclusions-on-chinese-imports",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": true,
+      "source_text_path": "text/615348eaaa907a1b22e74ff427b52591e079efb5fa83c56ced8a788493e80405.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_e73baf74d2ad4cfaaf795792",
+      "supporting_excerpt": "On November 26, 2025, USTR further extended certain exclusions from the China Section 301 tariffs through November 10, 2026.",
+      "relevance_explanation": "Establishes a conflicting expiration date (Nov 10, 2026).",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_ba9fa6259fab74479ddf0221",
+      "query_id": "q_209",
+      "chunk_id": "chunk_20f5cb53f3fcc7c8f0a86646",
+      "document_id": "document_7b406f46382005e6bb711bb0",
+      "source_url": "https://www.strtrade.com/trade-news-resources/tariff-actions-resources/section-301-tariffs-on-china",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/96acc62b7f6910b6833005074fbfb72a3cf981b4977cd42c14347944bb987242.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_c38d54db14fd4a7e07bc8383",
+      "supporting_excerpt": "the U.S. Trade Representative has determined to extend the exclusions in the Annexes to this notice for less than 12 months—through December 31, 2020.",
+      "relevance_explanation": "Establishes an outdated expiration date (Dec 31, 2020).",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_9184718ce1d5550ab84e44c4",
+      "query_id": "q_209",
+      "chunk_id": "chunk_cdcd6583cd63be99f9ed0ea3",
+      "document_id": "document_8c25ec8891d76c31404514be",
+      "source_url": "https://www.federalregister.gov/documents/2020/09/02/2020-19419/notice-of-product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/3e932c98682b4da943659021540f7dd7078f30ed78f0e8ae2235b477aed09128.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_e73baf74d2ad4cfaaf795792",
+      "supporting_excerpt": "These exclusions are available for any product that meets the specified HTSUS numbers and product descriptions, regardless of whether the importer filed an exclusion request.",
+      "relevance_explanation": "Indicates general applicability without specific company or facility linkage.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_088a8b9f55b4672e736db339",
+      "query_id": "q_209",
+      "chunk_id": "chunk_20f5cb53f3fcc7c8f0a86646",
+      "document_id": "document_7b406f46382005e6bb711bb0",
+      "source_url": "https://www.strtrade.com/trade-news-resources/tariff-actions-resources/section-301-tariffs-on-china",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/96acc62b7f6910b6833005074fbfb72a3cf981b4977cd42c14347944bb987242.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

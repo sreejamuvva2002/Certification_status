@@ -1,0 +1,159 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "Original answer insufficient due to conflicting claims on tariff immunity versus vulnerability and unverified policy status.",
+  "confidence": "high",
+  "remaining_gap": "None",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_754848c636ca8e4bfaccdd4b",
+      "supporting_excerpt": "Perhaps more importantly, the Metaplant is open for business at the right place and right time. Building American-made EVs helps to protect export-dependent Hyundai from President Donald Trump's proposed 25% tariffs on imported cars and parts.",
+      "relevance_explanation": "Confirms tariff proposal status vs immunity",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_754848c636ca8e4bfaccdd4b",
+      "supporting_excerpt": "Yet even with $12.6 billion invested in Georgia alone and an expected 14,000 jobs generated, Hyundai's Metaplant won't make the automaker completely immune to tariffs.",
+      "relevance_explanation": "Directly contradicts immunity claims",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_edefe4774a559dab503b5afc",
+      "supporting_excerpt": "If the US government slaps 25% duties on imported cars to the US, the Korean auto group’s vehicles would likely lose their appeal to US consumers in terms of price.",
+      "relevance_explanation": "Indicates potential tariff impact on sales",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "passage_e4d98097b7cefff64bb7c38a",
+      "supporting_excerpt": "President Donald Trump recently announced 25% tariffs on auto imports at the White House. President Trump praised the HMGMA plan in Georgia, commenting it was a “clear demonstration that tariffs very strongly work.”",
+      "relevance_explanation": "Confirms tariff announcement but not exemption status",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_31",
+  "query": "Hyundai Motor Group Metaplant America tariffs imported components",
+  "metrics": {
+    "retrieved_candidates": 7,
+    "retained_sources": 3,
+    "full_text_sources": 2,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 6,
+    "all_extracted_claims": 13,
+    "claims_presented_to_original_synthesis": 13,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 2,
+    "company_named_claims": 11,
+    "facility_label_claims": 1
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_754848c636ca8e4bfaccdd4b",
+    "passage_dbf5f6172ebc884ea859b0e8",
+    "passage_3a004899070fc001b4f616b3",
+    "passage_19ad7ef90f869d624b71adf4",
+    "passage_c812a481977cbc43166917d9",
+    "passage_eef24a8eef278ba9a4065b2b",
+    "passage_edefe4774a559dab503b5afc",
+    "passage_e4d98097b7cefff64bb7c38a"
+  ],
+  "candidate_document_ids": [
+    "document_0d54f8a5683c9dab2f81d509",
+    "document_150a243c03e39787abea51cf",
+    "document_3255c41857c6cbbfa7ee8d86",
+    "document_4b6cddd6dc34d5b0c7e99701",
+    "document_6639c375dd8589aa6f7a5717",
+    "document_8f6f66d969c4cf6dfce435b8"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_754848c636ca8e4bfaccdd4b",
+      "supporting_excerpt": "Perhaps more importantly, the Metaplant is open for business at the right place and right time. Building American-made EVs helps to protect export-dependent Hyundai from President Donald Trump's proposed 25% tariffs on imported cars and parts.",
+      "relevance_explanation": "Confirms tariff proposal status vs immunity",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_c0f354c3d33bf32c0a049ad7",
+      "query_id": "q_31",
+      "chunk_id": "chunk_43225a005b217e9e4d94fd42",
+      "document_id": "document_0d54f8a5683c9dab2f81d509",
+      "source_url": "https://insideevs.com/news/755058/hyundai-metaplant-georgia-ioniq-tariffs",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2f670805853744b61b9c0ec3197ccef07e59d0224ef7c26e19e2734af79c474c.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_754848c636ca8e4bfaccdd4b",
+      "supporting_excerpt": "Yet even with $12.6 billion invested in Georgia alone and an expected 14,000 jobs generated, Hyundai's Metaplant won't make the automaker completely immune to tariffs.",
+      "relevance_explanation": "Directly contradicts immunity claims",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_26598ae63dbb7cc7ccbd6b9f",
+      "query_id": "q_31",
+      "chunk_id": "chunk_43225a005b217e9e4d94fd42",
+      "document_id": "document_0d54f8a5683c9dab2f81d509",
+      "source_url": "https://insideevs.com/news/755058/hyundai-metaplant-georgia-ioniq-tariffs",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/2f670805853744b61b9c0ec3197ccef07e59d0224ef7c26e19e2734af79c474c.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_edefe4774a559dab503b5afc",
+      "supporting_excerpt": "If the US government slaps 25% duties on imported cars to the US, the Korean auto group’s vehicles would likely lose their appeal to US consumers in terms of price.",
+      "relevance_explanation": "Indicates potential tariff impact on sales",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_62fcc94064914e22e67b8893",
+      "query_id": "q_31",
+      "chunk_id": "chunk_a45975bb22d5b7fd5fbab605",
+      "document_id": "document_4b6cddd6dc34d5b0c7e99701",
+      "source_url": "https://www.kedglobal.com/automobiles/newsView/ked202503250003",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/4d9fb1655b919843106876c4080a185af7353f88a24dd3c2530d027eb21c961a.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    },
+    {
+      "passage_id": "passage_e4d98097b7cefff64bb7c38a",
+      "supporting_excerpt": "President Donald Trump recently announced 25% tariffs on auto imports at the White House. President Trump praised the HMGMA plan in Georgia, commenting it was a “clear demonstration that tariffs very strongly work.”",
+      "relevance_explanation": "Confirms tariff announcement but not exemption status",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain",
+      "recovery_claim_id": "recovered_94403e8229b7357eeae64fa4",
+      "query_id": "q_31",
+      "chunk_id": "chunk_c95172b02efed186b6b96091",
+      "document_id": "document_8f6f66d969c4cf6dfce435b8",
+      "source_url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/15b90325c23ee1e7b94390a8fa41764fab71da5f915a272eb720e736a673d47c.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

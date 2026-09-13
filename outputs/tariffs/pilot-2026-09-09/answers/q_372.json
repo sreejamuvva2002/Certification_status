@@ -1,0 +1,64 @@
+{
+  "query_id": "q_372",
+  "query": "United States non-EV lithium-ion battery tariffs effective dates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_03bf4e2c744bcdd1aa90451d",
+    "claim_297a1e56a70df6367a76ad5e",
+    "claim_3d373648a4a646c049de273f",
+    "claim_afcc0b4adef4ccae6a11a600",
+    "claim_f52f6b971f2b9f8ac8ef2e16"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_03bf4e2c744bcdd1aa90451d",
+      "text": "Lithium-ion EV batteries have carried 25% since 2024. Lithium-ion non-EV batteries also carry 25%, but that rate only took effect in 2026",
+      "url": "https://cargotransinc.com/blog/ev-battery-tariff",
+      "chunk_id": "chunk_289e7061165f006a5141e33b"
+    },
+    {
+      "claim_id": "claim_297a1e56a70df6367a76ad5e",
+      "text": "the Administration said it would increase the tariff rate on lithium-ion batteries for electric vehicles (EVs) from 7.5% to 25% in 2024, and the tariff rate for non-EV lithium-ion batteries from 7.5% to 25% in 2026.",
+      "url": "https://www.energy-storage.news/us-increases-tariffs-on-batteries-from-china-to-25",
+      "chunk_id": "chunk_d839e358067b77005f5f44c3"
+    },
+    {
+      "claim_id": "claim_3d373648a4a646c049de273f",
+      "text": "Lithium-ion non-EV batteries also carry 25%, but that rate only took effect in 2026",
+      "url": "https://cargotransinc.com/blog/ev-battery-tariff",
+      "chunk_id": "chunk_289e7061165f006a5141e33b"
+    },
+    {
+      "claim_id": "claim_afcc0b4adef4ccae6a11a600",
+      "text": "the tariff rate for non-EV lithium-ion batteries from 7.5% to 25% in 2026.",
+      "url": "https://www.energy-storage.news/us-increases-tariffs-on-batteries-from-china-to-25",
+      "chunk_id": "chunk_d839e358067b77005f5f44c3"
+    },
+    {
+      "claim_id": "claim_f52f6b971f2b9f8ac8ef2e16",
+      "text": "Tariffs on Chinese-origin lithium-ion non-EV batteries are scheduled to increase to 25% effective January 1, 2026.",
+      "url": "https://www.morganlewis.com/pubs/2025/03/addressing-tariffs-and-trade-in-energy-storage-projects",
+      "chunk_id": "chunk_0291d169c84b8ca118dac4e0"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_03bf4e2c744bcdd1aa90451d",
+      "claim_297a1e56a70df6367a76ad5e"
+    ],
+    [
+      "claim_3d373648a4a646c049de273f",
+      "claim_afcc0b4adef4ccae6a11a600"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 16,
+  "synthesis_input_claim_count": 16
+}

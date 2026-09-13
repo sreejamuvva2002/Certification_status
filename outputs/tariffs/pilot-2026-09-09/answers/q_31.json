@@ -1,0 +1,74 @@
+{
+  "query_id": "q_31",
+  "query": "Hyundai Motor Group Metaplant America tariffs imported components",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_174527ef663848d451fdc645",
+    "claim_241d5d48cb8b4065fe9d233f",
+    "claim_4fdcb44e127eb6e2b095d5d8",
+    "claim_5509a54ae49555736ba15d98",
+    "claim_8792ccf82a11951bbab217eb",
+    "claim_e3c77a502d08bbc537f84514"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_174527ef663848d451fdc645",
+      "text": "Hyundai Motor, including Kia, Hyundai, and Genesis, remains committed to the long-term growth of the U.S. automotive industry through localized production and innovation. With nearly four decades of investment in America, including a new $21 billion commitment, Hyundai Motor Group is expanding U.S. production to 1.2 million vehicles across Alabama, Georgia, and our new Metaplant in Savannah, making the majority of our U.S. sales locally built.",
+      "url": "https://www.caranddriver.com/news/a64375899/automakers-trump-tariff-response",
+      "chunk_id": "chunk_25eeb5a06f9acbcb67db2120"
+    },
+    {
+      "claim_id": "claim_241d5d48cb8b4065fe9d233f",
+      "text": "Because definitely all the cars that we would produce here are going to be exempted from any tariffs,” said Hyundai Motor Company CEO Jose Munoz.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    },
+    {
+      "claim_id": "claim_4fdcb44e127eb6e2b095d5d8",
+      "text": "Tariff threat casts shadow over Hyundai's plant-opening party in Bryan County.",
+      "url": "https://thecurrentga.org/2025/03/31/tariff-threat-casts-shadow-over-hyundais-plant-opening-party-in-bryan-county",
+      "chunk_id": "chunk_bcfcb46bd6564ff6477cb37b"
+    },
+    {
+      "claim_id": "claim_5509a54ae49555736ba15d98",
+      "text": "Hyundai’s $7.6 billion Georgia plant dodged U.S. President Donald Trump’s recently announced tariffs on imported vehicles and auto parts.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    },
+    {
+      "claim_id": "claim_8792ccf82a11951bbab217eb",
+      "text": "According to the Associated Press, the Georgia expansion ties into $21 billion in U.S. investments. It includes a $5.8 billion steel mill in Louisiana, which will supply parts for Georgia and Alabama plants.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    },
+    {
+      "claim_id": "claim_e3c77a502d08bbc537f84514",
+      "text": "Hyundai started EV production in Georgia six months ago. As of this writing, over 1,200 workers run the massive plant. Hyundai’s Georgia factory builds two electric SUVs now.",
+      "url": "https://www.teslarati.com/hyundai-georgia-plant-vs-trump-tariffs",
+      "chunk_id": "chunk_c95172b02efed186b6b96091"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_241d5d48cb8b4065fe9d233f",
+      "claim_5509a54ae49555736ba15d98"
+    ],
+    [
+      "claim_241d5d48cb8b4065fe9d233f",
+      "claim_e9b23f6a44d0a10ce9ce4d68"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 13,
+  "synthesis_input_claim_count": 13
+}

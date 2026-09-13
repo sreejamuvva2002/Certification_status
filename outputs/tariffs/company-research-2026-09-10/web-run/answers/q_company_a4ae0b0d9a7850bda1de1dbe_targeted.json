@@ -1,0 +1,72 @@
+{
+  "query_id": "q_company_a4ae0b0d9a7850bda1de1dbe_targeted",
+  "query": "\"Mercedes-Benz USA LLC\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_045b3d7cdf6207b18ffbeeda",
+    "claim_a810e47d035152bae5b77d68",
+    "claim_b78b92d8bcd1315b1462c441",
+    "claim_e4ea03b9550eb60c0916da81",
+    "claim_18668f4d9419f91c4b6ca0ad",
+    "claim_ef8e256a0657f84b5e168b59"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_045b3d7cdf6207b18ffbeeda",
+      "text": "Since April 3, all imported vehicles have been subject to a 25% tariff under President Donald Trump’s trade policy.",
+      "url": "https://www.cbtnews.com/mercedes-to-build-new-vehicle-in-alabama-as-tariffs-reshape-auto-industry",
+      "chunk_id": "chunk_6a0cfe49c12d74073e9deb91"
+    },
+    {
+      "claim_id": "claim_a810e47d035152bae5b77d68",
+      "text": "Since April 3, all imported vehicles have been subject to a 25% tariff under President Donald Trump’s trade policy.",
+      "url": "https://www.cbtnews.com/?p=215262",
+      "chunk_id": "chunk_6a0cfe49c12d74073e9deb91"
+    },
+    {
+      "claim_id": "claim_b78b92d8bcd1315b1462c441",
+      "text": "A second wave of 25% tariffs on imported automotive parts is set to take effect Saturday.",
+      "url": "https://www.cbtnews.com/mercedes-to-build-new-vehicle-in-alabama-as-tariffs-reshape-auto-industry",
+      "chunk_id": "chunk_6a0cfe49c12d74073e9deb91"
+    },
+    {
+      "claim_id": "claim_e4ea03b9550eb60c0916da81",
+      "text": "A second wave of 25% tariffs on imported automotive parts is set to take effect Saturday.",
+      "url": "https://www.cbtnews.com/?p=215262",
+      "chunk_id": "chunk_6a0cfe49c12d74073e9deb91"
+    },
+    {
+      "claim_id": "claim_18668f4d9419f91c4b6ca0ad",
+      "text": "Mercedes-Benz will be absorbing some of the impact of the tariffs to protect the price (MSRP) of its Model Year 2025 vehicles.",
+      "url": "https://www.mercedesofcalabasas.com/tariff-faqs.htm",
+      "chunk_id": "chunk_0683ba44a1ab5cb1a7046af8"
+    },
+    {
+      "claim_id": "claim_ef8e256a0657f84b5e168b59",
+      "text": "The vehicles in the Mercedes-Benz portfolio are affected by the tariffs at varying levels. Together, these four vehicle lines comprise 35% of the vehicles sold by Mercedes-Benz in the U.S., but they do contain a portion of parts that will be affected by the tariffs.",
+      "url": "https://www.mercedesofcalabasas.com/tariff-faqs.htm",
+      "chunk_id": "chunk_0683ba44a1ab5cb1a7046af8"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_045b3d7cdf6207b18ffbeeda",
+      "claim_a810e47d035152bae5b77d68"
+    ],
+    [
+      "claim_b78b92d8bcd1315b1462c441",
+      "claim_e4ea03b9550eb60c0916da81"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

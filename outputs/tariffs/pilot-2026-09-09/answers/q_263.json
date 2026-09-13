@@ -1,0 +1,62 @@
+{
+  "query_id": "q_263",
+  "query": "site:rulings.cbp.gov automotive display module classification",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_5cf5a0d013c75eb2a97bef94",
+    "claim_b9ccf9e536b51c945a6f987f",
+    "claim_c60e0cce05ee05e365e3783c",
+    "claim_cd49575c9c5e4ba589c74b21",
+    "claim_e54f0f34d4742fa82cf65e1a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_5cf5a0d013c75eb2a97bef94",
+      "text": "CBP has classified LCD modules that are limited by design and/or principal use to “signaling” in heading 8531, HTSUS.",
+      "url": "https://rulings.cbp.gov/ruling/h325872",
+      "chunk_id": "chunk_8d5164637f12c5eedc1aa7ac"
+    },
+    {
+      "claim_id": "claim_b9ccf9e536b51c945a6f987f",
+      "text": "In HQ H049555, dated April 13, 2009, CBP classified automotive LCD modules used as radio/message displays (to display time, velocity in miles per hour, climate control,",
+      "url": "https://rulings.cbp.gov/ruling/h325872",
+      "chunk_id": "chunk_8d5164637f12c5eedc1aa7ac"
+    },
+    {
+      "claim_id": "claim_c60e0cce05ee05e365e3783c",
+      "text": "All five models are manufactured by Innolux or its subsidiaries to the specifications provided by the ultimate customer motor vehicle manufacturer, and are produced and sold exclusively to automotive electronics suppliers approved by the ultimate customer motor vehicle manufacturer.",
+      "url": "https://rulings.cbp.gov/ruling/H303926",
+      "chunk_id": "chunk_c7389a1666285e3906bd3630"
+    },
+    {
+      "claim_id": "claim_cd49575c9c5e4ba589c74b21",
+      "text": "At issue is the tariff classification of a thin film transistor (TFT) liquid crystal display (LCD) module designed for use in an automobile instrument cluster",
+      "url": "https://rulings.cbp.gov/ruling/H256544",
+      "chunk_id": "chunk_93d1635b74e6ba97938068a6"
+    },
+    {
+      "claim_id": "claim_e54f0f34d4742fa82cf65e1a",
+      "text": "The subject LCD modules are therefore classified under subheading 9013.80.90, HTSUS, which provides for “Liquid crystal devices not constituting articles provided for more",
+      "url": "https://rulings.cbp.gov/ruling/H303926",
+      "chunk_id": "chunk_c7389a1666285e3906bd3630"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_5cf5a0d013c75eb2a97bef94",
+      "claim_e54f0f34d4742fa82cf65e1a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

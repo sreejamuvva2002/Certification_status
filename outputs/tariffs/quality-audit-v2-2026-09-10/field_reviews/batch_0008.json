@@ -1,0 +1,58 @@
+{
+  "status": "reviewed",
+  "reviews": {
+    "claim_0b1a68ec95f2b5592abc0d36": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'President Donald Trump' is a government official, not a named business entity. The audit rules explicitly prohibit using officials as companies."
+      }
+    },
+    "claim_0d0c619a1070688b035162cb": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'CBP' (U.S. Customs and Border Protection) is a government agency, not a named business entity. The audit rules explicitly prohibit using agencies as companies."
+      }
+    },
+    "claim_103105879479438c8a0b21da": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'USTR' (Office of the United States Trade Representative) is a government agency, not a named business entity. The audit rules explicitly prohibit using agencies as companies."
+      }
+    },
+    "claim_12b283d65114c014e5f15732": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'CBP' is a government agency, not a named business entity. The audit rules explicitly prohibit using agencies as companies."
+      }
+    },
+    "claim_13273bc294b9f7149bde5488": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+        "original_model_decision": {
+          "decision": "retain",
+          "reason": "The source explicitly states 'Updated 6/13/2025'. This is an absolute date anchor relative to the audit date of September 10, 2026, establishing it as a historical update."
+        },
+        "review_method": "assistant_direct_cached_source_review"
+      }
+    },
+    "claim_13ba128d90bf86bf5d5744dc": {
+      "city": {
+        "decision": "clear",
+        "reason": "The value 'Bulloch County' is a county, not a city. The audit rules explicitly state that a county in a city is misclassified."
+      }
+    },
+    "claim_14261888bcf9e558db3601b8": {
+      "company": {
+        "decision": "clear",
+        "reason": "The value 'South Korea' is a country, not a named business entity. The audit rules explicitly prohibit using countries as companies."
+      }
+    },
+    "claim_14edffb8608cb9113a37a2cf": {
+      "effective_date": {
+        "decision": "clear",
+        "reason": "The value 'this year' is a relative date without an absolute anchor in the text. The audit rules state that relative dates without an absolute anchor are insufficient for effective dates."
+      }
+    }
+  }
+}

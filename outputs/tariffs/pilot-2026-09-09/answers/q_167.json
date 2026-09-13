@@ -1,0 +1,35 @@
+{
+  "query_id": "q_167",
+  "query": "Insulated metal substrate automotive PCBs import tariffs",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_72142f1cc93563b9a6458d36",
+    "claim_cf2fe71d4a07f6b4d882184d"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_72142f1cc93563b9a6458d36",
+      "text": "| PCB Type | HS Code | Updated Tariff | | Single-sided PCBs | 8534.00.00 | 55% |",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    },
+    {
+      "claim_id": "claim_cf2fe71d4a07f6b4d882184d",
+      "text": "| China | 30% DS/4Layer, 55% other | 14/05/25 | Until 12/11/25 | Interim deal; 90-day truce. |",
+      "url": "https://www.icape-group.com/pcb-tariff-information",
+      "chunk_id": "chunk_f47db68120770e70053ba980"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "insufficient_evidence"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

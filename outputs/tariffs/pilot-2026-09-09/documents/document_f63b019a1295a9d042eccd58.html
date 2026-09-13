@@ -1,0 +1,1498 @@
+ <!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.4",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let r=e.getAttribute("data-rocket-src");if(r&&0!==r.indexOf("data:")){0===r.indexOf("//")&&(r=location.protocol+r);try{let i=new URL(r).origin;i!==location.origin&&t.push({src:i,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(n){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._pendingWebpackRequests(this),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){if(await this._littleBreath(),!0===t.noModule&&"noModule"in HTMLScriptElement.prototype){t.setAttribute("data-rocket-status","skipped");return}return new Promise(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(){let t={};function e(e,r){!function e(r){!t[r]&&(t[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),t[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),t[r].originalFunctions.remove.apply(r,arguments)});function i(e){return t[r].eventsToRewrite.indexOf(e)>=0?"rocket-"+e:e}}(e),t[e].eventsToRewrite.push(r)}function r(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}e(document,"DOMContentLoaded"),e(window,"DOMContentLoaded"),e(window,"load"),e(window,"pageshow"),e(document,"readystatechange"),r(document,"onreadystatechange"),r(window,"onload"),r(window,"onpageshow")}_delayJQueryReady(t){let e;function r(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}function i(i){if(i&&i.fn&&!t.allJQueries.includes(i)){i.fn.ready=i.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(i):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(i)),i([])};let n=i.fn.on;i.fn.on=i.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=r(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{let e=arguments[0][t];delete arguments[0][t],arguments[0][r(t)]=e})),n.apply(this,arguments),this},t.allJQueries.push(i)}e=i}i(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){i(t)}})}async _pendingWebpackRequests(t){let e=document.querySelector("script[data-webpack]");async function r(){return new Promise(t=>{e.addEventListener("load",t),e.addEventListener("error",t)})}e&&(await r(),await t._requestAnimFrame(),await t._pendingWebpackRequests(t))}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="facebook-domain-verification" content="v8qui3fgxgb0nswihehumbqv5hyhlm" />
+    <link rel="shortcut icon" href="https://www.ufinebattery.com/images/common/favicon.webp">
+    
+		<!-- All in One SEO 4.5.7.3 - aioseo.com -->
+		<title>U.S. Tariffs on Chinese Lithium Batteries: Full Breakdown</title>
+		<meta name="description" content="U.S. tariffs on Chinese lithium batteries in 2026 impact costs, supply chains, and EV, energy storage, and electronics industries globally." />
+		<meta name="robots" content="max-image-preview:large" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.5.7.3" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Ufine Battery [Official]" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="U.S. Tariffs on Chinese Lithium Batteries: Full Breakdown" />
+		<meta property="og:description" content="U.S. tariffs on Chinese lithium batteries in 2026 impact costs, supply chains, and EV, energy storage, and electronics industries globally." />
+		<meta property="og:url" content="https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/" />
+		<meta property="og:image" content="https://www.ufinebattery.com/images/upload/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries.webp" />
+		<meta property="og:image:secure_url" content="https://www.ufinebattery.com/images/upload/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries.webp" />
+		<meta property="og:image:width" content="357" />
+		<meta property="og:image:height" content="225" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@ufinebattery" />
+		<meta name="twitter:title" content="U.S. Tariffs on Chinese Lithium Batteries: Full Breakdown" />
+		<meta name="twitter:description" content="U.S. tariffs on Chinese lithium batteries in 2026 impact costs, supply chains, and EV, energy storage, and electronics industries globally." />
+		<meta name="twitter:creator" content="@ufinebattery" />
+		<meta name="twitter:image" content="https://www.ufinebattery.com/images/upload/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries.webp" />
+		<!-- All in One SEO -->
+
+<script type="rocketlazyloadscript" id="cookieyes" data-rocket-type="text/javascript" data-rocket-src="https://cdn-cookieyes.com/client_data/d82f5705d452b9dcbcad9617/script.js" defer></script>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='uf-bootstrap-css-css' href='https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/css/global/bootstrap.min.css' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='uf-intlTelInput-css-css' href='https://www.ufinebattery.com/wp-content/cache/background-css/www.ufinebattery.com/wp-content/cache/min/1/wp-content/themes/ufinebattery-com/assets/css/global/intlTelInput.css?ver=1788770687&wpr_t=1788808815' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='uf-global-css-css' href='https://www.ufinebattery.com/wp-content/cache/background-css/www.ufinebattery.com/wp-content/cache/min/1/wp-content/themes/ufinebattery-com/assets/css/global/global.css?ver=1788770687&wpr_t=1788808815' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='uf-article-css' href='https://www.ufinebattery.com/wp-content/cache/background-css/www.ufinebattery.com/wp-content/cache/min/1/wp-content/themes/ufinebattery-com/assets/css/resource/article.css?ver=1788770703&wpr_t=1788808815' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='uf-content-css' href='https://www.ufinebattery.com/wp-content/cache/background-css/www.ufinebattery.com/wp-content/cache/min/1/wp-content/themes/ufinebattery-com/assets/css/resource/content-common.css?ver=1788770703&wpr_t=1788808815' type='text/css' media='all' />
+<link rel="canonical" href="https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/" />
+<link rel="alternate" hreflang="en" href="https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><noscript><style>.perfmatters-lazy[data-src]{display:none !important;}</style></noscript><style>.perfmatters-lazy-youtube{position:relative;width:100%;max-width:100%;height:0;padding-bottom:56.23%;overflow:hidden}.perfmatters-lazy-youtube img{position:absolute;top:0;right:0;bottom:0;left:0;display:block;width:100%;max-width:100%;height:auto;margin:auto;border:none;cursor:pointer;transition:.5s all;-webkit-transition:.5s all;-moz-transition:.5s all}.perfmatters-lazy-youtube img:hover{-webkit-filter:brightness(75%)}.perfmatters-lazy-youtube .play{position:absolute;top:50%;left:50%;right:auto;width:68px;height:48px;margin-left:-34px;margin-top:-24px;background:var(--wpr-bg-07f900e5-e2cd-41ce-b026-912c34a46b36) no-repeat;background-position:center;background-size:cover;pointer-events:none;filter:grayscale(1)}.perfmatters-lazy-youtube:hover .play{filter:grayscale(0)}.perfmatters-lazy-youtube iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:99}.perfmatters-lazy.pmloaded,.perfmatters-lazy.pmloaded>img,.perfmatters-lazy>img.pmloaded,.perfmatters-lazy[data-ll-status=entered]{animation:500ms pmFadeIn}@keyframes pmFadeIn{0%{opacity:0}100%{opacity:1}}body .perfmatters-lazy-css-bg:not([data-ll-status=entered]),body .perfmatters-lazy-css-bg:not([data-ll-status=entered]) *,body .perfmatters-lazy-css-bg:not([data-ll-status=entered])::before,body .perfmatters-lazy-css-bg:not([data-ll-status=entered])::after{background-image:none!important;will-change:transform;transition:opacity 0.025s ease-in,transform 0.025s ease-in!important;}</style>
+    <!-- Google Tag Manager -->
+    <script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W47TGQH6');</script>
+    <!-- End Google Tag Manager -->
+	 <link data-minify="1" rel="stylesheet" href="https://www.ufinebattery.com/wp-content/cache/background-css/www.ufinebattery.com/wp-content/cache/min/1/wp-content/themes/ufinebattery-com/assets/css/global/uf-notice.css?ver=1788770687&wpr_t=1788808815" />
+<style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion">.info-share__item i.linkedin{--wpr-bg-373ab11b-6050-48dc-8140-df911d81d171: url('https://www.ufinebattery.com/images/common/linkedin.webp');}.info-share__item i.instagram{--wpr-bg-78f90ff9-ca71-4ca8-955e-7165cebd6813: url('https://www.ufinebattery.com/images/common/instagram.webp');}.info-share__item i:hover.linkedin{--wpr-bg-74238a68-9273-498f-9f25-a34c31ac016b: url('https://www.ufinebattery.com/images/common/brandLogo/linkedin.webp');}.info-share__item i:hover.instagram{--wpr-bg-350700ef-238c-4477-9497-f3fd56b322be: url('https://www.ufinebattery.com/images/common/brandLogo/instagram.webp');}</style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.iti-flag{--wpr-bg-e8c63594-3d3c-459c-8305-5ac0b9774e2f: url('https://www.ufinebattery.com/images/common/flags.png');}.iti-flag{--wpr-bg-8250fe99-4cd1-4281-8242-292794012959: url('https://www.ufinebattery.com/images/common/flags@2x.png');}.common-logos-flex .main_item-logo.logo-1{--wpr-bg-bc6eb506-b8dd-4061-86c1-d012aa0e3be2: url('https://www.ufinebattery.com/images/common/common-sprite.png');}.common-logos-flex .main_item-logo.logo-2{--wpr-bg-f4e8e048-819f-4471-9a4c-d6379bdfb1ea: url('https://www.ufinebattery.com/images/common/common-sprite.png');}.common-logos-flex .main_item-logo.logo-3{--wpr-bg-d310b816-1f75-42a6-869b-4488e5f7a252: url('https://www.ufinebattery.com/images/common/common-sprite.png');}.common-logos-flex .main_item-logo.logo-4{--wpr-bg-ad4fead3-cafd-405d-872f-7678a073e188: url('https://www.ufinebattery.com/images/common/common-sprite.png');}.hot::after{--wpr-bg-f5bb33ed-38fe-4592-aaae-2ce0181c2fff: url('https://www.ufinebattery.com/images/common/hot-new.png');}.new::after{--wpr-bg-9207b295-562a-4d09-80bb-bace47e232ae: url('https://www.ufinebattery.com/images/common/hot-new.png');}.info-share__item i.facebook{--wpr-bg-b33fc56b-def6-4387-b2c8-0280344fee2f: url('https://www.ufinebattery.com/images/common/facebook.webp');}.info-share__item i.twitter{--wpr-bg-2fdbd7d0-bab1-4cb5-a838-0df255d47bcc: url('https://www.ufinebattery.com/images/common/twitter.webp');}.info-share__item i.youtube{--wpr-bg-b458d661-2ec8-4324-8ce8-44d5efd440d1: url('https://www.ufinebattery.com/images/common/Youtube.webp');}.info-share__item i.telegram{--wpr-bg-c3d96dea-7eb8-4e52-be9d-ad240f8ebc6d: url('https://www.ufinebattery.com/images/common/Telegram.webp');}.info-share__item i:hover.facebook{--wpr-bg-9ced026e-5e29-4a7f-86e3-027bb0fc2b1b: url('https://www.ufinebattery.com/images/common/brandLogo/facebook.webp');}.info-share__item i:hover.twitter{--wpr-bg-29c9e513-d8b0-4c8a-9a41-bda0e698339b: url('https://www.ufinebattery.com/images/common/brandLogo/twitter.webp');}.info-share__item i:hover.youtube{--wpr-bg-0e3dcd3d-5233-44d0-b07d-704b22b47330: url('https://www.ufinebattery.com/images/common/brandLogo/Youtube.webp');}.info-share__item i:hover.telegram{--wpr-bg-6cfc117b-1116-4b1b-9a66-bca5f76a6b24: url('https://www.ufinebattery.com/images/common/brandLogo/Telegram.webp');}.commom-provide-flex .provide-item.content-item1{--wpr-bg-5dd692df-6964-46a0-ba6b-8b09d00e3de7: url('https://www.ufinebattery.com/images/upload/digital-with-lithium-polymer-battery.webp');}.commom-provide-flex .provide-item.content-item2{--wpr-bg-7dbc6349-184a-48c8-aa55-7b76a94a5ace: url('https://www.ufinebattery.com/images/upload/medical-device-with-lithium-battery.webp');}.commom-provide-flex .provide-item.content-item3{--wpr-bg-f1b7d0b7-bb60-43b3-993e-4b82a966302b: url('https://www.ufinebattery.com/images/upload/power-tool-with-lithium-polymer-battery.webp');}.commom-provide-flex .provide-item.content-item4{--wpr-bg-9de8c5b5-09b3-4c77-8509-184e5b80263a: url('https://www.ufinebattery.com/images/upload/low-temp-device-with-lithium-battery.webp');}.trp-ls-shortcode-language{--wpr-bg-8f460455-a770-479e-8329-06f9581bfa56: url('https://www.ufinebattery.com/images/common/arrow-down-3101.svg');}.trp-language-switcher>div{--wpr-bg-ff47c4d3-78cb-4673-aacf-81e4897e8993: url('https://www.ufinebattery.com/images/common/arrow-down-3101.svg');}.trp-language-switcher>div:hover{--wpr-bg-4e6955c0-ff16-43b8-b4eb-4c64cd8631c5: url('https://www.ufinebattery.com/images/common/icon-down.svg');}.resource-main_link .link_icon{--wpr-bg-193bdadb-c986-4f6c-9fa3-9703019add11: url('https://www.ufinebattery.com/images/common/common-sprite.png');}.case_contact{--wpr-bg-f63d7a7c-4446-4aa9-abd3-aae580f0779d: url('https://www.ufinebattery.com/images/resource/common/contact-bg.png');}.article .mian_content .list-hook>li::after{--wpr-bg-f29a1c32-528e-4f2d-9592-92350b019295: url('https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/image/check.svg');}.common-article-cc .new_h3 .icon-conver{--wpr-bg-0f20243e-4e89-4ce9-b009-d81949c59a5f: url('https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/image/conver.svg');}.common-article-cc .mian_content .grey_container .grey_footer_link .grey_footer_link_icon{--wpr-bg-ce83e564-43da-4272-996c-bc6f08f7a815: url('https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/image/link.svg');}.common-article-cc .mian_content .check_list .check_item .check_item_icon{--wpr-bg-3389e48e-fb3e-482c-b484-8c193fb9ccfd: url('https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/image/check.svg');}.common-article-cc .step-number::before{--wpr-bg-b539d7c1-793e-4af3-a0bc-496dfde683b7: url('https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/image/diamond.svg');}.common-article-cc .faq-number{--wpr-bg-23d25eaa-f6ac-4f10-bfe2-617fc3c85ff6: url('https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/image/polygon.svg');}.common-article-cc .mian_content .list-hook>li::after{--wpr-bg-3fde7512-8acd-4799-a352-e01bfdf93bec: url('https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/image/check.svg');}.uf-notice{--wpr-bg-bdbed8b7-e4e1-4701-91ae-d3e06aa128e5: url('https://www.ufinebattery.com/images/upload/2026kes-banner-pc.webp');}.uf-notice{--wpr-bg-c0616ae4-9983-46a8-8489-1a3417974d79: url('https://www.ufinebattery.com/images/upload/2026kes-banenr-m.webp');}.perfmatters-lazy-youtube .play{--wpr-bg-07f900e5-e2cd-41ce-b026-912c34a46b36: url('https://www.ufinebattery.com/wp-content/plugins/perfmatters/img/youtube.svg');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".iti-flag","style":".iti-flag{--wpr-bg-e8c63594-3d3c-459c-8305-5ac0b9774e2f: url('https:\/\/www.ufinebattery.com\/images\/common\/flags.png');}","hash":"e8c63594-3d3c-459c-8305-5ac0b9774e2f","url":"https:\/\/www.ufinebattery.com\/images\/common\/flags.png"},{"selector":".iti-flag","style":".iti-flag{--wpr-bg-8250fe99-4cd1-4281-8242-292794012959: url('https:\/\/www.ufinebattery.com\/images\/common\/flags@2x.png');}","hash":"8250fe99-4cd1-4281-8242-292794012959","url":"https:\/\/www.ufinebattery.com\/images\/common\/flags@2x.png"},{"selector":".common-logos-flex .main_item-logo.logo-1","style":".common-logos-flex .main_item-logo.logo-1{--wpr-bg-bc6eb506-b8dd-4061-86c1-d012aa0e3be2: url('https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png');}","hash":"bc6eb506-b8dd-4061-86c1-d012aa0e3be2","url":"https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png"},{"selector":".common-logos-flex .main_item-logo.logo-2","style":".common-logos-flex .main_item-logo.logo-2{--wpr-bg-f4e8e048-819f-4471-9a4c-d6379bdfb1ea: url('https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png');}","hash":"f4e8e048-819f-4471-9a4c-d6379bdfb1ea","url":"https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png"},{"selector":".common-logos-flex .main_item-logo.logo-3","style":".common-logos-flex .main_item-logo.logo-3{--wpr-bg-d310b816-1f75-42a6-869b-4488e5f7a252: url('https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png');}","hash":"d310b816-1f75-42a6-869b-4488e5f7a252","url":"https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png"},{"selector":".common-logos-flex .main_item-logo.logo-4","style":".common-logos-flex .main_item-logo.logo-4{--wpr-bg-ad4fead3-cafd-405d-872f-7678a073e188: url('https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png');}","hash":"ad4fead3-cafd-405d-872f-7678a073e188","url":"https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png"},{"selector":".hot","style":".hot::after{--wpr-bg-f5bb33ed-38fe-4592-aaae-2ce0181c2fff: url('https:\/\/www.ufinebattery.com\/images\/common\/hot-new.png');}","hash":"f5bb33ed-38fe-4592-aaae-2ce0181c2fff","url":"https:\/\/www.ufinebattery.com\/images\/common\/hot-new.png"},{"selector":".new","style":".new::after{--wpr-bg-9207b295-562a-4d09-80bb-bace47e232ae: url('https:\/\/www.ufinebattery.com\/images\/common\/hot-new.png');}","hash":"9207b295-562a-4d09-80bb-bace47e232ae","url":"https:\/\/www.ufinebattery.com\/images\/common\/hot-new.png"},{"selector":".info-share__item i.facebook","style":".info-share__item i.facebook{--wpr-bg-b33fc56b-def6-4387-b2c8-0280344fee2f: url('https:\/\/www.ufinebattery.com\/images\/common\/facebook.webp');}","hash":"b33fc56b-def6-4387-b2c8-0280344fee2f","url":"https:\/\/www.ufinebattery.com\/images\/common\/facebook.webp"},{"selector":".info-share__item i.twitter","style":".info-share__item i.twitter{--wpr-bg-2fdbd7d0-bab1-4cb5-a838-0df255d47bcc: url('https:\/\/www.ufinebattery.com\/images\/common\/twitter.webp');}","hash":"2fdbd7d0-bab1-4cb5-a838-0df255d47bcc","url":"https:\/\/www.ufinebattery.com\/images\/common\/twitter.webp"},{"selector":".info-share__item i.youtube","style":".info-share__item i.youtube{--wpr-bg-b458d661-2ec8-4324-8ce8-44d5efd440d1: url('https:\/\/www.ufinebattery.com\/images\/common\/Youtube.webp');}","hash":"b458d661-2ec8-4324-8ce8-44d5efd440d1","url":"https:\/\/www.ufinebattery.com\/images\/common\/Youtube.webp"},{"selector":".info-share__item i.telegram","style":".info-share__item i.telegram{--wpr-bg-c3d96dea-7eb8-4e52-be9d-ad240f8ebc6d: url('https:\/\/www.ufinebattery.com\/images\/common\/Telegram.webp');}","hash":"c3d96dea-7eb8-4e52-be9d-ad240f8ebc6d","url":"https:\/\/www.ufinebattery.com\/images\/common\/Telegram.webp"},{"selector":".info-share__item i.facebook","style":".info-share__item i:hover.facebook{--wpr-bg-9ced026e-5e29-4a7f-86e3-027bb0fc2b1b: url('https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/facebook.webp');}","hash":"9ced026e-5e29-4a7f-86e3-027bb0fc2b1b","url":"https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/facebook.webp"},{"selector":".info-share__item i.twitter","style":".info-share__item i:hover.twitter{--wpr-bg-29c9e513-d8b0-4c8a-9a41-bda0e698339b: url('https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/twitter.webp');}","hash":"29c9e513-d8b0-4c8a-9a41-bda0e698339b","url":"https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/twitter.webp"},{"selector":".info-share__item i.youtube","style":".info-share__item i:hover.youtube{--wpr-bg-0e3dcd3d-5233-44d0-b07d-704b22b47330: url('https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/Youtube.webp');}","hash":"0e3dcd3d-5233-44d0-b07d-704b22b47330","url":"https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/Youtube.webp"},{"selector":".info-share__item i.telegram","style":".info-share__item i:hover.telegram{--wpr-bg-6cfc117b-1116-4b1b-9a66-bca5f76a6b24: url('https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/Telegram.webp');}","hash":"6cfc117b-1116-4b1b-9a66-bca5f76a6b24","url":"https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/Telegram.webp"},{"selector":".commom-provide-flex .provide-item.content-item1","style":".commom-provide-flex .provide-item.content-item1{--wpr-bg-5dd692df-6964-46a0-ba6b-8b09d00e3de7: url('https:\/\/www.ufinebattery.com\/images\/upload\/digital-with-lithium-polymer-battery.webp');}","hash":"5dd692df-6964-46a0-ba6b-8b09d00e3de7","url":"https:\/\/www.ufinebattery.com\/images\/upload\/digital-with-lithium-polymer-battery.webp"},{"selector":".commom-provide-flex .provide-item.content-item2","style":".commom-provide-flex .provide-item.content-item2{--wpr-bg-7dbc6349-184a-48c8-aa55-7b76a94a5ace: url('https:\/\/www.ufinebattery.com\/images\/upload\/medical-device-with-lithium-battery.webp');}","hash":"7dbc6349-184a-48c8-aa55-7b76a94a5ace","url":"https:\/\/www.ufinebattery.com\/images\/upload\/medical-device-with-lithium-battery.webp"},{"selector":".commom-provide-flex .provide-item.content-item3","style":".commom-provide-flex .provide-item.content-item3{--wpr-bg-f1b7d0b7-bb60-43b3-993e-4b82a966302b: url('https:\/\/www.ufinebattery.com\/images\/upload\/power-tool-with-lithium-polymer-battery.webp');}","hash":"f1b7d0b7-bb60-43b3-993e-4b82a966302b","url":"https:\/\/www.ufinebattery.com\/images\/upload\/power-tool-with-lithium-polymer-battery.webp"},{"selector":".commom-provide-flex .provide-item.content-item4","style":".commom-provide-flex .provide-item.content-item4{--wpr-bg-9de8c5b5-09b3-4c77-8509-184e5b80263a: url('https:\/\/www.ufinebattery.com\/images\/upload\/low-temp-device-with-lithium-battery.webp');}","hash":"9de8c5b5-09b3-4c77-8509-184e5b80263a","url":"https:\/\/www.ufinebattery.com\/images\/upload\/low-temp-device-with-lithium-battery.webp"},{"selector":".trp-ls-shortcode-language","style":".trp-ls-shortcode-language{--wpr-bg-8f460455-a770-479e-8329-06f9581bfa56: url('https:\/\/www.ufinebattery.com\/images\/common\/arrow-down-3101.svg');}","hash":"8f460455-a770-479e-8329-06f9581bfa56","url":"https:\/\/www.ufinebattery.com\/images\/common\/arrow-down-3101.svg"},{"selector":".trp-language-switcher>div","style":".trp-language-switcher>div{--wpr-bg-ff47c4d3-78cb-4673-aacf-81e4897e8993: url('https:\/\/www.ufinebattery.com\/images\/common\/arrow-down-3101.svg');}","hash":"ff47c4d3-78cb-4673-aacf-81e4897e8993","url":"https:\/\/www.ufinebattery.com\/images\/common\/arrow-down-3101.svg"},{"selector":".trp-language-switcher>div","style":".trp-language-switcher>div:hover{--wpr-bg-4e6955c0-ff16-43b8-b4eb-4c64cd8631c5: url('https:\/\/www.ufinebattery.com\/images\/common\/icon-down.svg');}","hash":"4e6955c0-ff16-43b8-b4eb-4c64cd8631c5","url":"https:\/\/www.ufinebattery.com\/images\/common\/icon-down.svg"},{"selector":".resource-main_link .link_icon","style":".resource-main_link .link_icon{--wpr-bg-193bdadb-c986-4f6c-9fa3-9703019add11: url('https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png');}","hash":"193bdadb-c986-4f6c-9fa3-9703019add11","url":"https:\/\/www.ufinebattery.com\/images\/common\/common-sprite.png"},{"selector":".case_contact","style":".case_contact{--wpr-bg-f63d7a7c-4446-4aa9-abd3-aae580f0779d: url('https:\/\/www.ufinebattery.com\/images\/resource\/common\/contact-bg.png');}","hash":"f63d7a7c-4446-4aa9-abd3-aae580f0779d","url":"https:\/\/www.ufinebattery.com\/images\/resource\/common\/contact-bg.png"},{"selector":".article .mian_content .list-hook>li","style":".article .mian_content .list-hook>li::after{--wpr-bg-f29a1c32-528e-4f2d-9592-92350b019295: url('https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/check.svg');}","hash":"f29a1c32-528e-4f2d-9592-92350b019295","url":"https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/check.svg"},{"selector":".common-article-cc .new_h3 .icon-conver","style":".common-article-cc .new_h3 .icon-conver{--wpr-bg-0f20243e-4e89-4ce9-b009-d81949c59a5f: url('https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/conver.svg');}","hash":"0f20243e-4e89-4ce9-b009-d81949c59a5f","url":"https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/conver.svg"},{"selector":".common-article-cc .mian_content .grey_container .grey_footer_link .grey_footer_link_icon","style":".common-article-cc .mian_content .grey_container .grey_footer_link .grey_footer_link_icon{--wpr-bg-ce83e564-43da-4272-996c-bc6f08f7a815: url('https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/link.svg');}","hash":"ce83e564-43da-4272-996c-bc6f08f7a815","url":"https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/link.svg"},{"selector":".common-article-cc .mian_content .check_list .check_item .check_item_icon","style":".common-article-cc .mian_content .check_list .check_item .check_item_icon{--wpr-bg-3389e48e-fb3e-482c-b484-8c193fb9ccfd: url('https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/check.svg');}","hash":"3389e48e-fb3e-482c-b484-8c193fb9ccfd","url":"https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/check.svg"},{"selector":".common-article-cc .step-number","style":".common-article-cc .step-number::before{--wpr-bg-b539d7c1-793e-4af3-a0bc-496dfde683b7: url('https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/diamond.svg');}","hash":"b539d7c1-793e-4af3-a0bc-496dfde683b7","url":"https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/diamond.svg"},{"selector":".common-article-cc .faq-number","style":".common-article-cc .faq-number{--wpr-bg-23d25eaa-f6ac-4f10-bfe2-617fc3c85ff6: url('https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/polygon.svg');}","hash":"23d25eaa-f6ac-4f10-bfe2-617fc3c85ff6","url":"https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/polygon.svg"},{"selector":".common-article-cc .mian_content .list-hook>li","style":".common-article-cc .mian_content .list-hook>li::after{--wpr-bg-3fde7512-8acd-4799-a352-e01bfdf93bec: url('https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/check.svg');}","hash":"3fde7512-8acd-4799-a352-e01bfdf93bec","url":"https:\/\/www.ufinebattery.com\/wp-content\/themes\/ufinebattery-com\/assets\/image\/check.svg"},{"selector":".uf-notice","style":".uf-notice{--wpr-bg-bdbed8b7-e4e1-4701-91ae-d3e06aa128e5: url('https:\/\/www.ufinebattery.com\/images\/upload\/2026kes-banner-pc.webp');}","hash":"bdbed8b7-e4e1-4701-91ae-d3e06aa128e5","url":"https:\/\/www.ufinebattery.com\/images\/upload\/2026kes-banner-pc.webp"},{"selector":".uf-notice","style":".uf-notice{--wpr-bg-c0616ae4-9983-46a8-8489-1a3417974d79: url('https:\/\/www.ufinebattery.com\/images\/upload\/2026kes-banenr-m.webp');}","hash":"c0616ae4-9983-46a8-8489-1a3417974d79","url":"https:\/\/www.ufinebattery.com\/images\/upload\/2026kes-banenr-m.webp"},{"selector":".perfmatters-lazy-youtube .play","style":".perfmatters-lazy-youtube .play{--wpr-bg-07f900e5-e2cd-41ce-b026-912c34a46b36: url('https:\/\/www.ufinebattery.com\/wp-content\/plugins\/perfmatters\/img\/youtube.svg');}","hash":"07f900e5-e2cd-41ce-b026-912c34a46b36","url":"https:\/\/www.ufinebattery.com\/wp-content\/plugins\/perfmatters\/img\/youtube.svg"}]; const rocket_excluded_pairs = [{"selector":".info-share__item i.linkedin","style":".info-share__item i.linkedin{--wpr-bg-373ab11b-6050-48dc-8140-df911d81d171: url('https:\/\/www.ufinebattery.com\/images\/common\/linkedin.webp');}","hash":"373ab11b-6050-48dc-8140-df911d81d171","url":"https:\/\/www.ufinebattery.com\/images\/common\/linkedin.webp"},{"selector":".info-share__item i.instagram","style":".info-share__item i.instagram{--wpr-bg-78f90ff9-ca71-4ca8-955e-7165cebd6813: url('https:\/\/www.ufinebattery.com\/images\/common\/instagram.webp');}","hash":"78f90ff9-ca71-4ca8-955e-7165cebd6813","url":"https:\/\/www.ufinebattery.com\/images\/common\/instagram.webp"},{"selector":".info-share__item i.linkedin","style":".info-share__item i:hover.linkedin{--wpr-bg-74238a68-9273-498f-9f25-a34c31ac016b: url('https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/linkedin.webp');}","hash":"74238a68-9273-498f-9f25-a34c31ac016b","url":"https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/linkedin.webp"},{"selector":".info-share__item i.instagram","style":".info-share__item i:hover.instagram{--wpr-bg-350700ef-238c-4477-9497-f3fd56b322be: url('https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/instagram.webp');}","hash":"350700ef-238c-4477-9497-f3fd56b322be","url":"https:\/\/www.ufinebattery.com\/images\/common\/brandLogo\/instagram.webp"}];</script><script defer src="/bt-stats.js?site=80d2fb66-7f95-4431-8798-5bc65b8326a5&version1"></script></head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W47TGQH6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><header class="ufine-header blog-defalut-header">
+    <div class="header-content pc-style need-remove-pc-header">
+        <div class="header-content__info">
+            <ul class="info-contact">
+                <li class="info-contact__item">Tel: +8618665816616</li>
+                <li class="info-contact__item border-left">Whatsapp/Skype: +8618665816616</li>
+                <li class="info-contact__item border-left">Email: sales@ufinebattery.com</li>
+            </ul>
+            <ul class="info-share">
+                <li class="info-share__item">
+                    <a href="https://www.linkedin.com/company/ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="linkedin"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://www.instagram.com/ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="instagram"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://www.youtube.com/@ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="youtube"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://www.facebook.com/profile.php?id=61553544675208" target="_blank" rel="noindex,nofollow,noopener"><i class="facebook"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://twitter.com/ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="twitter"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://t.me/MiaaaQin" target="_blank" rel="noindex,nofollow,noopener"><i class="telegram"></i></a>
+                </li>
+            </ul>
+            <div class="info-language-switcher pc-language-switcher">
+                <div class="language-switcher">
+                    <div class="language-current" id="language-current">
+                        <span class="language-text">
+                            English                        </span>
+                        <i class="iconfont icon-jiantouyou language-arrow"></i>
+                    </div>
+                    <div class="language-dropdown" id="language-dropdown">
+	                                                <a href="#" class="language-select-option" data-lang="en">
+                                <span class="language-text">English</span>
+                            </a>
+	                                                <a href="#" class="language-select-option" data-lang="ko">
+                                <span class="language-text">한국인</span>
+                            </a>
+	                                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg ufine-header__navbar">
+        <div class="nav-box-style">
+        <div class="navbar-brand">
+            <a href="/" aria-label="Home">
+                <img width="94" height="44"
+                    class="ufine battery logo"
+                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2094%2044'%3E%3C/svg%3E"
+                    alt="ufine battery logo"
+                data-lazy-src="https://www.ufinebattery.com/images/common/ufine-battery-logo.svg" /><noscript><img width="94" height="44"
+                    class="ufine battery logo"
+                    src="https://www.ufinebattery.com/images/common/ufine-battery-logo.svg"
+                    alt="ufine battery logo"
+                /></noscript>
+            </a>
+            <a class="navbar-blog" href="/blog/">Blog</a>
+        </div>
+        <i id="navbar-close" class="iconfont icon-guanbi mobile-style"></i>
+        <div class="navbar-mobile mobile-style">
+            <i id="ufine-search-icon" class="iconfont icon-gaojisousuo"></i>
+            <i id="ufine-mobile-navbar" class="iconfont icon-daohang"></i>
+        </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="mobile-style navbar-mask"></div>
+            <ul class="navbar-nav blog-navbar">
+                <li class="nav-item dropdown new-nav-item">
+                    <a class="nav-link dropdown-toggle" href="javascript:;">
+                        Blog Topics <i class="iconfont icon-jiantouyou"></i>
+                    </a>
+                    <div class="dropdown-menu">
+	                    		                    <ul class="menu-item blog-menu-item">
+ 	<li class="menu-row">
+<div class="menu-col">
+<div class="dropdown-title">
+Battery Basics
+<i class="iconfont icon-jiantouyou mobile-style"></i></div>
+<div class="dropdown-sub pc-style"><a class="dropdown-item hot" href="/blog/battery-terms-tips/">
+Battery Terms Tips
+</a>
+<a class="dropdown-item" href="/blog/battery-guides/">
+Battery Guides
+</a>
+<a class="dropdown-item" href="/blog/battery-technology/">
+Battery Technology
+</a>
+<a class="dropdown-item" href="/blog/battery-faqs/">
+Battery FAQs
+</a></div>
+</div></li>
+ 	<li class="menu-row">
+<div class="menu-col">
+<div class="dropdown-title">
+Battery Types
+<i class="iconfont icon-jiantouyou mobile-style"></i></div>
+<div class="dropdown-sub pc-style"><a class="dropdown-item" href="/blog/lithium-polymer-battery-tips/">
+Lithium Polymer Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/18650-battery-tips/">
+18650 Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/lifepo4-battery-tips/">
+LiFePO4 Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/non-rechargeable-battery/">
+Non-rechargeable Battery
+</a>
+<a class="dropdown-item" href="/blog/rechargeable-battery/">
+Rechargeable Battery
+</a>
+<a class="dropdown-item" href="/blog/battery-pack-tips/">
+Battery Pack Tips
+</a>
+<a class="dropdown-item" href="/blog/featured-battery/">
+Featured Battery
+</a></div>
+</div></li>
+ 	<li class="menu-row">
+<div class="menu-col">
+<div class="dropdown-title">
+Battery Applications
+<i class="iconfont icon-jiantouyou mobile-style"></i></div>
+<div class="dropdown-sub pc-style"><a class="dropdown-item" href="/blog/consumer-electronics-battery/">
+Consumer Electronics Battery
+</a>
+<a class="dropdown-item" href="/blog/power-tool-battery-tips/">
+Power Tool Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/marine-and-boat-battery/">
+Marine and Boat Battery
+</a>
+<a class="dropdown-item" href="/blog/medical-device-battery-tips/">
+Medical Device Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/transportation-battery/">
+Transportation Battery
+</a></div>
+</div></li>
+ 	<li class="menu-row">
+<div class="menu-col">
+<div class="dropdown-title">
+Voltage Insights
+<i class="iconfont icon-jiantouyou mobile-style"></i></div>
+<div class="dropdown-sub pc-style"><a class="dropdown-item" href="/blog/3-2-v-battery-tips/">
+3.2 V Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/3-7-v-battery-tips/">
+3.7 V Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/7-4-v-battery-tips/">
+7.4 V Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/12-v-battery-tips/">
+12 V Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/24-v-battery-tips/">
+24 V Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/36-v-battery-tips/">
+36 V Battery Tips
+</a>
+<a class="dropdown-item" href="/blog/48-v-battery-tips/">
+48 V Battery Tips
+</a></div>
+</div></li>
+ 	<li class="menu-row">
+<div class="menu-col">
+<div class="dropdown-title">
+Battery Performance &amp; Selection
+<i class="iconfont icon-jiantouyou mobile-style"></i></div>
+<div class="dropdown-sub pc-style"><a class="dropdown-item" href="/blog/battery-tops-list-tips/">
+Battery Tops List Tips
+</a>
+<a class="dropdown-item" href="/blog/battery-comparison-tips/">
+Battery Comparison Tips
+</a>
+<a class="dropdown-item" href="/blog/battery-reviews/">
+Battery Reviews
+</a></div>
+</div></li>
+ 	<li class="menu-row">
+<div class="menu-col">
+<div class="dropdown-title">
+Regulations, Market &amp; Trends
+<i class="iconfont icon-jiantouyou mobile-style"></i></div>
+<div class="dropdown-sub pc-style"><a class="dropdown-item" href="/blog/certification-and-regulation/">
+Certification and Regulation
+</a>
+<a class="dropdown-item" href="/blog/news-and-market/">
+News and Market
+</a>
+<a class="dropdown-item" href="/blog/battery-shipment-tips/">
+Battery Shipment Tips
+</a></div>
+</div></li>
+ 	<li class="menu-row">
+<div class="menu-col">
+<div class="dropdown-title">
+Accessories
+<i class="iconfont icon-jiantouyou mobile-style"></i></div>
+<div class="dropdown-sub pc-style"><a class="dropdown-item" href="/blog/battery-charger-tips/">
+Battery Charger Tips
+</a>
+<a class="dropdown-item" href="/blog/battery-accessory-tips/">
+Battery Accessory Tips
+</a></div>
+</div></li>
+</ul>	                                        </div>
+                </li>
+<li class="nav-item dropdown new-nav-item">
+    <a class="nav-link dropdown-toggle" href="/products/">
+        Products <i class="iconfont icon-jiantouyou"></i>
+    </a>
+    <div class="dropdown-menu">
+        <ul class="menu-item">
+		    		    			                        <li class="menu-row">
+					                                <div class="menu-col">
+                                <div class="dropdown-title">
+                                    <a href="https://www.ufinebattery.com/lithium-polymer-battery/">
+									    Lithium Polymer Battery                                        <i class="iconfont icon-jiantouyou mobile-style"></i>
+                                    </a>
+                                </div>
+                                <div class="dropdown-sub pc-style">
+								    									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lithium-polymer-battery/3-7-v-lithium-ion-battery/">
+											    3.7 V Li-ion Battery 30~500mAh                                            </a>
+									                                                <a class="dropdown-item hot"
+                                               href="https://www.ufinebattery.com/lithium-polymer-battery/3-7-v-li-ion-battery-500mah-1000mah/">
+											    3.7 V Li-ion Battery 500~1000mAh                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lithium-polymer-battery/3-7-v-li-ion-battery-1000mah-2000mah/">
+											    3.7 V Li-ion Battery 1000~2000mAh                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lithium-polymer-battery/3-7-v-li-ion-battery-2000mah-12000mah/">
+											    3.7 V Li-ion Battery 2000~12000mAh                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lithium-polymer-battery/3-8-v-lithium-ion-battery/">
+											    3.8V, 3.85V &amp; 3.87V High-Voltage Battery                                            </a>
+									    								                                    </div>
+                            </div>
+					                        </li>
+			                        <li class="menu-row">
+					                                <div class="menu-col">
+                                <div class="dropdown-title">
+                                    <a href="https://www.ufinebattery.com/li-ion-18650-battery/">
+									    Li-ion 18650 Battery                                        <i class="iconfont icon-jiantouyou mobile-style"></i>
+                                    </a>
+                                </div>
+                                <div class="dropdown-sub pc-style">
+								    									                                                <a class="dropdown-item hot"
+                                               href="https://www.ufinebattery.com/li-ion-18650-battery/18650-battery-2000mah/">
+											    18650 Battery 2000mAh                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/li-ion-18650-battery/18650-battery-2200mah/">
+											    18650 Battery 2200mAh                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/li-ion-18650-battery/18650-battery-2600mah/">
+											    18650 Battery 2600mAh                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/li-ion-18650-battery/18650-battery-3000mah/">
+											    18650 Battery 3000mAh                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/li-ion-18650-battery/18650-battery-3500mah/">
+											    18650 Battery 3500mAh                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/li-ion-18650-battery/other-cylindrical-lithium-ion-battery/">
+											    Other Cylindrical Li-ion Battery                                            </a>
+									    								                                    </div>
+                            </div>
+					                        </li>
+			                        <li class="menu-row">
+					                                <div class="menu-col">
+                                <div class="dropdown-title">
+                                    <a href="https://www.ufinebattery.com/lifepo4-battery/">
+									    LiFePO4 Battery                                        <i class="iconfont icon-jiantouyou mobile-style"></i>
+                                    </a>
+                                </div>
+                                <div class="dropdown-sub pc-style">
+								    									                                                <a class="dropdown-item hot"
+                                               href="https://www.ufinebattery.com/lifepo4-battery/3-2-v-lifepo4-battery/">
+											    3.2 V LiFePO4 Battery                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lifepo4-battery/12v-lifepo4-battery/">
+											    12 V LiFePO4 Battery                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lifepo4-battery/24-v-lifepo4-battery/">
+											    24 V LiFePO4 Battery                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lifepo4-battery/36-v-lifepo4-battery/">
+											    36 V LiFePO4 Battery                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lifepo4-battery/48-v-lifepo4-battery/">
+											    48 V LiFePO4 Battery                                            </a>
+									    								                                    </div>
+                            </div>
+					                        </li>
+			                        <li class="menu-row">
+					                                <div class="menu-col">
+                                <div class="dropdown-title">
+                                    <a href="https://www.ufinebattery.com/special-shape-battery/">
+									    Special Shape Battery                                        <i class="iconfont icon-jiantouyou mobile-style"></i>
+                                    </a>
+                                </div>
+                                <div class="dropdown-sub pc-style">
+								    									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/special-shape-battery/curved-battery/">
+											    Curved Battery                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/special-shape-battery/irregular-round-battery/">
+											    Irregular Round Battery                                            </a>
+									    								                                    </div>
+                            </div>
+					                        </li>
+			                        <li class="menu-row">
+					                                <div class="menu-col">
+                                <div class="dropdown-title">
+                                    <a href="https://www.ufinebattery.com/lithium-ion-battery-pack/">
+									    Lithium Battery Pack                                        <i class="iconfont icon-jiantouyou mobile-style"></i>
+                                    </a>
+                                </div>
+                                <div class="dropdown-sub pc-style">
+								    									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lithium-ion-battery-pack/7-4-v-lithium-ion-battery-pack/">
+											    7.4 V Lithium Battery Pack                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lithium-ion-battery-pack/11-1-v-lithium-ion-battery-pack/">
+											    11.1 V Lithium Battery Pack                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/lithium-ion-battery-pack/18650-battery-pack/">
+											    18650 Battery Pack                                            </a>
+									    								                                    </div>
+                            </div>
+					                        </li>
+			                        <li class="menu-row">
+					                                <div class="menu-col">
+                                <div class="dropdown-title">
+                                    <a href="https://www.ufinebattery.com/special-battery/">
+									    Special Battery                                        <i class="iconfont icon-jiantouyou mobile-style"></i>
+                                    </a>
+                                </div>
+                                <div class="dropdown-sub pc-style">
+								    									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/special-battery/high-rate-discharge-battery/">
+											    High Rate Discharge Battery                                            </a>
+									                                                <a class="dropdown-item hot"
+                                               href="https://www.ufinebattery.com/special-battery/high-temperature-lithium-battery/">
+											    High Temperature Lithium Battery                                            </a>
+									                                                <a class="dropdown-item hot"
+                                               href="https://www.ufinebattery.com/special-battery/low-temperature-battery/">
+											    Low Temperature Battery                                            </a>
+									                                                <a class="dropdown-item "
+                                               href="https://www.ufinebattery.com/special-battery/ultra-thin-battery/">
+											    Thin Battery                                            </a>
+									    								                                    </div>
+                            </div>
+					                        </li>
+			    		            </ul>
+    </div>
+</li>
+                <li class="nav-item dropdown new-nav-item-appcations">
+                    <a class="nav-link dropdown-toggle" href="/applications/">
+                        Applications <i class="iconfont icon-jiantouyou"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                                                    <ul class="menu-item">
+    <li>
+        <div class="dropdown-title">
+            <a href="/applications/#digital-battery">
+                Digital Battery
+                <i class="iconfont icon-jiantouyou mobile-style"></i>
+            </a>
+        </div>
+        <div class="dropdown-sub pc-style">
+            <a class="dropdown-item hot" href="/applications/laptop-battery/">Laptop Battery</a>
+            <a class="dropdown-item" href="/applications/camera-battery/">Camera Battery</a>
+            <a class="dropdown-item" href="/applications/ipad-battery/">iPad Battery</a>
+            <a class="dropdown-item" href="/applications/wireless-microphone-battery/">Wireless Microphone Battery</a>
+            <a class="dropdown-item" href="/applications/car-toys-battery/">Car Toys Battery</a>
+            <a class="dropdown-item" href="/applications/remote-control-battery/">Remote Control Battery</a>
+            <a class="dropdown-item" href="/applications/alarm-clock-battery/">Alarm Clock Battery</a>
+            <a class="dropdown-item" href="/applications/speaker-battery/">Speaker Battery</a>
+        </div>
+    </li>
+
+    <li>
+        <div class="dropdown-title">
+            <a href="/applications/#medical-device-battery">
+                Medical Device Battery
+                <i class="iconfont icon-jiantouyou mobile-style"></i>
+            </a>
+        </div>
+        <div class="dropdown-sub pc-style">
+            <a class="dropdown-item" href="/applications/breast-pump-battery/">Breast Pump Battery</a>
+            <a class="dropdown-item" href="/applications/pulse-oximeter-battery/">Pulse Oximeter Battery</a>
+            <a class="dropdown-item" href="/applications/glucose-meter-battery/">Glucose Meter Battery</a>
+        </div>
+
+        <!-- Intelligent Robotic Systems -->
+        <div class="dropdown-title margin-top">
+            <a>
+                Intelligent Robotic Systems
+                <i class="iconfont icon-jiantouyou mobile-style"></i>
+            </a>
+        </div>
+        <div class="dropdown-sub pc-style">
+            <a class="dropdown-item" href="/applications/industrial-autonomous-robots-battery/">
+                Industrial & Autonomous Robots Battery
+            </a>
+            <a class="dropdown-item" href="/applications/ai-humanoid-robot-battery/">
+                AI & Humanoid Robot Battery
+            </a>
+        </div>
+    </li>
+
+    <li>
+        <div class="dropdown-title">
+            <a href="/applications/#power-tool-battery">
+                Power Tool Battery
+                <i class="iconfont icon-jiantouyou mobile-style"></i>
+            </a>
+        </div>
+        <div class="dropdown-sub pc-style">
+            <a class="dropdown-item" href="/applications/power-tool-battery/">Power Tool Battery</a>
+            <a class="dropdown-item" href="/applications/screwdriver-battery/">Screwdriver Battery</a>
+        </div>
+
+        <div class="dropdown-title margin-top">
+            <a href="/applications/#wearable-device-battery">
+                Wearable Device Battery
+                <i class="iconfont icon-jiantouyou mobile-style"></i>
+            </a>
+        </div>
+        <div class="dropdown-sub pc-style">
+            <a class="dropdown-item" href="/applications/smart-ring-battery/">Smart Ring Battery</a>
+            <a class="dropdown-item" href="/applications/wearable-device-battery/">Wearable Device Battery</a>
+        </div>
+    </li>
+
+    <li>
+        <div class="dropdown-title">
+            <a href="/applications/#beauty-and-skin-care">
+                Beauty and Skin Care
+                <i class="iconfont icon-jiantouyou mobile-style"></i>
+            </a>
+        </div>
+        <div class="dropdown-sub pc-style">
+            <a class="dropdown-item" href="/applications/hair-clipper-battery/">Hair Clipper Battery</a>
+            <a class="dropdown-item" href="/applications/makeup-mirror-battery/">Makeup Mirror Battery</a>
+        </div>
+
+        <div class="dropdown-title margin-top">
+            <a href="/applications/#low-temp-device">
+                Low-Temp Device
+                <i class="iconfont icon-jiantouyou mobile-style"></i>
+            </a>
+        </div>
+        <div class="dropdown-sub pc-style">
+            <a class="dropdown-item" href="/applications/heated-gloves-battery/">Heated Gloves Battery</a>
+            <a class="dropdown-item" href="/applications/heated-clothing-battery/">Heated Clothing Battery</a>
+        </div>
+    </li>
+</ul>
+                                            </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:;">
+                        Resources <i class="iconfont icon-jiantouyou"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul class="menu-item">
+                            <li class="not-dropdown-item">
+                                <div class="dropdown-title"><a href="/blog/">Blog</a></div>
+                                <div class="dropdown-title margin-top"><a href="/case-studies/">Case Studies</a></div>
+                                <div class="dropdown-title margin-top"><a href="/faq/">FAQs</a></div>
+                                <div class="dropdown-title margin-top"><a href="/news-and-events/">News &amp; Events</a></div>
+                                <div class="dropdown-title margin-top"><a href="/battery-calculators/">Battery Calculators</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:;">
+                        Company <i class="iconfont icon-jiantouyou"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul class="menu-item">
+                            <li>
+                                <div class="dropdown-title">
+                                    <a href="/about/">About Us</a><i class="iconfont icon-jiantouyou mobile-style"></i>
+                                </div>
+                                <div class="dropdown-sub pc-style">
+                                    <a class="dropdown-item" href="/about/battery-production-process/">Battery Production Process</a>
+                                    <a class="dropdown-item" href="/about/certification/">Our Certificates</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-title">
+                                    Company Info<i class="iconfont icon-jiantouyou mobile-style"></i>
+                                </div>
+                                <div class="dropdown-sub pc-style">
+                                    <a class="dropdown-item" href="/partnership/">Partnership</a>
+                                    <a class="dropdown-item" href="/careers/">Careers</a>
+                                    <a class="dropdown-item" href="/contact/">Contact Us</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <a href="/contact/" class="ufine-btn ufine-btn__theme">
+                <span>Request Quote</span>
+                <div class="ufine-btn__mask"></div>
+            </a>
+            <i class="iconfont icon-gaojisousuo"></i>
+            
+    <div class="header-content ufine-header_mobile need-remove-mobile-header">
+        <div class="header-content__info">
+            <ul class="info-contact">
+                <li class="info-contact__item">Tel: +8618665816616</li>
+                <li class="info-contact__item border-left">Whatsapp/Skype: +8618665816616</li>
+                <li class="info-contact__item border-left">Email: sales@ufinebattery.com</li>
+            </ul>
+            <ul class="info-share">
+                <li class="info-share__item">
+                    <a href="https://www.linkedin.com/company/ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="linkedin"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://www.instagram.com/ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="instagram"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://www.youtube.com/@ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="youtube"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://www.facebook.com/profile.php?id=61553544675208" target="_blank" rel="noindex,nofollow,noopener"><i class="facebook"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://twitter.com/ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="twitter"></i></a>
+                </li>
+                <li class="info-share__item">
+                    <a href="https://t.me/MiaaaQin" target="_blank" rel="noindex,nofollow,noopener"><i class="telegram"></i></a>
+                </li>
+            </ul>
+            
+            <div class="info-language-switcher phone-language-switcher">
+                <div class="language-switcher">
+                    <div class="language-current" id="language-current">
+                        <span class="language-text">
+                            English                        </span>
+                        <i class="iconfont icon-jiantouyou language-arrow"></i>
+                    </div>
+                    <div class="language-dropdown" id="language-dropdown">
+                                                    <a href="#" class="language-select-option" data-lang="en">
+                                <span class="language-text">English</span>
+                            </a>
+                                                    <a href="#" class="language-select-option" data-lang="ko">
+                                <span class="language-text">한국인</span>
+                            </a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div id="ufine-search" class="input-group">
+            <i class="iconfont icon-guanbi mobile-style"></i>
+            <input type="text" class="form-control" />
+            <i class="iconfont icon-gaojisousuo"></i>
+        </div>
+    </nav>
+</header>
+
+<!--横幅-->
+   <div class="uf-notice" id="ufNotice">
+        <a class="notice-link"
+            href="https://www.ufinebattery.com/news-and-events/ufine-battery-kes-2026-preview/">
+            <div class="notice-center">
+                <div class="notice-text">
+                    <p class="top-tit pc">Ufine Battery Is Exhibiting at KES 2026</p>
+                    <p class="top-tit h5">Ufine Battery at KES 2026 <br /> <span>Oct. 13–16 | Hall A A152&A153</span></p>
+                    <p class="bottom-tit">Oct. 13–16 | COEX Seoul, Korea | Hall A, A152 & A153</p>
+                </div>
+                <div class="uf-notice-btn pc-style">Learn More</div>
+            </div>
+        </a>
+        <a href="#" class="close-ad">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.001 8L8.00098 17" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M8.00098 8L17.001 17" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </a>
+    </div><main class="article common-article-cc">
+    <section class="article_banner">
+      <div class="container">
+        <nav class="ufine-breadcrumb" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page">
+              <a href="/" class="iconfont icon-home" aria-label="Home"></a>
+            </li>
+            <li class="breadcrumb-item"><a href="/blog/">Blog</a></li>
+            <li class="breadcrumb-item"><a href="https://www.ufinebattery.com/blog/news-and-market/">News and Market</a></li>
+            <li class="breadcrumb-item active"> Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries</li>
+          </ol>
+        </nav>
+        <h1 class="h1-main-title"> Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries</h1>
+        <p class="banner_desc">
+          By Ufine, Updated on April 15, 2025        </p>
+    	<div class="top_share">
+		  <div class="top_share_title">Share the page to</div>
+	 	  <ul class="info-share">
+    <li class="info-share__item">
+        <a href="https://www.facebook.com/sharer.php?u=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/&t=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries" target="_blank" rel="noindex,nofollow,noopener"><i class="facebook"></i></a>
+    </li>
+    <li class="info-share__item">
+        <a href="https://twitter.com/intent/tweet?text=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries&url=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/" target="_blank" rel="noindex,nofollow,noopener"><i class="twitter"></i></a>
+    </li>
+    <li class="info-share__item">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/&title=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries&source=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/" target="_blank" rel="noindex,nofollow,noopener"><i class="linkedin"></i></a>
+    </li>
+<!--    <li class="info-share__item">-->
+<!--        <a href="--><!--" target="_blank" rel="noindex,nofollow,noopener"><i class="youtube"></i></a>-->
+<!--    </li>-->
+    <li class="info-share__item">
+        <a href="instagram://share?url=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/&ig_web_copy_text=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries" target="_blank" rel="noindex,nofollow,noopener"><i class="instagram"></i></a>
+    </li>
+    <li class="info-share__item">
+        <a href="https://t.me/share?text=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries&url=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/" target="_blank" rel="noindex,nofollow,noopener"><i class="telegram"></i></a>
+    </li>
+</ul>	   </div>
+      </div>
+    </section>
+    <section class="article_mian">
+        <!-- More Topics -->
+        <aside class="mian_catalog main_left common-sidebar pc-style">
+            <div class="common-sidebar_nav">
+                <div class="sidebar-nav_title">
+                    <p class="sidebar-nav_title_text">More Topics</p>
+                </div>
+                <div class="sidebar-topics-list">
+                                            <div class="topic-item topic-expanded">
+                            <div class="topic-header">
+                                <i class="topic-toggle iconfont icon-jiantoushang"></i>
+                                <span class="topic-title">Battery Prices &amp; News</span>
+                            </div>
+                            <div class="topic-content">
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/where-to-buy-18650-batteries-in-bulk/">
+                                            <span>Where to Buy 18650 Batteries in Bulk: Reliable Manufacturer &#038; OEM Supplier Guide</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/byd-blade-battery-comprehensive-guide/">
+                                            <span>BYD Blade Battery Comprehensive Guide</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/8-parameters-of-lithium-batteries-you-must-know/">
+                                            <span>8 Lithium Battery Parameters You Should Understand Before Use</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/18650-battery-price-guide/">
+                                            <span>18650 Battery Price Guide</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/ternary-battery-or-lfp-battery-how-to-choose-for-ev/">
+                                            <span>Ternary Battery or LFP Battery: How to Choose for EV?</span>
+                                        </a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                            <div class="topic-item ">
+                            <div class="topic-header">
+                                <i class="topic-toggle iconfont icon-jiantoushang"></i>
+                                <span class="topic-title">LiFePO4 Batteries</span>
+                            </div>
+                            <div class="topic-content">
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/lifepo4-voltage-chart-guide-everything-you-need-to-know/">
+                                            <span>LiFePO4 Voltage Chart Guide: Everything You Need to Know</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/lifepo4-battery-charging-and-discharging/">
+                                            <span>How to Charge and Discharge LifePO4 Battery?</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/byd-blade-battery-comprehensive-guide/">
+                                            <span>BYD Blade Battery Comprehensive Guide</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/top-20-lithium-ion-battery-manufacturers/">
+                                            <span>Top 20 Lithium Ion Battery Manufacturers</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/nmc-vs-lfp-vs-lto-batteries-a-complete-comparison-guide/">
+                                            <span>NMC vs. LFP vs. LTO Batteries: A Complete Comparison Guide</span>
+                                        </a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                            <div class="topic-item ">
+                            <div class="topic-header">
+                                <i class="topic-toggle iconfont icon-jiantoushang"></i>
+                                <span class="topic-title">LiPo Batteries</span>
+                            </div>
+                            <div class="topic-content">
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/top-20-lithium-ion-battery-manufacturers/">
+                                            <span>Top 20 Lithium Ion Battery Manufacturers</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/what-is-an-rc-battery-a-comprehensive-guide/">
+                                            <span>What is an RC Battery? A Comprehensive Guide</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/lithium-ion-vs-lithium-polymer-battery/">
+                                            <span>Lithium-ion vs Lithium Polymer Battery: Which is Better?</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/how-to-read-lithium-battery-discharge-curve-and-charging-curve/">
+                                            <span>How to Read Lithium Battery Discharge Curve and Charging Curve?</span>
+                                        </a>
+                                    </div>
+                                                                    <div class="topic-article">
+                                        <a href="https://www.ufinebattery.com/blog/solid-state-battery-vs-lithium-ion-a-comparative-analysis/">
+                                            <span>Solid State Battery vs Lithium Ion: A Comparative Analysis</span>
+                                        </a>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </aside>
+      <a
+        href="javascript:void(0);"
+        data-toggle="modal"
+        data-target="#ufinePopup"
+        class="mobile-menu mobile-style"
+        >
+          <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2053%2043'%3E%3C/svg%3E" width="53px" height="43px" alt="Icon" data-lazy-src="https://www.ufinebattery.com/images/common/mobile-menu.svg" /><noscript><img src="https://www.ufinebattery.com/images/common/mobile-menu.svg" width="53px" height="43px" alt="Icon" /></noscript>
+        </a>
+      <div class="mian_content" id="mian_content">
+        <div class="content-common-main">
+            <!-- table of content -->
+            <div class="table-of-contents">
+                <div class="table-of-contents-header">
+                    <span class="table-of-contents-title">Table of Contents</span>
+                    <i class="table-of-contents-toggle iconfont icon-jiantoushang"></i>
+                </div>
+                <div class="table-of-contents-content">
+                    <ul>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 1. What are U.S. tariffs on Chinese lithium batteries in 2025?</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 2. Why are lithium batteries necessary in U.S.-China trade?</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 3. How do tariffs affect the U.S. battery market?</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 4. What is the economic impact of tariffs on electric vehicles?</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 5. How do tariffs influence renewable energy storage?</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 6. What are the global trade shifts caused by these tariffs?</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 7. What challenges do U.S. battery manufacturers face?</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 8. How is the U.S. government supporting domestic battery production?</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 9. What are the potential alternatives to lithium-ion batteries?</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Part 10. FAQs about U.S. tariffs on Chinese lithium batteries</a>
+                        </li>
+                                                <li class="toc-item">
+                            <i class="toc-toggle iconfont icon-jiantoushang"></i>
+                            <a href="#">Data and sources</a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+                                    <p>U.S. tariffs on Chinese lithium batteries have become a critical factor shaping the global battery market in 2026. These tariffs directly impact lithium-ion batteries&#8217; cost, supply chain, and competitiveness, essential for electric vehicles (EVs), renewable energy storage, and consumer electronics. This article comprehensively analyses U.S. tariffs on Chinese lithium batteries, exploring the latest tariff rates, their economic effects, and future implications for industries and consumers.</p>
+<h2>Part 1. What are U.S. tariffs on Chinese lithium batteries in 2025?</h2>
+<p>In April 2025, the U.S. government updated its tariff policy on lithium-ion batteries imported from China. The current tariff structure includes:</p>
+<ul class="list-disc">
+	<li>A 3.4% global tariff on lithium-ion batteries, regardless of origin.</li>
+	<li>A Section 301 tariff targeting Chinese imports, currently at 7.5%, is scheduled to rise to 25% by January 2026.</li>
+	<li>Additional tariffs imposed under recent trade actions push the total tariff on Chinese lithium batteries to approximately 82% by 2026.</li>
+</ul>
+<p>These tariffs are part of a broader strategy to reduce U.S. dependence on Chinese battery imports and encourage domestic production.</p>
+<p><img width="550" height="380" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20550%20380'%3E%3C/svg%3E" alt="what are u s tariffs on chinese lithium batteries in 2025" class="aligncenter" data-lazy-src="https://www.ufinebattery.com/images/upload/what-are-u-s-tariffs-on-chinese-lithium-batteries-in-2025.webp" /><noscript><img width="550" height="380" decoding="async" src="https://www.ufinebattery.com/images/upload/what-are-u-s-tariffs-on-chinese-lithium-batteries-in-2025.webp" alt="what are u s tariffs on chinese lithium batteries in 2025" class="aligncenter" /></noscript></p>
+<h2>Part 2. Why are lithium batteries necessary in U.S.-China trade?</h2>
+<p>Lithium-ion batteries power various technologies, from smartphones to electric vehicles and grid storage. China dominates the global lithium battery supply chain, producing over 75% of the world&#8217;s lithium-ion battery cells. The U.S. imports nearly 70% of its lithium batteries from China, making tariffs on these products highly impactful.</p>
+<p>The U.S. aims to build a resilient domestic battery industry to support its clean energy goals. Still, the current supply chain relies heavily on Chinese raw materials, components, and finished products.</p>
+<h2>Part 3. How do tariffs affect the U.S. battery market?</h2>
+<p>Tariffs increase the cost of imported batteries, which can:</p>
+<ul class="list-disc">
+	<li>Raise prices for U.S. manufacturers who rely on Chinese batteries or components.</li>
+	<li>Slow down the adoption of electric vehicles due to higher battery costs.</li>
+	<li>Increase costs for renewable energy storage systems, affecting grid modernization efforts.</li>
+</ul>
+<p>U.S. battery manufacturers face challenges despite tariffs because many components and raw materials still come from China or other countries with complex supply chains.</p>
+<h2>Part 4. What is the economic impact of tariffs on electric vehicles?</h2>
+<p>Electric vehicles depend heavily on lithium-ion batteries, which account for about 30-40% of an EV&#8217;s total cost. Tariffs that increase battery prices by up to 82% could add thousands of dollars to the cost of an EV. This price increase may slow consumer adoption, delaying the transition to cleaner transportation.</p>
+<p>For example, if a battery pack costs $10,000, an 82% tariff could add $8,200 in costs, which manufacturers might pass on to consumers.</p>
+<h2>Part 5. How do tariffs influence renewable energy storage?</h2>
+<p>Energy storage systems, essential for integrating solar and wind power, rely on lithium-ion batteries. Tariffs increase the cost of these systems, potentially slowing renewable energy deployment.</p>
+<p>The U.S. aims to install 30 GW of energy storage capacity by 2030, but higher battery costs could make this goal harder to achieve.</p>
+<h2>Part 6. What are the global trade shifts caused by these tariffs?</h2>
+<p>Many manufacturers are relocating battery production to Southeast Asia to avoid high tariffs, including Vietnam, Thailand, and Indonesia. These countries have become alternative hubs for battery assembly and component manufacturing.</p>
+<p>However, the U.S. has also extended tariffs to some Southeast Asian countries to prevent tariff circumvention, complicating global supply chains further.</p>
+<h2>Part 7. What challenges do U.S. battery manufacturers face?</h2>
+<p>U.S. manufacturers struggle with:</p>
+<ul class="list-disc">
+	<li>Raw materials like lithium, cobalt, and nickel are often imported and subject to tariffs.</li>
+	<li>High production costs compared to Chinese manufacturers benefiting from economies of scale.</li>
+	<li>Supply chain complexity, as many components still come from China or countries affected by tariffs.</li>
+</ul>
+<p>These challenges slow the growth of an entirely domestic battery supply chain.</p>
+<h2>Part 8. How is the U.S. government supporting domestic battery production?</h2>
+<p>The U.S. government has launched initiatives such as the Inflation Reduction Act (IRA), which provides tax credits and subsidies for domestic battery manufacturing and critical mineral processing.</p>
+<p>These policies aim to:</p>
+<ul class="list-disc">
+	<li>Encourage investment in U.S. battery plants.</li>
+	<li>Support research into alternative battery technologies.</li>
+	<li>Reduce reliance on Chinese imports over the next decade.</li>
+</ul>
+<h2>Part 9. What are the potential alternatives to lithium-ion batteries?</h2>
+<p>Rising tariffs and supply chain risks have accelerated interest in alternative battery technologies, including:</p>
+<ul class="list-disc">
+	<li>Lithium-sulfur batteries promise higher energy density and lower costs.</li>
+	<li>Solid-state batteries offer improved safety and longevity.</li>
+	<li>Sodium-ion batteries, which use more abundant materials.</li>
+</ul>
+<p>These alternatives could reduce dependence on traditional lithium-ion batteries sourced from China.</p>
+<h2>Part 10. FAQs about U.S. tariffs on Chinese lithium batteries</h2>
+<h3>What is the total tariff rate on Chinese lithium batteries in 2025?</h3>
+<p>The total tariff rate is approximately 82%, combining global tariffs, Section 301 tariffs, and additional trade measures.</p>
+<h3>How do tariffs affect the price of electric vehicles?</h3>
+<p>A: Tariffs can increase battery costs by up to 82%, potentially adding thousands of dollars to EV prices and slowing adoption.</p>
+<h3>Are there efforts to build U.S. battery manufacturing capacity?</h3>
+<p>Government incentives like the Inflation Reduction Act support domestic battery production and critical mineral processing.</p>
+<h3>Can manufacturers avoid tariffs by moving production outside China?</h3>
+<p>Some have shifted production to Southeast Asia, but the U.S. has extended tariffs to some countries to prevent circumvention.</p>
+<h3>What alternatives exist to lithium-ion batteries?</h3>
+<p>Emerging technologies like lithium-sulfur, solid-state, and sodium-ion batteries offer potential alternatives with different cost and performance profiles.</p>
+<h2>Data and sources</h2>
+<table>
+<tbody>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>Source</th>
+</tr>
+<tr>
+<td>China&#8217;s share of global lithium-ion battery production</td>
+<td>75%</td>
+<td>Benchmark Mineral Intelligence</td>
+</tr>
+<tr>
+<td>U.S. reliance on Chinese lithium battery imports</td>
+<td>70%</td>
+<td>U.S. International Trade Commission</td>
+</tr>
+<tr>
+<td>Tariff rate on Chinese lithium batteries (2025)</td>
+<td>82%</td>
+<td>U.S. Trade Representative Office</td>
+</tr>
+<tr>
+<td>Battery cost as % of EV price</td>
+<td>30-40%</td>
+<td>BloombergNEF</td>
+</tr>
+<tr>
+<td>U.S. energy storage target by 2030</td>
+<td>30 GW</td>
+<td>U.S. Department of Energy</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Data sources are publicly available reports from Benchmark Mineral Intelligence, U.S. government agencies, and industry analysts.</p>                              </div>
+        <div class="content_tag">
+          <p class="tag_title">Related Tags:</p>
+          <div class="tag_list tag">
+                      </div>
+        </div>
+        <div class="content_character">
+          <div class="character_info">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;74&#039;%20height=&#039;74&#039;%20viewBox=&#039;0%200%2074%2074&#039;%3E%3C/svg%3E" alt="avatar" class="info_avatar perfmatters-lazy" width="74" height="74" data-lazy-src="https://www.ufinebattery.com/images/upload/author-ufine.webp" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2074%2074&#039;%3E%3C/svg%3E" /><noscript><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2074%2074'%3E%3C/svg%3E" alt="avatar" class="info_avatar" width="74" height="74" data-lazy-src="https://www.ufinebattery.com/images/upload/author-ufine.webp"></noscript><noscript><img src="https://www.ufinebattery.com/images/upload/author-ufine.webp" alt="avatar" class="info_avatar" width="74" height="74"></noscript>
+            <div class="info_desc">
+              <p class="desc_name">Ufine</p>
+              <p class="desc_duty">Battery Industry Content Writer </p>
+            </div>
+          </div>
+          <div class="resource-main_link">
+            <a href="" class="link_icon facebook"></a>
+            <a href="" class="link_icon twitter"></a>
+            <a href="" class="link_icon linkedin"></a>
+            <a href="" class="link_icon youtube"></a>
+            <a href="" class="link_icon instagram"></a>
+            <a href="" class="link_icon telegram"></a>
+          </div>
+        </div>
+        <div class="content_recommend">
+          <p class="recommend_title">More Articles</p>
+          <div class="recommend_wrapper">
+                        <div class="wrapper_list">
+              <div class="list_item">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;238&#039;%20height=&#039;147&#039;%20viewBox=&#039;0%200%20238%20147&#039;%3E%3C/svg%3E" alt="recommend_pic" class="item_pic perfmatters-lazy" width="238" height="147" data-lazy-src="https://www.ufinebattery.com/images/upload/blog-best-lithium-battery-picks.webp" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20238%20147&#039;%3E%3C/svg%3E" /><noscript><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20238%20147'%3E%3C/svg%3E" alt="recommend_pic" class="item_pic" width="238"
+                  height="147" data-lazy-src="https://www.ufinebattery.com/images/upload/blog-best-lithium-battery-picks.webp"></noscript><noscript><img src="https://www.ufinebattery.com/images/upload/blog-best-lithium-battery-picks.webp" alt="recommend_pic" class="item_pic" width="238"
+                  height="147"></noscript>
+                <p><a href="https://www.ufinebattery.com/blog/best-24v-lithium-battery-top-picks/" class="item_title">Best 24V Lithium Battery: Top 10 Compared</a></p>
+                <p class="item_desc">Discover the top 24V lithium batteries. We compare capacity, price, cycle life, safety features, and the best options for different applications.</p>
+              </div>
+            </div>
+                                    <div class="wrapper_list">
+                                                                          <div class="list_item">
+                <p><a href="https://www.ufinebattery.com/blog/top-10-lifepo4-battery-cell-manufacturer/" class="item_title">Top LFP Cell Manufacturers in China You Should Know</a>
+                  </p>
+                <p class="item_desc">Looking for reliable LiFePO4 cells? Explore China's top LFP battery manufacturers, key technologies, production capabilities, and supplier selection tips.</p>
+              </div>
+                                                          <div class="list_item">
+                <p><a href="https://www.ufinebattery.com/blog/check-if-your-charger-works/" class="item_title">Check If Your Charger Works: Simple Test Guide</a>
+                  </p>
+                <p class="item_desc">Think your battery charger's broken? Quick tests can show you for sure. See if it’s the charger or the battery that's causing issues. Read more.</p>
+              </div>
+                                                                                                    </div>
+                                    <div class="wrapper_list">
+                                                                                                                                      <div class="list_item">
+                <p><a href="https://www.ufinebattery.com/blog/discover-the-7-best-camera-battery-manufacturers/" class="item_title">Best Camera Batteries: 7 Brands Compared &#038; Tested</a>
+                  </p>
+                <p class="item_desc">Looking for the best camera battery? Compare 7 top brands, including OEM and third-party options, to find the right battery for your camera.</p>
+              </div>
+                                                          <div class="list_item">
+                <p><a href="https://www.ufinebattery.com/blog/what-you-need-to-know-about-portable-fan-batteries/" class="item_title">What You Need to Know About Portable Fan Batteries</a>
+                  </p>
+                <p class="item_desc">Discover the best portable electric fan battery, its types, lifespan, and maintenance tips. Learn how to choose the right one and keep it running longer.</p>
+              </div>
+                                        </div>
+                      </div>
+        </div>
+      </div>
+      <aside class="mian_sales">
+        <div class="blog_from common-sidebar pc-style">
+          <div class="common-sidebar_form">
+            <p class="sidebar-form_title">Get a Free Quote Now!</p>
+              <form id="blog-form"
+                action="javascript:;"
+                class="ufine-form sidebar-form ufine-form-submit"
+                novalidate
+              >
+              <div class="form-item">
+                <label for="name" class="form-item__label">Your Name<i class="iconfont icon-xinghao"></i>
+                </label>
+                <input type="text" class="form-control form-control-sm" name="name" required />
+              </div>
+              <div class="form-item">
+                <label for="email" class="form-item__label"> Email<i class="iconfont icon-xinghao"></i>
+                </label>
+                <input type="email" class="form-control form-control-sm" name="email" required />
+              </div>
+              <div class="form-item">
+                <label for="phone" class="form-item__label"> Phone<i class="iconfont icon-xinghao"></i>
+                </label>
+                <div class="form-group">
+                  <input type="tel" class="form-control form-control-sm" id="areaCodes" />
+                  <input type="text" class="form-control form-control-sm" name="phone" required />
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="company" class="form-item__label">Company Name</label>
+                <input type="text" class="form-control form-control-sm" name="company" />
+              </div>
+              <div class="form-item">
+                <label for="message" class="form-item__label"> Message <i class="iconfont icon-xinghao"></i>
+                </label>
+                <textarea class="form-control form-control-sm" rows="3" required name="message"></textarea>
+              </div>
+                  <div class="form-item">
+                      <label for="captcha" class="form-item__label">
+                          Captcha Code<i class="iconfont icon-xinghao"></i>
+                      </label>
+                      <div class="code-box">
+                      <input type="text" class="form-control form-control-sm" name="captcha" required />
+                      <img width="72" height="24" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;72&#039;%20height=&#039;24&#039;%20viewBox=&#039;0%200%2072%2024&#039;%3E%3C/svg%3E" class="captcha-img perfmatters-lazy" alt="captcha-code" data-lazy-src="https://www.ufinebattery.com/images/captcha/Tmh5eWRRSiMxNzg4NzgwMTM1.png" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2072%2024&#039;%3E%3C/svg%3E" /><noscript><img width="72" height="24" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2072%2024'%3E%3C/svg%3E" class="captcha-img" alt="captcha-code" data-lazy-src="https://www.ufinebattery.com/images/captcha/Tmh5eWRRSiMxNzg4NzgwMTM1.png" ></noscript><noscript><img width="72" height="24" src="https://www.ufinebattery.com/images/captcha/Tmh5eWRRSiMxNzg4NzgwMTM1.png" class="captcha-img" alt="captcha-code" ></noscript>
+                      <input type="hidden" name="captcha_nonce" class="captcha_nonce" value="Tmh5eWRRSiMxNzg4NzgwMTM1" />
+                      </div>
+                  </div>
+              <button  id="submit-btn" type="submit" class="btn btn-primary">Send a Quote</button>
+            </form>
+          </div>
+          <a href="/contact/" class="cales">
+            <img class="cales_pic perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;238&#039;%20height=&#039;500&#039;%20viewBox=&#039;0%200%20238%20500&#039;%3E%3C/svg%3E" alt="cales" width="238" height="500" data-lazy-src="https://www.ufinebattery.com/images/upload/side-banner-20260105-1.webp" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20238%20500&#039;%3E%3C/svg%3E" /><noscript><img class="cales_pic" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20238%20500'%3E%3C/svg%3E" alt="cales" width="238" height="500" data-lazy-src="https://www.ufinebattery.com/images/upload/side-banner-20260105-1.webp"></noscript><noscript><img class="cales_pic" src="https://www.ufinebattery.com/images/upload/side-banner-20260105-1.webp" alt="cales" width="238" height="500"></noscript>
+          </a>
+        </div>
+      </aside>
+    </section>
+    <section class="resourse_bottom main-margin">
+      <div class="bottom_ttile">Custom Lithium-ion Battery Manufacturer</div>
+      <div class="bottom_btn">
+        <a href="/products/" class="ufine-btn ufine-btn__theme">View Products</a>
+        <a href="/contact/" class="ufine-btn ufine-btn__plain">Request Quote</a>
+      </div>
+    </section>
+    <section class="blog_from common-sidebar mobile-style">
+      <div class="common-sidebar_form">
+        <p class="sidebar-form_title">Get a Free Quote Now!</p>
+        <form
+          action="javascript:;"
+          class="ufine-form needs-validation sidebar-form ufine-form-submit"
+          novalidate
+        >
+          <div class="form-item">
+            <label for="name" class="form-item__label">Your Name<i class="iconfont icon-xinghao"></i>
+            </label>
+            <input type="text" class="form-control form-control-sm" name="name" required />
+          </div>
+          <div class="form-item">
+            <label for="email" class="form-item__label"> Email<i class="iconfont icon-xinghao"></i>
+            </label>
+            <input type="email" class="form-control form-control-sm" name="email" required />
+          </div>
+          <div class="form-item">
+            <label for="phone" class="form-item__label"> Phone<i class="iconfont icon-xinghao"></i>
+            </label>
+            <div class="form-group">
+              <input type="tel" class="form-control form-control-sm" id="telCodes" />
+              <input type="text" class="form-control form-control-sm" name="phone" required />
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="company" class="form-item__label">Company Name</label>
+            <input type="text" class="form-control form-control-sm" name="company" />
+          </div>
+          <div class="form-item">
+            <label for="message" class="form-item__label"> Message <i class="iconfont icon-xinghao"></i>
+            </label>
+            <textarea class="form-control form-control-sm" rows="3" required name="message"></textarea>
+          </div>
+            <div class="form-item">
+                <label for="captcha" class="form-item__label">
+                    Captcha Code<i class="iconfont icon-xinghao"></i>
+                </label>
+                <div class="code-box">
+                <input type="text" class="form-control form-control-sm" name="captcha" required />
+                <img width="72" height="24" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;72&#039;%20height=&#039;24&#039;%20viewBox=&#039;0%200%2072%2024&#039;%3E%3C/svg%3E" class="captcha-img perfmatters-lazy" alt="captcha-code" data-lazy-src="https://www.ufinebattery.com/images/captcha/Tmh5eWRRSiMxNzg4NzgwMTM1.png" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2072%2024&#039;%3E%3C/svg%3E" /><noscript><img width="72" height="24" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2072%2024'%3E%3C/svg%3E" class="captcha-img" alt="captcha-code" data-lazy-src="https://www.ufinebattery.com/images/captcha/Tmh5eWRRSiMxNzg4NzgwMTM1.png" ></noscript><noscript><img width="72" height="24" src="https://www.ufinebattery.com/images/captcha/Tmh5eWRRSiMxNzg4NzgwMTM1.png" class="captcha-img" alt="captcha-code" ></noscript>
+                <input type="hidden" name="captcha_nonce" class="captcha_nonce" value="Tmh5eWRRSiMxNzg4NzgwMTM1" />
+                </div>
+            </div>
+          <button type="submit" id="submit-btn" class="btn btn-primary">Send a Quote</button>
+        </form>
+        <!-- <div class="sidebar-form_brand flex-wrapper">
+          <img src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;94px&#039;%20height=&#039;44px&#039;%20viewBox=&#039;0%200%2094px%2044px&#039;%3E%3C/svg%3E" width="94px" height="44px" alt="Logo" data-lazy-src="https://www.ufinebattery.com/images/common/logo.png" class="perfmatters-lazy" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2094%2044&#039;%3E%3C/svg%3E" /><noscript><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2094%2044'%3E%3C/svg%3E" width="94px" height="44px" alt="Logo" data-lazy-src="https://www.ufinebattery.com/images/common/logo.png"></noscript><noscript><img src="https://www.ufinebattery.com/images/common/logo.png" width="94px" height="44px" alt="Logo"></noscript>
+          <p class="sidebar-form-brand_desc"> Custom Battery<br>
+            <span class="lighter-color">Manufacturer</span>
+          </p>
+        </div> -->
+        <p class="sidebar-form_share">Share the page to</p>
+        <ul class="info-share">
+    <li class="info-share__item">
+        <a href="https://www.facebook.com/sharer.php?u=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/&t=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries" target="_blank" rel="noindex,nofollow,noopener"><i class="facebook"></i></a>
+    </li>
+    <li class="info-share__item">
+        <a href="https://twitter.com/intent/tweet?text=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries&url=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/" target="_blank" rel="noindex,nofollow,noopener"><i class="twitter"></i></a>
+    </li>
+    <li class="info-share__item">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/&title=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries&source=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/" target="_blank" rel="noindex,nofollow,noopener"><i class="linkedin"></i></a>
+    </li>
+<!--    <li class="info-share__item">-->
+<!--        <a href="--><!--" target="_blank" rel="noindex,nofollow,noopener"><i class="youtube"></i></a>-->
+<!--    </li>-->
+    <li class="info-share__item">
+        <a href="instagram://share?url=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/&ig_web_copy_text=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries" target="_blank" rel="noindex,nofollow,noopener"><i class="instagram"></i></a>
+    </li>
+    <li class="info-share__item">
+        <a href="https://t.me/share?text=Comprehensive Analysis of U.S. Tariffs on Chinese Lithium Batteries&url=https://www.ufinebattery.com/blog/comprehensive-analysis-of-u-s-tariffs-on-chinese-lithium-batteries/" target="_blank" rel="noindex,nofollow,noopener"><i class="telegram"></i></a>
+    </li>
+</ul>      </div>
+      <a href="" class="cales">
+        <img class="cales_pic perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;238&#039;%20height=&#039;500&#039;%20viewBox=&#039;0%200%20238%20500&#039;%3E%3C/svg%3E" alt="cales" width="238" height="500" data-lazy-src="https://www.ufinebattery.com/images/upload/side-banner-20260105-1.webp" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20238%20500&#039;%3E%3C/svg%3E" /><noscript><img class="cales_pic" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20238%20500'%3E%3C/svg%3E" alt="cales" width="238" height="500" data-lazy-src="https://www.ufinebattery.com/images/upload/side-banner-20260105-1.webp"></noscript><noscript><img class="cales_pic" src="https://www.ufinebattery.com/images/upload/side-banner-20260105-1.webp" alt="cales" width="238" height="500"></noscript>
+      </a>
+    </section>
+    <div
+      class="modal fade mobile-dialog"
+      id="ufinePopup"
+      aria-labelledby="ufinePopupLabel"
+      aria-hidden="true"
+      >
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <a href="javascript:void(0);" class="close-dialog" data-dismiss="modal" aria-label="Close">
+                <i class="iconfont icon-guanbi"></i>
+              </a>
+            </div>
+            <div class="common-sidebar_nav">
+              <div class="sidebar-nav_title">
+                <h2>More Topics</h2>
+              </div>
+              <div class="sidebar-topics-list">
+	                                    <div class="topic-item topic-expanded">
+                          <div class="topic-header">
+                              <i class="topic-toggle iconfont icon-jiantoushang"></i>
+                              <span class="topic-title">Battery Prices &amp; News</span>
+                          </div>
+                          <div class="topic-content">
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/where-to-buy-18650-batteries-in-bulk/">
+                                          <h3>Where to Buy 18650 Batteries in Bulk: Reliable Manufacturer &#038; OEM Supplier Guide</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/byd-blade-battery-comprehensive-guide/">
+                                          <h3>BYD Blade Battery Comprehensive Guide</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/8-parameters-of-lithium-batteries-you-must-know/">
+                                          <h3>8 Lithium Battery Parameters You Should Understand Before Use</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/18650-battery-price-guide/">
+                                          <h3>18650 Battery Price Guide</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/ternary-battery-or-lfp-battery-how-to-choose-for-ev/">
+                                          <h3>Ternary Battery or LFP Battery: How to Choose for EV?</h3>
+                                      </a>
+                                  </div>
+				                                        </div>
+                      </div>
+	                                    <div class="topic-item ">
+                          <div class="topic-header">
+                              <i class="topic-toggle iconfont icon-jiantoushang"></i>
+                              <span class="topic-title">LiFePO4 Batteries</span>
+                          </div>
+                          <div class="topic-content">
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/lifepo4-voltage-chart-guide-everything-you-need-to-know/">
+                                          <h3>LiFePO4 Voltage Chart Guide: Everything You Need to Know</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/lifepo4-battery-charging-and-discharging/">
+                                          <h3>How to Charge and Discharge LifePO4 Battery?</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/byd-blade-battery-comprehensive-guide/">
+                                          <h3>BYD Blade Battery Comprehensive Guide</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/top-20-lithium-ion-battery-manufacturers/">
+                                          <h3>Top 20 Lithium Ion Battery Manufacturers</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/nmc-vs-lfp-vs-lto-batteries-a-complete-comparison-guide/">
+                                          <h3>NMC vs. LFP vs. LTO Batteries: A Complete Comparison Guide</h3>
+                                      </a>
+                                  </div>
+				                                        </div>
+                      </div>
+	                                    <div class="topic-item ">
+                          <div class="topic-header">
+                              <i class="topic-toggle iconfont icon-jiantoushang"></i>
+                              <span class="topic-title">LiPo Batteries</span>
+                          </div>
+                          <div class="topic-content">
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/top-20-lithium-ion-battery-manufacturers/">
+                                          <h3>Top 20 Lithium Ion Battery Manufacturers</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/what-is-an-rc-battery-a-comprehensive-guide/">
+                                          <h3>What is an RC Battery? A Comprehensive Guide</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/lithium-ion-vs-lithium-polymer-battery/">
+                                          <h3>Lithium-ion vs Lithium Polymer Battery: Which is Better?</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/how-to-read-lithium-battery-discharge-curve-and-charging-curve/">
+                                          <h3>How to Read Lithium Battery Discharge Curve and Charging Curve?</h3>
+                                      </a>
+                                  </div>
+				                                                <div class="topic-article">
+                                      <a href="https://www.ufinebattery.com/blog/solid-state-battery-vs-lithium-ion-a-comparative-analysis/">
+                                          <h3>Solid State Battery vs Lithium Ion: A Comparative Analysis</h3>
+                                      </a>
+                                  </div>
+				                                        </div>
+                      </div>
+	                            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</main>
+<div class="modal fade" id="popup-toast" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body model-success">
+                <img width="200" height="200" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;200&#039;%20height=&#039;200&#039;%20viewBox=&#039;0%200%20200%20200&#039;%3E%3C/svg%3E" alt="success" class="modal-body__icon perfmatters-lazy" data-lazy-src="https://www.ufinebattery.com/images/common/success.svg" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20200%20200&#039;%3E%3C/svg%3E" /><noscript><img width="200" height="200" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="success" class="modal-body__icon" data-lazy-src="https://www.ufinebattery.com/images/common/success.svg" /></noscript><noscript><img width="200" height="200" src="https://www.ufinebattery.com/images/common/success.svg" alt="success" class="modal-body__icon" /></noscript>
+                <div class="modal-body__title">Thank you!</div>
+                <div class="modal-body__desc">Your form has been submitted successfully.</div>
+                <button class="ufine-btn ufine-btn__theme" data-dismiss="modal" aria-label="Close">
+                    Go Back
+                </button>
+            </div>
+            <div class="modal-body model-fail hide">
+                <img width="200" height="200" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;200&#039;%20height=&#039;200&#039;%20viewBox=&#039;0%200%20200%20200&#039;%3E%3C/svg%3E" alt="fail" class="modal-body__icon icon-fail perfmatters-lazy" data-lazy-src="https://www.ufinebattery.com/images/common/fail.svg" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20200%20200&#039;%3E%3C/svg%3E" /><noscript><img width="200" height="200" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="fail" class="modal-body__icon icon-fail" data-lazy-src="https://www.ufinebattery.com/images/common/fail.svg" /></noscript><noscript><img width="200" height="200" src="https://www.ufinebattery.com/images/common/fail.svg" alt="fail" class="modal-body__icon icon-fail" /></noscript>
+                <div class="modal-body__title">Submission Failed</div>
+                <div class="modal-body__msg"></div>
+                <div class="modal-body__desc">Please try again later.</div>
+                <button class="ufine-btn ufine-btn__theme" data-dismiss="modal" aria-label="Close">
+                    Go Back
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="ufine-footer">
+    <div class="ufine-container">
+        <div class="ufine-container__header">
+            <a href="/" aria-label="Home">
+                <img width="94" height="44" class="logo-img perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;94&#039;%20height=&#039;44&#039;%20viewBox=&#039;0%200%2094%2044&#039;%3E%3C/svg%3E" alt="ufine battery logo" data-lazy-src="https://www.ufinebattery.com/images/common/ufine-battery-logo.svg" data-src="//www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2094%2044&#039;%3E%3C/svg%3E" /><noscript><img width="94" height="44" class="logo-img"
+                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2094%2044'%3E%3C/svg%3E"
+                        alt="ufine battery logo"
+                data-lazy-src="https://www.ufinebattery.com/images/common/ufine-battery-logo.svg" /></noscript><noscript><img width="94" height="44" class="logo-img"
+                        src="https://www.ufinebattery.com/images/common/ufine-battery-logo.svg"
+                        alt="ufine battery logo"
+                /></noscript>
+            </a>
+            <div class="company-name"><a href="/" aria-label="Home">Battery</a></div>
+        </div>
+        <ul class="ufine-container__content">
+            <li class="content-list hover-underline">
+                <div class="list-title">Company</div>
+                <a class="list-item" href="/about/">About Us</a>
+                <a class="list-item" href="/about/certification/">Battery Certificates</a>
+                <a class="list-item" href="/about/battery-production-process/">Battery Production Process</a>
+            </li>
+            <li class="content-list hover-underline">
+                <div class="list-title">Popular Products</div>
+                <a class="list-item" href="https://www.ufinebattery.com/lithium-polymer-battery/3-7-v-lithium-ion-battery/">3.7 V Lithium-ion Battery</a>
+<a class="list-item" href="https://www.ufinebattery.com/li-ion-18650-battery/18650-battery-2000mah/">18650 Battery 2000mAh</a>
+<a class="list-item" href="https://www.ufinebattery.com/lifepo4-battery/3-2-v-lifepo4-battery/">3.2 V LifePO4 Battery</a>
+<a class="list-item" href="https://www.ufinebattery.com/lithium-polymer-battery/3-8-v-lithium-ion-battery/">3.8 V Lithium-ion Battery</a>
+<a class="list-item" href="https://www.ufinebattery.com/special-battery/low-temperature-battery/">Low Temperature Battery</a>
+<a class="list-item" href="https://www.ufinebattery.com/special-battery/high-temperature-lithium-battery/">High Temperature Lithium Battery</a>
+<a class="list-item" href="https://www.ufinebattery.com/special-battery/ultra-thin-battery/">Ultra Thin Battery</a>            </li>
+            <li class="content-list hover-underline">
+                <div class="list-title">Resources</div>
+                <a class="list-item" href="/blog/">Ufine Blog</a>
+                <a class="list-item" href="/news-and-events/">News &amp; Events</a>
+                <a class="list-item" href="/case-studies/">Case Studies</a>
+                <a class="list-item" href="/faq/">FAQs</a>
+            </li>
+            <li class="content-list margin-left">
+                <div class="list-title">Contact Us</div>
+                <div class="list-item contact">
+                    <i class="iconfont icon-whatsapp"></i>
+                    <div class="item-info">
+                        <div class="item-text">WhatsApp/Skype：</div>
+                        <div class="item-num">+8618665816616</div>
+                    </div>
+                </div>
+                <div class="list-item contact">
+                    <i class="iconfont icon-dianhua2"></i>
+                    <div class="item-info">
+                        <div class="item-text">Hotline：</div>
+                        <div class="item-num">+8618665816616</div>
+                    </div>
+                </div>
+                <div class="list-item contact">
+                    <i class="iconfont icon-email"></i>
+                    <div class="item-info">
+                        <div class="item-text">Email：</div>
+                        <div class="item-num"><a href="mailto:sales@ufinebattery.com" id="Send-Email-Footer">sales@ufinebattery.com</a></div>
+                    </div>
+                </div>
+                <div class="list-title follow">Follow Us</div>
+                <ul class="info-share">
+                  <li class="info-share__item">
+                    <a href="https://www.facebook.com/profile.php?id=61553544675208" target="_blank" rel="noindex,nofollow,noopener"><i class="facebook"></i></a>
+                  </li>
+                  <li class="info-share__item">
+                    <a href="https://twitter.com/ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="twitter"></i></a>
+                  </li>
+                  <li class="info-share__item">
+                    <a href="https://www.linkedin.com/company/ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="linkedin"></i></a>
+                  </li>
+                  <li class="info-share__item">
+                    <a href="https://www.youtube.com/@ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="youtube"></i></a>
+                  </li>
+                  <li class="info-share__item">
+                    <a href="https://www.instagram.com/ufinebattery" target="_blank" rel="noindex,nofollow,noopener"><i class="instagram"></i></a>
+                  </li>
+                  <li class="info-share__item">
+                    <a href="https://t.me/MiaaaQin" target="_blank" rel="noindex,nofollow,noopener"><i class="telegram"></i></a>
+                  </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="ufine-container__footer">
+            <div class="footer-copyright">
+                                    Copyright © 2026 Ufine Battery. All rights reserved.                            </div>
+            <ul class="footer-info">
+                <li class="border-after padding-left-0"><a href="/privacy-policy/">Privacy Policy</a></li>
+                <li class="border-after"><a href="/terms-and-conditions/">Terms and Conditions</a></li>
+                <li class="padding-right-0"><a href="/sitemap/">Site Map</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+
+
+<!--Start of Tawk.to Script (0.7.2)-->
+<script type="rocketlazyloadscript" id="tawk-script" data-rocket-type="text/javascript">
+var Tawk_API = Tawk_API || {};
+var Tawk_LoadStart=new Date();
+(function(){
+	var s1 = document.createElement( 'script' ),s0=document.getElementsByTagName( 'script' )[0];
+	s1.async = true;
+	s1.src = 'https://embed.tawk.to/654b3432a84dd54dc489c279/1hems7qb1';
+	s1.charset = 'UTF-8';
+	s1.setAttribute( 'crossorigin','*' );
+	s0.parentNode.insertBefore( s1, s0 );
+})();
+</script>
+<!--End of Tawk.to Script (0.7.2)-->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout\/??(.*)|\/cart\/?|\/my-account\/??(.*)|\/wc-api\/v(.*)|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.ufinebattery.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+/* <![CDATA[ */
+var rocket_lazyload_css_data = {"threshold":"300"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-after">
+/* <![CDATA[ */
+!function o(n,c,a){function s(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(u)return u(t,!0);throw(r=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",r}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return s(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var u="function"==typeof require&&require,e=0;e<a.length;e++)s(a[e]);return s}({1:[function(e,t,r){"use strict";!function(){const r="undefined"==typeof rocket_pairs?[]:rocket_pairs,e="undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs;e.map(t=>{var e=t.selector;const r=document.querySelectorAll(e);r.forEach(e=>{e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"excluded")})});const o=document.querySelector("#wpr-lazyload-bg-container");var t=rocket_lazyload_css_data.threshold||300;const n=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting){const e=r.filter(e=>t.target.matches(e.selector));e.map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,o.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{n.unobserve(e),e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"loaded")}))})}})},{rootMargin:t+"px"});function c(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&r.forEach(t=>{try{const e=document.querySelectorAll(t.selector);e.forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&(n.observe(e),(t.elements||(t.elements=[])).push(e))})}catch(e){console.error(e)}})}c();const a=function(){const o=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType){const r=new o(t);return r.observe(e,{attributes:!0,childList:!0,subtree:!0}),r}}}();t=document.querySelector("body"),a(t,c)}()},{}]},{},[1]);
+//# sourceMappingURL=lazyload-css.min.js.map
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/js/jq/index.js" id="jquery-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/js/global/bootstrap.min.js" id="uf-bootstrap-js-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/js/global/intlTelInput.min.js" id="uf-intlTelInput-js-js" defer></script>
+<script type="text/javascript" id="uf-common-js-js-extra">
+/* <![CDATA[ */
+var uf_ajax_params = {"_ajax_url":"https:\/\/www.ufinebattery.com\/wp-admin\/admin-ajax.php","_ajax_nonce":"193de0cf93","popup_time":"5","uf_language":"en"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="module" data-rocket-src="https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/js/common/common.js" id="uf-common-js-js" defer></script>
+<script type="text/javascript" id="perfmatters-lazy-load-js-before">
+/* <![CDATA[ */
+window.lazyLoadOptions={elements_selector:"img[data-src],.perfmatters-lazy,.perfmatters-lazy-css-bg",thresholds:"500PX 0px",class_loading:"pmloading",class_loaded:"pmloaded",callback_loaded:function(element){if(element.tagName==="IFRAME"){if(element.classList.contains("pmloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener("LazyLoad::Initialized",function(e){var lazyLoadInstance=e.detail.instance;var target=document.querySelector("body");var observer=new MutationObserver(function(mutations){lazyLoadInstance.update()});var config={childList:!0,subtree:!0};observer.observe(target,config);});function perfmattersLazyLoadYouTube(e){var t=document.createElement("iframe"),r="ID?";r+=0===e.dataset.query.length?"":e.dataset.query+"&",r+="autoplay=1",t.setAttribute("src",r.replace("ID",e.dataset.src)),t.setAttribute("frameborder","0"),t.setAttribute("allowfullscreen","1"),t.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),e.replaceChild(t,e.firstChild)}
+/* ]]> */
+</script>
+<script type="text/javascript" async src="https://www.ufinebattery.com/wp-content/plugins/perfmatters/js/lazyload.min.js" id="perfmatters-lazy-load-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/js/common/big.js" id="uf-big-js-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="module" data-rocket-src="https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/js/resource/article.js" id="uf-article-js-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.ufinebattery.com/wp-content/themes/ufinebattery-com/assets/js/resource/content-common.js" id="uf-content-common-js-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async data-no-optimize="1" data-rocket-src="https://www.ufinebattery.com/wp-content/plugins/perfmatters/vendor/instant-page/pminstantpage.min.js" id="perfmatters-instant-page-js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.ufinebattery.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1788780015 -->

@@ -1,0 +1,86 @@
+{
+  "query_id": "q_287",
+  "query": "Georgia automotive manufacturing tariffs employment impact",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_422b9eae29dfb1f489b1b175",
+    "claim_5a1bdea701f4d57faef77bc4",
+    "claim_a297793c24c91e464d871c76",
+    "claim_aa5be6de84992de1e91ddafb",
+    "claim_aa99fb66c6baff92cfc850c7",
+    "claim_d8a68fa35a8fdd1a192a7c44",
+    "claim_d9021dcc7320bd5b8a989d52",
+    "claim_fad80ef1d770b9ca909779cd"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_422b9eae29dfb1f489b1b175",
+      "text": "Tariffs on steel and aluminum from China could hike costs for large aerospace companies like Lockheed Martin Corp., which contributes to the local manufacturing of aircraft parts that topped Georgia’s exports at $12.6 billion last year.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_5a1bdea701f4d57faef77bc4",
+      "text": "On April 3, the chamber published a report outlining the impacts local industries may experience from the tariffs, including higher prices for car parts and steel, a squeeze on crop imports and possible slowdowns at the state’s bustling ports.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_a297793c24c91e464d871c76",
+      "text": "The White House initially established 10% tariffs on imports from all countries, along with higher “reciprocal” tariffs targeting nations such as China, Vietnam and members of the European Union that levy tariffs on U.S. goods.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_aa5be6de84992de1e91ddafb",
+      "text": "Hyundai signed the biggest economic development deal in Georgia’s history. This new $7.6 billion EV factory broke ground just over two years ago in a massive pine grove just west of Savannah, Georgia.",
+      "url": "https://www.csmonitor.com/Business/2025/0408/tariffs-hyundai-auto-factory-jobs-georgia",
+      "chunk_id": "chunk_1bb739b5b8aa2461228dbeee"
+    },
+    {
+      "claim_id": "claim_aa99fb66c6baff92cfc850c7",
+      "text": "Ferrel is one of 300 workers at American BOA in Cumming who make metal hoses and \"bellows\" used as sleeves in vehicle engine and exhaust systems. Half the steel comes from Europe, and new tariffs initiated by the Trump administration this spring have raised the company's costs by more than $200,000 a month",
+      "url": "https://www.ajc.com/business/georgia-auto-sector-fears-tariff-damage/lT9ZkTnli54RJltUfZT2OI",
+      "chunk_id": "chunk_76376c97eedac647c26a2a45"
+    },
+    {
+      "claim_id": "claim_d8a68fa35a8fdd1a192a7c44",
+      "text": "While some business leaders breathed a sigh of relief when the Trump administration announced plans last week to delay enforcing the reciprocal tariffs for 90 days, the chamber urged farmers and manufacturers to remain nimble.",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_d9021dcc7320bd5b8a989d52",
+      "text": "The 25% auto tariff could pose a major threat to automobile titans like Hyundai and Kia that have production plants in the state",
+      "url": "https://pro.stateaffairs.com/ga/politics/georgia-tariffs-cars-lockheed-china",
+      "chunk_id": "chunk_faed90d795e9b34337ddac65"
+    },
+    {
+      "claim_id": "claim_fad80ef1d770b9ca909779cd",
+      "text": "In anticipation of the tariffs – which include a base of 10% for all goods and 25% on imported cars – consumer sentiment continued a steep drop in March, reaching its lowest levels since November 2022",
+      "url": "https://www.csmonitor.com/Business/2025/0408/tariffs-hyundai-auto-factory-jobs-georgia",
+      "chunk_id": "chunk_1bb739b5b8aa2461228dbeee"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_a297793c24c91e464d871c76",
+      "claim_d8a68fa35a8fdd1a192a7c44"
+    ],
+    [
+      "claim_422b9eae29dfb1f489b1b175",
+      "claim_fad80ef1d770b9ca909779cd"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 8,
+  "synthesis_input_claim_count": 8
+}

@@ -1,0 +1,48 @@
+{
+  "query_id": "q_329",
+  "query": "Automotive seat belts airbags import duties",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_041d393ef6f27745f181758c",
+    "claim_74053be8e1640253cc0663b4",
+    "claim_9328a19861edb7d910932453"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_041d393ef6f27745f181758c",
+      "text": "The tariffs on safety parts such as seat belts and airbags create conditions ripe for counterfeiting",
+      "url": "https://www.autonews.com/manufacturing/an-trump-tariffs-safety-airbags-0415",
+      "chunk_id": "chunk_037d350367713c502f09c15f"
+    },
+    {
+      "claim_id": "claim_74053be8e1640253cc0663b4",
+      "text": "Customs classified a buckle assembly of an automotive seat belt system under subheading 8709.99.8080 of the Harmonized Tariff Schedule of the United States",
+      "url": "https://rulings.cbp.gov/ruling/960308",
+      "chunk_id": "chunk_3334dab5ebc3f74a7c823356"
+    },
+    {
+      "claim_id": "claim_9328a19861edb7d910932453",
+      "text": "Safety parts such as airbags, bumpers, seat belts, safety glass, rearview mirrors, and lighting equipment are included in the tariff rollout.",
+      "url": "https://motorillustrated.com/engines-airbags-tires-among-dozens-of-auto-parts-now-subject-to-u-s-import-tariffs/151892",
+      "chunk_id": "chunk_1cb4e52492a5d670970cd45f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_041d393ef6f27745f181758c",
+      "claim_9328a19861edb7d910932453"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 3,
+  "synthesis_input_claim_count": 3
+}

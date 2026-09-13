@@ -1,0 +1,135 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [],
+  "cause_explanation": "The original answer relied on general origin rules and rulings for different products (printers, motors) rather than specific automotive display rulings, creating a gap where applicable evidence is insufficient or potentially conflicting across product types.",
+  "confidence": "high",
+  "remaining_gap": "Specific ruling for automotive displays in Mexico assembly not found in cached passages.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_cb1db76f1aa83f70b2188a6e",
+      "supporting_excerpt": "In HQ H304677, CBP considered the country of origin of various models of multi-and single-function printers that underwent final assembly in Mexico.",
+      "relevance_explanation": "Shows Mexico assembly rulings exist but for printers, not automotive displays.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_cb1db76f1aa83f70b2188a6e",
+      "supporting_excerpt": "In determining the country of origin to be China, CBP noted that the Mexican-origin PCBA did not serve as the only fundamental functioning component.",
+      "relevance_explanation": "Illustrates complexity of assembly rules affecting origin determination.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_36797f151341c2b43213f2a8",
+      "supporting_excerpt": "Can an importer avoid the duties by moving an assembly operation from China to Mexico? If under the NAFTA marking rules a product is determined to be of Mexican origin, will that suffice?",
+      "relevance_explanation": "Highlights conflict between marking rules and trade remedy duties for Mexico assembly.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established"
+    },
+    {
+      "passage_id": "passage_6758c7d658b6ac0d291a27f0",
+      "supporting_excerpt": "U.S. Customs and Border Protection has issued a final determination concerning the country of origin of certain LED display panels.",
+      "relevance_explanation": "Closest product match (LED displays) but ruling concerns Taiwan/China, not Mexico.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_196",
+  "query": "Automotive displays Mexico assembly country of origin rulings",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 11,
+    "all_extracted_claims": 22,
+    "claims_presented_to_original_synthesis": 22,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 1,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_6758c7d658b6ac0d291a27f0",
+    "passage_6545a271469b53971df829d0",
+    "passage_cb1db76f1aa83f70b2188a6e",
+    "passage_49ff884ab48ab046aeb0220f",
+    "passage_6b8e1c040c36bfe2a1d1dd16",
+    "passage_47deed61a4957f053fa20c87",
+    "passage_802b13951fc7d96b94d0018f",
+    "passage_36797f151341c2b43213f2a8"
+  ],
+  "candidate_document_ids": [
+    "document_21ffa6dc059431515e6e8957",
+    "document_7dc1196a443d152a83603b9f",
+    "document_a24b7c8b15cd230ca93df20a",
+    "document_ace4b950ea5727d4c3d9e1ff",
+    "document_b75907e603c6d1165139434d",
+    "document_da8f7540a07fd9aedee638f9",
+    "document_db1c9c74d81772cd98df372f"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_36797f151341c2b43213f2a8",
+      "supporting_excerpt": "Can an importer avoid the duties by moving an assembly operation from China to Mexico? If under the NAFTA marking rules a product is determined to be of Mexican origin, will that suffice?",
+      "relevance_explanation": "Highlights conflict between marking rules and trade remedy duties for Mexico assembly.",
+      "company_applicability": "not_established",
+      "temporal_status": "date_not_established",
+      "recovery_claim_id": "recovered_a1d17e71977f0eeffa0fe344",
+      "query_id": "q_196",
+      "chunk_id": "chunk_ba80d647d6a8487687fcb7e2",
+      "document_id": "document_ace4b950ea5727d4c3d9e1ff",
+      "source_url": "https://tax.thomsonreuters.com/blog/can-i-avoid-section-301-chinese-duties-by-assembling-my-product-in-mexico-you-better-double-check",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/70b8cbf8359d895bd2a4c9c4de0fe637fc90b03af130e102a2f02a8604bab030.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_cb1db76f1aa83f70b2188a6e",
+        "supporting_excerpt": "In HQ H304677, CBP considered the country of origin of various models of multi-and single-function printers that underwent final assembly in Mexico.",
+        "relevance_explanation": "Shows Mexico assembly rulings exist but for printers, not automotive displays.",
+        "company_applicability": "not_established",
+        "temporal_status": "date_not_established"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_cb1db76f1aa83f70b2188a6e",
+        "supporting_excerpt": "In determining the country of origin to be China, CBP noted that the Mexican-origin PCBA did not serve as the only fundamental functioning component.",
+        "relevance_explanation": "Illustrates complexity of assembly rules affecting origin determination.",
+        "company_applicability": "not_established",
+        "temporal_status": "date_not_established"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_6758c7d658b6ac0d291a27f0",
+        "supporting_excerpt": "U.S. Customs and Border Protection has issued a final determination concerning the country of origin of certain LED display panels.",
+        "relevance_explanation": "Closest product match (LED displays) but ruling concerns Taiwan/China, not Mexico.",
+        "company_applicability": "not_established",
+        "temporal_status": "date_not_established"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

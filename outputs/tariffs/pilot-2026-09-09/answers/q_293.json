@@ -1,0 +1,81 @@
+{
+  "query_id": "q_293",
+  "query": "\"Hyundai Motor Group Metaplant America\" South Korea imports tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_139feb4254f720d4625817f1",
+    "claim_22e8b1bfcdce7dde7744ad88",
+    "claim_2b431df3689fa4c037a183e3",
+    "claim_3943b55a03a42bce91511100",
+    "claim_9831db7fbf032a4d35aa18d0",
+    "claim_dfb479d42e157790c66371d0",
+    "claim_e83e717c9bd7c7a618904075"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_139feb4254f720d4625817f1",
+      "text": "Hyundai Motor Group's Metaplant",
+      "url": "https://www.wita.org/blogs/hyundais-investment-korea",
+      "chunk_id": "chunk_0fa7308c9e7d77cd22ce4c88"
+    },
+    {
+      "claim_id": "claim_22e8b1bfcdce7dde7744ad88",
+      "text": "Hyundai will] not have to pay any tariffs",
+      "url": "https://www.wita.org/blogs/hyundais-investment-korea",
+      "chunk_id": "chunk_0fa7308c9e7d77cd22ce4c88"
+    },
+    {
+      "claim_id": "claim_2b431df3689fa4c037a183e3",
+      "text": "Hyundai, for instance, announced in March a record $21 billion investment plan in the US through 2028 – more than its total US investment since launching operations in 1986. That expansion includes boosting EV and battery manufacturing in Alabama and Georgia.",
+      "url": "https://carbuzz.com/us-korea-tariffs-deal-hyundai-kia",
+      "chunk_id": "chunk_fd4692f328c1e2fab77d3198"
+    },
+    {
+      "claim_id": "claim_3943b55a03a42bce91511100",
+      "text": "The Trump administration this past week confirmed plans to lower tariffs on certain products, including vehicles, to 15% from South Korea. A notice about the implementation of the trade deal was posted Wednesday on the Federal Register.",
+      "url": "https://www.cnbc.com/2025/12/03/trump-south-korea-tariffs-vehicles-hyundai-gm.html",
+      "chunk_id": "chunk_45214f8d0a4404346d5e8abb"
+    },
+    {
+      "claim_id": "claim_9831db7fbf032a4d35aa18d0",
+      "text": "Hyundai, including its Kia subsidiary that operates separately in the U.S., has significantly increased its sales and operations in the U.S. in recent years. But the automaker continues to import the majority of its vehicles — estimated to be nearly 1 million units this year — from South Korea.",
+      "url": "https://www.cnbc.com/2025/12/03/trump-south-korea-tariffs-vehicles-hyundai-gm.html",
+      "chunk_id": "chunk_45214f8d0a4404346d5e8abb"
+    },
+    {
+      "claim_id": "claim_dfb479d42e157790c66371d0",
+      "text": "The South Korean-based automaker is the largest U.S. importer of new vehicles from the country, followed by GM. Both automakers have paid billions of dollars in levies so far this year after President Donald Trump placed 25% tariffs on imported vehicles from South Korea and other countries in the spring.",
+      "url": "https://www.cnbc.com/2025/12/03/trump-south-korea-tariffs-vehicles-hyundai-gm.html",
+      "chunk_id": "chunk_45214f8d0a4404346d5e8abb"
+    },
+    {
+      "claim_id": "claim_e83e717c9bd7c7a618904075",
+      "text": "Prior to the reduction, Hyundai reported U.S. tariffs costed the company 1.8 trillion won ($1.2 billion) in the third quarter, up from 828 billion won ($565 million) in the previous quarter.",
+      "url": "https://www.cnbc.com/2025/12/03/trump-south-korea-tariffs-vehicles-hyundai-gm.html",
+      "chunk_id": "chunk_45214f8d0a4404346d5e8abb"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_22e8b1bfcdce7dde7744ad88",
+      "claim_dfb479d42e157790c66371d0"
+    ],
+    [
+      "claim_3943b55a03a42bce91511100",
+      "claim_dfb479d42e157790c66371d0"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 11,
+  "synthesis_input_claim_count": 11
+}

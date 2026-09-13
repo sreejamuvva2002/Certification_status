@@ -1,0 +1,132 @@
+{
+  "primary_cause": "conflicting_or_outdated_evidence",
+  "contributing_causes": [
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original query seeks specific tariff cost impacts on Georgia metal stamping companies. The available evidence contains conflicting temporal statuses: some sources report historical measures (2025) or future proposals (April 2026, July 2026), while others describe general industry impacts without establishing current applicability for the specific research date of September 2026. Furthermore, while several passages list Georgia facilities and mention metal stamping generally, none explicitly link a named company to a specific tariff cost effect or import exposure under the relevant Section 232 rules as of the query date. The presence of '2",
+  "confidence": "high",
+  "remaining_gap": "No source explicitly states that a specific Georgia metal stamping company incurred tariff costs on steel imports during the period covered by the research, nor does any source confirm the current applicability of the cited tariffs to these specific entities as of September 2026.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_37e7fd69f4bef5294ba05506",
+      "supporting_excerpt": "Three forces are converging: the April 2026 Section 232 update raised effective duties on offshore stamped parts, OEMs increasingly weight total cost of ownership over unit price... Manor Tool & Manufacturing has been a trusted U.S. metal stamping partner since 1959. ISO 9001:2015 certified, headquartered in Schiller Park, IL...",
+      "relevance_explanation": "This passage discusses the April 2026 tariff update and its impact on offshore stamped parts but explicitly locates Manor Tool & Manufacturing in Illinois, not Georgia, failing to establish a named Georgia company's exposure.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_future"
+    },
+    {
+      "passage_id": "passage_b14ad8a8df132acf3b610cbb",
+      "supporting_excerpt": "GSC Steel Stamping LLC 100 Automotive stampings Clayton... ACM Georgia LLC 175 Brake components Warren... Fanello Industries Inc. 160 Stamped blanks Franklin...",
+      "relevance_explanation": "This passage lists specific Georgia companies involved in metal stamping and automotive parts, but it is a static employment list from December 2025 that does not quantify tariff costs or confirm import exposure under current tariffs.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_1b604d0120863bd8cf89bc0e",
+      "supporting_excerpt": "Proclamation and fact sheet issued imposing a 25% tariff for steel and aluminum derivatives... effective April 6, 2026. Metal content: Tariffs apply to the full value of the good.",
+      "relevance_explanation": "This passage establishes the existence of a future tariff (April 2026) but does not link it to specific Georgia companies or their import costs, leaving the company applicability unestablished for the research date.",
+      "company_applicability": "not_established",
+      "temporal_status": "source_reports_future"
+    },
+    {
+      "passage_id": "passage_a5673ee8a0337e363e2300b1",
+      "supporting_excerpt": "With a 25% import duty on steel and aluminum (reinstated across all countries in 2025), any imported metal stock is significantly more expensive. Even those buying domestically feel an effect... Industry surveys indicate many downstream metal-using manufacturers have seen double-digit percentage increases in their material costs in 2025.",
+      "relevance_explanation": "This passage discusses general industry impacts from 2025 tariffs but does not provide specific data for Georgia metal stamping companies or confirm the status of these duties as of September 2026.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_historical"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_367",
+  "query": "Georgia metal stamping companies imported steel tariff costs",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 1,
+    "snippet_sources": 2,
+    "inaccessible_source_count": 2,
+    "selected_claims": 4,
+    "all_extracted_claims": 9,
+    "claims_presented_to_original_synthesis": 9,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 1,
+    "company_named_claims": 6,
+    "facility_label_claims": 1
+  },
+  "rule_signals": [
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_37e7fd69f4bef5294ba05506",
+    "passage_b14ad8a8df132acf3b610cbb",
+    "passage_1b604d0120863bd8cf89bc0e",
+    "passage_a5673ee8a0337e363e2300b1",
+    "passage_77a5908b53cdbb7c2549c133",
+    "passage_95db9d7c09057e2b264de3af",
+    "passage_5a3284c16d85ef93ae1c3b44",
+    "passage_3aec8dee3f4aae5f453d9531"
+  ],
+  "candidate_document_ids": [
+    "document_143065caf4b0800237875b2b",
+    "document_150a243c03e39787abea51cf",
+    "document_21055034b262d658d50768b7",
+    "document_2571a13302a71e78101a3a4f",
+    "document_2a21d352f1a50bcd779cd0f1",
+    "document_5ac370b7ccaa05a335ceca91",
+    "document_dafe3c8df4485dc97087bf53"
+  ],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_37e7fd69f4bef5294ba05506",
+        "supporting_excerpt": "Three forces are converging: the April 2026 Section 232 update raised effective duties on offshore stamped parts, OEMs increasingly weight total cost of ownership over unit price... Manor Tool & Manufacturing has been a trusted U.S. metal stamping partner since 1959. ISO 9001:2015 certified, headquartered in Schiller Park, IL...",
+        "relevance_explanation": "This passage discusses the April 2026 tariff update and its impact on offshore stamped parts but explicitly locates Manor Tool & Manufacturing in Illinois, not Georgia, failing to establish a named Georgia company's exposure.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "source_reports_future"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_b14ad8a8df132acf3b610cbb",
+        "supporting_excerpt": "GSC Steel Stamping LLC 100 Automotive stampings Clayton... ACM Georgia LLC 175 Brake components Warren... Fanello Industries Inc. 160 Stamped blanks Franklin...",
+        "relevance_explanation": "This passage lists specific Georgia companies involved in metal stamping and automotive parts, but it is a static employment list from December 2025 that does not quantify tariff costs or confirm import exposure under current tariffs.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_1b604d0120863bd8cf89bc0e",
+        "supporting_excerpt": "Proclamation and fact sheet issued imposing a 25% tariff for steel and aluminum derivatives... effective April 6, 2026. Metal content: Tariffs apply to the full value of the good.",
+        "relevance_explanation": "This passage establishes the existence of a future tariff (April 2026) but does not link it to specific Georgia companies or their import costs, leaving the company applicability unestablished for the research date.",
+        "company_applicability": "not_established",
+        "temporal_status": "source_reports_future"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_a5673ee8a0337e363e2300b1",
+        "supporting_excerpt": "With a 25% import duty on steel and aluminum (reinstated across all countries in 2025), any imported metal stock is significantly more expensive. Even those buying domestically feel an effect... Industry surveys indicate many downstream metal-using manufacturers have seen double-digit percentage increases in their material costs in 2025.",
+        "relevance_explanation": "This passage discusses general industry impacts from 2025 tariffs but does not provide specific data for Georgia metal stamping companies or confirm the status of these duties as of September 2026.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_historical"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

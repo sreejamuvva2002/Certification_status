@@ -1,0 +1,34 @@
+{
+  "query_id": "q_company_733f406bade7f8e2e5e1a4ac_discovery",
+  "query": "\"RealTruck\" Georgia tariffs import duties supply chain",
+  "status": "complete",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1fa04afbf87562bfed5df0bf",
+    "claim_c2817081b3af329248cfd1c5"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1fa04afbf87562bfed5df0bf",
+      "text": "Unless otherwise specified by Buyer in writing, via Purchase Order or otherwise, the terms of sale for all such shipments shall be Delivery Duty Paid (",
+      "url": "https://realtruck.com/supplier-terms-and-conditions",
+      "chunk_id": "chunk_6532134fd7827cde8f838de2"
+    },
+    {
+      "claim_id": "claim_c2817081b3af329248cfd1c5",
+      "text": "Depending on the applicable commercial terms as designated by Buyer, prices may include, and Seller may be responsible for, any and all applicable payments, costs, and expenses of any kind, up to and including, e.g., packing, crating, boxing, transporting, loading and unloading, customs, taxes, tariffs and duties, insurance, and any other similar financial contributions or obligations relating to the production, manufacture, sale, and delivery of the goods.",
+      "url": "https://realtruck.com/supplier-terms-and-conditions",
+      "chunk_id": "chunk_6532134fd7827cde8f838de2"
+    }
+  ],
+  "limitation_codes": [
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "incomplete_document"
+  ],
+  "conflicts": [],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 4,
+  "synthesis_input_claim_count": 4
+}

@@ -1,0 +1,86 @@
+{
+  "query_id": "q_330",
+  "query": "Automotive interior trim United States import tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1b586593ebef68ce67f2efc6",
+    "claim_1d3c0463abe24d8798e50739",
+    "claim_2a30503b1002b59ad8290200",
+    "claim_463b50ff0dd86fcac5c1bb91",
+    "claim_5ad19b243bbd6f93ca25fcf8",
+    "claim_6cc5f00636a11811221b83a6",
+    "claim_8dfd82076fa466385ff46fd0",
+    "claim_b531b191fcd0b4213d6244b9"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1b586593ebef68ce67f2efc6",
+      "text": "China faces a more unique situation. In January, President Trump imposed a 20 percent tariff on all goods from China. That means that a windshield wiper manufactured in China will face a 45 percent import tariff starting on May 3.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_1d3c0463abe24d8798e50739",
+      "text": "Importers of automobiles under the United States-Mexico-Canada Agreement will be given the opportunity to certify their U.S. content and systems will be implemented such that the 25% tariff will only apply to the value of their non-U.S. content.",
+      "url": "https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-adjusts-imports-of-automobiles-and-automobile-parts-into-the-united-states",
+      "chunk_id": "chunk_a1de1eb7c3560e5de1d82ce3"
+    },
+    {
+      "claim_id": "claim_2a30503b1002b59ad8290200",
+      "text": "The 25% tariff will be applied to imported passenger vehicles (sedans, SUVs, crossovers, minivans, cargo vans) and light trucks, as well as key automobile parts (engines, transmissions, powertrain parts, and electrical components)",
+      "url": "https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-adjusts-imports-of-automobiles-and-automobile-parts-into-the-united-states",
+      "chunk_id": "chunk_a1de1eb7c3560e5de1d82ce3"
+    },
+    {
+      "claim_id": "claim_463b50ff0dd86fcac5c1bb91",
+      "text": "The policy sets a minimum ten percent tariff on exports from all countries, with the exception of USMCA-compliant products from Canada and Mexico. Certain countries that the Trump Administration has determined impose unfair trade policies will be subject to even higher tariffs.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_5ad19b243bbd6f93ca25fcf8",
+      "text": "USMCA-compliant automobile parts will remain tariff-free until the Secretary of Commerce, in consultation with U.S. Customs and Border Protection (CBP), establishes a process to apply tariffs to their non-U.S. content.",
+      "url": "https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-adjusts-imports-of-automobiles-and-automobile-parts-into-the-united-states",
+      "chunk_id": "chunk_a1de1eb7c3560e5de1d82ce3"
+    },
+    {
+      "claim_id": "claim_6cc5f00636a11811221b83a6",
+      "text": "On March 26, the Trump Administration announced a 25 percent tariff on imports of automobiles and certain automotive parts. The tariff went into effect for fully assembled vehicles on April 3. The tariff on auto parts will go into effect on May 3.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_8dfd82076fa466385ff46fd0",
+      "text": "The original order only applied the tariff on auto parts that fit the following categories: engines and engine parts; transmissions and powertrains; and electrical components. Since then, that list has been updated to include 150 categories, including bumper components, motor vehicle hinges, windshield wipers, tires, lubricants, and more.",
+      "url": "https://www.asashop.org/2025/04/04/understanding-the-new-tariffs-and-their-potential-impact-on-auto-repairers",
+      "chunk_id": "chunk_e4edbb0bac64093035e7fd4c"
+    },
+    {
+      "claim_id": "claim_b531b191fcd0b4213d6244b9",
+      "text": "Under a U.S. deal with the United Kingdom (UK), most UK auto imports face a 10% total U.S. tariff rate.",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_1d3c0463abe24d8798e50739",
+      "claim_5ad19b243bbd6f93ca25fcf8"
+    ],
+    [
+      "claim_2a30503b1002b59ad8290200",
+      "claim_8dfd82076fa466385ff46fd0"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 10,
+  "synthesis_input_claim_count": 10
+}

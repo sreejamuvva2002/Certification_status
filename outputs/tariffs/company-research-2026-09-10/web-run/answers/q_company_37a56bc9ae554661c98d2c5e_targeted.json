@@ -1,0 +1,49 @@
+{
+  "query_id": "q_company_37a56bc9ae554661c98d2c5e_targeted",
+  "query": "\"SungEel Recycling Park Georgia\" automotive vehicles auto parts batteries critical minerals lithium graphite tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_4a973f04aa600a3a936bd9fb",
+    "claim_9ebd3aa7298f04a11b947f4a",
+    "claim_d37b1a6012bed391a0afcb58"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_4a973f04aa600a3a936bd9fb",
+      "text": "China, for its part, has already tightened its critical minerals exports in retaliation to the additional 10% levy on Chinese imports that came into effect earlier this month.",
+      "url": "https://www.latitudemedia.com/news/are-tariffs-good-for-battery-recyclers",
+      "chunk_id": "chunk_f77ae845e1b4ba040f966552"
+    },
+    {
+      "claim_id": "claim_9ebd3aa7298f04a11b947f4a",
+      "text": "Ascend Elements has an operational facility in Georgia, where it recycles batteries and produces lithium carbonate",
+      "url": "https://www.latitudemedia.com/news/are-tariffs-good-for-battery-recyclers",
+      "chunk_id": "chunk_f77ae845e1b4ba040f966552"
+    },
+    {
+      "claim_id": "claim_d37b1a6012bed391a0afcb58",
+      "text": "Trump has raised the possibility of a 10% to 20% universal tariff on [...] Ascend Elements has an operational facility in Georgia, where it recycles batteries and produces lithium carbonate",
+      "url": "https://www.latitudemedia.com/news/are-tariffs-good-for-battery-recyclers",
+      "chunk_id": "chunk_f77ae845e1b4ba040f966552"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_9ebd3aa7298f04a11b947f4a",
+      "claim_d37b1a6012bed391a0afcb58"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

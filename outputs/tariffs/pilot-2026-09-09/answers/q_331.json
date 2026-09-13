@@ -1,0 +1,58 @@
+{
+  "query_id": "q_331",
+  "query": "Automotive floor mats customs classification tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_2e1b68227c782e4eb2c8e60f",
+    "claim_afdc5c81cc92e2ad4e3bed38",
+    "claim_d928493a343c4ba6d1cc424d",
+    "claim_e62364e29d7dcdf043561e04"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_2e1b68227c782e4eb2c8e60f",
+      "text": "The applicable subheading for the P.V.C. car mat (stock # 8701) will be 8708.29.0060, Harmonized Tariff Schedule of the United States (HTS), which provides for other parts and accessories of motor vehicle bodies. The rate of duty will be 3.1 percent ad valorem.",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+879779",
+      "chunk_id": "chunk_1f01e2e0899eaa318a26449c"
+    },
+    {
+      "claim_id": "claim_afdc5c81cc92e2ad4e3bed38",
+      "text": "The applicable subheading for the plastic plates (MPP-3D) and undermat will be 8708.99.8080, HTS, which provides for parts and accessories of the motor vehicles of headings 8701 to 8705: other parts and accessories: other: other: other: other…other. The rate of duty will be 2.5 percent ad valorem.",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+I89766&highlight=5705.00%2A",
+      "chunk_id": "chunk_06e8f645391fa5bd140b547a"
+    },
+    {
+      "claim_id": "claim_d928493a343c4ba6d1cc424d",
+      "text": "The car mats fall within textile category designation 665. Based upon international textile trade agreements products of China are not subject to quota or visa requirements.",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+I89766&highlight=5705.00%2A",
+      "chunk_id": "chunk_06e8f645391fa5bd140b547a"
+    },
+    {
+      "claim_id": "claim_e62364e29d7dcdf043561e04",
+      "text": "The applicable subheading for the car mats and fabric covered plates (MPP-HD) will be 5705.00.2030, Harmonized Tariff Schedule of the United States (HTS), which provides for other carpets and other textile floor coverings, whether or not made up: other… of man-made fibers. The duty rate will be 3.6 percent ad valorem.",
+      "url": "https://www.customsmobile.com/rulings/docview?doc_id=NY+I89766&highlight=5705.00%2A",
+      "chunk_id": "chunk_06e8f645391fa5bd140b547a"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document"
+  ],
+  "conflicts": [
+    [
+      "claim_2e1b68227c782e4eb2c8e60f",
+      "claim_e62364e29d7dcdf043561e04"
+    ],
+    [
+      "claim_d928493a343c4ba6d1cc424d",
+      "claim_2e1b68227c782e4eb2c8e60f"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

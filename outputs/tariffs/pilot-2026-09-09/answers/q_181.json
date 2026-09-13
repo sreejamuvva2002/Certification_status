@@ -1,0 +1,73 @@
+{
+  "query_id": "q_181",
+  "query": "Automotive displays United States import tariffs current rates",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_30ff734629c86cf97ece229a",
+    "claim_5d8dfce2aaa61030f4c7a55f",
+    "claim_741a5f0bc51887e0963b841d",
+    "claim_b2a4e3acb2a0cc3fca8542db",
+    "claim_fe4058d54600102c244d27bf"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_30ff734629c86cf97ece229a",
+      "text": "In 2025, President Donald Trump imposed 25% tariffs on U.S. imports of automobiles and certain automobile parts under Section 232.",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    },
+    {
+      "claim_id": "claim_5d8dfce2aaa61030f4c7a55f",
+      "text": "Those duties, which are now 15% on cars built in Europe, South Korea, and Japan, remain in force.",
+      "url": "https://www.kbb.com/tariffs",
+      "chunk_id": "chunk_954662e9c8c838f69722ed4b"
+    },
+    {
+      "claim_id": "claim_741a5f0bc51887e0963b841d",
+      "text": "auto imports from the EU, Japan, and South Korea face a 15% total",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    },
+    {
+      "claim_id": "claim_b2a4e3acb2a0cc3fca8542db",
+      "text": "President Trump has announced a 25% tariff on all cars built outside the United States and on many parts used in cars built here.",
+      "url": "https://www.kbb.com/tariffs",
+      "chunk_id": "chunk_954662e9c8c838f69722ed4b"
+    },
+    {
+      "claim_id": "claim_fe4058d54600102c244d27bf",
+      "text": "President Trump imposed25% tariffs on (1) all vehicle imports, effective April 2025, with exemptions for the U.S. content of USMCA-compliant vehicles; and (2) certain automobile parts, effective May 2025, with exemptions for USMCA-compliant auto parts.",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "chunk_id": "chunk_388605ef4849945d41378490"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_30ff734629c86cf97ece229a",
+      "claim_5d8dfce2aaa61030f4c7a55f"
+    ],
+    [
+      "claim_30ff734629c86cf97ece229a",
+      "claim_741a5f0bc51887e0963b841d"
+    ],
+    [
+      "claim_b2a4e3acb2a0cc3fca8542db",
+      "claim_5d8dfce2aaa61030f4c7a55f"
+    ],
+    [
+      "claim_b2a4e3acb2a0cc3fca8542db",
+      "claim_741a5f0bc51887e0963b841d"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 8,
+  "synthesis_input_claim_count": 8
+}

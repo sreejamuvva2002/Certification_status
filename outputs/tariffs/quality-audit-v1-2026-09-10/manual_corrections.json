@@ -1,0 +1,495 @@
+[
+  {
+    "claim_id": "claim_3588189eba2869aab66108d1",
+    "sample_id": "S01",
+    "clear_fields": [
+      "origin_rules"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "origin_rule_inferred_from_operations"
+    ],
+    "audit_verdict": "field_misclassification",
+    "reason": "The quote supports company operations in Florida and China, not a legal origin rule. Congressional testimony is not a current tariff determination.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_5bb5979ca2a13f54f873cd53",
+    "sample_id": "S02",
+    "clear_fields": [
+      "duty_rate"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "hypothetical_example",
+      "off_sector_product"
+    ],
+    "audit_verdict": "illustrative_example_not_sector_evidence",
+    "reason": "CBP explicitly labels this as a hypothetical pasta entry-reporting example. It is not an observed automotive import or an automotive duty rate.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_14b1b00ad91b49712aff9830",
+    "sample_id": "S03",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "snippet_only",
+      "not_company_specific"
+    ],
+    "audit_verdict": "supported_context_only",
+    "reason": "The official Georgia snippet supports a statewide industry description. Vehicle assembly is a process, and the text does not identify a specific company import or tariff effect.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_353d89efd7adcebbe0541e19",
+    "sample_id": "S04",
+    "clear_fields": [
+      "effective_date"
+    ],
+    "set_fields": {
+      "conditions": {
+        "value": "effective for automobiles on April 3, 2025, and no later than May 3, 2025, for auto parts.",
+        "excerpt": "effective for automobiles on April 3, 2025, and no later than May 3, 2025, for auto parts."
+      }
+    },
+    "audit_flags": [
+      "different_product_effective_dates"
+    ],
+    "audit_verdict": "date_scope_conflation",
+    "reason": "The timeline distinguishes automobiles effective April 3 from parts no later than May 3. One effective_date for the combined product field loses that distinction.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_a747f2abc6e0ddef00c8097f",
+    "sample_id": "S05",
+    "clear_fields": [
+      "tariff_program"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "export_control_not_import_tariff"
+    ],
+    "audit_verdict": "measure_type_misclassification",
+    "reason": "The source describes export licensing restrictions, not an import tariff program. The source analysis may explain supply risk but does not establish a Georgia company effect.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_9fb99c7c70ac82b6e3450954",
+    "sample_id": "S06",
+    "clear_fields": [
+      "company"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "generic_company_identity",
+      "outside_georgia"
+    ],
+    "audit_verdict": "generic_entity_not_named_company",
+    "reason": "The quote reports a category of German OEMs in Hungary. It establishes no named supplier-OEM relationship or Georgia link.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_6dcf629e893c3bdf604789d9",
+    "sample_id": "S07",
+    "clear_fields": [
+      "country"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "mixed_facilities",
+      "country_from_other_facility"
+    ],
+    "audit_verdict": "facility_country_conflation",
+    "reason": "The statement lists two factories; the extracted facility/city/state are Torrance, California while country=China refers to Huizhou. The combined facility record is unsupported.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_095a8f42ed407543ce11f34c",
+    "sample_id": "S08",
+    "clear_fields": [
+      "duty_rate"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "no_numeric_rate_in_quote"
+    ],
+    "audit_verdict": "rate_type_misclassification",
+    "reason": "The official amendment excerpt supports additional ad valorem duties and exceptions but gives no numeric duty rate. A phrase describing a rate type was stored as duty_rate.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_2640566dc8a526e3a8ecae6f",
+    "sample_id": "S09",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "relative_announcement_date",
+      "snippet_only",
+      "current_status_unverified"
+    ],
+    "audit_verdict": "supported_historical_report_only",
+    "reason": "The snippet reports a 25% announcement but lacks an absolute date, precise legal instrument and full scope. It cannot establish the current steel/aluminum duty.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_40916635884075aea902bc06",
+    "sample_id": "S10",
+    "clear_fields": [
+      "effective_date"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "page_update_not_effective_date"
+    ],
+    "audit_verdict": "update_date_misclassified",
+    "reason": "The source says Updated 6/26/2025. That is a FAQ update stamp, not the legal effective date of the entry-for-consumption condition.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_40367482e14635a8c9bc635d",
+    "sample_id": "S11",
+    "clear_fields": [
+      "effective_date"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "forecast_not_observation",
+      "forecast_year_not_effective_date",
+      "off_sector_context"
+    ],
+    "audit_verdict": "forecast_year_misclassified",
+    "reason": "The source projects 2024 battery imports in a vendor marketing section. The year is a forecast period, not a tariff effective date; the quote is not metals-specific tariff evidence.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_2d1c97863452245b08392cc9",
+    "sample_id": "S12",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "off_sector_automotive_context",
+      "snippet_only",
+      "conditional_rate"
+    ],
+    "audit_verdict": "supported_historical_report_only",
+    "reason": "The snippet supports a conditional Japan automotive rate report and an MFN threshold. It does not establish a metals tariff or any Georgia company applicability.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_c01f7929b1042ca9556bb3e7",
+    "sample_id": "S13",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "source_inference_or_opinion",
+      "outside_georgia"
+    ],
+    "audit_verdict": "source_opinion_not_exposure",
+    "reason": "The named Malawi project is presented as a diversification opportunity. This is investment analysis rather than evidence of actual Georgia sourcing or tariff exposure.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_d501d724c945858bb02aa47f",
+    "sample_id": "S14",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "product_scope_not_established",
+      "historical_amendment"
+    ],
+    "audit_verdict": "supported_amendment_limited_scope",
+    "reason": "The official excerpt supports deletion of named subheadings on September 27, 2024. No product name, resulting rate, or battery-company applicability is stated in the sampled amendment item.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_5c712fbfbbab89fbce343db2",
+    "sample_id": "S15",
+    "clear_fields": [
+      "origin_rules"
+    ],
+    "set_fields": {
+      "legal_authority": {
+        "value": "19 U.S.C. 1304",
+        "excerpt": "in accordance with the requirements of 19 U.S.C. 1304"
+      },
+      "conditions": {
+        "value": "assuming 19 CFR 102.13 is not applicable",
+        "excerpt": "assuming 19 CFR 102.13 is not applicable"
+      }
+    },
+    "audit_flags": [
+      "marking_vs_origin_determination",
+      "conditional_ruling",
+      "snippet_only"
+    ],
+    "audit_verdict": "marking_authority_not_origin_test",
+    "reason": "The conditional ruling excerpt concerns packaging origin marking. 19 U.S.C. 1304 is cited as the marking authority, not a standalone test establishing a battery origin or a current duty.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_a855d187b96d0d2cfe419010",
+    "sample_id": "S16",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "tariff_components_ambiguous",
+      "current_status_unverified",
+      "do_not_use_as_total_duty"
+    ],
+    "audit_verdict": "requires_authority_verification",
+    "reason": "The surrounding article juxtaposes preliminary antidumping duties and a tariff truce, then says the tariff fell to 30%. It does not establish which components changed or a total applicable graphite duty. Preserve the quote but quarantine it for rate/application decisions.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_1a5f4568e3afde1a30039a15",
+    "sample_id": "S17",
+    "clear_fields": [],
+    "set_fields": {
+      "company": {
+        "value": "Ascend Elements",
+        "excerpt": "owned by Massachusetts-based Ascend Elements"
+      },
+      "facility": {
+        "value": "recycling facility in Covington, Georgia",
+        "excerpt": "In a recycling facility in Covington, Georgia"
+      },
+      "city": {
+        "value": "Covington",
+        "excerpt": "In a recycling facility in Covington, Georgia"
+      },
+      "state": {
+        "value": "Georgia",
+        "excerpt": "In a recycling facility in Covington, Georgia"
+      }
+    },
+    "audit_flags": [
+      "statewide_not_southeast_georgia",
+      "tariff_causality_not_established"
+    ],
+    "audit_verdict": "supported_operations_with_context_enrichment",
+    "reason": "The quoted historical black-mass exports are supported. Adjacent text names the owner Ascend Elements and locates the plant in Covington, Georgia; this is statewide context, not a confirmed Southeast Georgia tariff exposure.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_feaff40cbf9d03ab10385e09",
+    "sample_id": "S18",
+    "clear_fields": [
+      "tariff_program",
+      "duty_rate",
+      "rate_type"
+    ],
+    "set_fields": {
+      "hts_code": {
+        "value": "8704.60.00",
+        "excerpt": "8704.60.00 | 00 | Other, with only electric motor for propulsion"
+      }
+    },
+    "audit_flags": [
+      "flattened_tariff_columns",
+      "missing_headers_and_conditions",
+      "off_sector_vehicle_row"
+    ],
+    "audit_verdict": "tariff_table_columns_conflated",
+    "reason": "The snippet flattens general and special tariff columns. Free and 25% are conditional entries, not a single rate/type/program. The quoted row is 8704.60.00 despite the different query parameter in the URL.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_ee0ecda05c1e3aff0131d5b2",
+    "sample_id": "S19",
+    "clear_fields": [
+      "investment_effect"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "aggregate_vs_facility_scope",
+      "investment_precedes_announcement",
+      "off_sector_automotive_context"
+    ],
+    "audit_verdict": "company_facility_scope_and_causality_unresolved",
+    "reason": "The paragraph blends a national $21 billion commitment with a Georgia facility and aggregate capacity/jobs figures. The investment preceded the tariff announcement, so timing alone does not prove tariff causation. Cached reporting separately gives 500,000 vehicles for the Georgia factory, requiring scope/date reconciliation.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_39964e1ae7ee90db27e81ed5",
+    "sample_id": "S20",
+    "clear_fields": [
+      "origin_rules"
+    ],
+    "set_fields": {
+      "effective_date": {
+        "value": "September 24, 2018",
+        "excerpt": "Effective September 24, 2018"
+      }
+    },
+    "audit_flags": [
+      "same_source_later_rate_change",
+      "origin_scope_not_origin_test"
+    ],
+    "audit_verdict": "historical_rate_with_missing_transition",
+    "reason": "The official paragraph records the September 2018 additional 10% duty, but the very next sentence says it increased to 25% in May 2019. It supports history, not a current 10% rate. Goods of China states geographic scope rather than an origin-determination rule.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_bb42e868d723725a516e8937",
+    "sample_id": "S21",
+    "clear_fields": [
+      "hts_code"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "foreign_or_unspecified_hs_jurisdiction",
+      "snippet_only"
+    ],
+    "audit_verdict": "unspecified_foreign_hs_not_us_hts",
+    "reason": "A trade-data snippet labels an HS code without establishing US HTS jurisdiction. It cannot support US-specific tariff classification or duty applicability for a Georgia company.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_34b9e02f9e757fa64ec1c88a",
+    "sample_id": "S22",
+    "clear_fields": [
+      "company",
+      "effective_date"
+    ],
+    "set_fields": {
+      "rate_type": {
+        "value": "no less than",
+        "excerpt": "no less than 25 percent"
+      }
+    },
+    "audit_flags": [
+      "government_body_not_company",
+      "proposed_minimum_not_final_rate",
+      "off_sector_facemasks"
+    ],
+    "audit_verdict": "agency_as_company_and_proposal_as_rate",
+    "reason": "USTR is a government body, not a company. The excerpt describes a direction for no less than 25% and ensuing proposals for facemasks; it is not a final electronics rate or an exact effective date.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_9fcfae8a48fedb34512a2b1a",
+    "sample_id": "S23",
+    "clear_fields": [
+      "company"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "government_body_not_company",
+      "social_media_source",
+      "stacking_not_verified"
+    ],
+    "audit_verdict": "agency_as_company_and_secondary_rate_claim",
+    "reason": "The White House is cited as a source, not an exposed company. The LinkedIn post reports a PCB duty component and makes stacking assertions; it is secondary evidence needing the underlying authority and dated scope.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_43a70c938e25ba42a43faf2d",
+    "sample_id": "S24",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "off_sector_aircraft_product",
+      "product_relevance_not_established"
+    ],
+    "audit_verdict": "supported_row_off_sector",
+    "reason": "The official table row is explicitly labeled Aircraft and describes plastic tubes. The source quotation is supported, but it does not establish PCB/electronics applicability.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_09d6e4bfcbb4091b5bb03117",
+    "sample_id": "S25",
+    "clear_fields": [],
+    "set_fields": {
+      "facility": {
+        "value": "manufacturing facility in Vietnam",
+        "excerpt": "manufacturing facility in Vietnam"
+      },
+      "country": {
+        "value": "Vietnam",
+        "excerpt": "manufacturing facility in Vietnam"
+      }
+    },
+    "audit_flags": [
+      "company_self_report",
+      "no_georgia_relationship",
+      "duty_savings_unverified"
+    ],
+    "audit_verdict": "supported_company_mitigation_with_location_correction",
+    "reason": "The company announces manufacturing in Vietnam and says it offers a non-China option to avoid high tariffs. This is a source-claimed mitigation strategy, not verified duty savings or a Georgia supplier link; Vietnam alone should not be the facility name.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_4f2f9bd47ddfc6d846fe8e7f",
+    "sample_id": "S26",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "off_sector_civil_aircraft_clause",
+      "date_requires_product_scope"
+    ],
+    "audit_verdict": "date_attached_to_wrong_sector_context",
+    "reason": "The official September 16, 2025 clause introduces civil-aircraft exclusions in the following text. It is not evidence that a display tariff took effect on that date.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_939beed30f9d23998cbc3b2e",
+    "sample_id": "S27",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "off_sector_general_auto_parts",
+      "snippet_only",
+      "scope_exceptions"
+    ],
+    "audit_verdict": "supported_historical_report_only",
+    "reason": "The snippet describes autos and selected auto parts generally, with a later parts start date and USMCA exceptions in context. It does not identify displays or a specific manufacturer import.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_93b77e471e6e89244a0b1a88",
+    "sample_id": "S28",
+    "clear_fields": [
+      "effective_date",
+      "reported_policy_status"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "relative_date",
+      "status_refers_to_previous_rate",
+      "truncated_video_snippet"
+    ],
+    "audit_verdict": "relative_date_and_status_reference_error",
+    "reason": "Now is not an effective date. In this truncated snippet, implemented modifies the former 25% tariff, not necessarily the new 15% rate; the structured status transfers that modifier to the wrong rate.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_5d8dfce2aaa61030f4c7a55f",
+    "sample_id": "S29",
+    "clear_fields": [],
+    "set_fields": {},
+    "audit_flags": [
+      "relative_time_context",
+      "off_sector_cars",
+      "current_status_unverified"
+    ],
+    "audit_verdict": "supported_report_not_current_verified",
+    "reason": "The snippet distinguishes Section 232 automotive duties from another legal authority and reports a 15% rate. Today/now and the absence of an absolute publication date prevent verification as of the audit date; cars are not display products.",
+    "current_applicability_verified": false
+  },
+  {
+    "claim_id": "claim_c0e4b0aa02465013bc17b96e",
+    "sample_id": "S30",
+    "clear_fields": [
+      "production_effect"
+    ],
+    "set_fields": {},
+    "audit_flags": [
+      "policy_rationale_not_causal_effect",
+      "off_sector_automotive_context"
+    ],
+    "audit_verdict": "policy_rationale_not_measured_tariff_effect",
+    "reason": "The proclamation states a national-security rationale about an existing production decline. It is not a measured production effect caused by the tariff, and it is not display-specific evidence.",
+    "current_applicability_verified": false
+  }
+]

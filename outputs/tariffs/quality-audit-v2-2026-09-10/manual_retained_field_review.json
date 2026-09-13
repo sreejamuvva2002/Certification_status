@@ -1,0 +1,104 @@
+{
+  "review_count": 9,
+  "reviews": [
+    {
+      "claim_id": "claim_78afaba53f3ea4023f545480",
+      "field": "city",
+      "decision": "clear",
+      "reason": "Direct source review identifies Spartanburg County, SC. A county location does not support the city field.",
+      "original_model_decision": {
+        "decision": "retain",
+        "reason": "The source text explicitly identifies 'Spartanburg County' as the location where BMW built its manufacturing facility, supporting the field assignment."
+      },
+      "review_method": "assistant_direct_cached_source_review"
+    },
+    {
+      "claim_id": "claim_2c77af6d6538bf2ed192e529",
+      "field": "effective_date",
+      "decision": "clear",
+      "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+      "original_model_decision": {
+        "decision": "retain",
+        "reason": "The source explicitly states 'Updated 6/13/2025' in the context of Section 232 duties applying to specific HTS codes. This is a historical date relative to the audit date of September 10, 2026."
+      },
+      "review_method": "assistant_direct_cached_source_review"
+    },
+    {
+      "claim_id": "claim_2eda2da615c740183015c423",
+      "field": "hts_code",
+      "decision": "clear",
+      "reason": "The cached Zauba snippet identifies an HS code but does not establish US HTS jurisdiction. Clear the US-specific field; preserve the quoted foreign/unspecified code as evidence.",
+      "original_model_decision": {
+        "decision": "retain",
+        "reason": "The source text explicitly cites 'HS Code 85049090' in the context of import data for 'inverter pcb assy'. The field assignment matches the evidence provided."
+      },
+      "review_method": "assistant_direct_cached_source_review"
+    },
+    {
+      "claim_id": "claim_72ff985c95464ed644b7de4f",
+      "field": "effective_date",
+      "decision": "clear",
+      "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+      "original_model_decision": {
+        "decision": "retain",
+        "reason": "The source explicitly states 'Updated 6/26/2025' as the date for the policy description regarding Section 232 duties. This is a specific historical date relative to the audit date of September 10, 2026."
+      },
+      "review_method": "assistant_direct_cached_source_review"
+    },
+    {
+      "claim_id": "claim_1d3874ac1f958798fa9dc343",
+      "field": "effective_date",
+      "decision": "clear",
+      "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+      "original_model_decision": {
+        "decision": "retain",
+        "reason": "The source explicitly states 'Updated 6/26/2025' as the date for the policy description. This is an absolute anchor date within the historical window (pre-September 10, 2026) and supports the effective date field."
+      },
+      "review_method": "assistant_direct_cached_source_review"
+    },
+    {
+      "claim_id": "claim_5da937fa50feaffbd64696b5",
+      "field": "effective_date",
+      "decision": "clear",
+      "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+      "original_model_decision": {
+        "decision": "retain",
+        "reason": "The value '6/13/2025' is an absolute date. The audit date is September 10, 2026, making this a historical date (2025) which is valid for the audit context."
+      },
+      "review_method": "assistant_direct_cached_source_review"
+    },
+    {
+      "claim_id": "claim_13273bc294b9f7149bde5488",
+      "field": "effective_date",
+      "decision": "clear",
+      "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+      "original_model_decision": {
+        "decision": "retain",
+        "reason": "The source explicitly states 'Updated 6/13/2025'. This is an absolute date anchor relative to the audit date of September 10, 2026, establishing it as a historical update."
+      },
+      "review_method": "assistant_direct_cached_source_review"
+    },
+    {
+      "claim_id": "claim_fe4fdfb5ef710854a7c7e237",
+      "field": "effective_date",
+      "decision": "retain",
+      "reason": "Direct source review confirms a separately stated on-or-after March 12, 2025 effective condition; the surrounding June update date is distinct. Retain the historical date with current applicability unverified.",
+      "original_model_decision": {
+        "decision": "retain",
+        "reason": "The source explicitly states 'on or after March 12, 2025' as the effective date for the exemption rule regarding steel derivative products."
+      },
+      "review_method": "assistant_direct_cached_source_review"
+    },
+    {
+      "claim_id": "claim_470bb6d5902764607b8694d8",
+      "field": "effective_date",
+      "decision": "clear",
+      "reason": "Direct source review identifies this date only as Updated, not as the tariff effective date. Historical timing alone does not establish the field role.",
+      "original_model_decision": {
+        "decision": "retain",
+        "reason": "The source explicitly states 'Updated 6/13/2025' in the context of tariff applicability. This is an absolute date within the historical window relative to the audit date of September 10, 2026."
+      },
+      "review_method": "assistant_direct_cached_source_review"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "query_id": "q_354",
+  "query": "Section 232 steel aluminum tariff exclusions expiration",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0c8872258becbcef71c6b8ba",
+    "claim_c73af0a0ad8a21324f69193d",
+    "claim_dfb0bb92d38f9822ca2b9aff"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0c8872258becbcef71c6b8ba",
+      "text": "Pursuant to Presidential Proclamations 10895 and 10896 of February 10, 2025, Commerce is no longer processing Section 232 Exclusion Requests effective 11:59 PM ET on February 10, 2025, and is no longer accepting or issuing exclusions from the Section 232 Steel and Aluminum Tariffs.",
+      "url": "https://www.bis.gov/about-bis/bis-leadership-and-offices/SIES/section-232-investigations/section-232-steel-aluminum",
+      "chunk_id": "chunk_e316fb27edb77c8b04340b0b"
+    },
+    {
+      "claim_id": "claim_c73af0a0ad8a21324f69193d",
+      "text": "Section 232 Exclusions already granted and activated as of February 10, 2025, will remain effective until their expiration date or until their excluded volume is exhausted, whichever occurs first.",
+      "url": "https://www.bis.gov/about-bis/bis-leadership-and-offices/SIES/section-232-investigations/section-232-steel-aluminum",
+      "chunk_id": "chunk_e316fb27edb77c8b04340b0b"
+    },
+    {
+      "claim_id": "claim_dfb0bb92d38f9822ca2b9aff",
+      "text": "In February, President Trump announced his intent to terminate the Section 232 exclusion process, which has since been allowed to expire.",
+      "url": "https://www.clarkhill.com/news-events/news/update-on-inclusion-requests-pertaining-to-section-232-tariffs-on-steel-and-aluminum",
+      "chunk_id": "chunk_116de2975bc9f235d3ccdc0f"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_0c8872258becbcef71c6b8ba",
+      "claim_dfb0bb92d38f9822ca2b9aff"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

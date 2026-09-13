@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "purpose": "Sector tagging, cached evidence retrieval, and draft targeted queries; does not alter the original 510 queries or authorize new searches.",
+  "tariff_terms": [
+    "tariff",
+    "import duty",
+    "customs duty",
+    "Section 232",
+    "Section 301",
+    "HTS",
+    "HTSUS",
+    "Chapter 99",
+    "antidumping",
+    "countervailing",
+    "trade remedy",
+    "rules of origin",
+    "tariff exclusion",
+    "tariff quota",
+    "duty drawback",
+    "foreign trade zone"
+  ],
+  "sectors": {
+    "automotive_and_trade": [
+      "automotive",
+      "vehicle",
+      "EV",
+      "auto parts",
+      "automobile",
+      "OEM",
+      "powertrain",
+      "wiring harness",
+      "Hyundai",
+      "Kia",
+      "Metaplant"
+    ],
+    "metals": [
+      "steel",
+      "aluminum",
+      "aluminium",
+      "copper",
+      "castings",
+      "stamping",
+      "battery tray",
+      "battery enclosure",
+      "busbar"
+    ],
+    "batteries_and_minerals": [
+      "battery",
+      "batteries",
+      "lithium",
+      "graphite",
+      "nickel",
+      "cobalt",
+      "manganese",
+      "cathode",
+      "anode",
+      "critical minerals",
+      "rare earth",
+      "electrolyte",
+      "PVDF",
+      "separator"
+    ],
+    "pcbs_and_electronics": [
+      "PCB",
+      "PCBs",
+      "printed circuit",
+      "semiconductor",
+      "electronic",
+      "inverter",
+      "charger",
+      "control module"
+    ],
+    "displays": [
+      "display",
+      "displays",
+      "LCD",
+      "OLED",
+      "touchscreen",
+      "infotainment",
+      "instrument cluster",
+      "digital cockpit"
+    ]
+  },
+  "geography_terms": [
+    "Southeast Georgia",
+    "Georgia",
+    "Savannah",
+    "Bryan County",
+    "Ellabell",
+    "Brunswick",
+    "Chatham County",
+    "Effingham County",
+    "Bulloch County",
+    "Liberty County",
+    "Glynn County"
+  ],
+  "company_aliases": {
+    "Hyundai": [
+      "Hyundai",
+      "HMGMA",
+      "Metaplant"
+    ],
+    "Kia": [
+      "Kia"
+    ],
+    "LG Energy Solution": [
+      "LG Energy Solution",
+      "LGES"
+    ],
+    "SK On": [
+      "SK On",
+      "SK Battery"
+    ],
+    "Samsung": [
+      "Samsung"
+    ],
+    "Panasonic": [
+      "Panasonic"
+    ],
+    "Rivian": [
+      "Rivian"
+    ],
+    "Tesla": [
+      "Tesla"
+    ],
+    "Hyundai Mobis": [
+      "Hyundai Mobis",
+      "Mobis"
+    ]
+  },
+  "query_templates": {
+    "sector": "{sector_term} {tariff_term} {geography} {year}",
+    "company": "\"{company}\" \"{facility_or_city}\" {product_or_material} {tariff_term} {year}",
+    "official_policy": "{product_or_material} {tariff_term} {origin_country} effective date site:{official_domain}"
+  },
+  "expansion_default": "disabled",
+  "new_tavily_calls_authorized": false
+}

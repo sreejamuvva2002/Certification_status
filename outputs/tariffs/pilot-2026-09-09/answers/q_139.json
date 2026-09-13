@@ -1,0 +1,54 @@
+{
+  "query_id": "q_139",
+  "query": "Lithium ion battery separators import tariff classification",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_053ba938a30cca1a0168ce69",
+    "claim_1f058e7047efebac9d4974c9",
+    "claim_4ab773adf31de907c1663705",
+    "claim_b145b01d89343e53516ffc4a"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_053ba938a30cca1a0168ce69",
+      "text": "Chinese-origin lithium-ion batteries are subject to Section 301 List 4A tariffs that have increased significantly since 2024",
+      "url": "https://www.gaiadynamics.ai/hs-code-lookup/us/battery",
+      "chunk_id": "chunk_ae1b517c3e8ec7067835bcd5"
+    },
+    {
+      "claim_id": "claim_1f058e7047efebac9d4974c9",
+      "text": "In the Nov. 6, 2024, Customs Bulletin and Decisions, U.S. Customs and Border Protection proposed to reclassify a variety of lithium-ion battery cells as lithium-ion batteries under HTSUS 8507.60.00 (3.4 percent duty) rather than as other parts of electric storage batteries under HTSUS 8507.90.80 (3.4 percent duty).",
+      "url": "https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/november/classification-change-proposed-for-battery-cells",
+      "chunk_id": "chunk_23b2e75683e0363700fee275"
+    },
+    {
+      "claim_id": "claim_4ab773adf31de907c1663705",
+      "text": "Total landed duty on Chinese-origin lithium-ion is materially higher than the base 3.4% rate",
+      "url": "https://www.gaiadynamics.ai/hs-code-lookup/us/battery",
+      "chunk_id": "chunk_ae1b517c3e8ec7067835bcd5"
+    },
+    {
+      "claim_id": "claim_b145b01d89343e53516ffc4a",
+      "text": "the first Trump Administration imposed additional tariffs of 25% on Chinese lithium ion battery parts while imposing lower additional duties of 7.5% on Chinese lithium ion batteries.",
+      "url": "https://www.prba.org/press-releases/us-cbp-lithium-tariff-reclassification-10231",
+      "chunk_id": "chunk_9fc970e3f1efb8ac223d5b55"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_053ba938a30cca1a0168ce69",
+      "claim_b145b01d89343e53516ffc4a"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

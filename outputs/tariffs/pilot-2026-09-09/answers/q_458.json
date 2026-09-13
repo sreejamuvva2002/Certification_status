@@ -1,0 +1,62 @@
+{
+  "query_id": "q_458",
+  "query": "Display module assembly country of origin CBP rulings",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_0b6691552a733021fea1c7cf",
+    "claim_265ea4e91b1b11f18e3c94a0",
+    "claim_49bd4ac737873455028c4d19",
+    "claim_6376e52af9c3f7b865f74258",
+    "claim_ce6681650ecd9dce0535604f"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_0b6691552a733021fea1c7cf",
+      "text": "The optics module shell and its related components were imported from Australia. At the U.S. customer site, U.S.-origin printed wiring board assemblies (",
+      "url": "https://rulings.cbp.gov/ruling/H015324",
+      "chunk_id": "chunk_568b920a4a986c099a7895d2"
+    },
+    {
+      "claim_id": "claim_265ea4e91b1b11f18e3c94a0",
+      "text": "Based upon the facts provided, we find that the processing and assembly operations performed in the United States constitute a substantial transformation of the foreign-origin components. Therefore, the country of origin of the stereoscopic display models is the United States for purposes of U.S. Government procurement.",
+      "url": "https://rulings.cbp.gov/ruling/H015324",
+      "chunk_id": "chunk_568b920a4a986c099a7895d2"
+    },
+    {
+      "claim_id": "claim_49bd4ac737873455028c4d19",
+      "text": "The module board is assembled in Taiwan and comprises two subassemblies also assembled in Taiwan: (1) the main printed circuit board assembly with LED lamps, and (2) the HUB board and receiver card.",
+      "url": "https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/june/cbp-rules-on-origin-of-led-display-panels",
+      "chunk_id": "chunk_d01d8baac8f762753a6edc24"
+    },
+    {
+      "claim_id": "claim_6376e52af9c3f7b865f74258",
+      "text": "In ruling HQ H332752, CBP concluded that the country of origin of the devices is Taiwan because the assembly of the main PCBA in Taiwan results in a substantial transformation.",
+      "url": "https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/june/cbp-rules-on-origin-of-led-display-panels",
+      "chunk_id": "chunk_d01d8baac8f762753a6edc24"
+    },
+    {
+      "claim_id": "claim_ce6681650ecd9dce0535604f",
+      "text": "The PWBs were necessary for the control and operation of the optics module. Then, the module was further assembled with a U.S.-origin controlling computer and printer to create the OSI system.",
+      "url": "https://rulings.cbp.gov/ruling/H015324",
+      "chunk_id": "chunk_568b920a4a986c099a7895d2"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "incomplete_document",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_265ea4e91b1b11f18e3c94a0",
+      "claim_6376e52af9c3f7b865f74258"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 27,
+  "synthesis_input_claim_count": 27
+}

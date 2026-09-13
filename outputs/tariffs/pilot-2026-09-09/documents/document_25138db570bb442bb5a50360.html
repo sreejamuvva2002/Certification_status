@@ -1,0 +1,930 @@
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+
+    <!-- OneTrust Cookies Consent Notice start -->
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="75996dfb-d80c-4fde-8d47-25cde284da8b"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/consent/75996dfb-d80c-4fde-8d47-25cde284da8b/OtAutoBlock.js"></script>
+    <script type="text/javascript">
+        function OptanonWrapper() {
+            // Get initial OnetrustActiveGroups ids
+            if (typeof OptanonWrapperCount == "undefined") {
+                otGetInitialGrps();
+            }
+
+            //Delete cookies
+            otDeleteCookie(otIniGrps);
+
+            // Assign OnetrustActiveGroups to custom variable
+            function otGetInitialGrps() {
+                OptanonWrapperCount = '';
+                otIniGrps = OnetrustActiveGroups;
+                //console.log("otGetInitialGrps", otIniGrps)
+            }
+
+            function otDeleteCookie(iniOptGrpId) {
+                var otDomainGrps = JSON.parse(JSON.stringify(Optanon.GetDomainData().Groups));
+                var otDeletedGrpIds = otGetInactiveId(iniOptGrpId, OnetrustActiveGroups);
+
+                if (otDeletedGrpIds.length != 0 && otDomainGrps.length != 0) {
+                    for (var i = 0; i < otDomainGrps.length; i++) {
+                        //Check if CustomGroupId matches
+                        if (otDomainGrps[i]['CustomGroupId'] != '' && otDeletedGrpIds.includes(otDomainGrps[i]['CustomGroupId'])) {
+                            for (var j = 0; j < otDomainGrps[i]['Cookies'].length; j++) {
+                                //console.log("otDeleteCookie",otDomainGrps[i]['Cookies'][j]['Name'])
+                                //Delete cookie
+                                eraseCookie(otDomainGrps[i]['Cookies'][j]['Name']);
+                            }
+                        }
+
+                        //Check if Hostid matches
+                        if (otDomainGrps[i]['Hosts'].length != 0) {
+                            for (var j = 0; j < otDomainGrps[i]['Hosts'].length; j++) {
+                                //Check if HostId presents in the deleted list and cookie array is not blank
+                                if (otDeletedGrpIds.includes(otDomainGrps[i]['Hosts'][j]['HostId']) && otDomainGrps[i]['Hosts'][j]['Cookies'].length != 0) {
+                                    for (var k = 0; k < otDomainGrps[i]['Hosts'][j]['Cookies'].length; k++) {
+                                        //Delete cookie
+                                        eraseCookie(otDomainGrps[i]['Hosts'][j]['Cookies'][k]['Name']);
+                                    }
+                                }
+                            }
+                        }
+
+                        //Manually delete GA4 cookie
+                        if (cookieExists('_ga_VS7NE774EZ')) {
+                            eraseCookie('_ga_VS7NE774EZ');
+                        }
+                    }
+                }
+
+                otGetInitialGrps(); //Reassign new group ids
+            }
+
+            //Get inactive ids
+            function otGetInactiveId(customIniId, otActiveGrp) {
+                //Initial OnetrustActiveGroups
+                // console.log("otGetInactiveId",customIniId)
+                customIniId = customIniId.split(",");
+                customIniId = customIniId.filter(Boolean);
+
+                //After action OnetrustActiveGroups
+                otActiveGrp = otActiveGrp.split(",");
+                otActiveGrp = otActiveGrp.filter(Boolean);
+
+                var result = [];
+                for (var i = 0; i < customIniId.length; i++) {
+                    if (otActiveGrp.indexOf(customIniId[i]) <= -1) {
+                        result.push(customIniId[i]);
+                    }
+                }
+
+                return result;
+            }
+
+            //Check if cookie exists
+            function cookieExists(name) {
+                var cks = document.cookie.split(';');
+                for (i = 0; i < cks.length; i++)
+                    if (cks[i].split('=')[0].trim() == name) return true;
+            }
+
+            //Delete cookie
+            function eraseCookie(name) {
+                if (name.includes('_gat_UA-')) {
+                    name += '28805638-1'; // need to hardcode GA ID, so that it's deleted immediately
+                }
+
+                //Delete root path cookies
+                domainName = window.location.hostname.substring(window.location.hostname.indexOf('.'), window.location.hostname.length); // need to do this due to hosting/ssl certs
+                document.cookie = name + '=; Max-Age=-99999999; Path=/;Domain=' + domainName;
+                document.cookie = name + '=; Max-Age=-99999999; Path=/;';
+
+                //Delete LSO incase LSO being used, cna be commented out.
+                localStorage.removeItem(name);
+
+                //Check for the current path of the page
+                pathArray = window.location.pathname.split('/');
+
+                //Loop through path hierarchy and delete potential cookies at each path.
+                for (var i = 0; i < pathArray.length; i++) {
+                    if (pathArray[i]) {
+                        //Build the path string from the Path Array e.g /site/login
+                        var currentPath = pathArray.slice(0, i + 1).join('/');
+                        document.cookie = name + '=; Max-Age=-99999999; Path=' + currentPath + ';Domain=' + domainName;
+                        document.cookie = name + '=; Max-Age=-99999999; Path=' + currentPath + ';';
+                        //Maybe path has a trailing slash!
+                        document.cookie = name + '=; Max-Age=-99999999; Path=' + currentPath + '/;Domain=' + domainName;
+                        document.cookie = name + '=; Max-Age=-99999999; Path=' + currentPath + '/;';
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end -->
+
+
+        <!-- Google Tag Manager -->
+        <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N3LVKJ5');
+        </script>
+        <!-- End Google Tag Manager -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>New Antidumping and Countervailing Duty Investigations May Impact Imported Lithium-Ion Batteries | Insights | Holland &amp; Knight</title>
+    <meta name="title" content="New Antidumping and Countervailing Duty Investigations May Impact Imported Lithium-Ion Batteries | Insights | Holland &amp; Knight" />
+<meta name="description" content="The American Active Anode Material Producers filed antidumping and countervailing duty petitions with the DOC and ITC to address alleged unfair imports material from China." />
+<meta name="keywords" content="American Active Anode Material Producers, AAAMP, antidumping, active anode material, imported lithium-ion batteries, China, International Trade Commission, ITC, investigation, microns, subject merchandise" />
+
+    <link rel="canonical" href="https://www.hklaw.com/en/insights/publications/2025/01/new-antidumping-and-countervailing-duty-investigations" />
+
+<meta property="og:url" content="https://www.hklaw.com/en/insights/publications/2025/01/new-antidumping-and-countervailing-duty-investigations" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="New Antidumping and Countervailing Duty Investigations May Impact Imported Lithium-Ion Batteries | Insights | Holland &amp; Knight" />
+<meta property="og:description" content="" />
+
+    <meta property="og:image" content="https://www.hklaw.com/-/media/images/twittercards/hk_opengraph.png?rev=ec0d75523b1f4e68920e3e1b42304866&amp;sc_lang=en&amp;hash=3345DDE33F8D43A99B42BABA11D22AF8" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="New Antidumping and Countervailing Duty Investigations May Impact Imported Lithium-Ion Batteries | Insights | Holland &amp; Knight">
+<meta name="twitter:description" content="">
+
+    <meta name="twitter:image:src" content="https://www.hklaw.com/-/media/images/twittercards/hk_twitter_card.png?rev=ed4e2c2bafc247469547342299071b2f&amp;sc_lang=en&amp;hash=98A0A6EF52623D0A1A598D8B4D70C06E">
+
+    <meta name="oni_section" content="insights">
+
+        <link rel="alternate" hreflang="en" href="https://www.hklaw.com/en/insights/publications/2025/01/new-antidumping-and-countervailing-duty-investigations" />
+
+
+        <meta name="practice" content="International Trade" />
+        <meta name="practice" content="Government Contracts" />
+        <meta name="practice" content="Renewable Energy" />
+        <meta name="practice" content="Energy Technology" />
+        <meta name="practice" content="Healthcare" />
+
+        <meta name="author" content="Andrew K. McAllister" />
+        <meta name="author" content="Sophie Jin" />
+
+
+    <link rel="stylesheet" href="/assets/public/main.v-porgw2zawz4ywwhqo6sq.css">
+</head>
+<body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3LVKJ5"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+    <!--stopindex--> 
+
+    <div class="app" id="app">
+        <a class="hidden-content" href="#content">Skip to content</a>
+        <div is="navbar" inline-template="inline-template" v-bind:search-landing-url="'/en/search'">
+    <header>
+        <div class="navbar__filler" v-bind:class="{ 'navbar__filler--show': isNavLocked }"></div>
+        <div class="navbar " v-bind:class="{ 'navbar--nav-locked': isNavLocked }">
+            <div class="navbar__wrapper container">
+                <div class="navbar__primary">
+
+                    <a class="navbar__logo-link" href="/">
+                            <img class="navbar__logo" src="/-/media/images/global/hklogo_full.png?rev=59945fa4d93f4c72862de43f8622186a&amp;sc_lang=en&amp;hash=E540B32F80CDCB6E89401827A4AEE8B6" alt="Holland &amp; Knight" />
+                            <img class="navbar__logo-mobile" src="/-/media/images/global/hklogo_full.png?rev=59945fa4d93f4c72862de43f8622186a&amp;sc_lang=en&amp;hash=E540B32F80CDCB6E89401827A4AEE8B6" alt="Holland &amp; Knight" />
+                    </a>
+
+                    <div class="navbar__links" v-bind:class="{ 'navbar__links--visible': isMenuOpen }">
+                        <div class="navbar__primary-links">
+                                    <div class="navbar__item navbar__item--primary">
+                                        <a class="navbar__link navbar__link--primary "
+                                           target=""
+                                           rel=""
+                                           href="/en/services/practices">Practices</a>
+                                    </div>
+                                    <div class="navbar__item navbar__item--primary">
+                                        <a class="navbar__link navbar__link--primary "
+                                           target=""
+                                           rel=""
+                                           href="/en/professionals">Professionals</a>
+                                    </div>
+                                    <div class="navbar__item navbar__item--primary">
+                                        <a class="navbar__link navbar__link--primary "
+                                           target=""
+                                           rel=""
+                                           href="/en/services/industries">Industries</a>
+                                    </div>
+                                    <div class="navbar__item navbar__item--primary">
+                                        <a class="navbar__link navbar__link--primary navbar__link--active"
+                                           target=""
+                                           rel=""
+                                           href="/en/insights">Insights</a>
+                                    </div>
+                                    <div class="navbar__item navbar__item--primary">
+                                        <a class="navbar__link navbar__link--primary "
+                                           target=""
+                                           rel=""
+                                           href="/en/events">Events</a>
+                                    </div>
+                                    <div class="navbar__item navbar__item--primary">
+                                        <a class="navbar__link navbar__link--primary "
+                                           target=""
+                                           rel=""
+                                           href="/en/news">News</a>
+                                    </div>
+                            <button aria-label="search" class="icon icon__search navbar__search" v-on:click="toggleSearch()"></button>
+                            <button aria-label="close" class="icon navbar__close-search" v-on:click="closeSearch()" v-bind:class="{ 'navbar__close-search--visible': isSearchOpen }"></button>
+                        </div>
+                        <div class="navbar__secondary-links">
+                                <div class="navbar__item navbar__item--secondary">
+                                    <a class="navbar__link navbar__link--secondary "
+                                       href="/en/offices"
+                                       target=""
+                                       rel="">
+                                        Offices
+                                    </a>
+                                </div>
+                                <div class="navbar__item navbar__item--secondary">
+                                    <a class="navbar__link navbar__link--secondary "
+                                       href="/en/careers"
+                                       target=""
+                                       rel="">
+                                        Careers
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="navbar__icons">
+                        <button class="icon icon__search navbar__mobile-search" v-on:click="openSearch()" v-bind:class="{ 'navbar__mobile-search--hidden': isSearchOpen }"></button>
+                        <button class="icon navbar__close-search navbar__mobile-close" v-on:click="closeSearch()" v-bind:class="{ 'navbar__close-search--visible': isSearchOpen }"></button>
+                        <button class="navbar__hamburger" v-on:click="openMenu()" v-bind:class="{ 'navbar__hamburger--hidden': isMenuOpen }">Menu</button>
+                        <button class="navbar__close" v-on:click="closeMenu()" v-bind:class="{ 'navbar__close--visible': isMenuOpen }"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar__search-wrapper" v-bind:class="{ 'navbar__search-wrapper--visible': isSearchOpen }">
+                <div class="navbar__search-inner container container--small">
+                    <div class="navbar__search-title">Refine search by section</div>
+                    <form>
+                        <fieldset>
+                            <legend style="display: none;"> Refine Search Filters</legend>
+                            <div class="navbar__search-filters">
+                                <div class="navbar__search-filter-wrapper">
+                                    <input v-model="segment" class="navbar__search-filter-option"  aria-label="search-filter-all" name="search-filter" type="radio" id="all-filter" value="" /><span class="navbar__search-filter-button"></span>
+                                    <label class="navbar__search-filter-label" for="all-filter">Full Site</label>
+                                </div>
+
+                                    <div class="navbar__search-filter-wrapper">
+                                        <input v-model="segment" class="navbar__search-filter-option" aria-label="search-filter-Professionals" name="search-filter" type="radio" id="Professionals-filter" value="lawyers" /><span class="navbar__search-filter-button"></span>
+                                        <label class="navbar__search-filter-label" for="Professionals-filter">Professionals</label>
+                                    </div>
+                                    <div class="navbar__search-filter-wrapper">
+                                        <input v-model="segment" class="navbar__search-filter-option" aria-label="search-filter-Practices" name="search-filter" type="radio" id="Practices-filter" value="practices" /><span class="navbar__search-filter-button"></span>
+                                        <label class="navbar__search-filter-label" for="Practices-filter">Practices</label>
+                                    </div>
+                                    <div class="navbar__search-filter-wrapper">
+                                        <input v-model="segment" class="navbar__search-filter-option" aria-label="search-filter-Industries" name="search-filter" type="radio" id="Industries-filter" value="industries" /><span class="navbar__search-filter-button"></span>
+                                        <label class="navbar__search-filter-label" for="Industries-filter">Industries</label>
+                                    </div>
+                                    <div class="navbar__search-filter-wrapper">
+                                        <input v-model="segment" class="navbar__search-filter-option" aria-label="search-filter-Insights" name="search-filter" type="radio" id="Insights-filter" value="insights" /><span class="navbar__search-filter-button"></span>
+                                        <label class="navbar__search-filter-label" for="Insights-filter">Insights</label>
+                                    </div>
+                                    <div class="navbar__search-filter-wrapper">
+                                        <input v-model="segment" class="navbar__search-filter-option" aria-label="search-filter-Events" name="search-filter" type="radio" id="Events-filter" value="events" /><span class="navbar__search-filter-button"></span>
+                                        <label class="navbar__search-filter-label" for="Events-filter">Events</label>
+                                    </div>
+                                    <div class="navbar__search-filter-wrapper">
+                                        <input v-model="segment" class="navbar__search-filter-option" aria-label="search-filter-News" name="search-filter" type="radio" id="News-filter" value="news" /><span class="navbar__search-filter-button"></span>
+                                        <label class="navbar__search-filter-label" for="News-filter">News</label>
+                                    </div>
+                                    <div class="navbar__search-filter-wrapper">
+                                        <input v-model="segment" class="navbar__search-filter-option" aria-label="search-filter-Case Studies" name="search-filter" type="radio" id="Case Studies-filter" value="casestudies" /><span class="navbar__search-filter-button"></span>
+                                        <label class="navbar__search-filter-label" for="Case Studies-filter">Case Studies</label>
+                                    </div>
+                            </div>
+
+                            <div class="navbar__search-input-wrapper">
+                                <input class="navbar__search-input"
+                                       ref="sitesearchinput"
+                                       placeholder="Search"
+                                       v-bind:value="keyword"
+                                       aria-label="Search Input"
+                                       v-on:input="keyword = $event.target.value; updateTypeahead()"
+                                       v-on:keyup.enter="navigateToSiteSearchResults()" />
+
+                                <button aria-label="Perform Search" class="icon navbar__search-input-icon" v-on:click="navigateToSiteSearchResults()" type="button"></button>
+                            </div>
+
+                            <!-- Typeahead-->
+                            <div class="typeahead" v-show="shouldShowTypeahead">
+                                <ul class="typeahead__results">
+                                    <li class="typeahead__result" v-for="(result, i) in typeaheadResults" v-bind:key="result.url + i">
+                                        <a class="typeahead__link" v-bind:href="result.url" v-text="result.name"></a>
+                                    </li>
+
+                                    <li class="typeahead__result">
+                                        <button class="typeahead__link typeahead__link--view-all" v-on:click="navigateToSiteSearchResults">View All Matching Results</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+        <div role="main" id="content">
+                <div class="article-hero article-hero--no-image" style="background-color:#B1E4E3">
+        <div class="container container--small">
+            <div class="article-hero__wrapper">
+                
+                <div class="article-hero__info-col">
+
+                        <div class="article-hero__date">January 14, 2025</div>
+
+                    <div class="article-hero__title-section">
+                        <h1 class="article-hero__title">New Antidumping and Countervailing Duty Investigations May Impact Imported Lithium-Ion Batteries</h1>
+
+                                                    <div class="article-hero__emphasized-source">Holland & Knight Alert</div>
+
+                    </div>
+                    <div class="article-hero__meta">
+                                                    <div class="article-hero__authors">
+                                        <a class="article-hero__author" href="/en/professionals/m/mcallister-andrew-k">Andrew K. McAllister</a>
+                                        <span class="pipe-divider article-hero__divider">|</span>
+                                        <a class="article-hero__author" href="/en/professionals/j/jin-sophie">Sophie Jin</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="container container--small">
+    <div class="article-columns">
+        <div class="article-columns__left">
+                <div class="social-icons">
+                <a href="https://pdf.hklaw.com/pdfrenderer.svc/v1/abcpdf11/GetRenderedPdfByUrl/New Antidumping and Countervailing Duty Investigations.pdf/?url=https%3a%2f%2fwww.hklaw.com%2fen%2finsights%2fpublications%2f2025%2f01%2fnew-antidumping-and-countervailing-duty-investigations%3fpdf%3d1" target="_blank" rel="noopener" class="social-icons__icon social-icons__icon--pdf"></a>
+                <a href="mailto:?subject=Check%20out%20this%20article%20from%20Holland%20%26%20Knight&amp;body=https%3a%2f%2fwww.hklaw.com%2fen%2finsights%2fpublications%2f2025%2f01%2fnew-antidumping-and-countervailing-duty-investigations" target="" rel="" class="social-icons__icon social-icons__icon--email"></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fwww.hklaw.com%2fen%2finsights%2fpublications%2f2025%2f01%2fnew-antidumping-and-countervailing-duty-investigations" target="_blank" rel="noopener" class="social-icons__icon social-icons__icon--linkedin"></a>
+                <a href="https://twitter.com/intent/tweet?text=New%20Antidumping%20and%20Countervailing%20Duty%20Investigations%20May%20Impact%20Imported%20Lithium-Ion%20Batteries%20%7C&amp;url=https%3a%2f%2fwww.hklaw.com%2fen%2finsights%2fpublications%2f2025%2f01%2fnew-antidumping-and-countervailing-duty-investigations" target="_blank" rel="noopener" class="social-icons__icon social-icons__icon--twitter"></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.hklaw.com%2fen%2finsights%2fpublications%2f2025%2f01%2fnew-antidumping-and-countervailing-duty-investigations" target="_blank" rel="noopener" class="social-icons__icon social-icons__icon--facebook"></a>
+    </div>
+
+            
+            <div class="section__list">
+    <div class="section
+          
+          
+          section--reduced-section">
+
+            <h2 class="page__section-heading">Highlights</h2>
+
+        <div class="section__content">
+                <div class="highlights">
+            <!--startindex-->
+    <div class="rte  body-copy">
+        <ul>
+    <li>The American Active Anode Material Producers filed antidumping and countervailing duty petitions on Dec. 18, 2024, with the U.S. Department of Commerce and International Trade Commission to address alleged unfair imports of active anode material from China, with claimed dumping margins of 828 percent and 921 percent.</li>
+    <li>The investigation targets active anode material, including those used in lithium-ion batteries for Battery Energy Storage Systems, electric vehicles, consumer electronics, medical equipment and other applications.</li>
+    <li>If duties are imposed, the active anode material portion in imported batteries will be affected, but only the active anode material in imported lithium-ion batteries from China (rather than the entire value of the batteries) will be subject to these duties.</li>
+</ul>
+    </div>
+    <!--stopindex-->
+
+    </div>
+
+        </div>
+    </div>
+    <div class="section
+          
+          
+          section--reduced-section">
+
+
+        <div class="section__content">
+                <!--startindex-->
+    <div class="rte  body-copy">
+        <p>The American Active Anode Material Producers (AAAMP), an ad hoc trade association of domestic manufacturers, filed petitions on Dec. 18, 2024, with the U.S. Department of Commerce (DOC) and the U.S. International Trade Commission (ITC) seeking antidumping (AD) and countervailing duties (CVD) on imports of active anode material from China.</p>
+<p>Under U.S. law, domestic industries can request AD investigations to determine whether imported products are being sold in the U.S. at less than fair value, known as "dumping." They can also seek CVD investigations to examine whether foreign producers are receiving unfair subsidies from their governments. Duties may be imposed if the DOC finds evidence of dumping or subsidization and the ITC determines these imports cause material injury to the U.S. industry.</p>
+<p>In these investigations, the DOC assesses whether dumping or subsidization is occurring and calculates the margins or subsidy amounts, while the ITC evaluates whether the domestic industry is materially injured or threatened with injury by these imports. If both agencies make affirmative preliminary determinations, U.S. importers must post cash deposits for AD and/or CVD duties, starting from the date of the DOC's preliminary determinations. These rates may be adjusted in the final determinations based on further participation by foreign producers and governments.&nbsp;</p>
+<h2>Scope of the Investigation</h2>
+<p>This investigation pertains to active anode material. The physical characteristics of the covered product, which define the scope, are as follows:</p>
+<p style="margin-left: 40px;">Active anode material, whether synthetic, natural, or a blend of synthetic or natural; with or without coating; regardless of whether in powder, dry, liquid or any other form. Subject merchandise typically has a maximum size of 80 microns. Subject merchandise has an energy density of 330 milliamp hours per gram or greater and a degree of graphitization of 80 percent or greater. Subject merchandise can be referred to as "active anode material."</p>
+<p>In addition, subject merchandise is covered regardless of:</p>
+<ul>
+    <li>whether it is mixed with silicon-based active materials, e.g., silicon-oxide (SiOx), silicon-carbon (Sic) or silicon, or additives such as carbon black or carbon nanotubes</li>
+    <li>the combination of compounds that create the graphite material; the graphite contained in the subject merchandise has a minimum purity content of 90 percent carbon</li>
+    <li>whether it is imported independently, as part of a compound, in a battery, as a component of an anode slurry or in a subassembly of a battery such as an electrode; only the anode-grade graphite material is covered when entered as part of a mixture with silicon-based active materials, as part of a compound, in a battery, as a component of an anode slurry or in a subassembly of a battery such as an electrode</li>
+</ul>
+<p>Active anode material subject to the investigations may be classified under the Harmonized Tariff Schedule of the United States (HTSUS) subheadings 2504.10.5000, 3801.10.5000 or 3801.90.0000. The HTSUS subheadings are provided for convenience and customs purposes only. The written description of the scope of the investigations is dispositive.</p>
+<h2>Alleged Dumping/Subsidization Margins</h2>
+<p>The AAAMP alleges dumping margins from 828 percent and 921 percent.</p>
+<h2>Estimated Timeline of the Investigation</h2>
+<p>Provided below are our current estimates for the timeline of potential duties in the AD/CVD investigation proceedings.</p>
+<p>&nbsp;</p>
+<table style="margin-left: auto; margin-right: auto;">
+    <tbody>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: left;">
+            <p style="padding: 10px; text-align: center;"><strong>Event</strong></p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;"><strong>Earliest Date</strong></p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;"><strong>Potential Extensions</strong></p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Petition Filed</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Dec. 18, 2024</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">DOC Initiation</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Jan. 7, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;"><strong>ITC Preliminary Investigation</strong></p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Questionnaires Due</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Jan. 2, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Request to appear at hearing</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Jan. 6, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Hearing</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Jan. 8, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Briefs Due</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Jan. 13, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">ITC Vote</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Jan. 31, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">ITC Preliminary Determination</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Feb. 3, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;"><strong>DOC Investigation Schedule</strong></p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">DOC Preliminary Antidumping Determination</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">May 27, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">July 16, 2025</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">DOC Final Antidumping Determination</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Aug. 11, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Dec. 5, 2025</p>
+            </td>
+        </tr>
+        <tr style="height: 68px;">
+            <td style="border: 1px solid #000000; height: 68px; text-align: center;">
+            <p style="padding: 10px;">DOC Preliminary Countervailing Determination</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 68px; text-align: center;">
+            <p style="padding: 10px;">March 13, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 68px; text-align: center;">
+            <p style="padding: 10px;">May 19, 2025</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">DOC Final Countervailing Determination</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">May 27, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Oct. 31, 2025 (usually would be aligned with final AD determination)</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;"><strong>ITC Final Investigation</strong></p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">&nbsp;</p>
+            </td>
+        </tr>
+        <tr style="height: 55px;">
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">ITC Final AD Determination</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Sept. 25, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 55px; text-align: center;">
+            <p style="padding: 10px;">Jan. 19, 2026</p>
+            </td>
+        </tr>
+        <tr style="height: 68px;">
+            <td style="border: 1px solid #000000; height: 68px; text-align: center;">
+            <p style="padding: 10px;">ITC Final CVD Determination</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 68px; text-align: center;">
+            <p style="padding: 10px;">July 11, 2025</p>
+            </td>
+            <td style="border: 1px solid #000000; height: 68px; text-align: left;">
+            <p style="padding: 10px; text-align: center;">Dec. 15, 2025 (Jan. 19, 2026, if Commerce aligns the final determinations)</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>If critical circumstances (meaning, in anticipation of the imposition of AD/CVD duties, an exporter floods the market with large quantities of a product under investigation prior to the DOC's preliminary determination in order to avoid paying duties later) are found, duties may be imposed retroactively on merchandise entered up to 90 days prior to the publication of the DOC's preliminary determination in the <em>Federal Register</em>. To impose critical circumstances, both the DOC and the ITC must have an affirmative finding.</p>
+<h2>Potential Impact</h2>
+<p>Generally, active anode material is the primary component for lithium-ion battery anodes, which enable the flow of electric charge. The material is therefore significant to the production of Battery Energy Storage Systems (BESS), electric vehicles, consumer electronics, medical equipment and other applications.</p>
+<p>Notably, the current scope of the petitions covers active anode material imported in a battery. This means that if the U.S. Government imposes AD/CVD duties, only the active anode material in imported lithium-ion batteries from China (rather than the entire value of the batteries) will be subject to these duties.</p>
+<p>For more information on what potential impacts petitions could have on a company's imports or for assistance participating in the investigations, please contact the authors or another member of Holland &amp; Knight's <a rel="noopener noreferrer" href="https://www.hklaw.com/en/professionals?practice=24c11e39-592e-4bef-8395-b140339c560c" target="_blank">International Trade</a><a href="https://www.hklaw.com/en/professionals?practice=24c11e39-592e-4bef-8395-b140339c560c"> Group</a>.</p>
+<hr />
+<p><span style="font-size: 13px;">Information contained in this alert is for the general education and knowledge of our readers. It is not designed to be, and should not be used as, the sole source of information when analyzing and resolving a legal problem, and it should not be substituted for legal advice, which relies on a specific factual analysis. Moreover, the laws of each jurisdiction are different and are constantly changing. This information is not intended to create, and receipt of it does not constitute, an attorney-client relationship. If you have specific questions regarding a particular fact situation, we urge you to consult the authors of this publication, your Holland &amp; Knight representative or other competent legal counsel.</span></p>
+<hr />
+    </div>
+    <!--stopindex-->
+
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="article-columns__right">
+            
+                <div class="sidebar">
+                <div class="sidebar__section">
+                        <div class="link-box">
+                <div class="link-box__category">
+                    <h2 class="link-box__title">Related Practices</h2>
+                            <a class="link-box__link" href="/en/services/practices/international-business-and-trade/international-trade" target="" rel="">International Trade</a>
+                            <a class="link-box__link" href="/en/services/practices/litigation-and-dispute-resolution/government-contracts" target="" rel="">Government Contracts</a>
+                            <a class="link-box__link" href="/en/services/practices/energy/renewable-energy" target="" rel="">Renewable Energy</a>
+                            <a class="link-box__link" href="/en/services/practices/energy/energy-technology" target="" rel="">Energy Technology</a>
+                            <a class="link-box__link" href="/en/services/practices/healthcare/healthcare" target="" rel="">Healthcare</a>
+                </div>
+    </div>
+
+                </div>
+                <div class="sidebar__section">
+                    
+
+
+    <div class="sidebar-promo" v-cloak v-if="!hasInlineSubscribe">
+        <div class="sidebar-promo__text">Subscribe to Updates and Events</div>
+        <a class="button--green sidebar-promo__link" href="https://hollandknight.concep.com/preferences/hollandknight/signup" target="_blank" rel="noopener">Sign Up Now</a>
+    </div>
+
+                </div>
+    </div>
+
+        </div>
+    </div>
+        <div class="section
+          
+          
+          ">
+
+            <h2 class="page__section-heading">Related Insights</h2>
+
+        <div class="section__content">
+            
+
+
+    <div is="view-more"
+         inline-template="inline-template"
+         v-bind:results="[{&quot;metaData&quot;:[&quot;&lt;em&gt;Holland &amp; Knight Alert&lt;/em&gt;&quot;],&quot;link&quot;:{&quot;label&quot;:&quot;Mexico Proposes National Security Review Regime for Foreign Investment&quot;,&quot;url&quot;:&quot;/en/insights/publications/2026/09/mexico-proposes-national-security-review-regime-for-foreign-investment&quot;,&quot;AbsoluteUrl&quot;:null,&quot;target&quot;:&quot;&quot;,&quot;rel&quot;:&quot;&quot;},&quot;icon&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;image&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;date&quot;:&quot;September 1, 2026&quot;,&quot;readingtime&quot;:&quot;3 Minutes&quot;,&quot;source&quot;:null},{&quot;metaData&quot;:[&quot;&lt;em&gt;Holland &amp; Knight Alert&lt;/em&gt;&quot;],&quot;link&quot;:{&quot;label&quot;:&quot;Hidden in Plain Sight: Labor, Employment and Cybersecurity Risks of DPRK IT Worker Infiltration&quot;,&quot;url&quot;:&quot;/en/insights/publications/2026/08/hidden-in-plain-sight-labor-employment-and-cybersecurity-risks&quot;,&quot;AbsoluteUrl&quot;:null,&quot;target&quot;:&quot;&quot;,&quot;rel&quot;:&quot;&quot;},&quot;icon&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;image&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;date&quot;:&quot;August 26, 2026&quot;,&quot;readingtime&quot;:&quot;11 Minutes&quot;,&quot;source&quot;:null},{&quot;metaData&quot;:[&quot;&lt;em&gt;Holland &amp; Knight Trade Matters Blog&lt;/em&gt;&quot;],&quot;link&quot;:{&quot;label&quot;:&quot;A New Sanctions Landscape in the Middle East&quot;,&quot;url&quot;:&quot;/en/insights/publications/2026/08/a-new-sanctions-landscape-in-the-middle-east&quot;,&quot;AbsoluteUrl&quot;:null,&quot;target&quot;:&quot;&quot;,&quot;rel&quot;:&quot;&quot;},&quot;icon&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;image&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;date&quot;:&quot;August 25, 2026&quot;,&quot;readingtime&quot;:&quot;4 Minutes&quot;,&quot;source&quot;:null},{&quot;metaData&quot;:[&quot;&lt;em&gt;Holland &amp; Knight Alert&lt;/em&gt;&quot;],&quot;link&quot;:{&quot;label&quot;:&quot;Drone Tariffs Prepare for Takeoff: What Companies Need to Know Now&quot;,&quot;url&quot;:&quot;/en/insights/publications/2026/08/drone-tariffs-prepare-for-takeoff-what-companies-need-to-know-now&quot;,&quot;AbsoluteUrl&quot;:null,&quot;target&quot;:&quot;&quot;,&quot;rel&quot;:&quot;&quot;},&quot;icon&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;image&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;date&quot;:&quot;August 24, 2026&quot;,&quot;readingtime&quot;:&quot;8 Minutes&quot;,&quot;source&quot;:null},{&quot;metaData&quot;:[&quot;&lt;em&gt;Holland &amp; Knight Alert&lt;/em&gt;&quot;],&quot;link&quot;:{&quot;label&quot;:&quot;IEEPA Tariff Consumer Class Actions: Litigation Update&quot;,&quot;url&quot;:&quot;/en/insights/publications/2026/08/ieepa-tariff-consumer-class-actions-litigation-update&quot;,&quot;AbsoluteUrl&quot;:null,&quot;target&quot;:&quot;&quot;,&quot;rel&quot;:&quot;&quot;},&quot;icon&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;image&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;date&quot;:&quot;August 18, 2026&quot;,&quot;readingtime&quot;:&quot;7 Minutes&quot;,&quot;source&quot;:null},{&quot;metaData&quot;:[&quot;&lt;em&gt;Holland &amp; Knight Alert&lt;/em&gt;&quot;],&quot;link&quot;:{&quot;label&quot;:&quot;President Trump Signs Memorandum for Major Navy Shipbuilding Overhaul&quot;,&quot;url&quot;:&quot;/en/insights/publications/2026/08/president-trump-signs-memorandum-for-major-navy-shipbuilding-overhaul&quot;,&quot;AbsoluteUrl&quot;:null,&quot;target&quot;:&quot;&quot;,&quot;rel&quot;:&quot;&quot;},&quot;icon&quot;:{&quot;url&quot;:&quot;/-/media/images/icons/transportation/cargoship.png?rev=6911fa4fab46418285b03c361f090958&amp;sc_lang=en&amp;hash=7295D5D481E6124D4AEB2CBB34D97F86&quot;,&quot;alt&quot;:&quot;Cargo Ship&quot;},&quot;image&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;date&quot;:&quot;August 18, 2026&quot;,&quot;readingtime&quot;:&quot;9 Minutes&quot;,&quot;source&quot;:null},{&quot;metaData&quot;:[&quot;&lt;em&gt;Holland &amp; Knight Alert&lt;/em&gt;&quot;],&quot;link&quot;:{&quot;label&quot;:&quot;DOJ Announces Enforcement Priorities for National Fraud Enforcement Division&quot;,&quot;url&quot;:&quot;/en/insights/publications/2026/08/doj-announces-enforcement-priorities-for-national-fraud&quot;,&quot;AbsoluteUrl&quot;:null,&quot;target&quot;:&quot;&quot;,&quot;rel&quot;:&quot;&quot;},&quot;icon&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;image&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;date&quot;:&quot;August 17, 2026&quot;,&quot;readingtime&quot;:&quot;11 Minutes&quot;,&quot;source&quot;:null},{&quot;metaData&quot;:[&quot;&lt;em&gt;Sanctions 2026, Chambers Global Practice Guides&lt;/em&gt;&quot;],&quot;link&quot;:{&quot;label&quot;:&quot;Trends and Developments: USA – Washington, D.C.&quot;,&quot;url&quot;:&quot;/en/insights/publications/2026/08/trends-and-developments&quot;,&quot;AbsoluteUrl&quot;:null,&quot;target&quot;:&quot;&quot;,&quot;rel&quot;:&quot;&quot;},&quot;icon&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;image&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;date&quot;:&quot;August 2026&quot;,&quot;readingtime&quot;:&quot;&quot;,&quot;source&quot;:null},{&quot;metaData&quot;:[&quot;&lt;em&gt;Holland &amp; Knight Trade Matters Blog&lt;/em&gt;&quot;],&quot;link&quot;:{&quot;label&quot;:&quot;BIS Imposes Critical Minerals Export Restrictions on Black Mass and Tungsten Waste and Scrap &quot;,&quot;url&quot;:&quot;/en/insights/publications/2026/08/bis-imposes-critical-minerals-export-restrictions-on-black-mass&quot;,&quot;AbsoluteUrl&quot;:null,&quot;target&quot;:&quot;&quot;,&quot;rel&quot;:&quot;&quot;},&quot;icon&quot;:{&quot;url&quot;:&quot;/-/media/images/icons/insurance/cargotrade.svg?rev=46b3a997ec6346fe8e0cc734c67d684b&amp;sc_lang=en&amp;hash=F096F8CB76DF8E428484B3BC2D9191A2&quot;,&quot;alt&quot;:&quot;Package&quot;},&quot;image&quot;:{&quot;url&quot;:null,&quot;alt&quot;:null},&quot;date&quot;:&quot;August 14, 2026&quot;,&quot;readingtime&quot;:&quot;4 Minutes&quot;,&quot;source&quot;:null}]">
+
+        <div class="news-cards">
+<div class="news-cards__toggles">
+        <button aria-label="toggle-news-card" class="news-cards__card-toggle" v-on:click="toggleCardView" v-bind:class="{ 'news-cards__card-toggle--active': isCardView }">
+            <span class="news-cards__card-icon topleft"></span>
+            <span class="news-cards__card-icon topright"></span>
+            <span class="news-cards__card-icon botleft"></span>
+            <span class="news-cards__card-icon botright"></span>
+        </button>
+        <button aria-label="toggle-news-list" class="news-cards__list-toggle" v-on:click="toggleListView" v-bind:class="{ 'news-cards__list-toggle--active': isListView }">
+            <span class="news-cards__list-icon"></span>
+            <span class="news-cards__list-icon"></span>
+            <span class="news-cards__list-icon"></span>
+        </button>
+</div>
+
+            <div v-show="isCardView">
+                <div is="masonry"
+                     v-bind:cols="{default: 3, 896: 2, 640: 1}"
+                     v-bind:gutter="30"
+                     class="news-cards__cards">
+                    <article-tile v-for="insight in results" v-bind="insight"></article-tile>
+                </div>
+            </div>
+
+            <div class="news-cards__list" v-show="isListView">
+                <article-list-item v-for="insight in results" v-bind="insight"></article-list-item>
+            </div>
+
+                <div class="expanding-list__view-more-controls">
+                    <a href="/en/insights?practice=24c11e39-592e-4bef-8395-b140339c560c" class="button view-more-button">
+                        View More
+                    </a>
+                </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+</div>
+        </div>
+
+        
+
+<footer id="footer" class="footer">
+    <div class="footer__top">
+        <div class="container container--small">
+            <div class="footer__cols">
+                <div class="footer__text">
+                        <img class="footer__logo" alt="Holland &amp; Knight" src="/-/media/images/global/hk_logo_white.png?rev=eff9150434004ebb99a14e3174191322&amp;sc_lang=en&amp;hash=04417C63226294EB6C3BDED1E5232A70" />
+
+                    <div class="footer__slogan">
+                        The hallmark of Holland &amp; Knight's success has always been and continues to be legal work of the highest quality, performed by well-prepared lawyers who revere their profession and are devoted to their clients.
+                    </div>
+                </div>
+                <div class="footer__links">
+                        <a class="footer__link footer__button" href="https://hollandknight.concep.com/preferences/hollandknight/signup" target="_blank" rel="noopener">Subscribe to Publications</a>
+
+                        <a class="footer__link outgoing" href="/en/firm/client-payment-information" target="" rel="">Client Payment Information</a>
+
+                        <a class="footer__link outgoing" href="https://www.linkedin.com/groups/1918497/" target="_blank" rel="noopener">Alumni</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container container--small">
+            <div class="footer__cols">
+                <div class="footer__legal">
+                    <div class="footer__copyright">
+                        Attorney Advertising. Copyright © 1996–2026 Holland & Knight LLP. All rights reserved.
+                    </div>
+                        <a class="footer__legal-link" href="/en/firm/legal">Legal Information</a>
+                                            <a class="footer__legal-link" href="/en/firm/legal/privacy">Privacy</a>
+                </div>
+                <ul class="footer__social">
+                        <li><a class="footer__icon footer__icon--linkedin" href="https://www.linkedin.com/company/holland-&amp;-knight-llp/" target="_blank" aria-label="linkedin" rel="noopener"> </a></li>
+
+                        <li><a class="footer__icon footer__icon--twitter" href="https://x.com/holland_knight" target="_blank" aria-label="twitter" rel="noopener"> </a></li>
+
+                        <li><a class="footer__icon footer__icon--instagram" href="https://www.instagram.com/hollandknightlaw/" target="_blank" aria-label="instagram" rel="noopener"> </a></li>
+
+                        <li><a class="footer__icon footer__icon--facebook" href="https://www.facebook.com/HollandKnightLLP/" target="_blank" aria-label="facebook" rel="noopener"> </a></li>
+
+                        <li><a class="footer__icon footer__icon--youtube-2" href="https://www.youtube.com/c/HollandKnightLLP" target="_blank" aria-label="youtube" rel="noopener"> </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+<div class="modal-alert" v-show="modalOpen" v-cloak>
+    <div class="modal-alert__mask">
+        <div class="modal-alert__wrapper">
+            <div class="modal-alert__container">
+                <div class="modal-alert__header">Email Disclaimer</div>
+                <div class="modal-alert__body"><p>Please note that email communications to the firm through this website do not create an attorney-client relationship between you and the firm. Do not send any privileged or confidential information to the firm through this website. Click "accept" below to confirm that you have read and understand this notice.</p></div>
+                <div class="modal-alert__buttons">
+                    <button class="modal-alert__button modal-alert__accept" v-on:click="accept">Accept</button>
+                    <button class="modal-alert__button modal-alert__decline" v-on:click="$root.toggleModal">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <!-- All Vue reusable template definitions -->
+    <script type="text/template" id="article-tile">
+    <component v-bind:is="link.url ? 'a' : 'div'" v-bind:href="link.url" class="news-cards__card" v-bind:class="link.url ? null : 'news-cards__card--no-link'">
+        <img alt="image.alt" class="news-cards__image" v-if="image && image.url" v-bind:src="image.url" />
+        <div class="news-cards__container">
+            <img alt="news-icon" class="news-cards__icon" v-if="icon && icon.url" v-bind:src="icon.url" />
+            <div class="news-cards__headline" v-html="link.label"></div>
+            <div class="news-cards__subhead" v-if="source" v-html="source"></div>
+            <div class="news-cards__meta-info">
+                <div class="news-cards__date" v-text="date"></div>
+                <div class="news-cards__reading-time" v-text="readingtime" v-if="readingtime"></div>
+            </div>
+        </div>
+        <div class="hover-tab" v-if="link.url"></div>
+    </component>
+</script>
+
+
+<script type="text/template" id="article-list-item">
+    <component v-bind:is="link.url ? 'a' : 'div'" v-bind:href="link.url" v-bind:target="link.target" v-bind:rel="link.rel" class="article-list-item" v-bind:class="link.url ? null : 'article-list-item--no-link'">
+        <h3 class="article-list-item__description" v-html="link.label"></h3>
+        <div class="article-list-item__meta">
+
+            
+            <span v-for="(meta, i) in metaItems">
+                <span class="article-list-item__divider" v-if="i !== 0"> / </span>
+                <span class="article-list-item__meta-item" v-html="meta"></span>
+            </span>
+        </div>
+        <div class="hover-tab" v-if="link.url"></div>
+    </component>
+</script>
+<script type="text/template" id="people-card">
+    
+    <div class="people-card__person-container">
+        
+        <div class="people-card__card">
+            <div class="people-card__image">
+                <img v-bind:src="image.url" />
+            </div>
+            <div class="people-card__person-info">
+                <a class="people-card__name" v-bind:href="url">
+                    <span v-text="name"></span>
+                </a>
+                <div class="people-card__title" v-text="title"></div>
+                <a class="people-card__email"
+                   v-if="email"
+                   v-on:click="$root.toggleModal(email, $event)"
+                   v-bind:href="'mailto:' + email"
+                   v-text="email">
+                </a>
+                <div class="people-card__cities">
+                    <div class="people-card__city" v-for="city in cities" v-if="city.phone">
+                        <span v-if="city.label" class="people-card__city-name" v-text="city.label"></span>
+                        <a class="people-card__office-phone" v-bind:href="'tel:' + city.phone" v-text="city.phone"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/template" id="case-study-tile">
+    <a class="cross-links__card" v-bind:href="link.url" v-bind:target="link.target" v-bind:rel="link.rel">
+        <div class="cross-links__primary">
+            <div class="cross-links__info">
+                <div class="cross-links__type" v-html="typeLabel"></div>
+                <div class="cross-links__title" v-html="link.label"></div>
+            </div>
+            <div class="cross-links__image" v-if="image && image.url">
+                <img v-bind:src="image.url" v-bind:alt="image.alt" />
+            </div>
+        </div>
+        <div class="cross-links__summary" v-if="summary" v-html="summary"></div>
+        <div class="hover-tab"></div>
+    </a>
+</script>
+<script type="text/template" id="case-study-list-item">
+    <a class="case-study-list-item" v-bind:href="link.url" v-bind:target="link.target" v-bind:rel="link.rel">
+        <h3 class="case-study-list-item__title" v-html="link.label"></h3>
+        <div class="case-study-list-item__summary" v-html="summary"></div>
+        <div class="hover-tab"></div>
+    </a>
+</script>
+
+<script type="text/template" id="site-search-list-item">
+    <a class="site-search-list-item" v-bind:href="link.url" v-bind:target="link.target" v-bind:rel="link.rel">
+        <h3 class="site-search-list-item__title" v-html="link.label"></h3>
+        <div class="site-search-list-item__summary" v-html="summary"></div>
+        <div class="hover-tab"></div>
+    </a>
+</script>
+
+
+
+
+<script type="text/template" id="subscribe-promo">
+        <div class="promo">
+            Subscribe to Updates and Events
+
+            <a href="https://hollandknight.concep.com/preferences/hollandknight/signup" target="_blank" rel="noopener">Sign Up Now</a>
+        </div>
+</script>
+
+
+    <script src="/assets/public/bundle.v-3ascdgz6j8s8j8gam4wuw.js"></script>
+
+    <!--startindex-->
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+            var sz = document.createElement('script');
+            sz.type = 'text/javascript'; sz.async = true;
+            sz.src = '//siteimproveanalytics.com/js/siteanalyze_6339655.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+    </script>
+</body>
+</html>

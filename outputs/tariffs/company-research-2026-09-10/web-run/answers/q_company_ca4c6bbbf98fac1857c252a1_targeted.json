@@ -1,0 +1,47 @@
+{
+  "query_id": "q_company_ca4c6bbbf98fac1857c252a1_targeted",
+  "query": "\"Pirelli Tire North America LLC\" automotive vehicles auto parts tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1ae2e2516909923caf0dcd71",
+    "claim_2d8a17fa8c8c1e1205698ca0",
+    "claim_4c40403383fc564565eeddff"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1ae2e2516909923caf0dcd71",
+      "text": "To protect themselves from tariff exposure, importers are diversifying toward countries like Brazil, Mexico, Malaysia, and India.",
+      "url": "https://www.knowledge-sourcing.com/resources/thought-articles/how-tariffs-are-affecting-the-u-s-automotive-tire-import-market",
+      "chunk_id": "chunk_ef624bd18e0d729a99579de8"
+    },
+    {
+      "claim_id": "claim_2d8a17fa8c8c1e1205698ca0",
+      "text": "The following factors are influencing the U.S. automotive tire import market: - Importers were forced to move their sourcing to Southeast Asia due to tariffs on Chinese tires.",
+      "url": "https://www.knowledge-sourcing.com/resources/thought-articles/how-tariffs-are-affecting-the-u-s-automotive-tire-import-market",
+      "chunk_id": "chunk_ef624bd18e0d729a99579de8"
+    },
+    {
+      "claim_id": "claim_4c40403383fc564565eeddff",
+      "text": "After the Chinese tariffs, Thailand, which had been the largest supplier of passenger and commercial truck tires, got hit in 2024 with new antidumping tariffs on truck and bus radial (TBR) tires.",
+      "url": "https://www.knowledge-sourcing.com/resources/thought-articles/how-tariffs-are-affecting-the-u-s-automotive-tire-import-market",
+      "chunk_id": "chunk_ef624bd18e0d729a99579de8"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence"
+  ],
+  "conflicts": [
+    [
+      "claim_1ae2e2516909923caf0dcd71",
+      "claim_2d8a17fa8c8c1e1205698ca0"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}

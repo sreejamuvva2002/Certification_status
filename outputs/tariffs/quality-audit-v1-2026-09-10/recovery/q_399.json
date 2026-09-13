@@ -1,0 +1,142 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence",
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original query specifically targets tariff exposure for battery factories in Georgia. The available evidence discusses U.S.-wide impacts, mentions facilities in Utah, Tennessee, Nevada, and Texas, but contains no explicit named-company effect or facility location data for Georgia. While the documents establish a national context of tariff uncertainty and cost increases for the U.S. battery sector, they fail to link these general risks to specific entities operating within Georgia. Additionally, one source was inaccessible, and the remaining evidence presents conflicting dates (April 2025 vs. March 2025) and uncertain policy statuses, comp",
+  "confidence": "high",
+  "remaining_gap": "No evidence explicitly connects a named company or facility in Georgia to specific tariff rates or exposure for imported equipment under the discussed regimes.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_2b44fc5917a955acdd435219",
+      "supporting_excerpt": "Those include the facilities that Fluence has invested in that are making battery modules, cells, and associated equipment in Utah and Tennessee. It also includes Tesla's expanding cell-manufacturing capacity from its factories in Nevada and Texas, and its lithium-refining facility in Texas.",
+      "relevance_explanation": "This passage lists specific U.S. facilities affected by tariffs but explicitly names locations in Utah, Tennessee, Nevada, and Texas, confirming the absence of Georgia-specific data in this source.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_5b2697c329ccfdbdcd973b83",
+      "supporting_excerpt": "Developers of large projects in California and Texas, for example, report that turnkey battery system quotes have increased by 10–15% compared to late 2024... For instance, Tesla's domestic battery assembly for its Powerwall and Megapack means those products avoid the import tax (although Tesla uses cells from both Nevada and abroad). EnerSys and KORE Power, aiming to produce LFP batteries in the U.S., similarly stand to benefit once their factories come online.",
+      "relevance_explanation": "This source discusses tariff impacts on specific companies like Tesla, EnerSys, and KORE Power but only associates them with California, Texas, Nevada, or general U.S. production, failing to establish a Georgia connection.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_b27af4a733d556cd60f0fee2",
+      "supporting_excerpt": "Battery cells imported into the US market face a sharp cost increase following the imposition of US president Donald Trump's new tariff regime... China, by far the largest supplier of battery cells to the US market, is now subject to an effective 64.9pc tariffs... Japan and South Korea... face tariff rates of 24pc and 25pc, respectively.",
+      "relevance_explanation": "This passage provides specific tariff rates for China, Japan, and South Korea affecting U.S. imports but offers no geographic breakdown or mention of Georgia facilities to apply these rates to the specific query.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_a9db809b9cffd5b0e3684b15",
+      "supporting_excerpt": "Developers are typically responsible for securing financing, managing project development, and ensuring that the project is operational within budget and schedule. While tariff and trade changes are usually perceived as a project risk, EPC contractors generally have discretion as to the timing and sourcing of project equipment and materials and, arguably, can reduce their exposure to tariff changes and trade policy.",
+      "relevance_explanation": "This text discusses general project risks and mitigation strategies for BESS projects involving imports but does not identify any specific Georgia-based developers or facilities facing these tariffs.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_399",
+  "query": "Georgia battery factories imported equipment tariff exposure",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 2,
+    "full_text_sources": 1,
+    "snippet_sources": 1,
+    "inaccessible_source_count": 1,
+    "selected_claims": 8,
+    "all_extracted_claims": 8,
+    "claims_presented_to_original_synthesis": 8,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 2,
+    "company_named_claims": 1,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_2b44fc5917a955acdd435219",
+    "passage_954f347ebd56eea3e2289911",
+    "passage_0107a37fae34ca1e954413f1",
+    "passage_7abd9cd4d7b9f5dc594999dc",
+    "passage_a9db809b9cffd5b0e3684b15",
+    "passage_5b2697c329ccfdbdcd973b83",
+    "passage_77e890f553ca566486e173e9",
+    "passage_b27af4a733d556cd60f0fee2"
+  ],
+  "candidate_document_ids": [
+    "document_0b255615dd7b4ba1ce86e08b",
+    "document_2a54ef32edbc032b8672aae0",
+    "document_509f150d033f6e532a9c598a",
+    "document_c4e0ccdc8d539e40e8821d7d",
+    "document_fc63b76a1e315074d303552b",
+    "document_fd4f526502e2bce609f6d334"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_a9db809b9cffd5b0e3684b15",
+      "supporting_excerpt": "Developers are typically responsible for securing financing, managing project development, and ensuring that the project is operational within budget and schedule. While tariff and trade changes are usually perceived as a project risk, EPC contractors generally have discretion as to the timing and sourcing of project equipment and materials and, arguably, can reduce their exposure to tariff changes and trade policy.",
+      "relevance_explanation": "This text discusses general project risks and mitigation strategies for BESS projects involving imports but does not identify any specific Georgia-based developers or facilities facing these tariffs.",
+      "company_applicability": "national_or_sector_context",
+      "temporal_status": "source_reports_effective_as_of_source_date",
+      "recovery_claim_id": "recovered_ec60303cedb1dc80ff75a62e",
+      "query_id": "q_399",
+      "chunk_id": "chunk_2a4f5d0e895bf34e2a657492",
+      "document_id": "document_509f150d033f6e532a9c598a",
+      "source_url": "https://www.morganlewis.com/pubs/2025/03/addressing-tariffs-and-trade-in-energy-storage-projects",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": false,
+      "source_text_path": "text/23c6f86416709384a8b7cdbdd2153b7b092eef27ad50b9ac2e115e463a934291.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_2b44fc5917a955acdd435219",
+        "supporting_excerpt": "Those include the facilities that Fluence has invested in that are making battery modules, cells, and associated equipment in Utah and Tennessee. It also includes Tesla's expanding cell-manufacturing capacity from its factories in Nevada and Texas, and its lithium-refining facility in Texas.",
+        "relevance_explanation": "This passage lists specific U.S. facilities affected by tariffs but explicitly names locations in Utah, Tennessee, Nevada, and Texas, confirming the absence of Georgia-specific data in this source.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_5b2697c329ccfdbdcd973b83",
+        "supporting_excerpt": "Developers of large projects in California and Texas, for example, report that turnkey battery system quotes have increased by 10–15% compared to late 2024... For instance, Tesla's domestic battery assembly for its Powerwall and Megapack means those products avoid the import tax (although Tesla uses cells from both Nevada and abroad). EnerSys and KORE Power, aiming to produce LFP batteries in the U.S., similarly stand to benefit once their factories come online.",
+        "relevance_explanation": "This source discusses tariff impacts on specific companies like Tesla, EnerSys, and KORE Power but only associates them with California, Texas, Nevada, or general U.S. production, failing to establish a Georgia connection.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_b27af4a733d556cd60f0fee2",
+        "supporting_excerpt": "Battery cells imported into the US market face a sharp cost increase following the imposition of US president Donald Trump's new tariff regime... China, by far the largest supplier of battery cells to the US market, is now subject to an effective 64.9pc tariffs... Japan and South Korea... face tariff rates of 24pc and 25pc, respectively.",
+        "relevance_explanation": "This passage provides specific tariff rates for China, Japan, and South Korea affecting U.S. imports but offers no geographic breakdown or mention of Georgia facilities to apply these rates to the specific query.",
+        "company_applicability": "national_or_sector_context",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

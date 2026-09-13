@@ -1,0 +1,117 @@
+{
+  "primary_cause": "inaccessible_documents",
+  "contributing_causes": [
+    "inaccessible_documents",
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The cached_full_text_passages list is empty, preventing recovery of full-text evidence to verify specific 2026 tariff applicability for Southeast Georgia supply chain companies. Original metrics indicate 'insufficient_evidence' and 'facility_exposure_not_established'.",
+  "confidence": "high",
+  "remaining_gap": "No explicit named-company effect for 2026 tariffs in Southeast Georgia found in available snippets.",
+  "recovery_assessment": "no_useful_cached_support",
+  "evidence": [
+    {
+      "passage_id": "claim_66891aee924d4b34904bd086",
+      "supporting_excerpt": "Hyundai is expanding its US output, boosting capacity in Georgia, and has adjusted its operating profit margin targets downward to account for tariff pressures.",
+      "relevance_explanation": "Mentions facility location but lacks specific 2026 import duty rate linkage.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "claim_7ad02859c76e508717c1cd5c",
+      "supporting_excerpt": "Nissan announced that it will drop the 2026 Ariya electric SUV from its US. lineup. One of the reasons cited is the 15% tariff imposed on Japanese-built EVs under the US–Japan trade framework.",
+      "relevance_explanation": "Shows company effect but specific to Japanese imports, not Georgia supply chain.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "claim_5f8a21a2079f880ba3b3246d",
+      "supporting_excerpt": "Effective from 1 November 2025, the US government has imposed 25% tariffs on imported medium and heavy-duty vehicles (Classes 3-8) and 25% on many of their parts.",
+      "relevance_explanation": "Future measure date does not confirm 2026 Georgia supply chain exposure.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    },
+    {
+      "passage_id": "claim_75699b58d4a4a2ba52a18d45",
+      "supporting_excerpt": "Natural graphite will face tariffs of 25%, as will permanent magnets, starting 2026.",
+      "relevance_explanation": "Generic product tariff does not establish facility exposure in Southeast Georgia.",
+      "company_applicability": "not_established",
+      "temporal_status": "proposal_or_uncertain"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_1",
+  "query": "Southeast Georgia EV supply chain tariffs import duties 2026",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 3,
+    "snippet_sources": 0,
+    "inaccessible_source_count": 0,
+    "selected_claims": 11,
+    "all_extracted_claims": 26,
+    "claims_presented_to_original_synthesis": 19,
+    "synthesis_claims_omitted": 7,
+    "original_limitation_codes": [
+      "conflicting_sources",
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "incomplete_document",
+      "insufficient_evidence"
+    ],
+    "conflict_groups": 1,
+    "company_named_claims": 9,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "conflicting_or_outdated_evidence",
+    "extraction_problems"
+  ],
+  "candidate_passage_ids": [],
+  "candidate_document_ids": [],
+  "validated_recovery_evidence": [],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "claim_66891aee924d4b34904bd086",
+        "supporting_excerpt": "Hyundai is expanding its US output, boosting capacity in Georgia, and has adjusted its operating profit margin targets downward to account for tariff pressures.",
+        "relevance_explanation": "Mentions facility location but lacks specific 2026 import duty rate linkage.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "claim_7ad02859c76e508717c1cd5c",
+        "supporting_excerpt": "Nissan announced that it will drop the 2026 Ariya electric SUV from its US. lineup. One of the reasons cited is the 15% tariff imposed on Japanese-built EVs under the US–Japan trade framework.",
+        "relevance_explanation": "Shows company effect but specific to Japanese imports, not Georgia supply chain.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "claim_5f8a21a2079f880ba3b3246d",
+        "supporting_excerpt": "Effective from 1 November 2025, the US government has imposed 25% tariffs on imported medium and heavy-duty vehicles (Classes 3-8) and 25% on many of their parts.",
+        "relevance_explanation": "Future measure date does not confirm 2026 Georgia supply chain exposure.",
+        "company_applicability": "not_established",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "claim_75699b58d4a4a2ba52a18d45",
+        "supporting_excerpt": "Natural graphite will face tariffs of 25%, as will permanent magnets, starting 2026.",
+        "relevance_explanation": "Generic product tariff does not establish facility exposure in Southeast Georgia.",
+        "company_applicability": "not_established",
+        "temporal_status": "proposal_or_uncertain"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

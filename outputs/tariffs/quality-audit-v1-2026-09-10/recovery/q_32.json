@@ -1,0 +1,141 @@
+{
+  "primary_cause": "weak_geographic_or_company_relevance",
+  "contributing_causes": [
+    "conflicting_or_outdated_evidence",
+    "inaccessible_documents"
+  ],
+  "cause_explanation": "The original answer fails to establish a specific, named-company tariff exposure for Hyundai's Georgia Metaplant suppliers because the available evidence is either generic sector analysis, historical context, or future projections without explicit linkage to current supplier liability. While multiple passages mention Hyundai's localization efforts and general tariff impacts on the automotive sector, none provide an explicit statement confirming that specific suppliers (e.g., Daechang Seat Corp, Hanon Systems) face a defined tariff rate or exposure under current law as of the research date. The evidence relies heavily on facility location (Bry",
+  "confidence": "high",
+  "remaining_gap": "A definitive source linking specific named Hyundai Georgia Metaplant suppliers to a current, effective tariff rate or explicit exposure liability is missing. The gap persists because existing texts discuss localization as a strategy to *avoid* tariffs rather than quantifying the remaining exposure for specific entities.",
+  "recovery_assessment": "partial_cached_support",
+  "evidence": [
+    {
+      "passage_id": "passage_0d1f5776c6b7114fbe5e7e4f",
+      "supporting_excerpt": "Yet even with $12.6 billion invested in Georgia alone and an expected 14,000 jobs generated, Hyundai's Metaplant won't make the automaker completely immune to tariffs. And the factory—as well as the immense cost and time spent to build it—illustrates the complex situation every carmaker finds it in now that Trump aims to reset the global trade order...",
+      "relevance_explanation": "This passage explicitly states the Metaplant is not 'completely immune' to tariffs, establishing a general exposure context but failing to quantify specific supplier liability or rates.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical"
+    },
+    {
+      "passage_id": "passage_6d749fc7f1dd2ca25e86395b",
+      "supporting_excerpt": "Tollison said not relying on shipments outside the country is a win for the Hyundai Metaplant due to the current 25% tariffs put in place by President Donald Trump. 'The more that you have companies that come in and do onshore and, within the United States, they reduce that tariff burden.'",
+      "relevance_explanation": "This source discusses a specific 25% tariff rate but attributes it to a general strategy of reducing burden through onshoring rather than confirming a specific exposure for named suppliers.",
+      "company_applicability": "facility_location_only",
+      "temporal_status": "source_reports_effective_as_of_source_date"
+    },
+    {
+      "passage_id": "passage_b950880868cef07200aa0f4e",
+      "supporting_excerpt": "Hyundai aims to increase US-assembled vehicle share from roughly 40% to more than 80% by 2030, while simultaneously increasing US supply chain content from approximately 60% to 80% to improve exposure profile and its cost structure.",
+      "relevance_explanation": "This passage outlines a future goal (2030) to reduce exposure but does not provide current tariff data or specific supplier liability for the Georgia Metaplant ecosystem.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_future"
+    },
+    {
+      "passage_id": "passage_4b5612604c9a00cf92058dd9",
+      "supporting_excerpt": "Tariffs are helping us accelerate our localization plans. It's a very simple matter... The good thing is we already started before tariffs were announced. In a way, tariffs are accelerating it.",
+      "relevance_explanation": "This quote confirms tariffs exist and influence strategy but does not quantify the specific exposure or rates for Hyundai's Georgia suppliers.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_historical"
+    }
+  ],
+  "status": "reviewed",
+  "query_id": "q_32",
+  "query": "Hyundai Metaplant Georgia tariff exposure supplier sourcing",
+  "metrics": {
+    "retrieved_candidates": 8,
+    "retained_sources": 3,
+    "full_text_sources": 1,
+    "snippet_sources": 2,
+    "inaccessible_source_count": 2,
+    "selected_claims": 15,
+    "all_extracted_claims": 15,
+    "claims_presented_to_original_synthesis": 15,
+    "synthesis_claims_omitted": 0,
+    "original_limitation_codes": [
+      "current_policy_status_not_established",
+      "facility_exposure_not_established",
+      "historical_or_future_measure",
+      "insufficient_evidence",
+      "snippet_evidence_present"
+    ],
+    "conflict_groups": 0,
+    "company_named_claims": 12,
+    "facility_label_claims": 0
+  },
+  "rule_signals": [
+    "weak_geographic_or_company_relevance",
+    "inaccessible_documents",
+    "conflicting_or_outdated_evidence"
+  ],
+  "candidate_passage_ids": [
+    "passage_fbdd6b934bb82e88280852f4",
+    "passage_0d1f5776c6b7114fbe5e7e4f",
+    "passage_6d749fc7f1dd2ca25e86395b",
+    "passage_5b3440d9b016256d403865b9",
+    "passage_b950880868cef07200aa0f4e",
+    "passage_c8e8a0b6b459804689741ac7",
+    "passage_4b5612604c9a00cf92058dd9",
+    "passage_13a4a7dfb67e4bd4f3806395"
+  ],
+  "candidate_document_ids": [
+    "document_079b4ba6ee636e62b14b4271",
+    "document_0d54f8a5683c9dab2f81d509",
+    "document_0d8cb30c5cd96bf588519dab",
+    "document_3255c41857c6cbbfa7ee8d86",
+    "document_49bc2dcf6e5a033d371bfd60",
+    "document_bd9b4c999011c3e8830aa7ca",
+    "document_f9476e65504a25d75d94b0cf"
+  ],
+  "validated_recovery_evidence": [
+    {
+      "passage_id": "passage_b950880868cef07200aa0f4e",
+      "supporting_excerpt": "Hyundai aims to increase US-assembled vehicle share from roughly 40% to more than 80% by 2030, while simultaneously increasing US supply chain content from approximately 60% to 80% to improve exposure profile and its cost structure.",
+      "relevance_explanation": "This passage outlines a future goal (2030) to reduce exposure but does not provide current tariff data or specific supplier liability for the Georgia Metaplant ecosystem.",
+      "company_applicability": "explicit_named_company_effect",
+      "temporal_status": "source_reports_future",
+      "recovery_claim_id": "recovered_768bef2676708c02ca469474",
+      "query_id": "q_32",
+      "chunk_id": "chunk_60e62fd4319f30b58b9356db",
+      "document_id": "document_bd9b4c999011c3e8830aa7ca",
+      "source_url": "https://www.automotivemanufacturingsolutions.com/news/hyundai-commits-to-north-american-manufacturing-scale-with-36-new-models-localised-supply-chain/2640816",
+      "evidence_kind": "full_document",
+      "already_extracted_for_query": true,
+      "source_text_path": "text/c7b003ec2eaa08d506efcdfece230b635ccc64693e0c9a3151ea34a74035e015.txt",
+      "current_legal_applicability": "not_established",
+      "review_status": "locally_extracted_quote_validated_not_manually_verified"
+    }
+  ],
+  "rejected_recovery_evidence": [
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_0d1f5776c6b7114fbe5e7e4f",
+        "supporting_excerpt": "Yet even with $12.6 billion invested in Georgia alone and an expected 14,000 jobs generated, Hyundai's Metaplant won't make the automaker completely immune to tariffs. And the factory—as well as the immense cost and time spent to build it—illustrates the complex situation every carmaker finds it in now that Trump aims to reset the global trade order...",
+        "relevance_explanation": "This passage explicitly states the Metaplant is not 'completely immune' to tariffs, establishing a general exposure context but failing to quantify specific supplier liability or rates.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "source_reports_historical"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_6d749fc7f1dd2ca25e86395b",
+        "supporting_excerpt": "Tollison said not relying on shipments outside the country is a win for the Hyundai Metaplant due to the current 25% tariffs put in place by President Donald Trump. 'The more that you have companies that come in and do onshore and, within the United States, they reduce that tariff burden.'",
+        "relevance_explanation": "This source discusses a specific 25% tariff rate but attributes it to a general strategy of reducing burden through onshoring rather than confirming a specific exposure for named suppliers.",
+        "company_applicability": "facility_location_only",
+        "temporal_status": "source_reports_effective_as_of_source_date"
+      }
+    },
+    {
+      "reason": "Quote not verbatim in supplied passage",
+      "item": {
+        "passage_id": "passage_4b5612604c9a00cf92058dd9",
+        "supporting_excerpt": "Tariffs are helping us accelerate our localization plans. It's a very simple matter... The good thing is we already started before tariffs were announced. In a way, tariffs are accelerating it.",
+        "relevance_explanation": "This quote confirms tariffs exist and influence strategy but does not quantify the specific exposure or rates for Hyundai's Georgia suppliers.",
+        "company_applicability": "explicit_named_company_effect",
+        "temporal_status": "source_reports_historical"
+      }
+    }
+  ],
+  "recovery_does_not_automatically_resolve_insufficiency": true
+}

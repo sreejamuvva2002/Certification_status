@@ -1,0 +1,85 @@
+{
+  "query_id": "q_358",
+  "query": "Automotive steel imports South Korea United States tariffs",
+  "status": "complete",
+  "research_date": "2026-09-09",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_09aee8b2fc11f7f020b033dd",
+    "claim_2641337c9f65bdd2aa20d1c2",
+    "claim_2e83171335f11d10a6538120",
+    "claim_38f122bd3a5683e43ac770b4",
+    "claim_6d0dc5ca25cdfd4b1b06fe8d",
+    "claim_7eabd75ade67bfb560f39e20",
+    "claim_8adc495407de3839b4b0f1c1",
+    "claim_ff9cff27a9140dd801f98307"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_09aee8b2fc11f7f020b033dd",
+      "text": "Initially, shares in Korean carmakers Hyundai and Kai fell by up to 6% in response to Trump's announcement, but they then recovered to close only about 1% lower.",
+      "url": "https://www.bbc.com/news/articles/cwyw3ynwe37o",
+      "chunk_id": "chunk_8bcd597e7f390992ce7943bd"
+    },
+    {
+      "claim_id": "claim_2641337c9f65bdd2aa20d1c2",
+      "text": "Geopolitics, regulation and digitalisation amongst factors reshaping automotive logistics in North AmericaInsight from Automotive Logistics’ business intelligence division has revealed that North America’s automotive logistics market is experiencing significant structural change, driven by factors such as geopolitical uncertainty, supply chain disruption, regulatory pressures, labour shortages, digital transformation and vehicle electrification.",
+      "url": "https://www.automotivelogistics.media/supply-chain/south-korea-tariff-deal-with-us-what-it-means-for-automotive/650472",
+      "chunk_id": "chunk_0d19d580bcf2418f0b5c6ac7"
+    },
+    {
+      "claim_id": "claim_2e83171335f11d10a6538120",
+      "text": "Trump threatens 50% tariffs on Canada-made vehicles and partsUS president Donald Trump has threatened that tariffs on Canadian-made cars, trucks, automotive parts and steel could be raised 50% from January 1 next year, following the collapse of trade talks.",
+      "url": "https://www.automotivelogistics.media/supply-chain/south-korea-tariff-deal-with-us-what-it-means-for-automotive/650472",
+      "chunk_id": "chunk_0d19d580bcf2418f0b5c6ac7"
+    },
+    {
+      "claim_id": "claim_38f122bd3a5683e43ac770b4",
+      "text": "In January 2026, President Trump criticized the ROK government's speed at implementing its investment commitments and stated his intentions to raise tariffs on South Korean exports to 25%. The higher tariff rate had not been implemented as of early March 2026.",
+      "url": "https://www.congress.gov/crs-product/IF10733",
+      "chunk_id": "chunk_8cabf58c4b979123122aeacf"
+    },
+    {
+      "claim_id": "claim_6d0dc5ca25cdfd4b1b06fe8d",
+      "text": "South Korea is a top source of U.S. steel imports and had negotiated an import quota in lieu of Section 232 tariffs first imposed by the Trump Administration in 2018; that quota was terminated in 2025.",
+      "url": "https://www.congress.gov/crs-product/IF10733",
+      "chunk_id": "chunk_1a5c0d98bcdf584d9d19e69c"
+    },
+    {
+      "claim_id": "claim_7eabd75ade67bfb560f39e20",
+      "text": "Section 232 tariffs on steel and aluminum imports remain at 50%.",
+      "url": "https://www.congress.gov/crs-product/IF10733",
+      "chunk_id": "chunk_1a5c0d98bcdf584d9d19e69c"
+    },
+    {
+      "claim_id": "claim_8adc495407de3839b4b0f1c1",
+      "text": "In November 2025, the United States lowered the Section 232 auto tariffs for Korea to 15% (see below).",
+      "url": "https://www.congress.gov/crs-product/IF10733",
+      "chunk_id": "chunk_1a5c0d98bcdf584d9d19e69c"
+    },
+    {
+      "claim_id": "claim_ff9cff27a9140dd801f98307",
+      "text": "Trump said he would increase levies on South Korea from 15% across a range of products including automobiles, lumber, pharmaceuticals and \"all other Reciprocal TARIFFS\".",
+      "url": "https://www.bbc.com/news/articles/cwyw3ynwe37o",
+      "chunk_id": "chunk_8bcd597e7f390992ce7943bd"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure"
+  ],
+  "conflicts": [
+    [
+      "claim_2e83171335f11d10a6538120",
+      "claim_38f122bd3a5683e43ac770b4"
+    ],
+    [
+      "claim_7eabd75ade67bfb560f39e20",
+      "claim_8adc495407de3839b4b0f1c1"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 14,
+  "synthesis_input_claim_count": 14
+}

@@ -1,0 +1,56 @@
+{
+  "query_id": "q_company_7150fb43251087a238bda4ce_discovery",
+  "query": "\"Valeo\" Georgia tariffs import duties supply chain",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_7e1f23ba689bc8bf85ee14f6",
+    "claim_a791ca995cc5b7401fd131e3",
+    "claim_bb93ffb56d2474a99c1c906d",
+    "claim_fe0b6cca89b892be65559920"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_7e1f23ba689bc8bf85ee14f6",
+      "text": "President Donald Trump has said 25 percent tariffs on all goods coming into the United States from Mexico and Canada will go into effect on",
+      "url": "https://www.autonews.com/manufacturing/suppliers/ane-valeo-trump-tariffs-0228",
+      "chunk_id": "chunk_75055c397d015f3042e07372"
+    },
+    {
+      "claim_id": "claim_a791ca995cc5b7401fd131e3",
+      "text": "Suppliers including Bosch, ZF, Continental, Valeo and Forvia could also be at risk as they export from Europe to the US.",
+      "url": "https://www.automotivelogistics.media/supply-chain/euus-tariff-tensions-threaten-automotive-supply-chain/2589177",
+      "chunk_id": "chunk_05d0419cbc44e52763728b5a"
+    },
+    {
+      "claim_id": "claim_bb93ffb56d2474a99c1c906d",
+      "text": "Valeo and Novares say they can't supply parts to the U.S. unless customers cover the full cost of tariffs.",
+      "url": "https://www.wardsauto.com/news/suppliers-demand-up-front-tariff-payments-from-automakers/778420",
+      "chunk_id": "chunk_b14a31dfdd5f0904e8ec11da"
+    },
+    {
+      "claim_id": "claim_fe0b6cca89b892be65559920",
+      "text": "The EU first prepared the tariff list last year following Trump’s ‘Liberation Day’ levies, but the strategy was put on hold until February 6 to avoid a trade war.",
+      "url": "https://www.automotivelogistics.media/supply-chain/euus-tariff-tensions-threaten-automotive-supply-chain/2589177",
+      "chunk_id": "chunk_05d0419cbc44e52763728b5a"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "facility_exposure_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_evidence_present"
+  ],
+  "conflicts": [
+    [
+      "claim_7e1f23ba689bc8bf85ee14f6",
+      "claim_fe0b6cca89b892be65559920"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 7,
+  "synthesis_input_claim_count": 7
+}

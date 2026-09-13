@@ -1,0 +1,62 @@
+{
+  "query_id": "q_company_2ca807a86c0a7e4aeb4ae014_targeted",
+  "query": "\"SK Battery America\" automotive vehicles auto parts batteries critical minerals lithium graphite tariffs cost sourcing country of origin 2026",
+  "status": "insufficient_evidence",
+  "research_date": "2026-09-10",
+  "model": "qwen3.5:35b-a3b",
+  "selected_claim_ids": [
+    "claim_1e760ccef7dd5b717a2c19fd",
+    "claim_43c0277e84c83f3bf9ada03c",
+    "claim_540850d9fea299fa842ebe09",
+    "claim_867848f7a0a38f4f4bc95384",
+    "claim_aa70dead031b9ecbb1c9228b"
+  ],
+  "statements": [
+    {
+      "claim_id": "claim_1e760ccef7dd5b717a2c19fd",
+      "text": "the terf rate on battery parts will increase this year from 7.5% to 25%",
+      "url": "https://www.youtube.com/watch?v=MFT-KOrTJOo",
+      "chunk_id": "chunk_9da82d9ed170dd464483c039"
+    },
+    {
+      "claim_id": "claim_43c0277e84c83f3bf9ada03c",
+      "text": "the Tariff rate on lithium I on non batteries because those exist too will increase from 7.5% to 25% in 2026",
+      "url": "https://www.youtube.com/watch?v=MFT-KOrTJOo",
+      "chunk_id": "chunk_9da82d9ed170dd464483c039"
+    },
+    {
+      "claim_id": "claim_540850d9fea299fa842ebe09",
+      "text": "the Tariff rate for certain other critical minerals will increase from 0 to 25% additionally the Tariff rate on solar cells whether or not they assembled into modules will increase from 25% to 50% this year",
+      "url": "https://www.youtube.com/watch?v=MFT-KOrTJOo",
+      "chunk_id": "chunk_9da82d9ed170dd464483c039"
+    },
+    {
+      "claim_id": "claim_867848f7a0a38f4f4bc95384",
+      "text": "the Tariff rate on lithium ion EV batteries is increasing this year from 7.5% to 25%",
+      "url": "https://www.youtube.com/watch?v=MFT-KOrTJOo",
+      "chunk_id": "chunk_9da82d9ed170dd464483c039"
+    },
+    {
+      "claim_id": "claim_aa70dead031b9ecbb1c9228b",
+      "text": "rates on natural graphite and permanent magnets will increase in 2026 from 0 to 25% this year",
+      "url": "https://www.youtube.com/watch?v=MFT-KOrTJOo",
+      "chunk_id": "chunk_9da82d9ed170dd464483c039"
+    }
+  ],
+  "limitation_codes": [
+    "conflicting_sources",
+    "current_policy_status_not_established",
+    "historical_or_future_measure",
+    "insufficient_evidence",
+    "snippet_only"
+  ],
+  "conflicts": [
+    [
+      "claim_1e760ccef7dd5b717a2c19fd",
+      "claim_867848f7a0a38f4f4bc95384"
+    ]
+  ],
+  "synthesis_method": "Qwen selects validated verbatim evidence; no uncited factual prose",
+  "all_claim_count": 5,
+  "synthesis_input_claim_count": 5
+}
